@@ -1,4 +1,21 @@
 (function () {
+  document.addEventListener("click", function (e) {
+    var target = e.target;
+    var link = target && target.closest ? target.closest("a") : null;
+    if (!link || !link.href) return;
+    if (link.href.indexOf("chromewebstore.google.com") === -1) return;
+    if (typeof gtag !== "function") return;
+    var campaign = "";
+    try {
+      campaign = new URL(link.href).searchParams.get("utm_campaign") || "";
+    } catch (err) {}
+    gtag("event", "chrome_store_click", {
+      link_url: link.href,
+      link_text: (link.textContent || "").replace(/\s+/g, " ").trim().slice(0, 100),
+      campaign: campaign
+    });
+  });
+
   var btn = document.getElementById("nav-toggle");
   var nav = document.getElementById("site-nav");
   if (btn && nav) {
