@@ -110,7 +110,7 @@
 <li>Click Export.</li>
 </ol>
 <p>For more than one conversation, open <strong>View and Download All Conversations</strong> in the popup — the same <strong>Claude Conversation Downloader</strong>, in a browse view with search, project filters, and an <strong>Export All</strong> button that turns your whole selection into files in one pass. Every export, single or bulk, counts against the 3 free exports unless you're on Pro. Sign-in with Google happens once, before your first export, and it's tied to the free-export count and Pro restore — not to reading your conversations.</p>
-<p>If you searched <strong>claude code export</strong> or “how to download claude code conversation,” you want the CLI, not this page: <a href="/claude-code-export/">export a Claude Code session with /export</a>.</p>
+<p>If you searched <strong>claude code export</strong> or “how to download claude code conversation,” you want the CLI, not this page: <a href="/claude-code-export/">export a Claude Code session with /export</a>. If you meant the Claude Desktop app, that is also not this extension: <a href="/export-claude-desktop-chat/">export a Claude Desktop chat</a>.</p>
 <h2>Developers: JSON, official ZIP, and the message tree</h2>
 <p>Both the official export and this extension can hand you JSON, but they're not the same shape. Anthropic's account ZIP is account-level — every conversation nested inside one archive, meant for a full data request, not for scripting against a single thread. The extension's JSON export is per-chat (or per-selection in bulk) and preserves the message tree, including artifacts and thinking blocks when present, so it's the one to reach for if you're parsing a specific conversation programmatically rather than backing up an account. If you need both — a full backup <em>and</em> a working file for one thread — run the official export once for the archive, and use <strong>Download Claude conversations</strong> whenever you need a specific conversation on demand.</p>
 <h2>Copy-paste, honestly</h2>
@@ -120,7 +120,7 @@
 <h3>How do I export chat from Claude if I only need one conversation?</h3>
 <p>Use the Chrome extension method above — the official export is account-wide and slower than you need for a single thread.</p>
 <h3>How do I export Claude chat to PDF?</h3>
-<p>Neither Claude nor this extension produces a native PDF today. Print the page (Ctrl/Cmd+P → Save as PDF) for a quick visual copy, keeping in mind that code blocks and tables often break in print layout. For a clean, readable file instead, export Markdown or plain text with <strong>Download Claude conversations</strong> and convert that if you still need a PDF.</p>
+<p>Neither Claude nor this extension produces a native PDF today. Print the page (Ctrl/Cmd+P → Save as PDF) for a quick visual copy, keeping in mind that code blocks and tables often break in print layout. For a clean, readable file instead, export Markdown or plain text with <strong>Download Claude conversations</strong> and convert that if you still need a PDF. Dedicated guide: <a href="/download-claude-chat-as-pdf/">download Claude chat as PDF</a>.</p>
 <h3>Does the official export cover artifacts and thinking blocks?</h3>
 <p>It includes whatever the account-level JSON contains, but it's not formatted for reading — no per-chat Markdown, no separated artifact layout. The extension's export is built specifically to keep those readable.</p>
 <h3>Will exporting through a Chrome extension risk my Anthropic account?</h3>
@@ -171,6 +171,8 @@
       <a href="/export-claude-chat/">Export Claude chat</a>
       <a href="/claude-conversation-extractor/">Claude conversation extractor</a>
       <a href="/claude-code-export/">Claude Code export</a>
+      <a href="/download-claude-chat-as-pdf/">Print / PDF</a>
+      <a href="/export-claude-desktop-chat/">Claude Desktop export</a>
     </div>
     <div>
       <h2>Legal</h2>
