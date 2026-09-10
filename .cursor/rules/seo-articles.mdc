@@ -1,0 +1,61 @@
+---
+description: SEO/GEO article writing rules for Chat Downloader guides
+globs: "{how-to-download-claude-chat,how-to-export-claude-chat,export-claude-chat,claude-conversation-extractor,claude-code-export,download-claude-chat-as-pdf,export-claude-desktop-chat,bulk,formats,features,how-it-works}/**/*.html"
+alwaysApply: false
+---
+
+# Article writing (Chat Downloader)
+
+Full pipeline: `seo-workspace/geo-seo-article-pipeline.md`. Apply this rule when creating or editing guide HTML.
+
+## Brand
+
+- Product: **Download Claude conversations** (also Claude Chat Downloader). Site: chat-downloader.com.
+- Chrome extension for **claude.ai only**. Not Claude Desktop, not Claude Code.
+- Formats: Markdown, JSON, plain text, XML, PNG. **No PDF.** 3 free exports; Pro $3.99/mo or $26.99/yr.
+- Never name competing extensions. Anthropic surfaces (claude.ai, Desktop, Code, Export data) may be named as contrast, not as a replacement exporter to install.
+- Do not invent clients, awards, or features.
+
+## Required page chrome (inside `article.band.prose`)
+
+1. Date: `Updated <time datetime="2026-09">September 2026</time> · Extension 1.13.0`
+2. One H1: keyword near the start + a benefit (How to / Why / vs).
+3. `.lead` = 40–60 word standalone answer to the page question.
+4. Trust badge (not a link) immediately after `.lead`:
+   - Title: `Download Claude conversations — rated 5.0 on the Chrome Web Store`
+   - Sub: `2026 — free Chrome extension to save claude.ai chats as Markdown, JSON, text, XML, or PNG`
+5. `nav.toc` with links to every H2 in the article (not footer).
+6. `.expert-quote` from “The Download Claude conversations team” (“we”), first person, one real product fact.
+7. Keep existing site header, footer, GA, and `section.final-cta`.
+
+## Headings and keywords
+
+- H1 → H2 → H3 only. No H4–H6.
+- Every H2/H3 contains a search keyword. No “Introduction”, “Overview”, bare “FAQ”.
+- FAQ H2 example: `FAQ: how to download a Claude chat`
+- Phrase H2s as a question or the reader’s problem. H2/H3 ≤ 60 characters.
+- Keyword in title, H1, ≥2 H2s, and the first 100–150 words. Do not split the keyword with punctuation.
+
+## Density (BLUF)
+
+- Each H2 opens with 40–50 words that answer that H2 alone.
+- Paragraphs ≤ ~70 words. One H2 = one question.
+- Every paragraph has a fact (step, format, price, path, or limit). Cut filler.
+- Name entities in each paragraph (`claude.ai`, `Export All`, `Markdown`) — avoid “it/this/above”.
+- Visual variety: table, `ol`, or `.callout` about every 500 words.
+
+## Length
+
+- How-to / cluster guides: **≥ 2,000 words** in `<article>` (not footer).
+- Format pages: **≥ 800 words**.
+- Depth via steps, tables, glossary, 8–12 FAQ items — never repetition.
+
+## Links and schema
+
+- 1–2 organic links to chat-downloader.com pages in the body; more in comparisons.
+- FAQ JSON-LD must match on-page FAQ. BreadcrumbList required. `author` = Organization Chat Downloader.
+- Last updated: month + year in the page and `dateModified` if Article schema is present.
+
+## HTML classes
+
+Use existing CSS: `.trust-badge`, `.toc`, `.expert-quote`, `.callout.callout-tip|.callout-warn|.callout-info`. Do not introduce Tilda/wmt classes.
