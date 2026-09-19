@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Claude Chat Downloader — ייצוא צ'אטים של Claude ב-Chrome</title>
+  <meta name="description" content="ל-Claude.ai אין כפתור הורדה. שמרו צ'אטים כ-Markdown, JSON, טקסט, XML או PNG. תוסף Chrome חינמי — שיחה אחת או כל ההיסטוריה. 3 ייצואים חינם.">
+  <link rel="canonical" href="https://chat-downloader.com/he/">
+  <!-- i18n:head -->
+  <link rel="alternate" hreflang="en" href="https://chat-downloader.com/">
+  <link rel="alternate" hreflang="de" href="https://chat-downloader.com/de/">
+  <link rel="alternate" hreflang="fr" href="https://chat-downloader.com/fr/">
+  <link rel="alternate" hreflang="nl" href="https://chat-downloader.com/nl/">
+  <link rel="alternate" hreflang="sv" href="https://chat-downloader.com/sv/">
+  <link rel="alternate" hreflang="nb" href="https://chat-downloader.com/nb/">
+  <link rel="alternate" hreflang="da" href="https://chat-downloader.com/da/">
+  <link rel="alternate" hreflang="fi" href="https://chat-downloader.com/fi/">
+  <link rel="alternate" hreflang="ja" href="https://chat-downloader.com/ja/">
+  <link rel="alternate" hreflang="ko" href="https://chat-downloader.com/ko/">
+  <link rel="alternate" hreflang="he" href="https://chat-downloader.com/he/">
+  <link rel="alternate" hreflang="ar" href="https://chat-downloader.com/ar/">
+  <link rel="alternate" hreflang="x-default" href="https://chat-downloader.com/">
+  <meta property="og:locale" content="he_IL">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="sv_SE">
+  <meta property="og:locale:alternate" content="nb_NO">
+  <meta property="og:locale:alternate" content="da_DK">
+  <meta property="og:locale:alternate" content="fi_FI">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <meta property="og:locale:alternate" content="ar_AE">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@400;500;700&amp;display=swap" rel="stylesheet">
+  <!-- /i18n:head -->
+  <meta property="og:title" content="Claude Chat Downloader — ייצוא צ'אטים של Claude ב-Chrome">
+  <meta property="og:description" content="ל-Claude.ai אין כפתור הורדה. שמרו צ'אטים כ-Markdown, JSON, טקסט, XML או PNG. תוסף Chrome חינמי — שיחה אחת או כל ההיסטוריה. 3 ייצואים חינם.">
+  <meta property="og:url" content="https://chat-downloader.com/he/">
+  <meta property="og:image" content="https://chat-downloader.com/assets/widget-guide.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chat Downloader">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Claude Chat Downloader — ייצוא צ'אטים של Claude ב-Chrome">
+  <meta name="twitter:description" content="ל-Claude.ai אין כפתור הורדה. שמרו צ'אטים כ-Markdown, JSON, טקסט, XML או PNG. תוסף Chrome חינמי — שיחה אחת או כל ההיסטוריה. 3 ייצואים חינם.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME1YXGZKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GME1YXGZKR');
+  </script>
+  
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"אפשר להוריד שיחה של Claude מ-claude.ai?","acceptedAnswer":{"@type":"Answer","text":"לא עם כפתור מובנה. התקינו את Download Claude conversations מ-Chrome Web Store, פתחו את הצ'אט וייצאו קובץ."}},{"@type":"Question","name":"זה אותו דבר כמו Export data של Claude?","acceptedAnswer":{"@type":"Answer","text":"לא. ב-Settings → Privacy → Export data (התוויות עשויות להופיע בעברית אם claude.ai מוגדר לעברית) Anthropic שולחת במייל קובץ ZIP של כל החשבון (JSON). התוסף הזה מוריד את הצ'אט הנוכחי — או בחירה מרוכזת — כקבצים קריאים, מיד."}},{"@type":"Question","name":"אתם שומרים את הצ'אטים שלי מ-Claude?","acceptedAnswer":{"@type":"Answer","text":"הייצוא מתבצע בדפדפן. אנחנו לא מקבלים את תוכן השיחות. אנחנו שומרים רק כתובת מייל שאומתה על ידי Google, כדי לספור ייצואים חינמיים ולשייך מנוי Pro."}},{"@type":"Question","name":"מה ההבדל בין \"ייצוא צ'אט של Claude\" לבין \"claude export chat\"?","acceptedAnswer":{"@type":"Answer","text":"אותה משימה, שתי דרכים לכתוב אותה — בעברית או באנגלית, כפי שרוב המשתמשים מחפשים. בכל מקרה משתמשים בכפתור הכתום ב-claude.ai."}},{"@type":"Question","name":"אפשר לייצא ל-PDF?","acceptedAnswer":{"@type":"Answer","text":"לא. הפורמטים הנוכחיים הם Markdown, JSON, טקסט פשוט, XML ו-PNG. כדי לקבל PDF חזותי מהיר, הדפיסו את הדף (Ctrl/Cmd+P → Save as PDF), או ייצאו Markdown והמירו אותו."}},{"@type":"Question","name":"זה עובד עם Claude Pro / Team?","acceptedAnswer":{"@type":"Answer","text":"כן, אם אפשר לפתוח את השיחה בדפדפן ב-claude.ai. אנחנו לא Anthropic."}},{"@type":"Question","name":"איך שומרים שיחה של Claude?","acceptedAnswer":{"@type":"Answer","text":"התקינו את תוסף Chrome החינמי, פתחו את הצ'אט ב-claude.ai, לחצו על הכפתור הכתום ובחרו פורמט."}},{"@type":"Question","name":"זה מוריד גם שיחות של Claude Code?","acceptedAnswer":{"@type":"Answer","text":"לא. התוסף עובד רק ב-claude.ai בדפדפן Chrome. סשנים של Claude Code משתמשים ב-/export או בקובצי JSONL בדיסק."}},{"@type":"Question","name":"האם Download Claude conversations קשור ל-Anthropic?","acceptedAnswer":{"@type":"Answer","text":"לא. Claude הוא סימן מסחרי של Anthropic, PBC. זהו תוסף Chrome עצמאי, לא מוצר רשמי של Anthropic."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Chat Downloader","alternateName":["Claude Chat Downloader","Claude Conversation Downloader","chatdownloader"],"url":"https://chat-downloader.com/he/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Chat Downloader","url":"https://chat-downloader.com","logo":"https://chat-downloader.com/assets/apple-touch-icon.png","sameAs":["https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Claude Chat Downloader","alternateName":["Download Claude conversations","Claude Conversation Downloader"],"applicationCategory":"BrowserApplication","operatingSystem":"Chrome","url":"https://chat-downloader.com","downloadUrl":"https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","bestRating":"5","worstRating":"1"},"description":"ל-Claude.ai אין כפתור הורדה. שמרו צ'אטים כ-Markdown, JSON, טקסט, XML או PNG. תוסף Chrome חינמי — שיחה אחת או כל ההיסטוריה. 3 ייצואים חינם."}</script>
+</head>
+<body class="home">
+<a class="skip" href="#main">דילוג לתוכן</a>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a class="logo" href="/he/">
+        <img src="/assets/icon.svg" alt="">
+        <span>Download Claude conversations</span>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="/he/how-to-download-claude-chat/">איך להוריד</a><a href="/he/how-to-export-claude-chat/">ייצוא</a><a href="/he/bulk/">ייצוא מרוכז</a><a href="/he/formats/">פורמטים</a><a href="/he/#faq">שאלות נפוצות</a>
+        <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=he-home" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> הוספה ל-Chrome</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <!-- i18n:switch --><details class="lang-switch"><summary aria-label="שפה">he</summary><ul><li><a href="/" hreflang="en" lang="en">English</a></li><li><a href="/de/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/" hreflang="fr" lang="fr">Français</a></li><li><a href="/nl/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/sv/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="/nb/" hreflang="nb" lang="nb">Norsk</a></li><li><a href="/da/" hreflang="da" lang="da">Dansk</a></li><li><a href="/fi/" hreflang="fi" lang="fi">Suomi</a></li><li><a href="/ja/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/ko/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/he/" hreflang="he" lang="he" aria-current="true">עברית</a></li><li><a href="/ar/" hreflang="ar" lang="ar">العربية</a></li></ul></details><!-- /i18n:switch -->
+      <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=he-home" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> הוספה ל-Chrome</a>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="תפריט">☰</button>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="landing">
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <h1>Claude Chat Downloader — ייצוא צ'אטים מ-Claude.ai</h1>
+      <p class="hero-sub">שמירת שיחות Claude כ-Markdown, JSON, טקסט, XML או PNG</p>
+      <p class="hero-desc">ל-Claude.ai אין כפתור מובנה להורדת צ'אט בודד. <strong>Download Claude conversations</strong> — תוסף Chrome חינמי שמוכר גם בשמות <strong>Claude Chat Downloader</strong> ו-<strong>Claude Conversation Downloader</strong> — שומר את הצ'אט הפתוח, או <a href="/he/bulk/">את כל ההיסטוריה שלכם</a>, כ-Markdown, JSON, טקסט פשוט, XML או PNG. רבים מחפשים אותו באנגלית: "claude export chat". הקבצים נבנים בדפדפן שלכם. <a href="/he/how-to-download-claude-chat/">איך להוריד צ'אט של Claude</a>. עובדים בטרמינל? זה <a href="/he/claude-code-export/">ייצוא Claude Code</a>, לא התוסף הזה.</p>
+      <div class="store-grid">
+        <a class="store-card" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=he-home" target="_blank" rel="noopener noreferrer">
+          <span class="store-logo" aria-hidden="true"><img src="/assets/images/chrome.svg" alt="" width="40" height="40"></span>
+          <span class="store-meta">
+            <strong>תוסף Chrome</strong>
+            <span class="store-stats">
+              <span class="store-rating"><b>5.0</b> <span class="stars" aria-label="5 כוכבים">★★★★★</span></span>
+              <span class="store-free">חינם</span>
+            </span>
+          </span>
+        </a>
+      </div>
+      <p class="platforms-kicker">עובד ב-Claude.ai</p>
+      <ul class="platforms-list">
+        <li title="ייצוא שיחות Claude">
+          <img src="/assets/images/claude.svg" alt="" width="22" height="22">
+          <span>Claude</span>
+        </li>
+      </ul>
+      <p class="platforms-note">ייצוא השיחה שכבר פתוחה אצלכם ב-Chrome — שיחה אחת או היסטוריה שלמה בבת אחת.</p>
+    </div>
+  </section>
+
+  <section class="features-block" id="features">
+    <div class="wrap">
+      <h2 class="section-title">6 יכולות מרכזיות להורדת צ'אטים של Claude</h2>
+      <article class="feature-row">
+        <div class="feature-copy">
+          <span class="num" aria-hidden="true">01</span>
+          <h3>ייצוא Markdown, JSON, XML, טקסט ו-PNG</h3>
+          <p>הורדת צ'אט של Claude כקובץ אמיתי — לא צילום מסך של דף האינטרנט. Markdown לפתקים, JSON למפתחים, טקסט פשוט לארכיון הבסיסי ביותר, XML להעברה בין מערכות, PNG לתמונת מצב חזותית.</p>
+        </div>
+        <div class="feature-media">
+          <img src="/assets/widget-guide.png" alt="כפתור הורדה כתום מימין לתיבת ההודעה ב-Claude.ai">
+        </div>
+      </article>
+      <article class="feature-row reverse">
+        <div class="feature-copy">
+          <span class="num" aria-hidden="true">02</span>
+          <h3>הורדה מרוכזת של צ'אטים מ-Claude</h3>
+          <p>פתחו את <strong>View and Download All Conversations</strong> (הצגה והורדה של כל השיחות) כדי לראות את ההיסטוריה, לחפש לפי שם, לסנן לפי פרויקט וללחוץ על <strong>Export All</strong> (ייצוא הכול). מעבר אחד במקום לשונית אחרי לשונית.</p>
+        </div>
+        <div class="feature-media">
+          <img src="/assets/browse-guide.jpg" alt="דף רשימה של שיחות Claude עם חיפוש ו-Export All">
+        </div>
+      </article>
+      <article class="feature-row">
+        <div class="feature-copy">
+          <span class="num" aria-hidden="true">03</span>
+          <h3>שמירה על קוד, טבלאות וארטיפקטים</h3>
+          <p>מנוע הייצוא מנתח את עץ ההודעות, כך שבלוקי קוד שומרים על ההזחה, טבלאות נשארות טבלאות, וארטיפקטים יכולים להופיע בפריסת "Original",‏ "Inline",‏ "Nested" או "Flat" (מקורית, משולבת, מקוננת או שטוחה).</p>
+        </div>
+        <div class="feature-media">
+          <img src="/assets/widget-guide.png" alt="כלי ייצוא בתוך הדף בשיחת Claude">
+        </div>
+      </article>
+      <article class="feature-row reverse">
+        <div class="feature-copy">
+          <span class="num" aria-hidden="true">04</span>
+          <h3>בלוקי חשיבה ומטא-דאטה לבחירה</h3>
+          <p>כללו את החשיבה המורחבת של Claude כשצריך תיעוד מלא, או דלגו עליה. כותרות, חותמות זמן ומטא-דאטה של המודל יכולים להיכלל באותו קובץ.</p>
+        </div>
+        <div class="feature-media">
+          <img src="/assets/pin-guide.png" alt="הצמדת התוסף כדי שכפתור ההורדה יהיה במרחק לחיצה אחת">
+        </div>
+      </article>
+      <article class="feature-row">
+        <div class="feature-copy">
+          <span class="num" aria-hidden="true">05</span>
+          <h3>חיפוש וסינון לפני הייצוא</h3>
+          <p>צמצמו את הרשימה לצ'אטים חדשים, לצ'אטים שכבר יוצאו או לפרויקט Claude מסוים, ואז ייצאו רק את מה שבחרתם.</p>
+        </div>
+        <div class="feature-media">
+          <img src="/assets/browse-guide.jpg" alt="רשימת שיחות עם חיפוש ומסננים">
+        </div>
+      </article>
+      <article class="feature-row reverse">
+        <div class="feature-copy">
+          <span class="num" aria-hidden="true">06</span>
+          <h3>נבנה מקומית בדפדפן שלכם</h3>
+          <p>תוכן השיחה מורכב במכשיר שלכם ונשמר לדיסק. ההתחברות עם Google משמשת למכסת הייצואים החינמיים — לא להעלאת טקסט הצ'אט לשרתים שלנו.</p>
+        </div>
+        <div class="feature-media">
+          <img src="/assets/widget-guide.png" alt="חלונית ייצוא לצד תיבת הכתיבה של Claude">
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="value-band">
+    <div class="wrap">
+      <h2>ה-Claude chat downloader ששומר על העיצוב</h2>
+      <div class="value-grid">
+        <div class="value-media">
+          <img id="value-shot" src="/assets/widget-guide.png" alt="Download Claude conversations ב-claude.ai">
+        </div>
+        <ul class="checks" id="value-checks">
+          <li class="is-active" data-shot="/assets/widget-guide.png" data-alt="תוסף אחד ל-claude.ai">
+            <span class="check-icon" aria-hidden="true">✓</span>
+            <span>
+              <strong>תוסף אחד ל-claude.ai</strong>
+              <span>מתקינים פעם אחת ומייצאים את הצ'אט הפתוח או היסטוריה שלמה.</span>
+            </span>
+          </li>
+          <li data-shot="/assets/browse-guide.jpg" data-alt="נאמנות לפורמט בקבצים המיוצאים">
+            <span class="check-icon" aria-hidden="true">✓</span>
+            <span>
+              <strong>נאמנות לפורמט</strong>
+              <span>קוד, טבלאות וארטיפקטים שורדים את הייצוא.</span>
+            </span>
+          </li>
+          <li data-shot="/assets/pin-guide.png" data-alt="הצ'אטים נשארים במכשיר שלכם">
+            <span class="check-icon" aria-hidden="true">✓</span>
+            <span>
+              <strong>שום דבר לא נשלח כגיבוי צ'אט</strong>
+              <span>הקבצים נוצרים מקומית ב-Chrome.</span>
+            </span>
+          </li>
+          <li data-shot="/assets/widget-guide.png" data-alt="חמישה פורמטים לייצוא">
+            <span class="check-icon" aria-hidden="true">✓</span>
+            <span>
+              <strong>חמישה פורמטים</strong>
+              <span>Markdown, JSON, טקסט פשוט, XML, PNG. לא PDF.</span>
+            </span>
+          </li>
+          <li data-shot="/assets/browse-guide.jpg" data-alt="שיחות Claude ארוכות">
+            <span class="check-icon" aria-hidden="true">✓</span>
+            <span>
+              <strong>שיחות ארוכות</strong>
+              <span>בנוי לשיחות שלמות, לא להודעה בודדת שהועתקה.</span>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="social">
+    <div class="wrap">
+      <h2>דירוג 5 כוכבים ב-Chrome Web Store</h2>
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-value-wrap">
+            <div class="stat-num">5.0</div>
+            <div class="stat-stars" aria-hidden="true">★★★★★</div>
+          </div>
+          <div class="stat-label">דירוג ב-Chrome Web Store</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">5★</div>
+          <div class="stat-label">דף רשמי ב-Chrome Web Store</div>
+        </div>
+      </div>
+      <p class="social-cta-line"><a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=he-home" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> לדף התוסף ב-Chrome Web Store</a></p>
+    </div>
+  </section>
+
+  <section class="faq-band" id="faq">
+    <div class="wrap narrow">
+      <h2 class="section-title">שאלות נפוצות</h2>
+      <div class="faq-list">
+        <details open>
+          <summary>אפשר להוריד שיחה של Claude מ-claude.ai?</summary>
+          <p>לא עם כפתור מובנה. התקינו את <strong>Download Claude conversations</strong> מ-<a href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=he-home" target="_blank" rel="noopener noreferrer">Chrome Web Store</a>, פתחו את הצ'אט וייצאו קובץ.</p>
+        </details>
+        <details>
+          <summary>זה אותו דבר כמו Export data של Claude?</summary>
+          <p>לא. ב-Settings → Privacy → Export data (התוויות עשויות להופיע בעברית אם claude.ai מוגדר לעברית) Anthropic שולחת במייל קובץ ZIP של כל החשבון (JSON). התוסף הזה מוריד את הצ'אט הנוכחי — או בחירה מרוכזת — כקבצים קריאים, מיד.</p>
+        </details>
+        <details>
+          <summary>אתם שומרים את הצ'אטים שלי מ-Claude?</summary>
+          <p>הייצוא מתבצע בדפדפן. אנחנו לא מקבלים את תוכן השיחות. אנחנו שומרים רק כתובת מייל שאומתה על ידי Google, כדי לספור ייצואים חינמיים ולשייך מנוי Pro.</p>
+        </details>
+        <details>
+          <summary>מה ההבדל בין "ייצוא צ'אט של Claude" לבין "claude export chat"?</summary>
+          <p>אותה משימה, שתי דרכים לכתוב אותה — בעברית או באנגלית, כפי שרוב המשתמשים מחפשים. בכל מקרה משתמשים בכפתור הכתום ב-claude.ai.</p>
+        </details>
+        <details>
+          <summary>אפשר לייצא ל-PDF?</summary>
+          <p>לא. הפורמטים הנוכחיים הם Markdown, JSON, טקסט פשוט, XML ו-PNG. כדי לקבל PDF חזותי מהיר, הדפיסו את הדף (Ctrl/Cmd+P → Save as PDF), או ייצאו Markdown והמירו אותו. מדריך מלא: <a href="/he/download-claude-chat-as-pdf/">הורדת צ'אט של Claude כ-PDF</a>.</p>
+        </details>
+        <details>
+          <summary>זה עובד עם Claude Pro / Team?</summary>
+          <p>כן, אם אפשר לפתוח את השיחה בדפדפן ב-claude.ai. אנחנו לא Anthropic.</p>
+        </details>
+        <details>
+          <summary>איך שומרים שיחה של Claude?</summary>
+          <p>התקינו את תוסף Chrome החינמי, פתחו את הצ'אט ב-claude.ai, לחצו על הכפתור הכתום ובחרו פורמט. כך שומרים שיחה של Claude כקובץ אמיתי. הדפסה ל-PDF וקובץ ה-ZIP של החשבון מ-Anthropic הן שתי האפשרויות האחרות — השוואה במדריך <a href="/he/how-to-download-claude-chat/">איך להוריד צ'אט של Claude</a>.</p>
+        </details>
+        <details>
+          <summary>זה מוריד גם שיחות של Claude Code?</summary>
+          <p>לא. התוסף עובד רק ב-claude.ai בדפדפן Chrome. סשנים של Claude Code משתמשים ב-<code>/export</code> או בקובצי JSONL בדיסק — ראו <a href="/he/claude-code-export/">ייצוא Claude Code</a>.</p>
+        </details>
+        <details>
+          <summary>האם Download Claude conversations קשור ל-Anthropic?</summary>
+          <p>לא. Claude הוא סימן מסחרי של Anthropic, PBC. זהו תוסף Chrome עצמאי, לא מוצר רשמי של Anthropic.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="final-cta">
+    <div class="wrap">
+      <div class="final-cta-panel">
+        <p class="final-kicker">Download Claude conversations</p>
+        <h2>התקינו את התוסף והורידו צ'אט של Claude תוך שניות</h2>
+        <p>הפכו שיחות Claude חשובות ל-Markdown, JSON, טקסט, XML או PNG — מקומית, מתוך Chrome.</p>
+        <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=he-home" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="22" height="22"> הוספה ל-Chrome</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="logo" href="/he/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
+      <p class="legal-note">תוסף Chrome להורדת צ&#x27;אטים מ-Claude.ai כ-Markdown, JSON, טקסט פשוט, XML או PNG. דירוג 5.0 ב-Chrome Web Store.</p>
+    </div>
+    <div>
+      <h2>התקנה</h2>
+      <a class="install-link" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=he-footer" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> תוסף Chrome</a>
+    </div>
+    <div>
+      <h2>מוצר</h2>
+      <a href="/he/features/">יכולות</a>
+      <a href="/he/formats/">פורמטים</a>
+      <a href="/he/bulk/">הורדה מרוכזת</a>
+      <a href="/he/how-it-works/">איך זה עובד</a>
+    </div>
+    <div>
+      <h2>מדריכים</h2>
+      <a href="/he/how-to-download-claude-chat/">איך להוריד צ&#x27;אט של Claude</a>
+      <a href="/he/how-to-export-claude-chat/">איך לייצא צ&#x27;אט של Claude</a>
+      <a href="/he/export-claude-chat/">ייצוא צ&#x27;אט של Claude</a>
+      <a href="/he/claude-conversation-extractor/">חילוץ שיחות Claude</a>
+      <a href="/he/claude-code-export/">ייצוא Claude Code</a>
+      <a href="/he/download-claude-chat-as-pdf/">הדפסה / PDF</a>
+      <a href="/he/export-claude-desktop-chat/">ייצוא מ-Claude Desktop</a>
+      <a href="/he/claude-export-conversation/">ייצוא שיחה מ-Claude</a>
+      <a href="/he/how-to-save-claude-conversation/">איך לשמור שיחה של Claude</a>
+      <a href="/he/download-claude-conversation/">הורדת שיחה של Claude</a>
+    </div>
+    <div>
+      <h2>משפטי</h2>
+      <a href="/he/about/">אודות</a>
+      <a href="/he/about/#contact">יצירת קשר</a>
+      <a href="/privacy/" hreflang="en">פרטיות (באנגלית)</a>
+      <a href="/terms/" hreflang="en">תנאים (באנגלית)</a>
+      <a href="/refund/" hreflang="en">החזרים (באנגלית)</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Download Claude conversations. כל הזכויות שמורות.</div>
+    <div>
+      <a href="/privacy/" hreflang="en">מדיניות פרטיות (באנגלית)</a>
+      <a href="/terms/" hreflang="en">תנאי שימוש (באנגלית)</a>
+      <a href="/refund/" hreflang="en">החזרים (באנגלית)</a>
+    </div>
+  </div>
+  <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/" hreflang="en" lang="en">English</a> <a href="/de/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/" hreflang="fr" lang="fr">Français</a> <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/" hreflang="da" lang="da">Dansk</a> <a href="/fi/" hreflang="fi" lang="fi">Suomi</a> <a href="/ja/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/" hreflang="ko" lang="ko">한국어</a> <a href="/he/" hreflang="he" lang="he">עברית</a> <a href="/ar/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
+  <p class="disclaimer">הצ&#x27;אטים מעובדים בדפדפן שלכם · התחברות עם Google לצורך מכסה · אין קשר ל-Anthropic, PBC. ‏Claude הוא סימן מסחרי של Anthropic. תוסף Chrome עצמאי — לא מוצר רשמי של Anthropic. תמיכה: <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Claude 채팅 내보내기 – 파일로 저장</title>
+  <meta name="description" content="Claude 내보내기 확장 프로그램으로 claude.ai 채팅을 Markdown, JSON, 텍스트, XML, PNG로 저장. 일괄도 가능.">
+  <link rel="canonical" href="https://chat-downloader.com/ko/export-claude-chat/">
+  <!-- i18n:head -->
+  <link rel="alternate" hreflang="en" href="https://chat-downloader.com/export-claude-chat/">
+  <link rel="alternate" hreflang="de" href="https://chat-downloader.com/de/claude-chat-exportieren/">
+  <link rel="alternate" hreflang="fr" href="https://chat-downloader.com/fr/exporter-conversation-claude/">
+  <link rel="alternate" hreflang="nl" href="https://chat-downloader.com/nl/claude-chat-exporteren/">
+  <link rel="alternate" hreflang="sv" href="https://chat-downloader.com/sv/exportera-claude-chatt/">
+  <link rel="alternate" hreflang="nb" href="https://chat-downloader.com/nb/eksportere-claude-chat/">
+  <link rel="alternate" hreflang="da" href="https://chat-downloader.com/da/eksporter-claude-chat/">
+  <link rel="alternate" hreflang="fi" href="https://chat-downloader.com/fi/vie-claude-chat/">
+  <link rel="alternate" hreflang="ja" href="https://chat-downloader.com/ja/export-claude-chat/">
+  <link rel="alternate" hreflang="ko" href="https://chat-downloader.com/ko/export-claude-chat/">
+  <link rel="alternate" hreflang="he" href="https://chat-downloader.com/he/export-claude-chat/">
+  <link rel="alternate" hreflang="ar" href="https://chat-downloader.com/ar/export-claude-chat/">
+  <link rel="alternate" hreflang="x-default" href="https://chat-downloader.com/export-claude-chat/">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="sv_SE">
+  <meta property="og:locale:alternate" content="nb_NO">
+  <meta property="og:locale:alternate" content="da_DK">
+  <meta property="og:locale:alternate" content="fi_FI">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="he_IL">
+  <meta property="og:locale:alternate" content="ar_AE">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&amp;display=swap" rel="stylesheet">
+  <!-- /i18n:head -->
+  <meta property="og:title" content="Claude 채팅 내보내기 – 파일로 저장">
+  <meta property="og:description" content="Claude 내보내기 확장 프로그램으로 claude.ai 채팅을 Markdown, JSON, 텍스트, XML, PNG로 저장. 일괄도 가능.">
+  <meta property="og:url" content="https://chat-downloader.com/ko/export-claude-chat/">
+  <meta property="og:image" content="https://chat-downloader.com/assets/widget-guide.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chat Downloader">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Claude 채팅 내보내기 – 파일로 저장">
+  <meta name="twitter:description" content="Claude 내보내기 확장 프로그램으로 claude.ai 채팅을 Markdown, JSON, 텍스트, XML, PNG로 저장. 일괄도 가능.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME1YXGZKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GME1YXGZKR');
+  </script>
+  
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"이 사이트에서 말하는 ‘Claude 채팅 내보내기’란?","acceptedAnswer":{"@type":"Answer","text":"Download Claude conversations로 claude.ai 대화를 파일로 저장하는 것입니다. 주황색 버튼, 형식 선택, Export. 영어로 “claude export chat”이라고 부르는 것과 같은 작업입니다. Anthropic이 이메일로 보내는 ZIP도, Claude Code의 /export도 아닙니다."}},{"@type":"Question","name":"Claude 내보내기 확장 프로그램은 Export data와 같은 것인가요?","acceptedAnswer":{"@type":"Answer","text":"아니요. Settings → Privacy → Export data는 계정 전체를 담은 JSON ZIP을 이메일로 보내 줍니다. Claude 내보내기 확장 프로그램은 열어 둔 채팅이나 Export All로 선택한 채팅을 Chrome에서 즉시 Markdown, JSON, 텍스트, XML, PNG로 만듭니다."}},{"@type":"Question","name":"Claude 채팅을 PDF로 내보낼 수 있나요?","acceptedAnswer":{"@type":"Answer","text":"이 Claude 내보내기 확장 프로그램으로는 안 됩니다. 지원 형식은 Markdown, JSON, 일반 텍스트, XML, PNG입니다. PDF 같은 스냅샷이 필요하면 Chrome에서 claude.ai 페이지를 인쇄하세요. PNG는 이미지이며 PDF가 아닙니다."}},{"@type":"Question","name":"Claude 채팅을 한 번 내보내는 데도 Pro가 필요한가요?","acceptedAnswer":{"@type":"Answer","text":"아니요. Google로 로그인한 모든 계정에서 처음 3회 내보내기는 형식과 관계없이 무료입니다. 더 많은 단일 파일이나 일괄 파일이 필요하면 월 $3.99 또는 연 $26.99의 Pro가 제한을 없애 줍니다."}},{"@type":"Question","name":"Claude 채팅 내보내기는 claude.ai의 모든 요금제에서 작동하나요?","acceptedAnswer":{"@type":"Answer","text":"네. Chrome에서 대화를 열 수 있다면 claude.ai의 Free, Pro, Team, Enterprise 요금제 모두에서 작동합니다. Claude 내보내기 확장 프로그램을 쓰는 데 Anthropic 유료 요금제는 필요 없습니다."}},{"@type":"Question","name":"이 Claude 내보내기 확장 프로그램은 Claude Code용인가요?","acceptedAnswer":{"@type":"Answer","text":"아니요. Download Claude conversations는 Chrome의 claude.ai에서 실행됩니다. Claude Code는 /export 명령이나 디스크의 JSONL을 씁니다. Claude Code 내보내기 가이드를 참고하세요."}},{"@type":"Question","name":"Claude Desktop에서 Claude 채팅을 내보낼 수 있나요?","acceptedAnswer":{"@type":"Answer","text":"이 Chrome 확장 프로그램으로는 안 됩니다. 동기화된다면 같은 대화를 claude.ai에서 여세요. 아니면 복사해 붙여넣거나 공식 Export data를 쓰세요. Desktop에는 주황색 버튼이 나타나지 않습니다."}},{"@type":"Question","name":"Claude 내보내기 확장 프로그램의 무료 내보내기는 몇 회인가요?","acceptedAnswer":{"@type":"Answer","text":"계정당 3회이며, 주황색 버튼과 Export All(모두 내보내기)이 함께 씁니다. 재설치해도 횟수는 초기화되지 않습니다. Pro는 Google 로그인으로 복원됩니다."}},{"@type":"Question","name":"Claude 채팅을 내보내는 주황색 버튼은 어디에 있나요?","acceptedAnswer":{"@type":"Answer","text":"Download Claude conversations를 설치하고 새로고침한 뒤, claude.ai 대화 URL의 메시지 입력창 오른쪽에 있습니다. 빈 시작 화면이나 Desktop 앱에서는 나타나지 않습니다."}},{"@type":"Question","name":"Claude 채팅을 내보내면 대화가 업로드되나요?","acceptedAnswer":{"@type":"Answer","text":"아니요. 파일은 브라우저 안에서 만들어져 Chrome의 다운로드 API로 전달됩니다. 저희 워커가 보는 것은 구독 상태와 Google로 인증된 이메일이며, 채팅 본문은 보지 않습니다. 자세한 내용은 작동 방식 페이지에 있습니다."}},{"@type":"Question","name":"Claude 내보내기 확장 프로그램은 어떤 형식을 만드나요?","acceptedAnswer":{"@type":"Answer","text":"Markdown, JSON, 일반 텍스트, XML, PNG입니다. 채팅 하나에도, Export All에도 같은 다섯 가지 형식입니다. 버전 1.13.0에는 PDF, Word, Notion, Google Docs 내보내기가 없습니다."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Claude Chat Downloader","alternateName":["Download Claude conversations","Claude Conversation Downloader"],"applicationCategory":"BrowserApplication","operatingSystem":"Chrome","url":"https://chat-downloader.com","downloadUrl":"https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","bestRating":"5","worstRating":"1"},"description":"Claude 내보내기 확장 프로그램으로 claude.ai 채팅을 Markdown, JSON, 텍스트, XML, PNG로 저장. 일괄도 가능."}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"홈","item":"https://chat-downloader.com/ko/"},{"@type":"ListItem","position":2,"name":"Claude 채팅 내보내기","item":"https://chat-downloader.com/ko/export-claude-chat/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a class="logo" href="/ko/">
+        <img src="/assets/icon.svg" alt="">
+        <span>Download Claude conversations</span>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="/ko/how-to-download-claude-chat/">다운로드 방법</a><a href="/ko/how-to-export-claude-chat/">내보내기</a><a href="/ko/bulk/">일괄 내보내기</a><a href="/ko/formats/">형식</a><a href="/ko/#faq">FAQ</a>
+        <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=ko-export-claude-chat" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Chrome에 추가</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <!-- i18n:switch --><details class="lang-switch"><summary aria-label="언어">ko</summary><ul><li><a href="/export-claude-chat/" hreflang="en" lang="en">English</a></li><li><a href="/de/claude-chat-exportieren/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/exporter-conversation-claude/" hreflang="fr" lang="fr">Français</a></li><li><a href="/nl/claude-chat-exporteren/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/sv/exportera-claude-chatt/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="/nb/eksportere-claude-chat/" hreflang="nb" lang="nb">Norsk</a></li><li><a href="/da/eksporter-claude-chat/" hreflang="da" lang="da">Dansk</a></li><li><a href="/fi/vie-claude-chat/" hreflang="fi" lang="fi">Suomi</a></li><li><a href="/ja/export-claude-chat/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/ko/export-claude-chat/" hreflang="ko" lang="ko" aria-current="true">한국어</a></li><li><a href="/he/export-claude-chat/" hreflang="he" lang="he">עברית</a></li><li><a href="/ar/export-claude-chat/" hreflang="ar" lang="ar">العربية</a></li></ul></details><!-- /i18n:switch -->
+      <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=ko-export-claude-chat" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Chrome에 추가</a>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="메뉴">☰</button>
+    </div>
+  </div>
+</header>
+<nav class="crumbs" aria-label="이동 경로"><a href="/ko/">홈</a> / Claude 채팅 내보내기</nav>
+<main id="main">
+<article class="band prose">
+<p class="article-meta"><time datetime="2026-09">2026년 9월</time> 업데이트 · 확장 프로그램 1.13.0</p>
+<h1 class="page-h1">Claude 채팅을 읽기 쉬운 파일로 내보내기</h1>
+<p class="lead">claude.ai에서 Claude(클로드) 채팅을 내보내려면 Download Claude conversations를 설치하고, 대화를 연 다음, 주황색 버튼을 누르고 Markdown, JSON, 텍스트, XML, PNG 중 하나를 골라 “Export”(내보내기)를 누르세요. 이 Claude 내보내기 확장 프로그램은 파일을 사용자 컴퓨터에 씁니다. Claude Desktop이나 Claude Code에서는 작동하지 않습니다. 3회까지 무료이고, Pro는 월 $3.99 또는 연 $26.99입니다.</p>
+<aside class="trust-badge" aria-label="Chrome Web Store 평점">
+  <span class="trophy" aria-hidden="true">🏆</span>
+  <div>
+    <strong>Download Claude conversations — Chrome Web Store 평점 5.0</strong>
+    <span>2026 — claude.ai 채팅을 Markdown, JSON, 텍스트, XML, PNG로 저장하는 무료 Chrome 확장 프로그램</span>
+  </div>
+</aside>
+<nav class="toc" aria-label="이 페이지의 내용">
+  <p>이 페이지의 내용</p>
+  <ol>
+    <li><a href="#export-one">claude.ai에서 Claude 채팅을 어떻게 내보내나요?</a></li>
+    <li><a href="#what-extension-does">Claude 내보내기 확장 프로그램은 실제로 무엇을 하나요?</a></li>
+    <li><a href="#which-format">Claude 채팅을 어떤 형식으로 내보내야 하나요?</a></li>
+    <li><a href="#export-bulk">Export All로 Claude 채팅을 일괄 내보낼 수 있나요?</a></li>
+    <li><a href="#desktop-code">Desktop이나 Claude Code에서도 채팅을 내보낼 수 있나요?</a></li>
+    <li><a href="#vs-official">Claude 채팅 내보내기와 Anthropic Export data의 차이는?</a></li>
+    <li><a href="#cost">Claude 내보내기 확장 프로그램의 비용은?</a></li>
+    <li><a href="#faq">FAQ: Claude 채팅 내보내기</a></li>
+  </ol>
+</nav>
+
+<h2 id="export-one">claude.ai에서 Claude 채팅을 어떻게 내보내나요?</h2>
+<p>Chrome에서 claude.ai 대화를 열고, 메시지 입력창 옆의 주황색 버튼을 누른 다음, Markdown, JSON, 일반 텍스트, XML, PNG 중 하나를 고르고 Export를 누르세요. Download Claude conversations가 그 파일을 로컬에 씁니다. 2026년 9월 현재 claude.ai 자체에는 ‘이 채팅 내보내기’ 기능이 없습니다.</p>
+<ol>
+<li>Chrome Web Store에서 Download Claude conversations를 설치합니다(평점 5.0).</li>
+<li>claude.ai를 새로고침하고, 빈 시작 화면이 아니라 실제 대화 URL을 엽니다.</li>
+<li>메시지 입력창 오른쪽의 주황색 다운로드 버튼을 누릅니다.</li>
+<li>형식을 고릅니다. Claude 내보내기 확장 프로그램은 마지막으로 쓴 형식을 기억합니다.</li>
+<li>Export를 누릅니다. Chrome이 브라우저 다운로드 API를 통해 파일을 바로 저장합니다.</li>
+</ol>
+<p>처음 Claude 채팅을 내보내기 전에 Google 로그인이 필요합니다. Download Claude conversations는 무료 내보내기 3회를 계산하고 재설치 후 Pro를 복원하기 위해 인증된 이메일을 저장합니다. 이 로그인에 채팅 텍스트는 포함되지 않습니다. 작동 원리: <a href="/ko/how-it-works/">작동 방식</a>.</p>
+<p>주황색 버튼이 보이지 않는다면 대화 URL이 아닌 곳에 있거나, 설치 후 탭을 새로고침해야 하거나, 확장 프로그램 아이콘이 아직 Chrome의 퍼즐 메뉴 안에 숨어 있는 것입니다. Download Claude conversations를 고정한 뒤 claude.ai를 새로고침하세요. Claude 내보내기 확장 프로그램은 claude.ai에만 들어가며, 다른 사이트에는 절대 들어가지 않습니다.</p>
+<div class="callout callout-tip">
+  <p><strong>대화 하나 vs 계정 전체.</strong> 주황색 버튼은 열어 둔 채팅을 내보냅니다. 여러 파일이 필요하면 “View and Download All Conversations”(모든 대화 보기 및 다운로드)를 열고 Export All을 실행하세요. <a href="/ko/bulk/">일괄 Export All</a>을 참고하세요. Anthropic의 Settings → Privacy → Export data(claude.ai를 한국어로 설정했다면 메뉴 이름이 한국어로 표시될 수 있습니다)는 나중에 도착하는 계정 ZIP이며, 이 방식과 다릅니다.</p>
+</div>
+
+<h2 id="what-extension-does">Claude 내보내기 확장 프로그램은 실제로 무엇을 하나요?</h2>
+<p>Claude 내보내기 확장 프로그램은 로그인된 claude.ai 탭에 이미 렌더링된 대화를 읽어 구조화된 파일을 디스크에 씁니다. Download Claude conversations가 바로 그 Chrome 콘텐츠 스크립트입니다. 발신자, 메시지 트리, 코드 블록, 표, 선택적인 사고 과정, 아티팩트 배치를 담으며, 채팅 주변 화면을 찍은 스크린샷이 아닙니다.</p>
+<p>claude.ai에서 복사해 붙여넣으면 들여쓰기가 사라지고 표가 무너집니다. 인쇄(Ctrl/Cmd+P)하면 사이드바까지 찍히고 긴 코드 블록이 페이지 사이에서 잘리는 경우가 많습니다. Claude 내보내기 확장 프로그램은 코드 블록의 언어 태그를 유지하고, Markdown, JSON, XML에서 표를 표 그대로 남깁니다. PNG는 시각적 스냅샷 옵션이며, 역시 PDF는 아닙니다.</p>
+<p>아티팩트 배치는 버전 1.13.0에 실제로 있는 옵션입니다. “Original”, “Inline”, “Nested”, “Flat” 중에서 고릅니다. 사고 과정 블록은 선택 사항입니다. 메타데이터(제목, 타임스탬프, 모델)도 함께 담을 수 있습니다. 발신자 필터로 파일을 “all / human only / assistant only”(전체 / 사용자만 / 어시스턴트만)로 제한할 수 있습니다. 전체 목록: <a href="/ko/features/">기능</a>.</p>
+<div class="expert-quote">
+  <p>저희는 claude.ai에 이미 있는 채팅으로 진짜 파일(Markdown, JSON, 텍스트, XML, PNG)을 만들기 위해 주황색 버튼을 만들었습니다. 대화를 저희 서버에 올리지 않습니다. 버전 1.13.0도 PDF는 만들지 않습니다.</p>
+  <footer>Download Claude conversations 팀</footer>
+</div>
+<p>Claude Chat Downloader나 Claude Conversation Downloader로 같은 Chrome 등록 페이지를 검색하는 분도 있습니다. 법적 고지 페이지에는 아직 Claude Exporter라는 이름이 남아 있을 수 있습니다. 이 이름들은 모두 두 번째 제품이 아니라 Download Claude conversations를 가리킵니다. ‘내보내기’ 대신 ‘추출’로 검색해도 같은 버튼에 도착합니다. 그 관점의 글은 <a href="/ko/claude-conversation-extractor/">Claude 대화 추출기</a> 가이드입니다.</p>
+
+<h2 id="which-format">Claude 채팅을 어떤 형식으로 내보내야 하나요?</h2>
+<p>Claude 채팅은 노트용이면 Markdown, 스크립트용이면 JSON, 단순 보관용이면 일반 텍스트, 데이터 교환용이면 XML, 대화 그림이 필요하면 PNG로 내보내세요. Download Claude conversations는 이 다섯 가지를 드롭다운 하나로 제공합니다. Claude 내보내기 확장 프로그램에 PDF 형식은 없습니다.</p>
+<table>
+  <caption>Claude 내보내기 확장 프로그램이 claude.ai에서 만드는 형식</caption>
+  <thead>
+    <tr>
+      <th scope="col">형식</th>
+      <th scope="col">적합한 용도</th>
+      <th scope="col">얻는 것</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Markdown</td>
+      <td>Obsidian, GitHub, 위키</td>
+      <td>제목, 코드 블록, 표 — <a href="/ko/formats/markdown/">Markdown 가이드</a></td>
+    </tr>
+    <tr>
+      <td>JSON</td>
+      <td>비교(diff), 파이프라인, 도구</td>
+      <td>Anthropic 계정 ZIP이 아닌 메시지 트리 — <a href="/ko/formats/json/">JSON 가이드</a></td>
+    </tr>
+    <tr>
+      <td>일반 텍스트</td>
+      <td>어디에나 붙여넣을 수 있는 보관본</td>
+      <td>대화 순서, 마크업 없음 — <a href="/ko/formats/">형식 안내</a></td>
+    </tr>
+    <tr>
+      <td>XML</td>
+      <td>XML이 필요한 시스템</td>
+      <td>구조화된 데이터 교환 — <a href="/ko/formats/xml/">XML 가이드</a></td>
+    </tr>
+    <tr>
+      <td>PNG</td>
+      <td>시각적 스냅샷</td>
+      <td>PDF가 아닌 대화 이미지 — <a href="/ko/formats/png/">PNG 가이드</a></td>
+    </tr>
+  </tbody>
+</table>
+<p>글 쓰는 분은 보통 Claude 채팅을 Markdown으로 내보냅니다. 개발자는 보통 JSON을 고릅니다. PDF 같은 페이지가 꼭 필요하다면, 제공하지 않는 형식을 기다리기보다 Chrome에서 인쇄하세요. 단계별 안내: <a href="/ko/download-claude-chat-as-pdf/">Claude 대화 인쇄하기</a>. Claude 내보내기 확장 프로그램의 PNG는 이미지 파일이며, 페이지로 나뉜 문서가 아닙니다.</p>
+<p>형식 드롭다운은 3회 한도에 영향을 주지 않습니다. Markdown, JSON, 텍스트, XML, PNG 모두 파일이 완성되면 1회로 계산됩니다. 월 $3.99 또는 연 $26.99의 Pro는 모든 형식에서 제한을 없애 줍니다. Download Claude conversations 1.13.0에는 Notion, Word, Google Docs 내보내기가 없습니다.</p>
+
+<h2 id="export-bulk">Export All로 Claude 채팅을 일괄 내보낼 수 있나요?</h2>
+<p>네. View and Download All Conversations를 열고, 표를 필터링한 다음 Export All을 누르세요. 완성된 파일 하나하나가 주황색 버튼과 같은 무료 3회에서 1회씩 차감됩니다. Pro는 단일 대화와 마찬가지로 일괄 내보내기의 제한도 없애 줍니다.</p>
+<p>목록 표에는 claude.ai 대화 기록이 표시되며, 이름으로 검색하고 All, New, Exported, Project로 필터링할 수 있습니다. New는 아직 Download Claude conversations로 내보내지 않은 채팅입니다. Exported는 이미 저장한 채팅을 추적하므로 두 번째 Export All에서 건너뛸 수 있습니다. Project는 claude.ai에서 채팅을 묶은 방식과 같습니다.</p>
+<p>일괄 내보내기는 대화 하나를 내보낼 때와 같은 옵션을 씁니다. 채팅, 사고 과정, 메타데이터, 아티팩트 배치(Original, Inline, Nested, Flat), 그리고 같은 다섯 가지 형식입니다. Export All은 기능을 뺀 ZIP이 아니라 채팅별 파일 여러 개입니다. 계정 전체를 담은 아카이브 하나를 나중에 받고 싶다면 그것은 Anthropic Export data이며, 다음 섹션과 <a href="/ko/bulk/">일괄 내보내기 페이지</a>에서 비교합니다.</p>
+<div class="callout callout-warn">
+  <p><strong>사용 한도는 계정 전체 기준입니다.</strong> 무료 내보내기는 일괄 실행마다 3회가 아니라 총 3회입니다. 목록 페이지에서 대화 40개를 선택하면 모든 파일이 완성될 경우 내보내기 40회를 씁니다. Export All을 누르기 전에 선택을 계획하거나, 월 $3.99 또는 연 $26.99의 Pro를 쓰세요.</p>
+</div>
+
+<h2 id="desktop-code">Desktop이나 Claude Code에서도 채팅을 내보낼 수 있나요?</h2>
+<p>아니요. 이 Claude 내보내기 확장 프로그램은 Chrome(또는 등록 항목을 설치할 수 있는 다른 Chromium 브라우저) 안의 claude.ai에서만 실행됩니다. Claude Desktop은 별도의 Mac/Windows 앱이고, Claude Code는 터미널 에이전트입니다. 그런 창에는 주황색 버튼이 나타나지 않습니다.</p>
+<p>그 대화가 claude.ai 계정에도 있다면 Chrome에서 열고 Download Claude conversations로 그곳에서 Claude 채팅을 내보내세요. 채팅이 Desktop에만 있다면 앱에서 복사해 붙여넣거나 웹에서 Settings → Privacy → Export data를 요청하세요. 단계별 비교: <a href="/ko/export-claude-desktop-chat/">Claude Desktop 채팅 내보내기</a>.</p>
+<p>Claude Code는 <code>/export</code> 명령이나 디스크의 JSONL 기록을 씁니다. 이 Chrome 확장 프로그램이 만드는 Markdown과는 다릅니다. 터미널 연동을 기대하고 Download Claude conversations를 설치하지 마세요. 가이드: <a href="/ko/claude-code-export/">Claude Code 내보내기</a>. CLI 세션을 내보내려고 ‘Claude 채팅 내보내기’를 검색했다면 다른 제품 경로입니다.</p>
+<p>휴대폰 브라우저의 모바일 claude.ai도 대상이 아닙니다. Claude 내보내기 확장 프로그램에는 데스크톱 Chrome이 필요합니다. 2026년 현재 저희 팀의 iOS나 Android 앱은 없습니다. 컴퓨터에서 대화를 연 다음 주황색 버튼이나 Export All로 Claude 채팅을 내보내세요.</p>
+
+<h2 id="vs-official">Claude 채팅 내보내기와 Anthropic Export data의 차이는?</h2>
+<p>Anthropic Export data는 기다린 뒤 계정 전체의 JSON ZIP을 이메일로 보내 줍니다. Download Claude conversations로 Claude 채팅을 내보내면 열어 둔 대화가 즉시 Markdown, JSON, 텍스트, XML, PNG로 저장됩니다. 백업에는 ZIP을, 지금 읽을 파일에는 Claude 내보내기 확장 프로그램을 쓰세요.</p>
+<table>
+  <caption>claude.ai에서 Claude 대화를 꺼내는 방법</caption>
+  <thead>
+    <tr>
+      <th scope="col">방법</th>
+      <th scope="col">적합한 용도</th>
+      <th scope="col">얻는 것</th>
+      <th scope="col">기다려야 하나요</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Claude 내보내기 확장 프로그램</td>
+      <td>이 채팅 또는 일괄 선택</td>
+      <td>MD / JSON / TXT / XML / PNG</td>
+      <td>아니요 — Chrome에서 파일이 다운로드됨</td>
+    </tr>
+    <tr>
+      <td>Settings → Privacy → Export data</td>
+      <td>계정 전체 백업</td>
+      <td>이메일로 받는 JSON ZIP</td>
+      <td>예 — 링크가 만료되며, 채팅별 Markdown 없음</td>
+    </tr>
+    <tr>
+      <td>인쇄 → PDF로 저장</td>
+      <td>대략적인 시각적 사본</td>
+      <td>웹페이지의 PDF</td>
+      <td>아니요, 하지만 레이아웃과 코드가 자주 깨짐</td>
+    </tr>
+    <tr>
+      <td>복사해 붙여넣기</td>
+      <td>짧은 답변 하나</td>
+      <td>선택한 부분만</td>
+      <td>긴 대화에는 구조가 없음</td>
+    </tr>
+  </tbody>
+</table>
+<p>공식 ZIP은 Claude 채팅 내보내기를 더 보기 좋게 만든 버전이 아닙니다. 계정 단위의 JSON입니다. 그 요청에서 대화 하나를 고르거나 Markdown을 선택할 수 없습니다. 잊고 있던 대화까지 모두 담은 아카이브가 필요하다면 Claude 내보내기 확장 프로그램이 그 ZIP을 대신할 수 없습니다. 인쇄 단계를 포함한 방법 비교: <a href="/ko/how-to-export-claude-chat/">Claude 채팅 내보내는 방법</a>.</p>
+<p>Download Claude conversations는 Anthropic, PBC와 관련이 없습니다. Claude 내보내기 확장 프로그램을 쓴다고 Anthropic 서비스 약관이 바뀌지는 않습니다. 콘텐츠 스크립트는 claude.ai에서 이미 연 세션을 사용하며, 별도 자격 증명으로 Anthropic에 로그인하지 않습니다. 계정에 대한 Anthropic의 규칙을 따르세요.</p>
+
+<h2 id="cost">Claude 내보내기 확장 프로그램의 비용은?</h2>
+<p>Google로 로그인한 모든 계정에 무료 내보내기 3회가 제공됩니다. 그 이후 Pro는 Paddle을 통해 월 $3.99 또는 연 $26.99입니다. 이 가격에 주황색 버튼과 Export All이 모두 포함됩니다. Download Claude conversations는 형식별로 요금을 받지 않습니다. Chrome에서 채팅을 열 수 있다면 claude.ai의 어떤 요금제든 괜찮습니다.</p>
+<p>Chrome 등록 항목을 재설치해도 무료 내보내기 3회는 초기화되지 않습니다. 그래서 처음 Claude 채팅을 내보낼 때 Google 로그인이 필요합니다. 같은 Google 계정이라면 새 컴퓨터에서도 Pro가 복원됩니다. 판매 주체(merchant of record)는 Paddle이며, 저희 팀은 카드 번호를 보지 못합니다. 환불은 환불 페이지에 설명된 대로 Paddle을 통해 진행됩니다.</p>
+<p>Claude 내보내기 확장 프로그램을 쓰는 데 Anthropic의 claude.ai 유료 요금제는 필요 없습니다. 대화를 불러올 수 있는 claude.ai 로그인과 Chrome만 있으면 됩니다. 주황색 버튼은 Team과 Enterprise에서도 Free와 똑같이 작동합니다. 워크스페이스 관리자가 확장 프로그램을 막으면 Download Claude conversations가 페이지에 들어가지 못합니다. 이는 형식 제한이 아니라 브라우저 정책입니다.</p>
+<div class="callout callout-info">
+  <p><strong>같은 작업, 다른 검색어.</strong> ‘Claude 채팅 내보내기’, ‘Claude 채팅 다운로드’, ‘Claude 대화 추출’은 모두 이 대화를 파일로 저장한다는 뜻입니다. 영어로 “claude export chat”을 검색하는 분도 같은 버튼에 도착합니다. 인쇄와 ZIP 대안을 포함한 방법 안내는 <a href="/ko/how-to-download-claude-chat/">Claude 채팅 다운로드 방법</a>에 있습니다. 이 페이지는 Claude 내보내기 확장 프로그램이라는 제품 관점입니다.</p>
+</div>
+<p>Claude 채팅 내보내기가 실패했다면: 긴 대화가 claude.ai에서 모두 불러와질 때까지 기다리고, 형식 드롭다운을 확인하고(마지막으로 쓴 형식이 유지됩니다), 3회 한도에 걸렸는지 확인하세요. Chrome이 다운로드를 막았다면 claude.ai의 다운로드를 허용하세요. 파일이 불완전하다면 대개 페이지가 아직 메시지 트리 전체를 렌더링하지 않은 것입니다.</p>
+<p>이 페이지 기준 버전은 2026년 9월의 1.13.0입니다. 형식은 계속 Markdown, JSON, 일반 텍스트, XML, PNG입니다. 목록이 바뀌면 이 가이드도 같은 날 바뀝니다. 그때까지 Claude 내보내기 확장 프로그램에서 Word, Notion, 자체 PDF를 기대하지 마세요.</p>
+
+<h2 id="faq">FAQ: Claude 채팅 내보내기</h2>
+<p>이 FAQ는 Claude 채팅 내보내기와 Claude 내보내기 확장 프로그램에 관한 내용입니다. 형식, 사용 한도, Desktop, Claude Code, Anthropic의 ZIP, 주황색 버튼 위치를 다룹니다. 모든 답변은 버전 1.13.0 기준 사실입니다. 페이지 head의 FAQPage JSON-LD도 이 목록과 일치합니다.</p>
+
+<h3>이 사이트에서 말하는 ‘Claude 채팅 내보내기’란?</h3>
+<p>Download Claude conversations로 claude.ai 대화를 파일로 저장하는 것입니다. 주황색 버튼, 형식 선택, Export. 영어로 “claude export chat”이라고 부르는 것과 같은 작업입니다. Anthropic이 이메일로 보내는 ZIP도, Claude Code의 <code>/export</code>도 아닙니다.</p>
+
+<h3>Claude 내보내기 확장 프로그램은 Export data와 같은 것인가요?</h3>
+<p>아니요. Settings → Privacy → Export data는 계정 전체를 담은 JSON ZIP을 이메일로 보내 줍니다. Claude 내보내기 확장 프로그램은 열어 둔 채팅이나 Export All로 선택한 채팅을 Chrome에서 즉시 Markdown, JSON, 텍스트, XML, PNG로 만듭니다.</p>
+
+<h3>Claude 채팅을 PDF로 내보낼 수 있나요?</h3>
+<p>이 Claude 내보내기 확장 프로그램으로는 안 됩니다. 지원 형식은 Markdown, JSON, 일반 텍스트, XML, PNG입니다. PDF 같은 스냅샷이 필요하면 Chrome에서 claude.ai 페이지를 인쇄하세요. PNG는 이미지이며 PDF가 아닙니다.</p>
+
+<h3>Claude 채팅을 한 번 내보내는 데도 Pro가 필요한가요?</h3>
+<p>아니요. Google로 로그인한 모든 계정에서 처음 3회 내보내기는 형식과 관계없이 무료입니다. 더 많은 단일 파일이나 일괄 파일이 필요하면 월 $3.99 또는 연 $26.99의 Pro가 제한을 없애 줍니다.</p>
+
+<h3>Claude 채팅 내보내기는 claude.ai의 모든 요금제에서 작동하나요?</h3>
+<p>네. Chrome에서 대화를 열 수 있다면 claude.ai의 Free, Pro, Team, Enterprise 요금제 모두에서 작동합니다. Claude 내보내기 확장 프로그램을 쓰는 데 Anthropic 유료 요금제는 필요 없습니다.</p>
+
+<h3>이 Claude 내보내기 확장 프로그램은 Claude Code용인가요?</h3>
+<p>아니요. Download Claude conversations는 Chrome의 claude.ai에서 실행됩니다. Claude Code는 <code>/export</code> 명령이나 디스크의 JSONL을 씁니다. Claude Code 내보내기 가이드를 참고하세요.</p>
+
+<h3>Claude Desktop에서 Claude 채팅을 내보낼 수 있나요?</h3>
+<p>이 Chrome 확장 프로그램으로는 안 됩니다. 동기화된다면 같은 대화를 claude.ai에서 여세요. 아니면 복사해 붙여넣거나 공식 Export data를 쓰세요. Desktop에는 주황색 버튼이 나타나지 않습니다.</p>
+
+<h3>Claude 내보내기 확장 프로그램의 무료 내보내기는 몇 회인가요?</h3>
+<p>계정당 3회이며, 주황색 버튼과 Export All(모두 내보내기)이 함께 씁니다. 재설치해도 횟수는 초기화되지 않습니다. Pro는 Google 로그인으로 복원됩니다.</p>
+
+<h3>Claude 채팅을 내보내는 주황색 버튼은 어디에 있나요?</h3>
+<p>Download Claude conversations를 설치하고 새로고침한 뒤, claude.ai 대화 URL의 메시지 입력창 오른쪽에 있습니다. 빈 시작 화면이나 Desktop 앱에서는 나타나지 않습니다.</p>
+
+<h3>Claude 채팅을 내보내면 대화가 업로드되나요?</h3>
+<p>아니요. 파일은 브라우저 안에서 만들어져 Chrome의 다운로드 API로 전달됩니다. 저희 워커가 보는 것은 구독 상태와 Google로 인증된 이메일이며, 채팅 본문은 보지 않습니다. 자세한 내용은 작동 방식 페이지에 있습니다.</p>
+
+<h3>Claude 내보내기 확장 프로그램은 어떤 형식을 만드나요?</h3>
+<p>Markdown, JSON, 일반 텍스트, XML, PNG입니다. 채팅 하나에도, Export All에도 같은 다섯 가지 형식입니다. 버전 1.13.0에는 PDF, Word, Notion, Google Docs 내보내기가 없습니다.</p>
+</article>
+</main>
+<section class="final-cta page-cta" aria-label="설치">
+  <div class="wrap">
+    <div class="final-cta-panel">
+      <p class="final-kicker">Download Claude conversations</p>
+      <h2>확장 프로그램을 설치하고 Claude 채팅을 몇 초 만에 다운로드하세요</h2>
+      <p>중요한 Claude 대화를 Chrome에서 로컬로 Markdown, JSON, 텍스트, XML, PNG 파일로 만드세요.</p>
+      <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=ko-export" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Chrome에 추가</a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="logo" href="/ko/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
+      <p class="legal-note">Claude.ai 채팅을 Markdown, JSON, 일반 텍스트, XML, PNG로 다운로드하는 Chrome 확장 프로그램. Chrome Web Store 평점 5.0.</p>
+    </div>
+    <div>
+      <h2>설치</h2>
+      <a class="install-link" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=ko-footer" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Chrome 확장 프로그램</a>
+    </div>
+    <div>
+      <h2>제품</h2>
+      <a href="/ko/features/">기능</a>
+      <a href="/ko/formats/">형식</a>
+      <a href="/ko/bulk/">일괄 다운로드</a>
+      <a href="/ko/how-it-works/">작동 방식</a>
+    </div>
+    <div>
+      <h2>가이드</h2>
+      <a href="/ko/how-to-download-claude-chat/">Claude 채팅 다운로드 방법</a>
+      <a href="/ko/how-to-export-claude-chat/">Claude 채팅 내보내는 방법</a>
+      <a href="/ko/export-claude-chat/">Claude 채팅 내보내기</a>
+      <a href="/ko/claude-conversation-extractor/">Claude 대화 추출기</a>
+      <a href="/ko/claude-code-export/">Claude Code 대화 내보내기</a>
+      <a href="/ko/download-claude-chat-as-pdf/">인쇄 / PDF</a>
+      <a href="/ko/export-claude-desktop-chat/">Claude Desktop 채팅 내보내기</a>
+      <a href="/ko/claude-export-conversation/">Claude 대화 기록 내보내기</a>
+      <a href="/ko/how-to-save-claude-conversation/">Claude 대화 저장 방법</a>
+      <a href="/ko/download-claude-conversation/">Claude 대화 다운로드</a>
+    </div>
+    <div>
+      <h2>법적 고지</h2>
+      <a href="/ko/about/">소개</a>
+      <a href="/ko/about/#contact">문의</a>
+      <a href="/privacy/" hreflang="en">개인정보 (영어)</a>
+      <a href="/terms/" hreflang="en">약관 (영어)</a>
+      <a href="/refund/" hreflang="en">환불 (영어)</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Download Claude conversations. 모든 권리 보유.</div>
+    <div>
+      <a href="/privacy/" hreflang="en">개인정보처리방침 (영어)</a>
+      <a href="/terms/" hreflang="en">서비스 약관 (영어)</a>
+      <a href="/refund/" hreflang="en">환불 (영어)</a>
+    </div>
+  </div>
+  <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/export-claude-chat/" hreflang="en" lang="en">English</a> <a href="/de/claude-chat-exportieren/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/exporter-conversation-claude/" hreflang="fr" lang="fr">Français</a> <a href="/nl/claude-chat-exporteren/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/exportera-claude-chatt/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/eksportere-claude-chat/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/eksporter-claude-chat/" hreflang="da" lang="da">Dansk</a> <a href="/fi/vie-claude-chat/" hreflang="fi" lang="fi">Suomi</a> <a href="/ja/export-claude-chat/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/export-claude-chat/" hreflang="ko" lang="ko">한국어</a> <a href="/he/export-claude-chat/" hreflang="he" lang="he">עברית</a> <a href="/ar/export-claude-chat/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
+  <p class="disclaimer">채팅은 브라우저 안에서 처리됩니다 · 사용 한도 확인용 Google 로그인 · Anthropic, PBC와 관련이 없습니다. Claude는 Anthropic의 상표입니다. 독립 Chrome 확장 프로그램이며 Anthropic 공식 제품이 아닙니다. 지원: <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

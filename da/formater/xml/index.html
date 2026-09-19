@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eksportér Claude-chat til XML</title>
+  <meta name="description" content="Eksportér en Claude AI-chat til XML til struktureret dataudveksling med Download Claude conversations. Én chat eller mange på én gang.">
+  <link rel="canonical" href="https://chat-downloader.com/da/formater/xml/">
+  <!-- i18n:head -->
+  <link rel="alternate" hreflang="en" href="https://chat-downloader.com/formats/xml/">
+  <link rel="alternate" hreflang="de" href="https://chat-downloader.com/de/formate/xml/">
+  <link rel="alternate" hreflang="fr" href="https://chat-downloader.com/fr/formats/xml/">
+  <link rel="alternate" hreflang="nl" href="https://chat-downloader.com/nl/formaten/xml/">
+  <link rel="alternate" hreflang="sv" href="https://chat-downloader.com/sv/format/xml/">
+  <link rel="alternate" hreflang="nb" href="https://chat-downloader.com/nb/formater/xml/">
+  <link rel="alternate" hreflang="da" href="https://chat-downloader.com/da/formater/xml/">
+  <link rel="alternate" hreflang="fi" href="https://chat-downloader.com/fi/formaatit/xml/">
+  <link rel="alternate" hreflang="ja" href="https://chat-downloader.com/ja/formats/xml/">
+  <link rel="alternate" hreflang="ko" href="https://chat-downloader.com/ko/formats/xml/">
+  <link rel="alternate" hreflang="he" href="https://chat-downloader.com/he/formats/xml/">
+  <link rel="alternate" hreflang="ar" href="https://chat-downloader.com/ar/formats/xml/">
+  <link rel="alternate" hreflang="x-default" href="https://chat-downloader.com/formats/xml/">
+  <meta property="og:locale" content="da_DK">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="sv_SE">
+  <meta property="og:locale:alternate" content="nb_NO">
+  <meta property="og:locale:alternate" content="fi_FI">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <meta property="og:locale:alternate" content="he_IL">
+  <meta property="og:locale:alternate" content="ar_AE">
+  <!-- /i18n:head -->
+  <meta property="og:title" content="Eksportér Claude-chat til XML">
+  <meta property="og:description" content="Eksportér en Claude AI-chat til XML til struktureret dataudveksling med Download Claude conversations. Én chat eller mange på én gang.">
+  <meta property="og:url" content="https://chat-downloader.com/da/formater/xml/">
+  <meta property="og:image" content="https://chat-downloader.com/assets/widget-guide.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chat Downloader">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Eksportér Claude-chat til XML">
+  <meta name="twitter:description" content="Eksportér en Claude AI-chat til XML til struktureret dataudveksling med Download Claude conversations. Én chat eller mange på én gang.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME1YXGZKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GME1YXGZKR');
+  </script>
+  
+  
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Er XML bedre end JSON til eksport af Claude-chats?","acceptedAnswer":{"@type":"Answer","text":"Ikke generelt. JSON er det mest almindelige valg for udviklere. Eksportér til XML, når systemet, der modtager filen, kræver XML til struktureret dataudveksling. Læsningen af claude.ai er den samme; kun filens form er forskellig."}},{"@type":"Question","name":"Kan jeg masseeksportere Claude-chats til XML?","acceptedAnswer":{"@type":"Answer","text":"Ja. Det samme Export All-forløb på oversigtssiden understøtter XML. Hver færdig fil tæller som en af de 3 gratis eksporter, medmindre du har Pro til 3,99 $/md. eller 26,99 $/år."}},{"@type":"Question","name":"Er XML kun for betalende brugere?","acceptedAnswer":{"@type":"Answer","text":"Nej. Alle fem formater, også XML, er dækket af de 3 gratis eksporter, som hver konto med Google-login får. Pro koster 3,99 $/md. eller 26,99 $/år efter de tre filer."}},{"@type":"Question","name":"Svarer eksport til XML til Anthropics ZIP-fil?","acceptedAnswer":{"@type":"Answer","text":"Nej. Anthropics Export data er en forsinket ZIP-fil med JSON for kontoen. Download Claude conversations skriver med det samme en XML-fil pr. chat (eller pr. udvalg) i Chrome. Det er ikke det samme skema."}},{"@type":"Question","name":"Laver eksport til XML en PDF?","acceptedAnswer":{"@type":"Answer","text":"Nej. XML er markup. Produktets formater er Markdown, JSON, ren tekst, XML og PNG. Brug Chromes udskriftsdialog, hvis du vil have en side til udskrift. PNG er et billede og heller ikke en PDF."}},{"@type":"Question","name":"Kan jeg eksportere en Claude-chat til XML i Claude Desktop?","acceptedAnswer":{"@type":"Answer","text":"Nej. Chrome-udvidelsen indlæses kun på claude.ai. Claude Desktop viser aldrig XML-menuen. Åbn den samme tråd på claude.ai i Chrome, hvis den findes der."}},{"@type":"Question","name":"Skal jeg have Pro for at eksportere en Claude-chat til XML én gang?","acceptedAnswer":{"@type":"Answer","text":"Nej. De første 3 eksporter er gratis i alle formater, også XML. Pro til 3,99 $/md. eller 26,99 $/år fjerner grænsen for flere enkelte eller massevise XML-filer."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Forside","item":"https://chat-downloader.com/da/"},{"@type":"ListItem","position":2,"name":"Formater","item":"https://chat-downloader.com/da/formater/"},{"@type":"ListItem","position":3,"name":"XML","item":"https://chat-downloader.com/da/formater/xml/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Spring til indhold</a>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a class="logo" href="/da/">
+        <img src="/assets/icon.svg" alt="">
+        <span>Download Claude conversations</span>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="/da/download-claude-chat/">Download</a><a href="/da/saadan-eksporterer-du-claude-chat/">Eksportér</a><a href="/da/eksporter-alle-claude-chats/">Alle chats</a><a href="/da/formater/">Formater</a><a href="/da/#faq">FAQ</a>
+        <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=da-formats-xml" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Føj til Chrome</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <!-- i18n:switch --><details class="lang-switch"><summary aria-label="Sprog">da</summary><ul><li><a href="/formats/xml/" hreflang="en" lang="en">English</a></li><li><a href="/de/formate/xml/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/formats/xml/" hreflang="fr" lang="fr">Français</a></li><li><a href="/nl/formaten/xml/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/sv/format/xml/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="/nb/formater/xml/" hreflang="nb" lang="nb">Norsk</a></li><li><a href="/da/formater/xml/" hreflang="da" lang="da" aria-current="true">Dansk</a></li><li><a href="/fi/formaatit/xml/" hreflang="fi" lang="fi">Suomi</a></li><li><a href="/ja/formats/xml/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/ko/formats/xml/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/he/formats/xml/" hreflang="he" lang="he">עברית</a></li><li><a href="/ar/formats/xml/" hreflang="ar" lang="ar">العربية</a></li></ul></details><!-- /i18n:switch -->
+      <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=da-formats-xml" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Føj til Chrome</a>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+<nav class="crumbs" aria-label="Brødkrummesti"><a href="/da/">Forside</a> / <a href="/da/formater/">Formater</a> / XML</nav>
+<main id="main">
+<article class="band prose">
+<p class="article-meta">Opdateret <time datetime="2026-09">september 2026</time> · Udvidelse 1.13.0</p>
+<h1 class="page-h1">Eksportér Claude-chat til XML til dataudveksling</h1>
+<p class="lead">For at eksportere en Claude-chat til XML installerer du Download Claude conversations, åbner tråden på claude.ai, klikker på den orange knap, vælger XML og klikker på "Export" (Eksportér). Chrome gemmer struktureret markup til systemer, der kræver XML i stedet for JSON. Tre eksporter er gratis; Pro koster 3,99 $/md. eller 26,99 $/år. Menuen har ingen PDF.</p>
+<aside class="trust-badge" aria-label="Bedømmelse i Chrome Web Store">
+  <span class="trophy" aria-hidden="true">🏆</span>
+  <div>
+    <strong>Download Claude conversations – bedømt 5.0 i Chrome Web Store</strong>
+    <span>2026 – gratis Chrome-udvidelse, der gemmer claude.ai-chats som Markdown, JSON, tekst, XML eller PNG</span>
+  </div>
+</aside>
+<nav class="toc" aria-label="På denne side">
+  <p>På denne side</p>
+  <ol>
+    <li><a href="#how-to">Hvordan eksporterer jeg en Claude-chat til XML?</a></li>
+    <li><a href="#when">Hvornår giver XML mening?</a></li>
+    <li><a href="#preserved">Hvad bevares i XML-filen?</a></li>
+    <li><a href="#vs-json">XML eller JSON?</a></li>
+    <li><a href="#bulk">Kan jeg eksportere mange chats til XML?</a></li>
+    <li><a href="#cost">Kræver XML Pro?</a></li>
+    <li><a href="#faq">FAQ: eksportér Claude-chat til XML</a></li>
+  </ol>
+</nav>
+
+<h2 id="how-to">Hvordan eksporterer jeg en Claude-chat til XML?</h2>
+<p>Åbn samtalen på claude.ai i Chrome, klik på den orange knap ved siden af beskedfeltet, vælg XML, og klik på "Export". Download Claude conversations skriver filen lokalt. Sådan eksporterer du en Claude-chat til XML i version 1.13.0. claude.ai har i september 2026 ingen indbygget knap til at gemme som XML.</p>
+<ol>
+<li>Installér Download Claude conversations fra Chrome Web Store (bedømt 5.0).</li>
+<li>Genindlæs claude.ai, og åbn en rigtig samtale-URL – ikke den tomme startside med skrivefeltet.</li>
+<li>Klik på den orange downloadknap til højre for beskedfeltet.</li>
+<li>Vælg XML. Det sidst brugte format huskes.</li>
+<li>Klik på "Export". Chrome downloader XML-filen via browserens download-API.</li>
+</ol>
+<p>Du skal logge ind med Google, før du eksporterer første gang. Download Claude conversations gemmer den verificerede e-mail for at tælle de 3 gratis eksporter og gendanne Pro efter en geninstallation. Chatteksten indgår ikke i login. Mekanikken: <a href="/da/saadan-virker-det/">sådan virker det</a>.</p>
+<p>Mangler den orange knap, er du ikke på en samtale-URL, fanen skal genindlæses, eller udvidelsen er skjult i Chromes puslespilsmenu. Fastgør Download Claude conversations, og genindlæs claude.ai. XML-eksport vises aldrig i Claude Desktop eller Claude Code.</p>
+<div class="callout callout-tip">
+  <p><strong>Én fil eller mange.</strong> Den orange knap eksporterer den åbne tråd som XML. Vil du have mange XML-filer, så åbn "View and Download All Conversations" (se og download alle samtaler) og kør "Export All" (eksportér alle) med XML valgt – se <a href="/da/eksporter-alle-claude-chats/">masseeksport med Export All</a>.</p>
+</div>
+
+<h2 id="when">Hvornår skal jeg eksportere en Claude-chat til XML?</h2>
+<p>Vælg XML, når det modtagende system, en pipeline eller et ældre værktøj kræver XML til struktureret dataudveksling. De fleste udviklere bør vælge JSON i stedet. Markdown er til noter for mennesker. PNG er et billede. XML findes i menuen, fordi nogle værktøjer stadig indlæser XML og ikke accepterer JSON.</p>
+<p>Brug ikke XML som en "mere officiel" JSON. Download Claude conversations læser samtalen på samme måde uanset format. Forskellen er filens form – der dukker ikke ekstra felter op. Hvis intet af det, du bruger, kræver XML, så spring formatet over og brug <a href="/da/formater/json/">JSON</a>.</p>
+<div class="expert-quote">
+  <p>Vi leverer XML, fordi nogle pipelines stadig kræver det – ikke fordi vi mener, det slår JSON til enhver eksport fra claude.ai. Læsningen er den samme: beskeder, afsender, valgfri thinking og artefakter. Vi skriver stadig ikke PDF. Version 1.13.0 har XML som et af fem formater, ikke som et betalt tilvalg.</p>
+  <footer>Holdet bag Download Claude conversations</footer>
+</div>
+<p>Nogle søger også på Claude Chat Downloader og Claude Conversation Downloader og finder det samme produkt. XML-eksporten sker med den orange knap. Juridiske sider kan stadig nævne Claude Exporter. De navne er dette produkt.</p>
+
+<h2 id="preserved">Hvad bevares, når du eksporterer en Claude-chat til XML?</h2>
+<p>Download Claude conversations skriver samtalens struktur – beskeder, afsender og tilgængelige metadata – som XML-markup. Thinking-blokke og artefakter følger de samme kontakter som i Markdown og JSON ("include thinking", "include metadata"). XML er ikke en nedbarberet udgave af de formater.</p>
+<p>Layout for artefakter er "Original", "Inline" (i teksten), "Nested" (indlejret) eller "Flat" (fladt) i version 1.13.0. Afsenderfilteret kan begrænse XML-filen til "all / human only / assistant only" (alle beskeder, kun mennesket eller kun assistenten). Metadata (titel, tidsstempler, model) kan komme med. Hele listen over kontakter: <a href="/da/funktioner/">funktioner i Chrome-udvidelsen</a>.</p>
+<table>
+  <caption>Hvad en XML-eksport af en Claude-chat indeholder</caption>
+  <thead>
+    <tr>
+      <th scope="col">Element</th>
+      <th scope="col">I XML-filen?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Beskeder og afsender</td>
+      <td>Ja, som markup</td>
+    </tr>
+    <tr>
+      <td>Metadata</td>
+      <td>Ja, når kontakten Metadata er slået til</td>
+    </tr>
+    <tr>
+      <td>Thinking-blokke</td>
+      <td>Hvis kontakten Thinking er slået til</td>
+    </tr>
+    <tr>
+      <td>Artefakter</td>
+      <td>Ja, som Original / Inline / Nested / Flat</td>
+    </tr>
+    <tr>
+      <td>PDF-sider / visuel ramme</td>
+      <td>Nej – XML er markup, ikke PDF</td>
+    </tr>
+  </tbody>
+</table>
+<p>Er tråden lang, så rul, indtil claude.ai har indlæst de tidligere beskeder, før du eksporterer. Udvidelsen kan kun serialisere det, siden har vist. Et halvt indlæst DOM giver afkortet XML.</p>
+
+<h2 id="vs-json">XML eller JSON, når jeg eksporterer en Claude-chat?</h2>
+<p>JSON er det almindelige valg for udviklere. Eksportér kun til XML, når et system længere nede i kæden kræver XML. Download Claude conversations gør ikke XML "mere komplet" end JSON. Begge kan indeholde thinking og artefakter. Ingen af dem er Anthropics ZIP-fil for kontoen. Oversigt over formater: <a href="/da/formater/">formater til eksport af Claude-chats</a>.</p>
+<table>
+  <caption>XML sammenlignet med de andre eksportfiler fra claude.ai</caption>
+  <thead>
+    <tr>
+      <th scope="col">Format</th>
+      <th scope="col">Vælg det, når</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>XML</td>
+      <td>Et værktøj eller skema kræver XML</td>
+    </tr>
+    <tr>
+      <td>JSON</td>
+      <td>Scripts, sammenligninger, de fleste moderne pipelines</td>
+    </tr>
+    <tr>
+      <td>Markdown</td>
+      <td>Læsbare noter</td>
+    </tr>
+    <tr>
+      <td>Ren tekst</td>
+      <td>Ingen markup</td>
+    </tr>
+    <tr>
+      <td>PNG</td>
+      <td>Et billede af tråden</td>
+    </tr>
+  </tbody>
+</table>
+<p>Anthropics Settings → Privacy → Export data (menunavnene kan være oversat, hvis claude.ai er sat til dansk) er JSON (i en ZIP-fil), ikke XML. Udskriv → Gem som PDF er et øjebliksbillede af websiden. Ingen af dem erstatter XML-eksporten via den orange knap. Forvent ikke, at denne XML matcher et upubliceret skema fra Anthropic.</p>
+<p>Udvidelsen kører kun på claude.ai i Chrome. Claude Desktop og Claude Code får ingen XML-knap. Findes tråden også på claude.ai, så åbn den dér og eksportér den til XML. Claude Codes <code>/export</code> er en helt anden vej i et andet produkt.</p>
+
+<h2 id="bulk">Kan jeg eksportere mange Claude-chats til XML på én gang?</h2>
+<p>Ja. Åbn "View and Download All Conversations", sæt formatet til XML, filtrér tabellen, og klik på Export All. Hver færdig fil er en af de 3 gratis eksporter. Pro til 3,99 $/md. eller 26,99 $/år fjerner loftet for masseeksport til XML.</p>
+<p>Oversigtstabellen viser din historik fra claude.ai med søgning på navn og filtrene All, New, Exported og Project (alle, nye, eksporterede, projekt). New betyder, at chatten endnu ikke er eksporteret med Download Claude conversations. Exported holder styr på chats, du allerede har gemt. Project svarer til, hvordan du grupperer chats på claude.ai. Export All giver mange XML-filer, ikke én blandet ZIP-fil.</p>
+<div class="callout callout-warn">
+  <p><strong>Kvoten gælder hele kontoen.</strong> Tre gratis eksporter i alt – ikke tre XML-filer pr. masseeksport. Vælger du 40 samtaler, bruger du 40 eksporter, hvis alle filer bliver færdige. Planlæg udvalget, eller brug Pro.</p>
+</div>
+<p>Du kan ikke blande XML og JSON i ét klik på Export All. Vælg XML til den kørsel. Kør Export All igen med JSON, hvis du har brug for den samme claude.ai-tråd i begge former; den anden kørsel bruger også af kvoten.</p>
+
+<h2 id="cost">Kræver eksport af en Claude-chat til XML Pro?</h2>
+<p>Nej. XML indgår i de 3 gratis eksporter, som hver konto med Google-login får, ligesom Markdown, JSON, tekst og PNG. Efter de tre filer koster Pro 3,99 $ om måneden eller 26,99 $ om året via Paddle. Download Claude conversations behandler ikke XML som et format kun for betalende.</p>
+<p>De 3 gratis eksporter nulstilles ikke, når du geninstallerer udvidelsen fra Chrome Web Store. Derfor kræves Google-login første gang, du eksporterer. Pro gendannes på en ny computer fra den samme Google-konto. Paddle er forhandler (merchant of record); vi ser aldrig kortnumre.</p>
+<p>Du behøver ikke et betalt abonnement på claude.ai hos Anthropic. Du skal bare have et login, der kan indlæse samtalen i Chrome. Version 1.13.0 fra september 2026 skriver stadig ikke PDF, Word eller Notion. Ændrer listen sig, opdateres denne side samme dag.</p>
+
+<h2 id="faq">FAQ: eksportér Claude-chat til XML</h2>
+<p>Disse spørgsmål dækker XML-eksport i Download Claude conversations 1.13.0: sammenligning med JSON, masseeksport med Export All, kvote, Desktop, PDF og Pro. Hvert svar er et produktfaktum. FAQPage-JSON-LD i sidens head svarer til denne liste.</p>
+
+<h3>Er XML bedre end JSON til eksport af Claude-chats?</h3>
+<p>Ikke generelt. JSON er det mest almindelige valg for udviklere. Eksportér til XML, når systemet, der modtager filen, kræver XML til struktureret dataudveksling. Læsningen af claude.ai er den samme; kun filens form er forskellig.</p>
+
+<h3>Kan jeg masseeksportere Claude-chats til XML?</h3>
+<p>Ja. Det samme Export All-forløb på oversigtssiden understøtter XML. Hver færdig fil tæller som en af de 3 gratis eksporter, medmindre du har Pro til 3,99 $/md. eller 26,99 $/år.</p>
+
+<h3>Er XML kun for betalende brugere?</h3>
+<p>Nej. Alle fem formater, også XML, er dækket af de 3 gratis eksporter, som hver konto med Google-login får. Pro koster 3,99 $/md. eller 26,99 $/år efter de tre filer.</p>
+
+<h3>Svarer eksport til XML til Anthropics ZIP-fil?</h3>
+<p>Nej. Anthropics Export data er en forsinket ZIP-fil med JSON for kontoen. Download Claude conversations skriver med det samme en XML-fil pr. chat (eller pr. udvalg) i Chrome. Det er ikke det samme skema.</p>
+
+<h3>Laver eksport til XML en PDF?</h3>
+<p>Nej. XML er markup. Produktets formater er Markdown, JSON, ren tekst, XML og PNG. Brug Chromes udskriftsdialog, hvis du vil have en side til udskrift. PNG er et billede og heller ikke en PDF.</p>
+
+<h3>Kan jeg eksportere en Claude-chat til XML i Claude Desktop?</h3>
+<p>Nej. Chrome-udvidelsen indlæses kun på claude.ai. Claude Desktop viser aldrig XML-menuen. Åbn den samme tråd på claude.ai i Chrome, hvis den findes der.</p>
+
+<h3>Skal jeg have Pro for at eksportere en Claude-chat til XML én gang?</h3>
+<p>Nej. De første 3 eksporter er gratis i alle formater, også XML. Pro til 3,99 $/md. eller 26,99 $/år fjerner grænsen for flere enkelte eller massevise XML-filer.</p>
+</article>
+</main>
+<section class="final-cta page-cta" aria-label="Installér">
+  <div class="wrap">
+    <div class="final-cta-panel">
+      <p class="final-kicker">Download Claude conversations</p>
+      <h2>Installér udvidelsen, og download Claude-chats på få sekunder</h2>
+      <p>Gør vigtige Claude-tråde til Markdown, JSON, tekst, XML eller PNG – lokalt, direkte i Chrome.</p>
+      <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=da-formats-xml" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Tilføj til Chrome</a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="logo" href="/da/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
+      <p class="legal-note">Chrome-udvidelse til at downloade Claude.ai-chats som Markdown, JSON, ren tekst, XML eller PNG. Bedømt 5,0 i Chrome Web Store.</p>
+    </div>
+    <div>
+      <h2>Installér</h2>
+      <a class="install-link" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=da-footer" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Chrome-udvidelse</a>
+    </div>
+    <div>
+      <h2>Produkt</h2>
+      <a href="/da/funktioner/">Funktioner</a>
+      <a href="/da/formater/">Formater</a>
+      <a href="/da/eksporter-alle-claude-chats/">Eksportér alle chats</a>
+      <a href="/da/saadan-virker-det/">Sådan virker det</a>
+    </div>
+    <div>
+      <h2>Guides</h2>
+      <a href="/da/download-claude-chat/">Download Claude-chat</a>
+      <a href="/da/saadan-eksporterer-du-claude-chat/">Sådan eksporterer du en Claude-chat</a>
+      <a href="/da/eksporter-claude-chat/">Eksportér Claude-chat</a>
+      <a href="/da/claude-samtale-extractor/">Claude samtale-extractor</a>
+      <a href="/da/eksporter-claude-code-samtale/">Eksportér Claude Code-samtale</a>
+      <a href="/da/claude-chat-som-pdf/">Print / PDF</a>
+      <a href="/da/eksporter-claude-desktop-chat/">Eksportér Claude Desktop-chat</a>
+      <a href="/da/eksporter-claude-samtale/">Eksportér Claude-samtale</a>
+      <a href="/da/gem-claude-samtale/">Gem Claude-samtale</a>
+      <a href="/da/download-claude-samtale/">Download Claude-samtale</a>
+    </div>
+    <div>
+      <h2>Juridisk</h2>
+      <a href="/da/om-os/">Om os</a>
+      <a href="/da/om-os/#contact">Kontakt</a>
+      <a href="/privacy/" hreflang="en">Privatliv (engelsk)</a>
+      <a href="/terms/" hreflang="en">Vilkår (engelsk)</a>
+      <a href="/refund/" hreflang="en">Refusion (engelsk)</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Download Claude conversations. Alle rettigheder forbeholdes.</div>
+    <div>
+      <a href="/privacy/" hreflang="en">Privatlivspolitik (engelsk)</a>
+      <a href="/terms/" hreflang="en">Servicevilkår (engelsk)</a>
+      <a href="/refund/" hreflang="en">Refusion (engelsk)</a>
+    </div>
+  </div>
+  <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/formats/xml/" hreflang="en" lang="en">English</a> <a href="/de/formate/xml/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/formats/xml/" hreflang="fr" lang="fr">Français</a> <a href="/nl/formaten/xml/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/format/xml/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/formater/xml/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/formater/xml/" hreflang="da" lang="da">Dansk</a> <a href="/fi/formaatit/xml/" hreflang="fi" lang="fi">Suomi</a> <a href="/ja/formats/xml/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/formats/xml/" hreflang="ko" lang="ko">한국어</a> <a href="/he/formats/xml/" hreflang="he" lang="he">עברית</a> <a href="/ar/formats/xml/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
+  <p class="disclaimer">Chats behandles i din browser · Google-login til kvoten · Ikke tilknyttet Anthropic, PBC. Claude er et varemærke tilhørende Anthropic. Uafhængig Chrome-udvidelse – ikke et officielt Anthropic-produkt. Support: <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

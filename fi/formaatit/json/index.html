@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vie Claude-keskustelu JSON-muodossa</title>
+  <meta name="description" content="Vie Claude AI -chat JSONina koko viestipuineen – eri asia kuin Anthropicin koko tilin vienti-ZIP. Yksittäinen chat tai joukkovienti.">
+  <link rel="canonical" href="https://chat-downloader.com/fi/formaatit/json/">
+  <!-- i18n:head -->
+  <link rel="alternate" hreflang="en" href="https://chat-downloader.com/formats/json/">
+  <link rel="alternate" hreflang="de" href="https://chat-downloader.com/de/formate/json/">
+  <link rel="alternate" hreflang="fr" href="https://chat-downloader.com/fr/formats/json/">
+  <link rel="alternate" hreflang="nl" href="https://chat-downloader.com/nl/formaten/json/">
+  <link rel="alternate" hreflang="sv" href="https://chat-downloader.com/sv/format/json/">
+  <link rel="alternate" hreflang="nb" href="https://chat-downloader.com/nb/formater/json/">
+  <link rel="alternate" hreflang="da" href="https://chat-downloader.com/da/formater/json/">
+  <link rel="alternate" hreflang="fi" href="https://chat-downloader.com/fi/formaatit/json/">
+  <link rel="alternate" hreflang="ja" href="https://chat-downloader.com/ja/formats/json/">
+  <link rel="alternate" hreflang="ko" href="https://chat-downloader.com/ko/formats/json/">
+  <link rel="alternate" hreflang="he" href="https://chat-downloader.com/he/formats/json/">
+  <link rel="alternate" hreflang="ar" href="https://chat-downloader.com/ar/formats/json/">
+  <link rel="alternate" hreflang="x-default" href="https://chat-downloader.com/formats/json/">
+  <meta property="og:locale" content="fi_FI">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="sv_SE">
+  <meta property="og:locale:alternate" content="nb_NO">
+  <meta property="og:locale:alternate" content="da_DK">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <meta property="og:locale:alternate" content="he_IL">
+  <meta property="og:locale:alternate" content="ar_AE">
+  <!-- /i18n:head -->
+  <meta property="og:title" content="Vie Claude-keskustelu JSON-muodossa">
+  <meta property="og:description" content="Vie Claude AI -chat JSONina koko viestipuineen – eri asia kuin Anthropicin koko tilin vienti-ZIP. Yksittäinen chat tai joukkovienti.">
+  <meta property="og:url" content="https://chat-downloader.com/fi/formaatit/json/">
+  <meta property="og:image" content="https://chat-downloader.com/assets/widget-guide.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chat Downloader">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Vie Claude-keskustelu JSON-muodossa">
+  <meta name="twitter:description" content="Vie Claude AI -chat JSONina koko viestipuineen – eri asia kuin Anthropicin koko tilin vienti-ZIP. Yksittäinen chat tai joukkovienti.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME1YXGZKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GME1YXGZKR');
+  </script>
+  
+  
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Voiko Claude-keskustelut viedä JSONina kerralla?","acceptedAnswer":{"@type":"Answer","text":"Kyllä. Selaussivun Export All tukee JSONia samoin kuin yksittäinen vienti. Jokainen valmis tiedosto lasketaan yhdeksi 3 ilmaisesta viennistä, ellei sinulla ole Prota hintaan 3,99 $/kk tai 26,99 $/vuosi."}},{"@type":"Question","name":"Onko JSON-rakenne dokumentoitu?","acceptedAnswer":{"@type":"Answer","text":"Se vastaa claude.ai:n omaa viestipuuta: lähettäjä, sisältölohkot, aikaleimat ja mallin metatiedot, ja artefaktit sekä ajatteluosiot ovat mukana, kun otat nuo valinnat käyttöön. Se ei ole Anthropicin tilin ZIPin skeema."}},{"@type":"Question","name":"Tarvitsenko Pron viedäkseni Claude-keskustelun JSONina?","acceptedAnswer":{"@type":"Answer","text":"Et. JSON sisältyy 3 ilmaiseen vientiin, jotka jokainen Googlella kirjautunut tili saa, kuten kaikki muutkin formaatit. Pro maksaa 3,99 $/kk tai 26,99 $/vuosi kolmen tiedoston jälkeen."}},{"@type":"Question","name":"Voiko saman chatin kahta JSON-vientiä vertailla?","acceptedAnswer":{"@type":"Answer","text":"Kyllä. Joka kerta kun viet Claude-keskustelun JSONina, saat samalla tavalla rakennetun itsenäisen tiedoston. Kahden eri aikaan tehdyn viennin vertailu toimii kuten minkä tahansa JSON-tiedostojen vertailu."}},{"@type":"Question","name":"Onko tämä JSON sama kuin Anthropicin Export data?","acceptedAnswer":{"@type":"Answer","text":"Ei. Anthropicin Export data on viiveellä tuleva koko tilin ZIP. Download Claude conversations kirjoittaa chatkohtaisen (tai valintakohtaisen) JSON-tiedoston heti Chromessa. Molemmat voivat olla JSONia, mutta ne eivät ole keskenään vaihdettavissa."}},{"@type":"Question","name":"Syntyykö JSON-viennistä PDF?","acceptedAnswer":{"@type":"Answer","text":"Ei. JSON on rakenteista dataa. Tuotteen formaatit ovat Markdown, JSON, pelkkä teksti, XML ja PNG. Tulostettavan sivun saat Chromen tulostusikkunasta, et tästä valikosta."}},{"@type":"Question","name":"Toimiiko JSON-vienti Claude Desktopissa?","acceptedAnswer":{"@type":"Answer","text":"Ei. Chrome-laajennus toimii vain claude.ai:ssa. Claude Desktop ei koskaan näytä JSON-vaihtoehtoa. Avaa sama keskustelu claude.ai:ssa Chromessa, jos se on siellä."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Etusivu","item":"https://chat-downloader.com/fi/"},{"@type":"ListItem","position":2,"name":"Formaatit","item":"https://chat-downloader.com/fi/formaatit/"},{"@type":"ListItem","position":3,"name":"JSON","item":"https://chat-downloader.com/fi/formaatit/json/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Siirry sisältöön</a>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a class="logo" href="/fi/">
+        <img src="/assets/icon.svg" alt="">
+        <span>Download Claude conversations</span>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="/fi/lataa-claude-keskustelu/">Lataaminen</a><a href="/fi/nain-viet-claude-chatin/">Vienti</a><a href="/fi/vie-kaikki-claude-keskustelut/">Kaikki kerralla</a><a href="/fi/formaatit/">Muodot</a><a href="/fi/#faq">UKK</a>
+        <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=fi-formats-json" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Lisää Chromeen</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <!-- i18n:switch --><details class="lang-switch"><summary aria-label="Kieli">fi</summary><ul><li><a href="/formats/json/" hreflang="en" lang="en">English</a></li><li><a href="/de/formate/json/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/formats/json/" hreflang="fr" lang="fr">Français</a></li><li><a href="/nl/formaten/json/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/sv/format/json/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="/nb/formater/json/" hreflang="nb" lang="nb">Norsk</a></li><li><a href="/da/formater/json/" hreflang="da" lang="da">Dansk</a></li><li><a href="/fi/formaatit/json/" hreflang="fi" lang="fi" aria-current="true">Suomi</a></li><li><a href="/ja/formats/json/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/ko/formats/json/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/he/formats/json/" hreflang="he" lang="he">עברית</a></li><li><a href="/ar/formats/json/" hreflang="ar" lang="ar">العربية</a></li></ul></details><!-- /i18n:switch -->
+      <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=fi-formats-json" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Lisää Chromeen</a>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Valikko">☰</button>
+    </div>
+  </div>
+</header>
+<nav class="crumbs" aria-label="Murupolku"><a href="/fi/">Etusivu</a> / <a href="/fi/formaatit/">Formaatit</a> / JSON</nav>
+<main id="main">
+<article class="band prose">
+<p class="article-meta">Päivitetty <time datetime="2026-09">syyskuussa 2026</time> · Laajennuksen versio 1.13.0</p>
+<h1 class="page-h1">Vie Claude-keskustelu JSON-muodossa skripteille</h1>
+<p class="lead">Kun haluat viedä Claude-keskustelun JSON-muodossa, asenna Download Claude conversations, avaa keskustelu claude.ai:ssa, napsauta oranssia painiketta, valitse JSON ja napsauta ”Export” (vie). Chrome tallentaa chatkohtaisen tiedoston, jossa on viestipuu. Tiedosto ei ole Anthropicin tilin ZIP. Kolme vientiä on ilmaisia; Pro maksaa 3,99 $/kk tai 26,99 $/vuosi.</p>
+<aside class="trust-badge" aria-label="Chrome Web Store -arvio">
+  <span class="trophy" aria-hidden="true">🏆</span>
+  <div>
+    <strong>Download Claude conversations – arvosana 5,0 Chrome Web Storessa</strong>
+    <span>2026 – ilmainen Chrome-laajennus, joka tallentaa claude.ai-chatit Markdown-, JSON-, teksti-, XML- tai PNG-muodossa</span>
+  </div>
+</aside>
+<nav class="toc" aria-label="Tällä sivulla">
+  <p>Tällä sivulla</p>
+  <ol>
+    <li><a href="#how-to">Miten viet Claude-keskustelun JSON-muodossa?</a></li>
+    <li><a href="#when">Milloin Claude-keskustelu kannattaa viedä JSONina?</a></li>
+    <li><a href="#inside">Mitä Claude-keskustelun JSON-vienti sisältää?</a></li>
+    <li><a href="#vs-zip">Keskustelun JSON vai Anthropicin Export data?</a></li>
+    <li><a href="#bulk">Voiko Claude-keskustelut viedä JSONina kerralla?</a></li>
+    <li><a href="#cost">Tarvitaanko JSON-vientiin Pro?</a></li>
+    <li><a href="#faq">UKK: vie Claude-keskustelu JSON-muodossa</a></li>
+  </ol>
+</nav>
+
+<h2 id="how-to">Miten viet Claude-keskustelun JSON-muodossa?</h2>
+<p>Avaa keskustelu claude.ai:ssa Chromessa, napsauta viestikentän vieressä olevaa oranssia painiketta, valitse JSON ja napsauta ”Export”. Download Claude conversations kirjoittaa tiedoston paikallisesti. Näin viet Claude-keskustelun JSON-muodossa versiossa 1.13.0. claude.ai:ssa ei syyskuussa 2026 ole chatkohtaista ”tallenna JSONina” -toimintoa.</p>
+<ol>
+<li>Asenna Download Claude conversations Chrome Web Storesta (arvosana 5,0).</li>
+<li>Lataa claude.ai uudelleen ja avaa oikea keskustelun URL, älä tyhjää aloitussivua.</li>
+<li>Napsauta viestikentän oikealla puolella olevaa oranssia latauspainiketta.</li>
+<li>Valitse JSON. Viimeksi käyttämäsi formaatti jää muistiin.</li>
+<li>Napsauta ”Export”. Chrome lataa JSON-tiedoston selaimen latausrajapinnan kautta.</li>
+</ol>
+<p>Google-kirjautuminen vaaditaan ennen kuin viet Claude-keskustelun JSONina ensimmäisen kerran. Download Claude conversations tallentaa vahvistetun sähköpostiosoitteen laskeakseen 3 ilmaista vientiä ja palauttaakseen Pron uudelleenasennuksen jälkeen. Keskustelujen sisältö ei kuulu kirjautumiseen. Toimintaperiaate: <a href="/fi/nain-se-toimii/">näin se toimii</a>.</p>
+<p>Jos oranssi painike puuttuu, et ole keskustelun URL-osoitteessa, välilehti pitää ladata uudelleen tai laajennus on piilossa Chromen palapelivalikossa. Kiinnitä Download Claude conversations ja päivitä claude.ai. Sisältöskripti ei koskaan toimi Claude Desktopissa eikä Claude Codessa.</p>
+<div class="callout callout-tip">
+  <p><strong>Yksi keskustelu vai monta tiedostoa.</strong> Oranssi painike vie avoimen chatin JSONina. Jos tarvitset monta JSON-tiedostoa, avaa ”View and Download All Conversations” (näytä ja lataa kaikki keskustelut) ja aja ”Export All” (vie kaikki) JSON valittuna – katso <a href="/fi/vie-kaikki-claude-keskustelut/">Export All -joukkovienti</a>.</p>
+</div>
+
+<h2 id="when">Milloin Claude-keskustelu kannattaa viedä JSONina?</h2>
+<p>Vie Claude-keskustelu JSONina, kun tiedostoa lukee skripti, indeksoija tai vertailutyökalu. JSON on rakennettu viestipuuta varten, ei Obsidianissa luettavaksi. Jos haluat otsikot ja koodilohkot ihmisille, valitse sen sijaan Markdown.</p>
+<p>Kopioiminen claude.ai:sta hävittää lähettäjärakenteen. Tulostus säilyttää verkkosivun käyttöliittymän. JSON-viennissä Download Claude conversations säilyttää vuorot, lähettäjät ja valinnaisen ajattelun datana, ei yhdeksi kappaleeksi litistettynä. Siksi kehittäjät valitsevat JSONin pelkän tekstin sijaan.</p>
+<div class="expert-quote">
+  <p>Kirjoitamme JSONin sivulla jo olevasta claude.ai-puusta – lähettäjä, sisältölohkot, aikaleimat, mallin metatiedot – lähettämättä keskustelua mihinkään. Tämä JSON ei ole Anthropicin tilin ZIP eikä PDF. Versiossa 1.13.0 on edelleen vain viisi formaattia.</p>
+  <footer>Download Claude conversations -tiimi</footer>
+</div>
+<p>Samaa laajennusta haetaan myös nimillä Claude Chat Downloader ja Claude Conversation Downloader. JSON-vienti tehdään samalla oranssilla painikkeella, ei toisella tuotteella. Juridisilla sivuilla voi yhä lukea Claude Exporter.</p>
+
+<h2 id="inside">Mitä Claude-keskustelun JSON-vienti sisältää?</h2>
+<p>Claude-keskustelun JSON-vienti vastaa claude.ai:n viestipuuta: lähettäjä, sisältölohkot, aikaleimat ja mallin metatiedot. Ajatteluosiot ja artefaktit ovat mukana, kun kyseiset valinnat ovat päällä. Lähettäjäsuodatin voi rajata tiedoston kaikkiin viesteihin, vain käyttäjän tai vain avustajan viesteihin (”all / human only / assistant only”). Mitään ei litistetä ensin Markdowniksi.</p>
+<p>Artefaktien asettelu versiossa 1.13.0 on ”Original”, ”Inline”, ”Nested” tai ”Flat” (alkuperäinen, upotettu, sisäkkäinen, litteä). Asettelu muuttaa sitä, miten artefaktien sisältö sijoittuu JSONiin – samat neljä vaihtoehtoa kuin Markdownissa ja XML:ssä. Kaikki valinnat: <a href="/fi/ominaisuudet/">Chrome-laajennuksen ominaisuudet</a>. JSONista ei silti tule PDF:ää.</p>
+<table>
+  <caption>Kentät, jotka tyypillisesti saat viedessäsi Claude-keskustelun JSONina</caption>
+  <thead>
+    <tr>
+      <th scope="col">Osa</th>
+      <th scope="col">Mukana JSONissa?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Viestipuu (vuorot, lähettäjä)</td>
+      <td>Kyllä</td>
+    </tr>
+    <tr>
+      <td>Sisältölohkot</td>
+      <td>Kyllä</td>
+    </tr>
+    <tr>
+      <td>Aikaleimat ja mallin metatiedot</td>
+      <td>Kyllä, kun Metadata on päällä</td>
+    </tr>
+    <tr>
+      <td>Ajatteluosiot</td>
+      <td>Jos Thinking-valinta on päällä</td>
+    </tr>
+    <tr>
+      <td>Artefaktit</td>
+      <td>Kyllä, valitsemallasi asettelulla</td>
+    </tr>
+    <tr>
+      <td>Koko tilin ZIP-kääre</td>
+      <td>Ei – se on Anthropicin Export data</td>
+    </tr>
+  </tbody>
+</table>
+<p>Jos keskustelu on pitkä, vieritä, kunnes claude.ai on ladannut aiemmat viestit, ennen kuin viet Claude-keskustelun JSONina. Laajennus voi sarjallistaa vain sen, minkä sivu on näyttänyt. Puoliksi ladattu DOM tuottaa katkenneen JSON-tiedoston.</p>
+
+<h2 id="vs-zip">Keskustelun JSON vai Anthropicin Export data?</h2>
+<p>Molemmat ovat JSONia, mutta rakenne ja laajuus eroavat. Anthropicin Settings → Privacy → Export data (valikot voivat näkyä suomeksi, jos claude.ai on asetettu suomen kielelle) lähettää odotuksen jälkeen sähköpostiin yhden ZIPin koko tilistä. Kun viet Claude-keskustelun JSON-muodossa laajennuksella, saat yhden keskustelun heti Chromessa. Käytä ZIPiä varmuuskopioon.</p>
+<table>
+  <caption>Kaksi eri JSON-reittiä claude.ai:sta</caption>
+  <thead>
+    <tr>
+      <th scope="col">Tapa</th>
+      <th scope="col">Laajuus</th>
+      <th scope="col">Milloin tiedosto tulee</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Download Claude conversations -JSON</td>
+      <td>Tämä chat tai joukkovalinta</td>
+      <td>Heti Chromen latauksena</td>
+    </tr>
+    <tr>
+      <td>Settings → Privacy → Export data</td>
+      <td>Koko tili</td>
+      <td>Sähköpostilinkki, joka vanhenee</td>
+    </tr>
+    <tr>
+      <td>Tulosta → Save as PDF</td>
+      <td>Näkyvä verkkosivu</td>
+      <td>Heti, mutta se on PDF, ei JSON</td>
+    </tr>
+  </tbody>
+</table>
+<p>Anthropicin ZIP-pyynnössä ei voi valita Markdownia. Tämän laajennuksen JSONia ei myöskään voi käyttää suoraan ZIPin skeeman korvikkeena. Formaattien kooste: <a href="/fi/formaatit/">Claude-chatin vientiformaatit</a>. Tulostus on visuaalinen kiertotie, ei JSON-vienti.</p>
+<p>Download Claude conversations ei ole yhteydessä Anthropic, PBC:hen. Sisältöskripti käyttää istuntoa, jonka olet jo avannut claude.ai:ssa. Se ei kirjaudu Anthropiciin erillisillä tunnuksilla. Noudata Anthropicin sääntöjä tililläsi.</p>
+
+<h2 id="bulk">Voiko Claude-keskustelut viedä JSONina kerralla?</h2>
+<p>Kyllä. Avaa ”View and Download All Conversations”, valitse formaatiksi JSON, suodata taulukko ja napsauta Export All. Jokainen valmis tiedosto on yksi 3 ilmaisesta viennistä. Pro hintaan 3,99 $/kk tai 26,99 $/vuosi poistaa rajan JSON-joukkoviennistä.</p>
+<p>Selaustaulukko listaa claude.ai-historian, ja siinä on nimihaku sekä suodattimet All, New, Exported ja Project (kaikki, uudet, viedyt, projekti). ”New” tarkoittaa keskusteluja, joita ei ole vielä viety Download Claude conversations -laajennuksella. ”Exported” seuraa jo tallennettuja chatteja. ”Project” vastaa sitä, miten ryhmittelet chatit claude.ai:ssa. Export All tuottaa monta JSON-tiedostoa, ei yhtä sekalaista ZIPiä.</p>
+<div class="callout callout-warn">
+  <p><strong>Kiintiö koskee koko tiliä.</strong> Kolme ilmaista vientiä yhteensä – ei kolme JSON-tiedostoa joukkovientiä kohden. 40 keskustelun valinta kuluttaa 40 vientiä, jos jokainen tiedosto valmistuu. Suunnittele valinta tai käytä Prota.</p>
+</div>
+<p>Voit vertailla kahta eri aikaan tehtyä JSON-vientiä samasta claude.ai-keskustelusta kuten mitä tahansa JSON-tiedostoja. Jokainen vienti on itsenäinen. Samojen chattien toinen Export All kuluttaa silti kiintiötä, elleivät tiedostot jää kesken.</p>
+
+<h2 id="cost">Tarvitaanko JSON-vientiin Pro?</h2>
+<p>Ei. JSON sisältyy 3 ilmaiseen vientiin, jotka jokainen Googlella kirjautunut tili saa, aivan kuten Markdown, teksti, XML ja PNG. Kolmen tiedoston jälkeen Pro maksaa 3,99 $ kuukaudessa tai 26,99 $ vuodessa Paddlen kautta. Download Claude conversations ei veloita lisää, kun viet Claude-keskustelun JSONina.</p>
+<p>3 ilmaista vientiä eivät nollaudu, kun asennat laajennuksen uudelleen. Siksi Google-kirjautuminen vaaditaan ensimmäisellä ”Export”-napsautuksella. Pro palautuu uudella tietokoneella samalla Google-tilillä. Paddle on myyjä (merchant of record); emme koskaan näe korttinumeroita.</p>
+<p>Laajennus toimii vain claude.ai:ssa Chromessa. Claude Desktop ja Claude Code eivät saa JSON-painiketta. Claude Coden <code>/export</code> tai levyn JSONL on eri reitti. Versio 1.13.0, syyskuu 2026, ei edelleenkään kirjoita PDF:ää, Wordia tai Notionia.</p>
+
+<h2 id="faq">UKK: vie Claude-keskustelu JSON-muodossa</h2>
+<p>Nämä kysymykset koskevat Claude-keskustelun JSON-vientiä Download Claude conversations 1.13.0 -laajennuksella: Export All, rakenne, kiintiö, vertailu, Anthropicin ZIP ja Desktop. Jokainen vastaus on tuotefakta. Sivun FAQPage JSON-LD vastaa tätä listaa.</p>
+
+<h3>Voiko Claude-keskustelut viedä JSONina kerralla?</h3>
+<p>Kyllä. Selaussivun Export All tukee JSONia samoin kuin yksittäinen vienti. Jokainen valmis tiedosto lasketaan yhdeksi 3 ilmaisesta viennistä, ellei sinulla ole Prota hintaan 3,99 $/kk tai 26,99 $/vuosi.</p>
+
+<h3>Onko JSON-rakenne dokumentoitu?</h3>
+<p>Se vastaa claude.ai:n omaa viestipuuta: lähettäjä, sisältölohkot, aikaleimat ja mallin metatiedot, ja artefaktit sekä ajatteluosiot ovat mukana, kun otat nuo valinnat käyttöön. Se ei ole Anthropicin tilin ZIPin skeema.</p>
+
+<h3>Tarvitsenko Pron viedäkseni Claude-keskustelun JSONina?</h3>
+<p>Et. JSON sisältyy 3 ilmaiseen vientiin, jotka jokainen Googlella kirjautunut tili saa, kuten kaikki muutkin formaatit. Pro maksaa 3,99 $/kk tai 26,99 $/vuosi kolmen tiedoston jälkeen.</p>
+
+<h3>Voiko saman chatin kahta JSON-vientiä vertailla?</h3>
+<p>Kyllä. Joka kerta kun viet Claude-keskustelun JSONina, saat samalla tavalla rakennetun itsenäisen tiedoston. Kahden eri aikaan tehdyn viennin vertailu toimii kuten minkä tahansa JSON-tiedostojen vertailu.</p>
+
+<h3>Onko tämä JSON sama kuin Anthropicin Export data?</h3>
+<p>Ei. Anthropicin Export data on viiveellä tuleva koko tilin ZIP. Download Claude conversations kirjoittaa chatkohtaisen (tai valintakohtaisen) JSON-tiedoston heti Chromessa. Molemmat voivat olla JSONia, mutta ne eivät ole keskenään vaihdettavissa.</p>
+
+<h3>Syntyykö JSON-viennistä PDF?</h3>
+<p>Ei. JSON on rakenteista dataa. Tuotteen formaatit ovat Markdown, JSON, pelkkä teksti, XML ja PNG. Tulostettavan sivun saat Chromen tulostusikkunasta, et tästä valikosta.</p>
+
+<h3>Toimiiko JSON-vienti Claude Desktopissa?</h3>
+<p>Ei. Chrome-laajennus toimii vain claude.ai:ssa. Claude Desktop ei koskaan näytä JSON-vaihtoehtoa. Avaa sama keskustelu claude.ai:ssa Chromessa, jos se on siellä.</p>
+</article>
+</main>
+<section class="final-cta page-cta" aria-label="Asenna">
+  <div class="wrap">
+    <div class="final-cta-panel">
+      <p class="final-kicker">Download Claude conversations</p>
+      <h2>Asenna laajennus ja lataa Claude-chat sekunneissa</h2>
+      <p>Tallenna tärkeät Claude-keskustelut Markdownina, JSONina, tekstinä, XML:nä tai PNG:nä – paikallisesti, Chromesta.</p>
+      <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=fi-formats-json" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Lisää Chromeen</a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="logo" href="/fi/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
+      <p class="legal-note">Chrome-laajennus Claude.ai-keskustelujen lataamiseen Markdown-, JSON-, pelkkä teksti-, XML- tai PNG-muodossa. Arvosana 5,0 Chrome Web Storessa.</p>
+    </div>
+    <div>
+      <h2>Asenna</h2>
+      <a class="install-link" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=fi-footer" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Chrome-laajennus</a>
+    </div>
+    <div>
+      <h2>Tuote</h2>
+      <a href="/fi/ominaisuudet/">Ominaisuudet</a>
+      <a href="/fi/formaatit/">Muodot</a>
+      <a href="/fi/vie-kaikki-claude-keskustelut/">Vie kaikki keskustelut</a>
+      <a href="/fi/nain-se-toimii/">Näin se toimii</a>
+    </div>
+    <div>
+      <h2>Oppaat</h2>
+      <a href="/fi/lataa-claude-keskustelu/">Näin lataat Claude-keskustelun</a>
+      <a href="/fi/nain-viet-claude-chatin/">Näin viet Claude-chatin</a>
+      <a href="/fi/vie-claude-chat/">Vie Claude-chat</a>
+      <a href="/fi/claude-keskustelu-extractor/">Claude-keskustelujen extractor</a>
+      <a href="/fi/claude-code-keskustelun-vienti/">Claude Code -keskustelun vienti</a>
+      <a href="/fi/claude-keskustelu-pdf/">Tulostus / PDF</a>
+      <a href="/fi/vie-claude-desktop-chat/">Vie Claude Desktop -chat</a>
+      <a href="/fi/claude-keskustelun-vienti/">Claude-keskustelun vienti</a>
+      <a href="/fi/tallenna-claude-keskustelu/">Tallenna Claude-keskustelu</a>
+      <a href="/fi/claude-keskustelun-lataus/">Claude-keskustelun lataus</a>
+    </div>
+    <div>
+      <h2>Oikeudelliset tiedot</h2>
+      <a href="/fi/tietoa-meista/">Tietoa meistä</a>
+      <a href="/fi/tietoa-meista/#contact">Yhteystiedot</a>
+      <a href="/privacy/" hreflang="en">Tietosuoja (englanniksi)</a>
+      <a href="/terms/" hreflang="en">Käyttöehdot (englanniksi)</a>
+      <a href="/refund/" hreflang="en">Palautukset (englanniksi)</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Download Claude conversations. Kaikki oikeudet pidätetään.</div>
+    <div>
+      <a href="/privacy/" hreflang="en">Tietosuojaseloste (englanniksi)</a>
+      <a href="/terms/" hreflang="en">Käyttöehdot (englanniksi)</a>
+      <a href="/refund/" hreflang="en">Palautukset (englanniksi)</a>
+    </div>
+  </div>
+  <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/formats/json/" hreflang="en" lang="en">English</a> <a href="/de/formate/json/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/formats/json/" hreflang="fr" lang="fr">Français</a> <a href="/nl/formaten/json/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/format/json/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/formater/json/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/formater/json/" hreflang="da" lang="da">Dansk</a> <a href="/fi/formaatit/json/" hreflang="fi" lang="fi">Suomi</a> <a href="/ja/formats/json/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/formats/json/" hreflang="ko" lang="ko">한국어</a> <a href="/he/formats/json/" hreflang="he" lang="he">עברית</a> <a href="/ar/formats/json/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
+  <p class="disclaimer">Keskustelut käsitellään selaimessasi · Google-kirjautuminen kiintiötä varten · Ei yhteydessä Anthropic, PBC:hen. Claude on Anthropicin tavaramerkki. Itsenäinen Chrome-laajennus – ei Anthropicin virallinen tuote. Tuki: <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

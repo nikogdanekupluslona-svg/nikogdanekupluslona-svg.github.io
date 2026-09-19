@@ -42,13 +42,13 @@ code {
 
 .skip {
   position: absolute;
-  left: -999px;
-  top: 8px;
+  inset-inline-start: 8px;
+  top: -100px;
   background: #fff;
   padding: 8px 12px;
   z-index: 20;
 }
-.skip:focus { left: 8px; }
+.skip:focus { top: 8px; }
 
 .wrap {
   max-width: var(--max);
@@ -245,7 +245,7 @@ h1.page-h1 {
   margin: 1.5em 0 0.4em;
 }
 .prose p, .prose li { color: #3f3a36; }
-.prose ol, .prose ul { padding-left: 1.2em; }
+.prose ol, .prose ul { padding-inline-start: 1.2em; }
 .prose li { margin: 0.35em 0; }
 .prose table {
   width: 100%;
@@ -258,7 +258,7 @@ h1.page-h1 {
   overflow-x: auto;
 }
 .prose th, .prose td {
-  text-align: left;
+  text-align: start;
   padding: 10px 12px;
   border-bottom: 1px solid var(--line);
   vertical-align: top;
@@ -329,12 +329,12 @@ h1.page-h1 {
 }
 .toc ol {
   margin: 0;
-  padding-left: 1.15em;
+  padding-inline-start: 1.15em;
 }
 .toc li { margin: 0.25em 0; font-size: 0.95rem; }
 
 .expert-quote {
-  border-left: 4px solid var(--brand);
+  border-inline-start: 4px solid var(--brand);
   background: var(--paper);
   padding: 14px 18px;
   margin: 1.6em 0;
@@ -389,7 +389,7 @@ h1.page-h1 {
   font-size: 14px;
   margin: 18px 0 0;
 }
-.trust span::before { content: "•"; color: var(--brand); margin-right: 8px; }
+.trust span::before { content: "•"; color: var(--brand); margin-inline-end: 8px; }
 
 .crumbs {
   max-width: var(--max);
@@ -459,7 +459,7 @@ h1.page-h1 {
   display: flex;
   align-items: center;
   gap: 16px;
-  text-align: left;
+  text-align: start;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
   transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
 }
@@ -910,7 +910,7 @@ h1.page-h1 {
     flex-direction: column;
     gap: 28px;
     padding: 36px 0;
-    text-align: left;
+    text-align: start;
   }
   .hero { padding: 60px 0 48px; }
   .value-band { padding: 72px 0; }
@@ -925,3 +925,56 @@ h1.page-h1 {
   .logo span { max-width: 11rem; font-size: 14px; }
   .final-cta .btn-install { width: 100%; }
 }
+
+/* Language switcher */
+.lang-switch { position: relative; }
+.lang-switch summary {
+  list-style: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 7px 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #334155;
+  text-transform: uppercase;
+}
+.lang-switch summary::-webkit-details-marker { display: none; }
+.lang-switch ul {
+  position: absolute;
+  inset-inline-end: 0;
+  top: calc(100% + 6px);
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  min-width: 11rem;
+  z-index: 12;
+}
+.lang-switch li a {
+  display: block;
+  padding: 6px 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: var(--ink);
+  font-size: 14px;
+}
+.lang-switch li a:hover, .lang-switch li a[aria-current="true"] { background: var(--brand-soft); }
+.footer-langs { max-width: var(--max); margin: 16px auto 0; font-size: 13px; display: flex; flex-wrap: wrap; gap: 6px 14px; }
+.footer-langs a { color: #cbd5e1; text-decoration: none; }
+.footer-langs a:hover { color: #fff; }
+
+/* Scripts not covered by Figtree / Fraunces */
+:root:lang(ja) { --sans: "Figtree", "Noto Sans JP", "Hiragino Sans", "Yu Gothic", sans-serif; --serif: "Noto Sans JP", "Hiragino Sans", sans-serif; }
+:root:lang(ko) { --sans: "Figtree", "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; --serif: "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; }
+:root:lang(he) { --sans: "Figtree", "Noto Sans Hebrew", Arial, sans-serif; --serif: "Noto Sans Hebrew", Arial, sans-serif; }
+:root:lang(ar) { --sans: "Figtree", "Noto Sans Arabic", Tahoma, sans-serif; --serif: "Noto Sans Arabic", Tahoma, sans-serif; }
+:root:lang(ja) body, :root:lang(ko) body { word-break: keep-all; overflow-wrap: anywhere; line-height: 1.8; }
+:root:lang(ar) body { line-height: 1.85; }
+[dir="rtl"] code, [dir="rtl"] pre, [dir="rtl"] kbd { direction: ltr; unicode-bidi: isolate; }

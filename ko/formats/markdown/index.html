@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Claude 채팅 Markdown으로 내보내기</title>
+  <meta name="description" content="Claude 채팅을 Markdown으로 내보냅니다. 제목, 코드 블록, 표가 유지되어 Obsidian·GitHub에 바로 쓸 수 있습니다.">
+  <link rel="canonical" href="https://chat-downloader.com/ko/formats/markdown/">
+  <!-- i18n:head -->
+  <link rel="alternate" hreflang="en" href="https://chat-downloader.com/formats/markdown/">
+  <link rel="alternate" hreflang="de" href="https://chat-downloader.com/de/formate/markdown/">
+  <link rel="alternate" hreflang="fr" href="https://chat-downloader.com/fr/formats/markdown/">
+  <link rel="alternate" hreflang="nl" href="https://chat-downloader.com/nl/formaten/markdown/">
+  <link rel="alternate" hreflang="sv" href="https://chat-downloader.com/sv/format/markdown/">
+  <link rel="alternate" hreflang="nb" href="https://chat-downloader.com/nb/formater/markdown/">
+  <link rel="alternate" hreflang="da" href="https://chat-downloader.com/da/formater/markdown/">
+  <link rel="alternate" hreflang="fi" href="https://chat-downloader.com/fi/formaatit/markdown/">
+  <link rel="alternate" hreflang="ja" href="https://chat-downloader.com/ja/formats/markdown/">
+  <link rel="alternate" hreflang="ko" href="https://chat-downloader.com/ko/formats/markdown/">
+  <link rel="alternate" hreflang="he" href="https://chat-downloader.com/he/formats/markdown/">
+  <link rel="alternate" hreflang="ar" href="https://chat-downloader.com/ar/formats/markdown/">
+  <link rel="alternate" hreflang="x-default" href="https://chat-downloader.com/formats/markdown/">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="sv_SE">
+  <meta property="og:locale:alternate" content="nb_NO">
+  <meta property="og:locale:alternate" content="da_DK">
+  <meta property="og:locale:alternate" content="fi_FI">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="he_IL">
+  <meta property="og:locale:alternate" content="ar_AE">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&amp;display=swap" rel="stylesheet">
+  <!-- /i18n:head -->
+  <meta property="og:title" content="Claude 채팅 Markdown으로 내보내기">
+  <meta property="og:description" content="Download Claude conversations로 Claude AI 채팅을 Markdown으로 내보냅니다. 제목, 코드 블록, 표가 그대로 남아 Obsidian이나 GitHub에 바로 쓸 수 있습니다.">
+  <meta property="og:url" content="https://chat-downloader.com/ko/formats/markdown/">
+  <meta property="og:image" content="https://chat-downloader.com/assets/widget-guide.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chat Downloader">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Claude 채팅 Markdown으로 내보내기">
+  <meta name="twitter:description" content="Download Claude conversations로 Claude AI 채팅을 Markdown으로 내보냅니다. 제목, 코드 블록, 표가 그대로 남아 Obsidian이나 GitHub에 바로 쓸 수 있습니다.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME1YXGZKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GME1YXGZKR');
+  </script>
+  
+  
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Claude 채팅을 Markdown으로 내보내면 코드가 손실되나요?","acceptedAnswer":{"@type":"Answer","text":"아니요. claude.ai에서 그냥 복사해 붙여 넣을 때와 달리 코드 블록의 언어 태그와 들여쓰기가 유지됩니다. 표도 Markdown 표로 남습니다. 텍스트를 직접 선택하는 대신 Claude 채팅을 Markdown으로 내보내는 가장 큰 이유입니다."}},{"@type":"Question","name":"Claude 채팅을 Markdown으로 일괄 내보낼 수 있나요?","acceptedAnswer":{"@type":"Answer","text":"네. 목록 페이지의 \"Export All\"(모두 내보내기)은 채팅 하나를 내보낼 때와 똑같이 Markdown을 지원합니다. Pro가 아니라면 완성된 .md 파일마다 무료 내보내기 3회 중 1회로 계산됩니다."}},{"@type":"Question","name":"Markdown은 Anthropic의 Export data와 같은가요?","acceptedAnswer":{"@type":"Answer","text":"아니요. Anthropic의 공식 내보내기는 계정 전체의 JSON ZIP이며, 한참 기다린 뒤 이메일로 옵니다. Claude 채팅 Markdown 내보내기는 Download Claude conversations가 만드는 채팅별(또는 선택별) .md 파일입니다."}},{"@type":"Question","name":"Markdown은 다른 형식보다 비용이 더 드나요?","acceptedAnswer":{"@type":"Answer","text":"아니요. Markdown도 JSON, 텍스트, XML, PNG와 마찬가지로 Google로 로그인한 계정의 무료 내보내기 3회에 포함됩니다. 그 이후 Pro(월 $3.99 또는 연 $26.99)는 파일 수 제한이 없습니다."}},{"@type":"Question","name":"Desktop에서 Claude 채팅을 Markdown으로 내보낼 수 있나요?","acceptedAnswer":{"@type":"Answer","text":"아니요. Download Claude conversations는 Chrome의 claude.ai에만 삽입됩니다. Claude Desktop에는 Markdown 드롭다운이 나타나지 않습니다. 같은 스레드가 claude.ai에 있다면 그곳에서 여십시오."}},{"@type":"Question","name":"Claude 채팅을 Markdown으로 내보내면 PDF가 만들어지나요?","acceptedAnswer":{"@type":"Answer","text":"아니요. Markdown은 .md 텍스트 파일입니다. 이 제품은 PDF를 지원하지 않습니다. 인쇄용 페이지가 필요하면 Chrome의 인쇄 대화 상자를 쓰십시오. PNG는 이미지이며 역시 PDF가 아닙니다."}},{"@type":"Question","name":"한 번 Markdown으로 내보내는 데도 Pro가 필요한가요?","acceptedAnswer":{"@type":"Answer","text":"아니요. 처음 3회는 Markdown을 포함해 어떤 형식이든 무료입니다. Pro(월 $3.99 또는 연 $26.99)는 채팅 하나든 일괄이든 .md 파일 수의 제한을 없앱니다."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"홈","item":"https://chat-downloader.com/ko/"},{"@type":"ListItem","position":2,"name":"형식","item":"https://chat-downloader.com/ko/formats/"},{"@type":"ListItem","position":3,"name":"Markdown","item":"https://chat-downloader.com/ko/formats/markdown/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a class="logo" href="/ko/">
+        <img src="/assets/icon.svg" alt="">
+        <span>Download Claude conversations</span>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="/ko/how-to-download-claude-chat/">다운로드 방법</a><a href="/ko/how-to-export-claude-chat/">내보내기</a><a href="/ko/bulk/">일괄 내보내기</a><a href="/ko/formats/">형식</a><a href="/ko/#faq">FAQ</a>
+        <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=ko-formats-markdown" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Chrome에 추가</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <!-- i18n:switch --><details class="lang-switch"><summary aria-label="언어">ko</summary><ul><li><a href="/formats/markdown/" hreflang="en" lang="en">English</a></li><li><a href="/de/formate/markdown/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/formats/markdown/" hreflang="fr" lang="fr">Français</a></li><li><a href="/nl/formaten/markdown/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/sv/format/markdown/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="/nb/formater/markdown/" hreflang="nb" lang="nb">Norsk</a></li><li><a href="/da/formater/markdown/" hreflang="da" lang="da">Dansk</a></li><li><a href="/fi/formaatit/markdown/" hreflang="fi" lang="fi">Suomi</a></li><li><a href="/ja/formats/markdown/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/ko/formats/markdown/" hreflang="ko" lang="ko" aria-current="true">한국어</a></li><li><a href="/he/formats/markdown/" hreflang="he" lang="he">עברית</a></li><li><a href="/ar/formats/markdown/" hreflang="ar" lang="ar">العربية</a></li></ul></details><!-- /i18n:switch -->
+      <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=ko-formats-markdown" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Chrome에 추가</a>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="메뉴">☰</button>
+    </div>
+  </div>
+</header>
+<nav class="crumbs" aria-label="이동 경로"><a href="/ko/">홈</a> / <a href="/ko/formats/">형식</a> / Markdown</nav>
+<main id="main">
+<article class="band prose">
+<p class="article-meta"><time datetime="2026-09">2026년 9월</time> 업데이트 · 확장 프로그램 1.13.0</p>
+<h1 class="page-h1">노트용으로 Claude 채팅 Markdown으로 내보내기</h1>
+<p class="lead">Claude 채팅을 Markdown으로 내보내려면 Download Claude conversations를 설치하고, claude.ai에서 Claude(클로드)와의 스레드를 연 뒤 주황색 버튼을 누르고 Markdown을 골라 "Export"(내보내기)를 누르십시오. Chrome이 제목, 코드 블록, 표가 담긴 .md 파일을 저장합니다. 내보내기 3회는 무료이며, Pro는 월 $3.99 또는 연 $26.99입니다. 드롭다운에 PDF는 없습니다.</p>
+<aside class="trust-badge" aria-label="Chrome Web Store 평점">
+  <span class="trophy" aria-hidden="true">🏆</span>
+  <div>
+    <strong>Download Claude conversations — Chrome Web Store 평점 5.0</strong> <span>2026 — claude.ai 채팅을 Markdown, JSON, 텍스트, XML, PNG로 저장하는 무료 Chrome 확장 프로그램</span>
+  </div>
+</aside>
+<nav class="toc" aria-label="이 페이지의 내용">
+  <p>이 페이지의 내용</p>
+  <ol>
+    <li><a href="#how-to">Claude 채팅을 Markdown으로 내보내려면?</a></li>
+    <li><a href="#why-markdown">노트용으로 왜 Markdown으로 내보낼까요?</a></li>
+    <li><a href="#preserved">Markdown으로 내보내면 무엇이 유지되나요?</a></li>
+    <li><a href="#bulk">Claude 채팅을 Markdown으로 일괄 내보낼 수 있나요?</a></li>
+    <li><a href="#vs-json">Claude 채팅을 내보낼 때 Markdown vs JSON?</a></li>
+    <li><a href="#cost">Markdown으로 내보내면 추가 비용이 드나요?</a></li>
+    <li><a href="#faq">FAQ: Claude 채팅 Markdown으로 내보내기</a></li>
+  </ol>
+</nav>
+
+<h2 id="how-to">Claude 채팅을 Markdown으로 내보내려면?</h2>
+<p>Chrome의 claude.ai에서 대화를 열고, 메시지 입력창 옆의 주황색 버튼을 누른 뒤 Markdown을 고르고 "Export"를 누르십시오. Download Claude conversations가 .md 파일을 로컬에 만듭니다. 버전 1.13.0에서 Claude 채팅을 Markdown으로 내보내는 방법은 이것입니다.</p>
+<ol>
+<li>Chrome Web Store에서 Download Claude conversations를 설치합니다(평점 5.0).</li>
+<li>claude.ai를 새로 고치고, 빈 입력 화면이 아닌 실제 대화 URL을 엽니다.</li>
+<li>메시지 입력창 오른쪽의 주황색 다운로드 버튼을 누릅니다.</li>
+<li>Markdown을 고릅니다. 확장 프로그램은 마지막으로 쓴 형식을 기억합니다.</li>
+<li>"Export"를 누릅니다. Chrome이 브라우저 다운로드 API로 .md 파일을 다운로드합니다.</li>
+</ol>
+<p>처음 Claude 채팅을 Markdown으로 내보내기 전에 Google 로그인이 필요합니다. Download Claude conversations는 무료 내보내기 3회를 집계하고 다시 설치한 뒤 Pro를 복원하기 위해 인증된 이메일을 저장합니다. 로그인할 때 채팅 텍스트는 업로드되지 않습니다. 구조: <a href="/ko/how-it-works/">작동 방식</a>.</p>
+<p>주황색 버튼이 없다면 대화 URL이 아니거나, 설치 후 탭을 새로 고쳐야 하거나, 확장 프로그램이 Chrome 퍼즐 메뉴에 숨어 있는 것입니다. Download Claude conversations를 고정한 뒤 claude.ai를 새로 고치십시오. 콘텐츠 스크립트는 Claude Desktop이나 Claude Code에는 삽입되지 않습니다.</p>
+<div class="callout callout-tip">
+  <p><strong>채팅 하나 vs 여러 개.</strong> 주황색 버튼은 열려 있는 스레드를 Markdown으로 내보냅니다. .md 파일이 많이 필요하면 "View and Download All Conversations"(모든 대화 보기 및 다운로드)를 열고 Markdown을 선택한 채 "Export All"을 실행하십시오 — <a href="/ko/bulk/">일괄 Export All</a> 참고.</p>
+</div>
+
+<h2 id="why-markdown">노트용으로 왜 Markdown으로 내보낼까요?</h2>
+<p>Obsidian, GitHub 위키, 또는 제목과 코드 블록을 렌더링하는 편집기에서 읽을 파일이라면 Claude 채팅을 Markdown으로 내보내십시오. .md 파일은 여전히 검색하고 비교(diff)할 수 있는 일반 텍스트입니다. 파서에는 JSON이 낫고, PNG는 grep으로 검색할 수 없는 그림입니다.</p>
+<p>claude.ai에서 복사해 붙여 넣으면 보통 들여쓰기가 사라지고 표가 뭉개집니다. 인쇄(Ctrl/Cmd+P)는 사이드바까지 담고 긴 코드 블록을 페이지 사이에서 자르는 경우가 많습니다. Claude 채팅을 Markdown으로 내보내면 코드 블록에 언어 태그가 남고 표는 표로 남습니다. 글을 쓰는 분들이 이 형식을 먼저 고르는 이유입니다.</p>
+<div class="expert-quote">
+  <p>저희는 Markdown을 사람이 읽는 기본 파일로 봅니다: claude.ai 스레드의 제목, 언어 태그가 붙은 코드 블록, 표. 그래도 PDF 형식을 지어내지는 않습니다. 인쇄용 페이지가 필요하면 Markdown으로 내보낸 뒤, 또는 그 대신 Chrome의 인쇄 대화 상자를 쓰십시오.</p>
+  <footer>Download Claude conversations 팀</footer>
+</div>
+<p>같은 확장 프로그램을 Claude Chat Downloader라는 이름으로 찾는 분들도 있습니다. Markdown 내보내기는 같은 주황색 버튼이며 별개의 제품이 아닙니다. 법률 페이지에는 아직 Claude Exporter라고 적혀 있을 수 있습니다. 이 이름들은 모두 Download Claude conversations를 가리킵니다.</p>
+
+<h2 id="preserved">Markdown으로 내보내면 무엇이 유지되나요?</h2>
+<p>Claude 채팅을 Markdown으로 내보내면 Download Claude conversations가 제목, 언어 태그와 들여쓰기가 있는 코드 블록, 표, 링크를 유지합니다. 사고 과정 블록은 선택 사항입니다. 메타데이터(제목, 타임스탬프, 모델)도 함께 넣을 수 있습니다. 발신자 필터로 .md 파일을 "all / human only / assistant only"(전체 / 사용자만 / 어시스턴트만)로 제한할 수 있습니다.</p>
+<p>아티팩트 레이아웃은 버전 1.13.0의 실제 옵션입니다: "Original"(원본), "Inline"(인라인), "Nested"(중첩), "Flat"(평면). Markdown 내보내기는 화면의 아티팩트 구조를 그대로 따르거나, 하나의 선형 문서로 평평하게 만들 수 있습니다. 전체 옵션 목록: <a href="/ko/features/">Chrome 확장 프로그램 기능</a>. Markdown은 말풍선 색상을 유지하지 않습니다. 시각적 스냅샷이 필요하면 PNG를 쓰십시오.</p>
+<table>
+  <caption>Claude 채팅 Markdown 내보내기에 포함되는 것</caption>
+  <thead>
+    <tr>
+      <th scope="col">요소</th>
+      <th scope="col">.md 파일에 포함?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>제목과 목록</td>
+      <td>예</td>
+    </tr>
+    <tr>
+      <td>코드 블록 + 언어 태그</td>
+      <td>예</td>
+    </tr>
+    <tr>
+      <td>표</td>
+      <td>예, Markdown 표로</td>
+    </tr>
+    <tr>
+      <td>사고 과정 블록</td>
+      <td>Thinking 옵션을 켠 경우</td>
+    </tr>
+    <tr>
+      <td>아티팩트</td>
+      <td>예, Original / Inline / Nested / Flat로</td>
+    </tr>
+    <tr>
+      <td>화면 UI / PDF 페이지</td>
+      <td>아니요 — Markdown은 PDF가 아닌 텍스트</td>
+    </tr>
+  </tbody>
+</table>
+<p>스레드가 아주 길다면 Markdown으로 내보내기 전에 claude.ai가 이전 메시지를 불러올 때까지 스크롤하십시오. 확장 프로그램은 페이지에 렌더링된 내용만 쓸 수 있습니다. 절반만 로드된 스레드는 절반짜리 .md 파일을 만들며, 버그처럼 보이지만 대개는 스크롤하지 않은 DOM 때문입니다.</p>
+
+<h2 id="bulk">Claude 채팅을 Markdown으로 일괄 내보낼 수 있나요?</h2>
+<p>네. "View and Download All Conversations"를 열고 형식을 Markdown으로 설정한 뒤 표를 필터링하고 "Export All"을 누르십시오. 완성된 .md 파일 하나는 주황색 버튼으로 한 번 내보낼 때와 같은 무료 내보내기 3회에서 1회를 씁니다. Pro(월 $3.99 또는 연 $26.99)는 일괄 Markdown의 제한을 없앱니다.</p>
+<p>목록 표는 claude.ai 기록을 이름 검색과 "All"(전체), "New"(새 항목), "Exported"(내보냄), "Project"(프로젝트) 필터로 보여 줍니다. New는 Download Claude conversations로 아직 내보내지 않은 채팅입니다. Exported는 이미 저장한 채팅을 추적해 두 번째 Export All에서 건너뛸 수 있게 합니다. Project는 claude.ai에서 채팅을 묶는 방식과 같습니다.</p>
+<div class="callout callout-warn">
+  <p><strong>사용량은 계정 단위입니다.</strong> 무료 내보내기는 총 3회이며, 하루에 Markdown 파일 3개가 아닙니다. 대화 40개를 선택하면 모든 .md 파일이 완성될 경우 40회를 씁니다. Export All을 누르기 전에 선택을 계획하십시오.</p>
+</div>
+<p>일괄 Markdown은 대화 하나를 내보낼 때와 같은 사고 과정, 메타데이터, 발신자, 아티팩트 옵션을 씁니다. Export All은 Anthropic의 시간이 걸리는 ZIP이 아니라 채팅별 .md 파일 여러 개입니다. 계정 전체를 하나의 아카이브로 원했다면 Settings → Privacy → Export data(claude.ai를 한국어로 설정했다면 메뉴 이름이 번역되어 보일 수 있습니다)이며, 이는 Markdown이 아니라 JSON입니다.</p>
+
+<h2 id="vs-json">Claude 채팅을 내보낼 때 Markdown vs JSON?</h2>
+<p>사람이 읽을 파일이라면 Claude 채팅을 Markdown으로, 스크립트가 메시지 트리를 파싱할 파일이라면 JSON으로 내보내십시오. Download Claude conversations는 하나의 드롭다운에서 둘 다 제공하며, 일반 텍스트, XML, PNG도 있습니다. PDF는 여전히 없습니다. 형식 허브: <a href="/ko/formats/">Claude 채팅 내보내기 형식</a>.</p>
+<table>
+  <caption>Markdown과 다른 claude.ai 내보내기 파일 비교</caption>
+  <thead>
+    <tr>
+      <th scope="col">형식</th>
+      <th scope="col">이럴 때 고르세요</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Markdown</td>
+      <td>노트, Obsidian, GitHub, 위키</td>
+    </tr>
+    <tr>
+      <td>JSON</td>
+      <td>비교(diff), 파이프라인, 도구 — <a href="/ko/formats/json/">JSON 가이드</a></td>
+    </tr>
+    <tr>
+      <td>일반 텍스트</td>
+      <td>마크업 없이 어디에나 붙여 넣을 보관본</td>
+    </tr>
+    <tr>
+      <td>XML</td>
+      <td>XML이 필요한 시스템</td>
+    </tr>
+    <tr>
+      <td>PNG</td>
+      <td>검색할 수 없는 스레드의 그림</td>
+    </tr>
+  </tbody>
+</table>
+<p>Anthropic의 Export data도 JSON이지만, 채팅별 .md 파일이 아니라 이메일로 받는 계정 ZIP입니다. 그 요청에서는 Markdown을 고를 수 없습니다. 인쇄 → PDF로 저장은 웹 페이지 스냅샷입니다. 둘 다 주황색 버튼의 Markdown 내보내기를 대신하지 못합니다.</p>
+<p>확장 프로그램은 Chrome의 claude.ai에서만 실행됩니다. Claude Desktop과 Claude Code에는 Markdown 버튼이 없습니다. 같은 스레드가 claude.ai에도 있다면 그곳에서 열어 Markdown으로 내보내십시오. Claude Code의 <code>/export</code>는 다른 제품의 방법입니다.</p>
+
+<h2 id="cost">Markdown으로 내보내면 추가 비용이 드나요?</h2>
+<p>아니요. Markdown도 JSON, 텍스트, XML, PNG와 마찬가지로 Google로 로그인한 모든 계정이 받는 무료 내보내기 3회에 포함됩니다. 파일 3개 이후 Pro는 Paddle을 통해 월 $3.99 또는 연 $26.99입니다. Download Claude conversations는 Markdown에 추가 요금을 받지 않습니다.</p>
+<p>Chrome 확장 프로그램을 다시 설치해도 무료 내보내기 3회는 초기화되지 않습니다. 그래서 처음 Markdown으로 내보낼 때 Google 로그인이 필요합니다. 새 컴퓨터에서도 같은 Google 계정으로 Pro가 복원됩니다. Paddle이 판매 대행자(merchant of record)이며, 저희 팀은 카드 번호를 보지 않습니다.</p>
+<p>Anthropic의 유료 claude.ai 요금제는 필요 없습니다. Chrome에서 대화를 불러올 수 있는 로그인만 있으면 됩니다. Team과 Enterprise도 Free와 똑같이 주황색 버튼이 작동합니다. 버전 1.13.0(2026년 9월)도 Word, Notion, PDF는 만들지 않습니다.</p>
+
+<h2 id="faq">FAQ: Claude 채팅 Markdown으로 내보내기</h2>
+<p>이 FAQ는 Download Claude conversations 1.13.0에서 Claude 채팅을 Markdown으로 내보내는 방법을 다룹니다: 코드 블록, 일괄 Export All, Anthropic의 ZIP, 사용량, Desktop. 각 답변은 제품 사실입니다. 페이지 head의 FAQPage JSON-LD도 이 목록과 일치합니다.</p>
+
+<h3>Claude 채팅을 Markdown으로 내보내면 코드가 손실되나요?</h3>
+<p>아니요. claude.ai에서 그냥 복사해 붙여 넣을 때와 달리 코드 블록의 언어 태그와 들여쓰기가 유지됩니다. 표도 Markdown 표로 남습니다. 텍스트를 직접 선택하는 대신 Claude 채팅을 Markdown으로 내보내는 가장 큰 이유입니다.</p>
+
+<h3>Claude 채팅을 Markdown으로 일괄 내보낼 수 있나요?</h3>
+<p>네. 목록 페이지의 "Export All"(모두 내보내기)은 채팅 하나를 내보낼 때와 똑같이 Markdown을 지원합니다. Pro가 아니라면 완성된 .md 파일마다 무료 내보내기 3회 중 1회로 계산됩니다.</p>
+
+<h3>Markdown은 Anthropic의 Export data와 같은가요?</h3>
+<p>아니요. Anthropic의 공식 내보내기는 계정 전체의 JSON ZIP이며, 한참 기다린 뒤 이메일로 옵니다. Claude 채팅 Markdown 내보내기는 Download Claude conversations가 만드는 채팅별(또는 선택별) .md 파일입니다.</p>
+
+<h3>Markdown은 다른 형식보다 비용이 더 드나요?</h3>
+<p>아니요. Markdown도 JSON, 텍스트, XML, PNG와 마찬가지로 Google로 로그인한 계정의 무료 내보내기 3회에 포함됩니다. 그 이후 Pro(월 $3.99 또는 연 $26.99)는 파일 수 제한이 없습니다.</p>
+
+<h3>Desktop에서 Claude 채팅을 Markdown으로 내보낼 수 있나요?</h3>
+<p>아니요. Download Claude conversations는 Chrome의 claude.ai에만 삽입됩니다. Claude Desktop에는 Markdown 드롭다운이 나타나지 않습니다. 같은 스레드가 claude.ai에 있다면 그곳에서 여십시오.</p>
+
+<h3>Claude 채팅을 Markdown으로 내보내면 PDF가 만들어지나요?</h3>
+<p>아니요. Markdown은 .md 텍스트 파일입니다. 이 제품은 PDF를 지원하지 않습니다. 인쇄용 페이지가 필요하면 Chrome의 인쇄 대화 상자를 쓰십시오. PNG는 이미지이며 역시 PDF가 아닙니다.</p>
+
+<h3>한 번 Markdown으로 내보내는 데도 Pro가 필요한가요?</h3>
+<p>아니요. 처음 3회는 Markdown을 포함해 어떤 형식이든 무료입니다. Pro(월 $3.99 또는 연 $26.99)는 채팅 하나든 일괄이든 .md 파일 수의 제한을 없앱니다.</p>
+</article>
+</main>
+<section class="final-cta page-cta" aria-label="설치">
+  <div class="wrap">
+    <div class="final-cta-panel">
+      <p class="final-kicker">Download Claude conversations</p>
+      <h2>확장 프로그램을 설치하고 몇 초 만에 Claude 채팅을 다운로드하십시오</h2>
+      <p>중요한 Claude 스레드를 Chrome에서 Markdown, JSON, 텍스트, XML, PNG로 로컬 저장하십시오.</p>
+      <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=ko-formats-markdown" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Chrome에 추가</a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="logo" href="/ko/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
+      <p class="legal-note">Claude.ai 채팅을 Markdown, JSON, 일반 텍스트, XML, PNG로 다운로드하는 Chrome 확장 프로그램. Chrome Web Store 평점 5.0.</p>
+    </div>
+    <div>
+      <h2>설치</h2>
+      <a class="install-link" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=ko-footer" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Chrome 확장 프로그램</a>
+    </div>
+    <div>
+      <h2>제품</h2>
+      <a href="/ko/features/">기능</a>
+      <a href="/ko/formats/">형식</a>
+      <a href="/ko/bulk/">일괄 다운로드</a>
+      <a href="/ko/how-it-works/">작동 방식</a>
+    </div>
+    <div>
+      <h2>가이드</h2>
+      <a href="/ko/how-to-download-claude-chat/">Claude 채팅 다운로드 방법</a>
+      <a href="/ko/how-to-export-claude-chat/">Claude 채팅 내보내는 방법</a>
+      <a href="/ko/export-claude-chat/">Claude 채팅 내보내기</a>
+      <a href="/ko/claude-conversation-extractor/">Claude 대화 추출기</a>
+      <a href="/ko/claude-code-export/">Claude Code 대화 내보내기</a>
+      <a href="/ko/download-claude-chat-as-pdf/">인쇄 / PDF</a>
+      <a href="/ko/export-claude-desktop-chat/">Claude Desktop 채팅 내보내기</a>
+      <a href="/ko/claude-export-conversation/">Claude 대화 기록 내보내기</a>
+      <a href="/ko/how-to-save-claude-conversation/">Claude 대화 저장 방법</a>
+      <a href="/ko/download-claude-conversation/">Claude 대화 다운로드</a>
+    </div>
+    <div>
+      <h2>법적 고지</h2>
+      <a href="/ko/about/">소개</a>
+      <a href="/ko/about/#contact">문의</a>
+      <a href="/privacy/" hreflang="en">개인정보 (영어)</a>
+      <a href="/terms/" hreflang="en">약관 (영어)</a>
+      <a href="/refund/" hreflang="en">환불 (영어)</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Download Claude conversations. 모든 권리 보유.</div>
+    <div>
+      <a href="/privacy/" hreflang="en">개인정보처리방침 (영어)</a>
+      <a href="/terms/" hreflang="en">서비스 약관 (영어)</a>
+      <a href="/refund/" hreflang="en">환불 (영어)</a>
+    </div>
+  </div>
+  <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/formats/markdown/" hreflang="en" lang="en">English</a> <a href="/de/formate/markdown/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/formats/markdown/" hreflang="fr" lang="fr">Français</a> <a href="/nl/formaten/markdown/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/format/markdown/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/formater/markdown/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/formater/markdown/" hreflang="da" lang="da">Dansk</a> <a href="/fi/formaatit/markdown/" hreflang="fi" lang="fi">Suomi</a> <a href="/ja/formats/markdown/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/formats/markdown/" hreflang="ko" lang="ko">한국어</a> <a href="/he/formats/markdown/" hreflang="he" lang="he">עברית</a> <a href="/ar/formats/markdown/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
+  <p class="disclaimer">채팅은 브라우저 안에서 처리됩니다 · 사용 한도 확인용 Google 로그인 · Anthropic, PBC와 관련이 없습니다. Claude는 Anthropic의 상표입니다. 독립 Chrome 확장 프로그램이며 Anthropic 공식 제품이 아닙니다. 지원: <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

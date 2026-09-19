@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Claudeのチャットをエクスポートする方法｜公式との比較</title>
+  <meta name="description" content="Claudeのチャットをエクスポートする方法。1件なら無料のChrome拡張機能、アカウント全体ならAnthropicのZIP。残るものと失われるものを比較。">
+  <link rel="canonical" href="https://chat-downloader.com/ja/how-to-export-claude-chat/">
+  <!-- i18n:head -->
+  <link rel="alternate" hreflang="en" href="https://chat-downloader.com/how-to-export-claude-chat/">
+  <link rel="alternate" hreflang="de" href="https://chat-downloader.com/de/anleitung-claude-chat-exportieren/">
+  <link rel="alternate" hreflang="fr" href="https://chat-downloader.com/fr/comment-exporter-conversation-claude/">
+  <link rel="alternate" hreflang="nl" href="https://chat-downloader.com/nl/hoe-claude-chat-exporteren/">
+  <link rel="alternate" hreflang="sv" href="https://chat-downloader.com/sv/sa-exporterar-du-claude-chatt/">
+  <link rel="alternate" hreflang="nb" href="https://chat-downloader.com/nb/slik-eksporterer-du-claude-chat/">
+  <link rel="alternate" hreflang="da" href="https://chat-downloader.com/da/saadan-eksporterer-du-claude-chat/">
+  <link rel="alternate" hreflang="fi" href="https://chat-downloader.com/fi/nain-viet-claude-chatin/">
+  <link rel="alternate" hreflang="ja" href="https://chat-downloader.com/ja/how-to-export-claude-chat/">
+  <link rel="alternate" hreflang="ko" href="https://chat-downloader.com/ko/how-to-export-claude-chat/">
+  <link rel="alternate" hreflang="he" href="https://chat-downloader.com/he/how-to-export-claude-chat/">
+  <link rel="alternate" hreflang="ar" href="https://chat-downloader.com/ar/how-to-export-claude-chat/">
+  <link rel="alternate" hreflang="x-default" href="https://chat-downloader.com/how-to-export-claude-chat/">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="sv_SE">
+  <meta property="og:locale:alternate" content="nb_NO">
+  <meta property="og:locale:alternate" content="da_DK">
+  <meta property="og:locale:alternate" content="fi_FI">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <meta property="og:locale:alternate" content="he_IL">
+  <meta property="og:locale:alternate" content="ar_AE">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&amp;display=swap" rel="stylesheet">
+  <!-- /i18n:head -->
+  <meta property="og:title" content="Claudeのチャットをエクスポートする方法｜公式との比較">
+  <meta property="og:description" content="Claudeのチャットをエクスポートする方法。1件なら無料のChrome拡張機能、アカウント全体ならAnthropicのZIP。残るものと失われるものを比較。">
+  <meta property="og:url" content="https://chat-downloader.com/ja/how-to-export-claude-chat/">
+  <meta property="og:image" content="https://chat-downloader.com/assets/widget-guide.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chat Downloader">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Claudeのチャットをエクスポートする方法｜公式との比較">
+  <meta name="twitter:description" content="Claudeのチャットをエクスポートする方法。1件なら無料のChrome拡張機能、アカウント全体ならAnthropicのZIP。残るものと失われるものを比較。">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME1YXGZKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GME1YXGZKR');
+  </script>
+  
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Claudeのチャットを1件だけエクスポートするには？","acceptedAnswer":{"@type":"Answer","text":"開いているclaude.aiの会話で、Download Claude conversationsを使います。公式の「Export data」はアカウント全体が対象で、1件のスレッドには手間がかかりすぎます。印刷は見た目のPDFで、Markdownではありません。"}},{"@type":"Question","name":"ClaudeのチャットをPDFにエクスポートするには？","acceptedAnswer":{"@type":"Answer","text":"claude.aiにもこの拡張機能にも、ネイティブなPDF出力はありません。スナップショットなら印刷（Ctrl/Cmd+P →「PDFに保存」）を使います。または、Markdownでエクスポートし、Word、Googleドキュメント、Markdownアプリで変換してください。ガイド：ClaudeのチャットをPDFで保存する方法。"}},{"@type":"Question","name":"公式のエクスポートにアーティファクトや思考は含まれますか？","acceptedAnswer":{"@type":"Answer","text":"ZIPには、AnthropicがアカウントのJSONに保存したものがそのまま入ります。アーティファクトの配置を選んだチャットごとのMarkdownにはなっていません。この拡張機能のエクスポートは、切り替えをオンにしていて、ページにそれらが読み込まれていれば、読みやすい形で残すように作られています。"}},{"@type":"Question","name":"Chrome拡張機能でAnthropicのアカウントに影響はありますか？","acceptedAnswer":{"@type":"Answer","text":"この拡張機能は、ログイン済みのclaude.aiセッションをWebサイトと同じように使います。アカウント操作を自動化したり、独自の認証情報でAnthropicにアクセスしたりはしません。当方はAnthropicではありません。引き続きAnthropicの利用規約が適用されます。"}},{"@type":"Question","name":"Claudeのチャットを無料でエクスポートする方法はありますか？","acceptedAnswer":{"@type":"Answer","text":"はい。どのアカウントでも、Markdown、JSON、テキスト、XML、PNGのいずれかで3回まで無料でエクスポートできます。それ以降はProが月額$3.99または年額$26.99です。印刷や公式の「Export data」はこの無料枠を使いません。"}},{"@type":"Question","name":"Teamのワークスペースからもチャットをエクスポートできますか？","acceptedAnswer":{"@type":"Answer","text":"はい。Chromeでclaude.aiの会話を開ければ使えます。拡張機能はページをもとに動き、個人向けプラン専用ではありません。会社の拡張機能の許可リストは引き続き適用されます。"}},{"@type":"Question","name":"エクスポートするとAnthropicアカウントの利用上限を使いますか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。この拡張機能は、すでに読み込まれたページを読み取るだけです。Claudeに追加の生成リクエストを送ることはなく、Anthropicのメッセージ数や利用上限にも影響しません。"}},{"@type":"Question","name":"最初の一括エクスポートは無料ですか？","acceptedAnswer":{"@type":"Answer","text":"アカウントの最初の3ファイルは、1件のチャットからでも、3件のチャットからでも、少数の一括選択からでも無料です。「Export All」に別の無料枠はありません。"}},{"@type":"Question","name":"Claude Codeの会話をエクスポートするには？","acceptedAnswer":{"@type":"Answer","text":"ターミナルで/exportを実行するか、~/.claude/projectsからJSONLをコピーします。このChrome拡張機能はClaude Codeのチャットをエクスポートしません。詳しい手順：Claude Codeのエクスポート。"}},{"@type":"Question","name":"Claudeのチャットをエクスポートするのに、Googleサインインは必要ですか？","acceptedAnswer":{"@type":"Answer","text":"はい、最初のエクスポートから必要です。無料枠の管理とProの復元に使います。サインインの際にチャットの本文がアップロードされることはありません。確認済みのメールアドレスは、無料枠とサブスクリプションの状態の管理のために保存します。"}},{"@type":"Question","name":"Claudeのチャットはどの形式でエクスポートできますか？","acceptedAnswer":{"@type":"Answer","text":"Markdown、JSON、プレーンテキスト、XML、PNGです。PDFはありません。PNGは画像です。どれを選ぶべきかは「形式」のページをご覧ください。"}},{"@type":"Question","name":"Claude Conversation Downloaderは同じ拡張機能ですか？","acceptedAnswer":{"@type":"Answer","text":"はい。Download Claude conversations、Claude Chat Downloader、Claude Conversation Downloaderは同じChrome拡張機能を指します。claude.aiのオレンジ色のボタン、5つの形式、3回の無料エクスポート、Pro（月額$3.99または年額$26.99）です。"}}]}</script>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Claudeのチャットをエクスポートする方法：構造化されたファイルに","description":"Claudeのチャットをエクスポートする方法。1件なら無料のChrome拡張機能、アカウント全体ならAnthropicのZIP。残るものと失われるものを比較。","url":"https://chat-downloader.com/ja/how-to-export-claude-chat/","dateModified":"2026-09-10","datePublished":"2026-09-10","inLanguage":"ja","author":{"@type":"Organization","name":"Chat Downloader","url":"https://chat-downloader.com/ja/"},"publisher":{"@type":"Organization","name":"Chat Downloader","url":"https://chat-downloader.com/ja/"},"mainEntityOfPage":"https://chat-downloader.com/ja/how-to-export-claude-chat/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://chat-downloader.com/ja/"},{"@type":"ListItem","position":2,"name":"エクスポートガイド","item":"https://chat-downloader.com/ja/how-to-export-claude-chat/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">本文へスキップ</a>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a class="logo" href="/ja/">
+        <img src="/assets/icon.svg" alt="">
+        <span>Download Claude conversations</span>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="/ja/how-to-download-claude-chat/">ダウンロード方法</a><a href="/ja/how-to-export-claude-chat/" aria-current="page">エクスポート</a><a href="/ja/bulk/">一括保存</a><a href="/ja/formats/">形式</a><a href="/ja/#faq">よくある質問</a>
+        <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=ja-how-to-export-claude-chat" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Chromeに追加</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <!-- i18n:switch --><details class="lang-switch"><summary aria-label="言語">ja</summary><ul><li><a href="/how-to-export-claude-chat/" hreflang="en" lang="en">English</a></li><li><a href="/de/anleitung-claude-chat-exportieren/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/comment-exporter-conversation-claude/" hreflang="fr" lang="fr">Français</a></li><li><a href="/nl/hoe-claude-chat-exporteren/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/sv/sa-exporterar-du-claude-chatt/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="/nb/slik-eksporterer-du-claude-chat/" hreflang="nb" lang="nb">Norsk</a></li><li><a href="/da/saadan-eksporterer-du-claude-chat/" hreflang="da" lang="da">Dansk</a></li><li><a href="/fi/nain-viet-claude-chatin/" hreflang="fi" lang="fi">Suomi</a></li><li><a href="/ja/how-to-export-claude-chat/" hreflang="ja" lang="ja" aria-current="true">日本語</a></li><li><a href="/ko/how-to-export-claude-chat/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/he/how-to-export-claude-chat/" hreflang="he" lang="he">עברית</a></li><li><a href="/ar/how-to-export-claude-chat/" hreflang="ar" lang="ar">العربية</a></li></ul></details><!-- /i18n:switch -->
+      <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=ja-how-to-export-claude-chat" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Chromeに追加</a>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="メニュー">☰</button>
+    </div>
+  </div>
+</header>
+<nav class="crumbs" aria-label="パンくずリスト"><a href="/ja/">ホーム</a> / エクスポートガイド</nav>
+<main id="main">
+<article class="band prose">
+<p class="article-meta"><time datetime="2026-09">2026年9月</time>更新 · 拡張機能 1.13.0</p>
+<h1 class="page-h1">Claudeのチャットをエクスポートする方法：構造化されたファイルに</h1>
+<p class="lead">Claude.aiには、1件のスレッドを「このチャットをエクスポート」する機能がありません。Claudeのチャットをエクスポートする方法は3つです。Markdown、JSON、テキスト、XML、PNGならDownload Claude conversations、後から届くアカウント全体のZIPならSettings → Privacy → Export data（claude.aiを日本語表示にしている場合、メニュー名は日本語で表示されることがあります）、見た目のPDFなら印刷です。</p>
+<aside class="trust-badge" aria-label="Chrome Web Storeでの評価">
+  <span class="trophy" aria-hidden="true">🏆</span>
+  <div>
+    <strong>Download Claude conversations — Chrome Web Storeで評価5.0</strong>
+    <span>2026年 — claude.aiのチャットをMarkdown、JSON、テキスト、XML、PNGで保存できる無料のChrome拡張機能</span>
+  </div>
+</aside>
+<nav class="toc" aria-label="このページの内容">
+  <p>このページの内容</p>
+  <ol>
+    <li><a href="#export-with-extension">拡張機能でClaudeのチャットをエクスポートする方法は？</a></li>
+    <li><a href="#official-zip">公式のZIPでClaudeのチャットをエクスポートするには？</a></li>
+    <li><a href="#formats">ClaudeのチャットをMarkdownやJSONでエクスポートするには？</a></li>
+    <li><a href="#free-quota">お金をかけずにClaudeのチャットをエクスポートできますか？</a></li>
+    <li><a href="#copy-paste">エクスポートとコピー＆ペーストの違いは？</a></li>
+    <li><a href="#code-desktop">Claude Codeとclaude.aiでエクスポート方法はどう違う？</a></li>
+    <li><a href="#what-is-kept">Claudeのチャットのエクスポートで残るもの・失われるものは？</a></li>
+    <li><a href="#faq">よくある質問：Claudeのチャットをエクスポートする方法</a></li>
+  </ol>
+</nav>
+
+<h2 id="export-with-extension">拡張機能でClaudeのチャットをエクスポートする方法は？</h2>
+<p>Claudeのチャットを読みやすいファイルとしてエクスポートする方法は、claude.aiのオレンジ色のボタンです。この拡張機能をインストールし、スレッドを開いて、Markdown、JSON、テキスト、XML、PNGから選び、「Export」（エクスポート）をクリックします。ファイルはブラウザ内で作られ、ローカルに保存されます。3回の無料エクスポートはGoogleサインインで数えます。</p>
+<p>この拡張機能は、すでに読み込まれたページ上で動くコンテンツスクリプトです。Anthropicに2つ目のセッションを開くことはなく、ファイルを作るために会話をアップロードすることもありません。そのため、ボタンは会話のURLで、スレッドがページ上に存在してからでないと表示されません。</p>
+<ol>
+<li>Chrome Web Storeから拡張機能をインストールします。</li>
+<li>claude.aiで会話を開きます。インストール時に開いていたタブは再読み込みします。</li>
+<li>メッセージ入力欄の横にあるオレンジ色のダウンロードボタンをクリックします。</li>
+<li>Markdown、JSON、プレーンテキスト、XML、PNGから選びます。</li>
+<li>必要に応じて、思考、メタデータ、送信者、アーティファクトの配置を設定します。「Export」をクリックします。</li>
+</ol>
+<p>複数のスレッドなら、ポップアップから「View and Download All Conversations」（すべての会話を表示・ダウンロード）を開きます。検索し、プロジェクトやエクスポート済みかどうかで絞り込んでから、「Export All」（すべてエクスポート）を実行します。そのバッチのファイルはすべて同じ3回の無料枠に含まれます。手順：<a href="/ja/bulk/">一括の「Export All」</a>。</p>
+<p>TeamやEnterpriseのチャットも、Chromeで開ければ同じ方法でエクスポートできます。パーサーはAnthropicのプラン名を確認しません。組織が拡張機能をブロックしている場合、それはIT部門のポリシーであり、当方のProの設定が足りないわけではありません。</p>
+<div class="callout callout-info">
+  <p><strong>無料枠とAnthropicの利用量は別。</strong>この拡張機能でエクスポートしても、Claudeのメッセージ枠は消費しません。ページを読み取るだけです。3回の上限は当方の無料枠で、Pro（月額$3.99または年額$26.99）を購入する場合はPaddle経由で別途請求されます。</p>
+</div>
+<p>「エクスポート」ではなく「ダウンロード」で探していた方向けの1件ずつの手順：<a href="/ja/how-to-download-claude-chat/">Claudeのチャットをダウンロードする方法</a>。製品もオレンジ色のボタンも同じで、探すときの言葉が違うだけです。</p>
+
+<h2 id="official-zip">公式のZIPでClaudeのチャットをエクスポートするには？</h2>
+<p>アカウント単位でClaudeのチャットをエクスポートする方法は、Settings → Privacy → Export dataです。Anthropicから有効期限付きのリンクがメールで届きます。ZIPはアカウント全体のJSONで、1件の会話を見やすくしたファイルではありません。バックアップとして使ってください。</p>
+<p>公式のZIPが適しているのは、ワークスペースを離れるとき、すべてをアーカイブするとき、「自分のデータをすべて出してほしい」という要求に応えるときです。設計レビューを1件開いていて、1分以内にファイルが欲しいときには向きません。</p>
+<p>この流れには、1件の会話IDで絞り込む機能がありません。待って、アーカイブをダウンロードし、展開して、スレッドを探すことになります。JSONの構造はアカウント単位です。この拡張機能が開いているページから書き出すチャットごとのJSONとは違います。</p>
+<p>両方が必要なら、バックアップのために「Export data」を一度実行し、作業用のファイルが必要なときはいつでもこの拡張機能を使ってください。この2つは互いの代わりにはなりません。ZIPがMarkdownになることはありませんし、オレンジ色のボタンが2024年の忘れていたチャットまですべてメールで送ってくれることもありません。</p>
+<p>公式の「Export data」は、PDFへの印刷とも違います。印刷はWebページを写すもので、ZIPは構造化されたアカウントデータです。印刷とファイルの比較：<a href="/ja/download-claude-chat-as-pdf/">ClaudeのチャットをPDFで保存する方法</a>。</p>
+
+<h2 id="formats">ClaudeのチャットをMarkdownやJSONでエクスポートするには？</h2>
+<p>ClaudeのチャットをMarkdownやJSONでエクスポートするには、「Export」の前にドロップダウンでその形式を選びます。Markdownはメモやgit向け、JSONはスクリプト向けのメッセージツリーです。プレーンテキストはマークアップを取り除きます。PNGは画像で、PDFではありません。</p>
+<p>Markdownは見出し、言語タグ付きのコードブロック、表を保持します。アーティファクトの配置は「Original」「Inline」「Nested」「Flat」（元の配置／インライン／入れ子／フラット）から選べます。思考ブロックは任意です。多くの人が「読みやすいエクスポート」と言うときに指すのが、このファイルです。一覧：<a href="/ja/formats/">形式</a>。</p>
+<p>拡張機能のJSONは、会話ごと（または一括で選んだものごと）のファイルです。AnthropicのアカウントZIPの名前を変えたものではありません。パーサーを書くなら、1件のスレッドにはこのJSONを使い、公式のZIPはAnthropicが保存したすべての会話が本当に必要なときだけ使ってください。</p>
+<div class="table-wrap">
+  <table>
+    <caption>Claudeのチャットをエクスポートする方法：4つの方法の比較</caption>
+    <thead>
+      <tr>
+        <th scope="col">方法</th>
+        <th scope="col">向いている用途</th>
+        <th scope="col">出力</th>
+        <th scope="col">制限</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">公式の「Export data」</th>
+        <td>アカウント全体のバックアップ</td>
+        <td>メールで届くJSON ZIP</td>
+        <td>時間がかかる、チャットごとに整っていない</td>
+      </tr>
+      <tr>
+        <th scope="row">印刷 →「PDFに保存」</th>
+        <td>手早く見た目をコピー</td>
+        <td>WebページのPDF</td>
+        <td>サイドバーが入る、改ページが不自然</td>
+      </tr>
+      <tr>
+        <th scope="row">ドキュメントにコピー</th>
+        <td>仕上げた回答1つ</td>
+        <td>貼り付けた内容そのまま</td>
+        <td>手作業、スレッドが不完全</td>
+      </tr>
+      <tr>
+        <th scope="row">Download Claude conversations</th>
+        <td>このチャット、または一括でのファイル</td>
+        <td>MD / JSON / TXT / XML / PNG</td>
+        <td>無料は3回、Googleサインインが必要</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p>PNGはPDFではありません。取引先がPDFを求めるなら、claude.aiを印刷するか、Markdownを別のアプリで変換してください。当方は.pdfを提供していません。提供していると言えば、存在しない機能をでっち上げることになります。</p>
+<p>ドロップダウンは最後に使った形式を記憶します。スクリプト作業の後にうっかりJSONでエクスポートしてしまうのが、よくある「違うファイルになった」という報告です。無料枠を使う前に、ドロップダウンを確認してください。</p>
+
+<h2 id="free-quota">お金をかけずにClaudeのチャットをエクスポートできますか？</h2>
+<p>はい。どのアカウントでも、最初の3ファイルは5つの形式のどれでも無料でClaudeのチャットをエクスポートできます。それ以降はProが月額$3.99または年額$26.99です。Googleサインインにより、再インストールで無料回数がリセットされることはありません。</p>
+<p>一括の「Export All」に別の無料枠はありません。「Export All」の1ファイルは、オレンジ色のボタンと同じく1回のエクスポートです。無料アカウントで20件の会話を選んでも、3件目のファイルで止まります。選ぶ会話を計画してください。</p>
+<p>印刷やAnthropicの「Export data」は当方の無料枠を使いません。その代わり、1件のチャットのMarkdownも得られません。拡張機能を使わない「無料」の方法にも、時間と手直しのコストがかかります。</p>
+<div class="callout callout-warn">
+  <p><strong>Googleサインインは省略できません。</strong>最初に「Export」をクリックすると、Googleにメールアドレスの確認を求められます。キャンセルすると、エクスポートが壊れているように見えます。サインインを完了してから、もう一度「Export」をクリックしてください。3回の無料ファイルにクレジットカードは不要です。</p>
+</div>
+<p>パソコンを替えたり再インストールしたりしても、ProはそのGoogleメールアドレスに従って復元されます。Anthropicのパスワードとは関係ありません。支払いに使ったのと同じGoogleアカウントでサインインしてください。</p>
+<div class="expert-quote">
+  <blockquote>私たちは、公式のZIPと当方のエクスポートをあえて別の仕事として扱っています。メールで届くアカウントのJSONはAnthropicのバックアップです。チャットごとのMarkdownやJSONは、あなたが開いているスレッドから私たちがブラウザ内で作るものです。この2つを1つのボタンに混ぜれば、どちらも使いにくくなります。</blockquote>
+  <cite><strong>Download Claude conversationsチーム</strong> — Chrome拡張機能「Claude Chat Downloader」の開発者</cite>
+</div>
+
+<h2 id="copy-paste">エクスポートとコピー＆ペーストの違いは？</h2>
+<p>コピー＆ペーストでClaudeのチャットをエクスポートできるのは、ごく弱い意味でだけです。テキストを選んで移しただけだからです。コードのインデントは失われ、表は崩れ、長いスレッドにはメッセージの区切りがなくなります。Claudeのチャットを構造化されたファイルとしてエクスポートする方法は、やはり拡張機能、印刷、公式のZIPです。</p>
+<p>中間的な方法として、すべて選択してGoogleドキュメントやWordに貼り、書式を手で直すこともできます。これは単発の納品物向けで、毎週のアーカイブには向きません。やり取りが増えるたびに、また手直しが必要になります。この拡張機能は、貼り付けから手直しを始めなくて済むようにするためのものです。</p>
+<p>コピー＆ペーストでは、折りたたまれた思考や展開していないアーティファクトも抜け落ちます。印刷にも同じ欠点があり、折りたたまれた部分はPDFに入りません。拡張機能の切り替えを使えば、読み込まれたページのデータにある思考やアーティファクトを含められます。これは「画面に見えているピクセル」とは別の層の話です。</p>
+<p>Slack用に段落が1つ欲しいだけなら、コピー＆ペーストのほうが素直で速い方法です。コードブロックを含むレビュー全体が必要なら、3回の無料エクスポートのうち1回をMarkdownに使ってください。</p>
+
+<h2 id="code-desktop">Claude Codeとclaude.aiでエクスポート方法はどう違う？</h2>
+<p>claude.aiでClaudeのチャットをエクスポートする方法は、このChrome拡張機能です。Claude Codeの会話をエクスポートする方法は、ターミナルでの<code>/export</code>か、<code>~/.claude/projects</code>にあるJSONLです。Claude Desktopは3つ目の別のウィンドウで、オレンジ色のボタンは表示されません。</p>
+<p>Claude Codeの<code>/export</code>は、表示用に整えたプレーンテキストのトランスクリプトを（クリップボードかファイルに）書き出します。Anthropicは、ディスク上のJSONLは変更される可能性のある内部形式だと説明しています。残しておくものには、<code>/export</code>かスクリプト用のインターフェースを使ってください。手順：<a href="/ja/claude-code-export/">Claude Codeのエクスポート</a>。</p>
+<p>Claude Desktop：同期されていればclaude.aiで同じチャットを開き、そこでエクスポートします。そうでなければDesktopからコピー＆ペーストするか、アカウント単位のJSONならSettings → Privacy → Export dataを使います。ガイド：<a href="/ja/export-claude-desktop-chat/">Claude Desktopのチャットをエクスポートする</a>。</p>
+<p>当サイトで「Claude Code エクスポート」を探して見つかるのは、違いを整理するページであり、Chrome Web Storeの拡張機能の機能ではありません。この拡張機能はclaude.ai専用です。この制限は製品の仕様であって、チェックボックスが足りないわけではありません。</p>
+
+<h2 id="what-is-kept">Claudeのチャットのエクスポートで残るもの・失われるものは？</h2>
+<p>この拡張機能でClaudeのチャットをエクスポートすると、ページに読み込まれたメッセージツリーが残ります。送信者、テキスト、コードブロック、表、そして切り替えをオンにしていれば思考、メタデータ、アーティファクトです。まだ表示されていない部分や、入力欄などの画面要素は含まれません。</p>
+<p>印刷はピクセルを残しますが、整ったコードのレイアウトはたいてい失われます。公式のZIPは、Anthropicがアカウントのアーカイブに入れたものを残しますが、人が読めるチャットごとの文書にはなりません。コピー＆ペーストは選択した文字を残しますが、構造は失われます。</p>
+<p>送信者フィルター：すべてのメッセージ、ユーザーのみ、アシスタントのみ。回答なしでプロンプトだけ欲しいとき、またはその逆のときに便利です。メタデータの切り替えをオンにすると、ファイルに出典情報として残したいタイトル、タイムスタンプ、モデルが加わります。</p>
+<p>ファイルはディスクに残ります。当方のWorkerが見るのはサブスクリプションの状態です。Googleが見るのは、あなたが承認したOAuthの同意です。claude.aiはもともと会話を持っています。関係者はこれですべてです。当方はAnthropicではありません。ClaudeはAnthropic, PBCの商標です。</p>
+<p>エクスポートしたファイルが短いと感じたら、スレッドをさらに読み込んでからもう一度エクスポートしてください。無料プランでは、その2回目も3回のうちの1回になります。クリックする前に、生成が終わり、古いやり取りも画面に表示されていることを確認してください。</p>
+
+<h2 id="faq">よくある質問：Claudeのチャットをエクスポートする方法</h2>
+<h3>Claudeのチャットを1件だけエクスポートするには？</h3>
+<p>開いているclaude.aiの会話で、Download Claude conversationsを使います。公式の「Export data」はアカウント全体が対象で、1件のスレッドには手間がかかりすぎます。印刷は見た目のPDFで、Markdownではありません。</p>
+<h3>ClaudeのチャットをPDFにエクスポートするには？</h3>
+<p>claude.aiにもこの拡張機能にも、ネイティブなPDF出力はありません。スナップショットなら印刷（Ctrl/Cmd+P →「PDFに保存」）を使います。または、Markdownでエクスポートし、Word、Googleドキュメント、Markdownアプリで変換してください。ガイド：<a href="/ja/download-claude-chat-as-pdf/">ClaudeのチャットをPDFで保存する方法</a>。</p>
+<h3>公式のエクスポートにアーティファクトや思考は含まれますか？</h3>
+<p>ZIPには、AnthropicがアカウントのJSONに保存したものがそのまま入ります。アーティファクトの配置を選んだチャットごとのMarkdownにはなっていません。この拡張機能のエクスポートは、切り替えをオンにしていて、ページにそれらが読み込まれていれば、読みやすい形で残すように作られています。</p>
+<h3>Chrome拡張機能でAnthropicのアカウントに影響はありますか？</h3>
+<p>この拡張機能は、ログイン済みのclaude.aiセッションをWebサイトと同じように使います。アカウント操作を自動化したり、独自の認証情報でAnthropicにアクセスしたりはしません。当方はAnthropicではありません。引き続きAnthropicの利用規約が適用されます。</p>
+<h3>Claudeのチャットを無料でエクスポートする方法はありますか？</h3>
+<p>はい。どのアカウントでも、Markdown、JSON、テキスト、XML、PNGのいずれかで3回まで無料でエクスポートできます。それ以降はProが月額$3.99または年額$26.99です。印刷や公式の「Export data」はこの無料枠を使いません。</p>
+<h3>Teamのワークスペースからもチャットをエクスポートできますか？</h3>
+<p>はい。Chromeでclaude.aiの会話を開ければ使えます。拡張機能はページをもとに動き、個人向けプラン専用ではありません。会社の拡張機能の許可リストは引き続き適用されます。</p>
+<h3>エクスポートするとAnthropicアカウントの利用上限を使いますか？</h3>
+<p>いいえ。この拡張機能は、すでに読み込まれたページを読み取るだけです。Claudeに追加の生成リクエストを送ることはなく、Anthropicのメッセージ数や利用上限にも影響しません。</p>
+<h3>最初の一括エクスポートは無料ですか？</h3>
+<p>アカウントの最初の3ファイルは、1件のチャットからでも、3件のチャットからでも、少数の一括選択からでも無料です。「Export All」に別の無料枠はありません。</p>
+<h3>Claude Codeの会話をエクスポートするには？</h3>
+<p>ターミナルで<code>/export</code>を実行するか、<code>~/.claude/projects</code>からJSONLをコピーします。このChrome拡張機能はClaude Codeのチャットをエクスポートしません。詳しい手順：<a href="/ja/claude-code-export/">Claude Codeのエクスポート</a>。</p>
+<h3>Claudeのチャットをエクスポートするのに、Googleサインインは必要ですか？</h3>
+<p>はい、最初のエクスポートから必要です。無料枠の管理とProの復元に使います。サインインの際にチャットの本文がアップロードされることはありません。確認済みのメールアドレスは、無料枠とサブスクリプションの状態の管理のために保存します。</p>
+<h3>Claudeのチャットはどの形式でエクスポートできますか？</h3>
+<p>Markdown、JSON、プレーンテキスト、XML、PNGです。PDFはありません。PNGは画像です。どれを選ぶべきかは<a href="/ja/formats/">形式</a>をご覧ください。</p>
+<h3>Claude Conversation Downloaderは同じ拡張機能ですか？</h3>
+<p>はい。Download Claude conversations、Claude Chat Downloader、Claude Conversation Downloaderは同じChrome拡張機能を指します。claude.aiのオレンジ色のボタン、5つの形式、3回の無料エクスポート、Pro（月額$3.99または年額$26.99）です。</p>
+</article>
+</main>
+<section class="final-cta page-cta" aria-label="インストール">
+  <div class="wrap">
+    <div class="final-cta-panel">
+      <p class="final-kicker">Download Claude conversations</p>
+      <h2>拡張機能をインストールして、Claudeのチャットを数秒でダウンロード</h2>
+      <p>大切なClaudeのスレッドを、ChromeからローカルでMarkdown、JSON、テキスト、XML、PNGに変換します。</p>
+      <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=ja-how-to-export" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Chromeに追加</a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="logo" href="/ja/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
+      <p class="legal-note">Claude.aiのチャットをMarkdown、JSON、プレーンテキスト、XML、PNGでダウンロードできるChrome拡張機能。Chrome Web Storeで評価5.0。</p>
+    </div>
+    <div>
+      <h2>インストール</h2>
+      <a class="install-link" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=ja-footer" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Chrome拡張機能</a>
+    </div>
+    <div>
+      <h2>製品</h2>
+      <a href="/ja/features/">機能</a>
+      <a href="/ja/formats/">形式</a>
+      <a href="/ja/bulk/">一括ダウンロード</a>
+      <a href="/ja/how-it-works/">仕組み</a>
+    </div>
+    <div>
+      <h2>ガイド</h2>
+      <a href="/ja/how-to-download-claude-chat/">Claudeのチャットをダウンロードする方法</a>
+      <a href="/ja/how-to-export-claude-chat/">Claudeのチャットをエクスポートする方法</a>
+      <a href="/ja/export-claude-chat/">Claudeのチャットをエクスポート</a>
+      <a href="/ja/claude-conversation-extractor/">Claudeの会話抽出ツール</a>
+      <a href="/ja/claude-code-export/">Claude Codeのエクスポート</a>
+      <a href="/ja/download-claude-chat-as-pdf/">印刷 / PDF</a>
+      <a href="/ja/export-claude-desktop-chat/">Claude Desktopのエクスポート</a>
+      <a href="/ja/claude-export-conversation/">Claudeの会話エクスポート</a>
+      <a href="/ja/how-to-save-claude-conversation/">Claudeの会話を保存する方法</a>
+      <a href="/ja/download-claude-conversation/">Claudeの会話をダウンロード</a>
+    </div>
+    <div>
+      <h2>法的情報</h2>
+      <a href="/ja/about/">運営者情報</a>
+      <a href="/ja/about/#contact">お問い合わせ</a>
+      <a href="/privacy/" hreflang="en">プライバシー （英語）</a>
+      <a href="/terms/" hreflang="en">利用規約 （英語）</a>
+      <a href="/refund/" hreflang="en">返金 （英語）</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Download Claude conversations. All rights reserved.</div>
+    <div>
+      <a href="/privacy/" hreflang="en">プライバシーポリシー （英語）</a>
+      <a href="/terms/" hreflang="en">利用規約 （英語）</a>
+      <a href="/refund/" hreflang="en">返金 （英語）</a>
+    </div>
+  </div>
+  <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/how-to-export-claude-chat/" hreflang="en" lang="en">English</a> <a href="/de/anleitung-claude-chat-exportieren/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/comment-exporter-conversation-claude/" hreflang="fr" lang="fr">Français</a> <a href="/nl/hoe-claude-chat-exporteren/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/sa-exporterar-du-claude-chatt/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/slik-eksporterer-du-claude-chat/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/saadan-eksporterer-du-claude-chat/" hreflang="da" lang="da">Dansk</a> <a href="/fi/nain-viet-claude-chatin/" hreflang="fi" lang="fi">Suomi</a> <a href="/ja/how-to-export-claude-chat/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/how-to-export-claude-chat/" hreflang="ko" lang="ko">한국어</a> <a href="/he/how-to-export-claude-chat/" hreflang="he" lang="he">עברית</a> <a href="/ar/how-to-export-claude-chat/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
+  <p class="disclaimer">チャットはブラウザ内で処理 · 利用回数の管理にGoogleサインインを使用 · Anthropic, PBCとは提携していません。ClaudeはAnthropicの商標です。独立したChrome拡張機能であり、Anthropicの公式製品ではありません。サポート： <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

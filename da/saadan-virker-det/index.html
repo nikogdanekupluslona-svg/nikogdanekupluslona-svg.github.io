@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sådan virker det – lokal eksport og Google-login</title>
+  <meta name="description" content="Sådan virker Download Claude conversations: filer laves lokalt, hvad Google-login bruges til, hvad vores server ser – og hvad den aldrig ser.">
+  <link rel="canonical" href="https://chat-downloader.com/da/saadan-virker-det/">
+  <!-- i18n:head -->
+  <link rel="alternate" hreflang="en" href="https://chat-downloader.com/how-it-works/">
+  <link rel="alternate" hreflang="de" href="https://chat-downloader.com/de/so-funktioniert-es/">
+  <link rel="alternate" hreflang="fr" href="https://chat-downloader.com/fr/comment-ca-marche/">
+  <link rel="alternate" hreflang="nl" href="https://chat-downloader.com/nl/hoe-het-werkt/">
+  <link rel="alternate" hreflang="sv" href="https://chat-downloader.com/sv/sa-fungerar-det/">
+  <link rel="alternate" hreflang="nb" href="https://chat-downloader.com/nb/slik-fungerer-det/">
+  <link rel="alternate" hreflang="da" href="https://chat-downloader.com/da/saadan-virker-det/">
+  <link rel="alternate" hreflang="fi" href="https://chat-downloader.com/fi/nain-se-toimii/">
+  <link rel="alternate" hreflang="ja" href="https://chat-downloader.com/ja/how-it-works/">
+  <link rel="alternate" hreflang="ko" href="https://chat-downloader.com/ko/how-it-works/">
+  <link rel="alternate" hreflang="he" href="https://chat-downloader.com/he/how-it-works/">
+  <link rel="alternate" hreflang="ar" href="https://chat-downloader.com/ar/how-it-works/">
+  <link rel="alternate" hreflang="x-default" href="https://chat-downloader.com/how-it-works/">
+  <meta property="og:locale" content="da_DK">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="sv_SE">
+  <meta property="og:locale:alternate" content="nb_NO">
+  <meta property="og:locale:alternate" content="fi_FI">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <meta property="og:locale:alternate" content="he_IL">
+  <meta property="og:locale:alternate" content="ar_AE">
+  <!-- /i18n:head -->
+  <meta property="og:title" content="Sådan virker det – lokal eksport og Google-login">
+  <meta property="og:description" content="Sådan virker Download Claude conversations: filer laves lokalt, hvad Google-login bruges til, hvad vores server ser – og hvad den aldrig ser.">
+  <meta property="og:url" content="https://chat-downloader.com/da/saadan-virker-det/">
+  <meta property="og:image" content="https://chat-downloader.com/assets/widget-guide.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chat Downloader">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sådan virker det – lokal eksport og Google-login">
+  <meta name="twitter:description" content="Sådan virker Download Claude conversations: filer laves lokalt, hvad Google-login bruges til, hvad vores server ser – og hvad den aldrig ser.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME1YXGZKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GME1YXGZKR');
+  </script>
+  
+  
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Gemmer Download Claude conversations mine chats?","acceptedAnswer":{"@type":"Answer","text":"Nej. Eksporter laves lokalt og uploades aldrig. Vi gemmer kun en e-mail, som Google har verificeret, for at holde styr på brugen af gratis eksporter og Pro-status. Chatindholdet bliver i claude.ai-fanen og i den fil, Chrome downloader."}},{"@type":"Question","name":"Er Google-login påkrævet eller valgfrit?","acceptedAnswer":{"@type":"Answer","text":"Påkrævet fra din første eksport. Det er sådan, vi håndhæver de 3 gratis eksporter, uden at en geninstallation nulstiller tælleren. Det er ikke et login, der giver adgang til at læse dine chats."}},{"@type":"Question","name":"Hvem håndterer betalingen for Pro?","acceptedAnswer":{"@type":"Answer","text":"Paddle. Vi ser aldrig dine kortoplysninger. Pro koster 3,99 $/md. eller 26,99 $/år. Paddle er forhandler (merchant of record). Refusioner går gennem Paddle."}},{"@type":"Question","name":"Er udvidelsen tilknyttet Anthropic?","acceptedAnswer":{"@type":"Answer","text":"Nej. Det er en uafhængig Chrome-udvidelse, der ikke er tilknyttet Anthropic, PBC. Claude er et varemærke tilhørende Anthropic. Download Claude conversations bruger din eksisterende session på claude.ai og erstatter ikke Anthropics produkter."}},{"@type":"Question","name":"Findes der et PDF-format?","acceptedAnswer":{"@type":"Answer","text":"Nej. Filerne er Markdown, JSON, ren tekst, XML eller PNG, og de bygges alle lokalt. Vil du have en PDF-lignende side, så udskriv claude.ai-fanen i Chrome. PNG er et billede, ikke en PDF."}},{"@type":"Question","name":"Hvad ser serveren, når en eksport kører?","acceptedAnswer":{"@type":"Answer","text":"Abonnementsstatus: Pro-markering og hvor mange gratis eksporter kontoen med Google-login har brugt. Serveren modtager ikke samtalernes indhold. Selve eksporten foregår i browseren."}},{"@type":"Question","name":"Skal jeg have Pro, for at Download Claude conversations virker?","acceptedAnswer":{"@type":"Answer","text":"Nej. De første 3 eksporter er gratis på enhver konto, der er logget ind med Google. Pro til 3,99 $/md. eller 26,99 $/år fjerner loftet for flere enkelt- eller massefiler. Den lokale filvej er den samme med gratis og Pro."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Forside","item":"https://chat-downloader.com/da/"},{"@type":"ListItem","position":2,"name":"Sådan virker det","item":"https://chat-downloader.com/da/saadan-virker-det/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Spring til indhold</a>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a class="logo" href="/da/">
+        <img src="/assets/icon.svg" alt="">
+        <span>Download Claude conversations</span>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="/da/download-claude-chat/">Download</a><a href="/da/saadan-eksporterer-du-claude-chat/">Eksportér</a><a href="/da/eksporter-alle-claude-chats/">Alle chats</a><a href="/da/formater/">Formater</a><a href="/da/#faq">FAQ</a>
+        <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=da-how-it-works" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Føj til Chrome</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <!-- i18n:switch --><details class="lang-switch"><summary aria-label="Sprog">da</summary><ul><li><a href="/how-it-works/" hreflang="en" lang="en">English</a></li><li><a href="/de/so-funktioniert-es/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/comment-ca-marche/" hreflang="fr" lang="fr">Français</a></li><li><a href="/nl/hoe-het-werkt/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/sv/sa-fungerar-det/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="/nb/slik-fungerer-det/" hreflang="nb" lang="nb">Norsk</a></li><li><a href="/da/saadan-virker-det/" hreflang="da" lang="da" aria-current="true">Dansk</a></li><li><a href="/fi/nain-se-toimii/" hreflang="fi" lang="fi">Suomi</a></li><li><a href="/ja/how-it-works/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/ko/how-it-works/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/he/how-it-works/" hreflang="he" lang="he">עברית</a></li><li><a href="/ar/how-it-works/" hreflang="ar" lang="ar">العربية</a></li></ul></details><!-- /i18n:switch -->
+      <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=da-how-it-works" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Føj til Chrome</a>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+<nav class="crumbs" aria-label="Brødkrummesti"><a href="/da/">Forside</a> / Sådan virker det</nav>
+<main id="main">
+<article class="band prose">
+<p class="article-meta">Opdateret <time datetime="2026-09">september 2026</time> · Udvidelse 1.13.0</p>
+<h1 class="page-h1">Sådan virker Download Claude conversations i Chrome</h1>
+<p class="lead">Sådan virker Download Claude conversations: et content script læser den claude.ai-tråd, der allerede er i din fane, bygger Markdown, JSON, tekst, XML eller PNG i browseren og giver filen videre til Chrome. Google-login tæller de 3 gratis eksporter og gendanner Pro. Chatindholdet sendes aldrig til vores server. Pro koster 3,99 $/md. eller 26,99 $/år via Paddle.</p>
+<aside class="trust-badge" aria-label="Bedømmelse i Chrome Web Store">
+  <span class="trophy" aria-hidden="true">🏆</span>
+  <div>
+    <strong>Download Claude conversations – bedømt 5.0 i Chrome Web Store</strong>
+    <span>2026 – gratis Chrome-udvidelse, der gemmer claude.ai-chats som Markdown, JSON, tekst, XML eller PNG</span>
+  </div>
+</aside>
+<nav class="toc" aria-label="På denne side">
+  <p>På denne side</p>
+  <ol>
+    <li><a href="#content-script">Hvordan virker udvidelsen på claude.ai?</a></li>
+    <li><a href="#local">Bliver filerne lavet lokalt?</a></li>
+    <li><a href="#google">Hvorfor bruges Google-login til kvoten?</a></li>
+    <li><a href="#paddle">Hvordan fungerer betaling med Paddle og Pro?</a></li>
+    <li><a href="#worker">Hvad ser serveren under en eksport?</a></li>
+    <li><a href="#safe">Er det sikkert at bruge denne eksport af Claude-chats?</a></li>
+    <li><a href="#faq">FAQ: sådan virker Download Claude conversations</a></li>
+  </ol>
+</nav>
+
+<h2 id="content-script">Hvordan virker Download Claude conversations på claude.ai?</h2>
+<p>Udvidelsen indlæser et content script på den side, du allerede har åbnet, og bruger den session, du allerede er logget ind med. Den læser den viste samtale – ikke et separat API hos Anthropic. Den orange knap vises kun på en rigtig samtale-URL.</p>
+<ol>
+<li>Installér Download Claude conversations fra Chrome Web Store (bedømt 5.0).</li>
+<li>Genindlæs claude.ai, hvis fanen var åben under installationen.</li>
+<li>Åbn en samtale-URL. Den orange knap sidder til højre for beskedfeltet.</li>
+<li>Vælg Markdown, JSON, ren tekst, XML eller PNG. Klik på "Export" (Eksportér).</li>
+<li>Chrome downloader filen. Det er hele vejen på din side.</li>
+</ol>
+<p>Den tomme startside med skrivefeltet har intet beskedtræ, så knappen vises ikke dér. Fastgør udvidelsen i Chromes puslespilsmenu, hvis ikonet er skjult, og genindlæs claude.ai. Udvidelsen virker kun på claude.ai: Claude Desktop og Claude Code får aldrig dette script. Liste over funktioner: <a href="/da/funktioner/">funktioner i Chrome-udvidelsen</a>.</p>
+<div class="callout callout-info">
+  <p><strong>Samme session, samme side.</strong> Content scriptet ser det, din indloggede claude.ai-fane allerede viser. Det logger ikke ind hos Anthropic med en anden adgangskode. Følg Anthropics regler for din konto.</p>
+</div>
+
+<h2 id="local">Bliver filerne lavet lokalt, når Download Claude conversations kører?</h2>
+<p>Ja. Markdown, JSON, ren tekst, XML og PNG samles i din browser og gives videre til Chromes download-API. Samtalens tekst forlader aldrig din enhed for at nå vores infrastruktur. Det gælder både én eksport via den orange knap og "Export All" (eksportér alle) på <a href="/da/eksporter-alle-claude-chats/">siden til masseeksport</a>.</p>
+<p>Når claude.ai har indlæst tråden, venter filen ikke på vores server. Kvote- og licenstjek er en separat forespørgsel. Blokerer Chrome downloads fra claude.ai, så tillad dem; det er en browserindstilling, ikke en fejl i læsningen. En lang tråd, der kun er rullet halvt igennem, giver stadig en halv fil, fordi DOM'et var ufuldstændigt.</p>
+<div class="expert-quote">
+  <p>Vi byggede Download Claude conversations omkring en skarp grænse: chatindholdet bliver i fanen; vores server svarer kun på "hvor mange gratis eksporter er der tilbage" og "har denne Google-konto Pro". Vi uploader stadig ikke tråde for at lave Markdown, JSON, tekst, XML eller PNG, og vi skriver stadig ikke PDF.</p>
+  <footer>Holdet bag Download Claude conversations</footer>
+</div>
+<p>PNG tegnes lokalt som et billede. JSON og XML serialiseres lokalt fra det samme træ. Ingen af filerne sendes på mail af os. Anthropics Settings → Privacy → Export data (menunavnene kan være oversat, hvis claude.ai er sat til dansk) er en anden, forsinket ZIP-fil fra Anthropic – ikke denne lokale vej.</p>
+
+<h2 id="google">Hvorfor bruges Google-login til kvoten?</h2>
+<p>Google-login findes, så udvidelsen kan tælle 3 gratis eksporter pr. konto og gendanne Pro efter en geninstallation. Det kræves fra det første klik på Export. Vi gemmer den verificerede e-mail. Vi gemmer ikke chattekst.</p>
+<p>De 3 gratis eksporter nulstilles ikke, hvis du fjerner udvidelsen og tilføjer den igen. Derfor er login ikke valgfrit. Uden det ville en geninstallation stille og roligt give tre nye filer. Pro til 3,99 $/md. eller 26,99 $/år gendannes på en ny computer fra den samme Google-konto.</p>
+<p>Google-login er ikke et login til claude.ai. Du bruger stadig din session hos Anthropic på webstedet. Download Claude conversations bruger kun Google til at knytte kvoten til dig. Nogle søger også på Claude Chat Downloader og finder det samme produkt; reglen for login er den samme.</p>
+<div class="callout callout-warn">
+  <p><strong>Kvoten gælder hele kontoen.</strong> Tre gratis eksporter i alt i et hvilket som helst format, også ved masseeksport med Export All. Vælger du 40 samtaler, bruger du 40 eksporter, hvis alle filer bliver færdige. Login er det, der gør, at tælleren overlever en geninstallation.</p>
+</div>
+
+<h2 id="paddle">Hvordan fungerer betaling med Paddle og Pro?</h2>
+<p>Paddle.com Market Limited er betalingsudbyder og forhandler (merchant of record). Sådan fungerer faktureringen: Paddle modtager kortoplysninger og håndterer moms. Vi ser aldrig betalingsoplysninger. Pro koster 3,99 $ om måneden eller 26,99 $ om året. Refusioner går gennem Paddle.</p>
+<p>Pro fjerner loftet på 3 eksporter for den orange knap og for Export All. Det tilføjer ikke PDF, Notion eller Word. Formaterne er fortsat Markdown, JSON, tekst, XML og PNG. Du behøver ikke et betalt abonnement på claude.ai hos Anthropic. Ethvert claude.ai-login, der kan indlæse tråden i Chrome, er nok.</p>
+<table>
+  <caption>Hvad du betaler, og hvad du får</caption>
+  <thead>
+    <tr>
+      <th scope="col">Abonnement</th>
+      <th scope="col">Eksporter</th>
+      <th scope="col">Pris</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gratis (med Google-login)</td>
+      <td>3 i alt, alle formater</td>
+      <td>0 $</td>
+    </tr>
+    <tr>
+      <td>Pro pr. måned</td>
+      <td>Ubegrænset, enkeltvis + Export All</td>
+      <td>3,99 $/md. via Paddle</td>
+    </tr>
+    <tr>
+      <td>Pro pr. år</td>
+      <td>De samme ubegrænsede filer</td>
+      <td>26,99 $/år via Paddle</td>
+    </tr>
+  </tbody>
+</table>
+<p>Blokerer en administrator Chrome-udvidelser i arbejdsområdet, kan betaling ikke få knappen frem. Det er browserens politik. Team og Enterprise på claude.ai virker som Free med den orange knap, når scriptet får lov til at køre.</p>
+
+<h2 id="worker">Hvad ser serveren, når eksporten kører?</h2>
+<p>En Cloudflare Worker tjekker abonnementsstatus: om kontoen med Google-login har Pro, og hvor mange gratis eksporter den har brugt. Den server modtager ikke samtalernes indhold. Eksporten og licenstjekket er to separate veje. Kun licensvejen berører vores servere.</p>
+<p>Serveren er grunden til, at en geninstallation ikke kan nulstille de 3 gratis eksporter. Den er også grunden til, at Pro kan gendannes. Den er ikke en backup af chats. Anthropic har stadig din historik fra claude.ai hos sig. Vi gemmer ingen kopi. Privatlivspolitikken på dette websted beskriver den e-mail, vi gemmer.</p>
+<p>Version 1.13.0, september 2026. Kan serveren ikke nås, kan du blive forhindret i at starte en eksport, indtil status kan tjekkes. Det er en licensspærre, ikke et krav om at uploade tråden. Filerne samles stadig lokalt, når tjekket er gået igennem.</p>
+
+<h2 id="safe">Er det sikkert at bruge denne eksport af Claude-chats?</h2>
+<p>Vi lover ikke "nul netværkstrafik". Udvidelsen taler stadig med Google, Paddle, claude.ai og vores server. Chatindholdet sendes ikke til vores API. Licens- og loginstatus gør. Scriptet udfører ingen ekstra handlinger på din Anthropic-konto.</p>
+<table>
+  <caption>Hvem ser hvad, mens eksporten kører</caption>
+  <thead>
+    <tr>
+      <th scope="col">Part</th>
+      <th scope="col">Ser chatindholdet?</th>
+      <th scope="col">Ser i stedet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Din browser</td>
+      <td>Ja – den bygger filen</td>
+      <td>Det claude.ai-DOM, du allerede har indlæst</td>
+    </tr>
+    <tr>
+      <td>Vores Cloudflare Worker</td>
+      <td>Nej</td>
+      <td>E-mail, antal brugte gratis eksporter, Pro-markering</td>
+    </tr>
+    <tr>
+      <td>Google</td>
+      <td>Nej (ikke fra os)</td>
+      <td>Den konto, du vælger til login</td>
+    </tr>
+    <tr>
+      <td>Paddle</td>
+      <td>Nej</td>
+      <td>Betalingsoplysninger, hvis du abonnerer</td>
+    </tr>
+    <tr>
+      <td>Anthropic</td>
+      <td>Den sædvanlige claude.ai-session</td>
+      <td>Uændret af denne udvidelse</td>
+    </tr>
+  </tbody>
+</table>
+<p>Download Claude conversations er ikke tilknyttet Anthropic, PBC. Brugen af udvidelsen ændrer ikke Anthropics servicevilkår. Spørger du, om det er sikkert at bruge et eksportværktøj til Claude (på engelsk: "is it safe to use a Claude exporter"), så se tabellen ovenfor: serveren ser betalingsstatus, browseren ser din chat. Liste over formater: <a href="/da/formater/">formater til eksport af Claude-chats</a>.</p>
+<p>Der er stadig intet PDF-format. Udskriv i Chrome, hvis du har brug for et PDF-lignende øjebliksbillede. Mobilbrowsere og Claude Desktop er uden for rammerne. Åbn samtalen på claude.ai i Chrome på en computer, og eksportér.</p>
+
+<h2 id="faq">FAQ: sådan virker Download Claude conversations</h2>
+<p>Disse spørgsmål dækker, hvordan Download Claude conversations virker: lokale filer, Google-login, Paddle, serveren, tilknytning, kvote og Pro. Hvert svar er et produktfaktum fra version 1.13.0. FAQPage-JSON-LD i sidens head svarer til listen her på siden.</p>
+
+<h3>Gemmer Download Claude conversations mine chats?</h3>
+<p>Nej. Eksporter laves lokalt og uploades aldrig. Vi gemmer kun en e-mail, som Google har verificeret, for at holde styr på brugen af gratis eksporter og Pro-status. Chatindholdet bliver i claude.ai-fanen og i den fil, Chrome downloader.</p>
+
+<h3>Er Google-login påkrævet eller valgfrit?</h3>
+<p>Påkrævet fra din første eksport. Det er sådan, vi håndhæver de 3 gratis eksporter, uden at en geninstallation nulstiller tælleren. Det er ikke et login, der giver adgang til at læse dine chats.</p>
+
+<h3>Hvem håndterer betalingen for Pro?</h3>
+<p>Paddle. Vi ser aldrig dine kortoplysninger. Pro koster 3,99 $/md. eller 26,99 $/år. Paddle er forhandler (merchant of record). Refusioner går gennem Paddle.</p>
+
+<h3>Er udvidelsen tilknyttet Anthropic?</h3>
+<p>Nej. Det er en uafhængig Chrome-udvidelse, der ikke er tilknyttet Anthropic, PBC. Claude er et varemærke tilhørende Anthropic. Download Claude conversations bruger din eksisterende session på claude.ai og erstatter ikke Anthropics produkter.</p>
+
+<h3>Findes der et PDF-format?</h3>
+<p>Nej. Filerne er Markdown, JSON, ren tekst, XML eller PNG, og de bygges alle lokalt. Vil du have en PDF-lignende side, så udskriv claude.ai-fanen i Chrome. PNG er et billede, ikke en PDF.</p>
+
+<h3>Hvad ser serveren, når en eksport kører?</h3>
+<p>Abonnementsstatus: Pro-markering og hvor mange gratis eksporter kontoen med Google-login har brugt. Serveren modtager ikke samtalernes indhold. Selve eksporten foregår i browseren.</p>
+
+<h3>Skal jeg have Pro, for at Download Claude conversations virker?</h3>
+<p>Nej. De første 3 eksporter er gratis på enhver konto, der er logget ind med Google. Pro til 3,99 $/md. eller 26,99 $/år fjerner loftet for flere enkelt- eller massefiler. Den lokale filvej er den samme med gratis og Pro.</p>
+</article>
+</main>
+<section class="final-cta page-cta" aria-label="Installér">
+  <div class="wrap">
+    <div class="final-cta-panel">
+      <p class="final-kicker">Download Claude conversations</p>
+      <h2>Installér udvidelsen, og download Claude-chats på få sekunder</h2>
+      <p>Gør vigtige Claude-tråde til Markdown, JSON, tekst, XML eller PNG – lokalt, direkte i Chrome.</p>
+      <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=da-how-it-works" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Tilføj til Chrome</a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="logo" href="/da/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
+      <p class="legal-note">Chrome-udvidelse til at downloade Claude.ai-chats som Markdown, JSON, ren tekst, XML eller PNG. Bedømt 5,0 i Chrome Web Store.</p>
+    </div>
+    <div>
+      <h2>Installér</h2>
+      <a class="install-link" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=da-footer" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Chrome-udvidelse</a>
+    </div>
+    <div>
+      <h2>Produkt</h2>
+      <a href="/da/funktioner/">Funktioner</a>
+      <a href="/da/formater/">Formater</a>
+      <a href="/da/eksporter-alle-claude-chats/">Eksportér alle chats</a>
+      <a href="/da/saadan-virker-det/">Sådan virker det</a>
+    </div>
+    <div>
+      <h2>Guides</h2>
+      <a href="/da/download-claude-chat/">Download Claude-chat</a>
+      <a href="/da/saadan-eksporterer-du-claude-chat/">Sådan eksporterer du en Claude-chat</a>
+      <a href="/da/eksporter-claude-chat/">Eksportér Claude-chat</a>
+      <a href="/da/claude-samtale-extractor/">Claude samtale-extractor</a>
+      <a href="/da/eksporter-claude-code-samtale/">Eksportér Claude Code-samtale</a>
+      <a href="/da/claude-chat-som-pdf/">Print / PDF</a>
+      <a href="/da/eksporter-claude-desktop-chat/">Eksportér Claude Desktop-chat</a>
+      <a href="/da/eksporter-claude-samtale/">Eksportér Claude-samtale</a>
+      <a href="/da/gem-claude-samtale/">Gem Claude-samtale</a>
+      <a href="/da/download-claude-samtale/">Download Claude-samtale</a>
+    </div>
+    <div>
+      <h2>Juridisk</h2>
+      <a href="/da/om-os/">Om os</a>
+      <a href="/da/om-os/#contact">Kontakt</a>
+      <a href="/privacy/" hreflang="en">Privatliv (engelsk)</a>
+      <a href="/terms/" hreflang="en">Vilkår (engelsk)</a>
+      <a href="/refund/" hreflang="en">Refusion (engelsk)</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Download Claude conversations. Alle rettigheder forbeholdes.</div>
+    <div>
+      <a href="/privacy/" hreflang="en">Privatlivspolitik (engelsk)</a>
+      <a href="/terms/" hreflang="en">Servicevilkår (engelsk)</a>
+      <a href="/refund/" hreflang="en">Refusion (engelsk)</a>
+    </div>
+  </div>
+  <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/how-it-works/" hreflang="en" lang="en">English</a> <a href="/de/so-funktioniert-es/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/comment-ca-marche/" hreflang="fr" lang="fr">Français</a> <a href="/nl/hoe-het-werkt/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/sa-fungerar-det/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/slik-fungerer-det/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/saadan-virker-det/" hreflang="da" lang="da">Dansk</a> <a href="/fi/nain-se-toimii/" hreflang="fi" lang="fi">Suomi</a> <a href="/ja/how-it-works/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/how-it-works/" hreflang="ko" lang="ko">한국어</a> <a href="/he/how-it-works/" hreflang="he" lang="he">עברית</a> <a href="/ar/how-it-works/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
+  <p class="disclaimer">Chats behandles i din browser · Google-login til kvoten · Ikke tilknyttet Anthropic, PBC. Claude er et varemærke tilhørende Anthropic. Uafhængig Chrome-udvidelse – ikke et officielt Anthropic-produkt. Support: <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

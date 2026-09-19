@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eksportér Claude-chat til Markdown</title>
+  <meta name="description" content="Eksportér en Claude AI-chat til Markdown med Download Claude conversations. Overskrifter, kodeblokke og tabeller bevares – klar til Obsidian eller GitHub.">
+  <link rel="canonical" href="https://chat-downloader.com/da/formater/markdown/">
+  <!-- i18n:head -->
+  <link rel="alternate" hreflang="en" href="https://chat-downloader.com/formats/markdown/">
+  <link rel="alternate" hreflang="de" href="https://chat-downloader.com/de/formate/markdown/">
+  <link rel="alternate" hreflang="fr" href="https://chat-downloader.com/fr/formats/markdown/">
+  <link rel="alternate" hreflang="nl" href="https://chat-downloader.com/nl/formaten/markdown/">
+  <link rel="alternate" hreflang="sv" href="https://chat-downloader.com/sv/format/markdown/">
+  <link rel="alternate" hreflang="nb" href="https://chat-downloader.com/nb/formater/markdown/">
+  <link rel="alternate" hreflang="da" href="https://chat-downloader.com/da/formater/markdown/">
+  <link rel="alternate" hreflang="fi" href="https://chat-downloader.com/fi/formaatit/markdown/">
+  <link rel="alternate" hreflang="ja" href="https://chat-downloader.com/ja/formats/markdown/">
+  <link rel="alternate" hreflang="ko" href="https://chat-downloader.com/ko/formats/markdown/">
+  <link rel="alternate" hreflang="he" href="https://chat-downloader.com/he/formats/markdown/">
+  <link rel="alternate" hreflang="ar" href="https://chat-downloader.com/ar/formats/markdown/">
+  <link rel="alternate" hreflang="x-default" href="https://chat-downloader.com/formats/markdown/">
+  <meta property="og:locale" content="da_DK">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="sv_SE">
+  <meta property="og:locale:alternate" content="nb_NO">
+  <meta property="og:locale:alternate" content="fi_FI">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <meta property="og:locale:alternate" content="he_IL">
+  <meta property="og:locale:alternate" content="ar_AE">
+  <!-- /i18n:head -->
+  <meta property="og:title" content="Eksportér Claude-chat til Markdown">
+  <meta property="og:description" content="Eksportér en Claude AI-chat til Markdown med Download Claude conversations. Overskrifter, kodeblokke og tabeller bevares – klar til Obsidian eller GitHub.">
+  <meta property="og:url" content="https://chat-downloader.com/da/formater/markdown/">
+  <meta property="og:image" content="https://chat-downloader.com/assets/widget-guide.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chat Downloader">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Eksportér Claude-chat til Markdown">
+  <meta name="twitter:description" content="Eksportér en Claude AI-chat til Markdown med Download Claude conversations. Overskrifter, kodeblokke og tabeller bevares – klar til Obsidian eller GitHub.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME1YXGZKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GME1YXGZKR');
+  </script>
+  
+  
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Mister jeg kode, når jeg eksporterer en Claude-chat til Markdown?","acceptedAnswer":{"@type":"Answer","text":"Nej. Kodeblokke bevarer sprogmærke og indrykning, i modsætning til almindelig kopiering fra claude.ai. Tabeller forbliver Markdown-tabeller. Det er hovedgrunden til at eksportere til Markdown i stedet for at markere tekst manuelt."}},{"@type":"Question","name":"Kan jeg eksportere Claude-chats til Markdown i én omgang?","acceptedAnswer":{"@type":"Answer","text":"Ja. Export All på oversigtssiden understøtter Markdown på samme måde som eksport af en enkelt chat. Hver færdig .md-fil tæller som en af de 3 gratis eksporter, medmindre du har Pro."}},{"@type":"Question","name":"Er Markdown det samme som Anthropics Export data?","acceptedAnswer":{"@type":"Answer","text":"Nej. Anthropics officielle eksport er en ZIP-fil med JSON for hele kontoen, som sendes på mail efter en ventetid. Eksport til Markdown giver en .md-fil pr. chat (eller pr. udvalg) fra Download Claude conversations."}},{"@type":"Question","name":"Koster Markdown ekstra i forhold til andre formater?","acceptedAnswer":{"@type":"Answer","text":"Nej. Markdown indgår i de 3 gratis eksporter på enhver konto, der er logget ind med Google, ligesom JSON, tekst, XML og PNG. Derefter koster Pro 3,99 $/md. eller 26,99 $/år for ubegrænsede filer."}},{"@type":"Question","name":"Kan jeg eksportere en Claude-chat til Markdown i Claude Desktop?","acceptedAnswer":{"@type":"Answer","text":"Nej. Download Claude conversations indlæses kun på claude.ai i Chrome. Claude Desktop viser aldrig menuen med Markdown. Åbn den samme tråd på claude.ai, hvis den findes der."}},{"@type":"Question","name":"Laver eksport til Markdown en PDF?","acceptedAnswer":{"@type":"Answer","text":"Nej. Markdown er en .md-tekstfil. Produktet leverer ikke PDF. Brug Chromes udskriftsdialog, hvis du vil have en side til udskrift. PNG er et billede og heller ikke en PDF."}},{"@type":"Question","name":"Skal jeg have Pro for at eksportere en Claude-chat til Markdown én gang?","acceptedAnswer":{"@type":"Answer","text":"Nej. De første 3 eksporter er gratis i alle formater, også Markdown. Pro til 3,99 $/md. eller 26,99 $/år fjerner grænsen for flere enkelte eller massevise .md-filer."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Forside","item":"https://chat-downloader.com/da/"},{"@type":"ListItem","position":2,"name":"Formater","item":"https://chat-downloader.com/da/formater/"},{"@type":"ListItem","position":3,"name":"Markdown","item":"https://chat-downloader.com/da/formater/markdown/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Spring til indhold</a>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a class="logo" href="/da/">
+        <img src="/assets/icon.svg" alt="">
+        <span>Download Claude conversations</span>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="/da/download-claude-chat/">Download</a><a href="/da/saadan-eksporterer-du-claude-chat/">Eksportér</a><a href="/da/eksporter-alle-claude-chats/">Alle chats</a><a href="/da/formater/">Formater</a><a href="/da/#faq">FAQ</a>
+        <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=da-formats-markdown" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Føj til Chrome</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <!-- i18n:switch --><details class="lang-switch"><summary aria-label="Sprog">da</summary><ul><li><a href="/formats/markdown/" hreflang="en" lang="en">English</a></li><li><a href="/de/formate/markdown/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/formats/markdown/" hreflang="fr" lang="fr">Français</a></li><li><a href="/nl/formaten/markdown/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/sv/format/markdown/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="/nb/formater/markdown/" hreflang="nb" lang="nb">Norsk</a></li><li><a href="/da/formater/markdown/" hreflang="da" lang="da" aria-current="true">Dansk</a></li><li><a href="/fi/formaatit/markdown/" hreflang="fi" lang="fi">Suomi</a></li><li><a href="/ja/formats/markdown/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/ko/formats/markdown/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/he/formats/markdown/" hreflang="he" lang="he">עברית</a></li><li><a href="/ar/formats/markdown/" hreflang="ar" lang="ar">العربية</a></li></ul></details><!-- /i18n:switch -->
+      <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=da-formats-markdown" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Føj til Chrome</a>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+<nav class="crumbs" aria-label="Brødkrummesti"><a href="/da/">Forside</a> / <a href="/da/formater/">Formater</a> / Markdown</nav>
+<main id="main">
+<article class="band prose">
+<p class="article-meta">Opdateret <time datetime="2026-09">september 2026</time> · Udvidelse 1.13.0</p>
+<h1 class="page-h1">Eksportér Claude-chat til Markdown til dine noter</h1>
+<p class="lead">For at eksportere en Claude-chat til Markdown installerer du Download Claude conversations, åbner tråden på claude.ai, klikker på den orange knap, vælger Markdown og klikker på "Export" (Eksportér). Chrome gemmer en .md-fil med overskrifter, kodeblokke og tabeller. Tre eksporter er gratis; Pro koster 3,99 $/md. eller 26,99 $/år. Menuen har ingen PDF.</p>
+<aside class="trust-badge" aria-label="Bedømmelse i Chrome Web Store">
+  <span class="trophy" aria-hidden="true">🏆</span>
+  <div>
+    <strong>Download Claude conversations – bedømt 5.0 i Chrome Web Store</strong>
+    <span>2026 – gratis Chrome-udvidelse, der gemmer claude.ai-chats som Markdown, JSON, tekst, XML eller PNG</span>
+  </div>
+</aside>
+<nav class="toc" aria-label="På denne side">
+  <p>På denne side</p>
+  <ol>
+    <li><a href="#how-to">Hvordan eksporterer jeg en Claude-chat til Markdown?</a></li>
+    <li><a href="#why-markdown">Hvorfor Markdown til noter?</a></li>
+    <li><a href="#preserved">Hvad bevares i Markdown-filen?</a></li>
+    <li><a href="#bulk">Kan jeg eksportere til Markdown i én omgang?</a></li>
+    <li><a href="#vs-json">Markdown eller JSON?</a></li>
+    <li><a href="#cost">Koster Markdown ekstra?</a></li>
+    <li><a href="#faq">FAQ: eksportér Claude-chat til Markdown</a></li>
+  </ol>
+</nav>
+
+<h2 id="how-to">Hvordan eksporterer jeg en Claude-chat til Markdown?</h2>
+<p>Åbn samtalen på claude.ai i Chrome, klik på den orange knap ved siden af beskedfeltet, vælg Markdown, og klik på "Export". Download Claude conversations skriver en .md-fil lokalt. Sådan eksporterer du en Claude-chat til Markdown i version 1.13.0.</p>
+<ol>
+<li>Installér Download Claude conversations fra Chrome Web Store (bedømt 5.0).</li>
+<li>Genindlæs claude.ai, og åbn en rigtig samtale-URL – ikke den tomme startside med skrivefeltet.</li>
+<li>Klik på den orange downloadknap til højre for beskedfeltet.</li>
+<li>Vælg Markdown. Udvidelsen husker det format, du brugte sidst.</li>
+<li>Klik på "Export". Chrome downloader .md-filen via browserens download-API.</li>
+</ol>
+<p>Du skal logge ind med Google, før du eksporterer første gang. Download Claude conversations gemmer den verificerede e-mail for at tælle de 3 gratis eksporter og gendanne Pro efter en geninstallation. Chatteksten uploades ikke i forbindelse med login. Mekanikken: <a href="/da/saadan-virker-det/">sådan virker det</a>.</p>
+<p>Mangler den orange knap, er du ikke på en samtale-URL, fanen skal genindlæses efter installationen, eller udvidelsen er stadig skjult i Chromes puslespilsmenu. Fastgør Download Claude conversations, og genindlæs claude.ai. Content scriptet indlæses aldrig i Claude Desktop eller Claude Code.</p>
+<div class="callout callout-tip">
+  <p><strong>Én chat eller mange.</strong> Den orange knap eksporterer den åbne tråd som Markdown. Vil du have mange .md-filer, så åbn "View and Download All Conversations" (se og download alle samtaler) og kør "Export All" (eksportér alle) med Markdown valgt – se <a href="/da/eksporter-alle-claude-chats/">masseeksport med Export All</a>.</p>
+</div>
+
+<h2 id="why-markdown">Hvorfor eksportere Claude-chats til Markdown til noter?</h2>
+<p>Vælg Markdown, når du skal læse filen i Obsidian, en GitHub-wiki eller en editor, der viser overskrifter og kodeblokke. .md-filen er stadig ren tekst, som du kan søge i og sammenligne. JSON er bedre til parsere; PNG er et billede, du ikke kan søge i.</p>
+<p>Kopiering fra claude.ai mister som regel indrykning og gør tabeller flade. Udskrift (Ctrl/Cmd+P) tager sidebjælken med og deler ofte en lang kodeblok over flere sider. Med eksport til Markdown bliver sprogmærker på kodeblokkene, og tabeller forbliver tabeller. Derfor vælger skribenter dette format først.</p>
+<div class="expert-quote">
+  <p>Vi ser Markdown som standardfilen for mennesker: overskrifter, kodeblokke med sprogmærker og tabeller fra claude.ai-tråden. Vi opfinder stadig ikke et PDF-format – har du brug for en side til udskrift, så brug Chromes udskriftsdialog efter eksporten til Markdown eller i stedet for den.</p>
+  <footer>Holdet bag Download Claude conversations</footer>
+</div>
+<p>Nogle søger også på Claude Chat Downloader og finder det samme produkt. Eksport til Markdown sker med den samme orange knap, ikke med et andet produkt. Juridiske sider kan stadig nævne Claude Exporter. Alle navnene peger på Download Claude conversations.</p>
+
+<h2 id="preserved">Hvad bevares, når du eksporterer en Claude-chat til Markdown?</h2>
+<p>Download Claude conversations bevarer overskrifter, kodeblokke med sprogmærker og indrykning, tabeller og links. Thinking-blokke er valgfrie ("include thinking" – medtag thinking). Metadata (titel, tidsstempler, model) kan komme med ("include metadata"). Afsenderfilteret kan begrænse .md-filen til "all / human only / assistant only" (alle beskeder, kun mennesket eller kun assistenten).</p>
+<p>Layout for artefakter er en rigtig kontakt i version 1.13.0: "Original", "Inline" (i teksten), "Nested" (indlejret) eller "Flat" (fladt). En Markdown-eksport kan spejle artefakternes struktur på skærmen eller gøre dem til ét lineært dokument. Hele listen over kontakter: <a href="/da/funktioner/">funktioner i Chrome-udvidelsen</a>. Markdown bevarer ikke farverne på beskedboblerne; brug PNG, hvis du har brug for et visuelt øjebliksbillede.</p>
+<table>
+  <caption>Hvad en Markdown-eksport af en Claude-chat indeholder</caption>
+  <thead>
+    <tr>
+      <th scope="col">Element</th>
+      <th scope="col">I .md-filen?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Overskrifter og lister</td>
+      <td>Ja</td>
+    </tr>
+    <tr>
+      <td>Kodeblokke + sprogmærke</td>
+      <td>Ja</td>
+    </tr>
+    <tr>
+      <td>Tabeller</td>
+      <td>Ja, som Markdown-tabeller</td>
+    </tr>
+    <tr>
+      <td>Thinking-blokke</td>
+      <td>Hvis kontakten Thinking er slået til</td>
+    </tr>
+    <tr>
+      <td>Artefakter</td>
+      <td>Ja, som Original / Inline / Nested / Flat</td>
+    </tr>
+    <tr>
+      <td>Visuel ramme / PDF-sider</td>
+      <td>Nej – Markdown er tekst, ikke PDF</td>
+    </tr>
+  </tbody>
+</table>
+<p>Er tråden meget lang, så rul, indtil claude.ai har indlæst de tidligere beskeder, før du eksporterer. Udvidelsen kan kun skrive det, siden har vist. En halvt indlæst tråd giver en halv .md-fil, der ligner en fejl, men som regel skyldes et DOM, der ikke er rullet igennem.</p>
+
+<h2 id="bulk">Kan jeg eksportere Claude-chats til Markdown i én omgang?</h2>
+<p>Ja. Åbn "View and Download All Conversations", sæt formatet til Markdown, filtrér tabellen, og klik på Export All. Hver færdig .md-fil er én eksport af de samme 3 gratis eksporter som ved den orange knap. Pro til 3,99 $/md. eller 26,99 $/år fjerner loftet for masseeksport til Markdown.</p>
+<p>Oversigtstabellen viser din historik fra claude.ai med søgning på navn og filtrene All, New, Exported og Project (alle, nye, eksporterede, projekt). New betyder, at chatten endnu ikke er eksporteret med Download Claude conversations. Exported holder styr på chats, du allerede har gemt, så en ny Export All kan springe dem over. Project svarer til, hvordan du grupperer chats på claude.ai.</p>
+<div class="callout callout-warn">
+  <p><strong>Kvoten gælder hele kontoen.</strong> Tre gratis eksporter i alt – ikke tre Markdown-filer om dagen. Vælger du 40 samtaler, bruger du 40 eksporter, hvis alle .md-filer bliver færdige. Planlæg udvalget, før du klikker på Export All.</p>
+</div>
+<p>Masseeksport til Markdown bruger de samme kontakter for thinking, metadata, afsender og artefakter som en enkelt samtale. Export All er ikke Anthropics forsinkede ZIP-fil. Det er mange .md-filer, én pr. chat. Vil du have ét arkiv med hele kontoen, er det Settings → Privacy → Export data (menunavnene kan være oversat, hvis claude.ai er sat til dansk), og det er JSON, ikke Markdown.</p>
+
+<h2 id="vs-json">Markdown eller JSON, når jeg eksporterer en Claude-chat?</h2>
+<p>Eksportér til Markdown, når et menneske skal læse filen. Eksportér som JSON, når et script skal parse beskedtræet. Download Claude conversations tilbyder begge i én menu plus ren tekst, XML og PNG. Der er stadig ingen PDF. Oversigt over formater: <a href="/da/formater/">formater til eksport af Claude-chats</a>.</p>
+<table>
+  <caption>Markdown sammenlignet med de andre eksportfiler fra claude.ai</caption>
+  <thead>
+    <tr>
+      <th scope="col">Format</th>
+      <th scope="col">Vælg det, når</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Markdown</td>
+      <td>Noter, Obsidian, GitHub, wikier</td>
+    </tr>
+    <tr>
+      <td>JSON</td>
+      <td>Sammenligninger, pipelines, værktøjer – <a href="/da/formater/json/">guide til JSON</a></td>
+    </tr>
+    <tr>
+      <td>Ren tekst</td>
+      <td>Ingen markup, arkiv der kan indsættes overalt</td>
+    </tr>
+    <tr>
+      <td>XML</td>
+      <td>Et system, der kræver XML</td>
+    </tr>
+    <tr>
+      <td>PNG</td>
+      <td>Et billede af tråden, ikke søgbar tekst</td>
+    </tr>
+  </tbody>
+</table>
+<p>Anthropics Export data er også JSON, men det er en ZIP-fil for kontoen via mail, ikke en .md-fil pr. chat. Du kan ikke vælge Markdown i den anmodning. Udskriv → Gem som PDF er et øjebliksbillede af websiden. Ingen af dem erstatter eksport til Markdown via den orange knap.</p>
+<p>Udvidelsen kører kun på claude.ai i Chrome. Claude Desktop og Claude Code får ingen Markdown-knap. Findes tråden også på claude.ai, så åbn den dér og eksportér den til Markdown. Claude Codes <code>/export</code> er en helt anden vej i et andet produkt.</p>
+
+<h2 id="cost">Koster det ekstra at eksportere en Claude-chat til Markdown?</h2>
+<p>Nej. Markdown indgår i de 3 gratis eksporter, som hver konto med Google-login får, ligesom JSON, tekst, XML og PNG. Efter de tre filer koster Pro 3,99 $ om måneden eller 26,99 $ om året via Paddle. Download Claude conversations tager intet tillæg for Markdown.</p>
+<p>De 3 gratis eksporter nulstilles ikke, når du geninstallerer udvidelsen fra Chrome Web Store. Derfor kræves Google-login første gang, du eksporterer. Pro gendannes på en ny computer fra den samme Google-konto. Paddle er forhandler (merchant of record); vi ser aldrig kortnumre.</p>
+<p>Du behøver ikke et betalt abonnement på claude.ai hos Anthropic. Du skal bare have et login, der kan indlæse samtalen i Chrome. Team og Enterprise virker på samme måde som Free med den orange knap. Version 1.13.0 fra september 2026 skriver stadig ikke Word, Notion eller PDF.</p>
+
+<h2 id="faq">FAQ: eksportér Claude-chat til Markdown</h2>
+<p>Disse spørgsmål dækker eksport til Markdown i Download Claude conversations 1.13.0: kodeblokke, masseeksport med Export All, Anthropics ZIP-fil, kvote og Desktop. Hvert svar er et produktfaktum. FAQPage-JSON-LD i sidens head svarer til denne liste.</p>
+
+<h3>Mister jeg kode, når jeg eksporterer en Claude-chat til Markdown?</h3>
+<p>Nej. Kodeblokke bevarer sprogmærke og indrykning, i modsætning til almindelig kopiering fra claude.ai. Tabeller forbliver Markdown-tabeller. Det er hovedgrunden til at eksportere til Markdown i stedet for at markere tekst manuelt.</p>
+
+<h3>Kan jeg eksportere Claude-chats til Markdown i én omgang?</h3>
+<p>Ja. Export All på oversigtssiden understøtter Markdown på samme måde som eksport af en enkelt chat. Hver færdig .md-fil tæller som en af de 3 gratis eksporter, medmindre du har Pro.</p>
+
+<h3>Er Markdown det samme som Anthropics Export data?</h3>
+<p>Nej. Anthropics officielle eksport er en ZIP-fil med JSON for hele kontoen, som sendes på mail efter en ventetid. Eksport til Markdown giver en .md-fil pr. chat (eller pr. udvalg) fra Download Claude conversations.</p>
+
+<h3>Koster Markdown ekstra i forhold til andre formater?</h3>
+<p>Nej. Markdown indgår i de 3 gratis eksporter på enhver konto, der er logget ind med Google, ligesom JSON, tekst, XML og PNG. Derefter koster Pro 3,99 $/md. eller 26,99 $/år for ubegrænsede filer.</p>
+
+<h3>Kan jeg eksportere en Claude-chat til Markdown i Claude Desktop?</h3>
+<p>Nej. Download Claude conversations indlæses kun på claude.ai i Chrome. Claude Desktop viser aldrig menuen med Markdown. Åbn den samme tråd på claude.ai, hvis den findes der.</p>
+
+<h3>Laver eksport til Markdown en PDF?</h3>
+<p>Nej. Markdown er en .md-tekstfil. Produktet leverer ikke PDF. Brug Chromes udskriftsdialog, hvis du vil have en side til udskrift. PNG er et billede og heller ikke en PDF.</p>
+
+<h3>Skal jeg have Pro for at eksportere en Claude-chat til Markdown én gang?</h3>
+<p>Nej. De første 3 eksporter er gratis i alle formater, også Markdown. Pro til 3,99 $/md. eller 26,99 $/år fjerner grænsen for flere enkelte eller massevise .md-filer.</p>
+</article>
+</main>
+<section class="final-cta page-cta" aria-label="Installér">
+  <div class="wrap">
+    <div class="final-cta-panel">
+      <p class="final-kicker">Download Claude conversations</p>
+      <h2>Installér udvidelsen, og download Claude-chats på få sekunder</h2>
+      <p>Gør vigtige Claude-tråde til Markdown, JSON, tekst, XML eller PNG – lokalt, direkte i Chrome.</p>
+      <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=da-formats-markdown" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Tilføj til Chrome</a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="logo" href="/da/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
+      <p class="legal-note">Chrome-udvidelse til at downloade Claude.ai-chats som Markdown, JSON, ren tekst, XML eller PNG. Bedømt 5,0 i Chrome Web Store.</p>
+    </div>
+    <div>
+      <h2>Installér</h2>
+      <a class="install-link" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=da-footer" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Chrome-udvidelse</a>
+    </div>
+    <div>
+      <h2>Produkt</h2>
+      <a href="/da/funktioner/">Funktioner</a>
+      <a href="/da/formater/">Formater</a>
+      <a href="/da/eksporter-alle-claude-chats/">Eksportér alle chats</a>
+      <a href="/da/saadan-virker-det/">Sådan virker det</a>
+    </div>
+    <div>
+      <h2>Guides</h2>
+      <a href="/da/download-claude-chat/">Download Claude-chat</a>
+      <a href="/da/saadan-eksporterer-du-claude-chat/">Sådan eksporterer du en Claude-chat</a>
+      <a href="/da/eksporter-claude-chat/">Eksportér Claude-chat</a>
+      <a href="/da/claude-samtale-extractor/">Claude samtale-extractor</a>
+      <a href="/da/eksporter-claude-code-samtale/">Eksportér Claude Code-samtale</a>
+      <a href="/da/claude-chat-som-pdf/">Print / PDF</a>
+      <a href="/da/eksporter-claude-desktop-chat/">Eksportér Claude Desktop-chat</a>
+      <a href="/da/eksporter-claude-samtale/">Eksportér Claude-samtale</a>
+      <a href="/da/gem-claude-samtale/">Gem Claude-samtale</a>
+      <a href="/da/download-claude-samtale/">Download Claude-samtale</a>
+    </div>
+    <div>
+      <h2>Juridisk</h2>
+      <a href="/da/om-os/">Om os</a>
+      <a href="/da/om-os/#contact">Kontakt</a>
+      <a href="/privacy/" hreflang="en">Privatliv (engelsk)</a>
+      <a href="/terms/" hreflang="en">Vilkår (engelsk)</a>
+      <a href="/refund/" hreflang="en">Refusion (engelsk)</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Download Claude conversations. Alle rettigheder forbeholdes.</div>
+    <div>
+      <a href="/privacy/" hreflang="en">Privatlivspolitik (engelsk)</a>
+      <a href="/terms/" hreflang="en">Servicevilkår (engelsk)</a>
+      <a href="/refund/" hreflang="en">Refusion (engelsk)</a>
+    </div>
+  </div>
+  <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/formats/markdown/" hreflang="en" lang="en">English</a> <a href="/de/formate/markdown/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/formats/markdown/" hreflang="fr" lang="fr">Français</a> <a href="/nl/formaten/markdown/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/format/markdown/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/formater/markdown/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/formater/markdown/" hreflang="da" lang="da">Dansk</a> <a href="/fi/formaatit/markdown/" hreflang="fi" lang="fi">Suomi</a> <a href="/ja/formats/markdown/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/formats/markdown/" hreflang="ko" lang="ko">한국어</a> <a href="/he/formats/markdown/" hreflang="he" lang="he">עברית</a> <a href="/ar/formats/markdown/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
+  <p class="disclaimer">Chats behandles i din browser · Google-login til kvoten · Ikke tilknyttet Anthropic, PBC. Claude er et varemærke tilhørende Anthropic. Uafhængig Chrome-udvidelse – ikke et officielt Anthropic-produkt. Support: <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

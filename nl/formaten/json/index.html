@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Claude-gesprek exporteren als JSON</title>
+  <meta name="description" content="Exporteer een Claude-chat naar JSON met de volledige berichtenboom — iets anders dan de account-ZIP van Anthropic. Eén chat of in bulk.">
+  <link rel="canonical" href="https://chat-downloader.com/nl/formaten/json/">
+  <!-- i18n:head -->
+  <link rel="alternate" hreflang="en" href="https://chat-downloader.com/formats/json/">
+  <link rel="alternate" hreflang="de" href="https://chat-downloader.com/de/formate/json/">
+  <link rel="alternate" hreflang="fr" href="https://chat-downloader.com/fr/formats/json/">
+  <link rel="alternate" hreflang="nl" href="https://chat-downloader.com/nl/formaten/json/">
+  <link rel="alternate" hreflang="sv" href="https://chat-downloader.com/sv/format/json/">
+  <link rel="alternate" hreflang="nb" href="https://chat-downloader.com/nb/formater/json/">
+  <link rel="alternate" hreflang="da" href="https://chat-downloader.com/da/formater/json/">
+  <link rel="alternate" hreflang="fi" href="https://chat-downloader.com/fi/formaatit/json/">
+  <link rel="alternate" hreflang="ja" href="https://chat-downloader.com/ja/formats/json/">
+  <link rel="alternate" hreflang="ko" href="https://chat-downloader.com/ko/formats/json/">
+  <link rel="alternate" hreflang="he" href="https://chat-downloader.com/he/formats/json/">
+  <link rel="alternate" hreflang="ar" href="https://chat-downloader.com/ar/formats/json/">
+  <link rel="alternate" hreflang="x-default" href="https://chat-downloader.com/formats/json/">
+  <meta property="og:locale" content="nl_NL">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="sv_SE">
+  <meta property="og:locale:alternate" content="nb_NO">
+  <meta property="og:locale:alternate" content="da_DK">
+  <meta property="og:locale:alternate" content="fi_FI">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <meta property="og:locale:alternate" content="he_IL">
+  <meta property="og:locale:alternate" content="ar_AE">
+  <!-- /i18n:head -->
+  <meta property="og:title" content="Claude-gesprek exporteren als JSON">
+  <meta property="og:description" content="Exporteer een Claude-chat naar JSON met de volledige berichtenboom — iets anders dan de account-ZIP van Anthropic. Eén chat of in bulk.">
+  <meta property="og:url" content="https://chat-downloader.com/nl/formaten/json/">
+  <meta property="og:image" content="https://chat-downloader.com/assets/widget-guide.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chat Downloader">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Claude-gesprek exporteren als JSON">
+  <meta name="twitter:description" content="Exporteer een Claude-chat naar JSON met de volledige berichtenboom — iets anders dan de account-ZIP van Anthropic. Eén chat of in bulk.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME1YXGZKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GME1YXGZKR');
+  </script>
+  
+  
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Kan ik Claude-gesprekken in bulk als JSON exporteren?","acceptedAnswer":{"@type":"Answer","text":"Ja. „Export All” op de overzichtspagina ondersteunt JSON net als een losse export. Elk voltooid bestand telt als een van de 3 gratis exports, tenzij je Pro hebt voor 3,99 $/maand of 26,99 $/jaar."}},{"@type":"Question","name":"Is de JSON-structuur gedocumenteerd?","acceptedAnswer":{"@type":"Answer","text":"Ze volgt de eigen berichtenboom van claude.ai: afzender, contentblokken, tijdstempels en modelmetadata, met artifacts en denkblokken erbij als je die schakelaars aanzet. Het is niet het schema van de account-ZIP van Anthropic."}},{"@type":"Question","name":"Heb ik Pro nodig om een Claude-gesprek als JSON te exporteren?","acceptedAnswer":{"@type":"Answer","text":"Nee. JSON valt onder de 3 gratis exports die elk met Google aangemeld account krijgt, net als elk ander formaat. Na die drie bestanden kost Pro 3,99 $/maand of 26,99 $/jaar."}},{"@type":"Question","name":"Kan ik twee JSON-exports van één chat vergelijken?","acceptedAnswer":{"@type":"Answer","text":"Ja. Elke JSON-export is een zelfstandig bestand dat op dezelfde manier is opgebouwd. Twee exports van hetzelfde gesprek op verschillende momenten vergelijk je net als elk ander JSON-bestand."}},{"@type":"Question","name":"Is deze JSON hetzelfde als Export data van Anthropic?","acceptedAnswer":{"@type":"Answer","text":"Nee. Export data van Anthropic is een vertraagde ZIP van het hele account. Download Claude conversations schrijft direct in Chrome een JSON-bestand per chat (of per selectie). Beide kunnen JSON zijn; uitwisselbaar zijn ze niet."}},{"@type":"Question","name":"Maakt een JSON-export een PDF?","acceptedAnswer":{"@type":"Answer","text":"Nee. JSON is gestructureerde data. De productformaten zijn Markdown, JSON, platte tekst, XML en PNG. Gebruik voor een afdrukbare pagina het afdrukvenster van Chrome, niet dit keuzemenu."}},{"@type":"Question","name":"Werkt de JSON-export in Claude Desktop?","acceptedAnswer":{"@type":"Answer","text":"Nee. De Chrome-extensie wordt alleen op claude.ai geladen. Claude Desktop toont de JSON-optie nooit. Open hetzelfde gesprek op claude.ai in Chrome als het daar bestaat."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://chat-downloader.com/nl/"},{"@type":"ListItem","position":2,"name":"Formaten","item":"https://chat-downloader.com/nl/formaten/"},{"@type":"ListItem","position":3,"name":"JSON","item":"https://chat-downloader.com/nl/formaten/json/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Naar de inhoud</a>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a class="logo" href="/nl/">
+        <img src="/assets/icon.svg" alt="">
+        <span>Download Claude conversations</span>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="/nl/claude-chat-downloaden/">Downloaden</a><a href="/nl/hoe-claude-chat-exporteren/">Exporteren</a><a href="/nl/alle-claude-chats-exporteren/">Alle chats</a><a href="/nl/formaten/">Formaten</a><a href="/nl/#faq">FAQ</a>
+        <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=nl-formats-json" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Toevoegen aan Chrome</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <!-- i18n:switch --><details class="lang-switch"><summary aria-label="Taal">nl</summary><ul><li><a href="/formats/json/" hreflang="en" lang="en">English</a></li><li><a href="/de/formate/json/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/formats/json/" hreflang="fr" lang="fr">Français</a></li><li><a href="/nl/formaten/json/" hreflang="nl" lang="nl" aria-current="true">Nederlands</a></li><li><a href="/sv/format/json/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="/nb/formater/json/" hreflang="nb" lang="nb">Norsk</a></li><li><a href="/da/formater/json/" hreflang="da" lang="da">Dansk</a></li><li><a href="/fi/formaatit/json/" hreflang="fi" lang="fi">Suomi</a></li><li><a href="/ja/formats/json/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/ko/formats/json/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/he/formats/json/" hreflang="he" lang="he">עברית</a></li><li><a href="/ar/formats/json/" hreflang="ar" lang="ar">العربية</a></li></ul></details><!-- /i18n:switch -->
+      <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=nl-formats-json" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Toevoegen aan Chrome</a>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+<nav class="crumbs" aria-label="Kruimelpad"><a href="/nl/">Home</a> / <a href="/nl/formaten/">Formaten</a> / JSON</nav>
+<main id="main">
+<article class="band prose">
+<p class="article-meta">Bijgewerkt <time datetime="2026-09">september 2026</time> · Extensie 1.13.0</p>
+<h1 class="page-h1">Claude-gesprek exporteren als JSON voor scripts</h1>
+<p class="lead">Om een Claude-gesprek te exporteren als JSON installeer je Download Claude conversations, open je het gesprek op claude.ai, klik je op de oranje knop, kies je JSON en klik je op „Export” (exporteren). Chrome slaat een bestand per chat op met de berichtenboom. Dat bestand is niet de account-ZIP van Anthropic. Drie exports zijn gratis; Pro kost 3,99 $/maand of 26,99 $/jaar.</p>
+<aside class="trust-badge" aria-label="Beoordeling in de Chrome Web Store">
+  <span class="trophy" aria-hidden="true">🏆</span>
+  <div>
+    <strong>Download Claude conversations — beoordeeld met 5,0 in de Chrome Web Store</strong>
+    <span>2026 — gratis Chrome-extensie om claude.ai-chats op te slaan als Markdown, JSON, tekst, XML of PNG</span>
+  </div>
+</aside>
+<nav class="toc" aria-label="Op deze pagina">
+  <p>Op deze pagina</p>
+  <ol>
+    <li><a href="#how-to">Hoe exporteer ik een Claude-gesprek als JSON?</a></li>
+    <li><a href="#when">Wanneer exporteer je een Claude-gesprek als JSON?</a></li>
+    <li><a href="#inside">Wat zit er in een JSON-export van een Claude-gesprek?</a></li>
+    <li><a href="#vs-zip">JSON van een Claude-gesprek of Export data van Anthropic?</a></li>
+    <li><a href="#bulk">Kan ik Claude-gesprekken in bulk als JSON exporteren?</a></li>
+    <li><a href="#cost">Heb je Pro nodig om een Claude-gesprek als JSON te exporteren?</a></li>
+    <li><a href="#faq">FAQ: Claude-gesprek exporteren als JSON</a></li>
+  </ol>
+</nav>
+
+<h2 id="how-to">Hoe exporteer ik een Claude-gesprek als JSON?</h2>
+<p>Open het gesprek op claude.ai in Chrome, klik op de oranje knop naast het berichtvak, kies JSON en klik op „Export”. Download Claude conversations schrijft het bestand lokaal. Zo werkt het in versie 1.13.0. claude.ai heeft in september 2026 geen eigen knop om één chat als JSON op te slaan.</p>
+<ol>
+<li>Installeer Download Claude conversations uit de Chrome Web Store (vermelding beoordeeld met 5,0).</li>
+<li>Laad claude.ai opnieuw en open een echte gespreks-URL, niet de lege startpagina met het invoerveld.</li>
+<li>Klik op de oranje downloadknop rechts van het berichtvak.</li>
+<li>Selecteer JSON. Het laatst gebruikte formaat wordt onthouden.</li>
+<li>Klik op „Export”. Chrome downloadt de JSON via de download-API van de browser.</li>
+</ol>
+<p>Voordat je voor het eerst als JSON exporteert, moet je je aanmelden met Google. Download Claude conversations bewaart het geverifieerde e-mailadres om de 3 gratis exports te tellen en Pro na een herinstallatie te herstellen. De inhoud van chats hoort niet bij die aanmelding. Zo werkt het: <a href="/nl/hoe-het-werkt/">hoe het werkt</a>.</p>
+<p>Zie je de oranje knop niet, dan sta je niet op een gespreks-URL, moet het tabblad opnieuw worden geladen of zit de extensie verstopt in het puzzelstukmenu van Chrome. Zet Download Claude conversations vast en vernieuw claude.ai. Het contentscript wordt nooit geladen in Claude Desktop of Claude Code.</p>
+<div class="callout callout-tip">
+  <p><strong>Eén gesprek of veel bestanden.</strong> De oranje knop exporteert de geopende chat als JSON. Voor veel JSON-bestanden open je „View and Download All Conversations” (alle gesprekken bekijken en downloaden) en start je „Export All” met JSON geselecteerd — zie <a href="/nl/alle-claude-chats-exporteren/">bulkexport met Export All</a>.</p>
+</div>
+
+<h2 id="when">Wanneer exporteer je een Claude-gesprek als JSON?</h2>
+<p>Kies JSON als een script, indexeerder of diff-tool het bestand gaat lezen. De JSON is gebouwd rond de berichtenboom, niet om in Obsidian te lezen. Wil je koppen en codeblokken voor mensen, kies dan Markdown.</p>
+<p>Kopiëren en plakken vanuit claude.ai verliest wie wat zei. Afdrukken neemt de opmaak van de webpagina mee. Bij een JSON-export houdt Download Claude conversations beurten, afzenders en optionele denkstappen vast als data, niet als één platgeslagen alinea. Daarom kiezen ontwikkelaars JSON boven platte tekst.</p>
+<div class="expert-quote">
+  <p>We schrijven JSON op basis van de claude.ai-boom die al op de pagina staat — afzender, contentblokken, tijdstempels, modelmetadata — zonder het gesprek te uploaden. Die JSON is niet de account-ZIP van Anthropic, en ook geen PDF. Versie 1.13.0 levert nog steeds precies vijf formaten.</p>
+  <footer>Het team van Download Claude conversations</footer>
+</div>
+<p>Mensen zoeken dezelfde extensie ook als Claude Chat Downloader en Claude Conversation Downloader. Exporteren als JSON gaat via die oranje knop, niet via een tweede product. Op juridische pagina's staat soms nog Claude Exporter.</p>
+
+<h2 id="inside">Wat zit er in een JSON-export van een Claude-gesprek?</h2>
+<p>Een JSON-export volgt de berichtenboom op claude.ai: afzender, contentblokken, tijdstempels en modelmetadata. Denkblokken en artifacts komen erin als die schakelaars aan staan. Met het afzenderfilter beperk je het bestand tot alle berichten, alleen mens of alleen assistent („all / human only / assistant only”). Niets wordt eerst naar Markdown platgeslagen.</p>
+<p>De artifact-indeling in versie 1.13.0 is „Original”, „Inline”, „Nested” of „Flat” (origineel, ingevoegd, genest of plat). Die indelingen bepalen hoe artifact-inhoud in de JSON is genest — dezelfde vier opties als bij Markdown en XML. Alle schakelaars: <a href="/nl/functies/">functies van de Chrome-extensie</a>. JSON wordt nog steeds geen PDF.</p>
+<table>
+  <caption>Velden die je doorgaans krijgt bij een JSON-export van een Claude-gesprek</caption>
+  <thead>
+    <tr>
+      <th scope="col">Onderdeel</th>
+      <th scope="col">In de JSON?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Berichtenboom (beurten, afzender)</td>
+      <td>Ja</td>
+    </tr>
+    <tr>
+      <td>Contentblokken</td>
+      <td>Ja</td>
+    </tr>
+    <tr>
+      <td>Tijdstempels en modelmetadata</td>
+      <td>Ja, als Metadata aan staat</td>
+    </tr>
+    <tr>
+      <td>Denkblokken</td>
+      <td>Als de schakelaar voor denkstappen aan staat</td>
+    </tr>
+    <tr>
+      <td>Artifacts</td>
+      <td>Ja, in de indeling die je koos</td>
+    </tr>
+    <tr>
+      <td>ZIP-omhulsel voor het hele account</td>
+      <td>Nee — dat is Export data van Anthropic</td>
+    </tr>
+  </tbody>
+</table>
+<p>Is het gesprek lang, scrol dan tot claude.ai de eerdere berichten heeft geladen voordat je als JSON exporteert. De extensie kan alleen serialiseren wat de pagina heeft weergegeven. Een half geladen DOM levert een afgekapt JSON-bestand op.</p>
+
+<h2 id="vs-zip">JSON van een Claude-gesprek of Export data van Anthropic?</h2>
+<p>Beide zijn JSON, maar met een andere vorm en reikwijdte. Via Settings → Privacy → Export data (de labels kunnen vertaald zijn als claude.ai in het Nederlands staat) mailt Anthropic na een wachttijd één ZIP van het hele account. Met deze extensie krijg je meteen één gesprek in Chrome. Gebruik de ZIP als back-up.</p>
+<table>
+  <caption>Twee verschillende JSON-routes vanuit claude.ai</caption>
+  <thead>
+    <tr>
+      <th scope="col">Methode</th>
+      <th scope="col">Reikwijdte</th>
+      <th scope="col">Wanneer het bestand er is</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>JSON van Download Claude conversations</td>
+      <td>Deze chat of een bulkselectie</td>
+      <td>Meteen, via een Chrome-download</td>
+    </tr>
+    <tr>
+      <td>Settings → Privacy → Export data</td>
+      <td>Het hele account</td>
+      <td>E-mail met een link die verloopt</td>
+    </tr>
+    <tr>
+      <td>Afdrukken → Opslaan als PDF</td>
+      <td>Zichtbare webpagina</td>
+      <td>Meteen, maar het is PDF, geen JSON</td>
+    </tr>
+  </tbody>
+</table>
+<p>In het ZIP-verzoek van Anthropic kun je geen Markdown kiezen. Je kunt de JSON van deze extensie ook niet gebruiken als directe vervanging voor het schema van die ZIP. Overzicht van alle formaten: <a href="/nl/formaten/">exportformaten voor Claude-chats</a>. Afdrukken is een visuele noodoplossing, geen JSON-export.</p>
+<p>Download Claude conversations is niet verbonden aan Anthropic, PBC. Het contentscript gebruikt de sessie die je al op claude.ai hebt geopend en logt niet met aparte inloggegevens in bij Anthropic. Houd je aan de regels van Anthropic voor je account.</p>
+
+<h2 id="bulk">Kan ik Claude-gesprekken in bulk als JSON exporteren?</h2>
+<p>Ja. Open „View and Download All Conversations”, zet het formaat op JSON, filter de tabel en klik op „Export All” (alles exporteren). Elk voltooid bestand is een van de 3 gratis exports. Pro voor 3,99 $/maand of 26,99 $/jaar heft die limiet op voor JSON in bulk.</p>
+<p>De overzichtstabel toont je claude.ai-geschiedenis, met zoeken op naam en de filters All, New, Exported en Project. New betekent: nog niet geëxporteerd met Download Claude conversations. Exported houdt bij welke chats je al hebt opgeslagen. Project volgt de manier waarop je chats op claude.ai groepeert. „Export All” levert veel JSON-bestanden op, geen gemengde ZIP.</p>
+<div class="callout callout-warn">
+  <p><strong>Het quotum geldt per account.</strong> Drie gratis exports in totaal — niet drie JSON-bestanden per bulkronde. Selecteer je 40 gesprekken, dan kost dat 40 exports als elk bestand voltooid wordt. Plan je selectie, of neem Pro.</p>
+</div>
+<p>Twee JSON-exports van hetzelfde claude.ai-gesprek, gemaakt op verschillende momenten, kun je vergelijken zoals je elk JSON-bestand vergelijkt. Elke export staat op zichzelf. Een tweede „Export All” van dezelfde chats kost opnieuw quotum, tenzij die bestanden niet voltooid worden.</p>
+
+<h2 id="cost">Heb je Pro nodig om een Claude-gesprek als JSON te exporteren?</h2>
+<p>Nee. JSON valt onder de 3 gratis exports die elk met Google aangemeld account krijgt, net als Markdown, tekst, XML en PNG. Na die drie bestanden kost Pro 3,99 $ per maand of 26,99 $ per jaar via Paddle. Download Claude conversations rekent niets extra voor JSON.</p>
+<p>De 3 gratis exports worden niet opnieuw ingesteld als je de extensie opnieuw installeert. Daarom is aanmelden met Google verplicht bij de eerste klik op „Export”. Op een nieuwe computer wordt Pro hersteld via hetzelfde Google-account. Paddle is de merchant of record; ons team ziet nooit kaartnummers.</p>
+<p>De extensie werkt alleen op claude.ai in Chrome. Claude Desktop en Claude Code krijgen geen JSON-knop. <code>/export</code> van Claude Code of JSONL op schijf is een andere route. Versie 1.13.0, september 2026, schrijft nog steeds geen PDF, Word of Notion.</p>
+
+<h2 id="faq">FAQ: Claude-gesprek exporteren als JSON</h2>
+<p>Deze vragen gaan over exporteren als JSON met Download Claude conversations 1.13.0: bulkexport met „Export All”, het schema, het quotum, diffs, de ZIP van Anthropic en Desktop. Elk antwoord is een productfeit. De FAQPage-JSON-LD in de head van de pagina komt overeen met deze lijst.</p>
+
+<h3>Kan ik Claude-gesprekken in bulk als JSON exporteren?</h3>
+<p>Ja. „Export All” op de overzichtspagina ondersteunt JSON net als een losse export. Elk voltooid bestand telt als een van de 3 gratis exports, tenzij je Pro hebt voor 3,99 $/maand of 26,99 $/jaar.</p>
+
+<h3>Is de JSON-structuur gedocumenteerd?</h3>
+<p>Ze volgt de eigen berichtenboom van claude.ai: afzender, contentblokken, tijdstempels en modelmetadata, met artifacts en denkblokken erbij als je die schakelaars aanzet. Het is niet het schema van de account-ZIP van Anthropic.</p>
+
+<h3>Heb ik Pro nodig om een Claude-gesprek als JSON te exporteren?</h3>
+<p>Nee. JSON valt onder de 3 gratis exports die elk met Google aangemeld account krijgt, net als elk ander formaat. Na die drie bestanden kost Pro 3,99 $/maand of 26,99 $/jaar.</p>
+
+<h3>Kan ik twee JSON-exports van één chat vergelijken?</h3>
+<p>Ja. Elke JSON-export is een zelfstandig bestand dat op dezelfde manier is opgebouwd. Twee exports van hetzelfde gesprek op verschillende momenten vergelijk je net als elk ander JSON-bestand.</p>
+
+<h3>Is deze JSON hetzelfde als Export data van Anthropic?</h3>
+<p>Nee. Export data van Anthropic is een vertraagde ZIP van het hele account. Download Claude conversations schrijft direct in Chrome een JSON-bestand per chat (of per selectie). Beide kunnen JSON zijn; uitwisselbaar zijn ze niet.</p>
+
+<h3>Maakt een JSON-export een PDF?</h3>
+<p>Nee. JSON is gestructureerde data. De productformaten zijn Markdown, JSON, platte tekst, XML en PNG. Gebruik voor een afdrukbare pagina het afdrukvenster van Chrome, niet dit keuzemenu.</p>
+
+<h3>Werkt de JSON-export in Claude Desktop?</h3>
+<p>Nee. De Chrome-extensie wordt alleen op claude.ai geladen. Claude Desktop toont de JSON-optie nooit. Open hetzelfde gesprek op claude.ai in Chrome als het daar bestaat.</p>
+</article>
+</main>
+<section class="final-cta page-cta" aria-label="Installeren">
+  <div class="wrap">
+    <div class="final-cta-panel">
+      <p class="final-kicker">Download Claude conversations</p>
+      <h2>Installeer de extensie en download je Claude-chat in een paar seconden</h2>
+      <p>Zet belangrijke Claude-gesprekken om in Markdown, JSON, tekst, XML of PNG — lokaal, vanuit Chrome.</p>
+      <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=nl-formats-json" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Toevoegen aan Chrome</a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="logo" href="/nl/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
+      <p class="legal-note">Chrome-extensie om Claude.ai-chats te downloaden als Markdown, JSON, platte tekst, XML of PNG. Beoordeeld met 5,0 in de Chrome Web Store.</p>
+    </div>
+    <div>
+      <h2>Installeren</h2>
+      <a class="install-link" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=nl-footer" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Chrome-extensie</a>
+    </div>
+    <div>
+      <h2>Product</h2>
+      <a href="/nl/functies/">Functies</a>
+      <a href="/nl/formaten/">Formaten</a>
+      <a href="/nl/alle-claude-chats-exporteren/">Alle chats exporteren</a>
+      <a href="/nl/hoe-het-werkt/">Hoe het werkt</a>
+    </div>
+    <div>
+      <h2>Handleidingen</h2>
+      <a href="/nl/claude-chat-downloaden/">Claude-chat downloaden</a>
+      <a href="/nl/hoe-claude-chat-exporteren/">Hoe exporteer je een Claude-chat</a>
+      <a href="/nl/claude-chat-exporteren/">Claude-chat exporteren</a>
+      <a href="/nl/claude-gesprek-extractor/">Claude-gesprek extractor</a>
+      <a href="/nl/claude-code-gesprek-exporteren/">Claude Code-gesprek exporteren</a>
+      <a href="/nl/claude-chat-als-pdf/">Afdrukken / PDF</a>
+      <a href="/nl/claude-desktop-chat-exporteren/">Claude Desktop-chat exporteren</a>
+      <a href="/nl/claude-gesprek-exporteren/">Claude-gesprek exporteren</a>
+      <a href="/nl/claude-gesprek-opslaan/">Claude-gesprek opslaan</a>
+      <a href="/nl/claude-gesprek-downloaden/">Claude-gesprek downloaden</a>
+    </div>
+    <div>
+      <h2>Juridisch</h2>
+      <a href="/nl/over-ons/">Over ons</a>
+      <a href="/nl/over-ons/#contact">Contact</a>
+      <a href="/privacy/" hreflang="en">Privacy (Engels)</a>
+      <a href="/terms/" hreflang="en">Voorwaarden (Engels)</a>
+      <a href="/refund/" hreflang="en">Terugbetalingen (Engels)</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Download Claude conversations. Alle rechten voorbehouden.</div>
+    <div>
+      <a href="/privacy/" hreflang="en">Privacybeleid (Engels)</a>
+      <a href="/terms/" hreflang="en">Gebruiksvoorwaarden (Engels)</a>
+      <a href="/refund/" hreflang="en">Terugbetalingen (Engels)</a>
+    </div>
+  </div>
+  <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/formats/json/" hreflang="en" lang="en">English</a> <a href="/de/formate/json/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/formats/json/" hreflang="fr" lang="fr">Français</a> <a href="/nl/formaten/json/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/format/json/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/formater/json/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/formater/json/" hreflang="da" lang="da">Dansk</a> <a href="/fi/formaatit/json/" hreflang="fi" lang="fi">Suomi</a> <a href="/ja/formats/json/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/formats/json/" hreflang="ko" lang="ko">한국어</a> <a href="/he/formats/json/" hreflang="he" lang="he">עברית</a> <a href="/ar/formats/json/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
+  <p class="disclaimer">Chats worden in je browser verwerkt · Google-login voor de exportlimiet · Niet verbonden aan Anthropic, PBC. Claude is een handelsmerk van Anthropic. Onafhankelijke Chrome-extensie – geen officieel product van Anthropic. Support: <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

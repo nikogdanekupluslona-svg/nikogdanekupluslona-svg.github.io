@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Claude-samtale-extractor – gratis Chrome-utvidelse</title>
+  <meta name="description" content="Hent ut en Claude-chat fra claude.ai som Markdown, JSON, tekst, XML eller PNG. Gratis extractor for Chrome – én samtale eller alle med Export All.">
+  <link rel="canonical" href="https://chat-downloader.com/nb/claude-samtale-extractor/">
+  <!-- i18n:head -->
+  <link rel="alternate" hreflang="en" href="https://chat-downloader.com/claude-conversation-extractor/">
+  <link rel="alternate" hreflang="de" href="https://chat-downloader.com/de/claude-chat-extractor/">
+  <link rel="alternate" hreflang="fr" href="https://chat-downloader.com/fr/extracteur-conversation-claude/">
+  <link rel="alternate" hreflang="nl" href="https://chat-downloader.com/nl/claude-gesprek-extractor/">
+  <link rel="alternate" hreflang="sv" href="https://chat-downloader.com/sv/claude-konversation-extractor/">
+  <link rel="alternate" hreflang="nb" href="https://chat-downloader.com/nb/claude-samtale-extractor/">
+  <link rel="alternate" hreflang="da" href="https://chat-downloader.com/da/claude-samtale-extractor/">
+  <link rel="alternate" hreflang="fi" href="https://chat-downloader.com/fi/claude-keskustelu-extractor/">
+  <link rel="alternate" hreflang="ja" href="https://chat-downloader.com/ja/claude-conversation-extractor/">
+  <link rel="alternate" hreflang="ko" href="https://chat-downloader.com/ko/claude-conversation-extractor/">
+  <link rel="alternate" hreflang="he" href="https://chat-downloader.com/he/claude-conversation-extractor/">
+  <link rel="alternate" hreflang="ar" href="https://chat-downloader.com/ar/claude-conversation-extractor/">
+  <link rel="alternate" hreflang="x-default" href="https://chat-downloader.com/claude-conversation-extractor/">
+  <meta property="og:locale" content="nb_NO">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="sv_SE">
+  <meta property="og:locale:alternate" content="da_DK">
+  <meta property="og:locale:alternate" content="fi_FI">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <meta property="og:locale:alternate" content="he_IL">
+  <meta property="og:locale:alternate" content="ar_AE">
+  <!-- /i18n:head -->
+  <meta property="og:title" content="Claude-samtale-extractor – gratis Chrome-utvidelse">
+  <meta property="og:description" content="Hent ut en Claude-chat fra claude.ai som Markdown, JSON, tekst, XML eller PNG. Gratis extractor for Chrome – én samtale eller alle med Export All.">
+  <meta property="og:url" content="https://chat-downloader.com/nb/claude-samtale-extractor/">
+  <meta property="og:image" content="https://chat-downloader.com/assets/widget-guide.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chat Downloader">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Claude-samtale-extractor – gratis Chrome-utvidelse">
+  <meta name="twitter:description" content="Hent ut en Claude-chat fra claude.ai som Markdown, JSON, tekst, XML eller PNG. Gratis extractor for Chrome – én samtale eller alle med Export All.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME1YXGZKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GME1YXGZKR');
+  </script>
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Hva er en Claude-samtale-extractor?","acceptedAnswer":{"@type":"Answer","text":"Et verktøy som leser en claude.ai-samtale du har åpen, og skriver Markdown, JSON, ren tekst, XML eller PNG. Download Claude conversations legger til den oransje knappen som gjør denne tolkningen lokalt i Chrome."}},{"@type":"Question","name":"Er det forskjell på å hente ut og å eksportere en Claude-chat?","acceptedAnswer":{"@type":"Answer","text":"Nei – samme oppgave, ulikt verb. Hente ut, eksportere og laste ned treffer alle den samme oransje knappen og de samme fem formatene på claude.ai. Denne siden legger vekt på hva parseren beholder."}},{"@type":"Question","name":"Kan jeg hente ut en Claude-chat uten å installere noe?","acceptedAnswer":{"@type":"Answer","text":"Bare med kopier og lim inn, som mister kodeblokker og tabeller, eller med Anthropics Export data, som er en ZIP av kontoen. En strukturert Claude-samtale-extractor må lese siden; det er Chrome-utvidelsen."}},{"@type":"Question","name":"Kan extractoren hente ut mange samtaler på en gang?","acceptedAnswer":{"@type":"Answer","text":"Ja. «View and Download All Conversations», deretter «Export All». Hver fil teller mot de 3 gratis eksportene. Pro for 3,99 $/mnd. eller 26,99 $/år fjerner grensen. Filtre: All, New, Exported, Project."}},{"@type":"Question","name":"Er en Claude-chat-extractor trygg å bruke?","acceptedAnswer":{"@type":"Answer","text":"Denne leser den påloggede claude.ai-økten og lager filene lokalt. Samtaleteksten sendes ikke til våre servere. Vi er ikke Anthropic; du er fortsatt bundet av deres bruksvilkår."}},{"@type":"Question","name":"Trenger jeg Claude Pro for å hente ut en chat?","acceptedAnswer":{"@type":"Answer","text":"Nei. Alle claude.ai-abonnementer som kan åpne tråden i Chrome, fungerer. De 3 første filene fra extractoren er gratis hos oss. Anthropics betalte abonnement har ingenting med vår kvote på 3 eksporter å gjøre."}},{"@type":"Question","name":"Kjører Claude-samtale-extractoren i Desktop?","acceptedAnswer":{"@type":"Answer","text":"Nei. Claude Desktop får aldri den oransje knappen. Åpne samme chat på claude.ai hvis den synkroniseres, eller kopier og lim inn / bruk den offisielle ZIP-filen. Extractoren finnes bare for claude.ai i Chrome."}},{"@type":"Question","name":"Kan en Claude-samtale-extractor lage PDF?","acceptedAnswer":{"@type":"Answer","text":"Nei. Formatene er Markdown, JSON, ren tekst, XML og PNG. Skriv ut claude.ai-siden hvis du trenger et PDF-lignende øyeblikksbilde. PNG er et bilde, ikke en PDF."}},{"@type":"Question","name":"Fungerer uthenting av Claude-chatter i Claude Code?","acceptedAnswer":{"@type":"Answer","text":"Nei. Claude Code bruker /export eller JSONL på disken. Denne extractoren er et innholdsskript i Chrome for claude.ai, ikke en kobling til terminalen."}},{"@type":"Question","name":"Hvor mange gratis uthentinger tillater extractoren?","acceptedAnswer":{"@type":"Answer","text":"Tre per konto med Google-pålogging, delt med «Export All». En ny installasjon nullstiller ikke telleren. Pro gjenopprettes fra samme Google-konto via fakturering hos Paddle."}},{"@type":"Question","name":"Hva hopper Claude-samtale-extractoren over?","acceptedAnswer":{"@type":"Answer","text":"Grensesnittet på siden, meldingsfeltet og alt som ikke er gjengitt i samtalen. Den hopper også over chatter som aldri ble lastet inn i Chrome. Tråder som bare finnes i Claude Desktop, og JSONL fra Claude Code, er utenfor rekkevidde."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Claude Chat Downloader","alternateName":["Download Claude conversations","Claude Conversation Downloader"],"applicationCategory":"BrowserApplication","operatingSystem":"Chrome","url":"https://chat-downloader.com","downloadUrl":"https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","bestRating":"5","worstRating":"1"},"description":"Hent ut en Claude-chat fra claude.ai som Markdown, JSON, tekst, XML eller PNG. Gratis extractor for Chrome – én samtale eller alle med Export All."}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Forside","item":"https://chat-downloader.com/nb/"},{"@type":"ListItem","position":2,"name":"Claude-samtale-extractor","item":"https://chat-downloader.com/nb/claude-samtale-extractor/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Hopp til innhold</a>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a class="logo" href="/nb/">
+        <img src="/assets/icon.svg" alt="">
+        <span>Download Claude conversations</span>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="/nb/laste-ned-claude-chat/">Laste ned</a><a href="/nb/slik-eksporterer-du-claude-chat/">Eksportere</a><a href="/nb/eksportere-alle-claude-chatter/">Alle chatter</a><a href="/nb/formater/">Formater</a><a href="/nb/#faq">FAQ</a>
+        <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=nb-claude-conversation-extractor" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Legg til i Chrome</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <!-- i18n:switch --><details class="lang-switch"><summary aria-label="Språk">nb</summary><ul><li><a href="/claude-conversation-extractor/" hreflang="en" lang="en">English</a></li><li><a href="/de/claude-chat-extractor/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/extracteur-conversation-claude/" hreflang="fr" lang="fr">Français</a></li><li><a href="/nl/claude-gesprek-extractor/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/sv/claude-konversation-extractor/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="/nb/claude-samtale-extractor/" hreflang="nb" lang="nb" aria-current="true">Norsk</a></li><li><a href="/da/claude-samtale-extractor/" hreflang="da" lang="da">Dansk</a></li><li><a href="/fi/claude-keskustelu-extractor/" hreflang="fi" lang="fi">Suomi</a></li><li><a href="/ja/claude-conversation-extractor/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/ko/claude-conversation-extractor/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/he/claude-conversation-extractor/" hreflang="he" lang="he">עברית</a></li><li><a href="/ar/claude-conversation-extractor/" hreflang="ar" lang="ar">العربية</a></li></ul></details><!-- /i18n:switch -->
+      <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=nb-claude-conversation-extractor" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Legg til i Chrome</a>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Meny">☰</button>
+    </div>
+  </div>
+</header>
+<nav class="crumbs" aria-label="Brødsmulesti"><a href="/nb/">Forside</a> / Claude-samtale-extractor</nav>
+<main id="main">
+<article class="band prose">
+<p class="article-meta">Oppdatert <time datetime="2026-09">september 2026</time> · Utvidelse 1.13.0</p>
+<h1 class="page-h1">Claude-samtale-extractor for ryddige filer</h1>
+<p class="lead">En Claude-samtale-extractor leser chatten som er åpen på claude.ai, og skriver Markdown, JSON, tekst, XML eller PNG i stedet for en innlimt tekstvegg. Download Claude conversations er en slik extractor for Chrome: oransje knapp, deretter «Export» (eksporter). Den kjører ikke i Claude Desktop eller Claude Code. Tre uthentinger er gratis; Pro koster 3,99 $/mnd. eller 26,99 $/år.</p>
+<aside class="trust-badge" aria-label="Vurdering i Chrome Web Store">
+  <span class="trophy" aria-hidden="true">🏆</span>
+  <div>
+    <strong>Download Claude conversations – vurdert til 5,0 i Chrome Web Store</strong>
+    <span>2026 – gratis Chrome-utvidelse som lagrer claude.ai-chatter som Markdown, JSON, tekst, XML eller PNG</span>
+  </div>
+</aside>
+<nav class="toc" aria-label="På denne siden">
+  <p>På denne siden</p>
+  <ol>
+    <li><a href="#what-extractor">Hva er en Claude-samtale-extractor?</a></li>
+    <li><a href="#extract-one">Hvordan henter jeg ut en Claude-chat på claude.ai?</a></li>
+    <li><a href="#what-it-pulls">Hva henter en Claude-samtale-extractor ut?</a></li>
+    <li><a href="#extract-formats">Hvilke formater kan en Claude-chat-extractor skrive?</a></li>
+    <li><a href="#extract-bulk">Kan jeg hente ut mange Claude-samtaler på en gang?</a></li>
+    <li><a href="#vs-copy">Claude-samtale-extractor eller kopier og lim inn?</a></li>
+    <li><a href="#extractor-safe">Er en Claude-samtale-extractor trygg å bruke?</a></li>
+    <li><a href="#faq">FAQ: Claude-samtale-extractor</a></li>
+  </ol>
+</nav>
+
+<h2 id="what-extractor">Hva er en Claude-samtale-extractor?</h2>
+<p>En Claude-samtale-extractor tolker den gjengitte claude.ai-tråden og skriver en ekte fil. Download Claude conversations er et slikt verktøy for Chrome: det er ikke et skjermbildeverktøy og ikke Anthropics ZIP av kontoen. Folk skriver «hente ut», «eksportere» eller «laste ned» om den samme oransje knappen på claude.ai.</p>
+<p>Utviklere og forskere søker ofte etter en Claude-samtale-extractor (på engelsk «claude chat exporter» eller «conversation extractor») fordi «hente ut» antyder struktur: avsender, innholdsblokker, kodeblokker, tabeller, artefakter. Download Claude conversations gjør denne tolkningen i fanen du allerede har åpnet. Anmeldere kan si Claude Conversation Downloader eller Claude Exporter; de navnene betyr fortsatt denne oppføringen i Chrome, vurdert til 5,0 i Chrome Web Store.</p>
+<p>Extractoren er ikke et tillegg for Claude Desktop og ikke et CLI for Claude Code. Gjaldt søket terminalhistorikk, bruker du <code>/export</code> – veiledning: <a href="/nb/eksportere-claude-code-samtale/">eksport fra Claude Code</a>. Gjaldt søket appen for Mac/Windows, se <a href="/nb/eksportere-claude-desktop-chat/">eksportere en Claude Desktop-chat</a>. Denne siden gjelder bare claude.ai i Chrome.</p>
+<div class="callout callout-info">
+  <p><strong>Samme knapp, ulike verb.</strong> Hente ut en Claude-chat, eksportere en Claude-chat og laste ned en Claude-chat ender alle på Download Claude conversations. Produktsiden om eksport er <a href="/nb/eksportere-claude-chat/">eksportere Claude-chat</a>. Denne veiledningen handler om hva extractoren leser, og hva den utelater.</p>
+</div>
+
+<h2 id="extract-one">Hvordan henter jeg ut en Claude-chat på claude.ai?</h2>
+<p>Installer Download Claude conversations, åpne adressen til samtalen på claude.ai, klikk på den oransje knappen ved siden av meldingsfeltet, velg format, og klikk «Export». Extractoren skriver filen lokalt via Chromes nedlastings-API. Google-pålogging skjer én gang, før første uthenting, for å telle de 3 gratis eksportene.</p>
+<ol>
+<li>Legg til oppføringen i Chrome (Download Claude conversations, versjon 1.13.0 per september 2026).</li>
+<li>Last inn claude.ai på nytt og åpne tråden – extractoren trenger adressen til en samtale, ikke den tomme startsiden med meldingsfeltet.</li>
+<li>Klikk på den oransje knappen til høyre for meldingsfeltet.</li>
+<li>Velg Markdown, JSON, ren tekst, XML eller PNG.</li>
+<li>Klikk «Export». Extractoren laster ikke opp selve chatten til våre servere.</li>
+</ol>
+<p>Mangler den oransje knappen, fester du utvidelsen, laster fanen inn på nytt og sjekker at adressen er en faktisk chat. Extractoren legger seg bare inn på claude.ai. Den vises ikke i Claude Desktop, i Claude Code eller på andre nettsteder. Ufullstendige filer betyr som regel at den lange tråden ikke var ferdig gjengitt; bla eller vent, og hent ut på nytt.</p>
+<p>Extractoren husker formatet du brukte sist. Ville du ha Markdown og fikk JSON, åpner du nedtrekkslisten før «Export». Når du når grensen på 3 eksporter, vises et tilbud om Pro for 3,99 $/mnd. eller 26,99 $/år – det er forventet, ikke en mislykket tolkning. Google-pålogging ved første uthenting kreves slik at en ny installasjon ikke kan nullstille gratistelleren.</p>
+<p>Trenger du stegene med utskrift og ZIP som alternativer? Bruk <a href="/nb/laste-ned-claude-chat/">slik laster du ned en Claude-chat</a>. Trenger du en sammenligning av metoder, inkludert Skriv ut → Lagre som PDF? Bruk <a href="/nb/slik-eksporterer-du-claude-chat/">slik eksporterer du en Claude-chat</a>. Denne extractor-siden forutsetter at du vil ha en strukturert fil av den åpne tråden.</p>
+
+<h2 id="what-it-pulls">Hva henter en Claude-samtale-extractor ut?</h2>
+<p>Extractoren leser meldingstreet claude.ai allerede har tegnet: meldinger fra mennesket og assistenten, kodeblokker med språkmerker, tabeller, lenker og valgfri tenkning. Artefaktoppsettet er «Original», «Inline», «Nested» eller «Flat» (original, innebygd, nestet eller flat). Kopier og lim inn fra samme side mister den strukturen; extractoren beholder den i Markdown, JSON og XML.</p>
+<p>Tenkeblokker er en bryter («include thinking»). Slå dem på når du trenger Claudes synlige resonnering i den uthentede filen; la dem være av når du bare vil ha det endelige svaret. Metadata («include metadata») kan inneholde titler, tidsstempler og modell. Avsenderfilteret kan beholde alle meldinger, bare mennesket eller bare assistenten («all / human only / assistant only»). Disse kontrollene ligger i samme panel som formatet. Liste over funksjoner: <a href="/nb/funksjoner/">funksjoner</a>.</p>
+<div class="expert-quote">
+  <p>Extractoren leser samtalen som siden allerede har gjengitt i claude.ai-fanen din. Kodeblokker, tabeller og artefaktoppsett («Original», «Inline», «Nested», «Flat») tolkes der, og så lages filen lokalt. Vi har ikke PDF.</p>
+  <footer>Teamet bak Download Claude conversations</footer>
+</div>
+<p>PNG er unntaket: det er et bilde av tråden, ikke en tolkning du kan søke i. Bruk PNG når du trenger et visuelt resultat fra extractoren til en sak eller et lysbilde. Bruk Markdown eller JSON når du trenger søkbar tekst. Verken PNG eller Markdown er en PDF; utskrift er fortsatt den PDF-lignende løsningen, se <a href="/nb/claude-chat-som-pdf/">utskrift / PDF</a>.</p>
+<p>Extractoren kan ikke hente ut en chat som Chrome aldri har lastet inn. Privat modus, en utlogget fane eller en samtale som bare finnes i Claude Desktop, gir ingen fil. Åpne tråden på claude.ai mens du er pålogget, og kjør extractoren. Eksport uten nett fungerer bare etter at siden er lastet inn; det er fortsatt ingen tur til en server for å lage filen.</p>
+
+<h2 id="extract-formats">Hvilke formater kan en Claude-chat-extractor skrive?</h2>
+<p>Markdown, JSON, ren tekst, XML og PNG – de samme fem enten du henter ut én Claude-chat eller kjører «Export All» (eksporter alle). Download Claude conversations har ikke Word, Notion eller innebygd PDF i 1.13.0. Formatvalget endrer ikke kvoten på 3 eksporter; hver ferdige fil teller som én uthenting.</p>
+<table>
+  <caption>Resultat fra Claude-samtale-extractoren og vanlig bruk</caption>
+  <thead>
+    <tr>
+      <th scope="col">Format</th>
+      <th scope="col">Resultat fra extractoren</th>
+      <th scope="col">Vanlig neste steg</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Markdown</td>
+      <td>Lesbar .md med kodeblokker og tabeller</td>
+      <td>Notatsamling – <a href="/nb/formater/markdown/">Markdown</a></td>
+    </tr>
+    <tr>
+      <td>JSON</td>
+      <td>Meldingstre for skript</td>
+      <td>Tolke eller sammenligne – <a href="/nb/formater/json/">JSON</a></td>
+    </tr>
+    <tr>
+      <td>Ren tekst</td>
+      <td>Lineær chat, ingen markering</td>
+      <td>Lim inn hvor som helst – <a href="/nb/formater/">formater</a></td>
+    </tr>
+    <tr>
+      <td>XML</td>
+      <td>Strukturert markering</td>
+      <td>Datautveksling – <a href="/nb/formater/xml/">XML</a></td>
+    </tr>
+    <tr>
+      <td>PNG</td>
+      <td>Bilde av tråden</td>
+      <td>Visuell kopi – <a href="/nb/formater/png/">PNG</a></td>
+    </tr>
+  </tbody>
+</table>
+<p>JSON fra extractoren har ikke samme struktur som Anthropics Export data-ZIP på kontonivå. Extractorfilen gjelder én chat (eller et utvalg fra masseeksport) fra siden. ZIP-filen er et forsinket arkiv av kontoen. Ikke gi den ene til et skript som forventer den andre. Oversikt: <a href="/nb/formater/">alle formater</a>.</p>
+
+<h2 id="extract-bulk">Kan jeg hente ut mange Claude-samtaler på en gang?</h2>
+<p>Ja. Åpne «View and Download All Conversations» (vis og last ned alle samtaler), filtrer, og klikk «Export All». Extractoren skriver én fil per valgt chat. Hver fil bruker én av de 3 gratis eksportene, med mindre kontoen har Pro for 3,99 $/mnd. eller 26,99 $/år.</p>
+<p>Filtre på oversiktssiden: All, New, Exported og Project. New betyr at extractoren ikke har lagret den chatten ennå. Exported markerer historikk du allerede har hentet ut, slik at en senere masseeksport kan hoppe over den. Project følger prosjektgrupperingen på claude.ai. Søk finner samtaler etter navn før du setter i gang «Export All».</p>
+<p>Masseeksport er ikke en dårligere tolkning. Tenkning, metadata, artefaktoppsett og avsendervalg er de samme som i panelet for én chat. Gjennomgang med advarsler om kvoten: <a href="/nb/eksportere-alle-claude-chatter/">masseeksport med Export All</a>. Ville du ha én ZIP av hele kontoen på e-post, er det Settings → Privacy → Export data (menynavnene kan være oversatt hvis claude.ai er satt til norsk), ikke denne extractoren.</p>
+<div class="callout callout-warn">
+  <p><strong>Tre gratis uthentinger totalt.</strong> «Export All» får ingen egen kvote. Velger du 25 chatter, bruker du 25 eksporter hvis alle filene blir ferdige. Bruk filtrene New/Project, eller oppgrader til Pro (3,99 $/mnd. eller 26,99 $/år) før en stor runde med extractoren.</p>
+</div>
+
+<h2 id="vs-copy">Claude-samtale-extractor eller kopier og lim inn?</h2>
+<p>Kopier og lim inn holder for ett kort Claude-svar, men svikter på kode og tabeller. Anthropics Export data er ZIP-sikkerhetskopien av kontoen. Claude-samtale-extractoren ligger midt imellom: denne tråden eller et utvalg av mange, strukturert fil, med én gang, på claude.ai i Chrome.</p>
+<table>
+  <caption>Hvordan en Claude-samtale-extractor står seg mot andre metoder</caption>
+  <thead>
+    <tr>
+      <th scope="col">Metode</th>
+      <th scope="col">Best til</th>
+      <th scope="col">Resultat</th>
+      <th scope="col">Begrensning</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Claude-samtale-extractor</td>
+      <td>Denne chatten eller mange, nå</td>
+      <td>MD / JSON / TXT / XML / PNG</td>
+      <td>3 gratis eksporter; Google-pålogging; Chrome på claude.ai</td>
+    </tr>
+    <tr>
+      <td>Anthropics Export data</td>
+      <td>Sikkerhetskopi av hele kontoen</td>
+      <td>JSON-ZIP på e-post</td>
+      <td>Tregt, ikke Markdown per chat</td>
+    </tr>
+    <tr>
+      <td>Kopier og lim inn</td>
+      <td>Ett kort svar</td>
+      <td>Merket tekst</td>
+      <td>Kode og tabeller brytes</td>
+    </tr>
+    <tr>
+      <td>Skriv ut til PDF</td>
+      <td>Visuell kopi av siden</td>
+      <td>PDF av nettsiden</td>
+      <td>Sidepanel; kodeblokker deles ofte</td>
+    </tr>
+  </tbody>
+</table>
+<p>Utskrift er ingen extractor. Den fanger nettsiden, inkludert grensesnitt du ikke vil ha i en notatfil. Extractoren fjerner det grensesnittet og beholder meldingsstrukturen. Trenger du likevel en PDF etter at du har hentet ut Markdown, konverterer du .md-filen selv; panelet lager ikke PDF.</p>
+
+<h2 id="extractor-safe">Er en Claude-samtale-extractor trygg å bruke?</h2>
+<p>Denne extractoren bruker den eksisterende claude.ai-økten din på samme måte som nettstedet. Den automatiserer ikke kontoen og sender ikke chatinnhold til vårt API. Google-pålogging teller 3 gratis eksporter og gjenoppretter Pro. Paddle håndterer betalingen. Vi er ikke Anthropic; deres vilkår gjelder fortsatt.</p>
+<p>En Cloudflare Worker ser abonnementsstatus: antall gratis eksporter og om du har Pro. Den mottar ikke den uthentede Markdown-, JSON-, tekst-, XML- eller PNG-filen. Filene forlater aldri nettleseren, bortsett fra til nedlastingsmappen i Chrome. Hele skillet: <a href="/nb/slik-fungerer-det/">slik fungerer det</a>. Lurer du på om en Claude-chat-extractor er trygg, bør du se på det skillet – fakturering hos workeren, chat i fanen.</p>
+<p>Vi kan ikke love «null nettverkstrafikk». claude.ai, Google og workeren finnes alle. Vi kan si at chatinnhold ikke lastes opp til oss. Følg Anthropics bruksvilkår. Download Claude conversations er en uavhengig Chrome-utvidelse, ikke et offisielt Anthropic-produkt. E-postadressen for kundestøtte står nederst på nettstedet.</p>
+<p>Mobilnettlesere og Claude Desktop støttes ikke. En extractor som er et innholdsskript i Chrome, kan ikke kjøre der. Forvent ingen oppføring for Safari eller Firefox fra denne siden per september 2026. Bruk Chrome på datamaskin på claude.ai. Bedriftspolicyer som blokkerer utvidelser, blokkerer også denne extractoren.</p>
+
+<h2 id="faq">FAQ: Claude-samtale-extractor</h2>
+<p>Disse spørsmålene handler om Claude-samtale-extractoren og om å hente ut Claude-chatter: masseeksport med «Export All», Desktop, Claude Code, PDF, Google-pålogging og kvoten på 3 eksporter. Svarene gjelder utvidelsen 1.13.0 på claude.ai. FAQPage-skjemaet i dokumenthodet samsvarer med denne listen.</p>
+
+<h3>Hva er en Claude-samtale-extractor?</h3>
+<p>Et verktøy som leser en claude.ai-samtale du har åpen, og skriver Markdown, JSON, ren tekst, XML eller PNG. Download Claude conversations legger til den oransje knappen som gjør denne tolkningen lokalt i Chrome.</p>
+
+<h3>Er det forskjell på å hente ut og å eksportere en Claude-chat?</h3>
+<p>Nei – samme oppgave, ulikt verb. Hente ut, eksportere og laste ned treffer alle den samme oransje knappen og de samme fem formatene på claude.ai. Denne siden legger vekt på hva parseren beholder.</p>
+
+<h3>Kan jeg hente ut en Claude-chat uten å installere noe?</h3>
+<p>Bare med kopier og lim inn, som mister kodeblokker og tabeller, eller med Anthropics Export data, som er en ZIP av kontoen. En strukturert Claude-samtale-extractor må lese siden; det er Chrome-utvidelsen.</p>
+
+<h3>Kan extractoren hente ut mange samtaler på en gang?</h3>
+<p>Ja. «View and Download All Conversations», deretter «Export All». Hver fil teller mot de 3 gratis eksportene. Pro for 3,99 $/mnd. eller 26,99 $/år fjerner grensen. Filtre: All, New, Exported, Project.</p>
+
+<h3>Er en Claude-chat-extractor trygg å bruke?</h3>
+<p>Denne leser den påloggede claude.ai-økten og lager filene lokalt. Samtaleteksten sendes ikke til våre servere. Vi er ikke Anthropic; du er fortsatt bundet av deres bruksvilkår.</p>
+
+<h3>Trenger jeg Claude Pro for å hente ut en chat?</h3>
+<p>Nei. Alle claude.ai-abonnementer som kan åpne tråden i Chrome, fungerer. De 3 første filene fra extractoren er gratis hos oss. Anthropics betalte abonnement har ingenting med vår kvote på 3 eksporter å gjøre.</p>
+
+<h3>Kjører Claude-samtale-extractoren i Desktop?</h3>
+<p>Nei. Claude Desktop får aldri den oransje knappen. Åpne samme chat på claude.ai hvis den synkroniseres, eller kopier og lim inn / bruk den offisielle ZIP-filen. Extractoren finnes bare for claude.ai i Chrome.</p>
+
+<h3>Kan en Claude-samtale-extractor lage PDF?</h3>
+<p>Nei. Formatene er Markdown, JSON, ren tekst, XML og PNG. Skriv ut claude.ai-siden hvis du trenger et PDF-lignende øyeblikksbilde. PNG er et bilde, ikke en PDF.</p>
+
+<h3>Fungerer uthenting av Claude-chatter i Claude Code?</h3>
+<p>Nei. Claude Code bruker <code>/export</code> eller JSONL på disken. Denne extractoren er et innholdsskript i Chrome for claude.ai, ikke en kobling til terminalen.</p>
+
+<h3>Hvor mange gratis uthentinger tillater extractoren?</h3>
+<p>Tre per konto med Google-pålogging, delt med «Export All». En ny installasjon nullstiller ikke telleren. Pro gjenopprettes fra samme Google-konto via fakturering hos Paddle.</p>
+
+<h3>Hva hopper Claude-samtale-extractoren over?</h3>
+<p>Grensesnittet på siden, meldingsfeltet og alt som ikke er gjengitt i samtalen. Den hopper også over chatter som aldri ble lastet inn i Chrome. Tråder som bare finnes i Claude Desktop, og JSONL fra Claude Code, er utenfor rekkevidde.</p>
+</article>
+</main>
+<section class="final-cta page-cta" aria-label="Installer">
+  <div class="wrap">
+    <div class="final-cta-panel">
+      <p class="final-kicker">Download Claude conversations</p>
+      <h2>Installer utvidelsen og hent ut Claude-chatter på sekunder</h2>
+      <p>Gjør viktige Claude-tråder om til Markdown, JSON, tekst, XML eller PNG – lokalt, fra Chrome.</p>
+      <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=nb-extractor" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Legg til i Chrome</a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="logo" href="/nb/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
+      <p class="legal-note">Chrome-utvidelse for å laste ned Claude.ai-chatter som Markdown, JSON, ren tekst, XML eller PNG. Vurdert til 5,0 i Chrome Web Store.</p>
+    </div>
+    <div>
+      <h2>Installer</h2>
+      <a class="install-link" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=nb-footer" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Chrome-utvidelse</a>
+    </div>
+    <div>
+      <h2>Produkt</h2>
+      <a href="/nb/funksjoner/">Funksjoner</a>
+      <a href="/nb/formater/">Formater</a>
+      <a href="/nb/eksportere-alle-claude-chatter/">Eksportere alle chatter</a>
+      <a href="/nb/slik-fungerer-det/">Slik fungerer det</a>
+    </div>
+    <div>
+      <h2>Veiledninger</h2>
+      <a href="/nb/laste-ned-claude-chat/">Laste ned Claude-chat</a>
+      <a href="/nb/slik-eksporterer-du-claude-chat/">Slik eksporterer du en Claude-chat</a>
+      <a href="/nb/eksportere-claude-chat/">Eksportere Claude-chat</a>
+      <a href="/nb/claude-samtale-extractor/">Claude-samtale-extractor</a>
+      <a href="/nb/eksportere-claude-code-samtale/">Eksportere Claude Code-samtale</a>
+      <a href="/nb/claude-chat-som-pdf/">Utskrift / PDF</a>
+      <a href="/nb/eksportere-claude-desktop-chat/">Eksportere Claude Desktop-chat</a>
+      <a href="/nb/eksportere-claude-samtale/">Eksportere Claude-samtale</a>
+      <a href="/nb/lagre-claude-samtale/">Lagre Claude-samtale</a>
+      <a href="/nb/laste-ned-claude-samtale/">Laste ned Claude-samtale</a>
+    </div>
+    <div>
+      <h2>Juridisk</h2>
+      <a href="/nb/om-oss/">Om oss</a>
+      <a href="/nb/om-oss/#contact">Kontakt</a>
+      <a href="/privacy/" hreflang="en">Personvern (engelsk)</a>
+      <a href="/terms/" hreflang="en">Vilkår (engelsk)</a>
+      <a href="/refund/" hreflang="en">Refusjon (engelsk)</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Download Claude conversations. Alle rettigheter forbeholdt.</div>
+    <div>
+      <a href="/privacy/" hreflang="en">Personvernerklæring (engelsk)</a>
+      <a href="/terms/" hreflang="en">Bruksvilkår (engelsk)</a>
+      <a href="/refund/" hreflang="en">Refusjon (engelsk)</a>
+    </div>
+  </div>
+  <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/claude-conversation-extractor/" hreflang="en" lang="en">English</a> <a href="/de/claude-chat-extractor/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/extracteur-conversation-claude/" hreflang="fr" lang="fr">Français</a> <a href="/nl/claude-gesprek-extractor/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/claude-konversation-extractor/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/claude-samtale-extractor/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/claude-samtale-extractor/" hreflang="da" lang="da">Dansk</a> <a href="/fi/claude-keskustelu-extractor/" hreflang="fi" lang="fi">Suomi</a> <a href="/ja/claude-conversation-extractor/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/claude-conversation-extractor/" hreflang="ko" lang="ko">한국어</a> <a href="/he/claude-conversation-extractor/" hreflang="he" lang="he">עברית</a> <a href="/ar/claude-conversation-extractor/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
+  <p class="disclaimer">Chatter behandles i nettleseren din · Google-pålogging for kvoten · Ikke tilknyttet Anthropic, PBC. Claude er et varemerke for Anthropic. Uavhengig Chrome-utvidelse – ikke et offisielt Anthropic-produkt. Kundestøtte: <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

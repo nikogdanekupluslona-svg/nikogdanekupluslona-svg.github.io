@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Exporter un chat Claude Desktop — application ou claude.ai</title>
+  <meta name="description" content="Claude Desktop n’est pas claude.ai dans Chrome : comment exporter une conversation Desktop, et pourquoi l’extension ne marche que dans le navigateur.">
+  <link rel="canonical" href="https://chat-downloader.com/fr/exporter-chat-claude-desktop/">
+  <!-- i18n:head -->
+  <link rel="alternate" hreflang="en" href="https://chat-downloader.com/export-claude-desktop-chat/">
+  <link rel="alternate" hreflang="de" href="https://chat-downloader.com/de/claude-desktop-chat-exportieren/">
+  <link rel="alternate" hreflang="fr" href="https://chat-downloader.com/fr/exporter-chat-claude-desktop/">
+  <link rel="alternate" hreflang="nl" href="https://chat-downloader.com/nl/claude-desktop-chat-exporteren/">
+  <link rel="alternate" hreflang="sv" href="https://chat-downloader.com/sv/exportera-claude-desktop-chatt/">
+  <link rel="alternate" hreflang="nb" href="https://chat-downloader.com/nb/eksportere-claude-desktop-chat/">
+  <link rel="alternate" hreflang="da" href="https://chat-downloader.com/da/eksporter-claude-desktop-chat/">
+  <link rel="alternate" hreflang="fi" href="https://chat-downloader.com/fi/vie-claude-desktop-chat/">
+  <link rel="alternate" hreflang="ja" href="https://chat-downloader.com/ja/export-claude-desktop-chat/">
+  <link rel="alternate" hreflang="ko" href="https://chat-downloader.com/ko/export-claude-desktop-chat/">
+  <link rel="alternate" hreflang="he" href="https://chat-downloader.com/he/export-claude-desktop-chat/">
+  <link rel="alternate" hreflang="ar" href="https://chat-downloader.com/ar/export-claude-desktop-chat/">
+  <link rel="alternate" hreflang="x-default" href="https://chat-downloader.com/export-claude-desktop-chat/">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="sv_SE">
+  <meta property="og:locale:alternate" content="nb_NO">
+  <meta property="og:locale:alternate" content="da_DK">
+  <meta property="og:locale:alternate" content="fi_FI">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <meta property="og:locale:alternate" content="he_IL">
+  <meta property="og:locale:alternate" content="ar_AE">
+  <!-- /i18n:head -->
+  <meta property="og:title" content="Exporter un chat Claude Desktop — application ou claude.ai">
+  <meta property="og:description" content="Claude Desktop n’est pas claude.ai dans Chrome : comment exporter une conversation Desktop, et pourquoi l’extension ne marche que dans le navigateur.">
+  <meta property="og:url" content="https://chat-downloader.com/fr/exporter-chat-claude-desktop/">
+  <meta property="og:image" content="https://chat-downloader.com/assets/widget-guide.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chat Downloader">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Exporter un chat Claude Desktop — application ou claude.ai">
+  <meta name="twitter:description" content="Claude Desktop n’est pas claude.ai dans Chrome : comment exporter une conversation Desktop, et pourquoi l’extension ne marche que dans le navigateur.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME1YXGZKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GME1YXGZKR');
+  </script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Puis-je exporter un chat Claude Desktop avec cette extension ?","acceptedAnswer":{"@type":"Answer","text":"Non. Download Claude conversations fonctionne sur claude.ai dans Chrome. Le bouton orange n’apparaît jamais dans la fenêtre de Claude Desktop. La version 1.13.0 n’a pas de plugin Desktop."}},{"@type":"Question","name":"Comment exporter une conversation Claude Desktop ?","acceptedAnswer":{"@type":"Answer","text":"Ouvrez la même conversation sur claude.ai dans Chrome si elle est synchronisée, puis utilisez l’extension ou l’impression. Sinon, faites un copier-coller depuis Desktop, ou utilisez Settings → Privacy → Export data pour obtenir une archive ZIP JSON de tout le compte."}},{"@type":"Question","name":"Claude Desktop est-il la même chose que Claude Code ?","acceptedAnswer":{"@type":"Answer","text":"Non. Desktop est l’application de conversation. Claude Code est l’agent en terminal, avec /export et des transcriptions JSONL. Cette extension Chrome ne fonctionne dans aucun des deux."}},{"@type":"Question","name":"Export data officiel inclut-il les conversations Desktop ?","acceptedAnswer":{"@type":"Answer","text":"L’archive ZIP est liée à votre compte Claude. Si une conversation Desktop y est enregistrée, elle peut apparaître. Cela reste une archive de sauvegarde, pas un fichier Markdown par conversation issu de cette extension."}},{"@type":"Question","name":"L’export d’un chat Claude Desktop fonctionne-t-il une fois sur claude.ai ?","acceptedAnswer":{"@type":"Answer","text":"Oui, pour les conversations qui se chargent sur claude.ai. Download Claude conversations peut alors générer du Markdown, du JSON, du texte, du XML ou du PNG. Les conversations jamais synchronisées restent limitées au copier-coller ou au ZIP."}},{"@type":"Question","name":"Cette extension peut-elle lire le dossier d’installation de Claude Desktop ?","acceptedAnswer":{"@type":"Answer","text":"Non. Nous n’analysons pas les fichiers de Desktop sur Mac ou Windows. Le script de contenu ne voit qu’une page claude.ai déjà affichée par Chrome."}},{"@type":"Question","name":"Ai-je besoin de Pro pour exporter un chat Claude Desktop sur le web ?","acceptedAnswer":{"@type":"Answer","text":"Pas pour les 3 premières exportations web. Ensuite, Pro coûte 3,99 $/mois ou 26,99 $/an. Le copier-coller dans Desktop n’utilise pas notre quota."}},{"@type":"Question","name":"Puis-je exporter un chat Claude Desktop en PDF avec cet outil ?","acceptedAnswer":{"@type":"Answer","text":"Non. Nous ne proposons pas non plus le PDF sur claude.ai. Imprimez depuis Chrome une fois la conversation sur le web, ou contentez-vous d’un PNG, qui est une image. Nous n’offrons aucune impression depuis Desktop."}},{"@type":"Question","name":"Ajouter l’extension à Chrome permet-il d’exporter un chat Claude Desktop ?","acceptedAnswer":{"@type":"Answer","text":"Non. Installer Download Claude conversations ne concerne que Chrome sur claude.ai. Desktop reste inchangé. Épinglez l’extension, puis travaillez dans l’onglet du navigateur."}},{"@type":"Question","name":"Existe-t-il une solution mobile pour exporter un chat Claude Desktop ?","acceptedAnswer":{"@type":"Answer","text":"Pas avec cette extension. Elle nécessite Chrome sur ordinateur, sur claude.ai. Les navigateurs de téléphone et l’application Desktop ne sont pas pris en charge par le bouton orange."}},{"@type":"Question","name":"Quels formats fonctionnent une fois une conversation Desktop sur claude.ai ?","acceptedAnswer":{"@type":"Answer","text":"Markdown, JSON, texte brut, XML et PNG — les cinq mêmes que dans tous les autres guides Download Claude conversations. Les mises en page d’artifacts et l’option de réflexion ne s’appliquent que dans ce widget web."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://chat-downloader.com/fr/"},{"@type":"ListItem","position":2,"name":"Exporter un chat Claude Desktop","item":"https://chat-downloader.com/fr/exporter-chat-claude-desktop/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a class="logo" href="/fr/">
+        <img src="/assets/icon.svg" alt="">
+        <span>Download Claude conversations</span>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="/fr/telecharger-conversation-claude/">Télécharger</a><a href="/fr/comment-exporter-conversation-claude/">Exporter</a><a href="/fr/exporter-historique-claude/">Historique</a><a href="/fr/formats/">Formats</a><a href="/fr/#faq">FAQ</a>
+        <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=fr-export-claude-desktop-chat" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Ajouter à Chrome</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <!-- i18n:switch --><details class="lang-switch"><summary aria-label="Langue">fr</summary><ul><li><a href="/export-claude-desktop-chat/" hreflang="en" lang="en">English</a></li><li><a href="/de/claude-desktop-chat-exportieren/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/exporter-chat-claude-desktop/" hreflang="fr" lang="fr" aria-current="true">Français</a></li><li><a href="/nl/claude-desktop-chat-exporteren/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/sv/exportera-claude-desktop-chatt/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="/nb/eksportere-claude-desktop-chat/" hreflang="nb" lang="nb">Norsk</a></li><li><a href="/da/eksporter-claude-desktop-chat/" hreflang="da" lang="da">Dansk</a></li><li><a href="/fi/vie-claude-desktop-chat/" hreflang="fi" lang="fi">Suomi</a></li><li><a href="/ja/export-claude-desktop-chat/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/ko/export-claude-desktop-chat/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/he/export-claude-desktop-chat/" hreflang="he" lang="he">עברית</a></li><li><a href="/ar/export-claude-desktop-chat/" hreflang="ar" lang="ar">العربية</a></li></ul></details><!-- /i18n:switch -->
+      <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=fr-export-claude-desktop-chat" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Ajouter à Chrome</a>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+<nav class="crumbs" aria-label="Fil d’Ariane"><a href="/fr/">Accueil</a> / Claude Desktop</nav>
+<main id="main">
+<article class="band prose">
+<p class="article-meta">Mis à jour en <time datetime="2026-09">septembre 2026</time> · Extension 1.13.0</p>
+<h1 class="page-h1">Exporter un chat Claude Desktop sans l’extension</h1>
+<p class="lead">Pour exporter un chat Claude Desktop, vous ne pouvez pas utiliser cette extension Chrome dans l’application. Download Claude conversations fonctionne uniquement sur claude.ai dans Chrome. Ouvrez la même conversation sur le web si elle est synchronisée, puis enregistrez-la en Markdown, JSON, texte, XML ou PNG. Sinon, faites un copier-coller ou demandez l’archive ZIP Export data d’Anthropic. Trois exportations web sont gratuites ; Pro coûte 3,99 $/mois ou 26,99 $/an.</p>
+<aside class="trust-badge" aria-label="Note sur le Chrome Web Store">
+  <span class="trophy" aria-hidden="true">🏆</span>
+  <div>
+    <strong>Download Claude conversations — noté 5.0 sur le Chrome Web Store</strong>
+    <span>2026 — extension Chrome gratuite pour sauvegarder vos conversations claude.ai en Markdown, JSON, texte, XML ou PNG</span>
+  </div>
+</aside>
+<nav class="toc" aria-label="Sur cette page">
+  <p>Sur cette page</p>
+  <ol>
+    <li><a href="#why-not">Pourquoi ne peut-on pas exporter un chat Claude Desktop ici ?</a></li>
+    <li><a href="#vs-products">Claude Desktop, claude.ai ou Claude Code ?</a></li>
+    <li><a href="#open-web">Comment exporter un chat Claude Desktop via claude.ai ?</a></li>
+    <li><a href="#copy-paste">Peut-on exporter par copier-coller ?</a></li>
+    <li><a href="#official-zip">Export data couvre-t-il les conversations Desktop ?</a></li>
+    <li><a href="#not-code">Claude Desktop est-il la même chose que Claude Code ?</a></li>
+    <li><a href="#limits">Ce que nous ne ferons pas</a></li>
+    <li><a href="#faq">FAQ : exporter un chat Claude Desktop</a></li>
+  </ol>
+</nav>
+
+<h2 id="why-not">Pourquoi ne peut-on pas exporter un chat Claude Desktop ici ?</h2>
+<p>Download Claude conversations est un script de contenu Chrome pour claude.ai. Claude Desktop est une application autonome pour Mac/Windows. Sa fenêtre n’a pas de barre d’extensions : le bouton orange n’y apparaît donc jamais. Installer l’extension Chrome pendant que Desktop est ouvert ne change rien à Desktop.</p>
+<p>Les extensions Chrome s’exécutent sur les pages correspondant à leurs autorisations d’hôte. Cette extension correspond aux pages de conversation claude.ai. Claude Desktop n’est pas un onglet claude.ai. Vous ne pouvez pas « ajouter à Chrome » dans l’application Desktop. La version 1.13.0 (septembre 2026) n’a toujours ni plugin Desktop, ni utilitaire dans la barre de menus, ni lecteur de fichiers pour le dossier d’installation de Desktop.</p>
+<div class="callout callout-warn">
+  <p><strong>Limite stricte.</strong> Vous ne pouvez pas exporter un chat Claude Desktop avec cette extension Chrome depuis Desktop. Si vous voulez du Markdown, du JSON, du texte, du XML ou du PNG depuis notre widget, quittez Desktop, ouvrez https://claude.ai dans Chrome et ouvrez-y la conversation.</p>
+</div>
+<p>Beaucoup cherchent à exporter un chat Claude Desktop parce que les produits partagent la même marque. Les résultats de recherche mélangent Desktop, claude.ai et Claude Code. Les fichiers ne sont pas interchangeables. Une capture d’écran de Desktop n’est pas un export Markdown. Un journal JSONL de Code n’est pas une conversation claude.ai. Cette page existe pour rendre cette différence explicite.</p>
+
+<h2 id="vs-products">Exporter un chat Claude Desktop, claude.ai ou Claude Code ?</h2>
+<p>Claude Desktop est l’application de conversation. claude.ai est le produit pour navigateur. Claude Code est l’agent en terminal. Seul claude.ai dans Chrome bénéficie de Download Claude conversations. Exporter un chat Claude Desktop est donc une question de solution de contournement, pas un travail pour le bouton orange dans l’application.</p>
+<table>
+  <caption>Où cette extension Chrome peut exporter, et où elle ne le peut pas</caption>
+  <thead>
+    <tr>
+      <th scope="col">Produit</th>
+      <th scope="col">Emplacement</th>
+      <th scope="col">Cette extension</th>
+      <th scope="col">Comment exporter</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>claude.ai</td>
+      <td>Navigateur (claude.ai)</td>
+      <td>Oui — bouton orange et Export All</td>
+      <td><a href="/fr/telecharger-conversation-claude/">Télécharger une conversation</a></td>
+    </tr>
+    <tr>
+      <td>Claude Desktop</td>
+      <td>Application Mac/Windows</td>
+      <td>Non</td>
+      <td>Ouvrir la même conversation sur claude.ai si elle est synchronisée ; copier-coller ; ZIP officiel</td>
+    </tr>
+    <tr>
+      <td>Claude Code</td>
+      <td>Terminal</td>
+      <td>Non</td>
+      <td><a href="/fr/exporter-conversation-claude-code/"><code>/export</code> ou JSONL sur le disque</a></td>
+    </tr>
+  </tbody>
+</table>
+<p>Si vous travaillez déjà dans le navigateur, passez cette page et consultez <a href="/fr/exporter-conversation-claude/">exporter une conversation Claude</a>. Si vous avez besoin de nombreux fichiers web, utilisez <a href="/fr/exporter-historique-claude/">l’exportation groupée Export All</a>. Si vous n’utilisez que Desktop, les trois sections suivantes présentent les méthodes honnêtes pour exporter un chat Claude Desktop, sans prétendre que nous nous injectons dans l’application.</p>
+<div class="expert-quote">
+  <p>Download Claude conversations est un script de contenu Chrome pour claude.ai. La version 1.13.0 n’a pas de plugin Desktop, et nous ne prétendrons pas que le bouton orange apparaît dans la fenêtre de cette application.</p>
+  <footer>L’équipe Download Claude conversations</footer>
+</div>
+
+<h2 id="open-web">Comment exporter un chat Claude Desktop via claude.ai ?</h2>
+<p>Beaucoup de sessions Desktop utilisent le même compte Claude que le web. Si la conversation figure dans votre historique claude.ai, ouvrez-la dans Chrome et utilisez Download Claude conversations. C’est la seule façon dont cette extension vous aide à exporter un chat Claude Desktop : la conversation doit d’abord se charger sur claude.ai.</p>
+<ol>
+<li>Cessez de chercher dans Desktop. Ouvrez https://claude.ai dans Chrome et connectez-vous avec le même compte.</li>
+<li>Retrouvez la conversation dans l’historique web. Si elle n’y est pas, passez au copier-coller ou à Export data — nous ne pouvons pas récupérer une conversation que Chrome n’a jamais chargée.</li>
+<li>Cliquez sur le bouton orange. Choisissez Markdown, JSON, texte brut, XML ou PNG. Cliquez sur « Export » (Exporter).</li>
+<li>Pour de nombreuses conversations synchronisées, ouvrez « View and Download All Conversations » (afficher et télécharger toutes les conversations) et lancez « Export All » (Tout exporter).</li>
+<li>Si vous avez besoin d’une page proche d’un PDF de ce que vous voyez sur le web, imprimez depuis Chrome — nous ne proposons pas le PDF. Guide : <a href="/fr/conversation-claude-en-pdf/">impression / PDF</a>.</li>
+</ol>
+<p>La connexion Google lors du premier export web compte les 3 exportations gratuites et restaure Pro à 3,99 $/mois ou 26,99 $/an. Ce quota ne s’applique qu’aux fichiers claude.ai. Le copier-coller dans Desktop ne consomme pas notre quota, car il ne passe jamais par l’extension. Paddle facture Pro ; nous ne voyons jamais les numéros de carte.</p>
+<p>La synchronisation dépend d’Anthropic, pas de nous. Si Desktop affiche une conversation que claude.ai n’affiche pas, cette extension Chrome ne peut pas l’inventer. Patientez, actualisez claude.ai, ou utilisez le copier-coller / le ZIP officiel. Nous ne lisons pas la base de données locale de Desktop. Fonctionnement de l’export web une fois l’onglet ouvert : <a href="/fr/comment-ca-marche/">comment ça marche</a>.</p>
+<div class="callout callout-tip">
+  <p><strong>Les formats une fois sur claude.ai.</strong> Markdown pour les notes, JSON pour les outils, texte pour une archive minimale, XML pour l’échange de données, PNG pour une image. Les cinq mêmes que dans tous les autres guides. Page centrale : <a href="/fr/formats/">formats</a>. Aucun de ces formats n’apparaît dans l’application Desktop grâce à cette extension.</p>
+</div>
+
+<h2 id="copy-paste">Peut-on exporter un chat Claude Desktop par copier-coller ?</h2>
+<p>Oui. Sélectionnez le texte dans Claude Desktop et collez-le dans un document. C’est la solution de repli honnête quand la conversation n’apparaît pas sur claude.ai. Vous perdez la fidélité des blocs de code, les mises en page d’artifacts, les options de réflexion et l’exportation groupée Export All. Suffisant pour une réponse courte ; pénible pour une longue conversation de programmation.</p>
+<p>Le copier-coller depuis Desktop est justement la raison d’être de l’extension Chrome sur claude.ai : le widget web conserve les balises de langage, les tableaux et les artifacts en « Original », « Inline », « Nested » ou « Flat » (d’origine, intégrée, imbriquée, à plat). Desktop ne dispose d’aucune de ces commandes d’export de notre part. Si vous pouvez retrouver la même conversation sur claude.ai, arrêtez le copier-coller et utilisez-y Download Claude conversations.</p>
+<p>Les captures d’écran de Claude Desktop sont une autre solution de repli. Ce sont des images, pas du Markdown, et elles ne constituent pas un export réutilisable d’un chat Claude Desktop. Le PNG de notre extension est aussi une image, mais il n’est généré qu’une fois la conversation ouverte sur claude.ai. Ne l’attendez pas depuis la fenêtre Desktop.</p>
+
+<h2 id="official-zip">Export data couvre-t-il les conversations Claude Desktop ?</h2>
+<p>Settings → Privacy → Export data d’Anthropic (les libellés peuvent être traduits si claude.ai est réglé en français) envoie par e-mail une archive ZIP JSON liée au compte Claude, et non à la fenêtre dans laquelle vous avez écrit. Si une conversation Desktop est enregistrée sur ce compte, elle peut apparaître. Considérez le ZIP comme une sauvegarde, pas comme le Markdown de cette extension.</p>
+<p>Le ZIP est lent, le lien expire, et il n’existe aucun choix de format pour Markdown, texte, XML ou PNG. Cela reste la méthode officielle pour emporter votre compte lorsque vous devez exporter l’historique Claude Desktop en un seul bloc. Comparaison avec l’impression et le widget Chrome : <a href="/fr/comment-exporter-conversation-claude/">comment exporter une conversation Claude</a>.</p>
+<p>Ne confondez pas ce ZIP avec Export All sur notre page de consultation. Export All crée des fichiers séparés que vous sélectionnez sur claude.ai, immédiatement, dans le format choisi, et chaque fichier consomme l’une des 3 exportations gratuites (ou Pro). Export data officiel n’utilise pas notre quota. Les conversations restées uniquement dans Desktop, jamais synchronisées, peuvent manquer dans les deux.</p>
+<table>
+  <caption>Archive ZIP de sauvegarde ou cette extension quand vous utilisez Desktop</caption>
+  <thead>
+    <tr>
+      <th scope="col">Objectif</th>
+      <th scope="col">Méthode</th>
+      <th scope="col">Dans l’application Desktop ?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fichier lisible d’une conversation synchronisée</td>
+      <td>Ouvrir claude.ai + bouton orange</td>
+      <td>Non</td>
+    </tr>
+    <tr>
+      <td>Nombreuses conversations synchronisées en fichiers</td>
+      <td>Export All sur la page de consultation</td>
+      <td>Non</td>
+    </tr>
+    <tr>
+      <td>Sauvegarde du compte</td>
+      <td>Settings → Privacy → Export data</td>
+      <td>Non — demande sur le web</td>
+    </tr>
+    <tr>
+      <td>Conversation jamais sortie de Desktop</td>
+      <td>Copier-coller dans la fenêtre Desktop</td>
+      <td>Oui — manuellement uniquement</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="not-code">Claude Desktop est-il la même chose que Claude Code ?</h2>
+<p>Non. Claude Desktop est l’application de conversation. Claude Code est l’agent de programmation en terminal, avec <code>/export</code> et des transcriptions JSONL. Chercher à exporter un chat Claude Desktop pour un terminal d’IDE, c’est se tromper de produit. Cette extension Chrome ne fonctionne dans aucun des deux.</p>
+<p>Si par « desktop » vous entendiez VS Code ou un terminal sur votre ordinateur, suivez <a href="/fr/exporter-conversation-claude-code/">exporter une conversation Claude Code</a>. Si vous parliez de l’application de conversation Desktop d’Anthropic, restez sur cette page. Confondre les deux fait perdre du temps : le JSONL sur le disque n’est pas un bouton orange, et le copier-coller dans Desktop n’est pas <code>/export</code>.</p>
+<p>Download Claude conversations n’ajoutera pas d’intégration Code sous prétexte que Desktop et Code ne sont « pas le navigateur ». Le produit est volontairement restreint : claude.ai dans Chrome, cinq formats, 3 exportations gratuites, Pro à 3,99 $/mois ou 26,99 $/an. Périmètre des fonctionnalités : <a href="/fr/fonctionnalites/">fonctionnalités</a>. Formulation orientée extraction pour le bouton web : <a href="/fr/extracteur-conversation-claude/">extracteur de conversations Claude</a>.</p>
+
+<h2 id="limits">Ce que nous ne ferons pas pour exporter un chat Claude Desktop</h2>
+<p>Nous ne proposons ni plugin Claude Desktop, ni application dans la barre de menus, ni option « exporter depuis Desktop ». Nous ne lisons pas les fichiers de votre installation Claude Desktop sur Mac ou Windows. Nous ne remplaçons pas le <code>/export</code> de Claude Code. Ces phrases définissent la limite du produit pour l’export d’un chat Claude Desktop dans la version 1.13.0.</p>
+<p>Nous ne citons pas non plus d’autres extensions d’exportation pour Chrome. Les outils officiels d’Anthropic — claude.ai, Claude Desktop, Claude Code, Settings → Privacy → Export data — sont mentionnés ici à titre de comparaison. Download Claude conversations reste indépendant, non affilié à Anthropic, PBC. La note de 5.0 sur le Chrome Web Store citée sur cette page concerne l’extension web, pas un produit Desktop qui n’existe pas.</p>
+<p>Si vous n’utilisez que Desktop, servez-vous du copier-coller et du ZIP officiel jusqu’à ce qu’Anthropic propose un export de fichier par conversation dans l’application. Si vous utilisez aussi claude.ai, installez l’extension et exportez depuis le navigateur. C’est toute notre offre, en toute honnêteté. Les applications mobiles Claude sont également hors du périmètre de cette extension.</p>
+<div class="callout callout-info">
+  <p><strong>Rappel du quota pour la voie web.</strong> Une fois une conversation synchronisée ouverte sur claude.ai, 3 exportations sont gratuites, puis Pro coûte 3,99 $/mois ou 26,99 $/an. Le copier-coller dans Desktop n’incrémente jamais ce compteur. La connexion Google n’est requise que lorsque vous utilisez réellement le widget Chrome.</p>
+</div>
+<p>Dépannage : extension installée mais aucun bouton dans Desktop — c’est normal. Bouton absent sur claude.ai — rechargez, épinglez l’icône, ouvrez une URL de conversation. Conversation présente dans Desktop mais pas sur le web — ce n’est pas un bug de l’extension. Mauvais produit (Code ou Desktop) — vérifiez si vous êtes dans un terminal. Besoin d’une copie visuelle proche d’un PDF une fois sur le web — imprimez, n’attendez pas un format PDF que nous ne proposons pas.</p>
+
+<h2 id="faq">FAQ : exporter un chat Claude Desktop</h2>
+<p>Ces questions couvrent l’export d’un chat Claude Desktop : pourquoi le bouton orange est absent, comment passer par claude.ai si la conversation est synchronisée, le copier-coller, Export data officiel et Claude Code. Les réponses correspondent à la version 1.13.0. Le schéma FAQPage dans l’en-tête correspond à cette liste.</p>
+
+<h3>Puis-je exporter un chat Claude Desktop avec cette extension ?</h3>
+<p>Non. Download Claude conversations fonctionne sur claude.ai dans Chrome. Le bouton orange n’apparaît jamais dans la fenêtre de Claude Desktop. La version 1.13.0 n’a pas de plugin Desktop.</p>
+
+<h3>Comment exporter une conversation Claude Desktop ?</h3>
+<p>Ouvrez la même conversation sur claude.ai dans Chrome si elle est synchronisée, puis utilisez l’extension ou l’impression. Sinon, faites un copier-coller depuis Desktop, ou utilisez Settings → Privacy → Export data pour obtenir une archive ZIP JSON de tout le compte.</p>
+
+<h3>Claude Desktop est-il la même chose que Claude Code ?</h3>
+<p>Non. Desktop est l’application de conversation. Claude Code est l’agent en terminal, avec <code>/export</code> et des transcriptions JSONL. Cette extension Chrome ne fonctionne dans aucun des deux.</p>
+
+<h3>Export data officiel inclut-il les conversations Desktop ?</h3>
+<p>L’archive ZIP est liée à votre compte Claude. Si une conversation Desktop y est enregistrée, elle peut apparaître. Cela reste une archive de sauvegarde, pas un fichier Markdown par conversation issu de cette extension.</p>
+
+<h3>L’export d’un chat Claude Desktop fonctionne-t-il une fois sur claude.ai ?</h3>
+<p>Oui, pour les conversations qui se chargent sur claude.ai. Download Claude conversations peut alors générer du Markdown, du JSON, du texte, du XML ou du PNG. Les conversations jamais synchronisées restent limitées au copier-coller ou au ZIP.</p>
+
+<h3>Cette extension peut-elle lire le dossier d’installation de Claude Desktop ?</h3>
+<p>Non. Nous n’analysons pas les fichiers de Desktop sur Mac ou Windows. Le script de contenu ne voit qu’une page claude.ai déjà affichée par Chrome.</p>
+
+<h3>Ai-je besoin de Pro pour exporter un chat Claude Desktop sur le web ?</h3>
+<p>Pas pour les 3 premières exportations web. Ensuite, Pro coûte 3,99 $/mois ou 26,99 $/an. Le copier-coller dans Desktop n’utilise pas notre quota.</p>
+
+<h3>Puis-je exporter un chat Claude Desktop en PDF avec cet outil ?</h3>
+<p>Non. Nous ne proposons pas non plus le PDF sur claude.ai. Imprimez depuis Chrome une fois la conversation sur le web, ou contentez-vous d’un PNG, qui est une image. Nous n’offrons aucune impression depuis Desktop.</p>
+
+<h3>Ajouter l’extension à Chrome permet-il d’exporter un chat Claude Desktop ?</h3>
+<p>Non. Installer Download Claude conversations ne concerne que Chrome sur claude.ai. Desktop reste inchangé. Épinglez l’extension, puis travaillez dans l’onglet du navigateur.</p>
+
+<h3>Existe-t-il une solution mobile pour exporter un chat Claude Desktop ?</h3>
+<p>Pas avec cette extension. Elle nécessite Chrome sur ordinateur, sur claude.ai. Les navigateurs de téléphone et l’application Desktop ne sont pas pris en charge par le bouton orange.</p>
+
+<h3>Quels formats fonctionnent une fois une conversation Desktop sur claude.ai ?</h3>
+<p>Markdown, JSON, texte brut, XML et PNG — les cinq mêmes que dans tous les autres guides Download Claude conversations. Les mises en page d’artifacts et l’option de réflexion ne s’appliquent que dans ce widget web.</p>
+</article>
+</main>
+<section class="final-cta page-cta" aria-label="Installer">
+  <div class="wrap">
+    <div class="final-cta-panel">
+      <p class="final-kicker">Download Claude conversations</p>
+      <h2>Vous exportez depuis claude.ai dans Chrome ?</h2>
+      <p>C’est précisément le rôle de l’extension — Markdown, JSON, texte, XML ou PNG, en local depuis le navigateur. Pas depuis Claude Desktop.</p>
+      <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=fr-desktop" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Ajouter à Chrome</a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="logo" href="/fr/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
+      <p class="legal-note">Extension Chrome pour télécharger vos conversations Claude.ai en Markdown, JSON, texte brut, XML ou PNG. Note de 5,0 sur le Chrome Web Store.</p>
+    </div>
+    <div>
+      <h2>Installer</h2>
+      <a class="install-link" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=fr-footer" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Extension Chrome</a>
+    </div>
+    <div>
+      <h2>Produit</h2>
+      <a href="/fr/fonctionnalites/">Fonctionnalités</a>
+      <a href="/fr/formats/">Formats</a>
+      <a href="/fr/exporter-historique-claude/">Exporter tout l’historique</a>
+      <a href="/fr/comment-ca-marche/">Comment ça marche</a>
+    </div>
+    <div>
+      <h2>Guides</h2>
+      <a href="/fr/telecharger-conversation-claude/">Télécharger une conversation Claude</a>
+      <a href="/fr/comment-exporter-conversation-claude/">Comment exporter une conversation Claude</a>
+      <a href="/fr/exporter-conversation-claude/">Exporter une conversation Claude</a>
+      <a href="/fr/extracteur-conversation-claude/">Extracteur de conversations Claude</a>
+      <a href="/fr/exporter-conversation-claude-code/">Exporter une conversation Claude Code</a>
+      <a href="/fr/conversation-claude-en-pdf/">Imprimer / PDF</a>
+      <a href="/fr/exporter-chat-claude-desktop/">Exporter depuis Claude Desktop</a>
+      <a href="/fr/exporter-discussion-claude/">Exporter une discussion Claude</a>
+      <a href="/fr/sauvegarder-conversation-claude/">Sauvegarder une conversation Claude</a>
+      <a href="/fr/telecharger-chat-claude/">Télécharger un chat Claude</a>
+    </div>
+    <div>
+      <h2>Mentions légales</h2>
+      <a href="/fr/a-propos/">À propos</a>
+      <a href="/fr/a-propos/#contact">Contact</a>
+      <a href="/privacy/" hreflang="en">Confidentialité (en anglais)</a>
+      <a href="/terms/" hreflang="en">Conditions (en anglais)</a>
+      <a href="/refund/" hreflang="en">Remboursements (en anglais)</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Download Claude conversations. Tous droits réservés.</div>
+    <div>
+      <a href="/privacy/" hreflang="en">Politique de confidentialité (en anglais)</a>
+      <a href="/terms/" hreflang="en">Conditions d’utilisation (en anglais)</a>
+      <a href="/refund/" hreflang="en">Remboursements (en anglais)</a>
+    </div>
+  </div>
+  <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/export-claude-desktop-chat/" hreflang="en" lang="en">English</a> <a href="/de/claude-desktop-chat-exportieren/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/exporter-chat-claude-desktop/" hreflang="fr" lang="fr">Français</a> <a href="/nl/claude-desktop-chat-exporteren/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/exportera-claude-desktop-chatt/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/eksportere-claude-desktop-chat/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/eksporter-claude-desktop-chat/" hreflang="da" lang="da">Dansk</a> <a href="/fi/vie-claude-desktop-chat/" hreflang="fi" lang="fi">Suomi</a> <a href="/ja/export-claude-desktop-chat/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/export-claude-desktop-chat/" hreflang="ko" lang="ko">한국어</a> <a href="/he/export-claude-desktop-chat/" hreflang="he" lang="he">עברית</a> <a href="/ar/export-claude-desktop-chat/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
+  <p class="disclaimer">Conversations traitées dans votre navigateur · Connexion Google pour le quota · Sans lien avec Anthropic, PBC. Claude est une marque d’Anthropic. Extension Chrome indépendante, pas un produit officiel d’Anthropic. Assistance : <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

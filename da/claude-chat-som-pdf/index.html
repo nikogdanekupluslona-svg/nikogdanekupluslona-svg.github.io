@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gem Claude-chat som PDF – sådan udskriver du en samtale</title>
+  <meta name="description" content="claude.ai har ingen PDF-knap. Udskriv en chat som PDF, eller gem Markdown/PNG med en gratis Chrome-udvidelse. Hvad udskrift bevarer – og ødelægger.">
+  <link rel="canonical" href="https://chat-downloader.com/da/claude-chat-som-pdf/">
+  <!-- i18n:head -->
+  <link rel="alternate" hreflang="en" href="https://chat-downloader.com/download-claude-chat-as-pdf/">
+  <link rel="alternate" hreflang="de" href="https://chat-downloader.com/de/claude-chat-als-pdf/">
+  <link rel="alternate" hreflang="fr" href="https://chat-downloader.com/fr/conversation-claude-en-pdf/">
+  <link rel="alternate" hreflang="nl" href="https://chat-downloader.com/nl/claude-chat-als-pdf/">
+  <link rel="alternate" hreflang="sv" href="https://chat-downloader.com/sv/claude-chatt-som-pdf/">
+  <link rel="alternate" hreflang="nb" href="https://chat-downloader.com/nb/claude-chat-som-pdf/">
+  <link rel="alternate" hreflang="da" href="https://chat-downloader.com/da/claude-chat-som-pdf/">
+  <link rel="alternate" hreflang="fi" href="https://chat-downloader.com/fi/claude-keskustelu-pdf/">
+  <link rel="alternate" hreflang="ja" href="https://chat-downloader.com/ja/download-claude-chat-as-pdf/">
+  <link rel="alternate" hreflang="ko" href="https://chat-downloader.com/ko/download-claude-chat-as-pdf/">
+  <link rel="alternate" hreflang="he" href="https://chat-downloader.com/he/download-claude-chat-as-pdf/">
+  <link rel="alternate" hreflang="ar" href="https://chat-downloader.com/ar/download-claude-chat-as-pdf/">
+  <link rel="alternate" hreflang="x-default" href="https://chat-downloader.com/download-claude-chat-as-pdf/">
+  <meta property="og:locale" content="da_DK">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="sv_SE">
+  <meta property="og:locale:alternate" content="nb_NO">
+  <meta property="og:locale:alternate" content="fi_FI">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <meta property="og:locale:alternate" content="he_IL">
+  <meta property="og:locale:alternate" content="ar_AE">
+  <!-- /i18n:head -->
+  <meta property="og:title" content="Gem Claude-chat som PDF – sådan udskriver du en samtale">
+  <meta property="og:description" content="claude.ai har ingen PDF-knap. Udskriv en chat som PDF, eller gem Markdown/PNG med en gratis Chrome-udvidelse. Hvad udskrift bevarer – og ødelægger.">
+  <meta property="og:url" content="https://chat-downloader.com/da/claude-chat-som-pdf/">
+  <meta property="og:image" content="https://chat-downloader.com/assets/widget-guide.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chat Downloader">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Gem Claude-chat som PDF – sådan udskriver du en samtale">
+  <meta name="twitter:description" content="claude.ai har ingen PDF-knap. Udskriv en chat som PDF, eller gem Markdown/PNG med en gratis Chrome-udvidelse. Hvad udskrift bevarer – og ødelægger.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME1YXGZKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GME1YXGZKR');
+  </script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Kan jeg downloade en Claude-chat som PDF?","acceptedAnswer":{"@type":"Answer","text":"Ikke med en indbygget knap på claude.ai og ikke med denne Chrome-udvidelse. Udskriv samtalen (Ctrl/Cmd+P → Gem som PDF) for en visuel PDF, eller eksportér Markdown og konvertér filen, hvis du har brug for et pænere dokument."}},{"@type":"Question","name":"Hvordan udskriver jeg en Claude-samtale?","acceptedAnswer":{"@type":"Answer","text":"Åbn chatten på claude.ai, skjul sidebjælken, hvis du kan, tryk på Ctrl+P på Windows eller Cmd+P på Mac, vælg Gem som PDF eller din printer, og udskriv. Lange tråde deler ofte kodeblokke over flere sider. Rul først op for at indlæse ældre beskeder."}},{"@type":"Question","name":"Kan jeg udskrive en Claude-chat fra min telefon?","acceptedAnswer":{"@type":"Answer","text":"Mobilbrowsere kan udskrive eller dele som PDF, men layoutet er dårligere end på computeren. Vil du have en fil, du kan genbruge, så åbn den samme chat i Chrome på computeren og eksportér Markdown. Udvidelsen kører ikke på mobilen."}},{"@type":"Question","name":"Eksporterer Download Claude conversations PDF?","acceptedAnswer":{"@type":"Answer","text":"Nej. De nuværende formater er Markdown, JSON, ren tekst, XML og PNG. PNG er et billede af tråden, ikke en PDF. Udskrift til PDF er fortsat browserens opgave. Version 1.13.0 kan ikke skrive .pdf."}},{"@type":"Question","name":"Er en udskrevet PDF det samme som Anthropics Export data?","acceptedAnswer":{"@type":"Answer","text":"Nej. Udskrift fanger den side, du ser. Anthropics Settings → Privacy → Export data sender en ZIP-fil med JSON for hele kontoen på mail. Ingen af dem er en Markdown-fil pr. chat fra den orange knap."}},{"@type":"Question","name":"Hvordan gemmer jeg en Claude-chat som PDF med læsbar kode?","acceptedAnswer":{"@type":"Answer","text":"Start ikke med udskrift, hvis koden er vigtig. Eksportér Markdown, åbn filen i en editor, og udskriv det dokument. Så får du sideskift i en fil, ikke i en chat-brugerflade. Det bruger en af de 3 gratis eksporter, medmindre du har Pro."}},{"@type":"Question","name":"Kan PNG erstatte PDF?","acceptedAnswer":{"@type":"Answer","text":"Nej. PNG er et bitmapbillede. PDF fra udskrift er et øjebliksbillede af claude.ai opdelt i sider. Begge ligner billeder af en chat; kun udskrift til PDF er faktisk PDF. Ingen af dem erstatter Markdown til søgning og sammenligning."}},{"@type":"Question","name":"Bruger udskrift af de 3 gratis eksporter?","acceptedAnswer":{"@type":"Answer","text":"Nej. Udskrift er browseren. Vores kvote gælder kun filer fra udvidelsen. Google-login kræves ikke for at udskrive claude.ai. Det kræves for at eksportere Markdown, JSON, tekst, XML eller PNG med udvidelsen."}},{"@type":"Question","name":"Kan jeg downloade mange Claude-chats som PDF på én gang?","acceptedAnswer":{"@type":"Answer","text":"Ikke som ægte PDF'er. Export All kan skrive mange Markdown- eller PNG-filer; konvertér Markdown bagefter, hvis du har brug for PDF'er. Masseeksport tæller stadig hver fil mod de 3 gratis eksporter. Se masseeksport med Export All."}},{"@type":"Question","name":"Kan jeg udskrive en Claude Code-session som PDF?","acceptedAnswer":{"@type":"Answer","text":"Ikke via udskrift fra claude.ai. Claude Code er en terminal. Brug /export, og udskriv tekstfilen fra en editor, hvis du har brug for papir. Guide: eksport fra Claude Code."}},{"@type":"Question","name":"Ændrer Team eller Enterprise PDF-eksporten?","acceptedAnswer":{"@type":"Answer","text":"Der dukker ingen ekstra PDF-knap op i de abonnementer. Kan du åbne chatten i Chrome, kan du udskrive den og bruge udvidelsens fem formater. Abonnementets navn tilføjer ikke .pdf til vores menu."}},{"@type":"Question","name":"Kommer PDF på listen over formater?","acceptedAnswer":{"@type":"Answer","text":"Ikke i 1.13.0. Tilføjer vi det, står det på denne side samme dag. Indtil da udskriver du eller konverterer Markdown. Vi vil hellere nævne manglen end opfinde en funktion til at downloade som PDF."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Gem Claude-chat som PDF – udskrift vs. en rigtig fil","description":"claude.ai har ingen PDF-knap. Udskriv en chat som PDF, eller gem Markdown/PNG med en gratis Chrome-udvidelse. Hvad udskrift bevarer – og ødelægger.","url":"https://chat-downloader.com/da/claude-chat-som-pdf/","dateModified":"2026-09-10","datePublished":"2026-09-10","inLanguage":"da","author":{"@type":"Organization","name":"Chat Downloader","url":"https://chat-downloader.com/da/"},"publisher":{"@type":"Organization","name":"Chat Downloader","url":"https://chat-downloader.com/da/"},"mainEntityOfPage":"https://chat-downloader.com/da/claude-chat-som-pdf/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Forside","item":"https://chat-downloader.com/da/"},{"@type":"ListItem","position":2,"name":"PDF og udskrift","item":"https://chat-downloader.com/da/claude-chat-som-pdf/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Spring til indhold</a>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a class="logo" href="/da/">
+        <img src="/assets/icon.svg" alt="">
+        <span>Download Claude conversations</span>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="/da/download-claude-chat/">Download</a><a href="/da/saadan-eksporterer-du-claude-chat/">Eksportér</a><a href="/da/eksporter-alle-claude-chats/">Alle chats</a><a href="/da/formater/">Formater</a><a href="/da/#faq">FAQ</a>
+        <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=da-download-claude-chat-as-pdf" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Føj til Chrome</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <!-- i18n:switch --><details class="lang-switch"><summary aria-label="Sprog">da</summary><ul><li><a href="/download-claude-chat-as-pdf/" hreflang="en" lang="en">English</a></li><li><a href="/de/claude-chat-als-pdf/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/conversation-claude-en-pdf/" hreflang="fr" lang="fr">Français</a></li><li><a href="/nl/claude-chat-als-pdf/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/sv/claude-chatt-som-pdf/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="/nb/claude-chat-som-pdf/" hreflang="nb" lang="nb">Norsk</a></li><li><a href="/da/claude-chat-som-pdf/" hreflang="da" lang="da" aria-current="true">Dansk</a></li><li><a href="/fi/claude-keskustelu-pdf/" hreflang="fi" lang="fi">Suomi</a></li><li><a href="/ja/download-claude-chat-as-pdf/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/ko/download-claude-chat-as-pdf/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/he/download-claude-chat-as-pdf/" hreflang="he" lang="he">עברית</a></li><li><a href="/ar/download-claude-chat-as-pdf/" hreflang="ar" lang="ar">العربية</a></li></ul></details><!-- /i18n:switch -->
+      <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=da-download-claude-chat-as-pdf" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Føj til Chrome</a>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+<nav class="crumbs" aria-label="Brødkrummesti"><a href="/da/">Forside</a> / PDF og udskrift</nav>
+<main id="main">
+<article class="band prose">
+<p class="article-meta">Opdateret <time datetime="2026-09">september 2026</time> · Udvidelse 1.13.0</p>
+<h1 class="page-h1">Gem Claude-chat som PDF – udskrift vs. en rigtig fil</h1>
+<p class="lead">claude.ai har ingen knap til at downloade som PDF. At gemme en Claude-chat som PDF betyder, at du udskriver siden (Ctrl/Cmd+P → Gem som PDF) eller eksporterer Markdown og konverterer den. Download Claude conversations skriver ikke .pdf. Den skriver Markdown, JSON, tekst, XML eller PNG. PNG er et billede, ikke en PDF.</p>
+<aside class="trust-badge" aria-label="Bedømmelse i Chrome Web Store">
+  <span class="trophy" aria-hidden="true">🏆</span>
+  <div>
+    <strong>Download Claude conversations – bedømt 5.0 i Chrome Web Store</strong>
+    <span>2026 – gratis Chrome-udvidelse, der gemmer claude.ai-chats som Markdown, JSON, tekst, XML eller PNG</span>
+  </div>
+</aside>
+<nav class="toc" aria-label="På denne side">
+  <p>På denne side</p>
+  <ol>
+    <li><a href="#native-pdf">Kan jeg gemme en Claude-chat som PDF direkte?</a></li>
+    <li><a href="#print-desktop">Hvordan udskriver jeg en samtale på computeren?</a></li>
+    <li><a href="#what-print-keeps">Hvad bevarer en udskrevet PDF?</a></li>
+    <li><a href="#print-phone">Kan jeg udskrive fra min telefon?</a></li>
+    <li><a href="#markdown-then-pdf">PDF via Markdown?</a></li>
+    <li><a href="#png-vs-pdf">PNG vs. PDF vs. Markdown?</a></li>
+    <li><a href="#print-vs-zip">Udskrift vs. officiel eksport vs. udvidelsen?</a></li>
+    <li><a href="#faq">FAQ: Claude-chat som PDF</a></li>
+  </ol>
+</nav>
+
+<h2 id="native-pdf">Kan jeg gemme en Claude-chat som PDF direkte?</h2>
+<p>Nej. claude.ai har ingen indbygget knap til at gemme en chat som PDF, og denne udvidelse eksporterer ikke PDF. Udskriv samtalen for en visuel PDF, eller eksportér Markdown og udskriv det dokument. Version 1.13.0 kan ikke skrive .pdf. Mange søger på engelsk efter "claude export chat to pdf" – svaret er det samme.</p>
+<p>De nuværende formater er Markdown, JSON, ren tekst, XML og PNG. Den liste er produktet. Den ændres på denne side den dag, der findes en PDF-funktion. Indtil da er browserens udskriftsdialog PDF-motoren.</p>
+<p>Anthropics Settings → Privacy → Export data (menunavnene kan være oversat, hvis claude.ai er sat til dansk) er heller ikke PDF. Det er en forsinket ZIP-fil med JSON for kontoen. Pakker du ZIP-filen ud, får du ikke en opsat samtale. Vent ikke på mailen, hvis det, du ville have, var en side til udskrift af den åbne tråd.</p>
+<div class="table-wrap">
+  <table>
+    <caption>Claude-chat som PDF sammenlignet med andre måder at gemme på</caption>
+    <thead>
+      <tr>
+        <th scope="col">Du vil have</th>
+        <th scope="col">Gør dette</th>
+        <th scope="col">Du får</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">En PDF, der ligner skærmen</th>
+        <td>Åbn chatten → Ctrl/Cmd+P → Gem som PDF</td>
+        <td>Et visuelt øjebliksbillede, ofte med brugerflade og delt kode</td>
+      </tr>
+      <tr>
+        <th scope="row">En fil, du kan søge i eller konvertere</th>
+        <td><a href="/da/download-claude-chat/">Chrome-udvidelse</a> → Markdown eller tekst</td>
+        <td>Et rigtigt dokument; udskriv det senere, hvis du stadig har brug for PDF</td>
+      </tr>
+      <tr>
+        <th scope="row">Et billede af tråden</th>
+        <td>Udvidelse → PNG</td>
+        <td>Et billede, ikke en PDF</td>
+      </tr>
+      <tr>
+        <th scope="row">Hele kontoen som backup</th>
+        <td>Settings → Privacy → Export data</td>
+        <td>En forsinket ZIP-fil med JSON, ikke en PDF af én chat</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p>At udskrive en Claude-samtale er derfor den ærlige vej til PDF. At downloade en Claude-chat som en fil, du kan arbejde med, er udvidelsen. Hold de to opgaver adskilt, så slipper du for at kæmpe med udskriftsstilarket.</p>
+
+<h2 id="print-desktop">Hvordan udskriver jeg en Claude-samtale på computeren?</h2>
+<p>Sådan udskriver du en Claude-samtale på computeren: åbn tråden på claude.ai, skjul sidebjælken, hvis du kan, tryk på Ctrl+P eller Cmd+P, vælg Gem som PDF, og udskriv. Vent, til samtalen er indlæst. En lang chat, der ikke er rullet igennem, udskriver kun det, der er i DOM'et.</p>
+<ol>
+<li>Åbn samtalen på claude.ai i Chrome eller en anden browser på computeren. Lad svaret blive færdigt.</li>
+<li>Klap sidebjælken sammen, så samtalen fylder mere af siden. Skjul paneler med artefakter eller projekter, som du ikke vil have på papir.</li>
+<li>Tryk på Ctrl+P på Windows eller Linux, Cmd+P på Mac.</li>
+<li>Sæt destinationen til Gem som PDF (Chrome) eller Udskriv til PDF. Til papir vælger du en printer.</li>
+<li>Under flere indstillinger kan du prøve Baggrundsgrafik, hvis siden ser udvasket ud. Formindsk margener, hvis sidebjælken stadig æder siden. Gem eller udskriv.</li>
+</ol>
+<p>Det er hele arbejdsgangen for at udskrive en Claude-samtale. Claude tilføjer ingen sidehoveder, sidetal eller indholdsfortegnelse. Du får den CSS, webstedet bruger i udskriftstilstand – som regel "websiden delt op i sider".</p>
+<p>Kan jeg udskrive en Claude-chat med et pænere layout? Kun ved at forlade chat-brugerfladen. Eksportér Markdown med udvidelsen, og udskriv fra et dokumentprogram. Udskriftsdialogen på claude.ai bliver ikke et opsætningsprogram.</p>
+<div class="callout callout-warn">
+  <p><strong>Indlæs tråden først.</strong> Lange chats skjuler ældre beskeder, indtil du ruller. Udskrift eller PNG af en halvt indlæst side ligner en afkortet PDF. Rul til starten, vent, og udskriv så. Udvidelsen har samme begrænsning ved eksport.</p>
+</div>
+
+<h2 id="what-print-keeps">Hvad bevarer en udskrevet Claude-chat som PDF?</h2>
+<p>En udskrevet PDF af en Claude-chat bevarer et øjebliksbillede af layoutet, ikke en eksport af beskedtræet. Den bevarer som regel synlig tekst og det, udskrifts-CSS'en ikke fjernede. Den mister ofte hele kodeblokke, brede tabeller, sammenklappede artefakter og en ren side uden skrivefeltet.</p>
+<ul>
+<li>Kodeblokke ombrydes eller deles over flere sider. Indrykning overlever kun, hvis udskriftsstilarket holder styr på ombrydningen af <code>pre</code> – det gør det ofte ikke.</li>
+<li>Tabeller løber ud over papirets bredde. Brede sammenligningstabeller bliver ulæselige.</li>
+<li>Appens brugerflade – skrivefelt, modelvælger, sidebjælke – kan komme med på hver side, medmindre du skjuler den først.</li>
+<li>Artefakter og thinking udskrives kun, hvis de er foldet ud på skærmen. Sammenklappede elementer mangler i PDF'en.</li>
+<li>Søgning i PDF'en er middelmådig. Du kan ikke bruge den som Markdown i Obsidian eller sammenligne den i git.</li>
+</ul>
+<p>Udskrift er det rigtige værktøj, når du har brug for et engangsbilag, der skal ligne Claude. Det er det forkerte værktøj, når du vil redigere, citere eller arkivere tråden som et arbejdsdokument. Brug i stedet udvidelsens Markdown eller JSON – <a href="/da/saadan-eksporterer-du-claude-chat/">sådan eksporterer du en Claude-chat</a>.</p>
+<p>Baggrundsgrafik og papirstørrelse ændrer øjebliksbilledet. A4 eller Letter ændrer, hvor koden brydes. Ingen af indstillingerne redder en tabel, der var bredere end visningsområdet. Betød tabellen noget, så eksportér Markdown.</p>
+
+<h2 id="print-phone">Kan jeg udskrive en Claude-chat fra min telefon?</h2>
+<p>Nogle gange. Du kan udskrive en Claude-chat fra en telefon, hvis mobilbrowseren tilbyder Del → PDF eller Udskriv. Mobillayoutet på claude.ai er en smal kolonne med et stort skrivefelt, så PDF'en bliver som regel dårligere end fra computeren: mere brugerflade, kortere linjer, flere sideskift.</p>
+<p>Chrome-udvidelsen kører ikke på iOS eller Android. Der findes ingen app-udgave af Download Claude conversations. Safari kan ikke indlæse dette element fra Chrome Web Store. Vil du have en fil, du kan genbruge, så åbn den samme samtale i Chrome på computeren og udskriv dér eller eksportér Markdown.</p>
+<p>Findes chatten kun i sessionen på telefonen, og kan du ikke åbne en computer, så udskriv fra telefonen og accepter layoutet – eller vent, til du har en bærbar. Den officielle Export data fra Settings kræver stadig kontoen på nettet og er stadig ikke PDF.</p>
+<p>Politikker i Team, der blokerer udvidelser på computeren, gør ikke udskrift på mobilen bedre. De efterlader blot udskrift og den officielle ZIP-fil. De to metoder er tilgængelige uden vores software.</p>
+
+<h2 id="markdown-then-pdf">Hvordan gemmer jeg en Claude-chat som PDF via Markdown?</h2>
+<p>Sådan får du en Claude-chat som PDF uden at udskrive den levende side: eksportér Markdown med Download Claude conversations, åbn .md-filen i en editor, og brug programmets Udskriv eller Eksportér som PDF. Du styrer skrifttyper, margener og sideskift i et dokument i stedet for i en chat-brugerflade.</p>
+<ol>
+<li>Installér udvidelsen, åbn chatten på claude.ai, og eksportér Markdown. Google-login kræves ved den første eksport. 3 gratis eksporter; Pro koster 3,99 $/md. eller 26,99 $/år.</li>
+<li>Åbn filen i VS Code, Obsidian, Typora, Google Docs eller Word (indsæt).</li>
+<li>Brug programmets Udskriv / Eksportér som PDF. Indstil papirstørrelse og overskrifter dér, ikke på claude.ai.</li>
+</ol>
+<p>Den vej i to trin er den, de fleste bør bruge, når PDF'en skal være læsbar. Første trin er en struktureret eksport. Andet trin er et rigtigt opsætningsprogram. PNG er ikke en erstatning: det er et bitmapbillede, nyttigt til en slide, ubrugeligt til en designgennemgang på 40 sider.</p>
+<p>Filerne bygges lokalt. Vi konverterer ikke Markdown til PDF på en server. Skulle vi levere PDF, ville det være et nyt format i menuen – og det findes ikke i 1.13.0. Liste over formater: <a href="/da/formater/">formater</a>.</p>
+<div class="expert-quote">
+  <blockquote>Vi bliver spurgt om PDF hver uge. Vi skriver stadig ikke .pdf, fordi en chat-brugerflade er et dårligt opsætningsprogram. Udskriv siden, hvis du har brug for et øjebliksbillede i dag. Eksportér Markdown, hvis du har brug for et dokument. At lade som om, vi har en PDF-knap, ville spare en supportsag og give en dårligere fil.</blockquote>
+  <cite><strong>Holdet bag Download Claude conversations</strong> – udviklerne af Chrome-udvidelsen Claude Chat Downloader</cite>
+</div>
+<p>"Export All" (eksportér alle) kan give dig mange Markdown-filer, som du kan konvertere senere. Hver fil tæller stadig mod de 3 gratis eksporter. Kør ikke Export All på 40 chats på en gratis konto i forventning om 40 PDF'er. Guide: <a href="/da/eksporter-alle-claude-chats/">masseeksport</a>.</p>
+
+<h2 id="png-vs-pdf">PNG vs. PDF vs. Markdown for en Claude-chat?</h2>
+<p>PNG, PDF og Markdown er tre forskellige ting. En Claude-chat som PDF er en udskrift eller en konverteret Markdown-fil. PNG fra denne udvidelse er et billede af tråden. Markdown er tekst med struktur. Når navnene blandes sammen, bliver den forkerte fil sendt.</p>
+<div class="table-wrap">
+  <table>
+    <caption>PNG vs. PDF vs. Markdown, når du vil have en Claude-chat væk fra skærmen</caption>
+    <thead>
+      <tr>
+        <th scope="col">Format</th>
+        <th scope="col">Hvad det er</th>
+        <th scope="col">Godt til</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Udskriv → Gem som PDF</th>
+        <td>Browserens øjebliksbillede af claude.ai</td>
+        <td>Hurtig deling, "ligner Claude"</td>
+      </tr>
+      <tr>
+        <th scope="row">PNG (denne udvidelse)</th>
+        <td>Billede af den eksporterede tråd</td>
+        <td>En figur i en præsentation, ikke et dokument</td>
+      </tr>
+      <tr>
+        <th scope="row">Markdown</th>
+        <td>Tekst med struktur</td>
+        <td>Noter, git, senere konvertering til PDF</td>
+      </tr>
+      <tr>
+        <th scope="row">JSON</th>
+        <td>Beskedtræ</td>
+        <td>Scripts, ikke mennesker eller printere</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p>XML og ren tekst findes også. Ingen af dem er PDF. Ren tekst udskrives som en mur af linjer. XML udskrives som tags. Skal resultatet være en PDF, så start fra udskrift eller fra Markdown, ikke fra JSON.</p>
+<p>Det sidst brugte format huskes. Ville du have PNG til en slide og fik Markdown, stod menuen stadig på Markdown. Tjek den, før du bruger en gratis eksport.</p>
+
+<h2 id="print-vs-zip">Udskrift vs. officiel eksport vs. denne Chrome-udvidelse?</h2>
+<p>Udskrift, den officielle Export data og denne Chrome-udvidelse er tre opgaver, der deler ordet eksport. Udskriv → Gem som PDF er én samtale, visuelt, nu. Den officielle ZIP-fil er hele kontoen, JSON, sendt på mail senere. Udvidelsen skriver fem lokale formater med Google-login til kvoten.</p>
+<p>Mente du Claude Code i terminalen, hjælper udskrift ikke: det produkt er ikke en webside. Brug <a href="/da/eksporter-claude-code-samtale/"><code>/export</code></a>. Mente du Claude Desktop-appen, er det heller ikke denne udvidelse – se <a href="/da/eksporter-claude-desktop-chat/">eksportér en Claude Desktop-chat</a>.</p>
+<p>Hvordan du eksporterer en Claude-chat med ZIP-filen i forhold til den orange knap, står i eksportguiden. Hvordan du downloader en Claude-chat med trin for widgetten, står i downloadguiden. Denne side holder sig til PDF og udskrift, så de tre sider forbliver adskilte.</p>
+<div class="callout callout-info">
+  <p><strong>Kvoten gælder ikke udskrift.</strong> Browserens udskrift er fri for vores loft på 3 eksporter. Loftet gælder, når udvidelsen skriver Markdown, JSON, tekst, XML eller PNG. Pro til 3,99 $/md. eller 26,99 $/år fjerner loftet. Paddle håndterer betalingen.</p>
+</div>
+<p>Uafhængig Chrome-udvidelse, ikke tilknyttet Anthropic, PBC. Følg Anthropics servicevilkår. Vi kan ikke love noget om et udskriftsstilark, som Anthropic styrer. Ødelægger en ændring i Claudes brugerflade udskriften, er det deres CSS; eksportér Markdown i stedet.</p>
+
+<h2 id="faq">FAQ: Claude-chat som PDF</h2>
+<h3>Kan jeg downloade en Claude-chat som PDF?</h3>
+<p>Ikke med en indbygget knap på claude.ai og ikke med denne Chrome-udvidelse. Udskriv samtalen (Ctrl/Cmd+P → Gem som PDF) for en visuel PDF, eller eksportér Markdown og konvertér filen, hvis du har brug for et pænere dokument.</p>
+<h3>Hvordan udskriver jeg en Claude-samtale?</h3>
+<p>Åbn chatten på claude.ai, skjul sidebjælken, hvis du kan, tryk på Ctrl+P på Windows eller Cmd+P på Mac, vælg Gem som PDF eller din printer, og udskriv. Lange tråde deler ofte kodeblokke over flere sider. Rul først op for at indlæse ældre beskeder.</p>
+<h3>Kan jeg udskrive en Claude-chat fra min telefon?</h3>
+<p>Mobilbrowsere kan udskrive eller dele som PDF, men layoutet er dårligere end på computeren. Vil du have en fil, du kan genbruge, så åbn den samme chat i Chrome på computeren og eksportér Markdown. Udvidelsen kører ikke på mobilen.</p>
+<h3>Eksporterer Download Claude conversations PDF?</h3>
+<p>Nej. De nuværende formater er Markdown, JSON, ren tekst, XML og PNG. PNG er et billede af tråden, ikke en PDF. Udskrift til PDF er fortsat browserens opgave. Version 1.13.0 kan ikke skrive .pdf.</p>
+<h3>Er en udskrevet PDF det samme som Anthropics Export data?</h3>
+<p>Nej. Udskrift fanger den side, du ser. Anthropics Settings → Privacy → Export data sender en ZIP-fil med JSON for hele kontoen på mail. Ingen af dem er en Markdown-fil pr. chat fra den orange knap.</p>
+<h3>Hvordan gemmer jeg en Claude-chat som PDF med læsbar kode?</h3>
+<p>Start ikke med udskrift, hvis koden er vigtig. Eksportér Markdown, åbn filen i en editor, og udskriv det dokument. Så får du sideskift i en fil, ikke i en chat-brugerflade. Det bruger en af de 3 gratis eksporter, medmindre du har Pro.</p>
+<h3>Kan PNG erstatte PDF?</h3>
+<p>Nej. PNG er et bitmapbillede. PDF fra udskrift er et øjebliksbillede af claude.ai opdelt i sider. Begge ligner billeder af en chat; kun udskrift til PDF er faktisk PDF. Ingen af dem erstatter Markdown til søgning og sammenligning.</p>
+<h3>Bruger udskrift af de 3 gratis eksporter?</h3>
+<p>Nej. Udskrift er browseren. Vores kvote gælder kun filer fra udvidelsen. Google-login kræves ikke for at udskrive claude.ai. Det kræves for at eksportere Markdown, JSON, tekst, XML eller PNG med udvidelsen.</p>
+<h3>Kan jeg downloade mange Claude-chats som PDF på én gang?</h3>
+<p>Ikke som ægte PDF'er. Export All kan skrive mange Markdown- eller PNG-filer; konvertér Markdown bagefter, hvis du har brug for PDF'er. Masseeksport tæller stadig hver fil mod de 3 gratis eksporter. Se <a href="/da/eksporter-alle-claude-chats/">masseeksport med Export All</a>.</p>
+<h3>Kan jeg udskrive en Claude Code-session som PDF?</h3>
+<p>Ikke via udskrift fra claude.ai. Claude Code er en terminal. Brug <code>/export</code>, og udskriv tekstfilen fra en editor, hvis du har brug for papir. Guide: <a href="/da/eksporter-claude-code-samtale/">eksport fra Claude Code</a>.</p>
+<h3>Ændrer Team eller Enterprise PDF-eksporten?</h3>
+<p>Der dukker ingen ekstra PDF-knap op i de abonnementer. Kan du åbne chatten i Chrome, kan du udskrive den og bruge udvidelsens fem formater. Abonnementets navn tilføjer ikke .pdf til vores menu.</p>
+<h3>Kommer PDF på listen over formater?</h3>
+<p>Ikke i 1.13.0. Tilføjer vi det, står det på denne side samme dag. Indtil da udskriver du eller konverterer Markdown. Vi vil hellere nævne manglen end opfinde en funktion til at downloade som PDF.</p>
+</article>
+</main>
+<section class="final-cta page-cta" aria-label="Installér">
+  <div class="wrap">
+    <div class="final-cta-panel">
+      <p class="final-kicker">Download Claude conversations</p>
+      <h2>Har du brug for en fil, ikke en udskrift?</h2>
+      <p>Eksportér claude.ai-chats som Markdown, JSON, tekst, XML eller PNG – lokalt, direkte i Chrome. PDF er stadig udskrift eller en konvertering fra Markdown.</p>
+      <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=da-pdf" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Tilføj til Chrome</a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="logo" href="/da/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
+      <p class="legal-note">Chrome-udvidelse til at downloade Claude.ai-chats som Markdown, JSON, ren tekst, XML eller PNG. Bedømt 5,0 i Chrome Web Store.</p>
+    </div>
+    <div>
+      <h2>Installér</h2>
+      <a class="install-link" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=da-footer" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Chrome-udvidelse</a>
+    </div>
+    <div>
+      <h2>Produkt</h2>
+      <a href="/da/funktioner/">Funktioner</a>
+      <a href="/da/formater/">Formater</a>
+      <a href="/da/eksporter-alle-claude-chats/">Eksportér alle chats</a>
+      <a href="/da/saadan-virker-det/">Sådan virker det</a>
+    </div>
+    <div>
+      <h2>Guides</h2>
+      <a href="/da/download-claude-chat/">Download Claude-chat</a>
+      <a href="/da/saadan-eksporterer-du-claude-chat/">Sådan eksporterer du en Claude-chat</a>
+      <a href="/da/eksporter-claude-chat/">Eksportér Claude-chat</a>
+      <a href="/da/claude-samtale-extractor/">Claude samtale-extractor</a>
+      <a href="/da/eksporter-claude-code-samtale/">Eksportér Claude Code-samtale</a>
+      <a href="/da/claude-chat-som-pdf/">Print / PDF</a>
+      <a href="/da/eksporter-claude-desktop-chat/">Eksportér Claude Desktop-chat</a>
+      <a href="/da/eksporter-claude-samtale/">Eksportér Claude-samtale</a>
+      <a href="/da/gem-claude-samtale/">Gem Claude-samtale</a>
+      <a href="/da/download-claude-samtale/">Download Claude-samtale</a>
+    </div>
+    <div>
+      <h2>Juridisk</h2>
+      <a href="/da/om-os/">Om os</a>
+      <a href="/da/om-os/#contact">Kontakt</a>
+      <a href="/privacy/" hreflang="en">Privatliv (engelsk)</a>
+      <a href="/terms/" hreflang="en">Vilkår (engelsk)</a>
+      <a href="/refund/" hreflang="en">Refusion (engelsk)</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Download Claude conversations. Alle rettigheder forbeholdes.</div>
+    <div>
+      <a href="/privacy/" hreflang="en">Privatlivspolitik (engelsk)</a>
+      <a href="/terms/" hreflang="en">Servicevilkår (engelsk)</a>
+      <a href="/refund/" hreflang="en">Refusion (engelsk)</a>
+    </div>
+  </div>
+  <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/download-claude-chat-as-pdf/" hreflang="en" lang="en">English</a> <a href="/de/claude-chat-als-pdf/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/conversation-claude-en-pdf/" hreflang="fr" lang="fr">Français</a> <a href="/nl/claude-chat-als-pdf/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/claude-chatt-som-pdf/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/claude-chat-som-pdf/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/claude-chat-som-pdf/" hreflang="da" lang="da">Dansk</a> <a href="/fi/claude-keskustelu-pdf/" hreflang="fi" lang="fi">Suomi</a> <a href="/ja/download-claude-chat-as-pdf/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/download-claude-chat-as-pdf/" hreflang="ko" lang="ko">한국어</a> <a href="/he/download-claude-chat-as-pdf/" hreflang="he" lang="he">עברית</a> <a href="/ar/download-claude-chat-as-pdf/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
+  <p class="disclaimer">Chats behandles i din browser · Google-login til kvoten · Ikke tilknyttet Anthropic, PBC. Claude er et varemærke tilhørende Anthropic. Uafhængig Chrome-udvidelse – ikke et officielt Anthropic-produkt. Support: <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

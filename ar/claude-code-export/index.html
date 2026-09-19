@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>تصدير محادثة Claude Code — ‏/export أم إضافة claude.ai</title>
+  <meta name="description" content="تصدير محادثة Claude Code يتم بالأمر /export أو بملفات JSONL في ~/.claude/projects. إضافة Chrome المجانية هذه تنزّل محادثات claude.ai فقط، لا جلسات الطرفية.">
+  <link rel="canonical" href="https://chat-downloader.com/ar/claude-code-export/">
+  <!-- i18n:head -->
+  <link rel="alternate" hreflang="en" href="https://chat-downloader.com/claude-code-export/">
+  <link rel="alternate" hreflang="de" href="https://chat-downloader.com/de/claude-code-chat-exportieren/">
+  <link rel="alternate" hreflang="fr" href="https://chat-downloader.com/fr/exporter-conversation-claude-code/">
+  <link rel="alternate" hreflang="nl" href="https://chat-downloader.com/nl/claude-code-gesprek-exporteren/">
+  <link rel="alternate" hreflang="sv" href="https://chat-downloader.com/sv/exportera-claude-code-konversation/">
+  <link rel="alternate" hreflang="nb" href="https://chat-downloader.com/nb/eksportere-claude-code-samtale/">
+  <link rel="alternate" hreflang="da" href="https://chat-downloader.com/da/eksporter-claude-code-samtale/">
+  <link rel="alternate" hreflang="fi" href="https://chat-downloader.com/fi/claude-code-keskustelun-vienti/">
+  <link rel="alternate" hreflang="ja" href="https://chat-downloader.com/ja/claude-code-export/">
+  <link rel="alternate" hreflang="ko" href="https://chat-downloader.com/ko/claude-code-export/">
+  <link rel="alternate" hreflang="he" href="https://chat-downloader.com/he/claude-code-export/">
+  <link rel="alternate" hreflang="ar" href="https://chat-downloader.com/ar/claude-code-export/">
+  <link rel="alternate" hreflang="x-default" href="https://chat-downloader.com/claude-code-export/">
+  <meta property="og:locale" content="ar_AE">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="sv_SE">
+  <meta property="og:locale:alternate" content="nb_NO">
+  <meta property="og:locale:alternate" content="da_DK">
+  <meta property="og:locale:alternate" content="fi_FI">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <meta property="og:locale:alternate" content="he_IL">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;700&amp;display=swap" rel="stylesheet">
+  <!-- /i18n:head -->
+  <meta property="og:title" content="تصدير محادثة Claude Code — ‏/export أم إضافة claude.ai">
+  <meta property="og:description" content="تصدير محادثة Claude Code يتم بالأمر /export أو بملفات JSONL في ~/.claude/projects. إضافة Chrome المجانية هذه تنزّل محادثات claude.ai فقط، لا جلسات الطرفية.">
+  <meta property="og:url" content="https://chat-downloader.com/ar/claude-code-export/">
+  <meta property="og:image" content="https://chat-downloader.com/assets/widget-guide.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chat Downloader">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="تصدير محادثة Claude Code — ‏/export أم إضافة claude.ai">
+  <meta name="twitter:description" content="تصدير محادثة Claude Code يتم بالأمر /export أو بملفات JSONL في ~/.claude/projects. إضافة Chrome المجانية هذه تنزّل محادثات claude.ai فقط، لا جلسات الطرفية.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME1YXGZKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GME1YXGZKR');
+  </script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"كيف أصدّر محادثة Claude Code؟","acceptedAnswer":{"@type":"Answer","text":"في طرفية Claude Code اكتب /export (مع اسم ملف اختياريًا) لحفظ نص منسّق للجلسة، أو انسخ ملف JSONL من ~/.claude/projects على macOS وLinux، أو من %USERPROFILE%\\.claude\\projects على Windows. توثيق الجلسات لدى Anthropic يشرح مربع الحوار الحالي."}},{"@type":"Question","name":"هل تنزّل إضافة Chrome هذه محادثات Claude Code؟","acceptedAnswer":{"@type":"Answer","text":"لا. تعمل Download Claude conversations على claude.ai في Chrome فقط. لا تستطيع قراءة جلسات الطرفية ولا نصوص JSONL ولا تنفيذ الأمر /export. تصدير Claude Code يبقى داخل واجهة سطر الأوامر."}},{"@type":"Question","name":"أين يخزّن Claude Code سجل المحادثات؟","acceptedAnswer":{"@type":"Answer","text":"نصوص الجلسات ملفات JSONL داخل ~/.claude/projects/<encoded-working-directory>/، وتحمل أسماؤها معرّف الجلسة. قد يتغير هذا الهيكل. استخدم /export إذا أردت ملفًا مقروءًا بدل تحليل JSONL. ويمكن للمتغير CLAUDE_CONFIG_DIR نقل المجلد بالكامل."}},{"@type":"Question","name":"كيف أنزّل محادثة Claude Code بصيغة Markdown؟","acceptedAnswer":{"@type":"Answer","text":"الأمر /export في Claude Code ينتج نصًا عاديًا، لا ملف Markdown كالذي تنتجه هذه الإضافة. إذا احتجت Markdown تحديدًا فصدّر نسخة العمل الموجودة على claude.ai باستخدام Download Claude conversations، أو حوّل نص /export بنفسك. نحن لا نحوّل JSONL إلى Markdown."}},{"@type":"Question","name":"كيف أنزّل محادثة من Claude.ai بدلًا من ذلك؟","acceptedAnswer":{"@type":"Answer","text":"ثبّت إضافة Chrome المجانية، وافتح المحادثة على claude.ai، واستخدم الزر البرتقالي — أو «Export All» (تصدير الكل) للسجل الكامل. راجع دليل تنزيل محادثة Claude. تحصل على 3 عمليات تصدير مجانية، واشتراك Pro بسعر $3.99 شهريًا أو $26.99 سنويًا."}},{"@type":"Question","name":"هل /export هو نفسه خيار Export data الرسمي؟","acceptedAnswer":{"@type":"Answer","text":"لا. /export يخص جلسة Claude Code الحالية. أما Settings → Privacy → Export data فيرسل إليك بالبريد ملف ZIP بصيغة JSON لحساب Anthropic كله. منتجان مختلفان، وملفات مختلفة، وأوقات انتظار مختلفة."}},{"@type":"Question","name":"هل يمكنني تحليل ملفات JSONL الخاصة بـClaude Code باستخدام jq؟","acceptedAnswer":{"@type":"Answer","text":"نعم، مع التحفظ الذي تنشره Anthropic: بنية الأسطر داخلية وقابلة للتغيير. فضّل /export أو claude -p --output-format json إذا احتجت صيغة ثابتة. وإذا حلّلت JSONL على أي حال، فثبّت إصدار واجهة سطر الأوامر."}},{"@type":"Question","name":"هل يعمل تصدير Claude Code على Windows؟","acceptedAnswer":{"@type":"Answer","text":"نعم. /export أمر في واجهة سطر الأوامر. تُحفظ النصوص على القرص داخل %USERPROFILE%\\.claude\\projects ما لم تضبط CLAUDE_CONFIG_DIR. ومع ذلك لا تعمل إضافة Chrome هذه داخل تلك الطرفية."}},{"@type":"Question","name":"هل Claude Code هو نفسه Claude Desktop؟","acceptedAnswer":{"@type":"Answer","text":"لا. Claude Code وكيل برمجة يعمل في الطرفية. Claude Desktop تطبيق للمحادثة. claude.ai هو الموقع. والموقع وحده يعمل مع هذه الإضافة. ملاحظات تصدير تطبيق سطح المكتب: Claude Desktop."}},{"@type":"Question","name":"هل ستدعم هذه الإضافة الأمر /export يومًا ما؟","acceptedAnswer":{"@type":"Answer","text":"ليس في الإصدار 1.13.0. نطاق المنتج هو claude.ai: خمس صيغ، وملفات محلية، وتسجيل دخول Google لاحتساب الحصة. إذا تغيّر هذا النطاق فستذكر هذه الصفحة ذلك. وحتى ذلك الحين استخدم واجهة سطر الأوامر من Anthropic لتصدير Claude Code."}},{"@type":"Question","name":"هل يتضمن /export مخرجات الأدوات؟","acceptedAnswer":{"@type":"Answer","text":"تصف Anthropic الأمر /export بأنه يعرض الرسائل ومخرجات الأدوات كنص مقروء. هذا نصّها هي، لا نتاج أداة تحليل لدينا. لمعرفة المحتوى الحالي بدقة، شغّل /export على إصدارك واقرأ الملف — فالتوثيق قد يتأخر عن الإصدارات."}},{"@type":"Question","name":"هل يمكنني تصدير جلسات Claude Code دفعة واحدة؟","acceptedAnswer":{"@type":"Answer","text":"ليس عبر «Export All» في هذه الإضافة. التصدير الجماعي في صفحة التصفح لدينا خاص بـclaude.ai فقط. لعدد كبير من جلسات سطر الأوامر، انسخ مجلد projects أو شغّل /export لكل جلسة. لا يوجد تصدير جماعي بالزر البرتقالي لملفات JSONL."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"تصدير محادثة Claude Code أم claude.ai: اختر المسار الصحيح","description":"تصدير محادثة Claude Code يتم بالأمر /export أو بملفات JSONL في ~/.claude/projects. إضافة Chrome المجانية هذه تنزّل محادثات claude.ai فقط، لا جلسات الطرفية.","url":"https://chat-downloader.com/ar/claude-code-export/","dateModified":"2026-09-10","datePublished":"2026-09-10","inLanguage":"ar","author":{"@type":"Organization","name":"Chat Downloader","url":"https://chat-downloader.com/ar/"},"publisher":{"@type":"Organization","name":"Chat Downloader","url":"https://chat-downloader.com/ar/"},"mainEntityOfPage":"https://chat-downloader.com/ar/claude-code-export/"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"الرئيسية","item":"https://chat-downloader.com/ar/"},{"@type":"ListItem","position":2,"name":"تصدير Claude Code","item":"https://chat-downloader.com/ar/claude-code-export/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">انتقل إلى المحتوى</a>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a class="logo" href="/ar/">
+        <img src="/assets/icon.svg" alt="">
+        <span>Download Claude conversations</span>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="/ar/how-to-download-claude-chat/">طريقة التنزيل</a><a href="/ar/how-to-export-claude-chat/">التصدير</a><a href="/ar/bulk/">كل المحادثات</a><a href="/ar/formats/">الصيغ</a><a href="/ar/#faq">الأسئلة الشائعة</a>
+        <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=ar-claude-code-export" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> إضافة إلى Chrome</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <!-- i18n:switch --><details class="lang-switch"><summary aria-label="اللغة">ar</summary><ul><li><a href="/claude-code-export/" hreflang="en" lang="en">English</a></li><li><a href="/de/claude-code-chat-exportieren/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/exporter-conversation-claude-code/" hreflang="fr" lang="fr">Français</a></li><li><a href="/nl/claude-code-gesprek-exporteren/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/sv/exportera-claude-code-konversation/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="/nb/eksportere-claude-code-samtale/" hreflang="nb" lang="nb">Norsk</a></li><li><a href="/da/eksporter-claude-code-samtale/" hreflang="da" lang="da">Dansk</a></li><li><a href="/fi/claude-code-keskustelun-vienti/" hreflang="fi" lang="fi">Suomi</a></li><li><a href="/ja/claude-code-export/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/ko/claude-code-export/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/he/claude-code-export/" hreflang="he" lang="he">עברית</a></li><li><a href="/ar/claude-code-export/" hreflang="ar" lang="ar" aria-current="true">العربية</a></li></ul></details><!-- /i18n:switch -->
+      <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=ar-claude-code-export" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> إضافة إلى Chrome</a>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="القائمة">☰</button>
+    </div>
+  </div>
+</header>
+<nav class="crumbs" aria-label="مسار التنقل"><a href="/ar/">الرئيسية</a> / تصدير Claude Code</nav>
+<main id="main">
+<article class="band prose">
+<p class="article-meta">آخر تحديث <time datetime="2026-09">سبتمبر 2026</time> · الإضافة 1.13.0</p>
+<h1 class="page-h1">تصدير محادثة Claude Code أم claude.ai: اختر المسار الصحيح</h1>
+<p class="lead">تصدير محادثة Claude Code مهمة تتم في الطرفية: اكتب /export داخل الجلسة، أو انسخ ملف JSONL من ~/.claude/projects. تنزيل محادثة Claude Code لا يتم بالزر البرتقالي الذي يتحدث عنه هذا الموقع. فإضافة Download Claude conversations تحفظ فقط المحادثات التي تفتحها على claude.ai في Chrome. أما Desktop وCode فمنتجان منفصلان. (يبحث كثيرون بالإنجليزية أيضًا عن «claude code export».)</p>
+<aside class="trust-badge" aria-label="تقييم Chrome Web Store">
+  <span class="trophy" aria-hidden="true">🏆</span>
+  <div>
+    <strong>Download Claude conversations — تقييم 5.0 في Chrome Web Store</strong>
+    <span>2026 — إضافة Chrome مجانية لحفظ محادثات claude.ai بصيغ Markdown وJSON والنص العادي وXML وPNG</span>
+  </div>
+</aside>
+<nav class="toc" aria-label="في هذه الصفحة">
+  <p>في هذه الصفحة</p>
+  <ol>
+    <li><a href="#what-is-export">ما هو تصدير Claude Code في الطرفية؟</a></li>
+    <li><a href="#jsonl-disk">كيف أنزّل محادثة Claude Code من القرص؟</a></li>
+    <li><a href="#extension-limit">هل يعمل تصدير Claude Code مع هذه الإضافة؟</a></li>
+    <li><a href="#where-stored">أين يخزّن Claude Code سجل المحادثات؟</a></li>
+    <li><a href="#claude-ai-instead">كيف أنزّل محادثة Claude من claude.ai بدلًا من ذلك؟</a></li>
+    <li><a href="#vs-official-zip">تصدير Claude Code أم خيار Export data الرسمي من Anthropic؟</a></li>
+    <li><a href="#three-surfaces">التصدير من Claude Code أم Desktop أم claude.ai؟</a></li>
+    <li><a href="#faq">الأسئلة الشائعة: تصدير Claude Code</a></li>
+  </ol>
+</nav>
+
+<h2 id="what-is-export">ما هو تصدير Claude Code في الطرفية؟</h2>
+<p>تصدير Claude Code هو الأمر <code>/export</code> داخل جلسة تفاعلية في واجهة سطر الأوامر. يصف توثيق Anthropic قائمة تتيح نسخ المحادثة الحالية أو حفظها في ملف نصي عادي، مع عرض الرسائل ومخرجات الأدوات كنص مقروء. وإذا مرّرت اسم ملف، تتخطى القائمة ويُكتب ذلك الملف مباشرة.</p>
+<p>هذا ليس Markdown من claude.ai، ولا JSON من إضافة Chrome هذه، ولا ملف PDF. إنه نص منسّق للجلسة ليقرأه إنسان. وتقول Anthropic إن سجل JSONL المحفوظ على القرص صيغة داخلية مختلفة مخصصة للمنتج نفسه، وليست واجهة برمجية عامة لك.</p>
+<pre><code>/export</code></pre>
+<p>لتخطي السؤال وكتابة ملف باسم محدد في مجلد العمل الحالي:</p>
+<pre><code>/export my-session</code></pre>
+<p>توثيق الجلسات لدى Anthropic هو المرجع الموثوق للخيارات وأسماء الملفات، فهي تتغير بين إصدارات Claude Code. اعتبر المدونات المجتمعية مصدرًا ثانويًا. وإذا لم يطابق نص مربع حوار <code>/export</code> ما تراه، فواجهة سطر الأوامر لديك إصدار مختلف — استخدم المساعدة داخل المنتج، لا لقطة شاشة من 2025.</p>
+<p>للسكربتات، تشير Anthropic إلى واجهات أخرى: <code>claude -p</code> مع <code>--output-format json</code> أو <code>stream-json</code>، أو الاستئناف بمعرّف الجلسة، أو الخطافات (hooks) التي تستقبل <code>transcript_path</code>، أو Agent SDK. هذه واجهات للمطورين في Claude Code، وليست إضافة Chrome التي يقدمها هذا الموقع.</p>
+<div class="callout callout-info">
+  <p><strong>مقروء أم منظَّم؟</strong> <code>/export</code> هو النص المخصص للبشر. وملفات JSONL في مجلد projects هي السجل. أما JSON الذي تنتجه إضافة Chrome فهو شكل ثالث، يُبنى فقط من صفحة على claude.ai. لا تكتب أداة تحليل واحدة للأشكال الثلاثة.</p>
+</div>
+
+<h2 id="jsonl-disk">كيف أنزّل محادثة Claude Code من القرص؟</h2>
+<p>لتنزيل محادثة Claude Code من القرص: انسخ ملف JSONL الخاص بالجلسة من مجلد projects، أو شغّل <code>/export</code> للحصول على نص مقروء. المسار الافتراضي على macOS وLinux داخل <code>~/.claude/projects/</code>، وعلى Windows هو <code>%USERPROFILE%\.claude\projects</code>. أسماء الملفات هي معرّفات الجلسات.</p>
+<p>اسم مجلد المشروع هو مسار مجلد العمل بعد استبدال كل الأحرف غير الأبجدية الرقمية بشَرطات. وتختصر Anthropic الأسماء الطويلة جدًا وتضيف إليها قيمة تجزئة (hash) كي يبقى اسم المجلد ضمن حدود نظام الملفات. إذا لم تجد المجلد، فأنت شغّلت Claude Code من مجلد عمل غير الذي تظنه.</p>
+<p>كل سطر في JSONL كائن JSON يمثل رسالة أو استخدام أداة أو بيانات وصفية. وتوضح Anthropic أن صيغة هذه الإدخالات داخلية وتتغير بين الإصدارات، لذا قد تتعطل السكربتات التي تحلل هذه الملفات مع أي إصدار جديد من Claude Code. فضّل <code>/export</code> أو واجهات السكربتات الموثقة إذا احتجت شيئًا مستقرًا.</p>
+<p>مكان التخزين قابل للتغيير. <code>CLAUDE_CONFIG_DIR</code> ينقل مجلد الإعدادات بعيدًا عن <code>~/.claude</code>. و<code>CLAUDE_CODE_PROJECT_DIR_NAME</code> يحدد اسم مجلد المشروع عند استخدامه مع ذلك المجلد (في Claude Code v2.1.234 أو أحدث، بحسب Anthropic). ويغيّر <code>cleanupPeriodDays</code> في settings.json مدة الاحتفاظ الافتراضية. لا شيء من هذه الإعدادات من ميزات Download Claude conversations.</p>
+<p>إذن، لتنزيل ملفات محادثات Claude Code كنسخة احتياطية: انسخ المجلد، أو صدّر النصوص بالأمر <code>/export</code> بشكل دوري. لن يضيف هذا الموقع زرًا لـ«استيراد JSONL»، ونحن لا نقرأ مجلدك الشخصي.</p>
+
+<h2 id="extension-limit">هل يعمل تصدير Claude Code مع هذه الإضافة؟</h2>
+<p>لا. تصدير محادثة Claude Code لا يعمل مع Download Claude conversations. فإضافة Chrome تُحقن داخل claude.ai، ولا ترى الطرفية، ولا تستطيع تشغيل <code>/export</code>، ولا فتح ملفات JSONL. إذا كنت تبحث عن طريقة لتنزيل محادثة Claude Code، فالتزم بخطوات سطر الأوامر في هذه الصفحة.</p>
+<p>يصل الناس إلى هنا لأن Google يجمع بين «Claude» و«export» في نتائج واحدة. لكن صفحة الإضافة في المتجر تخص claude.ai فقط. وتثبيت الإضافة لن يضع زرًا برتقاليًا في iTerm أو Ghostty أو طرفية VS Code أو غلاف Claude Code لسطح المكتب.</p>
+<p>وإذا كنت تحتفظ أيضًا بمحادثة موازية على claude.ai للمهمة البرمجية نفسها، فيمكن حفظ تلك المحادثة بالإضافة. لكن السجلين لا يُدمجان. واستدعاءات الأدوات التي جرت في سطر الأوامر فقط لن تظهر في تصدير الويب ما لم تكن قد لصقتها هناك.</p>
+<div class="expert-quote">
+  <blockquote>تصلنا رسالة الدعم نفسها كل أسبوع: شخص ثبّت إضافة Chrome وتوقّع أن يظهر /export. نحن نحلّل claude.ai فقط. Claude Code يأتي أصلًا مع /export وJSONL. تغليف واجهة سطر الأوامر سيكون منتجًا مختلفًا، ولم نطلقه.</blockquote>
+  <cite><strong>فريق Download Claude conversations</strong> — مطوّرو إضافة Chrome ‏Claude Chat Downloader</cite>
+</div>
+<p>تقييم 5.0 في Chrome Web Store يخص إضافة claude.ai تلك، لا إضافة لـClaude Code. وعمليات التصدير المجانية الثلاث واشتراك Pro بسعر $3.99 شهريًا أو $26.99 سنويًا تنطبق فقط على التصدير من claude.ai، ولا تُحتسب على <code>/export</code>.</p>
+
+<h2 id="where-stored">أين يخزّن Claude Code سجل المحادثات؟</h2>
+<p>يخزّن Claude Code سجل المحادثات كنصوص JSONL داخل مجلد projects في مجلد الإعدادات. المسار الافتراضي على macOS وLinux: <code>~/.claude/projects/&lt;encoded-cwd&gt;/&lt;session-id&gt;.jsonl</code>، وعلى Windows: <code>%USERPROFILE%\.claude\projects</code>. قد تغيّر Anthropic هذا الهيكل؛ راجع توثيق الجلسات الحالي إذا لم تجد مسارًا ما على القرص.</p>
+<p>الاستئناف فعل مختلف عن التصدير. <code>claude --continue</code> و<code>claude --resume</code> يعيدان تحميل الجلسة لتواصل العمل. أما <code>/export</code> فيكتب نسخة يمكنك تركها في git أو إرسالها بالبريد. الأول يستعيد السياق، والثاني يمنحك سجلًا تحمله معك. تغطي صفحة الجلسات لدى Anthropic وضع الأذونات عند الاستئناف، والضغط/التلخيص، وسلوك أداة الاختيار — ولا شيء من ذلك يخص هذه الإضافة.</p>
+<p>بحسب Anthropic، يحتفظ كل من تطبيق سطح المكتب وClaude Code على الويب وإضافة VS Code بسجل جلسات خاص به. المسارات في هذا الدليل تخص واجهة سطر الأوامر. لا تفترض أن نص جلسة Cowork في تطبيق سطح المكتب موجود في شجرة JSONL نفسها التي تستخدمها من الطرفية.</p>
+<div class="callout callout-warn">
+  <p><strong>لا تعامل JSONL كبنية عامة.</strong> تقول Anthropic إن صيغة الأسطر تتغير. وإذا حللتها على أي حال، فثبّت إصدار Claude Code وتوقّع الأعطال. <code>/export</code> هو الطريقة المستقرة للحصول على محادثة Claude Code مقروءة.</p>
+</div>
+<p>متغيرات بيئة مثل <code>CLAUDE_CODE_SKIP_PROMPT_HISTORY</code> قد تمنع كتابة النصوص. إذا كان مجلد projects فارغًا، فتحقق مما إذا كنت قد عطّلت الحفظ، أو وجّهت <code>CLAUDE_CONFIG_DIR</code> إلى مكان آخر، أو لم تشغّل أي جلسة تفاعلية في ذلك المجلد أصلًا.</p>
+
+<h2 id="claude-ai-instead">كيف أنزّل محادثة Claude من claude.ai بدلًا من ذلك؟</h2>
+<p>لتنزيل محادثة Claude من claude.ai: ثبّت Download Claude conversations، وافتح المحادثة في Chrome، وانقر الزر البرتقالي بجوار مربع الرسائل، ثم اختر Markdown أو JSON أو نص عادي أو XML أو PNG. هذا هو منتج المتصفح، وهو ليس تصدير Claude Code. الخطوات بالتفصيل: <a href="/ar/how-to-download-claude-chat/">كيف تنزّل محادثة Claude</a>.</p>
+<p>لتنزيل سجل claude.ai كاملًا كملفات منفصلة تستخدم «Export All» (تصدير الكل) في صفحة التصفح، لا <code>/export</code>. كل ملف يُحتسب من عمليات التصدير المجانية الثلاث ما لم تكن مشتركًا في Pro. الدليل: <a href="/ar/bulk/">التصدير الجماعي Export All</a>. الصيغ: <a href="/ar/formats/">الصيغ</a>.</p>
+<p>تسجيل الدخول بحساب Google مطلوب عند أول تصدير من claude.ai كي نحتسب الحصة ونستعيد اشتراك Pro. تُنشأ الملفات محليًا. تتولى Paddle فوترة Pro بسعر $3.99 شهريًا أو $26.99 سنويًا. لا شيء من ذلك ينطبق على <code>/export</code> في الطرفية.</p>
+<p>إذا بدأ عملك في Claude Code ثم لصقت ملخصًا في claude.ai، فنزّل محادثة الويب كملاحظات، واحتفظ بـ<code>/export</code> للسجل الحقيقي من سطر الأوامر. ملفان واضحان أفضل من ملف واحد مشوّش.</p>
+
+<h2 id="vs-official-zip">تصدير Claude Code أم خيار Export data الرسمي من Anthropic؟</h2>
+<p>تصدير Claude Code (<code>/export</code> أو JSONL) يخص جلسة طرفية واحدة. أما Export data الرسمي فهو Settings → Privacy → Export data على claude.ai (قد تظهر التسميات مترجمة إذا كانت لغة claude.ai مضبوطة على العربية): ملف ZIP بصيغة JSON لحساب Anthropic يصل بعد تأخير. ليسا الأرشيف نفسه، وملف ZIP لن يغني عن <code>/export</code>.</p>
+<p>ظهور جلسة معينة من Claude Code في ملف ZIP الخاص بالحساب يعتمد على طريقة تخزين Anthropic لذلك المنتج، لا على هذه الإضافة. اعتبر ملف ZIP نسخة احتياطية لحساب الويب ما لم يذكر توثيق الخصوصية الحالي لدى Anthropic غير ذلك. نحن لا نضيف جلسات سطر الأوامر إلى ذلك الملف.</p>
+<p>كيفية تصدير محادثة Claude من الموقع، بما في ذلك المقارنة بين ملف ZIP والإضافة، موثّقة هنا: <a href="/ar/how-to-export-claude-chat/">كيف تصدّر محادثة Claude</a>. الطباعة إلى PDF تخص صفحات الويب ولا تنطبق على واجهة الطرفية. راجع <a href="/ar/download-claude-chat-as-pdf/">الطباعة / PDF</a> فقط عندما تكون المحادثة في المتصفح.</p>
+<div class="table-wrap">
+  <table>
+    <caption>تصدير Claude Code مقارنة بطرق حفظ Claude الأخرى</caption>
+    <thead>
+      <tr>
+        <th scope="col">ما تستخدمه</th>
+        <th scope="col">طريقة التصدير</th>
+        <th scope="col">إضافة Chrome هذه</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Claude Code في الطرفية</th>
+        <td><code>/export</code> أو JSONL على القرص</td>
+        <td>لا تعمل</td>
+      </tr>
+      <tr>
+        <th scope="row">claude.ai في Chrome</th>
+        <td>الزر البرتقالي أو <a href="/ar/bulk/">Export All</a></td>
+        <td>هذا هو الغرض منها</td>
+      </tr>
+      <tr>
+        <th scope="row">نسخة احتياطية لحساب Anthropic</th>
+        <td>Settings → Privacy → Export data</td>
+        <td>مهمة مختلفة — ملف ZIP بصيغة JSON يصل بعد تأخير</td>
+      </tr>
+      <tr>
+        <th scope="row">السكربتات / CI</th>
+        <td><code>claude -p</code> بصيغة JSON، أو SDK، أو transcript_path</td>
+        <td>لا تغلّف واجهة سطر الأوامر</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h2 id="three-surfaces">التصدير من Claude Code أم Desktop أم claude.ai؟</h2>
+<p>Claude Code وClaude Desktop وclaude.ai ثلاث واجهات مختلفة. تصدير Claude Code يتم بـ<code>/export</code> وJSONL. وDesktop تطبيق لا يحتوي على الزر البرتقالي الخاص بهذه الإضافة. أما claude.ai في Chrome فهو المكان الوحيد الذي تعمل فيه Download Claude conversations. الخلط بين هذه الأسماء هو ما يجعل عمليات التصدير تفشل دون أن تلاحظ.</p>
+<p>Claude Desktop: إذا كانت المحادثة متزامنة مع حساب Anthropic نفسه، فافتحها على claude.ai وصدّرها من هناك. وإذا كانت موجودة في نافذة Desktop فقط، فانسخها والصقها أو انتظر Export data الرسمي. الدليل: <a href="/ar/export-claude-desktop-chat/">تصدير محادثة Claude Desktop</a>.</p>
+<p>لوحة Claude Code في VS Code أقرب إلى واجهة سطر الأوامر منها إلى claude.ai. لا تتوقع أن يُحقن سكربت المحتوى الخاص بنا في ذلك العرض. استخدم <code>/export</code> من الجلسة التي تحتوي فعلًا على الرسائل.</p>
+<p>إضافة Chrome مستقلة، غير تابعة لشركة Anthropic, PBC. ‏Claude علامة تجارية لـAnthropic. التزم بشروط الخدمة الخاصة بها. لا يمكننا تقديم استشارة قانونية بشأن نسخ مخرجات أدوات تتضمن شيفرة مملوكة؛ فهذا شأن بينك وبين جهة عملك وAnthropic.</p>
+
+<h2 id="faq">الأسئلة الشائعة: تصدير Claude Code</h2>
+<h3>كيف أصدّر محادثة Claude Code؟</h3>
+<p>في طرفية Claude Code اكتب <code>/export</code> (مع اسم ملف اختياريًا) لحفظ نص منسّق للجلسة، أو انسخ ملف JSONL من <code>~/.claude/projects</code> على macOS وLinux، أو من <code>%USERPROFILE%\.claude\projects</code> على Windows. توثيق الجلسات لدى Anthropic يشرح مربع الحوار الحالي.</p>
+<h3>هل تنزّل إضافة Chrome هذه محادثات Claude Code؟</h3>
+<p>لا. تعمل Download Claude conversations على claude.ai في Chrome فقط. لا تستطيع قراءة جلسات الطرفية ولا نصوص JSONL ولا تنفيذ الأمر <code>/export</code>. تصدير Claude Code يبقى داخل واجهة سطر الأوامر.</p>
+<h3>أين يخزّن Claude Code سجل المحادثات؟</h3>
+<p>نصوص الجلسات ملفات JSONL داخل <code>~/.claude/projects/&lt;encoded-working-directory&gt;/</code>، وتحمل أسماؤها معرّف الجلسة. قد يتغير هذا الهيكل. استخدم <code>/export</code> إذا أردت ملفًا مقروءًا بدل تحليل JSONL. ويمكن للمتغير <code>CLAUDE_CONFIG_DIR</code> نقل المجلد بالكامل.</p>
+<h3>كيف أنزّل محادثة Claude Code بصيغة Markdown؟</h3>
+<p>الأمر <code>/export</code> في Claude Code ينتج نصًا عاديًا، لا ملف Markdown كالذي تنتجه هذه الإضافة. إذا احتجت Markdown تحديدًا فصدّر نسخة العمل الموجودة على claude.ai باستخدام Download Claude conversations، أو حوّل نص <code>/export</code> بنفسك. نحن لا نحوّل JSONL إلى Markdown.</p>
+<h3>كيف أنزّل محادثة من Claude.ai بدلًا من ذلك؟</h3>
+<p>ثبّت إضافة Chrome المجانية، وافتح المحادثة على claude.ai، واستخدم الزر البرتقالي — أو «Export All» (تصدير الكل) للسجل الكامل. راجع <a href="/ar/how-to-download-claude-chat/">كيف تنزّل محادثة Claude</a>. تحصل على 3 عمليات تصدير مجانية، واشتراك Pro بسعر $3.99 شهريًا أو $26.99 سنويًا.</p>
+<h3>هل /export هو نفسه خيار Export data الرسمي؟</h3>
+<p>لا. <code>/export</code> يخص جلسة Claude Code الحالية. أما Settings → Privacy → Export data فيرسل إليك بالبريد ملف ZIP بصيغة JSON لحساب Anthropic كله. منتجان مختلفان، وملفات مختلفة، وأوقات انتظار مختلفة.</p>
+<h3>هل يمكنني تحليل ملفات JSONL الخاصة بـClaude Code باستخدام jq؟</h3>
+<p>نعم، مع التحفظ الذي تنشره Anthropic: بنية الأسطر داخلية وقابلة للتغيير. فضّل <code>/export</code> أو <code>claude -p --output-format json</code> إذا احتجت صيغة ثابتة. وإذا حلّلت JSONL على أي حال، فثبّت إصدار واجهة سطر الأوامر.</p>
+<h3>هل يعمل تصدير Claude Code على Windows؟</h3>
+<p>نعم. <code>/export</code> أمر في واجهة سطر الأوامر. تُحفظ النصوص على القرص داخل <code>%USERPROFILE%\.claude\projects</code> ما لم تضبط <code>CLAUDE_CONFIG_DIR</code>. ومع ذلك لا تعمل إضافة Chrome هذه داخل تلك الطرفية.</p>
+<h3>هل Claude Code هو نفسه Claude Desktop؟</h3>
+<p>لا. Claude Code وكيل برمجة يعمل في الطرفية. Claude Desktop تطبيق للمحادثة. claude.ai هو الموقع. والموقع وحده يعمل مع هذه الإضافة. ملاحظات تصدير تطبيق سطح المكتب: <a href="/ar/export-claude-desktop-chat/">Claude Desktop</a>.</p>
+<h3>هل ستدعم هذه الإضافة الأمر /export يومًا ما؟</h3>
+<p>ليس في الإصدار 1.13.0. نطاق المنتج هو claude.ai: خمس صيغ، وملفات محلية، وتسجيل دخول Google لاحتساب الحصة. إذا تغيّر هذا النطاق فستذكر هذه الصفحة ذلك. وحتى ذلك الحين استخدم واجهة سطر الأوامر من Anthropic لتصدير Claude Code.</p>
+<h3>هل يتضمن /export مخرجات الأدوات؟</h3>
+<p>تصف Anthropic الأمر <code>/export</code> بأنه يعرض الرسائل ومخرجات الأدوات كنص مقروء. هذا نصّها هي، لا نتاج أداة تحليل لدينا. لمعرفة المحتوى الحالي بدقة، شغّل <code>/export</code> على إصدارك واقرأ الملف — فالتوثيق قد يتأخر عن الإصدارات.</p>
+<h3>هل يمكنني تصدير جلسات Claude Code دفعة واحدة؟</h3>
+<p>ليس عبر «Export All» في هذه الإضافة. التصدير الجماعي في صفحة التصفح لدينا خاص بـclaude.ai فقط. لعدد كبير من جلسات سطر الأوامر، انسخ مجلد projects أو شغّل <code>/export</code> لكل جلسة. لا يوجد تصدير جماعي بالزر البرتقالي لملفات JSONL.</p>
+</article>
+</main>
+<section class="final-cta page-cta" aria-label="التثبيت">
+  <div class="wrap">
+    <div class="final-cta-panel">
+      <p class="final-kicker">Download Claude conversations</p>
+      <h2>تحتاج ملفات من claude.ai، لا من Claude Code؟</h2>
+      <p>تحفظ إضافة Chrome محادثات claude.ai بصيغ Markdown وJSON والنص العادي وXML وPNG — محليًا، من Chrome مباشرة.</p>
+      <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=ar-claude-code" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> أضف إلى Chrome</a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="logo" href="/ar/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
+      <p class="legal-note">إضافة Chrome لتنزيل محادثات Claude.ai بصيغ Markdown وJSON والنص العادي وXML وPNG. بتقييم 5.0 في Chrome Web Store.</p>
+    </div>
+    <div>
+      <h2>التثبيت</h2>
+      <a class="install-link" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=ar-footer" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> إضافة Chrome</a>
+    </div>
+    <div>
+      <h2>المنتج</h2>
+      <a href="/ar/features/">الميزات</a>
+      <a href="/ar/formats/">الصيغ</a>
+      <a href="/ar/bulk/">تصدير كل المحادثات</a>
+      <a href="/ar/how-it-works/">طريقة العمل</a>
+    </div>
+    <div>
+      <h2>الأدلة</h2>
+      <a href="/ar/how-to-download-claude-chat/">كيفية تنزيل محادثة Claude</a>
+      <a href="/ar/how-to-export-claude-chat/">كيفية تصدير محادثة Claude</a>
+      <a href="/ar/export-claude-chat/">تصدير محادثة Claude</a>
+      <a href="/ar/claude-conversation-extractor/">أداة استخراج محادثات Claude</a>
+      <a href="/ar/claude-code-export/">تصدير محادثات Claude Code</a>
+      <a href="/ar/download-claude-chat-as-pdf/">الطباعة / PDF</a>
+      <a href="/ar/export-claude-desktop-chat/">تصدير محادثات Claude Desktop</a>
+      <a href="/ar/claude-export-conversation/">تصدير محادثات Claude</a>
+      <a href="/ar/how-to-save-claude-conversation/">كيفية حفظ محادثة Claude</a>
+      <a href="/ar/download-claude-conversation/">تنزيل محادثة Claude</a>
+    </div>
+    <div>
+      <h2>قانوني</h2>
+      <a href="/ar/about/">من نحن</a>
+      <a href="/ar/about/#contact">اتصل بنا</a>
+      <a href="/privacy/" hreflang="en">الخصوصية (بالإنجليزية)</a>
+      <a href="/terms/" hreflang="en">الشروط (بالإنجليزية)</a>
+      <a href="/refund/" hreflang="en">الاسترداد (بالإنجليزية)</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Download Claude conversations. جميع الحقوق محفوظة.</div>
+    <div>
+      <a href="/privacy/" hreflang="en">سياسة الخصوصية (بالإنجليزية)</a>
+      <a href="/terms/" hreflang="en">شروط الخدمة (بالإنجليزية)</a>
+      <a href="/refund/" hreflang="en">الاسترداد (بالإنجليزية)</a>
+    </div>
+  </div>
+  <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/claude-code-export/" hreflang="en" lang="en">English</a> <a href="/de/claude-code-chat-exportieren/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/exporter-conversation-claude-code/" hreflang="fr" lang="fr">Français</a> <a href="/nl/claude-code-gesprek-exporteren/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/exportera-claude-code-konversation/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/eksportere-claude-code-samtale/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/eksporter-claude-code-samtale/" hreflang="da" lang="da">Dansk</a> <a href="/fi/claude-code-keskustelun-vienti/" hreflang="fi" lang="fi">Suomi</a> <a href="/ja/claude-code-export/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/claude-code-export/" hreflang="ko" lang="ko">한국어</a> <a href="/he/claude-code-export/" hreflang="he" lang="he">עברית</a> <a href="/ar/claude-code-export/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
+  <p class="disclaimer">تُعالَج المحادثات داخل متصفحك · تسجيل الدخول عبر Google لاحتساب الحصة · لا علاقة لنا بشركة Anthropic, PBC. ‏Claude علامة تجارية مملوكة لشركة Anthropic. إضافة Chrome مستقلة — وليست منتجًا رسميًا من Anthropic. الدعم: <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sådan gemmer du en Claude-samtale som fil</title>
+  <meta name="description" content="Claude.ai har ingen Gem-knap. Vil du gemme en Claude-samtale som fil, så brug en Chrome-udvidelse, print eller Export data – sådan gør du.">
+  <link rel="canonical" href="https://chat-downloader.com/da/gem-claude-samtale/">
+  <!-- i18n:head -->
+  <link rel="alternate" hreflang="en" href="https://chat-downloader.com/how-to-save-claude-conversation/">
+  <link rel="alternate" hreflang="de" href="https://chat-downloader.com/de/claude-chat-speichern/">
+  <link rel="alternate" hreflang="fr" href="https://chat-downloader.com/fr/sauvegarder-conversation-claude/">
+  <link rel="alternate" hreflang="nl" href="https://chat-downloader.com/nl/claude-gesprek-opslaan/">
+  <link rel="alternate" hreflang="sv" href="https://chat-downloader.com/sv/spara-claude-konversation/">
+  <link rel="alternate" hreflang="nb" href="https://chat-downloader.com/nb/lagre-claude-samtale/">
+  <link rel="alternate" hreflang="da" href="https://chat-downloader.com/da/gem-claude-samtale/">
+  <link rel="alternate" hreflang="fi" href="https://chat-downloader.com/fi/tallenna-claude-keskustelu/">
+  <link rel="alternate" hreflang="ja" href="https://chat-downloader.com/ja/how-to-save-claude-conversation/">
+  <link rel="alternate" hreflang="ko" href="https://chat-downloader.com/ko/how-to-save-claude-conversation/">
+  <link rel="alternate" hreflang="he" href="https://chat-downloader.com/he/how-to-save-claude-conversation/">
+  <link rel="alternate" hreflang="ar" href="https://chat-downloader.com/ar/how-to-save-claude-conversation/">
+  <link rel="alternate" hreflang="x-default" href="https://chat-downloader.com/how-to-save-claude-conversation/">
+  <meta property="og:locale" content="da_DK">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="sv_SE">
+  <meta property="og:locale:alternate" content="nb_NO">
+  <meta property="og:locale:alternate" content="fi_FI">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <meta property="og:locale:alternate" content="he_IL">
+  <meta property="og:locale:alternate" content="ar_AE">
+  <!-- /i18n:head -->
+  <meta property="og:title" content="Sådan gemmer du en Claude-samtale som fil">
+  <meta property="og:description" content="Claude.ai har ingen Gem-knap. Vil du gemme en Claude-samtale som fil, så brug en Chrome-udvidelse, print eller Export data – sådan gør du.">
+  <meta property="og:url" content="https://chat-downloader.com/da/gem-claude-samtale/">
+  <meta property="og:image" content="https://chat-downloader.com/assets/widget-guide.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chat Downloader">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sådan gemmer du en Claude-samtale som fil">
+  <meta name="twitter:description" content="Claude.ai har ingen Gem-knap. Vil du gemme en Claude-samtale som fil, så brug en Chrome-udvidelse, print eller Export data – sådan gør du.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME1YXGZKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GME1YXGZKR');
+  </script>
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Hvordan gemmer jeg en Claude-samtale som en fil?","acceptedAnswer":{"@type":"Answer","text":"Installér Download Claude conversations, åbn samtalen på claude.ai, klik på den orange knap ved siden af beskedfeltet, vælg Markdown, JSON, tekst, XML eller PNG, og klik på »Export« (Eksportér). Filen downloades lokalt. Historikken har allerede gemt chatten på Anthropic-kontoen; den orange knap skriver en kopi til disken."}},{"@type":"Question","name":"Hvordan gemmer man en Claude-chat på claude.ai?","acceptedAnswer":{"@type":"Answer","text":"Du behøver ingen Gem-knap for at beholde samtalen på kontoen. Historikken på claude.ai viser allerede de chats, du har haft, mens du var logget ind. Vil du gemme en Claude-chat som fil, så brug Chrome-udvidelsen, Print → Gem som PDF eller Settings → Privacy → Export data for en forsinket JSON-ZIP med hele kontoen."}},{"@type":"Question","name":"Hvordan gemmer man en samtale i Claude uden en udvidelse?","acceptedAnswer":{"@type":"Answer","text":"Udskriv claude.ai-siden (Ctrl/Cmd+P → Gem som PDF) for en visuel kopi, eller brug Settings → Privacy → Export data for en JSON-ZIP med hele kontoen, sendt via e-mail. Kopiér og indsæt fungerer til et kort svar. Ingen af de metoder skriver en struktureret Markdown-fil pr. chat, sådan som Chrome-udvidelsen gør."}},{"@type":"Question","name":"Gemmer Claude allerede samtalen i historikken?","acceptedAnswer":{"@type":"Answer","text":"Ja. Chats på claude.ai, som du har haft, mens du var logget ind, bliver i historikken på Anthropic-kontoen. Hvis du lukker fanen, genindlæser eller åbner en anden enhed med samme login, forsvinder samtalen ikke. Historikken er bare ikke en Markdown-, JSON-, tekst-, XML- eller PNG-fil på din disk."}},{"@type":"Question","name":"Forsvinder en Claude-samtale, hvis jeg lukker fanen?","acceptedAnswer":{"@type":"Answer","text":"Nej. At lukke en claude.ai-fane sletter ikke samtalen fra historikken. Sletter du chatten fra historikken, forsvinder den fra kontoens brugerflade. En fil, du allerede har eksporteret med Download Claude conversations, bliver på disken, også efter sletningen."}},{"@type":"Question","name":"Kan jeg gemme en Claude-samtale som PDF?","acceptedAnswer":{"@type":"Answer","text":"Ikke med Download Claude conversations 1.13.0. Formaterne er Markdown, JSON, ren tekst, XML og PNG. Vil du have et PDF-lignende øjebliksbillede, så udskriv claude.ai-siden. PNG er et billede af samtalen, ikke en PDF."}},{"@type":"Question","name":"Hvor mange gratis filer kan jeg gemme af Claude-samtaler?","acceptedAnswer":{"@type":"Answer","text":"Alle konti med Google-login får 3 gratis eksporter i et hvilket som helst af de fem formater. Derefter koster Pro 3,99 $ om måneden eller 26,99 $ om året. Paddle håndterer betalingen. Filer fra masseeksport med »Export All« tæller med i de samme 3."}},{"@type":"Question","name":"Kan jeg gemme en Claude-samtale på mobilen?","acceptedAnswer":{"@type":"Answer","text":"Ikke med Chrome-udvidelsen. Den kører i Chrome på computeren (eller en anden Chromium-browser, der kan installere udvidelser fra Chrome Web Store). Der findes ingen app til iOS eller Android. Mobilbrowsere kan stadig åbne historikken og udskrive en Claude-chat, men de kan ikke vise den orange knap."}},{"@type":"Question","name":"Kan jeg gemme mange Claude-chats fra historikken på én gang?","acceptedAnswer":{"@type":"Answer","text":"Ja. Åbn »View and Download All Conversations« (se og download alle samtaler) fra udvidelsens popup, filtrér tabellen, og klik på »Export All« (eksportér alle). Den vej er ikke Anthropics Export data-ZIP. Den officielle Export data er ét arkiv med hele kontoen, som sendes via e-mail senere. Se massedownload."}},{"@type":"Question","name":"Kan den gemme en Claude-samtale fra Claude Code?","acceptedAnswer":{"@type":"Answer","text":"Nej. Claude Code kører i terminalen. Brug /export, eller kopiér JSONL fra ~/.claude/projects (Windows: %USERPROFILE%\\.claude\\projects). Denne Chrome-udvidelse kører kun på claude.ai. Guide: Claude Code-eksport."}},{"@type":"Question","name":"Kræves der Google-login for at gemme en Claude-chat?","acceptedAnswer":{"@type":"Answer","text":"Ja, fra og med den første eksport. Google bekræfter, hvilken konto du har valgt, så vi kan håndhæve kvoten på 3 eksporter og gendanne Pro efter en geninstallation. Samtalens indhold sendes ikke med det login. Vi gemmer kun den bekræftede e-mailadresse til kvote og Pro-status."}},{"@type":"Question","name":"Hvor finder jeg den officielle Export data til at gemme Claude-chats?","acceptedAnswer":{"@type":"Answer","text":"På claude.ai: Settings → Privacy → Export data (menuerne kan være oversat, hvis claude.ai er sat til dansk). Anthropic sender et link via e-mail, som udløber. ZIP-filen er et JSON-arkiv på kontoniveau, ikke en navngiven Markdown-fil for den chat, du læste. Brug Export data som backup; brug den orange knap, når du vil have én læsbar fil nu."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Sådan gemmer du en Claude-samtale som en fil, du beholder","description":"Claude.ai har ingen Gem-knap. Vil du gemme en Claude-samtale som fil, så brug en Chrome-udvidelse, print eller Export data – sådan gør du.","url":"https://chat-downloader.com/da/gem-claude-samtale/","dateModified":"2026-09-15","datePublished":"2026-09-15","inLanguage":"da","author":{"@type":"Organization","name":"Chat Downloader","url":"https://chat-downloader.com/da/"},"publisher":{"@type":"Organization","name":"Chat Downloader","url":"https://chat-downloader.com/da/"},"mainEntityOfPage":"https://chat-downloader.com/da/gem-claude-samtale/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Forside","item":"https://chat-downloader.com/da/"},{"@type":"ListItem","position":2,"name":"Gem samtale","item":"https://chat-downloader.com/da/gem-claude-samtale/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Spring til indhold</a>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a class="logo" href="/da/">
+        <img src="/assets/icon.svg" alt="">
+        <span>Download Claude conversations</span>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="/da/download-claude-chat/">Download</a><a href="/da/saadan-eksporterer-du-claude-chat/">Eksportér</a><a href="/da/eksporter-alle-claude-chats/">Alle chats</a><a href="/da/formater/">Formater</a><a href="/da/#faq">FAQ</a>
+        <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=da-how-to-save-claude-conversation" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Føj til Chrome</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <!-- i18n:switch --><details class="lang-switch"><summary aria-label="Sprog">da</summary><ul><li><a href="/how-to-save-claude-conversation/" hreflang="en" lang="en">English</a></li><li><a href="/de/claude-chat-speichern/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/sauvegarder-conversation-claude/" hreflang="fr" lang="fr">Français</a></li><li><a href="/nl/claude-gesprek-opslaan/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/sv/spara-claude-konversation/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="/nb/lagre-claude-samtale/" hreflang="nb" lang="nb">Norsk</a></li><li><a href="/da/gem-claude-samtale/" hreflang="da" lang="da" aria-current="true">Dansk</a></li><li><a href="/fi/tallenna-claude-keskustelu/" hreflang="fi" lang="fi">Suomi</a></li><li><a href="/ja/how-to-save-claude-conversation/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/ko/how-to-save-claude-conversation/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/he/how-to-save-claude-conversation/" hreflang="he" lang="he">עברית</a></li><li><a href="/ar/how-to-save-claude-conversation/" hreflang="ar" lang="ar">العربية</a></li></ul></details><!-- /i18n:switch -->
+      <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=da-how-to-save-claude-conversation" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Føj til Chrome</a>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+<nav class="crumbs" aria-label="Brødkrumme"><a href="/da/">Forside</a> / Gem samtale</nav>
+<main id="main">
+<article class="band prose">
+<p class="article-meta">Opdateret <time datetime="2026-09">september 2026</time> · Udvidelse 1.13.0</p>
+<h1 class="page-h1">Sådan gemmer du en Claude-samtale som en fil, du beholder</h1>
+<p class="lead">Sådan gemmer du en Claude-samtale: claude.ai beholder allerede alle chats i historikken, så længe du er logget ind, men der er ingen Gem-knap, der skriver en fil. Vil du have samtalen som Markdown, JSON, tekst, XML eller PNG, så brug Download Claude conversations i Chrome, udskriv siden, eller bestil Settings → Privacy → Export data (menuerne kan være oversat, hvis claude.ai er sat til dansk). At lukke fanen sletter ikke samtalen.</p>
+<aside class="trust-badge" aria-label="Bedømmelse i Chrome Web Store">
+  <span class="trophy" aria-hidden="true">🏆</span>
+  <div>
+    <strong>Download Claude conversations – bedømt 5,0 i Chrome Web Store</strong>
+    <span>2026 – gratis Chrome-udvidelse til at gemme claude.ai-chats som Markdown, JSON, tekst, XML eller PNG</span>
+  </div>
+</aside>
+<nav class="toc" aria-label="På denne side">
+  <p>På denne side</p>
+  <ol>
+    <li><a href="#history-keeps-it">Gemmer Claude allerede samtalen i historikken?</a></li>
+    <li><a href="#save-as-file">Hvordan gemmer man en Claude-samtale som fil?</a></li>
+    <li><a href="#save-with-chrome">Hvordan gemmer man en Claude-chat med Chrome-udvidelsen?</a></li>
+    <li><a href="#without-extension">Hvordan gemmer man en samtale i Claude uden en udvidelse?</a></li>
+    <li><a href="#will-it-vanish">Gemmer historikken stadig samtalen, når fanen lukkes?</a></li>
+    <li><a href="#markdown-json">Hvordan gemmer man en Claude-samtale som Markdown eller JSON?</a></li>
+    <li><a href="#save-bulk">Hvordan gemmer man hele Claude-historikken på én gang?</a></li>
+    <li><a href="#desktop-code">Kan jeg gemme en Claude-samtale fra Desktop eller Code?</a></li>
+    <li><a href="#faq">FAQ: sådan gemmer du en Claude-samtale</a></li>
+  </ol>
+</nav>
+
+<h2 id="history-keeps-it">Gemmer Claude allerede samtalen i historikken?</h2>
+<p>Ja. Claude.ai gemmer allerede samtalen i historikken på Anthropic-kontoen, når du er logget ind. At lukke fanen sletter ikke samtalen. Der findes stadig ingen Gem-knap, der skriver en fil til disken. At gemme en Claude-samtale som Markdown eller JSON er en anden opgave end historikken.</p>
+<p>Historikken er listen over chats i venstre side på claude.ai. Hver række er en samtale, som Anthropic har gemt for det login. Åbner du rækken senere, kommer de samme beskeder tilbage. Det er lagring på kontoen, ikke en downloadmappe på din computer.</p>
+<p>Folk, der spørger, hvordan man gemmer en samtale i Claude, mener ofte: »Forsvinder den, når jeg går?« For en almindelig session, hvor du er logget ind, er svaret nej. Claude.ai kræver ikke et klik på Gem for at beholde samtalen på kontoen. Det, der mangler, er et værktøj, der eksporterer filer – ikke en knap, der holder samtalen i live.</p>
+<p>Historikken er ikke en Markdown-fil, ikke et JSON-træ, du kan søge i med grep, og ikke en PNG, du kan sætte ind i et slide. Historikken ligger bag Anthropic-login. Kan du ikke logge ind, kan du ikke åbne de chats. En lokal fil kan stadig åbnes, selv når adgangskoden er væk.</p>
+<div class="callout callout-info">
+  <p><strong>To forskellige slags »gemme«.</strong> Historik = Anthropic beholder chatten på kontoen. Fil = du skriver Markdown, JSON, tekst, XML eller PNG til disken. Claude.ai har det første. Claude.ai har ingen knap til det andet.</p>
+</div>
+<p>Projekter og seneste chats på claude.ai er stadig historik. At lægge en chat i et projekt opretter ikke en fil. At omdøbe samtalen opretter ikke en fil. At markere med stjerne eller fastgøre, hvis brugerfladen tilbyder det, skriver stadig ikke Markdown.</p>
+<p>Team- og Enterprise-arbejdsområder følger samme opdeling. Kan du åbne samtalen på claude.ai, har Anthropic allerede gemt den for arbejdsområdet. Virksomhedens regler for opbevaring kan stadig slette eller skjule chats efter en tidsplan, du ikke styrer. En fil, du har eksporteret, er så den kopi, du beholder.</p>
+<p>Inkognito og en anden Chrome-profil deler ikke historik. Samtalen er knyttet til den Anthropic-konto, der blev brugt i den session. Logger du ind med et andet Anthropic-login, ser du en anden historik. At »gemme« på tværs af konti er en fil, ikke en sammenlægning af historikker.</p>
+
+<h2 id="save-as-file">Hvordan gemmer man en Claude-samtale som fil?</h2>
+<p>Vil du gemme en Claude-samtale som fil, skal du vælge en metode, der skriver til disken: Download Claude conversations i Chrome, Print → Gem som PDF eller Settings → Privacy → Export data. Historikken på claude.ai er lagring på kontoen, ikke en Markdown-, JSON-, tekst-, XML- eller PNG-fil.</p>
+<p>Chrome-udvidelsen er vejen pr. chat. Åbn samtalens URL, klik på den orange knap ved siden af beskedfeltet, vælg et format, og klik på »Export«. Chromes download-API skriver filen lokalt. Kvoten bruger Google-login. Selve chattene bliver på computeren.</p>
+<p>Print er den visuelle vej. Ctrl+P eller Cmd+P, destination Gem som PDF. Resultatet ligner claude.ai-siden, inklusive de elementer, som print-stilarterne ikke skjuler. Kodeblokke bliver ofte delt over flere ark. Brug print, når en korrekturlæser vil have et øjebliksbillede, ikke en notefil.</p>
+<p>Den officielle Export data er vejen for hele kontoen. Settings → Privacy → Export data på claude.ai. Anthropic sender et link via e-mail, som udløber. ZIP-filen er JSON for hele kontoen, ikke én navngiven fil for chatten på skærmen. Ventetiden er prisen for en fuld backup.</p>
+<div class="table-wrap">
+  <table>
+    <caption>Hvad »gemme« betyder på claude.ai, sammenlignet med en fil på disken</caption>
+    <thead>
+      <tr>
+        <th scope="col">Du vil have</th>
+        <th scope="col">Metode</th>
+        <th scope="col">Du får</th>
+        <th scope="col">Du mangler stadig</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">At chatten ikke forsvinder</th>
+        <td>Forbliv logget ind; brug historikken</td>
+        <td>Samtalen på Anthropic-kontoen</td>
+        <td>En fil, du kan sende eller lægge i git</td>
+      </tr>
+      <tr>
+        <th scope="row">Én chat, læsbar fil, nu</th>
+        <td>Chrome-udvidelse (dette produkt)</td>
+        <td>Markdown, JSON, tekst, XML eller PNG</td>
+        <td>En indbygget PDF fra udvidelsen</td>
+      </tr>
+      <tr>
+        <th scope="row">Visuel PDF af skærmen</th>
+        <td>Print → Gem som PDF</td>
+        <td>Et opdelt øjebliksbillede af claude.ai</td>
+        <td>Ren kode, tabeller, sammenfoldede artefakter</td>
+      </tr>
+      <tr>
+        <th scope="row">Backup af hele kontoen</th>
+        <td>Settings → Privacy → Export data</td>
+        <td>JSON-ZIP via e-mail</td>
+        <td>Formatering pr. chat; du skal vente på linket</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p>Vælg den række, der passer til opgaven. De fleste, der vil vide, hvordan man gemmer en Claude-chat, vil have række to: en fil, de kan åbne i Obsidian, VS Code eller en wiki. Historikken har allerede klaret række et. Print og Export data findes også; de løser bare andre opgaver.</p>
+<p>En fil er det rigtige valg før en fratrædelse, før en computer nulstilles, før et forskningsarkiv, eller før du lægger en kodegennemgang ind i git. Historikken er nok, når du bare skal genåbne den samme samtale i morgen med det samme Anthropic-login.</p>
+<p>Kopiér og indsæt er en femte metode og en svag fil. Markér tekst på claude.ai, og indsæt den i Docs. Kodeblokke falder sammen. Tabeller bliver til sammenhængende linjer. Grænserne mellem beskeder forsvinder. Fint til ét afsnit. Dårligt som den eneste gemte kopi af en designgennemgang på 40 ture.</p>
+
+<h2 id="save-with-chrome">Hvordan gemmer man en Claude-chat med Chrome-udvidelsen?</h2>
+<p>Sådan gemmer du en Claude-chat med Download Claude conversations: installér Chrome-udvidelsen, åbn samtalen på claude.ai, klik på den orange knap ved siden af beskedfeltet, vælg Markdown, JSON, tekst, XML eller PNG, og klik på »Export«. Google-login tæller de 3 gratis eksporter.</p>
+<ol>
+<li>Installér Download Claude conversations fra Chrome Web Store (Chromium-browsere, der kan indlæse Chrome-udvidelser, virker også).</li>
+<li>Genindlæs claude.ai, hvis siden allerede var åben under installationen. Chrome indsætter ikke altid et content script i gamle faner.</li>
+<li>Åbn en rigtig samtale-URL fra historikken – den orange knap vises i en samtale, ikke på den tomme startside med beskedfeltet.</li>
+<li>Klik på den orange downloadknap til højre for beskedfeltet.</li>
+<li>Vælg Markdown, JSON, ren tekst, XML eller PNG. Klik på »Export«. Chrome downloader filen med det samme.</li>
+</ol>
+<p>Udvidelsen er et content script i Chrome, der kun kører på claude.ai. Parseren læser den samtale, der allerede er indlæst i sessionen, hvor du er logget ind. Download Claude conversations kalder ikke et separat Anthropic-API med egne loginoplysninger og uploader ikke samtalen til vores servere for at lave filen.</p>
+<p>Før den første eksport skal du logge ind med Google. Det login findes, så vi kan tælle de 3 gratis eksporter pr. konto og gendanne Pro senere. Google-login giver ikke adgang til at læse chats. Vi gemmer en Google-verificeret e-mailadresse til kvote og abonnementsstatus. Selve samtalerne bliver på din computer.</p>
+<p>Hver færdig fil tæller som én eksport, uanset om formatet var Markdown eller PNG. Gratiskonti får 3 eksporter i alt. Pro koster 3,99 $ om måneden eller 26,99 $ om året og fjerner loftet for både enkelte chats og masseeksport med »Export All«. Paddle håndterer betalingen for Pro. Vi ser ikke kortnumre.</p>
+<div class="callout callout-tip">
+  <p><strong>Lokale filer.</strong> Markdown, JSON, tekst, XML og PNG bygges i browseren og sendes videre til Chromes download-API. Kvotetjek går til vores worker. Chatteksten gør ikke. Version 1.13.0 er bedømt 5,0 i Chrome Web Store.</p>
+</div>
+<p>Valgfrie indstillinger i samme widget: medtag eller spring udvidet tænkning over (»include thinking«), medtag metadata (»include metadata«: titel, tidsstempler, model), filtrér efter afsender (»all / human only / assistant only« – alle / kun menneske / kun assistent), og vælg et layout for artefakter – »Original«, »Inline«, »Nested« eller »Flat«. Indstillingerne gælder for denne ene chat på samme måde som på siden til masseeksport.</p>
+<p>Hvis samtalen er meget lang, så scroll, indtil claude.ai har indlæst de tidligere beskeder. Udvidelsen kan kun eksportere det, siden har vist. En halvt indlæst samtale giver en halvt indlæst fil. Det ligner en fejl, men skyldes som regel en side, der ikke er scrollet igennem.</p>
+<p>Vent, til assistenten er færdig med at streame, før du eksporterer. Gemmer du samtalen midt i et svar, bliver det sidste svar skåret af. På gratisniveauet bruger et nyt forsøg endnu en plads i kvoten – en god grund til at tjekke, at samtalen er færdig først.</p>
+<p>Det senest brugte format bliver husket. Hvis du ville have Markdown og fik JSON, stod rullemenuen stadig på JSON fra sidste eksport. Tjek rullemenuen, hver gang du skifter opgave. Skærmbilleder trin for trin af den samme orange knap finder du under <a href="/da/download-claude-chat/">sådan downloader du en Claude-chat</a>.</p>
+<div class="expert-quote">
+  <blockquote>Vi ser den samme misforståelse hver uge: folk leder efter en Gem-knap, fordi de tror, at historikken er en kladde, der forsvinder. Claude.ai har allerede gemt samtalen. Vores orange knap skriver kun en lokal Markdown-, JSON-, tekst-, XML- eller PNG-fil fra den side, du allerede har åbnet – vi opfinder aldrig et PDF-format.</blockquote>
+  <cite><strong>Teamet bag Download Claude conversations</strong> – udviklerne af Chrome-udvidelsen Claude Chat Downloader</cite>
+</div>
+
+<h2 id="without-extension">Hvordan gemmer man en samtale i Claude uden en udvidelse?</h2>
+<p>Sådan gemmer du en samtale i Claude uden en udvidelse: udskriv claude.ai-siden, eller bestil Anthropics Export data-ZIP. Print giver en visuel PDF af websiden. Export data er et forsinket JSON-arkiv med hele kontoen. Ingen af dem skriver en Markdown-fil pr. chat.</p>
+<p>Print-metoden: åbn samtalen på claude.ai, skjul sidepanelet, hvis brugerfladen tillader det, tryk Ctrl+P (Windows/Linux) eller Cmd+P (Mac), vælg Gem som PDF som destination, og gem. Beskedfeltet og andre elementer kan gentages på hvert ark. Alle noter om print finder du under <a href="/da/claude-chat-som-pdf/">gem en Claude-chat som PDF</a>.</p>
+<p>Den officielle vej: Settings → Privacy → Export data på claude.ai. Anthropic sender et link via e-mail, som udløber. Pak selv ZIP-filen ud, hvis du skal bruge én samtale ud af tusinder. Det arkiv er backup til dokumentation, ikke en notefil til morgendagens statusmøde.</p>
+<p>Kopiér og indsæt kan bruges uden at installere noget. Markér beskeder på claude.ai, og indsæt dem i en note-app. Indrykning i kode forsvinder som regel. En samtale med mange ture bliver til en ustruktureret tekstmur. Brug kopiér og indsæt til et enkelt uddrag, ikke som din eneste plan for at gemme samtaler i Claude.</p>
+<div class="table-wrap">
+  <table>
+    <caption>Måder uden udvidelse til at få en Claude-chat væk fra skærmen</caption>
+    <thead>
+      <tr>
+        <th scope="col">Metode</th>
+        <th scope="col">Hastighed</th>
+        <th scope="col">Omfang</th>
+        <th scope="col">Bedst til</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Print → Gem som PDF</th>
+        <td>Med det samme</td>
+        <td>Den åbne side</td>
+        <td>Et visuelt bilag</td>
+      </tr>
+      <tr>
+        <th scope="row">Settings → Privacy → Export data</th>
+        <td>Forsinket e-mail</td>
+        <td>Hele kontoen</td>
+        <td>Fratrædelse eller juridisk opbevaring</td>
+      </tr>
+      <tr>
+        <th scope="row">Kopiér og indsæt</th>
+        <td>Med det samme</td>
+        <td>Det, du har markeret</td>
+        <td>Ét kort svar</td>
+      </tr>
+      <tr>
+        <th scope="row">Kun historik (ingen fil)</th>
+        <td>Allerede klaret</td>
+        <td>Chats, mens du var logget ind</td>
+        <td>At genåbne den samme samtale</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p>Ingen af de rækker erstatter Download Claude conversations, når du har brug for struktureret Markdown fra ét punkt i historikken nu. Metoderne uden udvidelse betyder stadig noget, når IT blokerer Chrome-udvidelser, når du har brug for den officielle ZIP, eller når en udskrift, der ligner en PDF, er selve leverancen.</p>
+<p>Safari og Chrome på en telefon kan udskrive. De browsere kan ikke installere dette element fra Chrome Web Store. Vil du have en genbrugelig Markdown-fil, så åbn det samme punkt i historikken i Chrome på computeren, når du har tilføjet udvidelsen.</p>
+
+<h2 id="will-it-vanish">Gemmer historikken stadig samtalen, når fanen lukkes?</h2>
+<p>Ja. Historikken beholder stadig din Claude-samtale, når du lukker fanen, genindlæser claude.ai eller lukker computeren – så længe chatten blev oprettet, mens du var logget ind. At lukke en fane er ikke at slette. Sletning fra historikken er den handling, der fjerner samtalen fra kontoens brugerflade.</p>
+<p>Log ud af claude.ai, og siden bliver tom. Log ind på den samme Anthropic-konto igen, og historikken viser de samme chats. At logge ud skjuler listen; det sletter ikke i sig selv det, der er gemt på kontoen. Et andet Anthropic-login viser en anden historik.</p>
+<p>Sletning fra historikken er det tilfælde, hvor chats faktisk forsvinder. Fjerner du en samtale i claude.ai's brugerflade, er den væk fra sidepanelet. En Markdown-fil, du allerede har eksporteret med den orange knap, bliver på disken. Eksportér først, hvis chatten snart skal ryddes op.</p>
+<div class="callout callout-warn">
+  <p><strong>Slet er ikke det samme som luk.</strong> At lukke en claude.ai-fane lader historikken være intakt. At slette samtalen fra historikken fjerner chatten fra kontoens brugerflade. Den officielle Export data hjælper ikke efter en sletning, hvis Anthropic ikke længere medtager den samtale. Skriv filen, før du rydder op.</p>
+</div>
+<p>Inkognito slutter, når vinduet lukkes. Har du brugt claude.ai i et privat vindue uden et varigt login, så gå ikke ud fra, at historikken har gemt arbejdet. Log ind i en almindelig Chrome-profil, eller eksportér en fil, før inkognitosessionen slutter.</p>
+<p>Administratorer af arbejdsområder kan opbevare eller begrænse chats i Team og Enterprise. En politik, du ikke selv har sat, kan skjule en samtale senere. Betragt virksomhedens historik som lånt lagerplads. Betragt en eksporteret Markdown- eller JSON-fil som kopien på din side af politikken.</p>
+<p>At skifte fra telefon til computer kræver ikke et særligt klik for at gemme Claude-samtalen, når begge enheder bruger den samme Anthropic-konto. Åbn historikken på computeren. Mangler chatten, er du på et andet login, i et andet arbejdsområde, eller også er samtalen slettet – den er ikke »ikke gemt«.</p>
+<p>Claude Desktop kan vise den samme kontos chats, når appen er logget ind med den samme Anthropic-bruger. Synkronisering er Anthropics opgave. Chrome-udvidelsen indsættes aldrig i Desktop. Findes samtalen på claude.ai, så åbn claude.ai i Chrome for at skrive en fil.</p>
+
+<h2 id="markdown-json">Hvordan gemmer man en Claude-samtale som Markdown eller JSON?</h2>
+<p>Sådan gemmer du en Claude-samtale som Markdown eller JSON: åbn den orange knap på claude.ai, vælg formatet, og klik på »Export«. Markdown er notefilen. JSON er beskedtræet til scripts. Ren tekst har ingen markup. PNG er et billede, ikke en PDF.</p>
+<p>Markdown bevarer overskrifter, kodeblokke med sprogangivelse og tabeller. Markdown er det typiske valg til Obsidian, GitHub eller en wiki. Noter om layout for det format: <a href="/da/formater/markdown/">Markdown-eksport</a>. JSON bevarer det træ, parseren allerede har bygget, inklusive artefakter og tænkning, når de indstillinger er slået til.</p>
+<p>JSON fra Download Claude conversations har ikke samme struktur som Anthropics konto-ZIP. Udvidelsens JSON er én samtale, som siden viste den. JSON fra Export data er et udtræk af hele kontoen, som Anthropic sender via e-mail senere. Bland ikke de to skemaer i ét script uden at tjekke nøglerne.</p>
+<p>Ren tekst er det rigtige valg, når destinationen fjerner markup – et felt i et ticketsystem, brødteksten i en e-mail, et søgeindeks, der vil have rå tekststrenge. XML er nichevalget til dataudveksling. PNG er til et slide eller en figur af samtalen i en fejlrapport, ikke til en gennemgang på 40 ture, som du vil søge i med grep.</p>
+<div class="table-wrap">
+  <table>
+    <caption>Formater, som Download Claude conversations skriver fra claude.ai</caption>
+    <thead>
+      <tr>
+        <th scope="col">Format</th>
+        <th scope="col">Bedst til</th>
+        <th scope="col">Ikke til</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Markdown</th>
+        <td>Noter, git, senere konvertering</td>
+        <td>Pixelperfekt layout</td>
+      </tr>
+      <tr>
+        <th scope="row">JSON</th>
+        <td>Scripts, beskedtræ</td>
+        <td>Læsning i et tekstbehandlingsprogram</td>
+      </tr>
+      <tr>
+        <th scope="row">Ren tekst</th>
+        <td>Arkiver helt uden markup</td>
+        <td>At bevare tabeller som tabeller</td>
+      </tr>
+      <tr>
+        <th scope="row">XML</th>
+        <td>Rene XML-pipelines</td>
+        <td>Almindelig læsning</td>
+      </tr>
+      <tr>
+        <th scope="row">PNG</th>
+        <td>En figur af samtalen</td>
+        <td>Søgning, diff eller udskrift som dokument</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p>Der er ingen indbygget PDF i version 1.13.0. Kræver en kunde PDF, så eksportér Markdown, og udskriv filen fra Word, Google Docs, VS Code eller Obsidian. Eller udskriv selve claude.ai. Vent ikke på en .pdf-mulighed, som denne udvidelse ikke har.</p>
+<p>Tænkning, metadata, afsenderfilter og artefaktlayout ændrer, hvad der havner i Markdown og JSON. Slå tænkning til, når du vil have den udvidede tankegang med i arkivet. Slå den fra, når filen er til en læser, der kun skal se det endelige svar. Metadata tilføjer titel, tidsstempler og model, når du vil have en overskrift på notefilen.</p>
+<p>Afsenderfilteret »human only« (kun menneske) skriver dine prompts. »Assistant only« (kun assistent) skriver Claudes svar. »All« (alle) er standard: hele samtalen. Artefaktlayoutet Original / Inline / Nested / Flat ændrer, hvordan artefakter placeres i Markdown. Vælg ét layout, og brug det igen, så en mappe med gemte chats forbliver ensartet.</p>
+
+<h2 id="save-bulk">Hvordan gemmer man hele Claude-historikken på én gang?</h2>
+<p>Vil du gemme din Claude-historik som mange filer, skal du ikke trykke på den orange knap én gang pr. fane. Åbn »View and Download All Conversations« (se og download alle samtaler) fra udvidelsens popup, filtrér tabellen, og klik på »Export All« (eksportér alle). Hver færdig fil tæller stadig med i de samme 3 gratis eksporter, medmindre du har Pro.</p>
+<p>Oversigtssiden viser samtaler fra den claude.ai-konto, du er logget ind på – den samme historik, du allerede har, bare som en tabel, du kan filtrere. Søg på navn. Filtrér på All, New (endnu ikke eksporteret), Exported og på projekt, hvis du grupperer chats på den måde på claude.ai.</p>
+<p>Masseeksport bruger de samme fem formater og de samme indstillinger som eksport af en enkelt chat: tænkning, metadata, afsenderfilter og artefaktlayout. »Export All« er ikke en ringere løsning. »Export All« er den samme parser anvendt på mange samtale-ID'er i ét gennemløb. Detaljer: <a href="/da/eksporter-alle-claude-chats/">masseeksport med Export All</a>.</p>
+<p>Anthropics Export data er stadig backup af kontoen. Én ZIP, én e-mail, JSON for det hele, inklusive chats, du har glemt. Masseeksport med »Export All« er den modsatte opgave: du vælger rækkerne i historikken, du vælger Markdown eller JSON, og filerne lander med det samme. Brug begge, hvis du vil have både et arkiv til dokumentation og en mappe med læsbare noter.</p>
+<div class="callout callout-warn">
+  <p><strong>Kvoten er fælles.</strong> Tre gratis eksporter dækker enkelte chats og filer fra masseeksport tilsammen. Vælger du 40 samtaler på en gratiskonto, stopper det efter den tredje fil. Planlæg udvalget, eller opgradér til Pro for 3,99 $/md. eller 26,99 $/år via Paddle.</p>
+</div>
+<p>Oversigtstabellen husker, hvad du allerede har eksporteret, så du ved næste besøg kan filtrere på kun New. Sådan forbliver en ugentlig vane med at gemme Claude-chats trinvis i stedet for at duplikere sidste måneds Markdown. En geninstallation af udvidelsen nulstiller ikke tælleren på 3 eksporter; den følger kontoen med Google-login.</p>
+<p>Vælg et udsnit, når historikken er fuld af kladder på én linje. »Export All« betyder ikke, at du skal tage hver eneste række. Et stramt filter plus Markdown giver en renere forskningsmappe end 200 tomme »hej«-samtaler.</p>
+<p>»Eksportér Claude-chat« er det samme som at gemme: den samme orange knap og den samme tabel med »Export All«. Nabosiden <a href="/da/eksporter-claude-chat/">eksportér Claude-chat</a> gennemgår de knapper, hvis du kom hertil med ordet »eksportér« i stedet for »gem«.</p>
+
+<h2 id="desktop-code">Kan jeg gemme en Claude-samtale fra Desktop eller Code?</h2>
+<p>Nej. Download Claude conversations kan ikke gemme en Claude-samtale fra Claude Desktop eller Claude Code. Chrome-udvidelsen kører kun på claude.ai i Chrome på computeren. Claude Desktop er en separat app. Claude Code er agenten i terminalen med <code>/export</code> og JSONL på disken.</p>
+<p>Findes Desktop-chatten også på claude.ai, så åbn den URL i Chrome, og brug den orange knap. Findes samtalen kun i Desktop, må du kopiere og indsætte eller vente på Settings → Privacy → Export data. Udvidelsen indsættes aldrig i Desktop-vinduet.</p>
+<p>Skriv <code>/export</code> i en aktiv Claude Code-session. Anthropics CLI åbner en menu, hvor du kan kopiere transskriptionen eller gemme en ren tekstfil. Angiv et filnavn for at springe menuen over. Transskriptionen er renderet tekst til mennesker, ikke denne udvidelses Markdown/JSON/PNG. Alle stier: <a href="/da/eksporter-claude-code-samtale/">Claude Code-eksport</a>.</p>
+<p>JSONL på disken er den interne log under <code>~/.claude/projects</code> (Windows: <code>%USERPROFILE%\.claude\projects</code>). Skemaet kan ændre sig mellem versioner af Claude Code. Anthropics egen dokumentation anbefaler <code>/export</code> frem for at parse JSONL. Vi pakker ikke den CLI ind. Vi læser ikke <code>~/.claude</code>.</p>
+<div class="table-wrap">
+  <table>
+    <caption>Hvor hver Claude-flade gemmer en samtale, du kan beholde</caption>
+    <thead>
+      <tr>
+        <th scope="col">Flade</th>
+        <th scope="col">Allerede »gemt«?</th>
+        <th scope="col">Sådan skriver du en fil</th>
+        <th scope="col">Denne Chrome-udvidelse</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">claude.ai i Chrome</th>
+        <td>Ja – historikken på kontoen</td>
+        <td>Orange knap eller Export All</td>
+        <td>Ja – det er produktet</td>
+      </tr>
+      <tr>
+        <th scope="row">Claude Code-terminal</th>
+        <td>JSONL på disken for sessionen</td>
+        <td><code>/export</code> eller kopiér JSONL</td>
+        <td>Nej</td>
+      </tr>
+      <tr>
+        <th scope="row">Claude Desktop-app</th>
+        <td>Hvis den samme Anthropic-konto synkroniserer</td>
+        <td>Åbn chatten på claude.ai, eller kopiér og indsæt</td>
+        <td>Nej – indsættes ikke i Desktop</td>
+      </tr>
+      <tr>
+        <th scope="row">Backup af hele kontoen</th>
+        <td>Anthropics lager plus ZIP via e-mail</td>
+        <td>Settings → Privacy → Export data</td>
+        <td>En anden opgave – forsinket JSON-ZIP</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p>Team- og Enterprise-arbejdsområder virker med udvidelsen, hvis du kan åbne samtalen på claude.ai i Chrome. Parseren læser den viste side, ikke et API, der kun gælder privatkonti. Hvis en virksomhedspolitik blokerer udvidelser, er det en beslutning i IT-afdelingen, ikke en indstilling for abonnementsniveau hos os.</p>
+<p>Uafhængig Chrome-udvidelse, ikke tilknyttet Anthropic, PBC. Claude er et varemærke tilhørende Anthropic. Følg Anthropics servicevilkår. Vi kan ikke give juridisk rådgivning om, hvorvidt en bestemt eksport er tilladt på din arbejdsplads. Udvidelsen bruger din eksisterende session på samme måde som websitet og automatiserer ikke handlinger på kontoen.</p>
+<p>Paddle fakturerer Pro. Google-login giver os ikke adgang til samtalen. Den Cloudflare-worker, der tjekker Pro-status, modtager licensstatus, ikke beskedtekst. Betaling på serveren, chatten på disken – den grænse er historien om privatliv for hver eneste Claude-samtale, dette produkt gemmer som fil.</p>
+
+<h2 id="faq">FAQ: sådan gemmer du en Claude-samtale</h2>
+<h3>Hvordan gemmer jeg en Claude-samtale som en fil?</h3>
+<p>Installér Download Claude conversations, åbn samtalen på claude.ai, klik på den orange knap ved siden af beskedfeltet, vælg Markdown, JSON, tekst, XML eller PNG, og klik på »Export« (Eksportér). Filen downloades lokalt. Historikken har allerede gemt chatten på Anthropic-kontoen; den orange knap skriver en kopi til disken.</p>
+<h3>Hvordan gemmer man en Claude-chat på claude.ai?</h3>
+<p>Du behøver ingen Gem-knap for at beholde samtalen på kontoen. Historikken på claude.ai viser allerede de chats, du har haft, mens du var logget ind. Vil du gemme en Claude-chat som fil, så brug Chrome-udvidelsen, Print → Gem som PDF eller Settings → Privacy → Export data for en forsinket JSON-ZIP med hele kontoen.</p>
+<h3>Hvordan gemmer man en samtale i Claude uden en udvidelse?</h3>
+<p>Udskriv claude.ai-siden (Ctrl/Cmd+P → Gem som PDF) for en visuel kopi, eller brug Settings → Privacy → Export data for en JSON-ZIP med hele kontoen, sendt via e-mail. Kopiér og indsæt fungerer til et kort svar. Ingen af de metoder skriver en struktureret Markdown-fil pr. chat, sådan som Chrome-udvidelsen gør.</p>
+<h3>Gemmer Claude allerede samtalen i historikken?</h3>
+<p>Ja. Chats på claude.ai, som du har haft, mens du var logget ind, bliver i historikken på Anthropic-kontoen. Hvis du lukker fanen, genindlæser eller åbner en anden enhed med samme login, forsvinder samtalen ikke. Historikken er bare ikke en Markdown-, JSON-, tekst-, XML- eller PNG-fil på din disk.</p>
+<h3>Forsvinder en Claude-samtale, hvis jeg lukker fanen?</h3>
+<p>Nej. At lukke en claude.ai-fane sletter ikke samtalen fra historikken. Sletter du chatten fra historikken, forsvinder den fra kontoens brugerflade. En fil, du allerede har eksporteret med Download Claude conversations, bliver på disken, også efter sletningen.</p>
+<h3>Kan jeg gemme en Claude-samtale som PDF?</h3>
+<p>Ikke med Download Claude conversations 1.13.0. Formaterne er Markdown, JSON, ren tekst, XML og PNG. Vil du have et PDF-lignende øjebliksbillede, så udskriv claude.ai-siden. PNG er et billede af samtalen, ikke en PDF.</p>
+<h3>Hvor mange gratis filer kan jeg gemme af Claude-samtaler?</h3>
+<p>Alle konti med Google-login får 3 gratis eksporter i et hvilket som helst af de fem formater. Derefter koster Pro 3,99 $ om måneden eller 26,99 $ om året. Paddle håndterer betalingen. Filer fra masseeksport med »Export All« tæller med i de samme 3.</p>
+<h3>Kan jeg gemme en Claude-samtale på mobilen?</h3>
+<p>Ikke med Chrome-udvidelsen. Den kører i Chrome på computeren (eller en anden Chromium-browser, der kan installere udvidelser fra Chrome Web Store). Der findes ingen app til iOS eller Android. Mobilbrowsere kan stadig åbne historikken og udskrive en Claude-chat, men de kan ikke vise den orange knap.</p>
+<h3>Kan jeg gemme mange Claude-chats fra historikken på én gang?</h3>
+<p>Ja. Åbn »View and Download All Conversations« (se og download alle samtaler) fra udvidelsens popup, filtrér tabellen, og klik på »Export All« (eksportér alle). Den vej er ikke Anthropics Export data-ZIP. Den officielle Export data er ét arkiv med hele kontoen, som sendes via e-mail senere. Se <a href="/da/eksporter-alle-claude-chats/">massedownload</a>.</p>
+<h3>Kan den gemme en Claude-samtale fra Claude Code?</h3>
+<p>Nej. Claude Code kører i terminalen. Brug <code>/export</code>, eller kopiér JSONL fra <code>~/.claude/projects</code> (Windows: <code>%USERPROFILE%\.claude\projects</code>). Denne Chrome-udvidelse kører kun på claude.ai. Guide: <a href="/da/eksporter-claude-code-samtale/">Claude Code-eksport</a>.</p>
+<h3>Kræves der Google-login for at gemme en Claude-chat?</h3>
+<p>Ja, fra og med den første eksport. Google bekræfter, hvilken konto du har valgt, så vi kan håndhæve kvoten på 3 eksporter og gendanne Pro efter en geninstallation. Samtalens indhold sendes ikke med det login. Vi gemmer kun den bekræftede e-mailadresse til kvote og Pro-status.</p>
+<h3>Hvor finder jeg den officielle Export data til at gemme Claude-chats?</h3>
+<p>På claude.ai: Settings → Privacy → Export data (menuerne kan være oversat, hvis claude.ai er sat til dansk). Anthropic sender et link via e-mail, som udløber. ZIP-filen er et JSON-arkiv på kontoniveau, ikke en navngiven Markdown-fil for den chat, du læste. Brug Export data som backup; brug den orange knap, når du vil have én læsbar fil nu.</p>
+</article>
+</main>
+<section class="final-cta page-cta" aria-label="Installér">
+  <div class="wrap">
+    <div class="final-cta-panel">
+      <p class="final-kicker">Download Claude conversations</p>
+      <h2>Installér udvidelsen, og gem din Claude-samtale som fil</h2>
+      <p>Historikken beholder allerede chatten. Gør den åbne claude.ai-samtale til Markdown, JSON, tekst, XML eller PNG – lokalt, direkte fra Chrome.</p>
+      <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=da-save-conversation" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Føj til Chrome</a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="logo" href="/da/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
+      <p class="legal-note">Chrome-udvidelse til at downloade Claude.ai-chats som Markdown, JSON, ren tekst, XML eller PNG. Bedømt 5,0 i Chrome Web Store.</p>
+    </div>
+    <div>
+      <h2>Installér</h2>
+      <a class="install-link" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=da-footer" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Chrome-udvidelse</a>
+    </div>
+    <div>
+      <h2>Produkt</h2>
+      <a href="/da/funktioner/">Funktioner</a>
+      <a href="/da/formater/">Formater</a>
+      <a href="/da/eksporter-alle-claude-chats/">Eksportér alle chats</a>
+      <a href="/da/saadan-virker-det/">Sådan virker det</a>
+    </div>
+    <div>
+      <h2>Guides</h2>
+      <a href="/da/download-claude-chat/">Download Claude-chat</a>
+      <a href="/da/saadan-eksporterer-du-claude-chat/">Sådan eksporterer du en Claude-chat</a>
+      <a href="/da/eksporter-claude-chat/">Eksportér Claude-chat</a>
+      <a href="/da/claude-samtale-extractor/">Claude samtale-extractor</a>
+      <a href="/da/eksporter-claude-code-samtale/">Eksportér Claude Code-samtale</a>
+      <a href="/da/claude-chat-som-pdf/">Print / PDF</a>
+      <a href="/da/eksporter-claude-desktop-chat/">Eksportér Claude Desktop-chat</a>
+      <a href="/da/eksporter-claude-samtale/">Eksportér Claude-samtale</a>
+      <a href="/da/gem-claude-samtale/">Gem Claude-samtale</a>
+      <a href="/da/download-claude-samtale/">Download Claude-samtale</a>
+    </div>
+    <div>
+      <h2>Juridisk</h2>
+      <a href="/da/om-os/">Om os</a>
+      <a href="/da/om-os/#contact">Kontakt</a>
+      <a href="/privacy/" hreflang="en">Privatliv (engelsk)</a>
+      <a href="/terms/" hreflang="en">Vilkår (engelsk)</a>
+      <a href="/refund/" hreflang="en">Refusion (engelsk)</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Download Claude conversations. Alle rettigheder forbeholdes.</div>
+    <div>
+      <a href="/privacy/" hreflang="en">Privatlivspolitik (engelsk)</a>
+      <a href="/terms/" hreflang="en">Servicevilkår (engelsk)</a>
+      <a href="/refund/" hreflang="en">Refusion (engelsk)</a>
+    </div>
+  </div>
+  <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/how-to-save-claude-conversation/" hreflang="en" lang="en">English</a> <a href="/de/claude-chat-speichern/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/sauvegarder-conversation-claude/" hreflang="fr" lang="fr">Français</a> <a href="/nl/claude-gesprek-opslaan/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/spara-claude-konversation/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/lagre-claude-samtale/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/gem-claude-samtale/" hreflang="da" lang="da">Dansk</a> <a href="/fi/tallenna-claude-keskustelu/" hreflang="fi" lang="fi">Suomi</a> <a href="/ja/how-to-save-claude-conversation/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/how-to-save-claude-conversation/" hreflang="ko" lang="ko">한국어</a> <a href="/he/how-to-save-claude-conversation/" hreflang="he" lang="he">עברית</a> <a href="/ar/how-to-save-claude-conversation/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
+  <p class="disclaimer">Chats behandles i din browser · Google-login til kvoten · Ikke tilknyttet Anthropic, PBC. Claude er et varemærke tilhørende Anthropic. Uafhængig Chrome-udvidelse – ikke et officielt Anthropic-produkt. Support: <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

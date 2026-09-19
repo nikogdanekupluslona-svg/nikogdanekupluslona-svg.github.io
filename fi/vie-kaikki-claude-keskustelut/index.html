@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vie kaikki Claude-keskustelut kerralla – Export All</title>
+  <meta name="description" content="Vie kaikki Claude-keskustelut ja koko historia claude.ai:sta: hae, suodata ja vie Markdownina, JSONina, tekstinä, XML:nä tai PNG:nä. Ilmainen laajennus.">
+  <link rel="canonical" href="https://chat-downloader.com/fi/vie-kaikki-claude-keskustelut/">
+  <!-- i18n:head -->
+  <link rel="alternate" hreflang="en" href="https://chat-downloader.com/bulk/">
+  <link rel="alternate" hreflang="de" href="https://chat-downloader.com/de/alle-claude-chats-exportieren/">
+  <link rel="alternate" hreflang="fr" href="https://chat-downloader.com/fr/exporter-historique-claude/">
+  <link rel="alternate" hreflang="nl" href="https://chat-downloader.com/nl/alle-claude-chats-exporteren/">
+  <link rel="alternate" hreflang="sv" href="https://chat-downloader.com/sv/exportera-alla-claude-chattar/">
+  <link rel="alternate" hreflang="nb" href="https://chat-downloader.com/nb/eksportere-alle-claude-chatter/">
+  <link rel="alternate" hreflang="da" href="https://chat-downloader.com/da/eksporter-alle-claude-chats/">
+  <link rel="alternate" hreflang="fi" href="https://chat-downloader.com/fi/vie-kaikki-claude-keskustelut/">
+  <link rel="alternate" hreflang="ja" href="https://chat-downloader.com/ja/bulk/">
+  <link rel="alternate" hreflang="ko" href="https://chat-downloader.com/ko/bulk/">
+  <link rel="alternate" hreflang="he" href="https://chat-downloader.com/he/bulk/">
+  <link rel="alternate" hreflang="ar" href="https://chat-downloader.com/ar/bulk/">
+  <link rel="alternate" hreflang="x-default" href="https://chat-downloader.com/bulk/">
+  <meta property="og:locale" content="fi_FI">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="sv_SE">
+  <meta property="og:locale:alternate" content="nb_NO">
+  <meta property="og:locale:alternate" content="da_DK">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <meta property="og:locale:alternate" content="he_IL">
+  <meta property="og:locale:alternate" content="ar_AE">
+  <!-- /i18n:head -->
+  <meta property="og:title" content="Vie kaikki Claude-keskustelut kerralla – Export All">
+  <meta property="og:description" content="Vie kaikki Claude-keskustelut ja koko historia claude.ai:sta: hae, suodata ja vie Markdownina, JSONina, tekstinä, XML:nä tai PNG:nä. Ilmainen laajennus.">
+  <meta property="og:url" content="https://chat-downloader.com/fi/vie-kaikki-claude-keskustelut/">
+  <meta property="og:image" content="https://chat-downloader.com/assets/widget-guide.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chat Downloader">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Vie kaikki Claude-keskustelut kerralla – Export All">
+  <meta name="twitter:description" content="Vie kaikki Claude-keskustelut ja koko historia claude.ai:sta: hae, suodata ja vie Markdownina, JSONina, tekstinä, XML:nä tai PNG:nä. Ilmainen laajennus.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME1YXGZKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GME1YXGZKR');
+  </script>
+  
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Miten lataan Claude-chatit kerralla?","acceptedAnswer":{"@type":"Answer","text":"Avaa ”View and Download All Conversations”, valitse tai suodata rivit, valitse formaatti ja napsauta ”Export All”. Jokainen tiedosto on Markdown, JSON, teksti, XML tai PNG. Näin viet koko Claude-historian erillisinä dokumentteina."}},{"@type":"Question","name":"Maksaako joukkovienti enemmän kuin yksittäinen vienti?","acceptedAnswer":{"@type":"Answer","text":"Ei. Sama mittari: yhteensä 3 ilmaista vientiä oranssin painikkeen ja Export Allin kesken. Pro maksaa 3,99 $/kk tai 26,99 $/vuosi molemmille. Yksi joukkoviennin tiedosto maksaa yhden viennin, kuten yksi yksittäinen tallennus."}},{"@type":"Question","name":"Voiko Claude-keskusteluhistorian ladata yhdestä projektista?","acceptedAnswer":{"@type":"Answer","text":"Kyllä. Suodata selaussivulla projektin mukaan ja aja Export All. Näin viet tavallisesti kokonaisia keskustelukokonaisuuksia ottamatta mukaan tilin jokaista keskustelua."}},{"@type":"Question","name":"Onko joukkovienti sama kuin Anthropicin virallinen vienti?","acceptedAnswer":{"@type":"Answer","text":"Ei. Virallinen Export data on yksi koko tilin JSON-ZIP sähköpostilla (Claude-keskustelujen varmuuskopio). Export All tuottaa valitsemasi tiedostot heti ja valitsemassasi formaatissa."}},{"@type":"Question","name":"Muistaako Download Claude conversations viedyt chatit?","acceptedAnswer":{"@type":"Answer","text":"Kyllä. ”Exported”-suodatin seuraa, mitä tämä laajennus on jo ladannut, joten myöhemmällä käynnillä voit ajaa Export Allin vain uusille."}},{"@type":"Question","name":"Näinkö viedään kaikki Claude-keskustelut?","acceptedAnswer":{"@type":"Answer","text":"Kyllä – selaussivun Export All on tapa viedä koko Claude-historia erillisinä tiedostoina. Anthropicin Export data on sen sijaan yksi viiveellä tuleva tilin ZIP."}},{"@type":"Question","name":"Toimiiko Export All Claude Desktopissa?","acceptedAnswer":{"@type":"Answer","text":"Ei. Tämä Chrome-laajennus ei toimi Claude Desktopissa. Synkronoi chatit ensin claude.ai:hin tai kopioi ja liitä / käytä virallista ZIPiä."}},{"@type":"Question","name":"Voiko Claude-keskustelut varmuuskopioida Export Allilla?","acceptedAnswer":{"@type":"Answer","text":"Export All tuottaa kansion luettavia tiedostoja, ei Anthropicin varmuuskopio-ZIPiä. Tilitason varmuuskopioon käytä Settings → Privacy → Export data -toimintoa. Käytä molempia, jos haluat sekä dokumentit että arkiston."}},{"@type":"Question","name":"Kirjoittaako Export All PDF-tiedoston?","acceptedAnswer":{"@type":"Answer","text":"Ei. Formaatit ovat Markdown, JSON, pelkkä teksti, XML ja PNG. Tulosta Chromesta, jos tarvitset PDF-tyyppisen sivun. PNG-joukkovienti tuottaa silti kuvia, yhden jokaisesta chatista."}},{"@type":"Question","name":"Toimiiko kaikkien keskustelujen vienti Claude Codessa?","acceptedAnswer":{"@type":"Answer","text":"Ei. Claude Code käyttää komentoa /export tai levyn JSONL-tiedostoja. Export All listaa vain claude.ai-keskustelut Chromessa."}},{"@type":"Question","name":"Mitä jos Export All pysähtyy kolmen tiedoston jälkeen?","acceptedAnswer":{"@type":"Answer","text":"3 ilmaista vientiä on käytetty. Päivitä Prohon (3,99 $/kk tai 26,99 $/vuosi) tai odota, kunnes tarvitset lisää. Uudelleenasennus ei nollaa Google-tiliin sidottua laskuria."}},{"@type":"Question","name":"Tarvitsenko Anthropicin maksullisen tilauksen Export Alliin?","acceptedAnswer":{"@type":"Answer","text":"Et. Mikä tahansa claude.ai-tilaus, joka lataa historian Chromessa, toimii. Meidän ilmais- ja Pro-mittarimme on erillinen. Tiimin ylläpitäjät voivat silti estää laajennuksen selaimessa."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Etusivu","item":"https://chat-downloader.com/fi/"},{"@type":"ListItem","position":2,"name":"Joukkovienti","item":"https://chat-downloader.com/fi/vie-kaikki-claude-keskustelut/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Siirry sisältöön</a>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a class="logo" href="/fi/">
+        <img src="/assets/icon.svg" alt="">
+        <span>Download Claude conversations</span>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="/fi/lataa-claude-keskustelu/">Lataaminen</a><a href="/fi/nain-viet-claude-chatin/">Vienti</a><a href="/fi/vie-kaikki-claude-keskustelut/" aria-current="page">Kaikki kerralla</a><a href="/fi/formaatit/">Muodot</a><a href="/fi/#faq">UKK</a>
+        <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=fi-bulk" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Lisää Chromeen</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <!-- i18n:switch --><details class="lang-switch"><summary aria-label="Kieli">fi</summary><ul><li><a href="/bulk/" hreflang="en" lang="en">English</a></li><li><a href="/de/alle-claude-chats-exportieren/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/exporter-historique-claude/" hreflang="fr" lang="fr">Français</a></li><li><a href="/nl/alle-claude-chats-exporteren/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/sv/exportera-alla-claude-chattar/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="/nb/eksportere-alle-claude-chatter/" hreflang="nb" lang="nb">Norsk</a></li><li><a href="/da/eksporter-alle-claude-chats/" hreflang="da" lang="da">Dansk</a></li><li><a href="/fi/vie-kaikki-claude-keskustelut/" hreflang="fi" lang="fi" aria-current="true">Suomi</a></li><li><a href="/ja/bulk/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/ko/bulk/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/he/bulk/" hreflang="he" lang="he">עברית</a></li><li><a href="/ar/bulk/" hreflang="ar" lang="ar">العربية</a></li></ul></details><!-- /i18n:switch -->
+      <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=fi-bulk" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Lisää Chromeen</a>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Valikko">☰</button>
+    </div>
+  </div>
+</header>
+<nav class="crumbs" aria-label="Murupolku"><a href="/fi/">Etusivu</a> / Joukkovienti</nav>
+<main id="main">
+<article class="band prose">
+<p class="article-meta">Päivitetty <time datetime="2026-09">syyskuussa 2026</time> · Laajennuksen versio 1.13.0</p>
+<h1 class="page-h1">Vie kaikki Claude-keskustelut ja koko historia kerralla</h1>
+<p class="lead">Kun haluat viedä kaikki Claude-keskustelut claude.ai:sta, avaa ”View and Download All Conversations” (näytä ja lataa kaikki keskustelut), suodata ja napsauta ”Export All” (vie kaikki). Download Claude conversations kirjoittaa Markdownia, JSONia, tekstiä, XML:ää tai PNG:tä paikallisesti. Jokainen tiedosto käyttää yhden 3 ilmaisesta viennistä, ellei sinulla ole Prota (3,99 $/kk tai 26,99 $/vuosi). Tämä ei ole Claude Desktop, Claude Code eikä Anthropicin sähköpostitse lähettämä ZIP.</p>
+<aside class="trust-badge" aria-label="Chrome Web Store -arvio">
+  <span class="trophy" aria-hidden="true">🏆</span>
+  <div>
+    <strong>Download Claude conversations – arvosana 5,0 Chrome Web Storessa</strong>
+    <span>2026 – ilmainen Chrome-laajennus, joka tallentaa claude.ai-chatit Markdown-, JSON-, teksti-, XML- tai PNG-muodossa</span>
+  </div>
+</aside>
+<nav class="toc" aria-label="Tällä sivulla">
+  <p>Tällä sivulla</p>
+  <ol>
+    <li><a href="#open-browse">Miten viet kaikki Claude-keskustelut?</a></li>
+    <li><a href="#search-filter">Miten suodatan Claude-chatit ennen Export Allia?</a></li>
+    <li><a href="#toggles">Mitä Export All sisällyttää jokaiseen tiedostoon?</a></li>
+    <li><a href="#quota">Montako ilmaista vientiä Export All käyttää?</a></li>
+    <li><a href="#vs-zip">Export All vai Claude-keskustelujen varmuuskopio-ZIP?</a></li>
+    <li><a href="#not-desktop">Toimiiko Export All Desktopissa tai Codessa?</a></li>
+    <li><a href="#formats-bulk">Mitä formaattia Export Allissa kannattaa käyttää?</a></li>
+    <li><a href="#faq">UKK: vie kaikki Claude-keskustelut</a></li>
+  </ol>
+</nav>
+
+<h2 id="open-browse">Miten viet kaikki Claude-keskustelut?</h2>
+<p>Napsauta Download Claude conversations -kuvaketta, valitse ”View and Download All Conversations” ja napsauta ”Export All”. Selaussivu listaa claude.ai-historian, joten voit viedä koko Claude-arkiston erillisinä tiedostoina (englanniksi haetaan usein ”claude export all chats”). Yksittäisen keskustelun oranssi painike on toinen reitti; joukkovienti tehdään tästä taulukosta.</p>
+<ol>
+<li>Asenna Chrome-laajennus (arvosana 5,0) ja kiinnitä se. Tämän oppaan versio on 1.13.0, syyskuu 2026.</li>
+<li>Kirjaudu claude.ai:hin Chromessa. Export All lukee saman istunnon kuin sivusto.</li>
+<li>Avaa ponnahdusikkuna ja napsauta ”View and Download All Conversations”.</li>
+<li>Hae tai suodata ja valitse chatit, jotka oikeasti haluat.</li>
+<li>Valitse Markdown, JSON, pelkkä teksti, XML tai PNG ja napsauta ”Export All”.</li>
+</ol>
+<p><img class="shot" src="/assets/browse-guide.jpg" alt="Selaussivu, jossa Claude-keskustelut, haku ja Export All"></p>
+<p class="caption">Selaussivu, jossa Claude-keskustelut, haku ja Export All</p>
+<p>Google-kirjautuminen vaaditaan ennen ensimmäistä tiedostoa, myös ennen ensimmäistä Export All -ajoa. Download Claude conversations tallentaa vahvistetun sähköpostiosoitteen, jotta 3 ilmaisen viennin raja pysyy ja Pro voidaan palauttaa. Keskustelujen sisältö pysyy selaimessa. Käsittelyketju: <a href="/fi/nain-se-toimii/">näin se toimii</a>. Yhden chatin ohjeet, jos tarvitset vain yhden välilehden: <a href="/fi/lataa-claude-keskustelu/">näin lataat Claude-chatin</a>.</p>
+<div class="callout callout-tip">
+  <p><strong>Koko historia tarkoittaa monta tiedostoa, ei yhtä ZIPiä.</strong> Export All kirjoittaa yhden tiedoston jokaisesta valitusta claude.ai-keskustelusta. Anthropicin Settings → Privacy → Export data (valikot voivat näkyä suomeksi, jos claude.ai on asetettu suomen kielelle) on viiveellä tuleva tilin ZIP, jos halusit yhden varmuuskopiopaketin Markdown- tai JSON-kansion sijaan.</p>
+</div>
+
+<h2 id="search-filter">Miten suodatan Claude-chatit ennen Export Allia?</h2>
+<p>Haku löytää keskustelut nimen perusteella. Suodattimet ovat ”All”, ”New”, ”Exported” ja ”Project” (kaikki, uudet, viedyt, projekti). Käytä niitä ennen kuin viet kaikki Claude-keskustelut, jotta et kuluta kiintiötä tiedostoihin, jotka sinulla jo on. ”New” tarkoittaa keskusteluja, joita ei ole vielä viety tällä laajennuksella. ”Exported” merkitsee jo tallennetut chatit.</p>
+<p>”Project” vastaa sitä, miten ryhmittelet keskustelut claude.ai:ssa. Tyypillinen joukkovienti on ”tämä projekti” tai ”vain uudet”, ei ”kaikki tilin luomisesta lähtien”. Valitse rivit ja aja Export All kerran. Oranssin painikkeen toistaminen kymmenissä osoitteissa on se hidas tapa, jonka tämä selaustaulukko korvaa.</p>
+<p>”Exported”-suodatin on Download Claude conversations -laajennuksen oma. Se ei ole Anthropicin käsitys varmuuskopiosta. Jos olet aiemmin käyttänyt virallista Export dataa, ne chatit voivat silti näkyä täällä uusina, kunnes tämä laajennus on kirjoittanut niistä tiedostot. Se on odotettua. Taulukon ominaisuudet: <a href="/fi/ominaisuudet/">ominaisuudet</a>.</p>
+<div class="callout callout-warn">
+  <p><strong>Valitse ennen kuin sitoudut.</strong> Export All yrittää kirjoittaa tiedoston jokaisesta valitusta rivistä. Kun ilmaisraja on 3 vientiä, 40 rivin valinta on Pro-työ (3,99 $/kk tai 26,99 $/vuosi), ei ilmaistason kokeilu. Suodata ensin uudet tai yksi projekti.</p>
+</div>
+
+<h2 id="toggles">Mitä Export All sisällyttää jokaiseen tiedostoon?</h2>
+<p>Joukkovienti käyttää samoja valintoja kuin yksittäinen tallennus: Chats, Thinking, Metadata (chatit, ajattelu, metatiedot) ja artefaktien asettelu ”Original”, ”Inline”, ”Nested” tai ”Flat” (alkuperäinen, upotettu, sisäkkäinen, litteä). Kaikkien Claude-keskustelujen vienti ei ole heikkolaatuisempi ZIP. Jokainen tiedosto voi säilyttää koodilohkot, taulukot ja halutessasi päättelyn. Lähettäjäsuodattimella voit pitää kaikki viestit, vain käyttäjän tai vain avustajan viestit (”all / human only / assistant only”).</p>
+<p>Thinking on Clauden laajennettu päättely, jos sivu näytti sen. Metatietoihin voivat kuulua otsikot, aikaleimat ja malli. Artefaktien asettelu määrää, miten artefaktit päätyvät Markdowniin, JSONiin tai XML:ään. PNG on yhä kuva keskustelusta. Mikään näistä valinnoista ei lisää PDF:ää. Tulostus on erillinen selaintoiminto: <a href="/fi/claude-keskustelu-pdf/">tulostus / PDF</a>.</p>
+<div class="expert-quote">
+  <p>Export All laskee jokaisen tiedoston samaan 3 ilmaisen viennin kiintiöön kuin yksittäisen chatin tallennus. Pro hintaan 3,99 $ kuukaudessa tai 26,99 $ vuodessa on sama lisenssi molemmille. Joukkovienti on yksittäinen vienti laajassa mittakaavassa, ei eri tuote.</p>
+  <footer>Download Claude conversations -tiimi</footer>
+</div>
+<p>Keskeneräinen tiedosto joukkoviennissä tarkoittaa yleensä, ettei hyvin pitkä keskustelu ollut vielä kokonaan latautunut. Export All riippuu siitä, mitä claude.ai on ladannut kustakin avaamastaan chatista. Jos tiedosto näyttää lyhyeltä, avaa se keskustelu, odota ja vie rivi uudelleen. Selaustaulukon ”Exported”-tila päivittyy onnistuneen latauksen jälkeen.</p>
+
+<h2 id="quota">Montako ilmaista vientiä Export All käyttää?</h2>
+<p>Yksi valmis tiedosto on yksi vienti, aivan kuten oranssilla painikkeella. Jokainen tili saa yhteensä 3 ilmaista vientiä, yksittäiset ja joukkoviennit yhteenlaskettuina. Erillistä joukkovientikiintiötä ei ole. Pro hintaan 3,99 $/kk tai 26,99 $/vuosi poistaa rajan molemmista. Pron laskuttaa Paddle; emme koskaan näe korttitietoja.</p>
+<p>Chromen uudelleenasennus ei nollaa 3 viennin laskuria. Siksi ensimmäinen tiedosto vaatii Google-kirjautumisen, kun viet kaikki Claude-keskustelut. Pro palautuu uudella koneella samalla Google-tilillä. claude.ai:n Free, Pro, Team ja Enterprise toimivat kaikki, jos istunto pystyy listaamaan keskustelut; Anthropicin tilaus ei ole meidän mittarimme.</p>
+<p>Suunnittele valinta. Kolme uutta chattia Markdownina on toimiva ilmaistason Export All. Kolmekymmentä chattia on Pro-työ. Formaattien sekoittaminen ei moninkertaista kiintiötä; jokainen valmis PNG tai JSON lasketaan silti yhdeksi. Jos päivität Prohon ja muutat mielesi, palautukset hoidetaan Paddlen kautta palautussivun mukaisesti.</p>
+<table>
+  <caption>Kiintiöesimerkkejä, kun viet kaikki Claude-keskustelut</caption>
+  <thead>
+    <tr>
+      <th scope="col">Valinta</th>
+      <th scope="col">Kirjoitetut tiedostot</th>
+      <th scope="col">Ilmaistaso (3 vientiä)</th>
+      <th scope="col">Pro 3,99 $/kk tai 26,99 $/vuosi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1 keskustelu, oranssi painike</td>
+      <td>1</td>
+      <td>Käyttää 1/3</td>
+      <td>Rajaton tällä lisenssillä</td>
+    </tr>
+    <tr>
+      <td>3 chattia Export Allilla</td>
+      <td>3</td>
+      <td>Käyttää koko ilmaiskiintiön</td>
+      <td>Onnistuu</td>
+    </tr>
+    <tr>
+      <td>1 projekti, 12 chattia</td>
+      <td>12</td>
+      <td>Pysähtyy 3:n jälkeen, ellet päivitä</td>
+      <td>Tarkoitettu tapa</td>
+    </tr>
+    <tr>
+      <td>Virallinen Export data -ZIP</td>
+      <td>1 arkisto Anthropicilta</td>
+      <td>Ei käytä kiintiötämme</td>
+      <td>Ei käytä kiintiötämme</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="vs-zip">Export All vai Claude-keskustelujen varmuuskopio-ZIP?</h2>
+<p>Claude-keskustelujen varmuuskopio tarkoittaa yleensä Anthropicin Settings → Privacy → Export data -toimintoa: yksi viiveellä tuleva JSON-ZIP koko tilistä. Export All tarkoittaa valitsemiasi tiedostoja heti Markdownina, JSONina, tekstinä, XML:nä tai PNG:nä. Käytä ZIPiä tilin varmuuskopioon. Käytä tätä sivua dokumentteihin.</p>
+<table>
+  <caption>Claude-keskustelujen varmuuskopio vai Export All</caption>
+  <thead>
+    <tr>
+      <th scope="col">Tehtävä</th>
+      <th scope="col">Työkalu</th>
+      <th scope="col">Tulos</th>
+      <th scope="col">Odotus</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Claude-keskustelujen varmuuskopio (tili)</td>
+      <td>Settings → Privacy → Export data</td>
+      <td>JSON-ZIP sähköpostilla</td>
+      <td>Kyllä; linkki vanhenee</td>
+    </tr>
+    <tr>
+      <td>Kaikki Claude-keskustelut tiedostoina</td>
+      <td>Export All selaussivulla</td>
+      <td>Yksi tiedosto jokaisesta valitusta chatista</td>
+      <td>Ei – Chrome lataa heti</td>
+    </tr>
+    <tr>
+      <td>Yksi avoin keskustelu</td>
+      <td>Oranssi painike</td>
+      <td>Yksi MD/JSON/TXT/XML/PNG</td>
+      <td>Ei</td>
+    </tr>
+    <tr>
+      <td>PDF-tyyppinen tilannekuva</td>
+      <td>Tulostus Chromessa</td>
+      <td>Verkkosivun PDF</td>
+      <td>Ei; asettelu hajoaa usein</td>
+    </tr>
+  </tbody>
+</table>
+<p>Virallinen ZIP ei sisällä chatkohtaista Markdownia, eikä siinä ole uudet/viedyt-suodattimia. Export All ei ole juridinen tai vaatimustenmukaisuutta varten tehty kaappaus jokaisesta unohtuneesta keskustelusta, jota et näe taulukossa. Jos keskustelu ei näy selaussivulla, tämä laajennus ei voi keksiä sitä. Tavat tulostus mukaan lukien: <a href="/fi/nain-viet-claude-chatin/">näin viet Claude-chatin</a>.</p>
+<p>Moni hakee samaa asiaa myös englanniksi, esimerkiksi ”claude export history”, ja päätyy saman risteyksen eteen. Jos tarkoitus on varmuuskopioida Claude-keskustelut, aloita Anthropicin Export datasta. Jos tarkoitus on muistiinpanokansio, pysy Export Allissa. Kumpikaan ei ole Claude Desktop. Kumpikaan ei ole Claude Coden <code>/export</code>.</p>
+
+<h2 id="not-desktop">Toimiiko Export All Desktopissa tai Codessa?</h2>
+<p>Ei. Kaikkien Claude-keskustelujen vienti tällä laajennuksella vaatii claude.ai:n Chromessa. Claude Desktop ei koskaan näytä ”View and Download All Conversations” -näkymää. Claude Code käyttää komentoa <code>/export</code> tai levyn JSONL-tiedostoja. Laajennuksen asentaminen ei lisää Export Allia näihin tuotteisiin.</p>
+<p>Jos Desktop-keskustelut synkronoituivat samaan tiliin, ne voivat näkyä selaustaulukossa, kun ne ovat claude.ai:ssa. Jos ne eivät koskaan synkronoituneet, joukkovienti ei näe niitä. Desktopin kiertotiet: <a href="/fi/vie-claude-desktop-chat/">vie Claude Desktop -chat</a>. Terminaali-istunnot: <a href="/fi/claude-code-keskustelun-vienti/">Claude Code -vienti</a>. Älä aja Export Allia odottaen JSONL:ää repositoriosta.</p>
+<p>Myöskään mobiili-Chrome ei ole tuettu. Selaussivu on tietokoneen laajennuksen käyttöliittymä. Tiimillämme ei ole iOS-joukkolatausta vuonna 2026. Avaa claude.ai tietokoneella. Tiimikäytännöt, jotka estävät laajennukset, estävät myös Export Allin.</p>
+
+<h2 id="formats-bulk">Mitä formaattia Export Allissa kannattaa käyttää?</h2>
+<p>Valitse yksi formaatti koko Export All -ajolle. Markdown muistiinpanokokoelmiin, JSON käsittelyketjuihin, pelkkä teksti merkinnättömiin arkistoihin, XML tiedonsiirtoon, PNG kuviin. Kun viet kaikki Claude-keskustelut, käytössä ovat samat viisi formaattia kuin oranssilla painikkeella. Kooste: <a href="/fi/formaatit/">formaatit</a>. Versiossa 1.13.0 ei ole PDF:ää.</p>
+<p>Kirjoittajat vievät yleensä Markdownina – <a href="/fi/formaatit/markdown/">Markdown-opas</a>. Kehittäjät vievät yleensä JSONina – <a href="/fi/formaatit/json/">JSON-opas</a>. XML: <a href="/fi/formaatit/xml/">XML</a>. PNG: <a href="/fi/formaatit/png/">PNG</a>. Export Allin JSON on silti sivulta rakennettuja chatkohtaisia tiedostoja, ei Anthropicin tilin ZIPin rakennetta. Älä sekoita näitä skeemoja samassa skriptissä.</p>
+<p>Formaatin valinta ei muuta hintaa. PNG-joukkovienti kuluttaa yhden viennin kuvaa kohden. Jos vaihdat toisella ajolla Markdownista JSONiin, jokainen chat kuluttaa toisen viennin. Käytä ”Exported”-suodatinta välttääksesi tuplaukset. Poimintaa korostava kuvaus samoista tiedostoista: <a href="/fi/claude-keskustelu-extractor/">Claude-keskustelujen extractor</a>. Yksittäinen vienti tuotteen näkökulmasta: <a href="/fi/vie-claude-chat/">vie Claude-chat</a>.</p>
+<div class="callout callout-info">
+  <p><strong>Emme nimeä muita vientityökaluja.</strong> Anthropicin virallinen Export data mainitaan varmuuskopio-ZIPin vertailukohtana. Download Claude conversations (myös Claude Chat Downloader / Claude Conversation Downloader) on Chromen joukkovientireitti. Itsenäinen laajennus, ei yhteydessä Anthropic, PBC:hen. Arvosana 5,0 Chrome Web Storessa.</p>
+</div>
+<p>Jos Export All jumittuu, tarkista Chromen latausoikeudet claude.ai:lle, varmista, että ilmaisia vientejä on jäljellä tai Pro on käytössä, ja yritä uudelleen pelkillä uusilla. Jos taulukko on tyhjä, olet kirjautunut ulos tai et ole claude.ai-istunnossa, jota sisältöskripti voi lukea. Lataa claude.ai uudelleen ja avaa ”View and Download All Conversations” uudestaan.</p>
+
+<h2 id="faq">UKK: vie kaikki Claude-keskustelut</h2>
+<p>Nämä kysymykset koskevat kaikkien Claude-keskustelujen vientiä, Export Allia ja Claude-keskustelujen varmuuskopiointia: kiintiö, projektisuodattimet, Desktop, Claude Code, PDF ja Anthropicin ZIP. Vastaukset koskevat laajennuksen versiota 1.13.0 claude.ai:ssa. Sivun FAQPage JSON-LD vastaa tätä listaa.</p>
+
+<h3>Miten lataan Claude-chatit kerralla?</h3>
+<p>Avaa ”View and Download All Conversations”, valitse tai suodata rivit, valitse formaatti ja napsauta ”Export All”. Jokainen tiedosto on Markdown, JSON, teksti, XML tai PNG. Näin viet koko Claude-historian erillisinä dokumentteina.</p>
+
+<h3>Maksaako joukkovienti enemmän kuin yksittäinen vienti?</h3>
+<p>Ei. Sama mittari: yhteensä 3 ilmaista vientiä oranssin painikkeen ja Export Allin kesken. Pro maksaa 3,99 $/kk tai 26,99 $/vuosi molemmille. Yksi joukkoviennin tiedosto maksaa yhden viennin, kuten yksi yksittäinen tallennus.</p>
+
+<h3>Voiko Claude-keskusteluhistorian ladata yhdestä projektista?</h3>
+<p>Kyllä. Suodata selaussivulla projektin mukaan ja aja Export All. Näin viet tavallisesti kokonaisia keskustelukokonaisuuksia ottamatta mukaan tilin jokaista keskustelua.</p>
+
+<h3>Onko joukkovienti sama kuin Anthropicin virallinen vienti?</h3>
+<p>Ei. Virallinen Export data on yksi koko tilin JSON-ZIP sähköpostilla (Claude-keskustelujen varmuuskopio). Export All tuottaa valitsemasi tiedostot heti ja valitsemassasi formaatissa.</p>
+
+<h3>Muistaako Download Claude conversations viedyt chatit?</h3>
+<p>Kyllä. ”Exported”-suodatin seuraa, mitä tämä laajennus on jo ladannut, joten myöhemmällä käynnillä voit ajaa Export Allin vain uusille.</p>
+
+<h3>Näinkö viedään kaikki Claude-keskustelut?</h3>
+<p>Kyllä – selaussivun Export All on tapa viedä koko Claude-historia erillisinä tiedostoina. Anthropicin Export data on sen sijaan yksi viiveellä tuleva tilin ZIP.</p>
+
+<h3>Toimiiko Export All Claude Desktopissa?</h3>
+<p>Ei. Tämä Chrome-laajennus ei toimi Claude Desktopissa. Synkronoi chatit ensin claude.ai:hin tai kopioi ja liitä / käytä virallista ZIPiä.</p>
+
+<h3>Voiko Claude-keskustelut varmuuskopioida Export Allilla?</h3>
+<p>Export All tuottaa kansion luettavia tiedostoja, ei Anthropicin varmuuskopio-ZIPiä. Tilitason varmuuskopioon käytä Settings → Privacy → Export data -toimintoa. Käytä molempia, jos haluat sekä dokumentit että arkiston.</p>
+
+<h3>Kirjoittaako Export All PDF-tiedoston?</h3>
+<p>Ei. Formaatit ovat Markdown, JSON, pelkkä teksti, XML ja PNG. Tulosta Chromesta, jos tarvitset PDF-tyyppisen sivun. PNG-joukkovienti tuottaa silti kuvia, yhden jokaisesta chatista.</p>
+
+<h3>Toimiiko kaikkien keskustelujen vienti Claude Codessa?</h3>
+<p>Ei. Claude Code käyttää komentoa <code>/export</code> tai levyn JSONL-tiedostoja. Export All listaa vain claude.ai-keskustelut Chromessa.</p>
+
+<h3>Mitä jos Export All pysähtyy kolmen tiedoston jälkeen?</h3>
+<p>3 ilmaista vientiä on käytetty. Päivitä Prohon (3,99 $/kk tai 26,99 $/vuosi) tai odota, kunnes tarvitset lisää. Uudelleenasennus ei nollaa Google-tiliin sidottua laskuria.</p>
+
+<h3>Tarvitsenko Anthropicin maksullisen tilauksen Export Alliin?</h3>
+<p>Et. Mikä tahansa claude.ai-tilaus, joka lataa historian Chromessa, toimii. Meidän ilmais- ja Pro-mittarimme on erillinen. Tiimin ylläpitäjät voivat silti estää laajennuksen selaimessa.</p>
+</article>
+</main>
+<section class="final-cta page-cta" aria-label="Asenna">
+  <div class="wrap">
+    <div class="final-cta-panel">
+      <p class="final-kicker">Download Claude conversations</p>
+      <h2>Asenna laajennus ja lataa Claude-chat sekunneissa</h2>
+      <p>Tallenna tärkeät Claude-keskustelut Markdownina, JSONina, tekstinä, XML:nä tai PNG:nä – paikallisesti, Chromesta.</p>
+      <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=fi-bulk" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Lisää Chromeen</a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="logo" href="/fi/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
+      <p class="legal-note">Chrome-laajennus Claude.ai-keskustelujen lataamiseen Markdown-, JSON-, pelkkä teksti-, XML- tai PNG-muodossa. Arvosana 5,0 Chrome Web Storessa.</p>
+    </div>
+    <div>
+      <h2>Asenna</h2>
+      <a class="install-link" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=fi-footer" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Chrome-laajennus</a>
+    </div>
+    <div>
+      <h2>Tuote</h2>
+      <a href="/fi/ominaisuudet/">Ominaisuudet</a>
+      <a href="/fi/formaatit/">Muodot</a>
+      <a href="/fi/vie-kaikki-claude-keskustelut/">Vie kaikki keskustelut</a>
+      <a href="/fi/nain-se-toimii/">Näin se toimii</a>
+    </div>
+    <div>
+      <h2>Oppaat</h2>
+      <a href="/fi/lataa-claude-keskustelu/">Näin lataat Claude-keskustelun</a>
+      <a href="/fi/nain-viet-claude-chatin/">Näin viet Claude-chatin</a>
+      <a href="/fi/vie-claude-chat/">Vie Claude-chat</a>
+      <a href="/fi/claude-keskustelu-extractor/">Claude-keskustelujen extractor</a>
+      <a href="/fi/claude-code-keskustelun-vienti/">Claude Code -keskustelun vienti</a>
+      <a href="/fi/claude-keskustelu-pdf/">Tulostus / PDF</a>
+      <a href="/fi/vie-claude-desktop-chat/">Vie Claude Desktop -chat</a>
+      <a href="/fi/claude-keskustelun-vienti/">Claude-keskustelun vienti</a>
+      <a href="/fi/tallenna-claude-keskustelu/">Tallenna Claude-keskustelu</a>
+      <a href="/fi/claude-keskustelun-lataus/">Claude-keskustelun lataus</a>
+    </div>
+    <div>
+      <h2>Oikeudelliset tiedot</h2>
+      <a href="/fi/tietoa-meista/">Tietoa meistä</a>
+      <a href="/fi/tietoa-meista/#contact">Yhteystiedot</a>
+      <a href="/privacy/" hreflang="en">Tietosuoja (englanniksi)</a>
+      <a href="/terms/" hreflang="en">Käyttöehdot (englanniksi)</a>
+      <a href="/refund/" hreflang="en">Palautukset (englanniksi)</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Download Claude conversations. Kaikki oikeudet pidätetään.</div>
+    <div>
+      <a href="/privacy/" hreflang="en">Tietosuojaseloste (englanniksi)</a>
+      <a href="/terms/" hreflang="en">Käyttöehdot (englanniksi)</a>
+      <a href="/refund/" hreflang="en">Palautukset (englanniksi)</a>
+    </div>
+  </div>
+  <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/bulk/" hreflang="en" lang="en">English</a> <a href="/de/alle-claude-chats-exportieren/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/exporter-historique-claude/" hreflang="fr" lang="fr">Français</a> <a href="/nl/alle-claude-chats-exporteren/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/exportera-alla-claude-chattar/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/eksportere-alle-claude-chatter/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/eksporter-alle-claude-chats/" hreflang="da" lang="da">Dansk</a> <a href="/fi/vie-kaikki-claude-keskustelut/" hreflang="fi" lang="fi">Suomi</a> <a href="/ja/bulk/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/bulk/" hreflang="ko" lang="ko">한국어</a> <a href="/he/bulk/" hreflang="he" lang="he">עברית</a> <a href="/ar/bulk/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
+  <p class="disclaimer">Keskustelut käsitellään selaimessasi · Google-kirjautuminen kiintiötä varten · Ei yhteydessä Anthropic, PBC:hen. Claude on Anthropicin tavaramerkki. Itsenäinen Chrome-laajennus – ei Anthropicin virallinen tuote. Tuki: <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>
