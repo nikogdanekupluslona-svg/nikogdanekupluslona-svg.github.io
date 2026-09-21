@@ -978,3 +978,139 @@ h1.page-h1 {
 :root:lang(ja) body, :root:lang(ko) body { word-break: keep-all; overflow-wrap: anywhere; line-height: 1.8; }
 :root:lang(ar) body { line-height: 1.85; }
 [dir="rtl"] code, [dir="rtl"] pre, [dir="rtl"] kbd { direction: ltr; unicode-bidi: isolate; }
+
+/* Home: hero CTA, trust line, format chips */
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 14px 22px;
+  margin: 0 0 18px;
+}
+.hero-link { color: var(--muted); font-weight: 600; text-decoration: none; }
+.hero-link:hover { color: var(--brand-dark); }
+.hero-trust {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 20px;
+  margin: 0 0 2.6rem;
+  padding: 0;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 500;
+}
+.hero-trust li::before { content: "✓"; color: var(--ok); font-weight: 800; margin-inline-end: 6px; }
+.format-chips {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 0 0 14px;
+  padding: 0;
+}
+.format-chips a {
+  display: inline-block;
+  padding: 7px 14px;
+  border: 1.5px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: border-color 0.2s, color 0.2s;
+}
+.format-chips a:hover { border-color: var(--brand); color: var(--brand-dark); }
+.platforms-note img { vertical-align: -3px; margin-inline-end: 4px; }
+
+/* Home: 3 steps */
+.steps-band { padding: 72px 0 40px; }
+.steps {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+  counter-reset: none;
+}
+.steps li {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 24px 22px;
+  box-shadow: var(--shadow);
+}
+.step-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--brand);
+  color: #fff;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+.steps h3 { margin: 0 0 6px; font-size: 1.1rem; }
+.steps p { margin: 0; color: var(--muted); font-size: 15px; line-height: 1.55; }
+.steps-more { text-align: center; color: var(--muted); margin: 22px 0 0; font-size: 15px; }
+
+/* Home: use cases */
+.usecases-band { padding: 80px 0 40px; }
+.cards.usecases { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.usecases .card { transition: transform 0.2s, border-color 0.2s; }
+.usecases .card:hover { transform: translateY(-2px); border-color: rgba(201, 100, 66, 0.45); }
+.card-tag {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 2px 9px;
+  border-radius: 999px;
+  background: var(--brand-soft);
+  color: var(--brand-dark);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* Home: pricing */
+.pricing-band { padding: 56px 0 72px; }
+.plans {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 360px));
+  justify-content: center;
+  gap: 20px;
+}
+.plan {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1.5px solid var(--line);
+  border-radius: 20px;
+  padding: 28px 26px;
+}
+.plan-pro { border-color: var(--brand); box-shadow: var(--shadow); }
+.plan h3 { margin: 0; font-size: 1.1rem; }
+.plan-price { margin: 8px 0 0; font-size: 2.2rem; font-weight: 800; color: var(--ink); }
+.plan-price span { font-size: 1rem; font-weight: 500; color: var(--muted); }
+.plan-alt { margin: 2px 0 0; color: var(--muted); font-size: 14px; }
+.plan ul { list-style: none; margin: 18px 0 24px; padding: 0; flex: 1; }
+.plan li { margin: 8px 0; font-size: 15px; color: #3f3a36; }
+.plan li::before { content: "✓"; color: var(--ok); font-weight: 800; margin-inline-end: 8px; }
+.plan .btn { justify-content: center; text-align: center; }
+.plans-note { text-align: center; color: var(--faint); font-size: 13px; margin: 18px 0 0; }
+.final-note { font-size: 14px !important; margin-top: 16px !important; opacity: 0.85; }
+
+@media (max-width: 1100px) and (min-width: 801px) {
+  .cards.usecases { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 800px) {
+  .steps { grid-template-columns: 1fr; }
+  .cards.usecases { grid-template-columns: 1fr; }
+  .plans { grid-template-columns: 1fr; }
+  .steps-band, .usecases-band { padding-top: 48px; }
+}
