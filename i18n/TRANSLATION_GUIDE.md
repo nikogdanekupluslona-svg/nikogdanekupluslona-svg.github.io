@@ -32,7 +32,7 @@ For each assigned page id (see `i18n/slugs.json`):
 ## Content rules
 
 - Translate meaning, not words. The result must read as if written natively for that market. Short sentences, answer-first, same structure and headings as English (H2s stay questions if they are questions in English).
-- **Facts must not change.** 3 free exports per account; Pro $3.99/month or $26.99/year (Paddle); five formats: Markdown, JSON, plain text, XML, PNG; no PDF export; extension version 1.13.0; Google sign-in before the first export; export runs in the browser; rated 5.0 on the Chrome Web Store; desktop Chrome/Chromium only, no mobile app; not affiliated with Anthropic.
+- **Facts must not change.** The full list is in `seo-workspace/product-facts.md` (extension version 1.16.2). In short: Markdown, plain text, JSON, XML, CSV and PNG exports are unlimited and need no account; PDF and bulk ZIP ("Export All") need Google sign-in and are free up to 3 a day, unlimited on Pro; Pro $3.99/month or $26.99/year (Paddle), 14-day money-back guarantee; seven formats: PDF, Markdown, plain text, JSON, XML, CSV, PNG; everything, PDF included, is built in the browser; desktop Chrome/Chromium only, no mobile app; not affiliated with Anthropic. **Never quote a star rating.**
 - **Prices stay in USD.** Use the local number format: de/fr/nl/sv/nb/da/fi `3,99 $` / `26,99 $` (fr/sv/nb/fi use a non-breaking space: `3,99 $`); ja/ko/he/ar `$3.99`.
 - **Do not add** new facts, statistics, testimonials, case studies or claims. **Never name competing extensions or exporter apps.** Anthropic products (claude.ai, Claude Desktop, Claude Code, Settings → Privacy → Export data) may be named as the reader's existing tools.
 - **English keyword-variant passages.** Some English pages discuss English search spellings (e.g. "download Claude chat vs claude download chat", "Claude export conversation vs export Claude conversation"). Do not translate those literally. Rewrite them around the equivalent local phrasings listed below (e.g. in German: "Claude Chat exportieren" vs "Claude Unterhaltung exportieren"), or around "local phrasing vs the English phrasing people also type". Keep the same answer.
@@ -43,7 +43,7 @@ For each assigned page id (see `i18n/slugs.json`):
 
 The extension UI is English-only. Keep its labels in English inside quotes, and add a translation in parentheses on first use per page:
 
-- «Export» / „Export“ button, "Export All", "View and Download All Conversations", artifact layouts "Original", "Inline", "Nested", "Flat", sender filter "all / human only / assistant only", "include thinking", "include metadata".
+- «Export» / „Export“ button, "Select", "Copy", "Export All", "View and Download All Conversations", "Project files" → "Download ZIP", artifact layouts "Original", "Inline", "Nested", "Flat", sender filter "All / Human / Assistant", Dashboard checkboxes "Chats", "Thinking", "Metadata", "Tools", "Sources".
 - The orange button is described, not named: "the orange button next to the message box".
 
 claude.ai itself may be shown in the reader's language. Write the path as `Settings → Privacy → Export data` in English, followed by a short note in parentheses like "(labels may be translated if claude.ai is set to <language>)" the first time on a page. Do not invent localized claude.ai menu names.
@@ -94,7 +94,7 @@ Keywords come from Google autocomplete in each market (`seo-workspace/i18n/sugge
 
 ### ar — Arabic (Modern Standard Arabic, formal)
 - تصدير، تنزيل، حفظ، محادثة، سجل المحادثات، إضافة Chrome.
-- Searches are almost all English: claude export chat, claude export chat to pdf, claude save chat as pdf. Keep "Claude" in Latin script. Use Western digits (3, 5, 1.13.0).
+- Searches are almost all English: claude export chat, claude export chat to pdf, claude save chat as pdf. Keep "Claude" in Latin script. Use Western digits (3, 7, 1.16.2).
 
 ## Page focus (main local keyword per page)
 

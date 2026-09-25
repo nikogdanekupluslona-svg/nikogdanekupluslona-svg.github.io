@@ -933,16 +933,34 @@ h1.page-h1 {
   cursor: pointer;
   display: inline-flex;
   align-items: center;
-  gap: 4px;
+  gap: 6px;
   padding: 7px 10px;
   border: 1px solid var(--line);
   border-radius: 8px;
   font-size: 13px;
   font-weight: 700;
   color: #334155;
-  text-transform: uppercase;
+  white-space: nowrap;
 }
 .lang-switch summary::-webkit-details-marker { display: none; }
+.lang-switch summary::after { content: "▾"; font-size: 10px; opacity: 0.6; }
+.lang-switch summary:hover, .lang-switch[open] summary { border-color: var(--brand); color: var(--brand-dark); }
+.lang-globe { flex: none; display: block; }
+.lang-code { display: none; text-transform: uppercase; }
+@media (max-width: 800px) {
+  .lang-name { display: none; }
+  .lang-code { display: inline; }
+}
+@media (max-width: 640px) {
+  .header-inner { padding: 12px 16px; gap: 10px; }
+  .logo span { display: none; }
+  .lang-switch summary { padding: 7px 8px; gap: 4px; }
+}
+@media (max-width: 400px) {
+  .header-right { gap: 6px; }
+  .header-right .btn-install { padding: 8px 10px; }
+  .header-right .btn-install img { display: none; }
+}
 .lang-switch ul {
   position: absolute;
   inset-inline-end: 0;
@@ -1063,7 +1081,7 @@ h1.page-h1 {
 
 /* Home: use cases */
 .usecases-band { padding: 80px 0 40px; }
-.cards.usecases { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.cards.usecases { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .usecases .card { transition: transform 0.2s, border-color 0.2s; }
 .usecases .card:hover { transform: translateY(-2px); border-color: rgba(201, 100, 66, 0.45); }
 .card-tag {

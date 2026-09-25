@@ -29,6 +29,9 @@ SITE = "https://chat-downloader.com"
 CWS = "https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak"
 SUPPORT = "smmfedorova@gmail.com"
 LEGAL = ["/privacy/", "/terms/", "/refund/"]
+GLOBE = ('<svg class="lang-globe" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false" fill="none" '
+         'stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/>'
+         '<path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>')
 
 
 def load(rel):
@@ -124,8 +127,10 @@ def switcher(lang, pid, lb):
             href = url_for(l, "home")
         cur = ' aria-current="true"' if l == lang else ""
         items.append('<li><a href="%s" hreflang="%s" lang="%s"%s>%s</a></li>' % (href, LOCALES[l]["hreflang"], LOCALES[l]["hreflang"], cur, esc(LOCALES[l]["name"])))
-    return ('<!-- i18n:switch --><details class="lang-switch"><summary aria-label="%s">%s</summary><ul>%s</ul></details><!-- /i18n:switch -->'
-            % (esc(lb["language"]), lang, "".join(items)))
+    name = esc(LOCALES[lang]["name"])
+    return ('<!-- i18n:switch --><details class="lang-switch"><summary aria-label="%s: %s">%s'
+            '<span class="lang-name">%s</span><span class="lang-code" aria-hidden="true">%s</span></summary><ul>%s</ul></details><!-- /i18n:switch -->'
+            % (esc(lb["language"]), name, GLOBE, name, lang, "".join(items)))
 
 
 def footer_langs(lang, pid):
@@ -162,7 +167,7 @@ def header(lang, pid, lb):
       <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="%s">☰</button>
     </div>
   </div>
-</header>""" % (u("home"), links, btn, switcher(lang, pid, lb), btn, esc(lb["menu"]))
+</header>""" % (u("home"), links, btn, btn, switcher(lang, pid, lb), esc(lb["menu"]))
 
 
 def footer(lang, pid, lb):
