@@ -23,16 +23,16 @@ Your job: run all 11 pipeline stages in sequence and produce a finished article,
 > | `{EXPERT_NAME}` | The Download Claude conversations team |
 > | `{EXPERT_ROLE}` | Builders of the Claude Chat Downloader Chrome extension |
 > | `{EXPERT_SOCIAL_PROFILES}` | `https://chat-downloader.com/`, `https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak` |
-> | `{EXPERT_EXPERTISE_TOPICS}` | exporting claude.ai chats, Markdown/JSON/PNG/XML chat export, bulk conversation download, Claude Code vs claude.ai export, print-to-PDF workarounds |
+> | `{EXPERT_EXPERTISE_TOPICS}` | exporting claude.ai chats, Markdown/JSON/PNG/XML chat export, bulk conversation download, Claude Code vs claude.ai export, PDF export |
 > | `{CONTACT_CHANNEL_1_LABEL}` / `{CONTACT_CHANNEL_1_URL}` | "Add to Chrome — free" / `https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak` |
 > | `{CONTACT_CHANNEL_2_LABEL}` / `{CONTACT_CHANNEL_2_URL}` | "How to download a Claude chat" / `https://chat-downloader.com/how-to-download-claude-chat/` |
 > | `{CONTACT_CHANNEL_3_LABEL}` / `{CONTACT_CHANNEL_3_URL}` | "All formats" / `https://chat-downloader.com/formats/` |
-> | `{SERVICES_OR_TOPICS_LIST}` | Chrome extension for claude.ai, single-chat export, bulk Export All, Markdown JSON text XML PNG, artifacts and thinking toggles |
+> | `{SERVICES_OR_TOPICS_LIST}` | Chrome extension for claude.ai, single-chat export, bulk Export All, PDF Markdown JSON text CSV XML PNG, message selection, artifacts and thinking toggles |
 > | `{CLIENT_LIST}` | none (consumer product — do not invent clients or case studies) |
-> | `{TRACK_RECORD_STAT}` | Rated 5.0 on the Chrome Web Store; 3 free exports per account; Pro $3.99/mo or $26.99/yr |
+> | `{TRACK_RECORD_STAT}` | Version 1.16.2; unlimited Markdown/text/JSON/XML/CSV/PNG exports with no account; PDF and bulk 3 a day free; Pro $3.99/mo or $26.99/yr. No star ratings — see `seo-workspace/product-facts.md` |
 > | `{CASE_STUDIES_URL}` | not applicable — link to `https://chat-downloader.com/how-it-works/` instead |
-> | `{TRUST_BADGE_TABLE}` | single row: headline `Download Claude conversations — rated 5.0 on the Chrome Web Store`, subheading `2026 — free Chrome extension to save claude.ai chats as Markdown, JSON, text, XML, or PNG` |
-> | `{FORBIDDEN_TERMS_OR_COMPETITORS}` | **No competing Chrome extensions or exporter apps may be named anywhere.** Official Anthropic products and surfaces (claude.ai, Claude Desktop, Claude Code, Settings → Privacy → Export data) may be named as the user's existing tools and as contrast — never as a recommended alternative "exporter" to install instead of this extension. Do not invent PDF export if the product does not ship `.pdf`. |
+> | `{TRUST_BADGE_TABLE}` | single row (copy from `seo-workspace/_trust-badge.html`): headline `Download Claude conversations — free Chrome extension for claude.ai`, subheading `Version 1.16.2 (September 2026) — unlimited Markdown, text, JSON, XML, CSV, and PNG exports with no account; PDF and bulk ZIP free up to 3 a day` |
+> | `{FORBIDDEN_TERMS_OR_COMPETITORS}` | **No competing Chrome extensions or exporter apps may be named anywhere.** Official Anthropic products and surfaces (claude.ai, Claude Desktop, Claude Code, Settings → Privacy → Export data) may be named as the user's existing tools and as contrast — never as a recommended alternative "exporter" to install instead of this extension. Product facts (formats, limits, PDF, version) come only from `seo-workspace/product-facts.md`. |
 > | `{ALLOWED_CHANNELS_LIST}` | Chrome Web Store, Google Chrome, Chromium browsers, claude.ai, Claude Desktop, Claude Code |
 > | `{KEYWORD_RESEARCH_TOOL}` | Google Search Console query export supplied by the owner (`Запросы.csv`) — source of truth; do not invent volumes |
 > | `{KEYWORD_TOOL_SCRIPT_PATH}` | none — Step 0.5 is manual from GSC CSV |

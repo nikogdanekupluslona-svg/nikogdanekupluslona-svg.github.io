@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ייצוא צ'אט מ-Claude Desktop — האפליקציה מול תוסף claude.ai</title>
+  <meta name="description" content="Claude Desktop אינו claude.ai ב-Chrome. איך מייצאים צ'אט מ-Claude Desktop, ולמה תוסף Chrome החינמי הזה עובד רק בדפדפן.">
+  <link rel="canonical" href="https://chat-downloader.com/he/export-claude-desktop-chat/">
+  <!-- i18n:head -->
+  <link rel="alternate" hreflang="en" href="https://chat-downloader.com/export-claude-desktop-chat/">
+  <link rel="alternate" hreflang="de" href="https://chat-downloader.com/de/claude-desktop-chat-exportieren/">
+  <link rel="alternate" hreflang="fr" href="https://chat-downloader.com/fr/exporter-chat-claude-desktop/">
+  <link rel="alternate" hreflang="nl" href="https://chat-downloader.com/nl/claude-desktop-chat-exporteren/">
+  <link rel="alternate" hreflang="sv" href="https://chat-downloader.com/sv/exportera-claude-desktop-chatt/">
+  <link rel="alternate" hreflang="nb" href="https://chat-downloader.com/nb/eksportere-claude-desktop-chat/">
+  <link rel="alternate" hreflang="da" href="https://chat-downloader.com/da/eksporter-claude-desktop-chat/">
+  <link rel="alternate" hreflang="fi" href="https://chat-downloader.com/fi/vie-claude-desktop-chat/">
+  <link rel="alternate" hreflang="ja" href="https://chat-downloader.com/ja/export-claude-desktop-chat/">
+  <link rel="alternate" hreflang="ko" href="https://chat-downloader.com/ko/export-claude-desktop-chat/">
+  <link rel="alternate" hreflang="he" href="https://chat-downloader.com/he/export-claude-desktop-chat/">
+  <link rel="alternate" hreflang="ar" href="https://chat-downloader.com/ar/export-claude-desktop-chat/">
+  <link rel="alternate" hreflang="x-default" href="https://chat-downloader.com/export-claude-desktop-chat/">
+  <meta property="og:locale" content="he_IL">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="sv_SE">
+  <meta property="og:locale:alternate" content="nb_NO">
+  <meta property="og:locale:alternate" content="da_DK">
+  <meta property="og:locale:alternate" content="fi_FI">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <meta property="og:locale:alternate" content="ar_AE">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@400;500;700&amp;display=swap" rel="stylesheet">
+  <!-- /i18n:head -->
+  <meta property="og:title" content="ייצוא צ'אט מ-Claude Desktop — האפליקציה מול תוסף claude.ai">
+  <meta property="og:description" content="Claude Desktop אינו claude.ai ב-Chrome. איך מייצאים צ'אט מ-Claude Desktop, ולמה תוסף Chrome החינמי הזה עובד רק בדפדפן.">
+  <meta property="og:url" content="https://chat-downloader.com/he/export-claude-desktop-chat/">
+  <meta property="og:image" content="https://chat-downloader.com/assets/widget-guide.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chat Downloader">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ייצוא צ'אט מ-Claude Desktop — האפליקציה מול תוסף claude.ai">
+  <meta name="twitter:description" content="Claude Desktop אינו claude.ai ב-Chrome. איך מייצאים צ'אט מ-Claude Desktop, ולמה תוסף Chrome החינמי הזה עובד רק בדפדפן.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME1YXGZKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GME1YXGZKR');
+  </script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"אפשר לייצא צ'אט מ-Claude Desktop עם התוסף הזה?","acceptedAnswer":{"@type":"Answer","text":"לא. Download Claude conversations פועל ב-claude.ai בתוך Chrome. הכפתור הכתום לעולם לא מופיע בחלון של Claude Desktop. בגרסה 1.16.2 אין פלאגין ל-Desktop."}},{"@type":"Question","name":"איך מייצאים שיחה מ-Claude Desktop?","acceptedAnswer":{"@type":"Answer","text":"אם הצ'אט מסונכרן, פתחו אותו ב-claude.ai ב-Chrome וייצאו אותו עם התוסף, כולל PDF. אחרת העתיקו והדביקו מ-Desktop, או השתמשו ב-Settings → Privacy → Export data לקבלת ZIP עם JSON של כל החשבון."}},{"@type":"Question","name":"האם Claude Desktop זהה ל-Claude Code?","acceptedAnswer":{"@type":"Answer","text":"לא. Desktop היא אפליקציית הצ'אט. Claude Code הוא הסוכן בטרמינל, עם /export ותמלילי JSONL. תוסף Chrome הזה לא פועל באף אחד מהם; רק Claude Code בגרסת הווב ב-claude.ai/code מיוצא, כמו כל צ'אט."}},{"@type":"Question","name":"האם Export data הרשמי כולל צ'אטים מ-Desktop?","acceptedAnswer":{"@type":"Answer","text":"ה-ZIP של החשבון קשור לחשבון Claude שלכם. אם שיחה מ-Desktop שמורה שם, היא יכולה להופיע. זה עדיין ZIP לגיבוי, לא Markdown לכל צ'אט מהתוסף הזה."}},{"@type":"Question","name":"האם ייצוא צ'אט מ-Claude Desktop עובד אחרי שפותחים את claude.ai?","acceptedAnswer":{"@type":"Answer","text":"כן, עבור שרשורים שנטענים ב-claude.ai. אז Download Claude conversations יכול לכתוב PDF,‏ Markdown, טקסט פשוט, JSON,‏ XML,‏ CSV או PNG. צ'אטים שלא מסתנכרנים נשארים עם העתקה והדבקה או עם ה-ZIP."}},{"@type":"Question","name":"האם התוסף יכול לקרוא את תיקיית ההתקנה של Claude Desktop?","acceptedAnswer":{"@type":"Answer","text":"לא. אנחנו לא סורקים קבצים של Desktop ב-Mac או ב-Windows. הסקריפט רואה רק דף של claude.ai ש-Chrome כבר הציג."}},{"@type":"Question","name":"צריך Pro כדי לייצא צ'אט של Claude Desktop באתר?","acceptedAnswer":{"@type":"Answer","text":"לא. ייצוא Markdown, טקסט, JSON,‏ XML,‏ CSV ו-PNG הוא ללא הגבלה, בחינם ובלי חשבון. PDF ו-ZIP מרוכז חינמיים עד 3 ביום עם התחברות עם Google; Pro ב-$3.99 לחודש או $26.99 לשנה מסיר את המגבלה. העתקה והדבקה בתוך Desktop לא מנצלת את המכסה שלנו."}},{"@type":"Question","name":"אפשר לייצא צ'אט מ-Claude Desktop כ-PDF עם הכלי הזה?","acceptedAnswer":{"@type":"Answer","text":"כן, אחרי שהצ'אט פתוח ב-claude.ai ב-Chrome. בחרו PDF בחלונית הייצוא; הקובץ נבנה בדפדפן. זה דורש התחברות עם Google ונספר במסגרת 3 ייצואים חינמיים ביום. ב-Desktop עצמו אין לנו שום מנגנון PDF."}},{"@type":"Question","name":"האם הוספה ל-Chrome תייצא צ'אט מ-Claude Desktop?","acceptedAnswer":{"@type":"Answer","text":"לא. התקנת Download Claude conversations משפיעה רק על Chrome ב-claude.ai. Desktop נשאר ללא שינוי. הצמידו את התוסף ועבדו בלשונית הדפדפן."}},{"@type":"Question","name":"יש דרך בנייד לייצא צ'אט מ-Claude Desktop?","acceptedAnswer":{"@type":"Answer","text":"לא עם התוסף הזה. הוא צריך Chrome שולחני ב-claude.ai. הכפתור הכתום לא נתמך בדפדפנים בטלפון וגם לא באפליקציית Desktop."}},{"@type":"Question","name":"אילו פורמטים עובדים אחרי שצ'אט מ-Desktop נמצא ב-claude.ai?","acceptedAnswer":{"@type":"Answer","text":"PDF,‏ Markdown, טקסט פשוט, JSON,‏ XML,‏ CSV ו-PNG — אותם שבעה כמו בכל מדריך אחר של Download Claude conversations. פריסות ארטיפקטים ומתגי החשיבה חלים רק בווידג'ט הזה באתר."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"דף הבית","item":"https://chat-downloader.com/he/"},{"@type":"ListItem","position":2,"name":"Claude Desktop","item":"https://chat-downloader.com/he/export-claude-desktop-chat/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">דילוג לתוכן</a>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a class="logo" href="/he/">
+        <img src="/assets/icon.svg" alt="">
+        <span>Download Claude conversations</span>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="/he/how-to-download-claude-chat/">איך להוריד</a><a href="/he/how-to-export-claude-chat/">ייצוא</a><a href="/he/bulk/">ייצוא מרוכז</a><a href="/he/formats/">פורמטים</a><a href="/he/#faq">שאלות נפוצות</a>
+        <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=he-export-claude-desktop-chat" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> הוספה ל-Chrome</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=he-export-claude-desktop-chat" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> הוספה ל-Chrome</a>
+      <!-- i18n:switch --><details class="lang-switch"><summary aria-label="שפה: עברית"><svg class="lang-globe" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span class="lang-name">עברית</span><span class="lang-code" aria-hidden="true">he</span></summary><ul><li><a href="/export-claude-desktop-chat/" hreflang="en" lang="en">English</a></li><li><a href="/de/claude-desktop-chat-exportieren/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/exporter-chat-claude-desktop/" hreflang="fr" lang="fr">Français</a></li><li><a href="/nl/claude-desktop-chat-exporteren/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/sv/exportera-claude-desktop-chatt/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="/nb/eksportere-claude-desktop-chat/" hreflang="nb" lang="nb">Norsk</a></li><li><a href="/da/eksporter-claude-desktop-chat/" hreflang="da" lang="da">Dansk</a></li><li><a href="/fi/vie-claude-desktop-chat/" hreflang="fi" lang="fi">Suomi</a></li><li><a href="/ja/export-claude-desktop-chat/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/ko/export-claude-desktop-chat/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/he/export-claude-desktop-chat/" hreflang="he" lang="he" aria-current="true">עברית</a></li><li><a href="/ar/export-claude-desktop-chat/" hreflang="ar" lang="ar">العربية</a></li></ul></details><!-- /i18n:switch -->
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="תפריט">☰</button>
+    </div>
+  </div>
+</header>
+<nav class="crumbs" aria-label="פירורי לחם"><a href="/he/">דף הבית</a> / Claude Desktop</nav>
+<main id="main">
+<article class="band prose">
+<p class="article-meta">עודכן <time datetime="2026-09-25">בספטמבר 2026</time> · גרסת התוסף 1.16.2</p>
+<h1 class="page-h1">ייצוא צ'אט מ-Claude Desktop בלי התוסף</h1>
+<p class="lead">כדי לייצא צ'אט מ-Claude Desktop אי אפשר להשתמש בתוסף Chrome הזה בתוך האפליקציה. Download Claude conversations פועל רק ב-claude.ai בתוך Chrome. אם השרשור מסתנכרן, פתחו אותו באתר ושמרו PDF,‏ Markdown, טקסט פשוט, JSON,‏ XML,‏ CSV או PNG. אחרת העתיקו והדביקו, או בקשו את ה-ZIP של Export data מ-Anthropic. Markdown, טקסט, JSON,‏ XML,‏ CSV ו-PNG הם ללא הגבלה ובלי חשבון; PDF ו-ZIP מרוכז הם 3 ביום בחינם עם התחברות עם Google; Pro עולה $3.99 לחודש או $26.99 לשנה.</p>
+<aside class="trust-badge" aria-label="על התוסף">
+  <span class="trophy" aria-hidden="true">🧩</span>
+  <div>
+    <strong>Download Claude conversations — תוסף Chrome חינמי ל-claude.ai</strong>
+    <span>גרסה 1.16.2 (ספטמבר 2026) — ייצוא Markdown, טקסט, JSON, XML, CSV ו-PNG ללא הגבלה ובלי חשבון; PDF ו-ZIP מרוכז בחינם עד 3 ביום</span>
+  </div>
+</aside>
+<nav class="toc" aria-label="בדף זה">
+  <p>בדף זה</p>
+  <ol>
+    <li><a href="#why-not">למה אי אפשר לייצא כאן צ'אט מ-Claude Desktop?</a></li>
+    <li><a href="#vs-products">ייצוא צ'אט מ-Claude Desktop מול claude.ai ו-Code?</a></li>
+    <li><a href="#open-web">איך מייצאים צ'אט מ-Claude Desktop דרך claude.ai?</a></li>
+    <li><a href="#copy-paste">אפשר לייצא צ'אט מ-Claude Desktop בהעתקה והדבקה?</a></li>
+    <li><a href="#official-zip">האם Export data כולל צ'אטים מ-Claude Desktop?</a></li>
+    <li><a href="#not-code">האם Claude Desktop זהה ל-Claude Code?</a></li>
+    <li><a href="#limits">מה לא נעשה כדי לייצא צ'אט מ-Claude Desktop</a></li>
+    <li><a href="#faq">שאלות נפוצות: ייצוא צ'אט מ-Claude Desktop</a></li>
+  </ol>
+</nav>
+
+<h2 id="why-not">למה אי אפשר לייצא כאן צ'אט מ-Claude Desktop?</h2>
+<p>Download Claude conversations הוא סקריפט תוכן של Chrome עבור claude.ai. Claude Desktop היא אפליקציה עצמאית ל-Mac/Windows. בחלון הזה אין סרגל תוספים, ולכן הכפתור הכתום לעולם לא מופיע. התקנת התוסף מ-Chrome כש-Desktop פתוח לא משנה דבר ב-Desktop.</p>
+<p>תוספי Chrome רצים על דפים שתואמים להרשאות המארח שלהם. התוסף הזה תואם לדפי שיחה של claude.ai. Claude Desktop אינו לשונית של claude.ai. אי אפשר ללחוץ "Add to Chrome" (הוספה ל-Chrome) בתוך אפליקציית Desktop. גרסה 1.16.2 (ספטמבר 2026) עדיין לא כוללת פלאגין ל-Desktop, עוזר בשורת התפריטים או קורא קבצים לתיקיית ההתקנה של Desktop.</p>
+<div class="callout callout-warn">
+  <p><strong>מגבלה קשיחה.</strong> אי אפשר לייצא צ'אט מ-Claude Desktop עם תוסף Chrome הזה מתוך Desktop. אם אתם צריכים PDF,‏ Markdown,‏ JSON, טקסט, XML,‏ CSV או PNG מהווידג'ט שלנו, צאו מ-Desktop, פתחו את https://claude.ai ב-Chrome ופתחו שם את השיחה.</p>
+</div>
+<p>אנשים מחפשים איך לייצא צ'אט מ-Claude Desktop (ובאנגלית: export Claude Desktop chat) כי למוצרים יש מותג משותף. תוצאות החיפוש מערבבות את Desktop,‏ claude.ai ו-Claude Code. הקבצים אינם ניתנים להחלפה. צילום מסך של Desktop אינו ייצוא Markdown. יומן JSONL של Code אינו שרשור של claude.ai. הדף הזה קיים כדי שאי-ההתאמה הזו תהיה ברורה.</p>
+
+<h2 id="vs-products">ייצוא צ'אט מ-Claude Desktop מול claude.ai ו-Code?</h2>
+<p>Claude Desktop היא אפליקציית הצ'אט. claude.ai הוא המוצר בדפדפן. Claude Code הוא הסוכן בטרמינל. רק claude.ai ב-Chrome מקבל את Download Claude conversations. לכן ייצוא צ'אט מ-Claude Desktop הוא בעיה של דרך עוקפת, לא משימה לכפתור כתום בתוך האפליקציה.</p>
+<table>
+  <caption>איפה תוסף Chrome הזה יכול לייצא ואיפה לא</caption>
+  <thead>
+    <tr>
+      <th scope="col">מוצר</th>
+      <th scope="col">איפה הוא פועל</th>
+      <th scope="col">התוסף הזה</th>
+      <th scope="col">איך מייצאים</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>claude.ai</td>
+      <td>דפדפן (claude.ai)</td>
+      <td>כן — הכפתור הכתום ו-Export All</td>
+      <td><a href="/he/how-to-download-claude-chat/">הורדת צ'אט</a></td>
+    </tr>
+    <tr>
+      <td>Claude Desktop</td>
+      <td>אפליקציה ל-Mac/Windows</td>
+      <td>לא</td>
+      <td>פותחים את אותו שרשור ב-claude.ai אם הוא מסתנכרן; העתקה והדבקה; ZIP רשמי</td>
+    </tr>
+    <tr>
+      <td>Claude Code</td>
+      <td>טרמינל</td>
+      <td>לא (סשנים באתר ב-claude.ai/code: כן, כמו כל צ'אט)</td>
+      <td><a href="/he/claude-code-export/"><code>/export</code> או JSONL בדיסק</a></td>
+    </tr>
+  </tbody>
+</table>
+<p>אם אתם כבר עובדים בדפדפן, דלגו על הדף הזה והשתמשו ב<a href="/he/export-claude-chat/">ייצוא צ'אט של Claude</a>. אם אתם צריכים קבצים רבים מהאתר, השתמשו ב<a href="/he/bulk/">ייצוא מרוכז עם Export All</a>. אם אתם עובדים רק ב-Desktop, שלושת הסעיפים הבאים הם הדרכים הכנות לייצא צ'אט מ-Claude Desktop, בלי להעמיד פנים שאנחנו נכנסים לאפליקציה.</p>
+<div class="expert-quote">
+  <p>Download Claude conversations הוא סקריפט תוכן של Chrome עבור claude.ai. בגרסה 1.16.2 אין פלאגין ל-Desktop, ולא נעמיד פנים שהכפתור הכתום מופיע בחלון של האפליקציה הזו.</p>
+  <footer>צוות Download Claude conversations</footer>
+</div>
+
+<h2 id="open-web">איך מייצאים צ'אט מ-Claude Desktop דרך claude.ai?</h2>
+<p>סשנים רבים ב-Desktop משתמשים באותו חשבון Claude כמו האתר. אם השרשור מופיע בהיסטוריה שלכם ב-claude.ai, פתחו אותו ב-Chrome והשתמשו ב-Download Claude conversations. זו הדרך היחידה שבה התוסף הזה עוזר לייצא צ'אט מ-Claude Desktop: הצ'אט חייב להיטען קודם ב-claude.ai.</p>
+<ol>
+<li>הפסיקו לנחש בתוך Desktop. פתחו את https://claude.ai ב-Chrome והיכנסו עם אותו חשבון.</li>
+<li>מצאו את השיחה בהיסטוריה באתר. אם היא חסרה, עברו להעתקה והדבקה או ל-Export data — איננו יכולים למשוך צ'אט ש-Chrome מעולם לא טען.</li>
+<li>לחצו על הכפתור הכתום. בחרו PDF,‏ Markdown, טקסט פשוט, JSON,‏ XML,‏ CSV או PNG. לחצו "Export" (ייצוא).</li>
+<li>לשרשורים מסונכרנים רבים, פתחו את "View and Download All Conversations" (הצגה והורדה של כל השיחות) והריצו "Export All" (ייצוא הכול). בלוח הבקרה (Dashboard) יש לשוניות "Chat" ו-"Cowork". בתוכנית החינמית כל צ'אט ב-ZIP נספר במסגרת 3 ביום.</li>
+<li>אם אתם צריכים PDF, בחרו PDF באותה חלונית — הקובץ נבנה בדפדפן, בלי חלון הדפסה. מדריך: <a href="/he/download-claude-chat-as-pdf/">שמירת צ'אט של Claude כ-PDF</a>.</li>
+</ol>
+<p>ייצוא Markdown, טקסט, JSON,‏ XML,‏ CSV ו-PNG באתר הוא ללא הגבלה ולא דורש חשבון. התחברות עם Google מופיעה רק עבור PDF ו-ZIP מרוכז, שחולקים 3 ייצואים חינמיים ביום (האיפוס בחצות UTC), וכדי לשחזר את Pro במחיר $3.99 לחודש או $26.99 לשנה. המכסה הזו חלה רק על קבצים מ-claude.ai. העתקה והדבקה מ-Desktop לא מנצלת את המכסה שלנו, כי היא לא נוגעת בתוסף. Paddle גובה את התשלום על Pro; אנחנו אף פעם לא רואים מספרי כרטיסים.</p>
+<p>הסנכרון הוא התנהגות של Anthropic, לא שלנו. אם Desktop מציג צ'אט ש-claude.ai לא מציג, תוסף Chrome הזה לא יכול להמציא אותו. חכו, רעננו את claude.ai, או השתמשו בהעתקה והדבקה / ב-ZIP הרשמי. אנחנו לא קוראים את מסד הנתונים המקומי של Desktop. איך הייצוא באתר עובד כשהלשונית קיימת: <a href="/he/how-it-works/">איך זה עובד</a>.</p>
+<div class="callout callout-tip">
+  <p><strong>פורמטים אחרי שמגיעים ל-claude.ai.</strong> PDF לשיתוף או להדפסה, Markdown לרשימות, JSON לכלים, טקסט לארכיון פשוט, XML להעברה בין מערכות, CSV לגיליון אלקטרוני, PNG לתמונה. אותם שבעה כמו בכל מדריך אחר. מרכז: <a href="/he/formats/">פורמטים</a>. אף אחד מהפורמטים האלה לא מופיע בתוך אפליקציית Desktop דרך התוסף הזה.</p>
+</div>
+
+<h2 id="copy-paste">אפשר לייצא צ'אט מ-Claude Desktop בהעתקה והדבקה?</h2>
+<p>כן. סמנו טקסט ב-Claude Desktop והדביקו אותו במסמך. זו הדרך החלופית הכנה כשהשרשור לא מופיע ב-claude.ai. אתם מאבדים את הדיוק של בלוקי הקוד, את פריסות הארטיפקטים, את מתגי החשיבה ואת הייצוא המרוכז Export All. מתאים לתשובה קצרה; מייגע בשרשור תכנות ארוך.</p>
+<p>ההעתקה וההדבקה מ-Desktop הן הסיבה שתוסף Chrome קיים ב-claude.ai: הווידג'ט באתר שומר תגיות שפה, טבלאות וארטיפקטים בפריסות "Original",‏ "Inline",‏ "Nested",‏ "Flat" (מקורי, מוטמע, מקונן, שטוח). ב-Desktop אין לנו אף אחד מפקדי הייצוא האלה. אם אפשר להעביר את אותה שיחה ל-claude.ai, הפסיקו להעתיק ולהדביק והשתמשו שם ב-Download Claude conversations.</p>
+<p>צילומי מסך של Claude Desktop הם עוד חלופה. הם תמונות, לא Markdown. הם לא נחשבים לייצוא צ'אט מ-Claude Desktop במובן של קובץ שאפשר להשתמש בו שוב. גם PNG מהתוסף שלנו הוא תמונה, אבל הוא נוצר רק אחרי שהצ'אט פתוח ב-claude.ai. אל תצפו ל-PNG כזה מחלון Desktop.</p>
+
+<h2 id="official-zip">האם Export data כולל צ'אטים מ-Claude Desktop?</h2>
+<p>Settings → Privacy → Export data של Anthropic (התוויות עשויות להופיע בעברית אם claude.ai מוגדר לעברית) שולח באימייל ZIP עם JSON שקשור לחשבון Claude, לא לחלון שבו הקלדתם. אם שיחה מ-Desktop שמורה בחשבון הזה, היא יכולה להופיע. התייחסו ל-ZIP כגיבוי, לא כ-Markdown מהתוסף הזה.</p>
+<p>ה-ZIP איטי, הקישור פג, ואין בחירת פורמט ל-PDF,‏ Markdown, טקסט, XML,‏ CSV או PNG. ובכל זאת זו הדרך הרשמית לקחת את החשבון איתכם כשצריך לייצא את היסטוריית הצ'אטים של Claude Desktop כגוש אחד. השוואה להדפסה ולווידג'ט של Chrome: <a href="/he/how-to-export-claude-chat/">איך מייצאים צ'אט של Claude</a>.</p>
+<p>אל תבלבלו בין ה-ZIP הזה לבין הייצוא המרוכז Export All בלוח הבקרה שלנו. Export All כותב ZIP אחד עם קובץ לכל צ'אט שאתם בוחרים ב-claude.ai, מיד, בפורמט שבחרתם. בתוכנית החינמית כל צ'אט ב-ZIP מנצל אחד מ-3 ייצואים ביום (במשותף עם PDF); Pro מסיר את המגבלה. Export data הרשמי לא מנצל את המכסה שלנו. צ'אטים שנשארו רק ב-Desktop ומעולם לא סונכרנו עלולים להיעדר משניהם.</p>
+<table>
+  <caption>ZIP לגיבוי מול התוסף הזה כשעובדים ב-Desktop</caption>
+  <thead>
+    <tr>
+      <th scope="col">מטרה</th>
+      <th scope="col">מה להשתמש</th>
+      <th scope="col">פועל באפליקציית Desktop?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>קובץ קריא של צ'אט מסונכרן אחד</td>
+      <td>פותחים את claude.ai + הכפתור הכתום</td>
+      <td>לא</td>
+    </tr>
+    <tr>
+      <td>צ'אטים מסונכרנים רבים כקבצים</td>
+      <td>Export All בלוח הבקרה</td>
+      <td>לא</td>
+    </tr>
+    <tr>
+      <td>גיבוי ברמת החשבון</td>
+      <td>Settings → Privacy → Export data</td>
+      <td>לא — מבקשים באתר</td>
+    </tr>
+    <tr>
+      <td>צ'אט שמעולם לא יצא מ-Desktop</td>
+      <td>העתקה והדבקה בחלון Desktop</td>
+      <td>כן — ידנית בלבד</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="not-code">האם Claude Desktop זהה ל-Claude Code?</h2>
+<p>לא. Claude Desktop היא אפליקציית הצ'אט. Claude Code הוא סוכן התכנות בטרמינל, עם <code>/export</code> ותמלילי JSONL. לחפש ייצוא צ'אט מ-Claude Desktop כשמדובר בטרמינל של סביבת פיתוח זה המוצר הלא נכון. תוסף Chrome הזה לא פועל באף אחד מהם. Claude Code בגרסת הווב ב-claude.ai/code הוא היוצא מן הכלל: זה דף של claude.ai, ולכן הוא מיוצא כמו כל צ'אט.</p>
+<p>אם ב"שולחני" התכוונתם ל-VS Code או לטרמינל במחשב, עברו ל<a href="/he/claude-code-export/">ייצוא מ-Claude Code</a>. אם התכוונתם לאפליקציית הצ'אט השולחנית של Anthropic, הישארו בדף הזה. ערבוב בין השניים מבזבז זמן: JSONL בדיסק אינו כפתור כתום, והעתקה והדבקה מ-Desktop אינן <code>/export</code>.</p>
+<p>ל-Download Claude conversations לא יתווסף חיבור ל-Code רק משום ש-Desktop ו-Code שניהם "לא הדפדפן". המוצר צר בכוונה: claude.ai ב-Chrome, שבעה פורמטים, ייצוא ללא הגבלה ובלי חשבון חוץ מ-PDF ו-ZIP מרוכז (3 ביום בחינם), Pro ב-$3.99 לחודש או $26.99 לשנה. היקף התכונות: <a href="/he/features/">תכונות</a>. ניסוח של "חילוץ" עבור הכפתור באתר: <a href="/he/claude-conversation-extractor/">כלי לחילוץ שיחות Claude</a>.</p>
+
+<h2 id="limits">מה לא נעשה כדי לייצא צ'אט מ-Claude Desktop</h2>
+<p>אנחנו לא מספקים פלאגין ל-Claude Desktop, אפליקציה בשורת התפריטים או מתג "ייצוא מ-Desktop". אנחנו לא קוראים קבצים מהתקנת Claude Desktop שלכם ב-Mac או ב-Windows. אנחנו לא מחליפים את <code>/export</code> של Claude Code. המשפטים האלה הם גבול המוצר בכל הנוגע לייצוא צ'אט מ-Claude Desktop בגרסה 1.16.2.</p>
+<p>אנחנו גם לא מזכירים בשמם כלי ייצוא אחרים ל-Chrome. הממשקים הרשמיים של Anthropic — claude.ai,‏ Claude Desktop,‏ Claude Code,‏ Settings → Privacy → Export data — מוזכרים כאן לשם השוואה. Download Claude conversations נשאר עצמאי ואינו קשור ל-Anthropic, PBC. כל מה שהדף הזה אומר על התוסף מתייחס לתוסף לאתר, לא למוצר Desktop שאינו קיים.</p>
+<p>אם אתם עובדים רק ב-Desktop, השתמשו בהעתקה והדבקה וב-ZIP הרשמי עד ש-Anthropic תוסיף לאפליקציה ייצוא לקובץ לכל צ'אט. אם אתם משתמשים גם ב-claude.ai, התקינו את התוסף וייצאו מהדפדפן. זו כל ההצעה הכנה. גם אפליקציות Claude לנייד מחוץ לתחום של התוסף הזה.</p>
+<div class="callout callout-info">
+  <p><strong>תזכורת מכסה לדרך דרך האתר.</strong> אחרי שפותחים צ'אט מסונכרן ב-claude.ai, ייצוא Markdown, טקסט, JSON,‏ XML,‏ CSV ו-PNG הוא ללא הגבלה ובלי חשבון. PDF ו-ZIP מרוכז דורשים התחברות עם Google וחינמיים עד 3 ביום; Pro ב-$3.99 לחודש או $26.99 לשנה מסיר את המגבלה. העתקה והדבקה מ-Desktop לעולם לא מגדילות את המונה.</p>
+</div>
+<p>פתרון תקלות: התוסף מותקן אבל אין כפתור ב-Desktop — צפוי. הכפתור חסר ב-claude.ai — רעננו, הצמידו את הסמל, פתחו כתובת של שיחה. צ'אט ב-Desktop שלא מופיע באתר — לא באג בתוסף. המוצר הלא נכון (Code מול Desktop) — בדקו אם אתם בטרמינל. צריכים PDF אחרי שהגעתם לאתר — בחרו PDF בחלונית הייצוא (התחברות עם Google, 3 ביום בחינם).</p>
+
+<h2 id="faq">שאלות נפוצות: ייצוא צ'אט מ-Claude Desktop</h2>
+<p>השאלות האלה עוסקות בייצוא צ'אט מ-Claude Desktop: למה הכפתור הכתום חסר, איך להשתמש ב-claude.ai אם השרשור מסתנכרן, העתקה והדבקה, Export data הרשמי ו-Claude Code. התשובות תואמות לגרסה 1.16.2. סכמת FAQPage בראש הדף תואמת לרשימה הזו.</p>
+
+<h3>אפשר לייצא צ'אט מ-Claude Desktop עם התוסף הזה?</h3>
+<p>לא. Download Claude conversations פועל ב-claude.ai בתוך Chrome. הכפתור הכתום לעולם לא מופיע בחלון של Claude Desktop. בגרסה 1.16.2 אין פלאגין ל-Desktop.</p>
+
+<h3>איך מייצאים שיחה מ-Claude Desktop?</h3>
+<p>אם הצ'אט מסונכרן, פתחו אותו ב-claude.ai ב-Chrome וייצאו אותו עם התוסף, כולל PDF. אחרת העתיקו והדביקו מ-Desktop, או השתמשו ב-Settings → Privacy → Export data לקבלת ZIP עם JSON של כל החשבון.</p>
+
+<h3>האם Claude Desktop זהה ל-Claude Code?</h3>
+<p>לא. Desktop היא אפליקציית הצ'אט. Claude Code הוא הסוכן בטרמינל, עם <code>/export</code> ותמלילי JSONL. תוסף Chrome הזה לא פועל באף אחד מהם; רק Claude Code בגרסת הווב ב-claude.ai/code מיוצא, כמו כל צ'אט.</p>
+
+<h3>האם Export data הרשמי כולל צ'אטים מ-Desktop?</h3>
+<p>ה-ZIP של החשבון קשור לחשבון Claude שלכם. אם שיחה מ-Desktop שמורה שם, היא יכולה להופיע. זה עדיין ZIP לגיבוי, לא Markdown לכל צ'אט מהתוסף הזה.</p>
+
+<h3>האם ייצוא צ'אט מ-Claude Desktop עובד אחרי שפותחים את claude.ai?</h3>
+<p>כן, עבור שרשורים שנטענים ב-claude.ai. אז Download Claude conversations יכול לכתוב PDF,‏ Markdown, טקסט פשוט, JSON,‏ XML,‏ CSV או PNG. צ'אטים שלא מסתנכרנים נשארים עם העתקה והדבקה או עם ה-ZIP.</p>
+
+<h3>האם התוסף יכול לקרוא את תיקיית ההתקנה של Claude Desktop?</h3>
+<p>לא. אנחנו לא סורקים קבצים של Desktop ב-Mac או ב-Windows. הסקריפט רואה רק דף של claude.ai ש-Chrome כבר הציג.</p>
+
+<h3>צריך Pro כדי לייצא צ'אט של Claude Desktop באתר?</h3>
+<p>לא. ייצוא Markdown, טקסט, JSON,‏ XML,‏ CSV ו-PNG הוא ללא הגבלה, בחינם ובלי חשבון. PDF ו-ZIP מרוכז חינמיים עד 3 ביום עם התחברות עם Google; Pro ב-$3.99 לחודש או $26.99 לשנה מסיר את המגבלה. העתקה והדבקה בתוך Desktop לא מנצלת את המכסה שלנו.</p>
+
+<h3>אפשר לייצא צ'אט מ-Claude Desktop כ-PDF עם הכלי הזה?</h3>
+<p>כן, אחרי שהצ'אט פתוח ב-claude.ai ב-Chrome. בחרו PDF בחלונית הייצוא; הקובץ נבנה בדפדפן. זה דורש התחברות עם Google ונספר במסגרת 3 ייצואים חינמיים ביום. ב-Desktop עצמו אין לנו שום מנגנון PDF.</p>
+
+<h3>האם הוספה ל-Chrome תייצא צ'אט מ-Claude Desktop?</h3>
+<p>לא. התקנת Download Claude conversations משפיעה רק על Chrome ב-claude.ai. Desktop נשאר ללא שינוי. הצמידו את התוסף ועבדו בלשונית הדפדפן.</p>
+
+<h3>יש דרך בנייד לייצא צ'אט מ-Claude Desktop?</h3>
+<p>לא עם התוסף הזה. הוא צריך Chrome שולחני ב-claude.ai. הכפתור הכתום לא נתמך בדפדפנים בטלפון וגם לא באפליקציית Desktop.</p>
+
+<h3>אילו פורמטים עובדים אחרי שצ'אט מ-Desktop נמצא ב-claude.ai?</h3>
+<p>PDF,‏ Markdown, טקסט פשוט, JSON,‏ XML,‏ CSV ו-PNG — אותם שבעה כמו בכל מדריך אחר של Download Claude conversations. פריסות ארטיפקטים ומתגי החשיבה חלים רק בווידג'ט הזה באתר.</p>
+</article>
+</main>
+<section class="final-cta page-cta" aria-label="התקנה">
+  <div class="wrap">
+    <div class="final-cta-panel">
+      <p class="final-kicker">Download Claude conversations</p>
+      <h2>מייצאים מ-claude.ai ב-Chrome?</h2>
+      <p>בשביל זה נועד התוסף — PDF,‏ Markdown,‏ JSON, טקסט, CSV,‏ XML או PNG, באופן מקומי מהדפדפן. לא Claude Desktop.</p>
+      <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=he-desktop" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> הוספה ל-Chrome</a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="logo" href="/he/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
+      <p class="legal-note">תוסף Chrome להורדת צ&#x27;אטים מ-Claude.ai כ-PDF, Markdown, JSON, טקסט פשוט, CSV, XML או PNG.</p>
+    </div>
+    <div>
+      <h2>התקנה</h2>
+      <a class="install-link" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=he-footer" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> תוסף Chrome</a>
+    </div>
+    <div>
+      <h2>מוצר</h2>
+      <a href="/he/features/">יכולות</a>
+      <a href="/he/formats/">פורמטים</a>
+      <a href="/he/bulk/">הורדה מרוכזת</a>
+      <a href="/he/how-it-works/">איך זה עובד</a>
+    </div>
+    <div>
+      <h2>מדריכים</h2>
+      <a href="/he/how-to-download-claude-chat/">איך להוריד צ&#x27;אט של Claude</a>
+      <a href="/he/how-to-export-claude-chat/">איך לייצא צ&#x27;אט של Claude</a>
+      <a href="/he/export-claude-chat/">ייצוא צ&#x27;אט של Claude</a>
+      <a href="/he/claude-conversation-extractor/">חילוץ שיחות Claude</a>
+      <a href="/he/claude-code-export/">ייצוא Claude Code</a>
+      <a href="/he/download-claude-chat-as-pdf/">צ&#x27;אט של Claude כ-PDF</a>
+      <a href="/he/export-claude-desktop-chat/">ייצוא מ-Claude Desktop</a>
+      <a href="/he/claude-export-conversation/">ייצוא שיחה מ-Claude</a>
+      <a href="/he/how-to-save-claude-conversation/">איך לשמור שיחה של Claude</a>
+      <a href="/he/download-claude-conversation/">הורדת שיחה של Claude</a>
+    </div>
+    <div>
+      <h2>משפטי</h2>
+      <a href="/he/about/">אודות</a>
+      <a href="/he/about/#contact">יצירת קשר</a>
+      <a href="/privacy/" hreflang="en">פרטיות (באנגלית)</a>
+      <a href="/terms/" hreflang="en">תנאים (באנגלית)</a>
+      <a href="/refund/" hreflang="en">החזרים (באנגלית)</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Download Claude conversations. כל הזכויות שמורות.</div>
+    <div>
+      <a href="/privacy/" hreflang="en">מדיניות פרטיות (באנגלית)</a>
+      <a href="/terms/" hreflang="en">תנאי שימוש (באנגלית)</a>
+      <a href="/refund/" hreflang="en">החזרים (באנגלית)</a>
+    </div>
+  </div>
+  <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/export-claude-desktop-chat/" hreflang="en" lang="en">English</a> <a href="/de/claude-desktop-chat-exportieren/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/exporter-chat-claude-desktop/" hreflang="fr" lang="fr">Français</a> <a href="/nl/claude-desktop-chat-exporteren/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/exportera-claude-desktop-chatt/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/eksportere-claude-desktop-chat/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/eksporter-claude-desktop-chat/" hreflang="da" lang="da">Dansk</a> <a href="/fi/vie-claude-desktop-chat/" hreflang="fi" lang="fi">Suomi</a> <a href="/ja/export-claude-desktop-chat/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/export-claude-desktop-chat/" hreflang="ko" lang="ko">한국어</a> <a href="/he/export-claude-desktop-chat/" hreflang="he" lang="he">עברית</a> <a href="/ar/export-claude-desktop-chat/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
+  <p class="disclaimer">הצ&#x27;אטים מעובדים בדפדפן שלכם · התחברות עם Google רק ל-PDF, לייצוא מרוכז ול-Pro · אין קשר ל-Anthropic, PBC. ‏Claude הוא סימן מסחרי של Anthropic. תוסף Chrome עצמאי — לא מוצר רשמי של Anthropic. תמיכה: <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

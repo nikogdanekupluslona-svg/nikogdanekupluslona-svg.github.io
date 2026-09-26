@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formater til eksport af Claude-chats – PDF, Markdown, CSV</title>
+  <meta name="description" content="Alle syv formater i Download Claude conversations: PDF, Markdown, ren tekst, JSON, XML, CSV og PNG. Hvad hvert format bruges til, og hvilket du skal vælge.">
+  <link rel="canonical" href="https://chat-downloader.com/da/formater/">
+  <!-- i18n:head -->
+  <link rel="alternate" hreflang="en" href="https://chat-downloader.com/formats/">
+  <link rel="alternate" hreflang="de" href="https://chat-downloader.com/de/formate/">
+  <link rel="alternate" hreflang="fr" href="https://chat-downloader.com/fr/formats/">
+  <link rel="alternate" hreflang="nl" href="https://chat-downloader.com/nl/formaten/">
+  <link rel="alternate" hreflang="sv" href="https://chat-downloader.com/sv/format/">
+  <link rel="alternate" hreflang="nb" href="https://chat-downloader.com/nb/formater/">
+  <link rel="alternate" hreflang="da" href="https://chat-downloader.com/da/formater/">
+  <link rel="alternate" hreflang="fi" href="https://chat-downloader.com/fi/formaatit/">
+  <link rel="alternate" hreflang="ja" href="https://chat-downloader.com/ja/formats/">
+  <link rel="alternate" hreflang="ko" href="https://chat-downloader.com/ko/formats/">
+  <link rel="alternate" hreflang="he" href="https://chat-downloader.com/he/formats/">
+  <link rel="alternate" hreflang="ar" href="https://chat-downloader.com/ar/formats/">
+  <link rel="alternate" hreflang="x-default" href="https://chat-downloader.com/formats/">
+  <meta property="og:locale" content="da_DK">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="sv_SE">
+  <meta property="og:locale:alternate" content="nb_NO">
+  <meta property="og:locale:alternate" content="fi_FI">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <meta property="og:locale:alternate" content="he_IL">
+  <meta property="og:locale:alternate" content="ar_AE">
+  <!-- /i18n:head -->
+  <meta property="og:title" content="Formater til eksport af Claude-chats – PDF, Markdown, CSV">
+  <meta property="og:description" content="Alle syv formater i Download Claude conversations: PDF, Markdown, ren tekst, JSON, XML, CSV og PNG. Hvad hvert format bruges til, og hvilket du skal vælge.">
+  <meta property="og:url" content="https://chat-downloader.com/da/formater/">
+  <meta property="og:image" content="https://chat-downloader.com/assets/widget-guide.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chat Downloader">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Formater til eksport af Claude-chats – PDF, Markdown, CSV">
+  <meta name="twitter:description" content="Alle syv formater i Download Claude conversations: PDF, Markdown, ren tekst, JSON, XML, CSV og PNG. Hvad hvert format bruges til, og hvilket du skal vælge.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME1YXGZKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GME1YXGZKR');
+  </script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Hvilke formater kan jeg eksportere Claude-chats i?","acceptedAnswer":{"@type":"Answer","text":"Syv: PDF, Markdown, ren tekst, JSON, XML, CSV og PNG. Markdown, tekst, JSON, XML, CSV og PNG er ubegrænsede og kræver ingen konto. PDF kræver Google-login og er gratis op til 3 om dagen."}},{"@type":"Question","name":"Er PDF et af eksportformaterne?","acceptedAnswer":{"@type":"Answer","text":"Ja. Vælg PDF i eksportpanelet. PDF-dialogen indstiller filnavn, sidestørrelse, margener, lys eller mørk tilstand, skrifttype og -størrelse, sidetal, indholdsfortegnelse, tidsstempler og sideskift før hver prompt. Filen bygges i browseren uden udskriftsdialog."}},{"@type":"Question","name":"Hvad bruges CSV-eksporten til?","acceptedAnswer":{"@type":"Answer","text":"Regneark. CSV skriver én række pr. besked og åbner i Excel, Google Sheets og Numbers. Den er ubegrænset, kræver ingen konto og kan kopieres til udklipsholderen i stedet for at blive downloadet."}},{"@type":"Question","name":"Har eksportformaterne en daglig grænse?","acceptedAnswer":{"@type":"Answer","text":"Kun PDF og masseeksport. Eksport af enkelte chats i Markdown, tekst, JSON, XML, CSV og PNG er ubegrænset og gratis. PDF og masse-ZIP deler 3 om dagen på gratisplanen, nulstillet ved midnat UTC. Pro til 3,99 $ om måneden eller 26,99 $ om året fjerner loftet."}},{"@type":"Question","name":"Kan jeg blande formater i Export All?","acceptedAnswer":{"@type":"Answer","text":"Nej. Én kørsel af Export All bruger ét format og skriver én ZIP-fil. Kør den igen med et andet format, hvis du har brug for to filer af den samme claude.ai-chat. På gratisplanen tæller hver chat i hver ZIP-fil med i de 3 daglige PDF- eller masseeksporter."}},{"@type":"Question","name":"Er eksportformaterne det samme som Export data?","acceptedAnswer":{"@type":"Answer","text":"Nej. Anthropics Export data er en forsinket ZIP-fil med JSON for hele kontoen. Formaterne her er filer pr. chat (eller pr. udvalg), som Download Claude conversations skriver med det samme i Chrome."}},{"@type":"Question","name":"Virker eksportformaterne i Claude Desktop eller Claude Code?","acceptedAnswer":{"@type":"Answer","text":"På nettet, ja. Chats, projekter, Cowork-sessioner og Claude Code på nettet (claude.ai/code) får alle formater i Chrome. Claude Desktop-appen og lokale Claude Code-sessioner i terminalen viser aldrig formatmenuen. Åbn den samme tråd på claude.ai i Chrome, hvis den findes der."}},{"@type":"Question","name":"Skal jeg have Pro for at prøve formaterne?","acceptedAnswer":{"@type":"Answer","text":"Nej. Seks formater er ubegrænsede på gratisplanen uden konto. PDF er gratis op til 3 om dagen med Google-login, delt med masse-ZIP. Pro koster 3,99 $ om måneden eller 26,99 $ om året, når du har brug for ubegrænset PDF eller masseeksport."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Forside","item":"https://chat-downloader.com/da/"},{"@type":"ListItem","position":2,"name":"Formater","item":"https://chat-downloader.com/da/formater/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Spring til indhold</a>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a class="logo" href="/da/">
+        <img src="/assets/icon.svg" alt="">
+        <span>Download Claude conversations</span>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="/da/download-claude-chat/">Download</a><a href="/da/saadan-eksporterer-du-claude-chat/">Eksportér</a><a href="/da/eksporter-alle-claude-chats/">Alle chats</a><a href="/da/formater/" aria-current="page">Formater</a><a href="/da/#faq">FAQ</a>
+        <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=da-formats" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Føj til Chrome</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=da-formats" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Føj til Chrome</a>
+      <!-- i18n:switch --><details class="lang-switch"><summary aria-label="Sprog: Dansk"><svg class="lang-globe" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span class="lang-name">Dansk</span><span class="lang-code" aria-hidden="true">da</span></summary><ul><li><a href="/formats/" hreflang="en" lang="en">English</a></li><li><a href="/de/formate/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/formats/" hreflang="fr" lang="fr">Français</a></li><li><a href="/nl/formaten/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/sv/format/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="/nb/formater/" hreflang="nb" lang="nb">Norsk</a></li><li><a href="/da/formater/" hreflang="da" lang="da" aria-current="true">Dansk</a></li><li><a href="/fi/formaatit/" hreflang="fi" lang="fi">Suomi</a></li><li><a href="/ja/formats/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/ko/formats/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/he/formats/" hreflang="he" lang="he">עברית</a></li><li><a href="/ar/formats/" hreflang="ar" lang="ar">العربية</a></li></ul></details><!-- /i18n:switch -->
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+<nav class="crumbs" aria-label="Brødkrummesti"><a href="/da/">Forside</a> / Formater</nav>
+<main id="main">
+<article class="band prose">
+<p class="article-meta">Opdateret <time datetime="2026-09">september 2026</time> · Udvidelse 1.16.2</p>
+<h1 class="page-h1">Formater til eksport af Claude-chats, der forbliver læsbare</h1>
+<p class="lead">Formaterne til eksport af Claude-chats i Download Claude conversations er PDF, Markdown, ren tekst, JSON, XML, CSV og PNG. Vælg ét via den orange knap på claude.ai eller i "Export All" (eksportér alle). Markdown, tekst, JSON, XML, CSV og PNG er ubegrænsede uden konto. PDF og masse-ZIP er gratis op til 3 om dagen med Google-login; Pro koster 3,99 $ om måneden eller 26,99 $ om året. Filerne bygges i Chrome og sendes ikke på mail som Anthropics ZIP-fil for kontoen.</p>
+<aside class="trust-badge" aria-label="Om udvidelsen">
+  <span class="trophy" aria-hidden="true">🧩</span>
+  <div>
+    <strong>Download Claude conversations – gratis Chrome-udvidelse til claude.ai</strong>
+    <span>Version 1.16.2 (september 2026) – ubegrænsede eksporter i Markdown, tekst, JSON, XML, CSV og PNG uden konto; PDF og masse-ZIP gratis op til 3 om dagen</span>
+  </div>
+</aside>
+<nav class="toc" aria-label="På denne side">
+  <p>På denne side</p>
+  <ol>
+    <li><a href="#what-formats">Hvilke eksportformater findes her?</a></li>
+    <li><a href="#which-format">Hvilket format skal jeg vælge?</a></li>
+    <li><a href="#how-to-export">Hvordan vælger jeg format?</a></li>
+    <li><a href="#bulk">Virker formaterne i Export All?</a></li>
+    <li><a href="#vs-zip">Eksportformater vs. Anthropics ZIP?</a></li>
+    <li><a href="#cost">Hvad koster formaterne?</a></li>
+    <li><a href="#faq">FAQ: formater til eksport af Claude-chats</a></li>
+  </ol>
+</nav>
+
+<h2 id="what-formats">Hvilke formater til eksport af Claude-chats findes her?</h2>
+<p>Formaterne på dette websted er de syv filtyper, som Download Claude conversations skriver fra en claude.ai-tråd: PDF, Markdown, ren tekst, JSON, XML, CSV og PNG. Version 1.16.2 bygger dem alle i din browser. Seks er ubegrænsede og kræver ingen konto. PDF beder om Google-login og er gratis op til 3 om dagen.</p>
+<p>Udvidelsen virker overalt, hvor en tråd åbner på claude.ai i Chrome: chats, Projects (projekter), Cowork-sessioner og Claude Code på nettet (claude.ai/code). Claude Desktop-appen og lokale Claude Code-sessioner i terminalen viser aldrig den orange knap. Findes den samme tråd på din claude.ai-konto, så åbn URL'en i Chrome og vælg format dér. Rullemenuen husker det format, du brugte sidst.</p>
+<p>Mange søger på engelsk – "claude chat export", Claude Chat Downloader eller Claude Conversation Downloader – og finder det samme produkt. De navne er dette produkt, ikke et andet eksportværktøj. Juridiske sider kan stadig nævne Claude Exporter. Filerne er de samme syv formater.</p>
+<div class="callout callout-info">
+  <p><strong>Én liste, to indgange.</strong> Den orange knap eksporterer den åbne chat. Export All på dashboardet eksporterer mange chats til én ZIP-fil med én fil pr. chat – i det af de syv formater, du vælger som "Chat format" (chatformat), PDF inklusive. Detaljer: <a href="/da/eksporter-alle-claude-chats/">masseeksport med Export All</a>.</p>
+</div>
+
+<h2 id="which-format">Hvilket format til eksport af Claude-chats skal jeg vælge?</h2>
+<p>Vælg PDF til læsning og deling, Markdown til noter, JSON til scripts, CSV til regneark, ren tekst til et arkiv, der kan indsættes overalt, XML når et system kræver XML, og PNG til et billede af tråden. Download Claude conversations kårer ikke ét format som det bedste. Formaterne adskiller sig i form; kun PDF har et dagligt loft på gratisplanen.</p>
+<table>
+  <caption>Eksportformater i Download Claude conversations 1.16.2</caption>
+  <thead>
+    <tr>
+      <th scope="col">Format</th>
+      <th scope="col">Bedst til</th>
+      <th scope="col">Hvad filen er</th>
+      <th scope="col">Gratisplan</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PDF</td>
+      <td>Læsning, deling, vedhæftning</td>
+      <td>Dokument med sider, valgfri sidetal og indholdsfortegnelse – <a href="/da/claude-chat-som-pdf/">guide til PDF</a></td>
+      <td>3 om dagen, Google-login</td>
+    </tr>
+    <tr>
+      <td>Markdown</td>
+      <td>Obsidian, GitHub, wikier</td>
+      <td>Overskrifter, kodeblokke, tabeller – <a href="/da/formater/markdown/">guide til Markdown</a></td>
+      <td>Ubegrænset, uden konto</td>
+    </tr>
+    <tr>
+      <td>Ren tekst</td>
+      <td>Enkelt arkiv, steder at indsætte tekst</td>
+      <td>Samtalens rækkefølge uden markup</td>
+      <td>Ubegrænset, uden konto</td>
+    </tr>
+    <tr>
+      <td>JSON</td>
+      <td>Sammenligninger, pipelines, parsere</td>
+      <td>Beskedtræ, ikke Anthropics ZIP-fil for kontoen – <a href="/da/formater/json/">guide til JSON</a></td>
+      <td>Ubegrænset, uden konto</td>
+    </tr>
+    <tr>
+      <td>XML</td>
+      <td>Systemer, der kræver XML</td>
+      <td>Struktureret dataudveksling – <a href="/da/formater/xml/">guide til XML</a></td>
+      <td>Ubegrænset, uden konto</td>
+    </tr>
+    <tr>
+      <td>CSV</td>
+      <td>Excel, Google Sheets, Numbers</td>
+      <td>Én række pr. besked</td>
+      <td>Ubegrænset, uden konto</td>
+    </tr>
+    <tr>
+      <td>PNG</td>
+      <td>Slides, chats, visuel dokumentation</td>
+      <td>Ét billede af tråden, ikke PDF – <a href="/da/formater/png/">guide til PNG</a></td>
+      <td>Ubegrænset, uden konto</td>
+    </tr>
+  </tbody>
+</table>
+<p>Skribenter ender som regel med Markdown. Udviklere ender som regel med JSON. PNG er det eneste billedformat; du kan ikke søge i det eller kopiere kode rent ud af det senere. Har du brug for en side til udskrift, så vælg PDF: udvidelsen bygger den direkte med sidestørrelse, margener, lys eller mørk tilstand og indholdsfortegnelse. Chromes udskriftsdialog er kun en nødløsning.</p>
+<p>CSV skriver én række pr. besked, så en tråd bliver til et ark, du kan sortere og filtrere. Filen åbner i Excel, Google Sheets og Numbers. Der er ingen separat guide til CSV; denne oversigt dækker formatet. Ligesom Markdown, JSON, XML og ren tekst kan CSV også sendes til udklipsholderen med "Copy" (kopiér) i stedet for at blive downloadet.</p>
+<div class="expert-quote">
+  <p>Vi leverer syv eksportformater – PDF, Markdown, ren tekst, JSON, XML, CSV og PNG – og hvert eneste bygges i din browser. Seks er ubegrænsede og kræver ingen konto. PDF og masse-ZIP beder om Google-login og er gratis op til 3 om dagen.</p>
+  <footer>Holdet bag Download Claude conversations</footer>
+</div>
+
+<h2 id="how-to-export">Hvordan vælger jeg format?</h2>
+<p>Åbn en samtale-URL på claude.ai i Chrome, klik på den orange knap ved siden af beskedfeltet, vælg et af formaterne, og klik på "Export" (Eksportér). Download Claude conversations samler filen i fanen. claude.ai har i september 2026 ingen indbygget knap til at eksportere en enkelt chat.</p>
+<ol>
+<li>Installér Download Claude conversations fra Chrome Web Store.</li>
+<li>Genindlæs claude.ai, og åbn en rigtig samtale-URL – ikke den tomme startside med skrivefeltet.</li>
+<li>Klik på den runde orange downloadknap til højre for beskedfeltet.</li>
+<li>Vælg PDF, Markdown, ren tekst, JSON, XML, CSV eller PNG. Det sidste format huskes.</li>
+<li>Klik på "Export". Chrome gemmer filen med det samme. Ved PDF indstiller du valgene i PDF-dialogen; den første PDF beder om Google-login.</li>
+</ol>
+<p>Intet login til Markdown, tekst, JSON, XML, CSV eller PNG: de eksporter er ubegrænsede, anonyme og sender ingenting. Google-login dukker kun op ved PDF, Export All eller Pro. Udvidelsen sender derefter kun din Google-e-mail for at kontrollere den daglige grænse og gendanne Pro efter en geninstallation. Chatteksten uploades aldrig. Mekanikken: <a href="/da/saadan-virker-det/">sådan virker det</a>.</p>
+<p>Eksportpanelet indstiller også "Messages" ("All", "Human", "Assistant" – alle, mennesket, assistenten), et afkrydsningsfelt "Thinking" (tænkning) og "Select" (vælg), som markerer enkelte beskeder. "Copy" lægger Markdown, tekst, JSON, XML eller CSV i udklipsholderen i stedet for en fil; det er ubegrænset og findes ikke til PDF eller PNG. Værktøjs-/MCP-trin og kilder fra websøgning slår du til i indstillingerne ("Settings"). Metadata og layout for artefakter ("Original", "Inline", "Nested", "Flat" – original, i teksten, indlejret, fladt) vælger du på dashboardet; layoutet afgør, om artefakter ligger inde i filen eller i deres egen mappe i ZIP-filen.</p>
+
+<h2 id="bulk">Virker formaterne til eksport af Claude-chats i Export All?</h2>
+<p>Ja. Åbn udvidelsens popup → "View and Download All Conversations" (se og download alle samtaler), filtrér listen, markér chattene, vælg et af de syv formater som "Chat format", og klik på Export All. Du får én ZIP-fil med én fil pr. chat. Masseeksport kræver Google-login; på gratisplanen bruger hver chat i ZIP-filen en af de 3 daglige PDF- eller masseeksporter. Pro til 3,99 $ om måneden eller 26,99 $ om året fjerner loftet.</p>
+<p>Dashboardet viser din historik fra claude.ai med søgning på navn, projektsøgning, fanerne Chat og Cowork og filtrene "All conversations", "New", "Updated" og "Previously exported" (alle samtaler, nye, opdaterede, tidligere eksporteret). New betyder, at chatten endnu ikke er eksporteret med Download Claude conversations. Previously exported holder styr på chats, du allerede har gemt. Export All er ikke en forsinket ZIP-fil for hele kontoen.</p>
+<div class="callout callout-warn">
+  <p><strong>Loftet for masseeksport er dagligt.</strong> På gratisplanen deler PDF og masseeksport 3 eksporter om dagen, nulstillet ved midnat UTC. Hver chat i en ZIP-fil tæller som én. Vælger du flere, end der er tilbage i dag, blokeres hele kørslen – den bliver ikke bare afkortet. Vælg færre chats, eller brug Pro.</p>
+</div>
+<p>Masseeksport har sine egne afkrydsningsfelter – "Chats", "Thinking", "Metadata", "Tools" og "Sources" (chats, tænkning, metadata, værktøjer, kilder) – plus layoutet for artefakter. Du får ikke en blandet pakke med Markdown og JSON i ét klik. Du vælger ét format i "Chat format" til kørslen. Kør Export All igen med et andet format, hvis du har brug for tråden i to former; på gratisplanen tæller den anden kørsel igen.</p>
+
+<h2 id="vs-zip">Formater til eksport af Claude-chats vs. Anthropics ZIP?</h2>
+<p>Anthropics Settings → Privacy → Export data (menunavnene kan være oversat, hvis claude.ai er sat til dansk) sender efter en ventetid en ZIP-fil med JSON for hele kontoen på mail. Download Claude conversations gemmer den åbne tråd med det samme som PDF, Markdown, tekst, JSON, XML, CSV eller PNG. Brug ZIP-filen til backup; brug udvidelsen, når du har brug for filen nu.</p>
+<table>
+  <caption>Sådan får du en Claude-samtale ud af claude.ai</caption>
+  <thead>
+    <tr>
+      <th scope="col">Metode</th>
+      <th scope="col">Du får</th>
+      <th scope="col">Venter du?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Download Claude conversations</td>
+      <td>PDF / MD / TXT / JSON / XML / CSV / PNG</td>
+      <td>Nej – Chrome downloader filen</td>
+    </tr>
+    <tr>
+      <td>Settings → Privacy → Export data</td>
+      <td>ZIP-fil med JSON for kontoen via mail</td>
+      <td>Ja – linket udløber; ingen Markdown eller PDF pr. chat</td>
+    </tr>
+    <tr>
+      <td>Udskriv → Gem som PDF</td>
+      <td>PDF af websiden</td>
+      <td>Nej, men kode og sidebjælke går ofte i stykker</td>
+    </tr>
+    <tr>
+      <td>Kopiér og indsæt</td>
+      <td>Det, du markerer</td>
+      <td>Ingen struktur i en lang tråd</td>
+    </tr>
+  </tbody>
+</table>
+<p>Den officielle ZIP-fil er ikke en pænere udgave af disse formater. Du kan ikke vælge Markdown eller PDF i den anmodning. Download Claude conversations kan ikke erstatte ZIP-filen, hvis du har brug for alle glemte tråde i ét arkiv. Udskrift er en visuel nødløsning; udvidelsens egen PDF er den pænere fil.</p>
+<p>Download Claude conversations er ikke tilknyttet Anthropic, PBC. Brugen af udvidelsen ændrer ikke Anthropics servicevilkår. Content scriptet bruger den session, du allerede har åbnet på claude.ai. Følg Anthropics regler for din konto.</p>
+
+<h2 id="cost">Hvad koster formaterne til eksport af Claude-chats?</h2>
+<p>Seks formater til eksport af Claude-chats koster ingenting og kræver ingen konto: Markdown, ren tekst, JSON, XML, CSV og PNG er ubegrænsede. PDF og masse-ZIP er gratis op til 3 om dagen tilsammen med Google-login. Pro koster 3,99 $ om måneden eller 26,99 $ om året via Paddle og gør PDF og masseeksport ubegrænsede. Download Claude conversations tager ikke ekstra for noget enkelt format.</p>
+<p>Den daglige tæller nulstilles ved midnat UTC og følger din Google-konto – derfor beder PDF og masseeksport om login. Pro gendannes på en ny computer, når du logger ind med den samme Google-konto. Paddle er forhandler (merchant of record); vi ser aldrig kortnumre. Du kan opsige når som helst fra udvidelsens Options-side; den første betaling har 14 dages pengene-tilbage-garanti.</p>
+<p>Versionen på denne side er 1.16.2, dateret september 2026. Formaterne er PDF, Markdown, ren tekst, JSON, XML, CSV og PNG. Der er ingen eksport til Notion eller Word. Ændrer listen sig, opdateres denne oversigt samme dag.</p>
+
+<h2 id="faq">FAQ: formater til eksport af Claude-chats</h2>
+<p>Disse spørgsmål dækker formaterne i Download Claude conversations 1.16.2: listen med syv formater, PDF, CSV, grænser, Export All, Anthropics ZIP-fil, Desktop og Code samt Pro. Hvert svar er et produktfaktum. FAQPage-JSON-LD i sidens head svarer til denne liste.</p>
+
+<h3>Hvilke formater kan jeg eksportere Claude-chats i?</h3>
+<p>Syv: PDF, Markdown, ren tekst, JSON, XML, CSV og PNG. Markdown, tekst, JSON, XML, CSV og PNG er ubegrænsede og kræver ingen konto. PDF kræver Google-login og er gratis op til 3 om dagen.</p>
+
+<h3>Er PDF et af eksportformaterne?</h3>
+<p>Ja. Vælg PDF i eksportpanelet. PDF-dialogen indstiller filnavn, sidestørrelse, margener, lys eller mørk tilstand, skrifttype og -størrelse, sidetal, indholdsfortegnelse, tidsstempler og sideskift før hver prompt. Filen bygges i browseren uden udskriftsdialog.</p>
+
+<h3>Hvad bruges CSV-eksporten til?</h3>
+<p>Regneark. CSV skriver én række pr. besked og åbner i Excel, Google Sheets og Numbers. Den er ubegrænset, kræver ingen konto og kan kopieres til udklipsholderen i stedet for at blive downloadet.</p>
+
+<h3>Har eksportformaterne en daglig grænse?</h3>
+<p>Kun PDF og masseeksport. Eksport af enkelte chats i Markdown, tekst, JSON, XML, CSV og PNG er ubegrænset og gratis. PDF og masse-ZIP deler 3 om dagen på gratisplanen, nulstillet ved midnat UTC. Pro til 3,99 $ om måneden eller 26,99 $ om året fjerner loftet.</p>
+
+<h3>Kan jeg blande formater i Export All?</h3>
+<p>Nej. Én kørsel af Export All bruger ét format og skriver én ZIP-fil. Kør den igen med et andet format, hvis du har brug for to filer af den samme claude.ai-chat. På gratisplanen tæller hver chat i hver ZIP-fil med i de 3 daglige PDF- eller masseeksporter.</p>
+
+<h3>Er eksportformaterne det samme som Export data?</h3>
+<p>Nej. Anthropics Export data er en forsinket ZIP-fil med JSON for hele kontoen. Formaterne her er filer pr. chat (eller pr. udvalg), som Download Claude conversations skriver med det samme i Chrome.</p>
+
+<h3>Virker eksportformaterne i Claude Desktop eller Claude Code?</h3>
+<p>På nettet, ja. Chats, projekter, Cowork-sessioner og Claude Code på nettet (claude.ai/code) får alle formater i Chrome. Claude Desktop-appen og lokale Claude Code-sessioner i terminalen viser aldrig formatmenuen. Åbn den samme tråd på claude.ai i Chrome, hvis den findes der.</p>
+
+<h3>Skal jeg have Pro for at prøve formaterne?</h3>
+<p>Nej. Seks formater er ubegrænsede på gratisplanen uden konto. PDF er gratis op til 3 om dagen med Google-login, delt med masse-ZIP. Pro koster 3,99 $ om måneden eller 26,99 $ om året, når du har brug for ubegrænset PDF eller masseeksport.</p>
+</article>
+</main>
+<section class="final-cta page-cta" aria-label="Installér">
+  <div class="wrap">
+    <div class="final-cta-panel">
+      <p class="final-kicker">Download Claude conversations</p>
+      <h2>Installér udvidelsen, og download Claude-chats på få sekunder</h2>
+      <p>Gør vigtige Claude-tråde til PDF, Markdown, JSON, tekst, CSV, XML eller PNG – lokalt, direkte i Chrome.</p>
+      <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=da-formats" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Tilføj til Chrome</a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="logo" href="/da/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
+      <p class="legal-note">Chrome-udvidelse til at downloade Claude.ai-chats som PDF, Markdown, JSON, ren tekst, CSV, XML eller PNG.</p>
+    </div>
+    <div>
+      <h2>Installér</h2>
+      <a class="install-link" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=da-footer" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Chrome-udvidelse</a>
+    </div>
+    <div>
+      <h2>Produkt</h2>
+      <a href="/da/funktioner/">Funktioner</a>
+      <a href="/da/formater/">Formater</a>
+      <a href="/da/eksporter-alle-claude-chats/">Eksportér alle chats</a>
+      <a href="/da/saadan-virker-det/">Sådan virker det</a>
+    </div>
+    <div>
+      <h2>Guides</h2>
+      <a href="/da/download-claude-chat/">Download Claude-chat</a>
+      <a href="/da/saadan-eksporterer-du-claude-chat/">Sådan eksporterer du en Claude-chat</a>
+      <a href="/da/eksporter-claude-chat/">Eksportér Claude-chat</a>
+      <a href="/da/claude-samtale-extractor/">Claude samtale-extractor</a>
+      <a href="/da/eksporter-claude-code-samtale/">Eksportér Claude Code-samtale</a>
+      <a href="/da/claude-chat-som-pdf/">Claude-chat som PDF</a>
+      <a href="/da/eksporter-claude-desktop-chat/">Eksportér Claude Desktop-chat</a>
+      <a href="/da/eksporter-claude-samtale/">Eksportér Claude-samtale</a>
+      <a href="/da/gem-claude-samtale/">Gem Claude-samtale</a>
+      <a href="/da/download-claude-samtale/">Download Claude-samtale</a>
+    </div>
+    <div>
+      <h2>Juridisk</h2>
+      <a href="/da/om-os/">Om os</a>
+      <a href="/da/om-os/#contact">Kontakt</a>
+      <a href="/privacy/" hreflang="en">Privatliv (engelsk)</a>
+      <a href="/terms/" hreflang="en">Vilkår (engelsk)</a>
+      <a href="/refund/" hreflang="en">Refusion (engelsk)</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Download Claude conversations. Alle rettigheder forbeholdes.</div>
+    <div>
+      <a href="/privacy/" hreflang="en">Privatlivspolitik (engelsk)</a>
+      <a href="/terms/" hreflang="en">Servicevilkår (engelsk)</a>
+      <a href="/refund/" hreflang="en">Refusion (engelsk)</a>
+    </div>
+  </div>
+  <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/formats/" hreflang="en" lang="en">English</a> <a href="/de/formate/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/formats/" hreflang="fr" lang="fr">Français</a> <a href="/nl/formaten/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/format/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/formater/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/formater/" hreflang="da" lang="da">Dansk</a> <a href="/fi/formaatit/" hreflang="fi" lang="fi">Suomi</a> <a href="/ja/formats/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/formats/" hreflang="ko" lang="ko">한국어</a> <a href="/he/formats/" hreflang="he" lang="he">עברית</a> <a href="/ar/formats/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
+  <p class="disclaimer">Chats behandles i din browser · Google-login kun til PDF, masseeksport og Pro · Ikke tilknyttet Anthropic, PBC. Claude er et varemærke tilhørende Anthropic. Uafhængig Chrome-udvidelse – ikke et officielt Anthropic-produkt. Support: <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

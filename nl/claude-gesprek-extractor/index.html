@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Claude-gesprek extractor – gratis Chrome-extensie</title>
+  <meta name="description" content="Extraheer een Claude-chat van claude.ai als PDF, Markdown, JSON, tekst, XML, CSV of PNG. Gratis extractor voor Chrome – één chat zonder account, of alles.">
+  <link rel="canonical" href="https://chat-downloader.com/nl/claude-gesprek-extractor/">
+  <!-- i18n:head -->
+  <link rel="alternate" hreflang="en" href="https://chat-downloader.com/claude-conversation-extractor/">
+  <link rel="alternate" hreflang="de" href="https://chat-downloader.com/de/claude-chat-extractor/">
+  <link rel="alternate" hreflang="fr" href="https://chat-downloader.com/fr/extracteur-conversation-claude/">
+  <link rel="alternate" hreflang="nl" href="https://chat-downloader.com/nl/claude-gesprek-extractor/">
+  <link rel="alternate" hreflang="sv" href="https://chat-downloader.com/sv/claude-konversation-extractor/">
+  <link rel="alternate" hreflang="nb" href="https://chat-downloader.com/nb/claude-samtale-extractor/">
+  <link rel="alternate" hreflang="da" href="https://chat-downloader.com/da/claude-samtale-extractor/">
+  <link rel="alternate" hreflang="fi" href="https://chat-downloader.com/fi/claude-keskustelu-extractor/">
+  <link rel="alternate" hreflang="ja" href="https://chat-downloader.com/ja/claude-conversation-extractor/">
+  <link rel="alternate" hreflang="ko" href="https://chat-downloader.com/ko/claude-conversation-extractor/">
+  <link rel="alternate" hreflang="he" href="https://chat-downloader.com/he/claude-conversation-extractor/">
+  <link rel="alternate" hreflang="ar" href="https://chat-downloader.com/ar/claude-conversation-extractor/">
+  <link rel="alternate" hreflang="x-default" href="https://chat-downloader.com/claude-conversation-extractor/">
+  <meta property="og:locale" content="nl_NL">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="sv_SE">
+  <meta property="og:locale:alternate" content="nb_NO">
+  <meta property="og:locale:alternate" content="da_DK">
+  <meta property="og:locale:alternate" content="fi_FI">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <meta property="og:locale:alternate" content="he_IL">
+  <meta property="og:locale:alternate" content="ar_AE">
+  <!-- /i18n:head -->
+  <meta property="og:title" content="Claude-gesprek extractor – gratis Chrome-extensie">
+  <meta property="og:description" content="Extraheer een Claude-chat van claude.ai als PDF, Markdown, JSON, tekst, XML, CSV of PNG. Gratis extractor voor Chrome – één chat zonder account, of alles.">
+  <meta property="og:url" content="https://chat-downloader.com/nl/claude-gesprek-extractor/">
+  <meta property="og:image" content="https://chat-downloader.com/assets/widget-guide.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chat Downloader">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Claude-gesprek extractor – gratis Chrome-extensie">
+  <meta name="twitter:description" content="Extraheer een Claude-chat van claude.ai als PDF, Markdown, JSON, tekst, XML, CSV of PNG. Gratis extractor voor Chrome – één chat zonder account, of alles.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME1YXGZKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GME1YXGZKR');
+  </script>
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Wat is een Claude-gesprek extractor?","acceptedAnswer":{"@type":"Answer","text":"Een tool die een claude.ai-gesprek dat je open hebt uitleest en PDF, Markdown, JSON, platte tekst, XML, CSV of PNG schrijft. Download Claude conversations voegt de oranje knop toe die dat uitlezen lokaal in Chrome doet."}},{"@type":"Question","name":"Is een Claude-chat extraheren iets anders dan een Claude-chat exporteren?","acceptedAnswer":{"@type":"Answer","text":"Nee – dezelfde taak, een ander werkwoord. Extraheren, exporteren en downloaden gebruiken allemaal dezelfde oranje knop en dezelfde zeven formaten op claude.ai. Deze pagina legt de nadruk op wat de parser behoudt."}},{"@type":"Question","name":"Kan ik een Claude-chat extraheren zonder iets te installeren?","acceptedAnswer":{"@type":"Answer","text":"Alleen met kopiëren en plakken, waarbij codeblokken en tabellen verloren gaan, of met Export data van Anthropic, wat een account-ZIP is. Een gestructureerde Claude-gesprek extractor moet de pagina kunnen lezen; dat doet de Chrome-extensie."}},{"@type":"Question","name":"Ondersteunt de extractor het extraheren van gesprekken in bulk?","acceptedAnswer":{"@type":"Answer","text":"Ja. Open “View and Download All Conversations” vanuit de pop-up van de extensie, daarna “Export All” voor een ZIP. Voor bulk moet je inloggen met Google; in de gratis versie telt elke chat mee voor de 3 per dag, die je deelt met PDF. Pro à 3,99 $ per maand of 26,99 $ per jaar haalt de limiet weg. Filters: All conversations, New, Updated, Previously exported."}},{"@type":"Question","name":"Is een Claude-chat extractor veilig om te gebruiken?","acceptedAnswer":{"@type":"Answer","text":"Deze leest de ingelogde claude.ai-sessie en maakt bestanden lokaal. De tekst van je gesprekken wordt niet naar onze servers gestuurd. Wij zijn niet Anthropic; hun gebruiksvoorwaarden blijven voor jou gelden."}},{"@type":"Question","name":"Heb ik Claude Pro nodig om een chat te extraheren?","acceptedAnswer":{"@type":"Answer","text":"Nee. Elk claude.ai-abonnement waarmee je het gesprek in Chrome kunt openen werkt. Bij ons zijn extracties naar Markdown, tekst, JSON, XML, CSV en PNG gratis en onbeperkt, zonder account; PDF en bulk zijn gratis tot 3 per dag. Het betaalde abonnement van Anthropic staat los van onze limieten."}},{"@type":"Question","name":"Werkt de Claude-gesprek extractor in Desktop?","acceptedAnswer":{"@type":"Answer","text":"Nee. Claude Desktop krijgt nooit de oranje knop. Open dezelfde chat op claude.ai als die synchroniseert, of kopieer en plak / gebruik de officiële ZIP. De extractor werkt alleen in Chrome, voor claude.ai."}},{"@type":"Question","name":"Kan een Claude-gesprek extractor een PDF maken?","acceptedAnswer":{"@type":"Answer","text":"Ja. Kies PDF in het exportpaneel en klik op “Export”. De PDF wordt in de browser gemaakt, zonder afdrukvenster. Je moet ervoor inloggen met Google, en het is gratis tot 3 per dag; met Pro is het onbeperkt."}},{"@type":"Question","name":"Werkt een Claude-chat extraheren in Claude Code?","acceptedAnswer":{"@type":"Answer","text":"Alleen op het web. Claude Code-sessies op claude.ai/code openen op claude.ai en extraheer je zoals elke chat. Claude Code in de terminal gebruikt /export of JSONL op de schijf; deze Claude-gesprek extractor is een Chrome-contentscript voor claude.ai, geen koppeling met de terminal."}},{"@type":"Question","name":"Hoeveel gratis extracties staat de extractor toe?","acceptedAnswer":{"@type":"Answer","text":"Onbeperkt in Markdown, tekst, JSON, XML, CSV en PNG, zonder account. PDF en bulkexport met “Export All” delen in de gratis versie 3 per dag per account waarmee je bij Google bent ingelogd, opnieuw vanaf middernacht UTC. Pro haalt de limiet weg en wordt hersteld vanuit hetzelfde Google-account, met facturering via Paddle."}},{"@type":"Question","name":"Wat slaat de Claude-gesprek extractor over?","acceptedAnswer":{"@type":"Answer","text":"De interface van de pagina, het invoerveld en alles wat niet in het gesprek is weergegeven. Hij slaat ook chats over die nooit in Chrome zijn geladen. Gesprekken die alleen in Claude Desktop staan en lokale JSONL uit Claude Code vallen erbuiten."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Claude Chat Downloader","alternateName":["Download Claude conversations","Claude Conversation Downloader"],"applicationCategory":"BrowserApplication","operatingSystem":"Chrome","softwareVersion":"1.16.2","url":"https://chat-downloader.com","downloadUrl":"https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak","offers":[{"@type":"Offer","name":"Gratis","price":"0","priceCurrency":"USD","description":"Onbeperkt exporteren naar Markdown, tekst, JSON, XML, CSV en PNG; 3 PDF- of bulkexports per dag"},{"@type":"Offer","name":"Pro per maand","price":"3.99","priceCurrency":"USD"},{"@type":"Offer","name":"Pro per jaar","price":"26.99","priceCurrency":"USD"}],"description":"Extraheer een Claude-chat van claude.ai als PDF, Markdown, JSON, tekst, XML, CSV of PNG. Gratis extractor voor Chrome – één chat zonder account, of alles."}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://chat-downloader.com/nl/"},{"@type":"ListItem","position":2,"name":"Claude-gesprek extractor","item":"https://chat-downloader.com/nl/claude-gesprek-extractor/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Naar de inhoud</a>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a class="logo" href="/nl/">
+        <img src="/assets/icon.svg" alt="">
+        <span>Download Claude conversations</span>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="/nl/claude-chat-downloaden/">Downloaden</a><a href="/nl/hoe-claude-chat-exporteren/">Exporteren</a><a href="/nl/alle-claude-chats-exporteren/">Alle chats</a><a href="/nl/formaten/">Formaten</a><a href="/nl/#faq">FAQ</a>
+        <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=nl-claude-conversation-extractor" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Toevoegen aan Chrome</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=nl-claude-conversation-extractor" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Toevoegen aan Chrome</a>
+      <!-- i18n:switch --><details class="lang-switch"><summary aria-label="Taal: Nederlands"><svg class="lang-globe" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span class="lang-name">Nederlands</span><span class="lang-code" aria-hidden="true">nl</span></summary><ul><li><a href="/claude-conversation-extractor/" hreflang="en" lang="en">English</a></li><li><a href="/de/claude-chat-extractor/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/extracteur-conversation-claude/" hreflang="fr" lang="fr">Français</a></li><li><a href="/nl/claude-gesprek-extractor/" hreflang="nl" lang="nl" aria-current="true">Nederlands</a></li><li><a href="/sv/claude-konversation-extractor/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="/nb/claude-samtale-extractor/" hreflang="nb" lang="nb">Norsk</a></li><li><a href="/da/claude-samtale-extractor/" hreflang="da" lang="da">Dansk</a></li><li><a href="/fi/claude-keskustelu-extractor/" hreflang="fi" lang="fi">Suomi</a></li><li><a href="/ja/claude-conversation-extractor/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/ko/claude-conversation-extractor/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/he/claude-conversation-extractor/" hreflang="he" lang="he">עברית</a></li><li><a href="/ar/claude-conversation-extractor/" hreflang="ar" lang="ar">العربية</a></li></ul></details><!-- /i18n:switch -->
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+<nav class="crumbs" aria-label="Kruimelpad"><a href="/nl/">Home</a> / Claude-gesprek extractor</nav>
+<main id="main">
+<article class="band prose">
+<p class="article-meta">Bijgewerkt <time datetime="2026-09">september 2026</time> · Extensie 1.16.2</p>
+<h1 class="page-h1">Claude-gesprek extractor voor nette bestanden</h1>
+<p class="lead">Een Claude-gesprek extractor leest de chat die open staat op claude.ai en schrijft PDF, Markdown, JSON, tekst, XML, CSV of PNG, in plaats van een gekopieerde lap tekst. Download Claude conversations is die extractor voor Chrome – in het Engels vaak gezocht als “Claude conversation extractor” of “claude exporter”: oranje knop, daarna “Export” (exporteren). Hij werkt niet in Claude Desktop of in de terminal van Claude Code. Extracties naar Markdown, tekst, JSON, XML, CSV en PNG zijn gratis en onbeperkt, zonder account. PDF en bulk-ZIP zijn gratis tot 3 per dag; Pro kost 3,99 $ per maand of 26,99 $ per jaar.</p>
+<aside class="trust-badge" aria-label="Over de extensie">
+  <span class="trophy" aria-hidden="true">🧩</span>
+  <div>
+    <strong>Download Claude conversations — gratis Chrome-extensie voor claude.ai</strong>
+    <span>Versie 1.16.2 (september 2026) — onbeperkt exporteren als Markdown, tekst, JSON, XML, CSV en PNG, zonder account; PDF en bulk-ZIP gratis tot 3 per dag</span>
+  </div>
+</aside>
+<nav class="toc" aria-label="Op deze pagina">
+  <p>Op deze pagina</p>
+  <ol>
+    <li><a href="#what-extractor">Wat is een Claude-gesprek extractor?</a></li>
+    <li><a href="#extract-one">Hoe extraheer ik een Claude-chat op claude.ai?</a></li>
+    <li><a href="#what-it-pulls">Wat haalt een Claude-gesprek extractor eruit?</a></li>
+    <li><a href="#extract-formats">Welke formaten kan een Claude-chat extractor schrijven?</a></li>
+    <li><a href="#extract-bulk">Kan ik Claude-gesprekken in bulk extraheren?</a></li>
+    <li><a href="#vs-copy">Claude-gesprek extractor of kopiëren en plakken?</a></li>
+    <li><a href="#extractor-safe">Is een Claude-gesprek extractor veilig?</a></li>
+    <li><a href="#faq">FAQ: Claude-gesprek extractor</a></li>
+  </ol>
+</nav>
+
+<h2 id="what-extractor">Wat is een Claude-gesprek extractor?</h2>
+<p>Een Claude-gesprek extractor leest het weergegeven claude.ai-gesprek uit en schrijft een echt bestand. Download Claude conversations is die tool voor Chrome: geen screenshotprogramma en niet de account-ZIP van Anthropic. Mensen typen extraheren, exporteren of downloaden, en bedoelen allemaal dezelfde oranje knop op claude.ai.</p>
+<p>Developers en onderzoekers zoeken vaak op een Claude-gesprek extractor, omdat extraheren structuur suggereert: afzender, inhoudsblokken, codeblokken, tabellen, artifacts. Download Claude conversations doet dat uitlezen in het tabblad dat je al geopend hebt. Reviewers zeggen soms Claude Conversation Downloader of Claude Exporter; die namen verwijzen nog steeds naar deze Chrome-vermelding, Download Claude conversations 1.16.2 in de Chrome Web Store.</p>
+<p>De extractor is geen plug-in voor Claude Desktop en geen CLI voor Claude Code. Ging je zoekopdracht over je terminalgeschiedenis, gebruik dan <code>/export</code> – handleiding: <a href="/nl/claude-code-gesprek-exporteren/">Claude Code-export</a>. Ging het over de app voor Mac/Windows, zie dan <a href="/nl/claude-desktop-chat-exporteren/">Claude Desktop-chat exporteren</a>. Claude Code op het web (claude.ai/code) en Cowork-sessies kun je wel extraheren, omdat ze op claude.ai openen. Deze pagina gaat alleen over claude.ai in Chrome.</p>
+<div class="callout callout-info">
+  <p><strong>Dezelfde knop, andere werkwoorden.</strong> Een Claude-chat extraheren, een Claude-chat exporteren en een Claude-chat downloaden komen allemaal uit bij Download Claude conversations. De productgerichte uitleg over exporteren staat bij <a href="/nl/claude-chat-exporteren/">Claude-chat exporteren</a>. Deze handleiding blijft bij wat de extractor leest en wat hij weglaat.</p>
+</div>
+
+<h2 id="extract-one">Hoe extraheer ik een Claude-chat op claude.ai?</h2>
+<p>Installeer Download Claude conversations, open de URL van het gesprek op claude.ai, klik op de oranje knop naast het berichtvenster, kies een formaat en klik op “Export”. De Claude-gesprek extractor schrijft het bestand lokaal via de download-API van Chrome. Voor Markdown, tekst, JSON, XML, CSV of PNG heb je geen account nodig; inloggen met Google verschijnt alleen bij PDF en bulk.</p>
+<ol>
+<li>Voeg de Chrome-vermelding toe (Download Claude conversations, versie 1.16.2 in september 2026).</li>
+<li>Laad claude.ai opnieuw en open het gesprek – de extractor heeft de URL van een gesprek nodig, niet de lege startpagina met het invoerveld.</li>
+<li>Klik op de ronde oranje knop rechts van het berichtvenster.</li>
+<li>Zet “Messages” (berichten) op “All”, “Human” of “Assistant” (alles, mens of assistent), vink “Thinking” (denkstappen) aan als je dat wilt, of gebruik “Select” (selecteren) om losse berichten aan te vinken. Kies PDF, Markdown, JSON, platte tekst, XML, CSV of PNG.</li>
+<li>Klik op “Export”, of op “Copy” (kopiëren) om Markdown, tekst, JSON, XML of CSV op het klembord te zetten. De Claude-gesprek extractor stuurt de inhoud van de chat niet naar onze servers.</li>
+</ol>
+<p>Ontbreekt de oranje knop, zet de extensie dan vast, vernieuw het tabblad en controleer of de URL van een echte chat is. De Claude-gesprek extractor wordt alleen op claude.ai geladen. Hij verschijnt niet in Claude Desktop, in de terminal van Claude Code of op andere websites. Onvolledige bestanden betekenen meestal dat het lange gesprek nog niet volledig was weergegeven; scroll of wacht en extraheer opnieuw.</p>
+<p>De extractor onthoudt het laatst gebruikte formaat. Wilde je Markdown en kreeg je JSON, open dan het keuzemenu voordat je op “Export” klikt. Kies je PDF, dan wordt gevraagd om in te loggen met Google. Na 3 PDF- of bulkexports op een dag toont de gratis versie een melding voor Pro à 3,99 $ per maand of 26,99 $ per jaar – dat is de bedoeling, geen mislukte extractie. De telling begint om middernacht UTC opnieuw.</p>
+<p>Wil je de stappen met afdrukken en de ZIP als alternatieven? Gebruik <a href="/nl/claude-chat-downloaden/">Claude-chat downloaden</a>. Wil je een vergelijking van methoden, inclusief Afdrukken → Opslaan als PDF? Gebruik <a href="/nl/hoe-claude-chat-exporteren/">hoe je een Claude-chat exporteert</a>. Deze pagina over de extractor gaat ervan uit dat je een gestructureerd bestand van het open gesprek wilt.</p>
+
+<h2 id="what-it-pulls">Wat haalt een Claude-gesprek extractor eruit?</h2>
+<p>De Claude-gesprek extractor leest de berichtenboom die claude.ai al heeft weergegeven: beurten van mens en assistent, codeblokken met taallabels, tabellen, links en optioneel de denkstappen. De layout voor artifacts is “Original”, “Inline”, “Nested” of “Flat” (origineel, inline, genest of plat). Kopiëren en plakken vanaf dezelfde pagina verliest die structuur; de extractor behoudt haar in Markdown, JSON en XML.</p>
+<p>“Thinking” (denkstappen) is een vinkje. Zet het aan als je de zichtbare redenering van Claude in het bestand wilt; laat het uit als je alleen het eindantwoord wilt. Metadata kan titels, tijdstempels en model bevatten. Het filter “Messages” (All, Human, Assistant), “Thinking” en “Select” staan in het exportpaneel naast “Format” (formaat); tool-/MCP-stappen en bronnen van webzoekopdrachten zet je naar keuze aan in de instellingen. Lijst met functies: <a href="/nl/functies/">functies</a>.</p>
+<div class="expert-quote">
+  <p>De extractor leest het gesprek dat de pagina al in je claude.ai-tabblad heeft weergegeven. Codeblokken, tabellen en layouts voor artifacts (Original, Inline, Nested, Flat) worden daar uitgelezen, en daarna wordt het bestand lokaal gemaakt – PDF inbegrepen.</p>
+  <footer>Het team achter Download Claude conversations</footer>
+</div>
+<p>PNG is de uitzondering: dat is een afbeelding van het gesprek, geen uitgelezen tekst waarin je kunt zoeken. Gebruik PNG als je voor een ticket of een dia een visueel resultaat uit de Claude-gesprek extractor nodig hebt. Gebruik Markdown of JSON als je doorzoekbare tekst nodig hebt. PNG noch Markdown is een PDF; heb je pagina’s nodig, kies dan PDF – zie <a href="/nl/claude-chat-als-pdf/">Claude-chat als PDF</a>.</p>
+<p>De extractor kan geen chat uitlezen die Chrome nooit heeft geladen. Privémodus, een uitgelogd tabblad of een gesprek dat alleen in Claude Desktop bestaat, levert geen bestand op. Open het gesprek op claude.ai terwijl je bent ingelogd en start dan de Claude-gesprek extractor. Offline exporteren werkt alleen nadat die pagina geladen is; er is nog steeds geen serververzoek nodig om het bestand te maken.</p>
+
+<h2 id="extract-formats">Welke formaten kan een Claude-chat extractor schrijven?</h2>
+<p>Zeven: PDF, Markdown, JSON, platte tekst, XML, CSV en PNG – dezelfde zeven, of je nu één Claude-chat extraheert of “Export All” (alles exporteren) gebruikt. Download Claude conversations voegt in 1.16.2 geen Word, Notion of Google Docs toe. Het formaat bepaalt de limiet: zes formaten zijn onbeperkt, zonder account, terwijl elke PDF in de gratis versie een van de 3 per dag gebruikt.</p>
+<table>
+  <caption>Resultaat van de Claude-gesprek extractor en typisch gebruik</caption>
+  <thead>
+    <tr>
+      <th scope="col">Formaat</th>
+      <th scope="col">Resultaat van de extractor</th>
+      <th scope="col">Typische volgende stap</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PDF</td>
+      <td>Document met pagina’s, optioneel met inhoudsopgave</td>
+      <td>Delen of afdrukken – <a href="/nl/claude-chat-als-pdf/">PDF</a></td>
+    </tr>
+    <tr>
+      <td>Markdown</td>
+      <td>Leesbare .md met codeblokken en tabellen</td>
+      <td>Notitiekluis – <a href="/nl/formaten/markdown/">Markdown</a></td>
+    </tr>
+    <tr>
+      <td>JSON</td>
+      <td>Berichtenboom voor scripts</td>
+      <td>Parsen of vergelijken – <a href="/nl/formaten/json/">JSON</a></td>
+    </tr>
+    <tr>
+      <td>Platte tekst</td>
+      <td>Lineaire chat, geen opmaak</td>
+      <td>Overal plakken – <a href="/nl/formaten/">formaten</a></td>
+    </tr>
+    <tr>
+      <td>XML</td>
+      <td>Gestructureerde opmaak</td>
+      <td>Uitwisseling – <a href="/nl/formaten/xml/">XML</a></td>
+    </tr>
+    <tr>
+      <td>CSV</td>
+      <td>Eén rij per bericht</td>
+      <td>Spreadsheet – <a href="/nl/formaten/">formaten</a></td>
+    </tr>
+    <tr>
+      <td>PNG</td>
+      <td>Afbeelding van het gesprek</td>
+      <td>Visuele kopie – <a href="/nl/formaten/png/">PNG</a></td>
+    </tr>
+  </tbody>
+</table>
+<p>JSON uit de Claude-gesprek extractor heeft niet dezelfde structuur als de Export data-ZIP van Anthropic op accountniveau. Het bestand van de extractor is per chat (of per selectie in bulk) en komt van de pagina. De ZIP is een vertraagd archief van het account. Stop het ene niet in een script dat het andere verwacht. Overzicht: <a href="/nl/formaten/">alle formaten</a>.</p>
+
+<h2 id="extract-bulk">Kan ik Claude-gesprekken in bulk extraheren?</h2>
+<p>Ja. Open in de pop-up van de extensie “View and Download All Conversations” (alle gesprekken bekijken en downloaden), filter en klik op “Export All”. De Claude-gesprek extractor schrijft één ZIP met één bestand per geselecteerde chat, in het gekozen formaat. Voor bulk moet je inloggen met Google. In de gratis versie gebruikt elke chat in de ZIP een van de 3 per dag, die je deelt met PDF, tenzij het account Pro heeft à 3,99 $ per maand of 26,99 $ per jaar.</p>
+<p>Filters op het Dashboard: “All conversations”, “New”, “Updated” en “Previously exported” (alle gesprekken, nieuw, bijgewerkt, eerder geëxporteerd), plus de tabbladen Chat en Cowork en zoeken op project. New betekent dat de Claude-gesprek extractor die chat nog niet heeft opgeslagen. Previously exported markeert geschiedenis die je al hebt geëxtraheerd, zodat een latere bulkronde die kan overslaan. Zoeken op project volgt de projectindeling van claude.ai. Met zoeken vind je gesprekken op naam voordat je “Export All” start.</p>
+<p>Bulk is geen mindere extractie. De vakjes op het Dashboard – “Chats”, “Thinking”, “Metadata”, “Tools”, “Sources” (chats, denkstappen, metadata, tools, bronnen) – plus de layout voor artifacts bepalen wat er in elk bestand komt, en de keuzelijst “Chat format” (chatformaat) biedt alle zeven formaten, PDF inbegrepen. Uitleg met waarschuwingen over de limiet: <a href="/nl/alle-claude-chats-exporteren/">bulkexport met Export All</a>. Wilde je één gemailde ZIP van het hele account, dan is dat Settings → Privacy → Export data (de labels kunnen vertaald zijn als claude.ai in het Nederlands staat), niet deze extractor.</p>
+<div class="callout callout-warn">
+  <p><strong>Bulk telt per chat.</strong> In de gratis versie deelt “Export All” 3 per dag met PDF, en elke chat in de ZIP telt als één. Selecteer je 25 chats terwijl je er nog 3 over hebt, dan wordt de hele reeks geblokkeerd, niet ingekort. Gebruik het filter New om er minder te kiezen, wacht op de reset om middernacht UTC, of stap over op Pro (3,99 $ per maand of 26,99 $ per jaar) voordat je de Claude-gesprek extractor op grote schaal gebruikt.</p>
+</div>
+
+<h2 id="vs-copy">Claude-gesprek extractor of kopiëren en plakken?</h2>
+<p>Kopiëren en plakken is prima voor één kort antwoord van Claude en gaat mis bij code en tabellen. Export data van Anthropic is de ZIP met een back-up van je account. De Claude-gesprek extractor zit daartussen: dit gesprek of een selectie in bulk, gestructureerd bestand, meteen, op claude.ai in Chrome.</p>
+<table>
+  <caption>Hoe een Claude-gesprek extractor zich verhoudt tot andere methoden</caption>
+  <thead>
+    <tr>
+      <th scope="col">Methode</th>
+      <th scope="col">Het beste voor</th>
+      <th scope="col">Resultaat</th>
+      <th scope="col">Beperking</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Claude-gesprek extractor</td>
+      <td>Deze chat of bulk, nu</td>
+      <td>PDF / MD / JSON / TXT / XML / CSV / PNG</td>
+      <td>Zes formaten onbeperkt, zonder account; PDF en bulk gratis 3 per dag; Chrome op claude.ai</td>
+    </tr>
+    <tr>
+      <td>Export data van Anthropic</td>
+      <td>Back-up van het hele account</td>
+      <td>JSON-ZIP per e-mail</td>
+      <td>Traag, geen Markdown per chat</td>
+    </tr>
+    <tr>
+      <td>Kopiëren en plakken</td>
+      <td>Eén kort antwoord</td>
+      <td>Geselecteerde tekst</td>
+      <td>Code en tabellen gaan kapot</td>
+    </tr>
+    <tr>
+      <td>Afdrukken als PDF</td>
+      <td>Visuele kopie van de pagina</td>
+      <td>PDF van de webpagina</td>
+      <td>Zijbalk; codeblokken vaak gesplitst</td>
+    </tr>
+  </tbody>
+</table>
+<p>Afdrukken is geen extractor. Het legt de webpagina vast, inclusief interface-elementen die je niet in een notitiebestand wilt. De Claude-gesprek extractor laat die elementen weg en behoudt de structuur van de berichten. Heb je een PDF nodig, kies dan PDF in hetzelfde paneel; de extensie maakt die in de browser, zonder afdrukvenster. Wil je tekst op het klembord, dan kopieert de knop “Copy” in het paneel Markdown, tekst, JSON, XML of CSV in plaats van ruwe paginatekst.</p>
+
+<h2 id="extractor-safe">Is een Claude-gesprek extractor veilig?</h2>
+<p>Deze Claude-gesprek extractor gebruikt je bestaande claude.ai-sessie zoals de site dat zelf doet. Hij automatiseert niets in je account en stuurt de inhoud van chats niet naar onze API. Inloggen met Google wordt alleen gevraagd voor PDF, bulk en Pro, om het dagtegoed te tellen en Pro te herstellen. Paddle regelt de betaling. Wij zijn niet Anthropic; hun voorwaarden blijven gelden.</p>
+<p>Nadat je inlogt voor PDF, bulk of Pro, ziet een Cloudflare Worker je Google-e-mailadres, het aantal PDF- en bulkexports van vandaag en of je Pro hebt. Exports van één chat naar Markdown, JSON, tekst, XML, CSV en PNG sturen hem niets, en hij ontvangt nooit een geëxtraheerd bestand, ook geen PDF. Bestanden verlaten de browser alleen richting de downloadmap van Chrome. De volledige grens: <a href="/nl/hoe-het-werkt/">hoe het werkt</a>. Wie zich afvraagt of een Claude-chat extractor veilig is, moet naar die scheiding kijken – facturering in de worker, chat in het tabblad.</p>
+<p>We kunnen geen “nul netwerkverkeer” beloven. claude.ai, Google en de worker bestaan allemaal. We kunnen wel zeggen dat de inhoud van chats niet naar ons wordt geüpload. Volg de gebruiksvoorwaarden van Anthropic. Download Claude conversations is een onafhankelijke Chrome-extensie, geen officieel product van Anthropic. Het e-mailadres voor support staat onderaan de site.</p>
+<p>Mobiele browsers en Claude Desktop worden niet ondersteund. Een Claude-gesprek extractor die een Chrome-contentscript is, kan daar niet draaien. Verwacht in september 2026 geen vermelding voor Safari of Firefox. Gebruik Chrome op de desktop op claude.ai. Bedrijfsbeleid dat extensies blokkeert, blokkeert ook deze extractor.</p>
+
+<h2 id="faq">FAQ: Claude-gesprek extractor</h2>
+<p>Deze vragen gaan over de Claude-gesprek extractor en het extraheren van Claude-chats: bulk met “Export All”, Desktop, Claude Code, PDF, inloggen met Google en de daglimiet voor PDF en bulk. De antwoorden gelden voor extensie 1.16.2 op claude.ai. Het FAQPage-schema in de head van het document komt overeen met deze lijst.</p>
+
+<h3>Wat is een Claude-gesprek extractor?</h3>
+<p>Een tool die een claude.ai-gesprek dat je open hebt uitleest en PDF, Markdown, JSON, platte tekst, XML, CSV of PNG schrijft. Download Claude conversations voegt de oranje knop toe die dat uitlezen lokaal in Chrome doet.</p>
+
+<h3>Is een Claude-chat extraheren iets anders dan een Claude-chat exporteren?</h3>
+<p>Nee – dezelfde taak, een ander werkwoord. Extraheren, exporteren en downloaden gebruiken allemaal dezelfde oranje knop en dezelfde zeven formaten op claude.ai. Deze pagina legt de nadruk op wat de parser behoudt.</p>
+
+<h3>Kan ik een Claude-chat extraheren zonder iets te installeren?</h3>
+<p>Alleen met kopiëren en plakken, waarbij codeblokken en tabellen verloren gaan, of met Export data van Anthropic, wat een account-ZIP is. Een gestructureerde Claude-gesprek extractor moet de pagina kunnen lezen; dat doet de Chrome-extensie.</p>
+
+<h3>Ondersteunt de extractor het extraheren van gesprekken in bulk?</h3>
+<p>Ja. Open “View and Download All Conversations” vanuit de pop-up van de extensie, daarna “Export All” voor een ZIP. Voor bulk moet je inloggen met Google; in de gratis versie telt elke chat mee voor de 3 per dag, die je deelt met PDF. Pro à 3,99 $ per maand of 26,99 $ per jaar haalt de limiet weg. Filters: All conversations, New, Updated, Previously exported.</p>
+
+<h3>Is een Claude-chat extractor veilig om te gebruiken?</h3>
+<p>Deze leest de ingelogde claude.ai-sessie en maakt bestanden lokaal. De tekst van je gesprekken wordt niet naar onze servers gestuurd. Wij zijn niet Anthropic; hun gebruiksvoorwaarden blijven voor jou gelden.</p>
+
+<h3>Heb ik Claude Pro nodig om een chat te extraheren?</h3>
+<p>Nee. Elk claude.ai-abonnement waarmee je het gesprek in Chrome kunt openen werkt. Bij ons zijn extracties naar Markdown, tekst, JSON, XML, CSV en PNG gratis en onbeperkt, zonder account; PDF en bulk zijn gratis tot 3 per dag. Het betaalde abonnement van Anthropic staat los van onze limieten.</p>
+
+<h3>Werkt de Claude-gesprek extractor in Desktop?</h3>
+<p>Nee. Claude Desktop krijgt nooit de oranje knop. Open dezelfde chat op claude.ai als die synchroniseert, of kopieer en plak / gebruik de officiële ZIP. De extractor werkt alleen in Chrome, voor claude.ai.</p>
+
+<h3>Kan een Claude-gesprek extractor een PDF maken?</h3>
+<p>Ja. Kies PDF in het exportpaneel en klik op “Export”. De PDF wordt in de browser gemaakt, zonder afdrukvenster. Je moet ervoor inloggen met Google, en het is gratis tot 3 per dag; met Pro is het onbeperkt.</p>
+
+<h3>Werkt een Claude-chat extraheren in Claude Code?</h3>
+<p>Alleen op het web. Claude Code-sessies op claude.ai/code openen op claude.ai en extraheer je zoals elke chat. Claude Code in de terminal gebruikt <code>/export</code> of JSONL op de schijf; deze Claude-gesprek extractor is een Chrome-contentscript voor claude.ai, geen koppeling met de terminal.</p>
+
+<h3>Hoeveel gratis extracties staat de extractor toe?</h3>
+<p>Onbeperkt in Markdown, tekst, JSON, XML, CSV en PNG, zonder account. PDF en bulkexport met “Export All” delen in de gratis versie 3 per dag per account waarmee je bij Google bent ingelogd, opnieuw vanaf middernacht UTC. Pro haalt de limiet weg en wordt hersteld vanuit hetzelfde Google-account, met facturering via Paddle.</p>
+
+<h3>Wat slaat de Claude-gesprek extractor over?</h3>
+<p>De interface van de pagina, het invoerveld en alles wat niet in het gesprek is weergegeven. Hij slaat ook chats over die nooit in Chrome zijn geladen. Gesprekken die alleen in Claude Desktop staan en lokale JSONL uit Claude Code vallen erbuiten.</p>
+</article>
+</main>
+<section class="final-cta page-cta" aria-label="Installeren">
+  <div class="wrap">
+    <div class="final-cta-panel">
+      <p class="final-kicker">Download Claude conversations</p>
+      <h2>Installeer de extensie en extraheer je Claude-chat in een paar seconden</h2>
+      <p>Zet belangrijke Claude-gesprekken om in PDF, Markdown, JSON, tekst, XML, CSV of PNG – lokaal, vanuit Chrome.</p>
+      <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=nl-extractor" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Toevoegen aan Chrome</a>
+    </div>
+  </div>
+</section>
+
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="logo" href="/nl/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
+      <p class="legal-note">Chrome-extensie om Claude.ai-chats te downloaden als PDF, Markdown, JSON, platte tekst, CSV, XML of PNG.</p>
+    </div>
+    <div>
+      <h2>Installeren</h2>
+      <a class="install-link" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=nl-footer" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Chrome-extensie</a>
+    </div>
+    <div>
+      <h2>Product</h2>
+      <a href="/nl/functies/">Functies</a>
+      <a href="/nl/formaten/">Formaten</a>
+      <a href="/nl/alle-claude-chats-exporteren/">Alle chats exporteren</a>
+      <a href="/nl/hoe-het-werkt/">Hoe het werkt</a>
+    </div>
+    <div>
+      <h2>Handleidingen</h2>
+      <a href="/nl/claude-chat-downloaden/">Claude-chat downloaden</a>
+      <a href="/nl/hoe-claude-chat-exporteren/">Hoe exporteer je een Claude-chat</a>
+      <a href="/nl/claude-chat-exporteren/">Claude-chat exporteren</a>
+      <a href="/nl/claude-gesprek-extractor/">Claude-gesprek extractor</a>
+      <a href="/nl/claude-code-gesprek-exporteren/">Claude Code-gesprek exporteren</a>
+      <a href="/nl/claude-chat-als-pdf/">Claude-chat als PDF</a>
+      <a href="/nl/claude-desktop-chat-exporteren/">Claude Desktop-chat exporteren</a>
+      <a href="/nl/claude-gesprek-exporteren/">Claude-gesprek exporteren</a>
+      <a href="/nl/claude-gesprek-opslaan/">Claude-gesprek opslaan</a>
+      <a href="/nl/claude-gesprek-downloaden/">Claude-gesprek downloaden</a>
+    </div>
+    <div>
+      <h2>Juridisch</h2>
+      <a href="/nl/over-ons/">Over ons</a>
+      <a href="/nl/over-ons/#contact">Contact</a>
+      <a href="/privacy/" hreflang="en">Privacy (Engels)</a>
+      <a href="/terms/" hreflang="en">Voorwaarden (Engels)</a>
+      <a href="/refund/" hreflang="en">Terugbetalingen (Engels)</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Download Claude conversations. Alle rechten voorbehouden.</div>
+    <div>
+      <a href="/privacy/" hreflang="en">Privacybeleid (Engels)</a>
+      <a href="/terms/" hreflang="en">Gebruiksvoorwaarden (Engels)</a>
+      <a href="/refund/" hreflang="en">Terugbetalingen (Engels)</a>
+    </div>
+  </div>
+  <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/claude-conversation-extractor/" hreflang="en" lang="en">English</a> <a href="/de/claude-chat-extractor/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/extracteur-conversation-claude/" hreflang="fr" lang="fr">Français</a> <a href="/nl/claude-gesprek-extractor/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/claude-konversation-extractor/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/claude-samtale-extractor/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/claude-samtale-extractor/" hreflang="da" lang="da">Dansk</a> <a href="/fi/claude-keskustelu-extractor/" hreflang="fi" lang="fi">Suomi</a> <a href="/ja/claude-conversation-extractor/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/claude-conversation-extractor/" hreflang="ko" lang="ko">한국어</a> <a href="/he/claude-conversation-extractor/" hreflang="he" lang="he">עברית</a> <a href="/ar/claude-conversation-extractor/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
+  <p class="disclaimer">Chats worden in je browser verwerkt · Google-login alleen voor PDF, bulk en Pro · Niet verbonden aan Anthropic, PBC. Claude is een handelsmerk van Anthropic. Onafhankelijke Chrome-extensie – geen officieel product van Anthropic. Support: <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

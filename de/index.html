@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Claude Chat Downloader – Claude Chats exportieren</title>
+  <meta name="description" content="Claude.ai hat keinen Download-Button. Speichern Sie Chats als PDF, Markdown, JSON, Text, CSV, XML oder PNG. Gratis-Chrome-Erweiterung, meist ohne Konto.">
+  <link rel="canonical" href="https://chat-downloader.com/de/">
+  <!-- i18n:head -->
+  <link rel="alternate" hreflang="en" href="https://chat-downloader.com/">
+  <link rel="alternate" hreflang="de" href="https://chat-downloader.com/de/">
+  <link rel="alternate" hreflang="fr" href="https://chat-downloader.com/fr/">
+  <link rel="alternate" hreflang="nl" href="https://chat-downloader.com/nl/">
+  <link rel="alternate" hreflang="sv" href="https://chat-downloader.com/sv/">
+  <link rel="alternate" hreflang="nb" href="https://chat-downloader.com/nb/">
+  <link rel="alternate" hreflang="da" href="https://chat-downloader.com/da/">
+  <link rel="alternate" hreflang="fi" href="https://chat-downloader.com/fi/">
+  <link rel="alternate" hreflang="ja" href="https://chat-downloader.com/ja/">
+  <link rel="alternate" hreflang="ko" href="https://chat-downloader.com/ko/">
+  <link rel="alternate" hreflang="he" href="https://chat-downloader.com/he/">
+  <link rel="alternate" hreflang="ar" href="https://chat-downloader.com/ar/">
+  <link rel="alternate" hreflang="x-default" href="https://chat-downloader.com/">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="sv_SE">
+  <meta property="og:locale:alternate" content="nb_NO">
+  <meta property="og:locale:alternate" content="da_DK">
+  <meta property="og:locale:alternate" content="fi_FI">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <meta property="og:locale:alternate" content="he_IL">
+  <meta property="og:locale:alternate" content="ar_AE">
+  <!-- /i18n:head -->
+  <meta property="og:title" content="Claude Chat Downloader – Claude Chats exportieren">
+  <meta property="og:description" content="Claude.ai hat keinen Download-Button. Speichern Sie Chats als PDF, Markdown, JSON, Text, CSV, XML oder PNG. Gratis-Chrome-Erweiterung, meist ohne Konto.">
+  <meta property="og:url" content="https://chat-downloader.com/de/">
+  <meta property="og:image" content="https://chat-downloader.com/assets/widget-guide.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chat Downloader">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Claude Chat Downloader – Claude Chats exportieren">
+  <meta name="twitter:description" content="Claude.ai hat keinen Download-Button. Speichern Sie Chats als PDF, Markdown, JSON, Text, CSV, XML oder PNG. Gratis-Chrome-Erweiterung, meist ohne Konto.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME1YXGZKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GME1YXGZKR');
+  </script>
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Kann ich eine Claude-Unterhaltung von claude.ai herunterladen?","acceptedAnswer":{"@type":"Answer","text":"Nicht mit einem eingebauten Button. Installieren Sie Download Claude conversations aus dem Chrome Web Store, öffnen Sie den Chat und exportieren Sie eine Datei."}},{"@type":"Question","name":"Ist es kostenlos, Claude Chats herunterzuladen?","acceptedAnswer":{"@type":"Answer","text":"Ja. Exporte als Markdown, Nur-Text, JSON, XML, CSV und PNG sind unbegrenzt und brauchen kein Konto. PDF- und ZIP-Massenexporte erfordern eine Google-Anmeldung und sind bis zu 3-mal pro Tag kostenlos. Pro für 3,99 $ im Monat oder 26,99 $ im Jahr hebt diese Grenze auf."}},{"@type":"Question","name":"In welchen Browsern funktioniert es?","acceptedAnswer":{"@type":"Answer","text":"In Chrome am Desktop und in Chromium-basierten Browsern, die Erweiterungen aus dem Chrome Web Store installieren. Es gibt keine mobile App, und die Erweiterung läuft nicht in Claude Desktop."}},{"@type":"Question","name":"Wie kündige ich Pro, und bekomme ich mein Geld zurück?","acceptedAnswer":{"@type":"Answer","text":"Sie können jederzeit kündigen – auf der Optionsseite der Erweiterung („Cancel subscription“, Abo kündigen) oder über Paddle. Für Ihre erste Zahlung gilt eine 14-tägige Geld-zurück-Garantie, ohne Rückfragen."}},{"@type":"Question","name":"Ist das dasselbe wie „Export data“ von Claude?","acceptedAnswer":{"@type":"Answer","text":"Nein. Anthropics Settings → Privacy → Export data (die Bezeichnungen können übersetzt sein, wenn claude.ai auf Deutsch eingestellt ist) schickt Ihnen per E-Mail ein ZIP Ihres Kontos (JSON). Diese Erweiterung lädt den aktuellen Chat – oder eine Auswahl vieler Chats – sofort als lesbare Dateien herunter."}},{"@type":"Question","name":"Speichern Sie meine Claude-Chats?","acceptedAnswer":{"@type":"Answer","text":"Nein. Jedes Format, auch PDF, wird in Ihrem Browser erstellt, und der Gesprächstext erreicht nie unsere Server. Wenn Sie sich für PDF, Massenexport oder Pro mit Google anmelden, speichern wir diese E-Mail-Adresse nur, um das Tageskontingent zu zählen und Ihr Abo zuzuordnen."}},{"@type":"Question","name":"Was ist der Unterschied zwischen „Claude Chat exportieren“ und „Claude Chat herunterladen“?","acceptedAnswer":{"@type":"Answer","text":"Dieselbe Aufgabe, zwei Arten, sie zu suchen – manche tippen auch einfach „claude export chat“. In jedem Fall nutzen Sie den orangefarbenen Button auf claude.ai."}},{"@type":"Question","name":"Exportiert die Erweiterung PDF?","acceptedAnswer":{"@type":"Answer","text":"Ja. Wählen Sie im Export-Panel PDF und legen Sie Seitenformat, Ränder, hellen oder dunklen Modus, Schriftart, Seitenzahlen und ein Inhaltsverzeichnis fest. PDF erfordert eine Google-Anmeldung; der kostenlose Tarif umfasst 3 PDF- oder Massenexporte pro Tag, mit Pro ist es unbegrenzt. Vollständige Anleitung: Claude Chat als PDF speichern."}},{"@type":"Question","name":"Funktioniert es mit Claude Pro / Team?","acceptedAnswer":{"@type":"Answer","text":"Ja, sofern Sie die Unterhaltung im Browser auf claude.ai öffnen können. Wir sind nicht Anthropic."}},{"@type":"Question","name":"Wie speichere ich eine Claude-Unterhaltung?","acceptedAnswer":{"@type":"Answer","text":"Installieren Sie die kostenlose Chrome-Erweiterung, öffnen Sie den Chat auf claude.ai, klicken Sie auf den orangefarbenen Button, wählen Sie ein Format und klicken Sie auf Export. Für Markdown, Text, JSON, XML, CSV oder PNG brauchen Sie kein Konto. So speichern Sie eine Claude-Unterhaltung als echte Datei. Die Seite drucken und das Konto-ZIP von Anthropic sind die beiden anderen Wege – den Vergleich finden Sie unter Claude Chat herunterladen."}},{"@type":"Question","name":"Lädt die Erweiterung Claude-Code-Unterhaltungen herunter?","acceptedAnswer":{"@type":"Answer","text":"Nur die auf claude.ai. Sitzungen aus Claude Code im Web (claude.ai/code) und Cowork-Sitzungen exportieren Sie wie jeden anderen Chat. Lokale Terminal-Sitzungen liest die Erweiterung nicht; dafür gibt es /export oder JSONL-Dateien auf der Festplatte – siehe Claude Code Chat exportieren."}},{"@type":"Question","name":"Ist Download Claude conversations mit Anthropic verbunden?","acceptedAnswer":{"@type":"Answer","text":"Nein. Claude ist eine Marke von Anthropic, PBC. Dies ist eine unabhängige Chrome-Erweiterung, kein offizielles Anthropic-Produkt."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Chat Downloader","alternateName":["Claude Chat Downloader","Claude Conversation Downloader","chatdownloader"],"url":"https://chat-downloader.com/de/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Chat Downloader","url":"https://chat-downloader.com","logo":"https://chat-downloader.com/assets/apple-touch-icon.png","sameAs":["https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Claude Chat Downloader","alternateName":["Download Claude conversations","Claude Conversation Downloader"],"applicationCategory":"BrowserApplication","operatingSystem":"Chrome","softwareVersion":"1.16.2","url":"https://chat-downloader.com","downloadUrl":"https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak","offers":[{"@type":"Offer","name":"Kostenlos","price":"0","priceCurrency":"USD","description":"Unbegrenzte Exporte als Markdown, Text, JSON, XML, CSV und PNG; 3 PDF- oder Massenexporte pro Tag"},{"@type":"Offer","name":"Pro monatlich","price":"3.99","priceCurrency":"USD"},{"@type":"Offer","name":"Pro jährlich","price":"26.99","priceCurrency":"USD"}],"description":"Claude.ai hat keinen Download-Button. Speichern Sie Chats als PDF, Markdown, JSON, Text, CSV, XML oder PNG. Gratis-Chrome-Erweiterung, meist ohne Konto."}</script>
+</head>
+<body class="home">
+<a class="skip" href="#main">Zum Inhalt springen</a>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a class="logo" href="/de/">
+        <img src="/assets/icon.svg" alt="">
+        <span>Download Claude conversations</span>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="/de/claude-chat-herunterladen/">Herunterladen</a><a href="/de/anleitung-claude-chat-exportieren/">Exportieren</a><a href="/de/alle-claude-chats-exportieren/">Alle Chats</a><a href="/de/formate/">Formate</a><a href="/de/#faq">FAQ</a>
+        <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=de-home" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Zu Chrome hinzufügen</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=de-home" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Zu Chrome hinzufügen</a>
+      <!-- i18n:switch --><details class="lang-switch"><summary aria-label="Sprache: Deutsch"><svg class="lang-globe" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span class="lang-name">Deutsch</span><span class="lang-code" aria-hidden="true">de</span></summary><ul><li><a href="/" hreflang="en" lang="en">English</a></li><li><a href="/de/" hreflang="de" lang="de" aria-current="true">Deutsch</a></li><li><a href="/fr/" hreflang="fr" lang="fr">Français</a></li><li><a href="/nl/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/sv/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="/nb/" hreflang="nb" lang="nb">Norsk</a></li><li><a href="/da/" hreflang="da" lang="da">Dansk</a></li><li><a href="/fi/" hreflang="fi" lang="fi">Suomi</a></li><li><a href="/ja/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/ko/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/he/" hreflang="he" lang="he">עברית</a></li><li><a href="/ar/" hreflang="ar" lang="ar">العربية</a></li></ul></details><!-- /i18n:switch -->
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menü">☰</button>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="landing">
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <h1>Claude Chat Downloader: Claude Chats exportieren</h1>
+      <p class="hero-sub">Claude-Unterhaltungen als PDF, Markdown, JSON, Text, CSV, XML oder PNG speichern</p>
+      <p class="hero-desc">Claude Chats exportieren ist auf Claude.ai nicht vorgesehen: Es gibt keinen eingebauten Button, um einen einzelnen Chat herunterzuladen. <strong>Download Claude conversations</strong> – die kostenlose Chrome-Erweiterung, die auch <strong>Claude Chat Downloader</strong> oder <strong>Claude Conversation Downloader</strong> genannt wird – speichert den geöffneten Chat oder <a href="/de/alle-claude-chats-exportieren/">Ihren gesamten Verlauf</a> als PDF, Markdown, JSON, Nur-Text, CSV, XML oder PNG. Die Dateien entstehen in Ihrem Browser, und für die meisten Exporte brauchen Sie kein Konto. <a href="/de/claude-chat-herunterladen/">So laden Sie einen Claude Chat herunter</a>. Sie nutzen Claude Code im Terminal? Dann geht es um den <a href="/de/claude-code-chat-exportieren/">Export aus Claude Code</a>, nicht um diese Erweiterung.</p>
+      <div class="hero-actions">
+        <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=de-home_hero" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="22" height="22"> Zu Chrome hinzufügen – kostenlos</a>
+        <a class="hero-link" href="#how">So funktioniert es ↓</a>
+      </div>
+      <ul class="hero-trust">
+        <li>Unbegrenzte kostenlose Exporte in 6 Formaten</li>
+        <li>Kein Konto nötig</li>
+        <li>Chats bleiben in Ihrem Browser</li>
+        <li>14 Tage Rückerstattung bei Pro</li>
+      </ul>
+      <p class="platforms-kicker">Claude Chat speichern als</p>
+      <ul class="format-chips">
+        <li><a href="/de/claude-chat-als-pdf/">PDF</a></li>
+        <li><a href="/de/formate/markdown/">Markdown</a></li>
+        <li><a href="/de/formate/json/">JSON</a></li>
+        <li><a href="/de/formate/">Nur-Text</a></li>
+        <li><a href="/de/formate/">CSV</a></li>
+        <li><a href="/de/formate/xml/">XML</a></li>
+        <li><a href="/de/formate/png/">PNG</a></li>
+      </ul>
+      <p class="platforms-note"><img src="/assets/images/claude.svg" alt="" width="16" height="16"> Funktioniert auf claude.ai mit den Tarifen Free, Pro, Team und Enterprise – für Chats, Projekte und Cowork-Sitzungen, einen einzelnen Chat oder den ganzen Verlauf.</p>
+    </div>
+  </section>
+
+  <section class="steps-band" id="how">
+    <div class="wrap">
+      <h2 class="section-title">So laden Sie einen Claude Chat in 3 Schritten herunter</h2>
+      <ol class="steps">
+        <li>
+          <span class="step-num" aria-hidden="true">1</span>
+          <h3>Erweiterung hinzufügen</h3>
+          <p>Installieren Sie <strong>Download Claude conversations</strong> aus dem Chrome Web Store und heften Sie die Erweiterung an. Das dauert etwa zehn Sekunden.</p>
+        </li>
+        <li>
+          <span class="step-num" aria-hidden="true">2</span>
+          <h3>Chat auf claude.ai öffnen</h3>
+          <p>Rechts neben dem Nachrichtenfeld erscheint ein orangefarbener Download-Button. Für viele Chats öffnen Sie <strong>View and Download All Conversations</strong> (alle Unterhaltungen anzeigen und herunterladen).</p>
+        </li>
+        <li>
+          <span class="step-num" aria-hidden="true">3</span>
+          <h3>Format wählen und exportieren</h3>
+          <p>Wählen Sie PDF, Markdown, JSON, Text, CSV, XML oder PNG und klicken Sie auf <strong>Export</strong> (exportieren). Kein Konto nötig – die Google-Anmeldung wird nur für PDF- und Massenexporte abgefragt.</p>
+        </li>
+      </ol>
+      <p class="steps-more">Vollständige Anleitung mit Screenshots: <a href="/de/claude-chat-herunterladen/">Claude Chat herunterladen</a>.</p>
+    </div>
+  </section>
+
+  <section class="features-block" id="features">
+    <div class="wrap">
+      <h2 class="section-title">6 zentrale Funktionen, um Claude Chats zu exportieren</h2>
+      <article class="feature-row">
+        <div class="feature-copy">
+          <span class="num" aria-hidden="true">01</span>
+          <h3>Export als PDF, Markdown, JSON, CSV &amp; mehr</h3>
+          <p>Laden Sie einen Claude Chat als echte Datei herunter – nicht als Screenshot der Webseite. PDF zum Lesen und Weitergeben, Markdown für Notizen, JSON für Entwickler, CSV für Tabellenkalkulationen, Nur-Text für das einfachste Archiv, XML für den Datenaustausch, PNG für eine optische Momentaufnahme. Oder klicken Sie auf <strong>Copy</strong> (kopieren), um das Ergebnis in die Zwischenablage zu legen.</p>
+        </div>
+        <div class="feature-media">
+          <img src="/assets/widget-guide.png" alt="Orangefarbener Download-Button rechts neben dem Nachrichtenfeld von Claude.ai">
+        </div>
+      </article>
+      <article class="feature-row reverse">
+        <div class="feature-copy">
+          <span class="num" aria-hidden="true">02</span>
+          <h3>Alle Claude Chats auf einmal herunterladen</h3>
+          <p>Öffnen Sie <strong>View and Download All Conversations</strong>, um Ihren Verlauf aufzulisten, nach Namen zu suchen, nach Projekt oder Cowork zu filtern und auf <strong>Export All</strong> (alle exportieren) zu klicken. Ein ZIP statt Tab für Tab – 3 Chats pro Tag im kostenlosen Tarif, unbegrenzt mit Pro.</p>
+        </div>
+        <div class="feature-media">
+          <img src="/assets/browse-guide.jpg" alt="Übersichtsseite mit Claude-Unterhaltungen, Suche und Export All">
+        </div>
+      </article>
+      <article class="feature-row">
+        <div class="feature-copy">
+          <span class="num" aria-hidden="true">03</span>
+          <h3>Code, Tabellen und Artefakte bleiben erhalten</h3>
+          <p>Die Export-Engine liest den Nachrichtenbaum aus: Codeblöcke behalten ihre Einrückung, Tabellen bleiben Tabellen, und Artefakte lassen sich als „Original“, „Inline“, „Nested“ (verschachtelt) oder „Flat“ (flach) ausgeben.</p>
+        </div>
+        <div class="feature-media">
+          <img src="/assets/widget-guide.png" alt="Exporter direkt auf der Seite einer Claude-Unterhaltung">
+        </div>
+      </article>
+      <article class="feature-row reverse">
+        <div class="feature-copy">
+          <span class="num" aria-hidden="true">04</span>
+          <h3>Bestimmen Sie, was in die Datei kommt</h3>
+          <p>Exportieren Sie den ganzen Chat, nur Ihre Prompts, nur Claudes Antworten oder nur die Nachrichten, die Sie mit <strong>Select</strong> (auswählen) markieren. Nehmen Sie Claudes erweitertes Denken (Extended Thinking) auf, wenn Sie eine nachvollziehbare Dokumentation brauchen, oder lassen Sie es weg. Titel, Zeitstempel und Modell-Metadaten können in derselben Datei mitkommen.</p>
+        </div>
+        <div class="feature-media">
+          <img src="/assets/pin-guide.png" alt="Erweiterung anheften, damit der Download immer einen Klick entfernt ist">
+        </div>
+      </article>
+      <article class="feature-row">
+        <div class="feature-copy">
+          <span class="num" aria-hidden="true">05</span>
+          <h3>Vor dem Export suchen und filtern</h3>
+          <p>Grenzen Sie die Bibliothek auf neue Chats, bereits exportierte Chats oder ein Claude-Projekt ein und exportieren Sie nur, was Sie ausgewählt haben.</p>
+        </div>
+        <div class="feature-media">
+          <img src="/assets/browse-guide.jpg" alt="Liste der Unterhaltungen mit Suche und Filtern">
+        </div>
+      </article>
+      <article class="feature-row reverse">
+        <div class="feature-copy">
+          <span class="num" aria-hidden="true">06</span>
+          <h3>Lokal in Ihrem Browser erstellt</h3>
+          <p>Jede Datei, auch das PDF, wird auf Ihrem Gerät zusammengesetzt und auf die Festplatte heruntergeladen. Die meisten Exporte brauchen kein Konto. Die Google-Anmeldung zählt nur PDF- und Massenexporte und verknüpft ein Pro-Abo – Chattexte werden dabei nie auf unsere Server hochgeladen.</p>
+        </div>
+        <div class="feature-media">
+          <img src="/assets/widget-guide.png" alt="Export-Panel neben dem Eingabefeld von Claude">
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="value-band">
+    <div class="wrap">
+      <h2>Der Claude Chat Downloader, der die Formatierung erhält</h2>
+      <div class="value-grid">
+        <div class="value-media">
+          <img id="value-shot" src="/assets/widget-guide.png" alt="Download Claude conversations auf claude.ai">
+        </div>
+        <ul class="checks" id="value-checks">
+          <li class="is-active" data-shot="/assets/widget-guide.png" data-alt="Eine Erweiterung für claude.ai">
+            <span class="check-icon" aria-hidden="true">✓</span>
+            <span>
+              <strong>Eine Erweiterung für claude.ai</strong>
+              <span>Einmal installieren, dann den offenen Chat oder den ganzen Verlauf exportieren.</span>
+            </span>
+          </li>
+          <li data-shot="/assets/browse-guide.jpg" data-alt="Formattreue in exportierten Dateien">
+            <span class="check-icon" aria-hidden="true">✓</span>
+            <span>
+              <strong>Formattreue</strong>
+              <span>Code, Tabellen und Artefakte überstehen den Export.</span>
+            </span>
+          </li>
+          <li data-shot="/assets/pin-guide.png" data-alt="Chats bleiben auf Ihrem Gerät">
+            <span class="check-icon" aria-hidden="true">✓</span>
+            <span>
+              <strong>Kein Chat-Backup auf fremden Servern</strong>
+              <span>Die Dateien werden lokal in Chrome erzeugt.</span>
+            </span>
+          </li>
+          <li data-shot="/assets/widget-guide.png" data-alt="Sieben Exportformate">
+            <span class="check-icon" aria-hidden="true">✓</span>
+            <span>
+              <strong>Sieben Formate</strong>
+              <span>PDF, Markdown, JSON, Nur-Text, CSV, XML, PNG.</span>
+            </span>
+          </li>
+          <li data-shot="/assets/browse-guide.jpg" data-alt="Lange Claude-Chats">
+            <span class="check-icon" aria-hidden="true">✓</span>
+            <span>
+              <strong>Lange Chats</strong>
+              <span>Gemacht für komplette Unterhaltungen, nicht für eine einzelne kopierte Nachricht.</span>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="usecases-band" id="use-cases">
+    <div class="wrap">
+      <h2 class="section-title">In welchem Format sollten Sie einen Claude Chat herunterladen?</h2>
+      <div class="cards usecases">
+        <a class="card" href="/de/claude-chat-als-pdf/">
+          <span class="card-tag">PDF</span>
+          <h3>Lesen, drucken oder versenden</h3>
+          <p>Ein Dokument mit Seiten – in Ihrem Seitenformat, mit hellem oder dunklem Design, Schriftart und Inhaltsverzeichnis.</p>
+        </a>
+        <a class="card" href="/de/formate/markdown/">
+          <span class="card-tag">Markdown</span>
+          <h3>Notizen in Obsidian oder Notion</h3>
+          <p>Überschriften, Codeblöcke und Tabellen lassen sich sauber in eine Notizsammlung oder ein Doku-Repository einfügen.</p>
+        </a>
+        <a class="card" href="/de/formate/json/">
+          <span class="card-tag">JSON</span>
+          <h3>Skripte, Datensätze und RAG</h3>
+          <p>Strukturierte Nachrichten mit Rollen und Metadaten, bereit für die Verarbeitung per Code.</p>
+        </a>
+        <a class="card" href="/de/formate/">
+          <span class="card-tag">Nur-Text</span>
+          <h3>Ein einfaches Archiv</h3>
+          <p>Öffnet sich überall, lässt sich schnell durchsuchen und funktioniert auch dann noch, wenn sich Tools ändern.</p>
+        </a>
+        <a class="card" href="/de/formate/">
+          <span class="card-tag">CSV</span>
+          <h3>Tabellen und Auswertung</h3>
+          <p>Eine Zeile pro Nachricht für Excel, Google Sheets oder Numbers.</p>
+        </a>
+        <a class="card" href="/de/formate/xml/">
+          <span class="card-tag">XML</span>
+          <h3>Import in andere Systeme</h3>
+          <p>Strukturiert ausgezeichnete Nachrichten für Pipelines und Tools, die XML erwarten.</p>
+        </a>
+        <a class="card" href="/de/formate/png/">
+          <span class="card-tag">PNG</span>
+          <h3>Eine optische Momentaufnahme teilen</h3>
+          <p>Ein Bild der Unterhaltung für eine Folie, ein Ticket oder eine Nachricht.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="pricing-band" id="pricing">
+    <div class="wrap">
+      <h2 class="section-title">Kostenlos für alltägliche Exporte. Pro für unbegrenzte PDF- und Massenexporte.</h2>
+      <div class="plans">
+        <div class="plan">
+          <h3>Kostenlos</h3>
+          <p class="plan-price">0 $</p>
+          <ul>
+            <li>Unbegrenzt Markdown, Text, JSON, XML, CSV und PNG</li>
+            <li>Kein Konto, keine Registrierung</li>
+            <li>3 PDF- oder Massenexporte pro Tag (Google-Anmeldung)</li>
+            <li>Nachrichtenauswahl und Absenderfilter</li>
+          </ul>
+          <a class="btn btn-ghost" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=de-home_pricing_free" target="_blank" rel="noopener noreferrer">Zu Chrome hinzufügen</a>
+        </div>
+        <div class="plan plan-pro">
+          <h3>Pro</h3>
+          <p class="plan-price">3,99 $<span>/Monat</span></p>
+          <p class="plan-alt">oder 26,99 $/Jahr – etwa 2,25 $ pro Monat</p>
+          <ul>
+            <li>Unbegrenzte PDF-Exporte</li>
+            <li>Unbegrenzter Massenexport Ihres gesamten Verlaufs</li>
+            <li>Auf jedem Computer mit demselben Google-Konto wiederherstellbar</li>
+            <li>Jederzeit kündbar · <a href="/refund/">14 Tage Geld-zurück-Garantie</a></li>
+          </ul>
+          <a class="btn btn-primary" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=de-home_pricing_pro" target="_blank" rel="noopener noreferrer">Installieren und zuerst kostenlos testen</a>
+        </div>
+      </div>
+      <p class="plans-note">Die Zahlungen wickelt Paddle ab. Ihre Kartendaten sehen wir nie.</p>
+    </div>
+  </section>
+
+  <section class="faq-band" id="faq">
+    <div class="wrap narrow">
+      <h2 class="section-title">Häufig gestellte Fragen</h2>
+      <div class="faq-list">
+        <details open>
+          <summary>Kann ich eine Claude-Unterhaltung von claude.ai herunterladen?</summary>
+          <p>Nicht mit einem eingebauten Button. Installieren Sie <strong>Download Claude conversations</strong> aus dem <a href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=de-home" target="_blank" rel="noopener noreferrer">Chrome Web Store</a>, öffnen Sie den Chat und exportieren Sie eine Datei.</p>
+        </details>
+        <details>
+          <summary>Ist es kostenlos, Claude Chats herunterzuladen?</summary>
+          <p>Ja. Exporte als Markdown, Nur-Text, JSON, XML, CSV und PNG sind unbegrenzt und brauchen kein Konto. PDF- und ZIP-Massenexporte erfordern eine Google-Anmeldung und sind bis zu 3-mal pro Tag kostenlos. <a href="#pricing">Pro</a> für 3,99 $ im Monat oder 26,99 $ im Jahr hebt diese Grenze auf.</p>
+        </details>
+        <details>
+          <summary>In welchen Browsern funktioniert es?</summary>
+          <p>In Chrome am Desktop und in Chromium-basierten Browsern, die Erweiterungen aus dem Chrome Web Store installieren. Es gibt keine mobile App, und die Erweiterung läuft nicht in Claude Desktop.</p>
+        </details>
+        <details>
+          <summary>Wie kündige ich Pro, und bekomme ich mein Geld zurück?</summary>
+          <p>Sie können jederzeit kündigen – auf der Optionsseite der Erweiterung („Cancel subscription“, Abo kündigen) oder über Paddle. Für Ihre erste Zahlung gilt eine <a href="/refund/">14-tägige Geld-zurück-Garantie</a>, ohne Rückfragen.</p>
+        </details>
+        <details>
+          <summary>Ist das dasselbe wie „Export data“ von Claude?</summary>
+          <p>Nein. Anthropics Settings → Privacy → Export data (die Bezeichnungen können übersetzt sein, wenn claude.ai auf Deutsch eingestellt ist) schickt Ihnen per E-Mail ein ZIP Ihres Kontos (JSON). Diese Erweiterung lädt den aktuellen Chat – oder eine Auswahl vieler Chats – sofort als lesbare Dateien herunter.</p>
+        </details>
+        <details>
+          <summary>Speichern Sie meine Claude-Chats?</summary>
+          <p>Nein. Jedes Format, auch PDF, wird in Ihrem Browser erstellt, und der Gesprächstext erreicht nie unsere Server. Wenn Sie sich für PDF, Massenexport oder Pro mit Google anmelden, speichern wir diese E-Mail-Adresse nur, um das Tageskontingent zu zählen und Ihr Abo zuzuordnen.</p>
+        </details>
+        <details>
+          <summary>Was ist der Unterschied zwischen „Claude Chat exportieren“ und „Claude Chat herunterladen“?</summary>
+          <p>Dieselbe Aufgabe, zwei Arten, sie zu suchen – manche tippen auch einfach „claude export chat“. In jedem Fall nutzen Sie den orangefarbenen Button auf claude.ai.</p>
+        </details>
+        <details>
+          <summary>Exportiert die Erweiterung PDF?</summary>
+          <p>Ja. Wählen Sie im Export-Panel PDF und legen Sie Seitenformat, Ränder, hellen oder dunklen Modus, Schriftart, Seitenzahlen und ein Inhaltsverzeichnis fest. PDF erfordert eine Google-Anmeldung; der kostenlose Tarif umfasst 3 PDF- oder Massenexporte pro Tag, mit Pro ist es unbegrenzt. Vollständige Anleitung: <a href="/de/claude-chat-als-pdf/">Claude Chat als PDF speichern</a>.</p>
+        </details>
+        <details>
+          <summary>Funktioniert es mit Claude Pro / Team?</summary>
+          <p>Ja, sofern Sie die Unterhaltung im Browser auf claude.ai öffnen können. Wir sind nicht Anthropic.</p>
+        </details>
+        <details>
+          <summary>Wie speichere ich eine Claude-Unterhaltung?</summary>
+          <p>Installieren Sie die kostenlose Chrome-Erweiterung, öffnen Sie den Chat auf claude.ai, klicken Sie auf den orangefarbenen Button, wählen Sie ein Format und klicken Sie auf <strong>Export</strong>. Für Markdown, Text, JSON, XML, CSV oder PNG brauchen Sie kein Konto. So speichern Sie eine Claude-Unterhaltung als echte Datei. Die Seite drucken und das Konto-ZIP von Anthropic sind die beiden anderen Wege – den Vergleich finden Sie unter <a href="/de/claude-chat-herunterladen/">Claude Chat herunterladen</a>.</p>
+        </details>
+        <details>
+          <summary>Lädt die Erweiterung Claude-Code-Unterhaltungen herunter?</summary>
+          <p>Nur die auf claude.ai. Sitzungen aus Claude Code im Web (claude.ai/code) und Cowork-Sitzungen exportieren Sie wie jeden anderen Chat. Lokale Terminal-Sitzungen liest die Erweiterung nicht; dafür gibt es <code>/export</code> oder JSONL-Dateien auf der Festplatte – siehe <a href="/de/claude-code-chat-exportieren/">Claude Code Chat exportieren</a>.</p>
+        </details>
+        <details>
+          <summary>Ist Download Claude conversations mit Anthropic verbunden?</summary>
+          <p>Nein. Claude ist eine Marke von Anthropic, PBC. Dies ist eine unabhängige Chrome-Erweiterung, kein offizielles Anthropic-Produkt.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="final-cta">
+    <div class="wrap">
+      <div class="final-cta-panel">
+        <p class="final-kicker">Download Claude conversations</p>
+        <h2>Erweiterung installieren und Claude Chats in Sekunden herunterladen</h2>
+        <p>Machen Sie aus wichtigen Claude-Chats PDF, Markdown, JSON, Text, CSV, XML oder PNG – lokal, direkt aus Chrome.</p>
+        <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=de-home_final" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="22" height="22"> Zu Chrome hinzufügen – kostenlos</a>
+        <p class="final-note">Kein Konto nötig · Unbegrenzte kostenlose Exporte in 6 Formaten · 14 Tage Rückerstattung bei Pro</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="logo" href="/de/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
+      <p class="legal-note">Chrome-Erweiterung zum Herunterladen von Claude.ai-Chats als PDF, Markdown, JSON, Nur-Text, CSV, XML oder PNG.</p>
+    </div>
+    <div>
+      <h2>Installieren</h2>
+      <a class="install-link" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=de-footer" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Chrome-Erweiterung</a>
+    </div>
+    <div>
+      <h2>Produkt</h2>
+      <a href="/de/funktionen/">Funktionen</a>
+      <a href="/de/formate/">Formate</a>
+      <a href="/de/alle-claude-chats-exportieren/">Alle Chats exportieren</a>
+      <a href="/de/so-funktioniert-es/">So funktioniert es</a>
+    </div>
+    <div>
+      <h2>Anleitungen</h2>
+      <a href="/de/claude-chat-herunterladen/">Claude Chat herunterladen</a>
+      <a href="/de/anleitung-claude-chat-exportieren/">Anleitung: Claude Chat exportieren</a>
+      <a href="/de/claude-chat-exportieren/">Claude Chat exportieren</a>
+      <a href="/de/claude-chat-extractor/">Claude Chat Extractor</a>
+      <a href="/de/claude-code-chat-exportieren/">Claude Code Chat exportieren</a>
+      <a href="/de/claude-chat-als-pdf/">Claude Chat als PDF</a>
+      <a href="/de/claude-desktop-chat-exportieren/">Claude Desktop Chat exportieren</a>
+      <a href="/de/claude-unterhaltung-exportieren/">Claude Unterhaltung exportieren</a>
+      <a href="/de/claude-chat-speichern/">Claude Chat speichern</a>
+      <a href="/de/claude-unterhaltung-herunterladen/">Claude Unterhaltung herunterladen</a>
+    </div>
+    <div>
+      <h2>Rechtliches</h2>
+      <a href="/de/ueber-uns/">Über uns</a>
+      <a href="/de/ueber-uns/#contact">Kontakt</a>
+      <a href="/privacy/" hreflang="en">Datenschutz (Englisch)</a>
+      <a href="/terms/" hreflang="en">Nutzungsbedingungen (Englisch)</a>
+      <a href="/refund/" hreflang="en">Rückerstattung (Englisch)</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Download Claude conversations. Alle Rechte vorbehalten.</div>
+    <div>
+      <a href="/privacy/" hreflang="en">Datenschutzerklärung (Englisch)</a>
+      <a href="/terms/" hreflang="en">Nutzungsbedingungen (Englisch)</a>
+      <a href="/refund/" hreflang="en">Rückerstattung (Englisch)</a>
+    </div>
+  </div>
+  <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/" hreflang="en" lang="en">English</a> <a href="/de/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/" hreflang="fr" lang="fr">Français</a> <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/" hreflang="da" lang="da">Dansk</a> <a href="/fi/" hreflang="fi" lang="fi">Suomi</a> <a href="/ja/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/" hreflang="ko" lang="ko">한국어</a> <a href="/he/" hreflang="he" lang="he">עברית</a> <a href="/ar/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
+  <p class="disclaimer">Chats werden in Ihrem Browser verarbeitet · Google-Anmeldung nur für PDF, Massenexport und Pro · Nicht mit Anthropic, PBC verbunden. Claude ist eine Marke von Anthropic. Unabhängige Chrome-Erweiterung – kein offizielles Anthropic-Produkt. Support: <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

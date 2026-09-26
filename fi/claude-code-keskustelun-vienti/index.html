@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Claude Code -keskustelun vienti: /export vai claude.ai?</title>
+  <meta name="description" content="Claude Code -keskustelun vienti: terminaalissa /export tai JSONL (~/.claude/projects). claude.ai/code-istunnot viet ilmaisella Chrome-laajennuksella.">
+  <link rel="canonical" href="https://chat-downloader.com/fi/claude-code-keskustelun-vienti/">
+  <!-- i18n:head -->
+  <link rel="alternate" hreflang="en" href="https://chat-downloader.com/claude-code-export/">
+  <link rel="alternate" hreflang="de" href="https://chat-downloader.com/de/claude-code-chat-exportieren/">
+  <link rel="alternate" hreflang="fr" href="https://chat-downloader.com/fr/exporter-conversation-claude-code/">
+  <link rel="alternate" hreflang="nl" href="https://chat-downloader.com/nl/claude-code-gesprek-exporteren/">
+  <link rel="alternate" hreflang="sv" href="https://chat-downloader.com/sv/exportera-claude-code-konversation/">
+  <link rel="alternate" hreflang="nb" href="https://chat-downloader.com/nb/eksportere-claude-code-samtale/">
+  <link rel="alternate" hreflang="da" href="https://chat-downloader.com/da/eksporter-claude-code-samtale/">
+  <link rel="alternate" hreflang="fi" href="https://chat-downloader.com/fi/claude-code-keskustelun-vienti/">
+  <link rel="alternate" hreflang="ja" href="https://chat-downloader.com/ja/claude-code-export/">
+  <link rel="alternate" hreflang="ko" href="https://chat-downloader.com/ko/claude-code-export/">
+  <link rel="alternate" hreflang="he" href="https://chat-downloader.com/he/claude-code-export/">
+  <link rel="alternate" hreflang="ar" href="https://chat-downloader.com/ar/claude-code-export/">
+  <link rel="alternate" hreflang="x-default" href="https://chat-downloader.com/claude-code-export/">
+  <meta property="og:locale" content="fi_FI">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="sv_SE">
+  <meta property="og:locale:alternate" content="nb_NO">
+  <meta property="og:locale:alternate" content="da_DK">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <meta property="og:locale:alternate" content="he_IL">
+  <meta property="og:locale:alternate" content="ar_AE">
+  <!-- /i18n:head -->
+  <meta property="og:title" content="Claude Code -keskustelun vienti: /export vai claude.ai?">
+  <meta property="og:description" content="Claude Code -keskustelun vienti: terminaalissa /export tai JSONL (~/.claude/projects). claude.ai/code-istunnot viet ilmaisella Chrome-laajennuksella.">
+  <meta property="og:url" content="https://chat-downloader.com/fi/claude-code-keskustelun-vienti/">
+  <meta property="og:image" content="https://chat-downloader.com/assets/widget-guide.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chat Downloader">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Claude Code -keskustelun vienti: /export vai claude.ai?">
+  <meta name="twitter:description" content="Claude Code -keskustelun vienti: terminaalissa /export tai JSONL (~/.claude/projects). claude.ai/code-istunnot viet ilmaisella Chrome-laajennuksella.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME1YXGZKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GME1YXGZKR');
+  </script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Miten vien Claude Code -keskustelun?","acceptedAnswer":{"@type":"Answer","text":"Kirjoita Claude Code -terminaalissa /export (halutessasi tiedostonimen kanssa) tallentaaksesi luettavan transkriptin, tai kopioi JSONL-tiedosto kansiosta ~/.claude/projects macOS:ssä/Linuxissa tai %USERPROFILE%\\.claude\\projects Windowsissa. Anthropicin istuntodokumentaatio kuvaa nykyisen dialogin."}},{"@type":"Question","name":"Lataako tämä Chrome-laajennus Claude Code -chatteja?","acceptedAnswer":{"@type":"Answer","text":"Ei terminaalista. Download Claude conversations toimii vain claude.ai:ssa Chromessa. Se ei pysty lukemaan paikallisia terminaali-istuntoja, JSONL-transkriptejä eikä /export-komentoa. Claude Code on the web -istunnot osoitteessa claude.ai/code voi viedä kuten minkä tahansa chatin."}},{"@type":"Question","name":"Voiko Claude Code on the web -istunnon (claude.ai/code) viedä?","acceptedAnswer":{"@type":"Answer","text":"Kyllä. Avaa istunto osoitteessa claude.ai/code Chromessa ja käytä oranssia painiketta. PDF, Markdown, pelkkä teksti, JSON, XML, CSV ja PNG toimivat kaikki. Muut kuusi formaattia ovat rajattomia ilman tiliä; PDF vaatii Google-kirjautumisen ja lasketaan 3 ilmaiseen kertaan päivässä."}},{"@type":"Question","name":"Mihin Claude Code tallentaa keskusteluhistorian?","acceptedAnswer":{"@type":"Answer","text":"Istuntojen transkriptit ovat JSONL-tiedostoja polussa ~/.claude/projects/<encoded-working-directory>/, ja ne on nimetty istuntotunnisteen mukaan. Tarkka rakenne voi muuttua. Käytä /export-komentoa, kun haluat luettavan tiedoston JSONL:n jäsentämisen sijaan. CLAUDE_CONFIG_DIR voi siirtää koko puun."}},{"@type":"Question","name":"Miten Claude Code -keskustelun saa Markdownina?","acceptedAnswer":{"@type":"Answer","text":"Claude Coden /export tuottaa pelkän tekstin transkriptin, ei tämän laajennuksen Markdownia. Jos tarvitset nimenomaan Markdownia, vie claude.ai/code-istunto tai työn claude.ai-kopio Download Claude conversations -laajennuksella tai muunna /export-teksti itse. Emme muunna JSONL:ää Markdowniksi."}},{"@type":"Question","name":"Miten lataan sen sijaan claude.ai-keskustelun?","acceptedAnswer":{"@type":"Answer","text":"Asenna ilmainen Chrome-laajennus, avaa chat claude.ai:ssa ja käytä oranssia painiketta – tai historiaan ”Export All” -toimintoa. Katso näin lataat Claude-chatin. Markdown, teksti, JSON, XML, CSV ja PNG ovat rajattomia ilman tiliä; PDF ja joukkovienti ZIP-tiedostona ovat ilmaisia 3 kertaa päivässä Google-kirjautumisella; Pro maksaa 3,99 $/kk tai 26,99 $/vuosi."}},{"@type":"Question","name":"Onko /export sama kuin virallinen Export data?","acceptedAnswer":{"@type":"Answer","text":"Ei. /export koskee nykyistä Claude Code -istuntoa. Settings → Privacy → Export data lähettää sähköpostiin JSON-ZIPin koko Anthropic-tilistä. Eri tuotteet, eri tiedostot, eri odotusajat."}},{"@type":"Question","name":"Voiko Claude Coden JSONL:ää jäsentää jq:lla?","acceptedAnswer":{"@type":"Answer","text":"Voi, mutta Anthropicin varauksella: rivien skeema on sisäinen ja voi muuttua. Käytä mieluummin /export-komentoa tai claude -p --output-format json -komentoa, kun tarvitset vakaan sopimuksen. Jos jäsennät JSONL:ää silti, lukitse CLI:n versio."}},{"@type":"Question","name":"Toimiiko Claude Code -vienti Windowsissa?","acceptedAnswer":{"@type":"Answer","text":"Kyllä. /export on CLI-komento. Levyllä transkriptit ovat polussa %USERPROFILE%\\.claude\\projects, ellet ole asettanut CLAUDE_CONFIG_DIR-muuttujaa. Tämä Chrome-laajennus ei silti toimi siinä terminaalissa."}},{"@type":"Question","name":"Onko Claude Code sama kuin Claude Desktop?","acceptedAnswer":{"@type":"Answer","text":"Ei. Claude Code on terminaalissa toimiva koodausagentti. Claude Desktop on chat-sovellus. claude.ai on verkkosivusto. Vain verkkosivustolla, claude.ai/code mukaan lukien, toimii tämä laajennus. Desktopin vientiohjeet: Claude Desktop."}},{"@type":"Question","name":"Tukeeko laajennus joskus /export-komentoa?","acceptedAnswer":{"@type":"Answer","text":"Ei versiossa 1.16.2. Tuotteen rajaus on claude.ai, Claude Code on the web mukaan lukien: seitsemän formaattia, paikalliset tiedostot, Google-kirjautuminen vain PDF:ää, joukkovientiä ja Pro-tilausta varten. Jos rajaus muuttuu, kerromme siitä tällä sivulla. Siihen asti käytä terminaalin Claude Code -vientiin Anthropicin CLI:tä."}},{"@type":"Question","name":"Sisältääkö /export työkalujen tulosteet?","acceptedAnswer":{"@type":"Answer","text":"Anthropicin mukaan /export sisältää viestit ja työkalujen tulosteet luettavaksi tekstiksi muotoiltuina. Se on heidän transkriptinsa, ei meidän jäsentimemme. Tarkan nykyisen sisällön näet ajamalla /export-komennon omassa versiossasi ja lukemalla tiedoston – dokumentaatio voi olla julkaisua jäljessä."}},{"@type":"Question","name":"Voiko Claude Code -istunnot viedä kerralla?","acceptedAnswer":{"@type":"Answer","text":"Ei paikallisia CLI-istuntoja. Hallintapaneelin ”Export All” koskee vain claude.ai:ta. Jos CLI-istuntoja on paljon, kopioi projects-kansio tai aja /export jokaisessa istunnossa. JSONL:lle ei ole oranssin painikkeen joukkovientiä."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Claude Code -keskustelun vienti vai claude.ai: valitse oikea tapa","description":"Claude Code -keskustelun vienti: terminaalissa /export tai JSONL (~/.claude/projects). claude.ai/code-istunnot viet ilmaisella Chrome-laajennuksella.","url":"https://chat-downloader.com/fi/claude-code-keskustelun-vienti/","dateModified":"2026-09-25","datePublished":"2026-09-10","inLanguage":"fi","author":{"@type":"Organization","name":"Chat Downloader","url":"https://chat-downloader.com/fi/"},"publisher":{"@type":"Organization","name":"Chat Downloader","url":"https://chat-downloader.com/fi/"},"mainEntityOfPage":"https://chat-downloader.com/fi/claude-code-keskustelun-vienti/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Etusivu","item":"https://chat-downloader.com/fi/"},{"@type":"ListItem","position":2,"name":"Claude Code -vienti","item":"https://chat-downloader.com/fi/claude-code-keskustelun-vienti/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Siirry sisältöön</a>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a class="logo" href="/fi/">
+        <img src="/assets/icon.svg" alt="">
+        <span>Download Claude conversations</span>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="/fi/lataa-claude-keskustelu/">Lataaminen</a><a href="/fi/nain-viet-claude-chatin/">Vienti</a><a href="/fi/vie-kaikki-claude-keskustelut/">Kaikki kerralla</a><a href="/fi/formaatit/">Muodot</a><a href="/fi/#faq">UKK</a>
+        <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=fi-claude-code-export" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Lisää Chromeen</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=fi-claude-code-export" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Lisää Chromeen</a>
+      <!-- i18n:switch --><details class="lang-switch"><summary aria-label="Kieli: Suomi"><svg class="lang-globe" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span class="lang-name">Suomi</span><span class="lang-code" aria-hidden="true">fi</span></summary><ul><li><a href="/claude-code-export/" hreflang="en" lang="en">English</a></li><li><a href="/de/claude-code-chat-exportieren/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/exporter-conversation-claude-code/" hreflang="fr" lang="fr">Français</a></li><li><a href="/nl/claude-code-gesprek-exporteren/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/sv/exportera-claude-code-konversation/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="/nb/eksportere-claude-code-samtale/" hreflang="nb" lang="nb">Norsk</a></li><li><a href="/da/eksporter-claude-code-samtale/" hreflang="da" lang="da">Dansk</a></li><li><a href="/fi/claude-code-keskustelun-vienti/" hreflang="fi" lang="fi" aria-current="true">Suomi</a></li><li><a href="/ja/claude-code-export/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/ko/claude-code-export/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/he/claude-code-export/" hreflang="he" lang="he">עברית</a></li><li><a href="/ar/claude-code-export/" hreflang="ar" lang="ar">العربية</a></li></ul></details><!-- /i18n:switch -->
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Valikko">☰</button>
+    </div>
+  </div>
+</header>
+<nav class="crumbs" aria-label="Murupolku"><a href="/fi/">Etusivu</a> / Claude Code -vienti</nav>
+<main id="main">
+<article class="band prose">
+<p class="article-meta">Päivitetty <time datetime="2026-09-25">syyskuussa 2026</time> · Laajennuksen versio 1.16.2</p>
+<h1 class="page-h1">Claude Code -keskustelun vienti vai claude.ai: valitse oikea tapa</h1>
+<p class="lead">Claude Code -keskustelun vienti tehdään terminaalissa. Kirjoita istuntoon /export tai kopioi JSONL-tiedosto kansiosta ~/.claude/projects. Tämän sivuston oranssi painike ei lataa Claude Code -keskusteluja terminaalista. Download Claude conversations tallentaa chatit, jotka avaat claude.ai:ssa Chromessa – myös Claude Code on the web -istunnot osoitteessa claude.ai/code. Paikalliset terminaali-istunnot ja Desktop ovat erillisiä.</p>
+<aside class="trust-badge" aria-label="Tietoa laajennuksesta">
+  <span class="trophy" aria-hidden="true">🧩</span>
+  <div>
+    <strong>Download Claude conversations – ilmainen Chrome-laajennus claude.ai:hin</strong>
+    <span>Versio 1.16.2 (syyskuu 2026) – rajattomat Markdown-, teksti-, JSON-, XML-, CSV- ja PNG-viennit ilman tiliä; PDF ja joukkovienti ZIP-tiedostona ilmaisia enintään 3 kertaa päivässä</span>
+  </div>
+</aside>
+<nav class="toc" aria-label="Tällä sivulla">
+  <p>Tällä sivulla</p>
+  <ol>
+    <li><a href="#what-is-export">Mikä on Claude Code -vienti terminaalissa?</a></li>
+    <li><a href="#jsonl-disk">Miten Claude Code -keskustelun saa levyltä?</a></li>
+    <li><a href="#extension-limit">Toimiiko Claude Code -vienti tämän laajennuksen kanssa?</a></li>
+    <li><a href="#claude-code-web">Voiko Claude Code on the web -istunnot viedä?</a></li>
+    <li><a href="#where-stored">Mihin Claude Code tallentaa keskusteluhistorian?</a></li>
+    <li><a href="#claude-ai-instead">Miten ladata Claude-chat claude.ai:sta?</a></li>
+    <li><a href="#vs-official-zip">Claude Code -vienti vai Anthropicin virallinen Export data?</a></li>
+    <li><a href="#three-surfaces">Claude Code, Desktop vai claude.ai: mikä vienti?</a></li>
+    <li><a href="#faq">UKK: Claude Code -keskustelun vienti</a></li>
+  </ol>
+</nav>
+
+<h2 id="what-is-export">Mikä on Claude Code -vienti terminaalissa?</h2>
+<p>Claude Code -vienti (englanniksi usein ”Claude Code export”) on komento <code>/export</code> interaktiivisessa CLI-istunnossa. Anthropicin dokumentaation mukaan se avaa valikon, josta voit kopioida nykyisen keskustelun tai tallentaa sen tekstitiedostoon. Viestit ja työkalujen tulosteet muotoillaan luettavaksi tekstiksi. Jos annat komennolle tiedostonimen, valikko ohitetaan ja tiedosto kirjoitetaan suoraan.</p>
+<p>Tulos ei ole claude.ai:n Markdownia, ei tämän Chrome-laajennuksen JSONia eikä PDF:ää. Se on ihmisen luettavaksi muotoiltu transkripti. Anthropicin mukaan levylle tallentuva JSONL-loki on eri formaatti: sisäinen, tuotteen omaan käyttöön tarkoitettu, ei julkinen rajapinta.</p>
+<pre><code>/export</code></pre>
+<p>Voit ohittaa kysymyksen ja kirjoittaa nimetyn tiedoston nykyiseen työhakemistoon:</p>
+<pre><code>/export my-session</code></pre>
+<p>Anthropicin istuntodokumentaatio on luotettava lähde lipuille ja tiedostonimille, sillä ne muuttuvat Claude Coden versioiden välillä. Pidä yhteisöblogeja toissijaisina. Jos <code>/export</code>-dialogin teksti ei vastaa näkemääsi, käytössäsi on eri versio – katso ohjelman oma ohje, älä vuoden 2025 kuvakaappausta.</p>
+<p>Skripteihin Anthropic suosittelee muita rajapintoja: <code>claude -p</code> yhdessä <code>--output-format json</code>- tai <code>stream-json</code>-asetuksen kanssa, istunnon jatkaminen tunnisteella, hookit, jotka saavat <code>transcript_path</code>-arvon, tai Agent SDK. Ne ovat Claude Coden kehittäjätyökaluja, eivät tämän sivuston Chrome-laajennus.</p>
+<div class="callout callout-info">
+  <p><strong>Luettava vai rakenteinen.</strong> <code>/export</code> on ihmiselle tarkoitettu transkripti. Projects-kansion JSONL on loki. Chrome-laajennuksen JSON on kolmas muoto, joka rakennetaan vain claude.ai-sivulta. Älä kirjoita yhtä jäsennintä kaikille kolmelle.</p>
+</div>
+
+<h2 id="jsonl-disk">Miten Claude Code -keskustelun saa levyltä?</h2>
+<p>Claude Code -keskustelun saa levyltä kahdella tavalla: kopioi istunnon JSONL-tiedosto projects-hakemistosta tai aja <code>/export</code>, jos haluat luettavan transkriptin. Oletuspolku macOS:ssä ja Linuxissa on <code>~/.claude/projects/</code>. Windowsissa se on <code>%USERPROFILE%\.claude\projects</code>. Tiedostonimet ovat istuntotunnisteita.</p>
+<p>Projektikansion nimi on työhakemiston polku, jossa muut kuin kirjaimet ja numerot on korvattu yhdysmerkeillä. Anthropic lyhentää hyvin pitkiä nimiä ja lisää loppuun tiivisteen, jotta hakemisto pysyy tiedostojärjestelmän rajoissa. Jos et löydä kansiota, käynnistit Claude Coden todennäköisesti eri hakemistosta kuin luulet.</p>
+<p>Jokainen JSONL-rivi on JSON-objekti, joka kuvaa viestin, työkalukutsun tai metatiedon. Anthropicin mukaan tämä rivimuoto on sisäinen ja muuttuu versioiden välillä. Näitä tiedostoja jäsentävät skriptit voivat hajota Claude Coden päivityksessä. Kun tarvitset jotain vakaata, käytä <code>/export</code>-komentoa tai dokumentoituja skriptirajapintoja.</p>
+<p>Tallennuspaikka voi muuttua. <code>CLAUDE_CONFIG_DIR</code> siirtää asetuspuun pois kansiosta <code>~/.claude</code>. <code>CLAUDE_CODE_PROJECT_DIR_NAME</code> nimeää projektihakemiston, kun sitä käytetään tuon asetushakemiston kanssa (Anthropicin mukaan Claude Code v2.1.234 tai uudempi). settings.json-tiedoston <code>cleanupPeriodDays</code> muuttaa oletussäilytysaikaa. Mikään näistä ei ole Download Claude conversations -laajennuksen ominaisuus.</p>
+<p>Varmuuskopio Claude Code -keskusteluista syntyy siis näin: kopioi kansio tai vie transkriptit säännöllisesti <code>/export</code>-komennolla. Tälle sivustolle ei tule ”tuo JSONL” -painiketta. Emme lue kotihakemistoasi.</p>
+
+<h2 id="extension-limit">Toimiiko Claude Code -vienti tämän laajennuksen kanssa?</h2>
+<p>Ei terminaali-istunnoissa. Download Claude conversations ei lue paikallisia Claude Code -istuntoja. Chrome-laajennus toimii vain claude.ai-sivulla. Se ei näe terminaalia, ei voi ajaa <code>/export</code>-komentoa eikä avata JSONL-tiedostoja. Poikkeus on Claude Code on the web osoitteessa claude.ai/code: se on claude.ai-sivu, joten sen voi viedä kuten minkä tahansa chatin. Jos etsit tapaa ladata Claude Code -keskustelu CLI:stä, pysy tämän sivun CLI-ohjeissa.</p>
+<p>Moni päätyy tänne, koska Google niputtaa sanat ”Claude” ja ”export” yhteen. Chrome Web Store -listaus koskee silti vain claude.ai:ta. Laajennuksen asentaminen ei tuo oranssia painiketta iTermiin, Ghosttyyn, VS Coden terminaaliin tai Claude Coden työpöytäsovellukseen.</p>
+<p>Jos pidät samasta koodaustyöstä rinnakkaista keskustelua myös claude.ai:ssa, sen selainchatin voi tallentaa laajennuksella. Tallenteita ei yhdistetä. Vain CLI:ssä tehdyt työkalukutsut eivät näy verkkoviennissä, ellet ole liittänyt niitä sinne itse.</p>
+<div class="expert-quote">
+  <blockquote>Saamme joka viikko saman tukiviestin: joku asensi Chrome-laajennuksen ja odotti /export-komennon ilmestyvän. Jäsennämme vain claude.ai:ta. Claude Codessa on jo valmiina /export ja JSONL. CLI:n kääriminen olisi eri tuote, emmekä ole julkaisseet sellaista.</blockquote>
+  <cite><strong>Download Claude conversations -tiimi</strong> – Claude Chat Downloader -Chrome-laajennuksen tekijät</cite>
+</div>
+<p>Laajennus on claude.ai-työkalu, ei Claude Code -lisäosa. Sen rajat koskevat vain vientejä claude.ai:sta: Markdown, teksti, JSON, XML, CSV ja PNG ovat rajattomia ilman tiliä; PDF ja joukkovienti ZIP-tiedostona ovat ilmaisia 3 kertaa päivässä Google-kirjautumisella; Pro hintaan 3,99 $/kk tai 26,99 $/vuosi poistaa rajan. Mikään tästä ei rajoita <code>/export</code>-komentoa.</p>
+
+<h2 id="claude-code-web">Voiko Claude Code on the web -istunnot viedä?</h2>
+<p>Kyllä. Claude Code on the web toimii osoitteessa claude.ai/code, joten Download Claude conversations vie nämä istunnot kuten minkä tahansa claude.ai-chatin. Avaa istunto Chromessa, napsauta oranssia painiketta, valitse formaatti ja napsauta ”Export” (vie). Tämä on ainoa Claude Coden käyttöliittymä, jonka laajennus kattaa.</p>
+<p>Formaatit ovat samat seitsemän kuin kaikissa chateissa: PDF, Markdown, pelkkä teksti, JSON, XML, CSV ja PNG. Markdown, teksti, JSON, XML, CSV ja PNG ovat rajattomia eivätkä vaadi tiliä. PDF pyytää Google-kirjautumista ja jakaa ilmaisversion 3 kertaa päivässä ZIP-joukkoviennin kanssa, ellei sinulla ole Pro-tilausta. Koodilohkot säilyttävät kielitunnisteensa. Laajennettu ajattelu on paneelissa valintaruutu ”Thinking” (ajattelu); työkalu- ja MCP-vaiheet sekä verkkohaun lähteet otetaan halutessasi käyttöön asetuksissa (Settings).</p>
+<p>Verkkovienti sisältää sen, mitä claude.ai/code näyttää selaimessa. Se ei ole paikallisen CLI-ajon JSONL-loki, eikä se tavoita istuntoja, jotka ajettiin vain terminaalissa. Anthropicin mukaan Claude Code on the webillä on oma istuntohistoriansa, erillään CLI:n <code>~/.claude/projects</code>-puusta. Terminaali-istunnolle <code>/export</code> on yhä oikea tapa.</p>
+
+<h2 id="where-stored">Mihin Claude Code tallentaa keskusteluhistorian?</h2>
+<p>Claude Code tallentaa keskusteluhistorian JSONL-transkripteina asetushakemiston projects-kansioon. Oletus macOS:ssä ja Linuxissa: <code>~/.claude/projects/&lt;encoded-cwd&gt;/&lt;session-id&gt;.jsonl</code>. Windowsissa polku on <code>%USERPROFILE%\.claude\projects</code>. Anthropic voi muuttaa rakennetta; jos polkua ei löydy levyltä, tarkista ajantasainen istuntodokumentaatio.</p>
+<p>Jatkaminen on eri asia kuin vienti. <code>claude --continue</code> ja <code>claude --resume</code> lataavat istunnon uudelleen, jotta voit jatkaa työtä. <code>/export</code> kirjoittaa kopion, jonka voit jättää gitiin tai lähettää sähköpostilla. Toinen palauttaa kontekstin, toinen antaa sinulle tallenteen mukaan. Anthropicin istuntosivu kertoo lupatilasta jatkettaessa, tiivistyksestä ja istuntovalitsimesta – mikään niistä ei liity tähän laajennukseen.</p>
+<p>Anthropicin mukaan työpöytäsovelluksella, Claude Code on the webillä ja VS Code -laajennuksella on kullakin oma istuntohistoriansa. Tämän oppaan polut koskevat CLI:tä. Verkkoistunnot pysyvät osoitteessa claude.ai/code, josta laajennus voi viedä ne. Älä oleta, että Desktopin Cowork-transkripti on samassa JSONL-puussa, jota käytät terminaalista.</p>
+<div class="callout callout-warn">
+  <p><strong>Älä käsittele JSONL:ää julkisena skeemana.</strong> Anthropicin mukaan rivimuoto muuttuu. Jos jäsennät sitä silti, lukitse Claude Coden versio ja varaudu rikkoutumisiin. <code>/export</code> on vakaa tapa saada Claude Code -keskustelu luettavaan muotoon.</p>
+</div>
+<p>Ympäristömuuttujat, kuten <code>CLAUDE_CODE_SKIP_PROMPT_HISTORY</code>, voivat estää transkriptien kirjoittamisen. Jos projects-kansio on tyhjä, tarkista, oletko poistanut tallennuksen käytöstä, ohjannut <code>CLAUDE_CONFIG_DIR</code>-muuttujan muualle tai jättänyt ajamatta interaktiivista istuntoa siinä hakemistossa.</p>
+
+<h2 id="claude-ai-instead">Miten ladata Claude-chat claude.ai:sta?</h2>
+<p>Claude-chatin lataus claude.ai:sta: asenna Download Claude conversations, avaa keskustelu Chromessa, napsauta viestikentän vieressä olevaa oranssia painiketta ja valitse PDF, Markdown, pelkkä teksti, JSON, XML, CSV tai PNG. Se on selaintuote, ja se kattaa myös claude.ai/code-istunnot. Se ei ole terminaalin Claude Code -vienti. Vaiheittaiset ohjeet: <a href="/fi/lataa-claude-keskustelu/">näin lataat Claude-chatin</a>.</p>
+<p>Koko claude.ai-historia erillisinä tiedostoina onnistuu hallintapaneelin (Dashboard) ”Export All” (vie kaikki) -toiminnolla, ei <code>/export</code>-komennolla. Ilmaisversiossa jokainen ZIPin chat lasketaan 3 päivittäisen viennin rajaan (yhteinen PDF:n kanssa, nollautuu keskiyöllä UTC-aikaa); Pro poistaa rajan. Opas: <a href="/fi/vie-kaikki-claude-keskustelut/">Export All -joukkovienti</a>. Formaatit: <a href="/fi/formaatit/">formaatit</a>.</p>
+<p>Yksittäisen chatin Markdown-, teksti-, JSON-, XML-, CSV- tai PNG-vienti ei vaadi tiliä – nämä viennit ovat rajattomia. Google-kirjautuminen tulee vastaan vain PDF:ssä, ZIP-joukkoviennissä ja Pro-tilauksessa, jotta voimme laskea päivän kiintiön ja palauttaa Pron. Tiedostot rakennetaan paikallisesti, myös PDF. Paddle laskuttaa Pron hintaan 3,99 $/kk tai 26,99 $/vuosi. Mikään tästä ei koske terminaalin <code>/export</code>-komentoa.</p>
+<p>Jos työ alkoi Claude Codessa ja liitit tiivistelmän claude.ai:hin, lataa verkkokeskustelu muistiinpanoiksi ja pidä <code>/export</code> varsinaisena CLI-lokina. Kaksi tiedostoa on parempi kuin yksi sekava.</p>
+
+<h2 id="vs-official-zip">Claude Code -vienti vai Anthropicin virallinen Export data?</h2>
+<p>Claude Code -vienti (<code>/export</code> tai JSONL) koskee yhtä terminaali-istuntoa. Virallinen Export data on claude.ai:ssa kohdassa Settings → Privacy → Export data (valikot voivat näkyä suomeksi, jos claude.ai on asetettu suomen kielelle): viiveellä toimitettava JSON-ZIP koko Anthropic-tilistä. Ne eivät ole sama arkisto. ZIP ei korvaa <code>/export</code>-komentoa.</p>
+<p>Näkyykö tietty Claude Code -istunto tilin ZIP-tiedostossa, riippuu siitä, miten Anthropic tallentaa kyseisen tuotteen – ei tästä laajennuksesta. Pidä ZIPiä verkkotilin varmuuskopiona, ellei Anthropicin ajantasainen tietosuojadokumentaatio kerro muuta. Emme lisää CLI-istuntoja siihen ZIPiin.</p>
+<p>Claude-chatin vienti verkkosivustolta, mukaan lukien ZIPin ja laajennuksen erot, on kuvattu täällä: <a href="/fi/nain-viet-claude-chatin/">näin viet Claude-chatin</a>. Laajennuksen PDF-vienti ei myöskään sovellu terminaalikäyttöliittymään. Katso <a href="/fi/claude-keskustelu-pdf/">Claude-keskustelu PDF:nä</a> vain, kun keskustelu on claude.ai:ssa, claude.ai/code mukaan lukien.</p>
+<div class="table-wrap">
+  <table>
+    <caption>Claude Code -vienti verrattuna muihin tapoihin tallentaa Claude-keskusteluja</caption>
+    <thead>
+      <tr>
+        <th scope="col">Käytät</th>
+        <th scope="col">Miten viet</th>
+        <th scope="col">Tämä Chrome-laajennus</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Claude Code terminaalissa</th>
+        <td><code>/export</code> tai JSONL levyllä</td>
+        <td>Ei toimi</td>
+      </tr>
+      <tr>
+        <th scope="row">Claude Code on the web (claude.ai/code)</th>
+        <td>Oranssi painike Chromessa</td>
+        <td>Vie kuten minkä tahansa chatin</td>
+      </tr>
+      <tr>
+        <th scope="row">claude.ai Chromessa</th>
+        <td>Oranssi painike tai <a href="/fi/vie-kaikki-claude-keskustelut/">Export All</a></td>
+        <td>Juuri tähän se on tehty</td>
+      </tr>
+      <tr>
+        <th scope="row">Anthropic-tilin varmuuskopio</th>
+        <td>Settings → Privacy → Export data</td>
+        <td>Eri tehtävä – viiveellä tuleva JSON-ZIP</td>
+      </tr>
+      <tr>
+        <th scope="row">Skriptit / CI</th>
+        <td><code>claude -p</code> JSON, SDK, transcript_path</td>
+        <td>Ei kääri CLI:tä</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h2 id="three-surfaces">Claude Code, Desktop vai claude.ai: mikä vienti?</h2>
+<p>Claude Code, Claude Desktop ja claude.ai ovat kolme eri käyttöliittymää. Claude Code -vienti käyttää <code>/export</code>-komentoa ja JSONL:ää. Desktop on sovellus, jossa ei ole tämän laajennuksen oranssia painiketta. claude.ai Chromessa on ainoa paikka, jossa Download Claude conversations toimii – Claude Code on the web osoitteessa claude.ai/code mukaan lukien. Kun nimet menevät sekaisin, vienti epäonnistuu huomaamatta.</p>
+<p>Claude Desktop: jos chat on synkronoitunut samaan Anthropic-tiliin, avaa se claude.ai:ssa ja vie sieltä. Jos se on olemassa vain Desktop-ikkunassa, kopioi ja liitä tai odota virallista Export dataa. Opas: <a href="/fi/vie-claude-desktop-chat/">vie Claude Desktop -chat</a>.</p>
+<p>VS Coden Claude Code -paneeli on lähempänä CLI:tä kuin claude.ai:ta. Älä odota, että sisältöskriptimme toimii siinä webviewissä. Aja <code>/export</code> siinä istunnossa, jossa viestit oikeasti ovat.</p>
+<p>Itsenäinen Chrome-laajennus, ei yhteydessä Anthropic, PBC:hen. Claude on Anthropicin tavaramerkki. Noudata Anthropicin käyttöehtoja. Emme voi antaa oikeudellista neuvontaa siitä, saako työkalujen tulosteita, joissa on suojattua koodia, kopioida; se on sinun, työnantajasi ja Anthropicin välinen asia.</p>
+
+<h2 id="faq">UKK: Claude Code -keskustelun vienti</h2>
+<h3>Miten vien Claude Code -keskustelun?</h3>
+<p>Kirjoita Claude Code -terminaalissa <code>/export</code> (halutessasi tiedostonimen kanssa) tallentaaksesi luettavan transkriptin, tai kopioi JSONL-tiedosto kansiosta <code>~/.claude/projects</code> macOS:ssä/Linuxissa tai <code>%USERPROFILE%\.claude\projects</code> Windowsissa. Anthropicin istuntodokumentaatio kuvaa nykyisen dialogin.</p>
+<h3>Lataako tämä Chrome-laajennus Claude Code -chatteja?</h3>
+<p>Ei terminaalista. Download Claude conversations toimii vain claude.ai:ssa Chromessa. Se ei pysty lukemaan paikallisia terminaali-istuntoja, JSONL-transkriptejä eikä <code>/export</code>-komentoa. Claude Code on the web -istunnot osoitteessa claude.ai/code voi viedä kuten minkä tahansa chatin.</p>
+<h3>Voiko Claude Code on the web -istunnon (claude.ai/code) viedä?</h3>
+<p>Kyllä. Avaa istunto osoitteessa claude.ai/code Chromessa ja käytä oranssia painiketta. PDF, Markdown, pelkkä teksti, JSON, XML, CSV ja PNG toimivat kaikki. Muut kuusi formaattia ovat rajattomia ilman tiliä; PDF vaatii Google-kirjautumisen ja lasketaan 3 ilmaiseen kertaan päivässä.</p>
+<h3>Mihin Claude Code tallentaa keskusteluhistorian?</h3>
+<p>Istuntojen transkriptit ovat JSONL-tiedostoja polussa <code>~/.claude/projects/&lt;encoded-working-directory&gt;/</code>, ja ne on nimetty istuntotunnisteen mukaan. Tarkka rakenne voi muuttua. Käytä <code>/export</code>-komentoa, kun haluat luettavan tiedoston JSONL:n jäsentämisen sijaan. <code>CLAUDE_CONFIG_DIR</code> voi siirtää koko puun.</p>
+<h3>Miten Claude Code -keskustelun saa Markdownina?</h3>
+<p>Claude Coden <code>/export</code> tuottaa pelkän tekstin transkriptin, ei tämän laajennuksen Markdownia. Jos tarvitset nimenomaan Markdownia, vie claude.ai/code-istunto tai työn claude.ai-kopio Download Claude conversations -laajennuksella tai muunna <code>/export</code>-teksti itse. Emme muunna JSONL:ää Markdowniksi.</p>
+<h3>Miten lataan sen sijaan claude.ai-keskustelun?</h3>
+<p>Asenna ilmainen Chrome-laajennus, avaa chat claude.ai:ssa ja käytä oranssia painiketta – tai historiaan ”Export All” -toimintoa. Katso <a href="/fi/lataa-claude-keskustelu/">näin lataat Claude-chatin</a>. Markdown, teksti, JSON, XML, CSV ja PNG ovat rajattomia ilman tiliä; PDF ja joukkovienti ZIP-tiedostona ovat ilmaisia 3 kertaa päivässä Google-kirjautumisella; Pro maksaa 3,99 $/kk tai 26,99 $/vuosi.</p>
+<h3>Onko /export sama kuin virallinen Export data?</h3>
+<p>Ei. <code>/export</code> koskee nykyistä Claude Code -istuntoa. Settings → Privacy → Export data lähettää sähköpostiin JSON-ZIPin koko Anthropic-tilistä. Eri tuotteet, eri tiedostot, eri odotusajat.</p>
+<h3>Voiko Claude Coden JSONL:ää jäsentää jq:lla?</h3>
+<p>Voi, mutta Anthropicin varauksella: rivien skeema on sisäinen ja voi muuttua. Käytä mieluummin <code>/export</code>-komentoa tai <code>claude -p --output-format json</code> -komentoa, kun tarvitset vakaan sopimuksen. Jos jäsennät JSONL:ää silti, lukitse CLI:n versio.</p>
+<h3>Toimiiko Claude Code -vienti Windowsissa?</h3>
+<p>Kyllä. <code>/export</code> on CLI-komento. Levyllä transkriptit ovat polussa <code>%USERPROFILE%\.claude\projects</code>, ellet ole asettanut <code>CLAUDE_CONFIG_DIR</code>-muuttujaa. Tämä Chrome-laajennus ei silti toimi siinä terminaalissa.</p>
+<h3>Onko Claude Code sama kuin Claude Desktop?</h3>
+<p>Ei. Claude Code on terminaalissa toimiva koodausagentti. Claude Desktop on chat-sovellus. claude.ai on verkkosivusto. Vain verkkosivustolla, claude.ai/code mukaan lukien, toimii tämä laajennus. Desktopin vientiohjeet: <a href="/fi/vie-claude-desktop-chat/">Claude Desktop</a>.</p>
+<h3>Tukeeko laajennus joskus /export-komentoa?</h3>
+<p>Ei versiossa 1.16.2. Tuotteen rajaus on claude.ai, Claude Code on the web mukaan lukien: seitsemän formaattia, paikalliset tiedostot, Google-kirjautuminen vain PDF:ää, joukkovientiä ja Pro-tilausta varten. Jos rajaus muuttuu, kerromme siitä tällä sivulla. Siihen asti käytä terminaalin Claude Code -vientiin Anthropicin CLI:tä.</p>
+<h3>Sisältääkö /export työkalujen tulosteet?</h3>
+<p>Anthropicin mukaan <code>/export</code> sisältää viestit ja työkalujen tulosteet luettavaksi tekstiksi muotoiltuina. Se on heidän transkriptinsa, ei meidän jäsentimemme. Tarkan nykyisen sisällön näet ajamalla <code>/export</code>-komennon omassa versiossasi ja lukemalla tiedoston – dokumentaatio voi olla julkaisua jäljessä.</p>
+<h3>Voiko Claude Code -istunnot viedä kerralla?</h3>
+<p>Ei paikallisia CLI-istuntoja. Hallintapaneelin ”Export All” koskee vain claude.ai:ta. Jos CLI-istuntoja on paljon, kopioi projects-kansio tai aja <code>/export</code> jokaisessa istunnossa. JSONL:lle ei ole oranssin painikkeen joukkovientiä.</p>
+</article>
+</main>
+<section class="final-cta page-cta" aria-label="Asenna">
+  <div class="wrap">
+    <div class="final-cta-panel">
+      <p class="final-kicker">Download Claude conversations</p>
+      <h2>Tarvitsetko claude.ai-tiedostoja etkä Claude Codea?</h2>
+      <p>Chrome-laajennus tallentaa claude.ai-chatit ja claude.ai/code-istunnot PDF-, Markdown-, JSON-, teksti-, CSV-, XML- tai PNG-muodossa – paikallisesti, suoraan Chromesta.</p>
+      <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=fi-claude-code" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Lisää Chromeen</a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="logo" href="/fi/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
+      <p class="legal-note">Chrome-laajennus Claude.ai-keskustelujen lataamiseen PDF-, Markdown-, JSON-, pelkkä teksti-, CSV-, XML- tai PNG-muodossa.</p>
+    </div>
+    <div>
+      <h2>Asenna</h2>
+      <a class="install-link" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=fi-footer" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Chrome-laajennus</a>
+    </div>
+    <div>
+      <h2>Tuote</h2>
+      <a href="/fi/ominaisuudet/">Ominaisuudet</a>
+      <a href="/fi/formaatit/">Muodot</a>
+      <a href="/fi/vie-kaikki-claude-keskustelut/">Vie kaikki keskustelut</a>
+      <a href="/fi/nain-se-toimii/">Näin se toimii</a>
+    </div>
+    <div>
+      <h2>Oppaat</h2>
+      <a href="/fi/lataa-claude-keskustelu/">Näin lataat Claude-keskustelun</a>
+      <a href="/fi/nain-viet-claude-chatin/">Näin viet Claude-chatin</a>
+      <a href="/fi/vie-claude-chat/">Vie Claude-chat</a>
+      <a href="/fi/claude-keskustelu-extractor/">Claude-keskustelujen extractor</a>
+      <a href="/fi/claude-code-keskustelun-vienti/">Claude Code -keskustelun vienti</a>
+      <a href="/fi/claude-keskustelu-pdf/">Claude-chat PDF-muodossa</a>
+      <a href="/fi/vie-claude-desktop-chat/">Vie Claude Desktop -chat</a>
+      <a href="/fi/claude-keskustelun-vienti/">Claude-keskustelun vienti</a>
+      <a href="/fi/tallenna-claude-keskustelu/">Tallenna Claude-keskustelu</a>
+      <a href="/fi/claude-keskustelun-lataus/">Claude-keskustelun lataus</a>
+    </div>
+    <div>
+      <h2>Oikeudelliset tiedot</h2>
+      <a href="/fi/tietoa-meista/">Tietoa meistä</a>
+      <a href="/fi/tietoa-meista/#contact">Yhteystiedot</a>
+      <a href="/privacy/" hreflang="en">Tietosuoja (englanniksi)</a>
+      <a href="/terms/" hreflang="en">Käyttöehdot (englanniksi)</a>
+      <a href="/refund/" hreflang="en">Palautukset (englanniksi)</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Download Claude conversations. Kaikki oikeudet pidätetään.</div>
+    <div>
+      <a href="/privacy/" hreflang="en">Tietosuojaseloste (englanniksi)</a>
+      <a href="/terms/" hreflang="en">Käyttöehdot (englanniksi)</a>
+      <a href="/refund/" hreflang="en">Palautukset (englanniksi)</a>
+    </div>
+  </div>
+  <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/claude-code-export/" hreflang="en" lang="en">English</a> <a href="/de/claude-code-chat-exportieren/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/exporter-conversation-claude-code/" hreflang="fr" lang="fr">Français</a> <a href="/nl/claude-code-gesprek-exporteren/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/exportera-claude-code-konversation/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/eksportere-claude-code-samtale/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/eksporter-claude-code-samtale/" hreflang="da" lang="da">Dansk</a> <a href="/fi/claude-code-keskustelun-vienti/" hreflang="fi" lang="fi">Suomi</a> <a href="/ja/claude-code-export/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/claude-code-export/" hreflang="ko" lang="ko">한국어</a> <a href="/he/claude-code-export/" hreflang="he" lang="he">עברית</a> <a href="/ar/claude-code-export/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
+  <p class="disclaimer">Keskustelut käsitellään selaimessasi · Google-kirjautuminen vain PDF:ää, joukkovientiä ja Pro-tilausta varten · Ei yhteydessä Anthropic, PBC:hen. Claude on Anthropicin tavaramerkki. Itsenäinen Chrome-laajennus – ei Anthropicin virallinen tuote. Tuki: <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Exporter une discussion Claude en Markdown ou JSON</title>
+  <meta name="description" content="Exportez une discussion Claude depuis claude.ai en PDF, Markdown, JSON, texte, XML, CSV ou PNG avec une extension Chrome gratuite. Sans compte (sauf PDF).">
+  <link rel="canonical" href="https://chat-downloader.com/fr/exporter-discussion-claude/">
+  <!-- i18n:head -->
+  <link rel="alternate" hreflang="en" href="https://chat-downloader.com/claude-export-conversation/">
+  <link rel="alternate" hreflang="de" href="https://chat-downloader.com/de/claude-unterhaltung-exportieren/">
+  <link rel="alternate" hreflang="fr" href="https://chat-downloader.com/fr/exporter-discussion-claude/">
+  <link rel="alternate" hreflang="nl" href="https://chat-downloader.com/nl/claude-gesprek-exporteren/">
+  <link rel="alternate" hreflang="sv" href="https://chat-downloader.com/sv/exportera-claude-konversation/">
+  <link rel="alternate" hreflang="nb" href="https://chat-downloader.com/nb/eksportere-claude-samtale/">
+  <link rel="alternate" hreflang="da" href="https://chat-downloader.com/da/eksporter-claude-samtale/">
+  <link rel="alternate" hreflang="fi" href="https://chat-downloader.com/fi/claude-keskustelun-vienti/">
+  <link rel="alternate" hreflang="ja" href="https://chat-downloader.com/ja/claude-export-conversation/">
+  <link rel="alternate" hreflang="ko" href="https://chat-downloader.com/ko/claude-export-conversation/">
+  <link rel="alternate" hreflang="he" href="https://chat-downloader.com/he/claude-export-conversation/">
+  <link rel="alternate" hreflang="ar" href="https://chat-downloader.com/ar/claude-export-conversation/">
+  <link rel="alternate" hreflang="x-default" href="https://chat-downloader.com/claude-export-conversation/">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="sv_SE">
+  <meta property="og:locale:alternate" content="nb_NO">
+  <meta property="og:locale:alternate" content="da_DK">
+  <meta property="og:locale:alternate" content="fi_FI">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <meta property="og:locale:alternate" content="he_IL">
+  <meta property="og:locale:alternate" content="ar_AE">
+  <!-- /i18n:head -->
+  <meta property="og:title" content="Exporter une discussion Claude en Markdown ou JSON">
+  <meta property="og:description" content="Exportez une discussion Claude depuis claude.ai en PDF, Markdown, JSON, texte, XML, CSV ou PNG avec une extension Chrome gratuite. Sans compte (sauf PDF).">
+  <meta property="og:url" content="https://chat-downloader.com/fr/exporter-discussion-claude/">
+  <meta property="og:image" content="https://chat-downloader.com/assets/widget-guide.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chat Downloader">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Exporter une discussion Claude en Markdown ou JSON">
+  <meta name="twitter:description" content="Exportez une discussion Claude depuis claude.ai en PDF, Markdown, JSON, texte, XML, CSV ou PNG avec une extension Chrome gratuite. Sans compte (sauf PDF).">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME1YXGZKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GME1YXGZKR');
+  </script>
+
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Que signifie « exporter une discussion Claude » sur ce site ?","acceptedAnswer":{"@type":"Answer","text":"Enregistrer une conversation claude.ai dans un fichier avec Download Claude conversations : bouton orange, choix du format, « Export ». C’est la même chose qu’« exporter une conversation Claude ». Ce n’est ni le ZIP envoyé par e-mail par Anthropic, ni la commande /export de Claude Code."}},{"@type":"Question","name":"Exporter une discussion Claude, est-ce la même chose qu’Export data ?","acceptedAnswer":{"@type":"Answer","text":"Non. Settings → Privacy → Export data fournit par e-mail un ZIP JSON de tout le compte. Avec cette extension, l’export écrit immédiatement dans Chrome la discussion ouverte en PDF, Markdown, JSON, texte, XML, CSV ou PNG, ou une sélection « Export All » sous forme de ZIP."}},{"@type":"Question","name":"Peut-on exporter une discussion Claude en PDF ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Choisissez PDF dans la liste des formats et cliquez sur « Export ». Download Claude conversations génère le PDF dans le navigateur, sans boîte de dialogue d’impression. Le PDF demande une connexion Google et reste gratuit jusqu’à 3 par jour ; Pro le rend illimité. Guide : télécharger une conversation Claude en PDF."}},{"@type":"Question","name":"Faut-il Pro pour exporter une discussion Claude une seule fois ?","acceptedAnswer":{"@type":"Answer","text":"Non. Les exports Markdown, texte, JSON, XML, CSV et PNG sont gratuits et illimités, sans compte. Le PDF et l’export groupé « Export All » sont gratuits jusqu’à 3 par jour avec une connexion Google. Pro, à 3,99 $ par mois ou 26,99 $ par an, supprime cette limite."}},{"@type":"Question","name":"L’export fonctionne-t-il avec toutes les offres claude.ai ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Les offres claude.ai Free, Pro, Team ou Enterprise fonctionnent si vous pouvez ouvrir la conversation dans Chrome. Download Claude conversations ne nécessite pas d’offre payante chez Anthropic."}},{"@type":"Question","name":"Exporter une discussion Claude fonctionne-t-il pour Claude Code ?","acceptedAnswer":{"@type":"Answer","text":"Seulement pour Claude Code sur le web. Les sessions sur claude.ai/code s’ouvrent sur claude.ai et s’exportent comme n’importe quelle conversation. Claude Code dans le terminal utilise /export ou des fichiers JSONL dans ~/.claude/projects, et cette extension ne lit pas ces sessions locales."}},{"@type":"Question","name":"Puis-je exporter une session Claude depuis Claude Desktop ?","acceptedAnswer":{"@type":"Answer","text":"Pas avec cette extension Chrome. Ouvrez la même conversation sur claude.ai si elle est synchronisée, ou faites un copier-coller, ou utilisez l’export officiel Export data. Claude Desktop n’affiche jamais le bouton orange."}},{"@type":"Question","name":"Combien de discussions Claude puis-je exporter gratuitement ?","acceptedAnswer":{"@type":"Answer","text":"Un nombre illimité en Markdown, texte, JSON, XML, CSV et PNG, sans compte. Avec l’offre gratuite et une connexion Google, le PDF et « Export All » partagent 3 exports par jour ; chaque conversation d’un ZIP groupé compte pour un. Le compteur revient à zéro à minuit UTC. Pro supprime la limite et se restaure via la connexion Google."}},{"@type":"Question","name":"Où se trouve le bouton orange pour exporter une discussion Claude ?","acceptedAnswer":{"@type":"Answer","text":"À droite de la zone de message, sur l’URL d’une conversation claude.ai, après avoir installé Download Claude conversations et rechargé la page. Il n’apparaît pas sur la page d’accueil vide ni dans Claude Desktop."}},{"@type":"Question","name":"L’export envoie-t-il mes discussions en ligne ?","acceptedAnswer":{"@type":"Answer","text":"Non. Chaque format, PDF compris, est généré dans le navigateur puis transmis à l’API de téléchargement de Chrome. Les exports Markdown, texte, JSON, XML, CSV et PNG ne nous envoient rien. Une fois que vous êtes connecté pour le PDF, l’export groupé ou Pro, notre serveur voit le quota ou le statut d’abonnement et votre adresse e-mail Google, jamais le contenu des conversations."}},{"@type":"Question","name":"Dans quels formats peut-on exporter une discussion Claude ?","acceptedAnswer":{"@type":"Answer","text":"Sept : PDF, Markdown, texte brut, JSON, XML, CSV et PNG, les mêmes sept pour une conversation et pour « Export All ». Pas d’export Word, Notion ou Google Docs dans la version 1.16.2."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Exporter une discussion Claude dans un fichier lisible","description":"Exportez une discussion Claude depuis claude.ai en PDF, Markdown, JSON, texte, XML, CSV ou PNG avec une extension Chrome gratuite. Sans compte (sauf PDF).","url":"https://chat-downloader.com/fr/exporter-discussion-claude/","dateModified":"2026-09-25","datePublished":"2026-09-15","inLanguage":"fr","author":{"@type":"Organization","name":"Chat Downloader","url":"https://chat-downloader.com/fr/"},"publisher":{"@type":"Organization","name":"Chat Downloader","url":"https://chat-downloader.com/fr/"},"mainEntityOfPage":"https://chat-downloader.com/fr/exporter-discussion-claude/"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Claude Chat Downloader","alternateName":["Download Claude conversations","Claude Conversation Downloader"],"applicationCategory":"BrowserApplication","operatingSystem":"Chrome","softwareVersion":"1.16.2","url":"https://chat-downloader.com","downloadUrl":"https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak","offers":[{"@type":"Offer","name":"Gratuit","price":"0","priceCurrency":"USD","description":"Exports Markdown, texte, JSON, XML, CSV et PNG illimités ; 3 exports PDF ou groupés par jour"},{"@type":"Offer","name":"Pro mensuel","price":"3.99","priceCurrency":"USD"},{"@type":"Offer","name":"Pro annuel","price":"26.99","priceCurrency":"USD"}],"description":"Exportez une discussion Claude depuis claude.ai en PDF, Markdown, JSON, texte, XML, CSV ou PNG avec une extension Chrome gratuite. Sans compte (sauf PDF)."}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://chat-downloader.com/fr/"},{"@type":"ListItem","position":2,"name":"Exporter une discussion Claude","item":"https://chat-downloader.com/fr/exporter-discussion-claude/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a class="logo" href="/fr/">
+        <img src="/assets/icon.svg" alt="">
+        <span>Download Claude conversations</span>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="/fr/telecharger-conversation-claude/">Télécharger</a><a href="/fr/comment-exporter-conversation-claude/">Exporter</a><a href="/fr/exporter-historique-claude/">Historique</a><a href="/fr/formats/">Formats</a><a href="/fr/#faq">FAQ</a>
+        <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=fr-claude-export-conversation" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Ajouter à Chrome</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=fr-claude-export-conversation" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Ajouter à Chrome</a>
+      <!-- i18n:switch --><details class="lang-switch"><summary aria-label="Langue: Français"><svg class="lang-globe" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span class="lang-name">Français</span><span class="lang-code" aria-hidden="true">fr</span></summary><ul><li><a href="/claude-export-conversation/" hreflang="en" lang="en">English</a></li><li><a href="/de/claude-unterhaltung-exportieren/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/exporter-discussion-claude/" hreflang="fr" lang="fr" aria-current="true">Français</a></li><li><a href="/nl/claude-gesprek-exporteren/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/sv/exportera-claude-konversation/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="/nb/eksportere-claude-samtale/" hreflang="nb" lang="nb">Norsk</a></li><li><a href="/da/eksporter-claude-samtale/" hreflang="da" lang="da">Dansk</a></li><li><a href="/fi/claude-keskustelun-vienti/" hreflang="fi" lang="fi">Suomi</a></li><li><a href="/ja/claude-export-conversation/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/ko/claude-export-conversation/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/he/claude-export-conversation/" hreflang="he" lang="he">עברית</a></li><li><a href="/ar/claude-export-conversation/" hreflang="ar" lang="ar">العربية</a></li></ul></details><!-- /i18n:switch -->
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+<nav class="crumbs" aria-label="Fil d’Ariane"><a href="/fr/">Accueil</a> / Exporter une discussion Claude</nav>
+<main id="main">
+<article class="band prose">
+<p class="article-meta">Mis à jour en <time datetime="2026-09">septembre 2026</time> · Extension 1.16.2</p>
+<h1 class="page-h1">Exporter une discussion Claude dans un fichier lisible</h1>
+<p class="lead">Exporter une discussion Claude, c’est enregistrer une conversation claude.ai dans un fichier. Installez Download Claude conversations, ouvrez l’URL de la conversation, cliquez sur le bouton orange, choisissez PDF, Markdown, JSON, texte, XML, CSV ou PNG, puis « Export » (exporter). Les fichiers sont générés localement dans Chrome, pas dans Claude Desktop ni dans le terminal Claude Code. Markdown, texte, JSON, XML, CSV et PNG sont gratuits et illimités, sans compte. Le PDF et le ZIP groupé sont gratuits jusqu’à 3 par jour ; Pro coûte 3,99 $ par mois ou 26,99 $ par an.</p>
+<aside class="trust-badge" aria-label="À propos de l’extension">
+  <span class="trophy" aria-hidden="true">🧩</span>
+  <div>
+    <strong>Download Claude conversations — extension Chrome gratuite pour claude.ai</strong>
+    <span>Version 1.16.2 (septembre 2026) — exports Markdown, texte, JSON, XML, CSV et PNG illimités, sans compte ; PDF et ZIP groupé gratuits jusqu’à 3 par jour</span>
+  </div>
+</aside>
+<nav class="toc" aria-label="Sur cette page">
+  <p>Sur cette page</p>
+  <ol>
+    <li><a href="#how">Comment exporter une discussion Claude dans Chrome ?</a></li>
+    <li><a href="#keep">Que conserve le fichier exporté ?</a></li>
+    <li><a href="#formats">Comment exporter une discussion Claude en Markdown ?</a></li>
+    <li><a href="#bulk">Peut-on exporter plusieurs discussions avec Export All ?</a></li>
+    <li><a href="#session">Exporter une session Claude : Desktop ou Claude Code ?</a></li>
+    <li><a href="#vs-official">Exporter une discussion ou utiliser Export data d’Anthropic ?</a></li>
+    <li><a href="#cost">Combien coûte l’export d’une discussion Claude ?</a></li>
+    <li><a href="#exporter">Discussion, conversation, chat : la même extension Chrome ?</a></li>
+    <li><a href="#faq">FAQ : exporter une discussion Claude</a></li>
+  </ol>
+</nav>
+
+<h2 id="how">Comment exporter une discussion Claude dans Chrome ?</h2>
+<p>Ouvrez l’URL d’une conversation sur claude.ai dans Chrome, cliquez sur le bouton orange à droite de la zone de message, choisissez PDF, Markdown, JSON, texte, XML, CSV ou PNG, puis « Export ». Download Claude conversations écrit le fichier en local. Rechargez claude.ai après l’installation. claude.ai ne propose aucune commande d’export par conversation.</p>
+<ol>
+<li>Installez Download Claude conversations depuis le Chrome Web Store (version 1.16.2).</li>
+<li>Rechargez l’onglet claude.ai pour que le script de contenu puisse s’injecter sur l’URL d’une conversation.</li>
+<li>Ouvrez une vraie conversation, pas la page d’accueil vide de claude.ai.</li>
+<li>Cliquez sur le bouton orange rond de téléchargement, à droite de la zone de message.</li>
+<li>Réglez « Messages » sur « All », « Human » ou « Assistant » (tous, humain ou assistant), cochez « Thinking » (réflexion) si vous le souhaitez, choisissez PDF, Markdown, JSON, texte brut, XML, CSV ou PNG, puis cliquez sur « Export ».</li>
+</ol>
+<p>Aucun compte n’est nécessaire pour exporter une discussion Claude en Markdown, texte, JSON, XML, CSV ou PNG. Ces exports d’une seule conversation sont illimités et n’envoient rien à nos serveurs. La connexion Google n’est demandée que pour le PDF et l’export groupé « Export All », qui partagent 3 exports par jour avec l’offre gratuite. Le texte des conversations ne fait jamais partie de cette connexion Google. Fonctionnement détaillé : <a href="/fr/comment-ca-marche/">comment ça marche</a>.</p>
+<p>Si le bouton orange est absent, l’onglet n’est pas sur l’URL d’une conversation claude.ai, la page doit encore être rechargée après l’installation, ou Download Claude conversations est cachée dans le menu en forme de pièce de puzzle de Chrome. Épinglez l’extension, puis actualisez. Le bouton orange n’apparaît jamais sur d’autres sites.</p>
+<p>La liste des formats mémorise le dernier choix. « Select » (sélectionner) permet de cocher des messages précis, et « Copy » (copier) place le Markdown, le texte, le JSON, le XML ou le CSV dans le presse-papiers au lieu de créer un fichier. Un fichier incomplet signifie généralement que la longue conversation claude.ai n’avait pas fini d’afficher l’arborescence des messages. Attendez, puis cliquez de nouveau sur « Export ».</p>
+<div class="callout callout-tip">
+  <p><strong>Une discussion ou tout le compte.</strong> Le bouton orange exporte la discussion ouverte. Pour de nombreux fichiers, ouvrez « View and Download All Conversations » (afficher et télécharger toutes les conversations) depuis la fenêtre de l’extension et lancez « Export All » (tout exporter). Settings → Privacy → Export data d’Anthropic (les libellés peuvent être traduits si claude.ai est en français) fournit un ZIP JSON différé du compte, ce n’est pas ce parcours Chrome.</p>
+</div>
+
+<h2 id="keep">Que conserve le fichier exporté ?</h2>
+<p>Une discussion Claude exportée avec Download Claude conversations conserve l’arborescence des messages déjà affichée sur claude.ai : auteurs, blocs de code, tableaux, réflexion en option, métadonnées et mise en page des artefacts. Ce n’est pas une capture de la barre latérale. Le PNG est l’option image ; le PDF est l’option paginée, générée dans le navigateur dans la version 1.16.2.</p>
+<p>Le copier-coller depuis claude.ai supprime l’indentation et écrase les tableaux. L’impression (Ctrl/Cmd+P) garde l’interface de claude.ai et coupe souvent un long bloc de code entre deux pages. Download Claude conversations conserve le langage des blocs de code et garde les tableaux sous forme de tableaux en Markdown, JSON et XML. Le PNG est une image de la conversation, pas un PDF paginé.</p>
+<p>Dans la version 1.16.2, la réflexion étendue est une case à cocher du panneau d’export, et les sources de recherche web ainsi que les étapes d’outils / MCP s’activent dans les paramètres. Les métadonnées peuvent inclure le titre, les horodatages et le modèle. Le filtre « Messages » limite le fichier à tous les messages, aux messages humains seuls ou à ceux de l’assistant seul, et « Select » permet de cocher des messages précis. La mise en page des artefacts (« Original », « Inline », « Nested », « Flat » : d’origine, intégrée, imbriquée ou à plat) se règle dans le tableau de bord pour « Export All ».</p>
+<div class="expert-quote">
+  <p>Nous avons construit l’export autour du bouton orange sur claude.ai : il écrit du PDF, du Markdown, du JSON, du texte, du XML, du CSV ou du PNG à partir de la conversation déjà à l’écran, sans l’envoyer en ligne. La version 1.16.2 génère aussi le PDF dans le navigateur.</p>
+  <footer>L’équipe Download Claude conversations</footer>
+</div>
+<p>On cherche aussi Claude Chat Downloader et Claude Conversation Downloader pour la même fiche Chrome. Certaines pages légales mentionnent encore Claude Exporter. Tous ces noms désignent Download Claude conversations, pas un second produit. Chercher « chat », « conversation » ou « discussion » n’est qu’une variante de formulation : c’est le même bouton orange.</p>
+
+<h2 id="formats">Comment exporter une discussion Claude en Markdown ?</h2>
+<p>C’est le parcours des rédacteurs : bouton orange, Markdown dans la liste, « Export ». Download Claude conversations produit aussi du PDF, du JSON, du texte brut, du XML, du CSV et du PNG à partir de la même conversation claude.ai. Le Markdown est illimité et ne demande aucun compte.</p>
+<table>
+  <caption>Formats produits par Download Claude conversations à partir d’une conversation claude.ai</caption>
+  <thead>
+    <tr>
+      <th scope="col">Format</th>
+      <th scope="col">Idéal pour</th>
+      <th scope="col">Ce que vous obtenez</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Markdown</td>
+      <td>Obsidian, GitHub, wikis</td>
+      <td>Titres, blocs de code, tableaux</td>
+    </tr>
+    <tr>
+      <td>JSON</td>
+      <td>Comparaisons, chaînes de traitement, outils</td>
+      <td>Arborescence des messages : voir le guide <a href="/fr/formats/json/">fichier de conversation JSON</a></td>
+    </tr>
+    <tr>
+      <td>Texte brut</td>
+      <td>Archive à coller n’importe où</td>
+      <td>Ordre de la conversation, sans balisage</td>
+    </tr>
+    <tr>
+      <td>XML</td>
+      <td>Systèmes qui exigent du XML</td>
+      <td>Échange structuré</td>
+    </tr>
+    <tr>
+      <td>CSV</td>
+      <td>Excel, Google Sheets, Numbers</td>
+      <td>Une ligne par message</td>
+    </tr>
+    <tr>
+      <td>PNG</td>
+      <td>Instantané visuel</td>
+      <td>Une seule image de la conversation</td>
+    </tr>
+    <tr>
+      <td>PDF</td>
+      <td>Partage, impression, clients</td>
+      <td>Fichier paginé généré dans le navigateur : <a href="/fr/conversation-claude-en-pdf/">conversation Claude en PDF</a></td>
+    </tr>
+  </tbody>
+</table>
+<p>Les rédacteurs choisissent généralement Markdown pour exporter leurs notes de discussion. Les développeurs choisissent plutôt JSON quand ils ont besoin d’un fichier lisible par une machine. Le texte brut est l’archive sans balisage. XML sert à l’échange de données qui exige des balises. Le CSV donne une ligne par message, pour un tableur. Le PNG est le fichier de type capture d’écran. Le PDF est le document paginé. Download Claude conversations n’ajoute pas d’export vers Word, Notion ou Google Docs dans la version 1.16.2.</p>
+<p>Si vous avez besoin d’une page paginée, choisissez PDF dans la même liste. Il est généré dans le navigateur, avec format de page, marges, mode clair ou sombre, numéros de page et table des matières. Marche à suivre : <a href="/fr/conversation-claude-en-pdf/">télécharger une conversation Claude en PDF</a>. Un PNG produit par Download Claude conversations est une seule image. Le Markdown d’une discussion exportée peut toujours être converti ensuite dans Word, Google Docs ou une application Markdown.</p>
+<p>Les téléchargements en Markdown, JSON, texte, XML, CSV et PNG sont illimités et ne demandent aucun compte : réexporter la même conversation claude.ai dans un second format ne coûte donc rien. Chaque PDF utilise un des 3 exports par jour de l’offre gratuite, avec une connexion Google. Pro, à 3,99 $ par mois ou 26,99 $ par an, supprime cette limite.</p>
+
+<h2 id="bulk">Peut-on exporter plusieurs discussions avec Export All ?</h2>
+<p>Oui. Ouvrez « View and Download All Conversations » depuis la fenêtre de l’extension, filtrez, puis cliquez sur « Export All » pour exporter vos discussions Claude dans un ZIP, avec un fichier par conversation. L’export groupé demande une connexion Google. Avec l’offre gratuite, chaque conversation du ZIP utilise un des 3 exports par jour, partagés avec le PDF. Pro, à 3,99 $ par mois ou 26,99 $ par an, supprime la limite de l’export groupé.</p>
+<p>Le tableau de bord liste l’historique claude.ai, avec une recherche par nom, des filtres (« All conversations », « New », « Updated », « Previously exported » : toutes, nouvelles, mises à jour, déjà exportées), les onglets « Chat » et « Cowork » et une recherche par projet. New signifie « pas encore enregistrée avec Download Claude conversations ». Previously exported suit les conversations déjà écrites sur le disque, pour qu’un second « Export All » puisse les ignorer. La recherche par projet reprend la façon dont vous regroupez vos conversations sur claude.ai.</p>
+<p>L’export groupé propose un sélecteur « Chat format » (format des conversations) avec les sept formats, PDF compris, les cases « Chats », « Thinking », « Metadata », « Tools » et « Sources » (conversations, réflexion, métadonnées, outils, sources) et la mise en page des artefacts (« Original », « Inline », « Nested », « Flat »). « Export All » n’est pas un ZIP allégé de tout le compte : c’est un seul ZIP, avec un fichier par conversation dans le format choisi. Export data d’Anthropic reste le ZIP JSON différé du compte.</p>
+<div class="callout callout-warn">
+  <p><strong>L’export groupé compte par conversation.</strong> Avec l’offre gratuite, « Export All » et le PDF partagent 3 exports par jour, et chaque conversation du ZIP en utilise un. Sélectionnez 40 conversations alors qu’il vous en reste 3 : tout le lot est bloqué, pas tronqué. Choisissez-en moins, attendez la remise à zéro de minuit UTC, ou passez à Pro pour 3,99 $ par mois ou 26,99 $ par an. Détails sur la limite partagée : <a href="/fr/exporter-historique-claude/">exporter tout l’historique avec Export All</a>.</p>
+</div>
+<p>« Export All » ne partage son quota quotidien qu’avec le PDF. Le Markdown, le texte, le JSON, le XML, le CSV et le PNG du bouton orange n’y touchent jamais : exporter une discussion Claude dans ces formats reste toujours gratuit. Le quota revient à zéro à minuit UTC. Pro se restaure sur un nouvel ordinateur avec le même compte Google, via Paddle.</p>
+
+<h2 id="session">Exporter une session Claude : Desktop ou Claude Code ?</h2>
+<p>Pas dans l’application Desktop ni dans le terminal Claude Code. Sur claude.ai, une session correspond à l’URL de la conversation ouverte, et exporter une session Claude signifie alors utiliser le bouton orange dans Chrome. Les sessions Cowork et Claude Code sur le web (claude.ai/code) s’ouvrent aussi sur claude.ai : elles s’exportent de la même façon. Claude Desktop n’affiche jamais le bouton orange. Claude Code dans le terminal utilise <code>/export</code> ou des fichiers JSONL dans <code>~/.claude/projects</code>.</p>
+<p>Si la conversation existe aussi sur votre compte claude.ai, ouvrez-la dans Chrome et exportez-la avec Download Claude conversations. Si elle n’existe que dans Claude Desktop, faites un copier-coller depuis l’application ou demandez Settings → Privacy → Export data sur le web. Comparaison : <a href="/fr/exporter-chat-claude-desktop/">exporter une conversation Claude Desktop</a>.</p>
+<p>Claude Code dans le terminal relève d’un autre parcours. Lancez-y <code>/export</code>, ou copiez les transcriptions JSONL depuis <code>~/.claude/projects</code>. Download Claude conversations ne lit pas ces fichiers et ne s’injecte pas dans l’outil en ligne de commande. Exporter une session d’agent dans le terminal passe par le disque ; guide : <a href="/fr/exporter-conversation-claude-code/">exporter une conversation Claude Code</a>.</p>
+<p>claude.ai dans un navigateur de téléphone n’est pas pris en charge non plus. Download Claude conversations nécessite Chrome sur ordinateur (ou un autre navigateur Chromium capable de charger la fiche du Chrome Web Store). Notre équipe ne propose pas d’application iOS ou Android en 2026. Ouvrez la conversation sur un ordinateur, puis utilisez le bouton orange ou « Export All ».</p>
+<p>Les espaces Team et Enterprise de claude.ai utilisent eux aussi des URL de conversation dans Chrome. Si un administrateur bloque les extensions, Download Claude conversations ne s’injectera pas : c’est une règle du navigateur, pas un format manquant. Le bouton orange n’apparaît qu’après un rechargement, sur l’URL d’une conversation que vous avez le droit d’ouvrir.</p>
+
+<h2 id="vs-official">Exporter une discussion ou utiliser Export data d’Anthropic ?</h2>
+<p>Export data d’Anthropic envoie par e-mail, après un délai, un ZIP JSON de tout le compte. Exporter une discussion Claude avec Download Claude conversations enregistre immédiatement la conversation ouverte en PDF, Markdown, JSON, texte, XML, CSV ou PNG. Le ZIP sert de sauvegarde. L’extension Chrome sert à obtenir tout de suite un fichier lisible depuis claude.ai.</p>
+<table>
+  <caption>Façons de sortir une conversation Claude de claude.ai</caption>
+  <thead>
+    <tr>
+      <th scope="col">Méthode</th>
+      <th scope="col">Idéal pour</th>
+      <th scope="col">Vous obtenez</th>
+      <th scope="col">Attente</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Download Claude conversations</td>
+      <td>Cette conversation ou une sélection groupée</td>
+      <td>PDF / MD / JSON / TXT / XML / CSV / PNG</td>
+      <td>Non : le fichier se télécharge dans Chrome</td>
+    </tr>
+    <tr>
+      <td>Settings → Privacy → Export data</td>
+      <td>Sauvegarde de tout le compte</td>
+      <td>ZIP JSON par e-mail</td>
+      <td>Oui : le lien expire ; pas de Markdown par conversation</td>
+    </tr>
+    <tr>
+      <td>Imprimer → Enregistrer au format PDF</td>
+      <td>Copie visuelle approximative</td>
+      <td>PDF de la page web</td>
+      <td>Non, mais la mise en page et le code se cassent souvent</td>
+    </tr>
+    <tr>
+      <td>Copier-coller</td>
+      <td>Une réponse courte</td>
+      <td>Ce que vous sélectionnez</td>
+      <td>Aucune structure pour une longue conversation</td>
+    </tr>
+  </tbody>
+</table>
+<p>Le ZIP officiel n’est pas une version plus soignée de l’export d’une discussion. C’est du JSON au niveau du compte. Vous ne pouvez ni choisir une conversation claude.ai ni demander du Markdown dans cette demande. À l’inverse, Download Claude conversations ne remplace pas ce ZIP si vous avez besoin de toutes les conversations oubliées dans une seule archive. Comparaison des méthodes : <a href="/fr/comment-exporter-conversation-claude/">comment exporter une conversation Claude</a>.</p>
+<p>Download Claude conversations n’est pas liée à Anthropic, PBC. Exporter une discussion avec cette extension ne modifie pas les conditions d’utilisation d’Anthropic. Le script de contenu utilise la session déjà ouverte sur claude.ai ; il ne se connecte pas à Anthropic avec d’autres identifiants. Respectez les règles d’Anthropic pour votre compte. La page produit formulée avec « conversation » : <a href="/fr/exporter-conversation-claude/">exporter une conversation Claude</a>.</p>
+
+<h2 id="cost">Combien coûte l’export d’une discussion Claude ?</h2>
+<p>Les exports Markdown, texte, JSON, XML, CSV et PNG sont gratuits et illimités, sans compte. Le PDF et l’export groupé « Export All » sont gratuits jusqu’à 3 par jour avec une connexion Google. Pro coûte 3,99 $ par mois ou 26,99 $ par an via Paddle et rend le PDF et l’export groupé illimités. Download Claude conversations ne facture pas par format. Toute offre claude.ai convient si Chrome peut ouvrir la conversation.</p>
+<p>Le compteur quotidien du PDF et de l’export groupé revient à zéro à minuit UTC. Pro se restaure sur un nouvel ordinateur quand vous vous connectez avec le même compte Google. Vous pouvez résilier à tout moment depuis la page Options de l’extension ou via Paddle. Paddle est le revendeur officiel ; notre équipe ne voit jamais les numéros de carte. Le premier paiement bénéficie d’une garantie satisfait ou remboursé de 14 jours, gérée par Paddle comme décrit sur la page des remboursements.</p>
+<p>Vous n’avez pas besoin de l’offre payante de claude.ai pour exporter une discussion. Il vous faut une connexion claude.ai capable de charger la conversation, plus Chrome. Team et Enterprise fonctionnent comme Free avec le bouton orange. Si Chrome a bloqué le téléchargement, autorisez les téléchargements depuis claude.ai avant de cliquer de nouveau sur « Export ».</p>
+<div class="callout callout-info">
+  <p><strong>Même besoin, recherches différentes.</strong> Exporter une discussion Claude, exporter une conversation Claude et exporter ses conversations Claude signifient tous « enregistrer cette conversation dans un fichier ». Cette page emploie les mots « discussion » et « session ». La page produit formulée avec « conversation » est une page sœur, pas une seconde extension.</p>
+</div>
+<p>Si un export échoue : attendez que la longue conversation soit entièrement chargée dans claude.ai, vérifiez la liste des formats (le dernier format utilisé reste sélectionné) et, pour le PDF, vérifiez combien il vous reste d’exports sur les 3 du jour. Un fichier PNG ou Markdown incomplet signifie généralement que la réponse était encore en cours d’affichage. Faites défiler la conversation, puis cliquez sur « Export » une fois la dernière réponse de l’assistant à l’écran.</p>
+<p>La version décrite ici est la 1.16.2, datée de septembre 2026. Les formats sont PDF, Markdown, texte brut, JSON, XML, CSV et PNG. Si cette liste change, ce guide sera mis à jour le jour même. D’ici là, n’attendez pas d’export Word, Notion ou Google Docs de Download Claude conversations sur claude.ai.</p>
+
+<h2 id="exporter">Discussion, conversation, chat : la même extension Chrome ?</h2>
+<p>Oui. « Exporter discussion Claude », « exporter conversation Claude » ou « comment exporter une conversation Claude » décrivent la même tâche : enregistrer une conversation claude.ai dans un fichier. Download Claude conversations est cette extension Chrome : bouton orange, sept formats, exports gratuits et illimités dans six d’entre eux. Certaines pages légales mentionnent encore Claude Exporter pour cette fiche.</p>
+<p>Beaucoup tapent aussi directement la formulation anglaise, « claude export conversation » ou « claude export chat ». Ces recherches désignent toujours le bouton orange sur l’URL d’une conversation claude.ai, ou « Export All » depuis « View and Download All Conversations ». Elles ne désignent ni la commande <code>/export</code> de Claude Code, ni le ZIP envoyé par e-mail par Anthropic, sauf si vous choisissez cette voie officielle.</p>
+<p>Pour exporter une conversation Claude sans extension : copier-coller, impression ou Settings → Privacy → Export data. Le copier-coller perd les tableaux. L’impression garde l’interface de claude.ai. Le ZIP est un JSON différé du compte. Download Claude conversations est la voie immédiate vers PDF, Markdown, JSON, texte, XML, CSV ou PNG, uniquement sur claude.ai.</p>
+<p>N’attendez pas de Download Claude conversations qu’elle apparaisse dans Claude Desktop ou dans le terminal Claude Code. Ces interfaces n’affichent jamais le bouton orange. Si vous cherchiez une option en ligne de commande, utilisez <code>/export</code> ou le JSONL sur le disque. Si vous attendiez un bouton dans l’application Mac, ouvrez la conversation synchronisée sur claude.ai dans Chrome.</p>
+
+<h2 id="faq">FAQ : exporter une discussion Claude</h2>
+<p>Ces questions portent sur l’export d’une discussion Claude : formats, limites, Claude Desktop, Claude Code, ZIP d’Anthropic et bouton orange sur claude.ai. Chaque réponse décrit Download Claude conversations 1.16.2. Les données structurées FAQPage dans l’en-tête de la page reprennent cette liste.</p>
+
+<h3>Que signifie « exporter une discussion Claude » sur ce site ?</h3>
+<p>Enregistrer une conversation claude.ai dans un fichier avec Download Claude conversations : bouton orange, choix du format, « Export ». C’est la même chose qu’« exporter une conversation Claude ». Ce n’est ni le ZIP envoyé par e-mail par Anthropic, ni la commande <code>/export</code> de Claude Code.</p>
+
+<h3>Exporter une discussion Claude, est-ce la même chose qu’Export data ?</h3>
+<p>Non. Settings → Privacy → Export data fournit par e-mail un ZIP JSON de tout le compte. Avec cette extension, l’export écrit immédiatement dans Chrome la discussion ouverte en PDF, Markdown, JSON, texte, XML, CSV ou PNG, ou une sélection « Export All » sous forme de ZIP.</p>
+
+<h3>Peut-on exporter une discussion Claude en PDF ?</h3>
+<p>Oui. Choisissez PDF dans la liste des formats et cliquez sur « Export ». Download Claude conversations génère le PDF dans le navigateur, sans boîte de dialogue d’impression. Le PDF demande une connexion Google et reste gratuit jusqu’à 3 par jour ; Pro le rend illimité. Guide : <a href="/fr/conversation-claude-en-pdf/">télécharger une conversation Claude en PDF</a>.</p>
+
+<h3>Faut-il Pro pour exporter une discussion Claude une seule fois ?</h3>
+<p>Non. Les exports Markdown, texte, JSON, XML, CSV et PNG sont gratuits et illimités, sans compte. Le PDF et l’export groupé « Export All » sont gratuits jusqu’à 3 par jour avec une connexion Google. Pro, à 3,99 $ par mois ou 26,99 $ par an, supprime cette limite.</p>
+
+<h3>L’export fonctionne-t-il avec toutes les offres claude.ai ?</h3>
+<p>Oui. Les offres claude.ai Free, Pro, Team ou Enterprise fonctionnent si vous pouvez ouvrir la conversation dans Chrome. Download Claude conversations ne nécessite pas d’offre payante chez Anthropic.</p>
+
+<h3>Exporter une discussion Claude fonctionne-t-il pour Claude Code ?</h3>
+<p>Seulement pour Claude Code sur le web. Les sessions sur claude.ai/code s’ouvrent sur claude.ai et s’exportent comme n’importe quelle conversation. Claude Code dans le terminal utilise <code>/export</code> ou des fichiers JSONL dans <code>~/.claude/projects</code>, et cette extension ne lit pas ces sessions locales.</p>
+
+<h3>Puis-je exporter une session Claude depuis Claude Desktop ?</h3>
+<p>Pas avec cette extension Chrome. Ouvrez la même conversation sur claude.ai si elle est synchronisée, ou faites un copier-coller, ou utilisez l’export officiel Export data. Claude Desktop n’affiche jamais le bouton orange.</p>
+
+<h3>Combien de discussions Claude puis-je exporter gratuitement ?</h3>
+<p>Un nombre illimité en Markdown, texte, JSON, XML, CSV et PNG, sans compte. Avec l’offre gratuite et une connexion Google, le PDF et « Export All » partagent 3 exports par jour ; chaque conversation d’un ZIP groupé compte pour un. Le compteur revient à zéro à minuit UTC. Pro supprime la limite et se restaure via la connexion Google.</p>
+
+<h3>Où se trouve le bouton orange pour exporter une discussion Claude ?</h3>
+<p>À droite de la zone de message, sur l’URL d’une conversation claude.ai, après avoir installé Download Claude conversations et rechargé la page. Il n’apparaît pas sur la page d’accueil vide ni dans Claude Desktop.</p>
+
+<h3>L’export envoie-t-il mes discussions en ligne ?</h3>
+<p>Non. Chaque format, PDF compris, est généré dans le navigateur puis transmis à l’API de téléchargement de Chrome. Les exports Markdown, texte, JSON, XML, CSV et PNG ne nous envoient rien. Une fois que vous êtes connecté pour le PDF, l’export groupé ou Pro, notre serveur voit le quota ou le statut d’abonnement et votre adresse e-mail Google, jamais le contenu des conversations.</p>
+
+<h3>Dans quels formats peut-on exporter une discussion Claude ?</h3>
+<p>Sept : PDF, Markdown, texte brut, JSON, XML, CSV et PNG, les mêmes sept pour une conversation et pour « Export All ». Pas d’export Word, Notion ou Google Docs dans la version 1.16.2.</p>
+</article>
+</main>
+<section class="final-cta page-cta" aria-label="Installer">
+  <div class="wrap">
+    <div class="final-cta-panel">
+      <p class="final-kicker">Download Claude conversations</p>
+      <h2>Installez l’extension et exportez une discussion Claude en quelques secondes</h2>
+      <p>Transformez vos échanges importants avec Claude en fichiers PDF, Markdown, JSON, texte, XML, CSV ou PNG, localement, depuis Chrome.</p>
+      <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=fr-export-conversation" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Ajouter à Chrome</a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="logo" href="/fr/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
+      <p class="legal-note">Extension Chrome pour télécharger vos conversations Claude.ai en PDF, Markdown, JSON, texte brut, CSV, XML ou PNG.</p>
+    </div>
+    <div>
+      <h2>Installer</h2>
+      <a class="install-link" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=fr-footer" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Extension Chrome</a>
+    </div>
+    <div>
+      <h2>Produit</h2>
+      <a href="/fr/fonctionnalites/">Fonctionnalités</a>
+      <a href="/fr/formats/">Formats</a>
+      <a href="/fr/exporter-historique-claude/">Exporter tout l’historique</a>
+      <a href="/fr/comment-ca-marche/">Comment ça marche</a>
+    </div>
+    <div>
+      <h2>Guides</h2>
+      <a href="/fr/telecharger-conversation-claude/">Télécharger une conversation Claude</a>
+      <a href="/fr/comment-exporter-conversation-claude/">Comment exporter une conversation Claude</a>
+      <a href="/fr/exporter-conversation-claude/">Exporter une conversation Claude</a>
+      <a href="/fr/extracteur-conversation-claude/">Extracteur de conversations Claude</a>
+      <a href="/fr/exporter-conversation-claude-code/">Exporter une conversation Claude Code</a>
+      <a href="/fr/conversation-claude-en-pdf/">Conversation Claude en PDF</a>
+      <a href="/fr/exporter-chat-claude-desktop/">Exporter depuis Claude Desktop</a>
+      <a href="/fr/exporter-discussion-claude/">Exporter une discussion Claude</a>
+      <a href="/fr/sauvegarder-conversation-claude/">Sauvegarder une conversation Claude</a>
+      <a href="/fr/telecharger-chat-claude/">Télécharger un chat Claude</a>
+    </div>
+    <div>
+      <h2>Mentions légales</h2>
+      <a href="/fr/a-propos/">À propos</a>
+      <a href="/fr/a-propos/#contact">Contact</a>
+      <a href="/privacy/" hreflang="en">Confidentialité (en anglais)</a>
+      <a href="/terms/" hreflang="en">Conditions (en anglais)</a>
+      <a href="/refund/" hreflang="en">Remboursements (en anglais)</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Download Claude conversations. Tous droits réservés.</div>
+    <div>
+      <a href="/privacy/" hreflang="en">Politique de confidentialité (en anglais)</a>
+      <a href="/terms/" hreflang="en">Conditions d’utilisation (en anglais)</a>
+      <a href="/refund/" hreflang="en">Remboursements (en anglais)</a>
+    </div>
+  </div>
+  <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/claude-export-conversation/" hreflang="en" lang="en">English</a> <a href="/de/claude-unterhaltung-exportieren/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/exporter-discussion-claude/" hreflang="fr" lang="fr">Français</a> <a href="/nl/claude-gesprek-exporteren/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/exportera-claude-konversation/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/eksportere-claude-samtale/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/eksporter-claude-samtale/" hreflang="da" lang="da">Dansk</a> <a href="/fi/claude-keskustelun-vienti/" hreflang="fi" lang="fi">Suomi</a> <a href="/ja/claude-export-conversation/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/claude-export-conversation/" hreflang="ko" lang="ko">한국어</a> <a href="/he/claude-export-conversation/" hreflang="he" lang="he">עברית</a> <a href="/ar/claude-export-conversation/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
+  <p class="disclaimer">Conversations traitées dans votre navigateur · Connexion Google uniquement pour le PDF, l’export groupé et Pro · Sans lien avec Anthropic, PBC. Claude est une marque d’Anthropic. Extension Chrome indépendante, pas un produit officiel d’Anthropic. Assistance : <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

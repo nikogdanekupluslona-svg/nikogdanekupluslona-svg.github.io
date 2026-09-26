@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Claude Chat Downloader – ilmainen Chrome-laajennus</title>
+  <meta name="description" content="Claude.ai:ssa ei ole latauspainiketta. Vie Claude-chatit PDF-, Markdown-, JSON-, teksti-, CSV-, XML- tai PNG-muotoon – ilmaiseksi, useimmat ilman tiliä.">
+  <link rel="canonical" href="https://chat-downloader.com/fi/">
+  <!-- i18n:head -->
+  <link rel="alternate" hreflang="en" href="https://chat-downloader.com/">
+  <link rel="alternate" hreflang="de" href="https://chat-downloader.com/de/">
+  <link rel="alternate" hreflang="fr" href="https://chat-downloader.com/fr/">
+  <link rel="alternate" hreflang="nl" href="https://chat-downloader.com/nl/">
+  <link rel="alternate" hreflang="sv" href="https://chat-downloader.com/sv/">
+  <link rel="alternate" hreflang="nb" href="https://chat-downloader.com/nb/">
+  <link rel="alternate" hreflang="da" href="https://chat-downloader.com/da/">
+  <link rel="alternate" hreflang="fi" href="https://chat-downloader.com/fi/">
+  <link rel="alternate" hreflang="ja" href="https://chat-downloader.com/ja/">
+  <link rel="alternate" hreflang="ko" href="https://chat-downloader.com/ko/">
+  <link rel="alternate" hreflang="he" href="https://chat-downloader.com/he/">
+  <link rel="alternate" hreflang="ar" href="https://chat-downloader.com/ar/">
+  <link rel="alternate" hreflang="x-default" href="https://chat-downloader.com/">
+  <meta property="og:locale" content="fi_FI">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="sv_SE">
+  <meta property="og:locale:alternate" content="nb_NO">
+  <meta property="og:locale:alternate" content="da_DK">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <meta property="og:locale:alternate" content="he_IL">
+  <meta property="og:locale:alternate" content="ar_AE">
+  <!-- /i18n:head -->
+  <meta property="og:title" content="Claude Chat Downloader – ilmainen Chrome-laajennus">
+  <meta property="og:description" content="Claude.ai:ssa ei ole latauspainiketta. Vie Claude-chatit PDF-, Markdown-, JSON-, teksti-, CSV-, XML- tai PNG-muotoon – ilmaiseksi, useimmat ilman tiliä.">
+  <meta property="og:url" content="https://chat-downloader.com/fi/">
+  <meta property="og:image" content="https://chat-downloader.com/assets/widget-guide.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chat Downloader">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Claude Chat Downloader – ilmainen Chrome-laajennus">
+  <meta name="twitter:description" content="Claude.ai:ssa ei ole latauspainiketta. Vie Claude-chatit PDF-, Markdown-, JSON-, teksti-, CSV-, XML- tai PNG-muotoon – ilmaiseksi, useimmat ilman tiliä.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME1YXGZKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GME1YXGZKR');
+  </script>
+  
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Voiko Claude-keskustelun ladata claude.ai:sta?","acceptedAnswer":{"@type":"Answer","text":"Ei sisäänrakennetulla painikkeella. Asenna Download Claude conversations Chrome Web Storesta, avaa keskustelu ja vie se tiedostoksi."}},{"@type":"Question","name":"Onko Claude-chattien lataaminen ilmaista?","acceptedAnswer":{"@type":"Answer","text":"On. Markdown-, pelkkä teksti-, JSON-, XML-, CSV- ja PNG-viennit ovat rajattomia eivätkä vaadi tiliä. PDF- ja ZIP-joukkoviennit pyytävät Google-kirjautumista, ja ne ovat ilmaisia enintään 3 kertaa päivässä. Pro hintaan 3,99 $/kk tai 26,99 $/vuosi poistaa tämän rajan."}},{"@type":"Question","name":"Missä selaimissa se toimii?","acceptedAnswer":{"@type":"Answer","text":"Tietokoneen Chromessa ja Chromium-pohjaisissa selaimissa, jotka asentavat laajennuksia Chrome Web Storesta. Mobiilisovellusta ei ole, eikä laajennus toimi Claude Desktop -sovelluksessa."}},{"@type":"Question","name":"Miten peruutan Pron ja saanko rahat takaisin?","acceptedAnswer":{"@type":"Answer","text":"Voit perua tilauksen milloin tahansa laajennuksen asetussivulta (Options) kohdasta ”Cancel subscription” (peru tilaus) tai Paddlen kautta. Ensimmäisellä maksullasi on 14 päivän rahat takaisin -takuu ilman kysymyksiä."}},{"@type":"Question","name":"Onko tämä sama asia kuin Clauden Export data?","acceptedAnswer":{"@type":"Answer","text":"Ei. Anthropicin Settings → Privacy → Export data (valikoiden nimet voivat näkyä suomeksi, jos claude.ai on asetettu suomen kielelle) lähettää sähköpostiin koko tilin ZIP-paketin (JSON). Tämä laajennus lataa avoimen keskustelun – tai joukkovalinnan – luettavina tiedostoina heti."}},{"@type":"Question","name":"Tallennatteko Claude-keskusteluni?","acceptedAnswer":{"@type":"Answer","text":"Emme. Jokainen muoto, myös PDF, rakennetaan selaimessasi, eikä keskustelujen teksti koskaan päädy palvelimillemme. Jos kirjaudut Googlella PDF:ää, joukkovientiä tai Pro-tilausta varten, tallennamme sähköpostiosoitteen vain päiväkiintiön laskemiseen ja tilauksesi liittämiseen."}},{"@type":"Question","name":"Onko ”lataa Claude-keskustelu” eri asia kuin ”claude chat export”?","acceptedAnswer":{"@type":"Answer","text":"Sama tehtävä, eri sanamuoto – suomeksi tai englanniksi. Kummassakin tapauksessa käytät claude.ai:n oranssia painiketta."}},{"@type":"Question","name":"Voiko sillä viedä PDF-tiedoston?","acceptedAnswer":{"@type":"Answer","text":"Voi. Valitse vientipaneelista PDF ja aseta sivukoko, marginaalit, vaalea tai tumma tila, fontti, sivunumerot ja sisällysluettelo. PDF vaatii Google-kirjautumisen; ilmaisversioon sisältyy 3 PDF- tai joukkovientiä päivässä, ja Prossa niitä on rajattomasti. Koko ohje: lataa Claude-chat PDF-muodossa."}},{"@type":"Question","name":"Toimiiko se Claude Pro- ja Team-tileillä?","acceptedAnswer":{"@type":"Answer","text":"Kyllä, jos voit avata keskustelun selaimessa claude.ai:ssa. Emme ole Anthropic."}},{"@type":"Question","name":"Miten tallennan Claude-keskustelun?","acceptedAnswer":{"@type":"Answer","text":"Asenna ilmainen Chrome-laajennus, avaa keskustelu claude.ai:ssa, napsauta oranssia painiketta, valitse muoto ja napsauta Export. Markdown, teksti, JSON, XML, CSV ja PNG eivät vaadi tiliä. Näin Claude-keskustelu tallentuu oikeaksi tiedostoksi. Muut kaksi vaihtoehtoa ovat sivun tulostaminen ja Anthropicin tilin ZIP-paketti – vertailu löytyy oppaasta näin lataat Claude-keskustelun."}},{"@type":"Question","name":"Lataako tämä Claude Code -keskusteluja?","acceptedAnswer":{"@type":"Answer","text":"Vain ne, jotka ovat claude.ai:ssa. Claude Code on the web (claude.ai/code) ja Cowork-istunnot viedään kuten mikä tahansa chat. Paikallisia terminaali-istuntoja laajennus ei lue; niissä käytetään komentoa /export tai levyllä olevia JSONL-tiedostoja – katso Claude Code -vienti."}},{"@type":"Question","name":"Liittyykö Download Claude conversations Anthropiciin?","acceptedAnswer":{"@type":"Answer","text":"Ei. Claude on Anthropic, PBC:n tavaramerkki. Tämä on itsenäinen Chrome-laajennus, ei Anthropicin virallinen tuote."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Chat Downloader","alternateName":["Claude Chat Downloader","Claude Conversation Downloader","chatdownloader"],"url":"https://chat-downloader.com/fi/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Chat Downloader","url":"https://chat-downloader.com","logo":"https://chat-downloader.com/assets/apple-touch-icon.png","sameAs":["https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Claude Chat Downloader","alternateName":["Download Claude conversations","Claude Conversation Downloader"],"applicationCategory":"BrowserApplication","operatingSystem":"Chrome","softwareVersion":"1.16.2","url":"https://chat-downloader.com","downloadUrl":"https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak","offers":[{"@type":"Offer","name":"Ilmainen","price":"0","priceCurrency":"USD","description":"Rajattomat Markdown-, teksti-, JSON-, XML-, CSV- ja PNG-viennit; 3 PDF- tai joukkovientiä päivässä"},{"@type":"Offer","name":"Pro kuukausittain","price":"3.99","priceCurrency":"USD"},{"@type":"Offer","name":"Pro vuosittain","price":"26.99","priceCurrency":"USD"}],"description":"Claude.ai:ssa ei ole latauspainiketta. Vie Claude-chatit PDF-, Markdown-, JSON-, teksti-, CSV-, XML- tai PNG-muotoon – ilmaiseksi, useimmat ilman tiliä."}</script>
+</head>
+<body class="home">
+<a class="skip" href="#main">Siirry sisältöön</a>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a class="logo" href="/fi/">
+        <img src="/assets/icon.svg" alt="">
+        <span>Download Claude conversations</span>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="/fi/lataa-claude-keskustelu/">Lataaminen</a><a href="/fi/nain-viet-claude-chatin/">Vienti</a><a href="/fi/vie-kaikki-claude-keskustelut/">Kaikki kerralla</a><a href="/fi/formaatit/">Muodot</a><a href="/fi/#faq">UKK</a>
+        <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=fi-home" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Lisää Chromeen</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=fi-home" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Lisää Chromeen</a>
+      <!-- i18n:switch --><details class="lang-switch"><summary aria-label="Kieli: Suomi"><svg class="lang-globe" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span class="lang-name">Suomi</span><span class="lang-code" aria-hidden="true">fi</span></summary><ul><li><a href="/" hreflang="en" lang="en">English</a></li><li><a href="/de/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/" hreflang="fr" lang="fr">Français</a></li><li><a href="/nl/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/sv/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="/nb/" hreflang="nb" lang="nb">Norsk</a></li><li><a href="/da/" hreflang="da" lang="da">Dansk</a></li><li><a href="/fi/" hreflang="fi" lang="fi" aria-current="true">Suomi</a></li><li><a href="/ja/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/ko/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/he/" hreflang="he" lang="he">עברית</a></li><li><a href="/ar/" hreflang="ar" lang="ar">العربية</a></li></ul></details><!-- /i18n:switch -->
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Valikko">☰</button>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="landing">
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <h1>Claude Chat Downloader claude.ai:lle</h1>
+      <p class="hero-sub">Tallenna Claude-keskustelut PDF-, Markdown-, JSON-, teksti-, CSV-, XML- tai PNG-muodossa</p>
+      <p class="hero-desc">Claude.ai:ssa ei ole omaa painiketta yksittäisen keskustelun lataamiseen. <strong>Download Claude conversations</strong> – ilmainen Chrome-laajennus, jota kutsutaan myös nimillä <strong>Claude Chat Downloader</strong> ja <strong>Claude Conversation Downloader</strong> – vie avoimen chatin tai <a href="/fi/vie-kaikki-claude-keskustelut/">koko historiasi</a> PDF-, Markdown-, JSON-, pelkkä teksti-, CSV-, XML- tai PNG-tiedostoksi. Tiedostot luodaan selaimessasi, eivätkä useimmat viennit vaadi tiliä. Ohje: <a href="/fi/lataa-claude-keskustelu/">näin lataat Claude-keskustelun</a>. Käytätkö Claude Codea päätteessä? Silloin tarvitset <a href="/fi/claude-code-keskustelun-vienti/">Claude Code -viennin</a>, et tätä laajennusta.</p>
+      <div class="hero-actions">
+        <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=fi-home_hero" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="22" height="22"> Lisää Chromeen – se on ilmainen</a>
+        <a class="hero-link" href="#how">Katso, miten se toimii ↓</a>
+      </div>
+      <ul class="hero-trust">
+        <li>Rajattomat ilmaiset viennit 6 muodossa</li>
+        <li>Tiliä ei tarvita</li>
+        <li>Keskustelut pysyvät selaimessasi</li>
+        <li>Pro: 14 päivän rahat takaisin</li>
+      </ul>
+      <p class="platforms-kicker">Tallenna Claude-chat muodossa</p>
+      <ul class="format-chips">
+        <li><a href="/fi/claude-keskustelu-pdf/">PDF</a></li>
+        <li><a href="/fi/formaatit/markdown/">Markdown</a></li>
+        <li><a href="/fi/formaatit/json/">JSON</a></li>
+        <li><a href="/fi/formaatit/">Pelkkä teksti</a></li>
+        <li><a href="/fi/formaatit/">CSV</a></li>
+        <li><a href="/fi/formaatit/xml/">XML</a></li>
+        <li><a href="/fi/formaatit/png/">PNG</a></li>
+      </ul>
+      <p class="platforms-note"><img src="/assets/images/claude.svg" alt="" width="16" height="16"> Toimii claude.ai:ssa Free-, Pro-, Team- ja Enterprise-tilauksilla – chatit, projektit ja Cowork-istunnot, yksi keskustelu tai koko historia kerralla.</p>
+    </div>
+  </section>
+
+  <section class="steps-band" id="how">
+    <div class="wrap">
+      <h2 class="section-title">Näin lataat Claude-chatin 3 vaiheessa</h2>
+      <ol class="steps">
+        <li>
+          <span class="step-num" aria-hidden="true">1</span>
+          <h3>Lisää laajennus</h3>
+          <p>Asenna <strong>Download Claude conversations</strong> Chrome Web Storesta ja kiinnitä se. Siihen menee noin kymmenen sekuntia.</p>
+        </li>
+        <li>
+          <span class="step-num" aria-hidden="true">2</span>
+          <h3>Avaa chat claude.ai:ssa</h3>
+          <p>Viestikentän oikealle puolelle ilmestyy oranssi latauspainike. Jos haluat viedä monta chattia, avaa <strong>View and Download All Conversations</strong> (näytä ja lataa kaikki keskustelut).</p>
+        </li>
+        <li>
+          <span class="step-num" aria-hidden="true">3</span>
+          <h3>Valitse muoto ja vie</h3>
+          <p>Valitse PDF, Markdown, JSON, teksti, CSV, XML tai PNG ja napsauta <strong>Export</strong> (vie). Tiliä ei tarvita – Google-kirjautumista pyydetään vain PDF- ja joukkovienneissä.</p>
+        </li>
+      </ol>
+      <p class="steps-more">Koko ohje kuvakaappauksineen: <a href="/fi/lataa-claude-keskustelu/">näin lataat Claude-keskustelun</a>.</p>
+    </div>
+  </section>
+
+  <section class="features-block" id="features">
+    <div class="wrap">
+      <h2 class="section-title">6 keskeistä ominaisuutta Claude-chattien lataamiseen</h2>
+      <article class="feature-row">
+        <div class="feature-copy">
+          <span class="num" aria-hidden="true">01</span>
+          <h3>Vienti PDF-, Markdown-, JSON-, CSV- ja muihin muotoihin</h3>
+          <p>Lataa Claude-chat oikeana tiedostona – ei kuvakaappauksena verkkosivusta. PDF lukemiseen ja jakamiseen, Markdown muistiinpanoihin, JSON kehittäjille, CSV taulukkolaskentaan, pelkkä teksti yksinkertaisimpaan arkistoon, XML tiedonsiirtoon ja PNG visuaaliseksi tilannekuvaksi. Voit myös painaa <strong>Copy</strong> (kopioi), jolloin tulos siirtyy leikepöydälle.</p>
+        </div>
+        <div class="feature-media">
+          <img src="/assets/widget-guide.png" alt="Oranssi latauspainike claude.ai:n viestikentän oikealla puolella">
+        </div>
+      </article>
+      <article class="feature-row reverse">
+        <div class="feature-copy">
+          <span class="num" aria-hidden="true">02</span>
+          <h3>Lataa Claude-chatit kerralla</h3>
+          <p>Avaa <strong>View and Download All Conversations</strong> (näytä ja lataa kaikki keskustelut), niin näet historiasi, voit hakea nimellä, suodattaa projektin tai Coworkin mukaan ja napsauttaa <strong>Export All</strong> (vie kaikki). Yksi ZIP-tiedosto sen sijaan, että kävisit välilehdet läpi yksi kerrallaan – ilmaisversiossa 3 chattia päivässä, Prossa rajattomasti.</p>
+        </div>
+        <div class="feature-media">
+          <img src="/assets/browse-guide.jpg" alt="Hallintapaneeli, jossa Claude-keskustelut, haku ja Export All">
+        </div>
+      </article>
+      <article class="feature-row">
+        <div class="feature-copy">
+          <span class="num" aria-hidden="true">03</span>
+          <h3>Koodi, taulukot ja artefaktit säilyvät</h3>
+          <p>Vientimoottori jäsentää viestipuun, joten koodilohkojen sisennykset säilyvät, taulukot pysyvät taulukkoina ja artefaktien asettelu voi olla ”Original”, ”Inline”, ”Nested” tai ”Flat” (alkuperäinen, upotettu, sisäkkäinen tai litteä).</p>
+        </div>
+        <div class="feature-media">
+          <img src="/assets/widget-guide.png" alt="Sivulle upotettu vientityökalu Claude-keskustelussa">
+        </div>
+      </article>
+      <article class="feature-row reverse">
+        <div class="feature-copy">
+          <span class="num" aria-hidden="true">04</span>
+          <h3>Valitse, mitä tiedostoon tulee</h3>
+          <p>Vie koko keskustelu, vain omat kehotteesi, vain Clauden vastaukset tai pelkät viestit, jotka rastitat <strong>Select</strong>-toiminnolla (valitse). Sisällytä laajennettu ajattelu, kun tarvitset jäljitettävyyttä, tai jätä se pois. Otsikot, aikaleimat ja mallin metatiedot voivat kulkea mukana samassa tiedostossa.</p>
+        </div>
+        <div class="feature-media">
+          <img src="/assets/pin-guide.png" alt="Kiinnitä laajennus, niin latausvalinta on aina yhden napsautuksen päässä">
+        </div>
+      </article>
+      <article class="feature-row">
+        <div class="feature-copy">
+          <span class="num" aria-hidden="true">05</span>
+          <h3>Hae ja suodata ennen vientiä</h3>
+          <p>Rajaa kirjasto uusiin keskusteluihin, jo vietyihin keskusteluihin tai yhteen Claude-projektiin ja vie vain valitsemasi.</p>
+        </div>
+        <div class="feature-media">
+          <img src="/assets/browse-guide.jpg" alt="Keskusteluluettelo, jossa haku ja suodattimet">
+        </div>
+      </article>
+      <article class="feature-row reverse">
+        <div class="feature-copy">
+          <span class="num" aria-hidden="true">06</span>
+          <h3>Tiedostot luodaan paikallisesti selaimessa</h3>
+          <p>Jokainen tiedosto, myös PDF, kootaan laitteellasi ja ladataan levylle. Useimmat viennit eivät vaadi tiliä. Google-kirjautumista käytetään vain PDF- ja joukkovientien laskemiseen ja Pro-tilauksen liittämiseen – sillä ei koskaan lähetetä chatin tekstiä palvelimillemme.</p>
+        </div>
+        <div class="feature-media">
+          <img src="/assets/widget-guide.png" alt="Vientipaneeli Clauden viestikentän vieressä">
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="value-band">
+    <div class="wrap">
+      <h2>Claude chat downloader, joka säilyttää muotoilun</h2>
+      <div class="value-grid">
+        <div class="value-media">
+          <img id="value-shot" src="/assets/widget-guide.png" alt="Download Claude conversations claude.ai:ssa">
+        </div>
+        <ul class="checks" id="value-checks">
+          <li class="is-active" data-shot="/assets/widget-guide.png" data-alt="Yksi laajennus claude.ai:lle">
+            <span class="check-icon" aria-hidden="true">✓</span>
+            <span>
+              <strong>Yksi laajennus claude.ai:lle</strong>
+              <span>Asenna kerran ja vie avoin keskustelu tai koko historia.</span>
+            </span>
+          </li>
+          <li data-shot="/assets/browse-guide.jpg" data-alt="Muotoilu säilyy viedyissä tiedostoissa">
+            <span class="check-icon" aria-hidden="true">✓</span>
+            <span>
+              <strong>Muotoilu säilyy</strong>
+              <span>Koodi, taulukot ja artefaktit selviävät viennistä ehjinä.</span>
+            </span>
+          </li>
+          <li data-shot="/assets/pin-guide.png" data-alt="Keskustelut pysyvät laitteellasi">
+            <span class="check-icon" aria-hidden="true">✓</span>
+            <span>
+              <strong>Mitään ei lähetetä varmuuskopioksi</strong>
+              <span>Tiedostot luodaan paikallisesti Chromessa.</span>
+            </span>
+          </li>
+          <li data-shot="/assets/widget-guide.png" data-alt="Seitsemän vientimuotoa">
+            <span class="check-icon" aria-hidden="true">✓</span>
+            <span>
+              <strong>Seitsemän muotoa</strong>
+              <span>PDF, Markdown, JSON, pelkkä teksti, CSV, XML ja PNG.</span>
+            </span>
+          </li>
+          <li data-shot="/assets/browse-guide.jpg" data-alt="Pitkät Claude-keskustelut">
+            <span class="check-icon" aria-hidden="true">✓</span>
+            <span>
+              <strong>Pitkät keskustelut</strong>
+              <span>Tehty kokonaisille keskusteluille, ei yhdelle kopioidulle viestille.</span>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="usecases-band" id="use-cases">
+    <div class="wrap">
+      <h2 class="section-title">Missä muodossa Claude-chat kannattaa ladata?</h2>
+      <div class="cards usecases">
+        <a class="card" href="/fi/claude-keskustelu-pdf/">
+          <span class="card-tag">PDF</span>
+          <h3>Lue, tulosta tai lähetä</h3>
+          <p>Sivutettu tiedosto valitsemallasi sivukoolla, vaalealla tai tummalla teemalla, fontilla ja sisällysluettelolla.</p>
+        </a>
+        <a class="card" href="/fi/formaatit/markdown/">
+          <span class="card-tag">Markdown</span>
+          <h3>Muistiinpanot Obsidianissa tai Notionissa</h3>
+          <p>Otsikot, koodilohkot ja taulukot siirtyvät siististi muistiinpanokansioon tai dokumentaatiorepoon.</p>
+        </a>
+        <a class="card" href="/fi/formaatit/json/">
+          <span class="card-tag">JSON</span>
+          <h3>Skriptit, datajoukot ja RAG</h3>
+          <p>Jäsennellyt viestit rooleineen ja metatietoineen, valmiina koodin luettaviksi.</p>
+        </a>
+        <a class="card" href="/fi/formaatit/">
+          <span class="card-tag">Pelkkä teksti</span>
+          <h3>Yksinkertainen arkisto</h3>
+          <p>Aukeaa missä tahansa, siitä on nopea hakea, eikä se rikkoudu, vaikka työkalut vaihtuvat.</p>
+        </a>
+        <a class="card" href="/fi/formaatit/">
+          <span class="card-tag">CSV</span>
+          <h3>Taulukot ja läpikäynti</h3>
+          <p>Yksi rivi viestiä kohden Exceliin, Google Sheetsiin tai Numbersiin.</p>
+        </a>
+        <a class="card" href="/fi/formaatit/xml/">
+          <span class="card-tag">XML</span>
+          <h3>Tuonti muihin järjestelmiin</h3>
+          <p>Tageilla merkityt viestit putkiin ja työkaluihin, jotka odottavat XML:ää.</p>
+        </a>
+        <a class="card" href="/fi/formaatit/png/">
+          <span class="card-tag">PNG</span>
+          <h3>Jaa visuaalinen tilannekuva</h3>
+          <p>Yksi kuva keskustelusta diaan, tikettiin tai viestiin.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="pricing-band" id="pricing">
+    <div class="wrap">
+      <h2 class="section-title">Ilmainen arjen vienteihin. Pro rajattomaan PDF- ja joukkovientiin.</h2>
+      <div class="plans">
+        <div class="plan">
+          <h3>Ilmainen</h3>
+          <p class="plan-price">0 $</p>
+          <ul>
+            <li>Rajattomat Markdown-, teksti-, JSON-, XML-, CSV- ja PNG-viennit</li>
+            <li>Ei tiliä, ei rekisteröitymistä</li>
+            <li>3 PDF- tai joukkovientiä päivässä (Google-kirjautuminen)</li>
+            <li>Viestien valinta ja lähettäjäsuodattimet</li>
+          </ul>
+          <a class="btn btn-ghost" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=fi-home_pricing_free" target="_blank" rel="noopener noreferrer">Lisää Chromeen</a>
+        </div>
+        <div class="plan plan-pro">
+          <h3>Pro</h3>
+          <p class="plan-price">3,99 $<span>/kk</span></p>
+          <p class="plan-alt">tai 26,99 $/vuosi – noin 2,25 $ kuukaudessa</p>
+          <ul>
+            <li>Rajattomat PDF-viennit</li>
+            <li>Koko historian rajaton joukkovienti</li>
+            <li>Palautuu millä tahansa tietokoneella samalla Google-tilillä</li>
+            <li>Peru milloin tahansa · <a href="/refund/">14 päivän rahat takaisin -takuu</a></li>
+          </ul>
+          <a class="btn btn-primary" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=fi-home_pricing_pro" target="_blank" rel="noopener noreferrer">Asenna ja kokeile ensin ilmaiseksi</a>
+        </div>
+      </div>
+      <p class="plans-note">Maksut käsittelee Paddle. Emme koskaan näe korttitietojasi.</p>
+    </div>
+  </section>
+
+  <section class="faq-band" id="faq">
+    <div class="wrap narrow">
+      <h2 class="section-title">Usein kysytyt kysymykset</h2>
+      <div class="faq-list">
+        <details open>
+          <summary>Voiko Claude-keskustelun ladata claude.ai:sta?</summary>
+          <p>Ei sisäänrakennetulla painikkeella. Asenna <strong>Download Claude conversations</strong> <a href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=fi-home" target="_blank" rel="noopener noreferrer">Chrome Web Storesta</a>, avaa keskustelu ja vie se tiedostoksi.</p>
+        </details>
+        <details>
+          <summary>Onko Claude-chattien lataaminen ilmaista?</summary>
+          <p>On. Markdown-, pelkkä teksti-, JSON-, XML-, CSV- ja PNG-viennit ovat rajattomia eivätkä vaadi tiliä. PDF- ja ZIP-joukkoviennit pyytävät Google-kirjautumista, ja ne ovat ilmaisia enintään 3 kertaa päivässä. <a href="#pricing">Pro</a> hintaan 3,99 $/kk tai 26,99 $/vuosi poistaa tämän rajan.</p>
+        </details>
+        <details>
+          <summary>Missä selaimissa se toimii?</summary>
+          <p>Tietokoneen Chromessa ja Chromium-pohjaisissa selaimissa, jotka asentavat laajennuksia Chrome Web Storesta. Mobiilisovellusta ei ole, eikä laajennus toimi Claude Desktop -sovelluksessa.</p>
+        </details>
+        <details>
+          <summary>Miten peruutan Pron ja saanko rahat takaisin?</summary>
+          <p>Voit perua tilauksen milloin tahansa laajennuksen asetussivulta (Options) kohdasta ”Cancel subscription” (peru tilaus) tai Paddlen kautta. Ensimmäisellä maksullasi on <a href="/refund/">14 päivän rahat takaisin -takuu</a> ilman kysymyksiä.</p>
+        </details>
+        <details>
+          <summary>Onko tämä sama asia kuin Clauden Export data?</summary>
+          <p>Ei. Anthropicin Settings → Privacy → Export data (valikoiden nimet voivat näkyä suomeksi, jos claude.ai on asetettu suomen kielelle) lähettää sähköpostiin koko tilin ZIP-paketin (JSON). Tämä laajennus lataa avoimen keskustelun – tai joukkovalinnan – luettavina tiedostoina heti.</p>
+        </details>
+        <details>
+          <summary>Tallennatteko Claude-keskusteluni?</summary>
+          <p>Emme. Jokainen muoto, myös PDF, rakennetaan selaimessasi, eikä keskustelujen teksti koskaan päädy palvelimillemme. Jos kirjaudut Googlella PDF:ää, joukkovientiä tai Pro-tilausta varten, tallennamme sähköpostiosoitteen vain päiväkiintiön laskemiseen ja tilauksesi liittämiseen.</p>
+        </details>
+        <details>
+          <summary>Onko ”lataa Claude-keskustelu” eri asia kuin ”claude chat export”?</summary>
+          <p>Sama tehtävä, eri sanamuoto – suomeksi tai englanniksi. Kummassakin tapauksessa käytät claude.ai:n oranssia painiketta.</p>
+        </details>
+        <details>
+          <summary>Voiko sillä viedä PDF-tiedoston?</summary>
+          <p>Voi. Valitse vientipaneelista PDF ja aseta sivukoko, marginaalit, vaalea tai tumma tila, fontti, sivunumerot ja sisällysluettelo. PDF vaatii Google-kirjautumisen; ilmaisversioon sisältyy 3 PDF- tai joukkovientiä päivässä, ja Prossa niitä on rajattomasti. Koko ohje: <a href="/fi/claude-keskustelu-pdf/">lataa Claude-chat PDF-muodossa</a>.</p>
+        </details>
+        <details>
+          <summary>Toimiiko se Claude Pro- ja Team-tileillä?</summary>
+          <p>Kyllä, jos voit avata keskustelun selaimessa claude.ai:ssa. Emme ole Anthropic.</p>
+        </details>
+        <details>
+          <summary>Miten tallennan Claude-keskustelun?</summary>
+          <p>Asenna ilmainen Chrome-laajennus, avaa keskustelu claude.ai:ssa, napsauta oranssia painiketta, valitse muoto ja napsauta <strong>Export</strong>. Markdown, teksti, JSON, XML, CSV ja PNG eivät vaadi tiliä. Näin Claude-keskustelu tallentuu oikeaksi tiedostoksi. Muut kaksi vaihtoehtoa ovat sivun tulostaminen ja Anthropicin tilin ZIP-paketti – vertailu löytyy oppaasta <a href="/fi/lataa-claude-keskustelu/">näin lataat Claude-keskustelun</a>.</p>
+        </details>
+        <details>
+          <summary>Lataako tämä Claude Code -keskusteluja?</summary>
+          <p>Vain ne, jotka ovat claude.ai:ssa. Claude Code on the web (claude.ai/code) ja Cowork-istunnot viedään kuten mikä tahansa chat. Paikallisia terminaali-istuntoja laajennus ei lue; niissä käytetään komentoa <code>/export</code> tai levyllä olevia JSONL-tiedostoja – katso <a href="/fi/claude-code-keskustelun-vienti/">Claude Code -vienti</a>.</p>
+        </details>
+        <details>
+          <summary>Liittyykö Download Claude conversations Anthropiciin?</summary>
+          <p>Ei. Claude on Anthropic, PBC:n tavaramerkki. Tämä on itsenäinen Chrome-laajennus, ei Anthropicin virallinen tuote.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="final-cta">
+    <div class="wrap">
+      <div class="final-cta-panel">
+        <p class="final-kicker">Download Claude conversations</p>
+        <h2>Asenna laajennus ja lataa Claude-keskustelu sekunneissa</h2>
+        <p>Muuta tärkeät Claude-keskustelut PDF-, Markdown-, JSON-, teksti-, CSV-, XML- tai PNG-tiedostoiksi – paikallisesti, Chromessa.</p>
+        <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=fi-home_final" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="22" height="22"> Lisää Chromeen – se on ilmainen</a>
+        <p class="final-note">Tiliä ei tarvita · Rajattomat ilmaiset viennit 6 muodossa · Pro: 14 päivän rahat takaisin</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="logo" href="/fi/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
+      <p class="legal-note">Chrome-laajennus Claude.ai-keskustelujen lataamiseen PDF-, Markdown-, JSON-, pelkkä teksti-, CSV-, XML- tai PNG-muodossa.</p>
+    </div>
+    <div>
+      <h2>Asenna</h2>
+      <a class="install-link" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=fi-footer" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Chrome-laajennus</a>
+    </div>
+    <div>
+      <h2>Tuote</h2>
+      <a href="/fi/ominaisuudet/">Ominaisuudet</a>
+      <a href="/fi/formaatit/">Muodot</a>
+      <a href="/fi/vie-kaikki-claude-keskustelut/">Vie kaikki keskustelut</a>
+      <a href="/fi/nain-se-toimii/">Näin se toimii</a>
+    </div>
+    <div>
+      <h2>Oppaat</h2>
+      <a href="/fi/lataa-claude-keskustelu/">Näin lataat Claude-keskustelun</a>
+      <a href="/fi/nain-viet-claude-chatin/">Näin viet Claude-chatin</a>
+      <a href="/fi/vie-claude-chat/">Vie Claude-chat</a>
+      <a href="/fi/claude-keskustelu-extractor/">Claude-keskustelujen extractor</a>
+      <a href="/fi/claude-code-keskustelun-vienti/">Claude Code -keskustelun vienti</a>
+      <a href="/fi/claude-keskustelu-pdf/">Claude-chat PDF-muodossa</a>
+      <a href="/fi/vie-claude-desktop-chat/">Vie Claude Desktop -chat</a>
+      <a href="/fi/claude-keskustelun-vienti/">Claude-keskustelun vienti</a>
+      <a href="/fi/tallenna-claude-keskustelu/">Tallenna Claude-keskustelu</a>
+      <a href="/fi/claude-keskustelun-lataus/">Claude-keskustelun lataus</a>
+    </div>
+    <div>
+      <h2>Oikeudelliset tiedot</h2>
+      <a href="/fi/tietoa-meista/">Tietoa meistä</a>
+      <a href="/fi/tietoa-meista/#contact">Yhteystiedot</a>
+      <a href="/privacy/" hreflang="en">Tietosuoja (englanniksi)</a>
+      <a href="/terms/" hreflang="en">Käyttöehdot (englanniksi)</a>
+      <a href="/refund/" hreflang="en">Palautukset (englanniksi)</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Download Claude conversations. Kaikki oikeudet pidätetään.</div>
+    <div>
+      <a href="/privacy/" hreflang="en">Tietosuojaseloste (englanniksi)</a>
+      <a href="/terms/" hreflang="en">Käyttöehdot (englanniksi)</a>
+      <a href="/refund/" hreflang="en">Palautukset (englanniksi)</a>
+    </div>
+  </div>
+  <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/" hreflang="en" lang="en">English</a> <a href="/de/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/" hreflang="fr" lang="fr">Français</a> <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/" hreflang="da" lang="da">Dansk</a> <a href="/fi/" hreflang="fi" lang="fi">Suomi</a> <a href="/ja/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/" hreflang="ko" lang="ko">한국어</a> <a href="/he/" hreflang="he" lang="he">עברית</a> <a href="/ar/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
+  <p class="disclaimer">Keskustelut käsitellään selaimessasi · Google-kirjautuminen vain PDF:ää, joukkovientiä ja Pro-tilausta varten · Ei yhteydessä Anthropic, PBC:hen. Claude on Anthropicin tavaramerkki. Itsenäinen Chrome-laajennus – ei Anthropicin virallinen tuote. Tuki: <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

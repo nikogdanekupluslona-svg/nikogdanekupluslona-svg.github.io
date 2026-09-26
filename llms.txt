@@ -1,5 +1,5 @@
 # Chat Downloader (Download Claude conversations)
-> Free Chrome extension to download Claude.ai chats as Markdown, JSON, plain text, XML, or PNG. Also called Claude Chat Downloader and Claude Conversation Downloader.
+> Free Chrome extension to download Claude.ai chats as PDF, Markdown, Plain Text, JSON, XML, CSV, or PNG — unlimited with no account, except PDF and bulk ZIP (3 a day free with Google sign-in). Also called Claude Chat Downloader and Claude Conversation Downloader.
 
 - Home: https://chat-downloader.com/
 - How to download a Claude chat: https://chat-downloader.com/how-to-download-claude-chat/
@@ -10,7 +10,7 @@
 - Claude export conversation: https://chat-downloader.com/claude-export-conversation/
 - Claude conversation extractor: https://chat-downloader.com/claude-conversation-extractor/
 - Claude Code export (CLI, not this extension): https://chat-downloader.com/claude-code-export/
-- Print / download as PDF: https://chat-downloader.com/download-claude-chat-as-pdf/
+- Download a Claude chat as PDF: https://chat-downloader.com/download-claude-chat-as-pdf/
 - Claude Desktop export (app, not this extension): https://chat-downloader.com/export-claude-desktop-chat/
 - Bulk / entire history: https://chat-downloader.com/bulk/
 - Formats: https://chat-downloader.com/formats/
@@ -18,12 +18,30 @@
 - How it works: https://chat-downloader.com/how-it-works/
 - Privacy: https://chat-downloader.com/privacy/
 
+Other languages (same content, localized; the extension UI itself is English):
+- Deutsch: https://chat-downloader.com/de/
+- Français: https://chat-downloader.com/fr/
+- Nederlands: https://chat-downloader.com/nl/
+- Svenska: https://chat-downloader.com/sv/
+- Norsk: https://chat-downloader.com/nb/
+- Dansk: https://chat-downloader.com/da/
+- Suomi: https://chat-downloader.com/fi/
+- 日本語: https://chat-downloader.com/ja/
+- 한국어: https://chat-downloader.com/ko/
+- עברית: https://chat-downloader.com/he/
+- العربية: https://chat-downloader.com/ar/
+
 Facts:
+- Current extension version: 1.16.2 (Chrome Web Store, September 2026).
 - Claude.ai History already stores signed-in chats. There is no in-product Save button that writes a file.
 - Claude.ai has no built-in per-chat download button.
-- Official Anthropic export is Settings → Privacy → Export data (account JSON ZIP).
-- This product exports Markdown, JSON, plain text, XML, and PNG. It does not export PDF.
-- Google sign-in is required before the first export; conversation content is generated locally as a file and is not uploaded to the product's servers.
-- Claude Code (terminal) is a different product: use /export or JSONL under ~/.claude/projects. This Chrome extension does not read Claude Code sessions.
-- This extension does not export PDF. Print the claude.ai page to PDF, or convert a Markdown export.
-- Claude Desktop is a separate app. The extension only runs on claude.ai in Chrome.
+- Official Anthropic export is Settings → Privacy → Export data (account JSON ZIP by email).
+- Seven export formats: PDF, Markdown, Plain Text, JSON, XML, CSV, PNG. PDF is built in the browser, with no print dialog.
+- Free plan, no account: unlimited single-chat exports in Markdown, Plain Text, JSON, XML, CSV and PNG; unlimited copy to clipboard (Markdown, Plain Text, JSON, XML, CSV); unlimited artifact, project-files and session ZIPs. No Google sign-in, no counter.
+- PDF export and bulk ZIP export (Export All on the Dashboard) need Google sign-in and are capped at 3 per day on the free plan, combined. Each chat in a bulk ZIP counts as one. The day resets at midnight UTC.
+- Pro: $3.99 a month or $26.99 a year, via Paddle. Unlimited PDF and bulk export. Cancel any time; 14-day money-back guarantee on the first payment.
+- Every format is generated locally in the browser; conversation text is not uploaded, stored or analysed. Only after sign-in for PDF, bulk or Pro does the extension send the Google account email for a subscription and quota check.
+- Works with regular chats, Projects, Cowork sessions and Claude Code on the web sessions (claude.ai/code) — anything that opens on claude.ai in Chrome.
+- Claude Code in the terminal is different: use /export or JSONL under ~/.claude/projects. This Chrome extension does not read local Claude Code terminal sessions.
+- Claude Desktop is a separate app; there is no Desktop plugin. To export a Desktop chat, open the same chat on claude.ai in Chrome. No mobile app.
+- Independent extension, not affiliated with Anthropic, PBC.

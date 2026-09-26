@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Claude Code 대화 내보내기: /export 가이드</title>
+  <meta name="description" content="Claude Code 대화 내보내기: 터미널은 /export나 JSONL, claude.ai/code 웹 세션은 Chrome 확장 프로그램으로.">
+  <link rel="canonical" href="https://chat-downloader.com/ko/claude-code-export/">
+  <!-- i18n:head -->
+  <link rel="alternate" hreflang="en" href="https://chat-downloader.com/claude-code-export/">
+  <link rel="alternate" hreflang="de" href="https://chat-downloader.com/de/claude-code-chat-exportieren/">
+  <link rel="alternate" hreflang="fr" href="https://chat-downloader.com/fr/exporter-conversation-claude-code/">
+  <link rel="alternate" hreflang="nl" href="https://chat-downloader.com/nl/claude-code-gesprek-exporteren/">
+  <link rel="alternate" hreflang="sv" href="https://chat-downloader.com/sv/exportera-claude-code-konversation/">
+  <link rel="alternate" hreflang="nb" href="https://chat-downloader.com/nb/eksportere-claude-code-samtale/">
+  <link rel="alternate" hreflang="da" href="https://chat-downloader.com/da/eksporter-claude-code-samtale/">
+  <link rel="alternate" hreflang="fi" href="https://chat-downloader.com/fi/claude-code-keskustelun-vienti/">
+  <link rel="alternate" hreflang="ja" href="https://chat-downloader.com/ja/claude-code-export/">
+  <link rel="alternate" hreflang="ko" href="https://chat-downloader.com/ko/claude-code-export/">
+  <link rel="alternate" hreflang="he" href="https://chat-downloader.com/he/claude-code-export/">
+  <link rel="alternate" hreflang="ar" href="https://chat-downloader.com/ar/claude-code-export/">
+  <link rel="alternate" hreflang="x-default" href="https://chat-downloader.com/claude-code-export/">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="sv_SE">
+  <meta property="og:locale:alternate" content="nb_NO">
+  <meta property="og:locale:alternate" content="da_DK">
+  <meta property="og:locale:alternate" content="fi_FI">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="he_IL">
+  <meta property="og:locale:alternate" content="ar_AE">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&amp;display=swap" rel="stylesheet">
+  <!-- /i18n:head -->
+  <meta property="og:title" content="Claude Code 대화 내보내기: /export vs claude.ai 채팅 다운로더">
+  <meta property="og:description" content="Claude Code 대화 내보내기: 터미널에서는 /export나 ~/.claude/projects의 JSONL을 씁니다. claude.ai/code의 웹 세션은 이 무료 Chrome 확장 프로그램으로 내보낼 수 있습니다.">
+  <meta property="og:url" content="https://chat-downloader.com/ko/claude-code-export/">
+  <meta property="og:image" content="https://chat-downloader.com/assets/widget-guide.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chat Downloader">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Claude Code 대화 내보내기: /export vs claude.ai 채팅 다운로더">
+  <meta name="twitter:description" content="Claude Code 대화 내보내기: 터미널에서는 /export나 ~/.claude/projects의 JSONL을 씁니다. claude.ai/code의 웹 세션은 이 무료 Chrome 확장 프로그램으로 내보낼 수 있습니다.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME1YXGZKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GME1YXGZKR');
+  </script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Claude Code 대화는 어떻게 내보내나요?","acceptedAnswer":{"@type":"Answer","text":"Claude Code 터미널에서 /export(파일 이름은 선택)를 입력하면 읽기 쉬운 대화 기록이 저장됩니다. 또는 macOS/Linux에서는 ~/.claude/projects, Windows에서는 %USERPROFILE%\\.claude\\projects에서 JSONL 파일을 복사합니다. 현재 대화 상자는 Anthropic의 세션 문서에 설명되어 있습니다."}},{"@type":"Question","name":"이 Chrome 확장 프로그램으로 Claude Code 채팅을 다운로드할 수 있나요?","acceptedAnswer":{"@type":"Answer","text":"터미널에서는 안 됩니다. Download Claude conversations는 Chrome의 claude.ai에서만 작동합니다. 로컬 터미널 세션, JSONL 기록, /export 명령은 읽을 수 없습니다. claude.ai/code의 웹용 Claude Code 세션은 일반 채팅처럼 내보낼 수 있습니다."}},{"@type":"Question","name":"웹용 Claude Code(claude.ai/code)를 내보낼 수 있나요?","acceptedAnswer":{"@type":"Answer","text":"네. Chrome에서 claude.ai/code의 세션을 열고 주황색 버튼을 쓰십시오. PDF, Markdown, Plain Text(일반 텍스트), JSON, XML, CSV, PNG 모두 됩니다. PDF를 제외한 6가지 형식은 계정 없이 무제한이며, PDF는 Google 로그인이 필요하고 하루 3회 무료 한도에 포함됩니다."}},{"@type":"Question","name":"Claude Code는 대화 기록을 어디에 저장하나요?","acceptedAnswer":{"@type":"Answer","text":"세션 기록은 ~/.claude/projects/<encoded-working-directory>/ 아래에 세션 ID를 이름으로 한 JSONL 파일로 저장됩니다. 정확한 구조는 바뀔 수 있습니다. JSONL을 파싱하는 대신 읽기 쉬운 파일이 필요하면 /export를 쓰십시오. CLAUDE_CONFIG_DIR로 이 폴더 트리를 옮길 수 있습니다."}},{"@type":"Question","name":"Claude Code 대화를 Markdown으로 다운로드하려면 어떻게 하나요?","acceptedAnswer":{"@type":"Answer","text":"Claude Code의 /export는 일반 텍스트 기록이며, 이 확장 프로그램의 Markdown과는 다릅니다. 꼭 Markdown이 필요하다면 claude.ai/code 세션이나 같은 작업의 claude.ai 사본을 Download Claude conversations로 내보내거나 /export 텍스트를 직접 변환하십시오. 저희는 JSONL을 Markdown으로 변환하지 않습니다."}},{"@type":"Question","name":"대신 claude.ai 대화를 다운로드하려면 어떻게 하나요?","acceptedAnswer":{"@type":"Answer","text":"무료 Chrome 확장 프로그램을 설치하고 claude.ai에서 채팅을 연 뒤 주황색 버튼을 누르십시오. 기록 전체는 \"Export All\"(모두 내보내기)을 씁니다. Claude 채팅 다운로드 방법을 참고하십시오. Markdown, 텍스트, JSON, XML, CSV, PNG는 계정 없이 무제한이고, PDF와 일괄 ZIP은 Google 로그인 후 하루 3회까지 무료이며, Pro는 월 $3.99 또는 연 $26.99입니다."}},{"@type":"Question","name":"/export는 공식 Export data와 같은 것인가요?","acceptedAnswer":{"@type":"Answer","text":"아니요. /export는 현재 Claude Code 세션만 대상으로 합니다. Settings → Privacy → Export data는 Anthropic 계정 전체를 JSON ZIP으로 이메일 발송합니다. 제품 영역도, 파일도, 대기 시간도 다릅니다."}},{"@type":"Question","name":"Claude Code JSONL을 jq로 파싱할 수 있나요?","acceptedAnswer":{"@type":"Answer","text":"가능합니다. 다만 Anthropic이 밝힌 대로 줄 단위 스키마는 내부용이며 바뀔 수 있습니다. 안정적인 형식이 필요하면 /export나 claude -p --output-format json을 쓰십시오. 그래도 JSONL을 파싱한다면 CLI 버전을 고정하십시오."}},{"@type":"Question","name":"Claude Code 내보내기는 Windows에서도 되나요?","acceptedAnswer":{"@type":"Answer","text":"네. /export는 CLI 명령입니다. CLAUDE_CONFIG_DIR을 설정하지 않았다면 디스크의 기록은 %USERPROFILE%\\.claude\\projects 아래에 있습니다. 이 Chrome 확장 프로그램은 여전히 그 터미널 안에서는 실행되지 않습니다."}},{"@type":"Question","name":"Claude Code와 Claude Desktop은 같은 것인가요?","acceptedAnswer":{"@type":"Answer","text":"아니요. Claude Code는 터미널 코딩 에이전트, Claude Desktop은 채팅 앱, claude.ai는 웹사이트입니다. 이 확장 프로그램은 claude.ai/code를 포함한 웹사이트에서만 작동합니다. Desktop 내보내기 안내: Claude Desktop."}},{"@type":"Question","name":"이 확장 프로그램이 앞으로 /export를 지원하나요?","acceptedAnswer":{"@type":"Answer","text":"버전 1.16.2에서는 지원하지 않습니다. 제품 범위는 웹용 Claude Code를 포함한 claude.ai입니다: 7가지 형식, 로컬 파일, PDF·일괄 내보내기·Pro에만 필요한 Google 로그인. 범위가 바뀌면 이 페이지에 안내합니다. 그전까지 터미널의 Claude Code 내보내기는 Anthropic의 CLI를 쓰십시오."}},{"@type":"Question","name":"/export에 도구 출력도 포함되나요?","acceptedAnswer":{"@type":"Answer","text":"Anthropic은 /export를 메시지와 도구 출력을 읽기 쉬운 텍스트로 렌더링한 것이라고 설명합니다. 이는 Anthropic의 기록 형식이지 저희 파서가 아닙니다. 정확한 현재 내용은 사용 중인 빌드에서 /export를 실행해 파일을 직접 확인하십시오. 문서는 릴리스보다 늦게 갱신될 수 있습니다."}},{"@type":"Question","name":"Claude Code 세션을 일괄 내보내기할 수 있나요?","acceptedAnswer":{"@type":"Answer","text":"로컬 CLI 세션은 안 됩니다. 대시보드의 \"Export All\"(모두 내보내기)은 claude.ai 전용입니다. CLI 세션이 많다면 projects 폴더를 복사하거나 세션마다 /export를 실행하십시오. JSONL을 주황색 버튼으로 일괄 내보내는 기능은 없습니다."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Claude Code 대화 내보내기 vs claude.ai: 올바른 방법 고르기","description":"Claude Code 대화 내보내기: 터미널에서는 /export나 ~/.claude/projects의 JSONL을 씁니다. claude.ai/code의 웹 세션은 이 무료 Chrome 확장 프로그램으로 내보낼 수 있습니다.","url":"https://chat-downloader.com/ko/claude-code-export/","dateModified":"2026-09-25","datePublished":"2026-09-10","inLanguage":"ko","author":{"@type":"Organization","name":"Chat Downloader","url":"https://chat-downloader.com/ko/"},"publisher":{"@type":"Organization","name":"Chat Downloader","url":"https://chat-downloader.com/ko/"},"mainEntityOfPage":"https://chat-downloader.com/ko/claude-code-export/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"홈","item":"https://chat-downloader.com/ko/"},{"@type":"ListItem","position":2,"name":"Claude Code 내보내기","item":"https://chat-downloader.com/ko/claude-code-export/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a class="logo" href="/ko/">
+        <img src="/assets/icon.svg" alt="">
+        <span>Download Claude conversations</span>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="/ko/how-to-download-claude-chat/">다운로드 방법</a><a href="/ko/how-to-export-claude-chat/">내보내기</a><a href="/ko/bulk/">일괄 내보내기</a><a href="/ko/formats/">형식</a><a href="/ko/#faq">FAQ</a>
+        <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=ko-claude-code-export" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Chrome에 추가</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=ko-claude-code-export" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Chrome에 추가</a>
+      <!-- i18n:switch --><details class="lang-switch"><summary aria-label="언어: 한국어"><svg class="lang-globe" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span class="lang-name">한국어</span><span class="lang-code" aria-hidden="true">ko</span></summary><ul><li><a href="/claude-code-export/" hreflang="en" lang="en">English</a></li><li><a href="/de/claude-code-chat-exportieren/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/exporter-conversation-claude-code/" hreflang="fr" lang="fr">Français</a></li><li><a href="/nl/claude-code-gesprek-exporteren/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/sv/exportera-claude-code-konversation/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="/nb/eksportere-claude-code-samtale/" hreflang="nb" lang="nb">Norsk</a></li><li><a href="/da/eksporter-claude-code-samtale/" hreflang="da" lang="da">Dansk</a></li><li><a href="/fi/claude-code-keskustelun-vienti/" hreflang="fi" lang="fi">Suomi</a></li><li><a href="/ja/claude-code-export/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/ko/claude-code-export/" hreflang="ko" lang="ko" aria-current="true">한국어</a></li><li><a href="/he/claude-code-export/" hreflang="he" lang="he">עברית</a></li><li><a href="/ar/claude-code-export/" hreflang="ar" lang="ar">العربية</a></li></ul></details><!-- /i18n:switch -->
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="메뉴">☰</button>
+    </div>
+  </div>
+</header>
+<nav class="crumbs" aria-label="이동 경로"><a href="/ko/">홈</a> / Claude Code 내보내기</nav>
+<main id="main">
+<article class="band prose">
+<p class="article-meta"><time datetime="2026-09-25">2026년 9월</time> 업데이트 · 확장 프로그램 1.16.2</p>
+<h1 class="page-h1">Claude Code 대화 내보내기 vs claude.ai: 올바른 방법 고르기</h1>
+<p class="lead">Claude Code 대화 내보내기는 터미널에서 하는 작업입니다. 세션에서 /export를 입력하거나 ~/.claude/projects에서 JSONL을 복사하십시오. 터미널의 Claude(클로드) Code 대화를 다운로드하는 방법은 이 사이트의 주황색 버튼이 아닙니다. Download Claude conversations는 Chrome에서 연 claude.ai 채팅을 저장하며, claude.ai/code의 웹용 Claude Code 세션도 포함됩니다. 로컬 터미널 세션과 Desktop은 별개입니다.</p>
+<aside class="trust-badge" aria-label="확장 프로그램 정보">
+  <span class="trophy" aria-hidden="true">🧩</span>
+  <div>
+    <strong>Download Claude conversations — claude.ai용 무료 Chrome 확장 프로그램</strong>
+    <span>버전 1.16.2(2026년 9월) — Markdown, 텍스트, JSON, XML, CSV, PNG 내보내기는 계정 없이 무제한, PDF와 일괄 ZIP은 하루 3회까지 무료</span>
+  </div>
+</aside>
+<nav class="toc" aria-label="이 페이지의 내용">
+  <p>이 페이지의 내용</p>
+  <ol>
+    <li><a href="#what-is-export">터미널의 Claude Code 내보내기란 무엇인가요?</a></li>
+    <li><a href="#jsonl-disk">디스크에서 Claude Code 대화를 가져오려면?</a></li>
+    <li><a href="#extension-limit">Claude Code 내보내기가 이 확장 프로그램으로 되나요?</a></li>
+    <li><a href="#claude-code-web">웹용 Claude Code 세션을 내보낼 수 있나요?</a></li>
+    <li><a href="#where-stored">Claude Code는 대화 기록을 어디에 저장하나요?</a></li>
+    <li><a href="#claude-ai-instead">대신 claude.ai에서 Claude 채팅을 다운로드하려면?</a></li>
+    <li><a href="#vs-official-zip">Claude Code 내보내기 vs Anthropic 공식 Export data?</a></li>
+    <li><a href="#three-surfaces">Claude Code vs Desktop vs claude.ai 내보내기?</a></li>
+    <li><a href="#faq">FAQ: Claude Code 대화 내보내기</a></li>
+  </ol>
+</nav>
+
+<h2 id="what-is-export">터미널의 Claude Code 내보내기란 무엇인가요?</h2>
+<p>Claude Code 내보내기는 대화형 CLI 세션 안에서 쓰는 <code>/export</code> 명령입니다. Anthropic 문서에 따르면 현재 대화를 복사하거나 일반 텍스트 파일로 저장하는 메뉴가 나타나며, 메시지와 도구 출력이 읽기 쉬운 텍스트로 렌더링됩니다. 파일 이름을 함께 입력하면 메뉴를 건너뛰고 바로 그 파일에 저장합니다.</p>
+<p>이것은 claude.ai의 Markdown도, 이 Chrome 확장 프로그램의 JSON도, PDF도 아닙니다. 사람이 읽도록 렌더링한 대화 기록입니다. Anthropic은 디스크의 JSONL 로그가 이와 다른 내부 형식이며, 공개 API가 아니라 제품 내부용이라고 설명합니다.</p>
+<pre><code>/export</code></pre>
+<p>프롬프트를 건너뛰고 현재 작업 디렉터리에 이름을 지정한 파일로 저장하려면:</p>
+<pre><code>/export my-session</code></pre>
+<p>플래그와 파일 이름은 Anthropic의 세션 문서가 기준이며, Claude Code 버전마다 달라집니다. 커뮤니티 블로그는 참고용으로만 보십시오. <code>/export</code> 대화 상자의 문구가 화면과 다르다면 사용 중인 CLI 빌드가 다른 것입니다. 2025년 스크린샷이 아니라 제품 내 도움말을 확인하십시오.</p>
+<p>스크립트용으로 Anthropic은 다른 인터페이스를 안내합니다: <code>--output-format json</code> 또는 <code>stream-json</code>을 붙인 <code>claude -p</code>, 세션 ID로 재개, <code>transcript_path</code>를 받는 훅, Agent SDK. 이들은 Claude Code의 개발자용 기능이며, 이 웹사이트의 Chrome 확장 프로그램과는 관계가 없습니다.</p>
+<div class="callout callout-info">
+  <p><strong>읽기용 vs 구조화 데이터.</strong> <code>/export</code>는 사람이 읽는 기록입니다. projects 폴더의 JSONL은 로그입니다. Chrome 확장 프로그램의 JSON은 claude.ai 페이지로만 만드는 세 번째 형태입니다. 세 가지를 하나의 파서로 처리하려 하지 마십시오.</p>
+</div>
+
+<h2 id="jsonl-disk">디스크에서 Claude Code 대화를 가져오려면?</h2>
+<p>디스크에서 Claude Code 대화를 가져오려면 projects 디렉터리에서 해당 세션의 JSONL 파일을 복사하거나, 읽기 쉬운 기록이 필요하면 <code>/export</code>를 실행하십시오. macOS와 Linux의 기본 경로는 <code>~/.claude/projects/</code> 아래입니다. Windows에서는 <code>%USERPROFILE%\.claude\projects</code>입니다. 파일 이름은 세션 ID입니다.</p>
+<p>프로젝트 폴더 이름은 작업 디렉터리 경로에서 영숫자가 아닌 문자를 하이픈으로 바꾼 것입니다. 변환한 이름이 너무 길면 Anthropic이 잘라 내고 해시를 붙여 파일 시스템 한도 안에 맞춥니다. 폴더를 찾을 수 없다면 생각과 다른 작업 디렉터리(cwd)에서 Claude Code를 실행한 것입니다.</p>
+<p>JSONL의 각 줄은 메시지, 도구 사용, 메타데이터 중 하나를 담은 JSON 객체입니다. Anthropic은 이 항목 형식이 내부용이며 버전마다 바뀐다고 밝힙니다. 이 파일을 파싱하는 스크립트는 Claude Code 업데이트 후 깨질 수 있습니다. 안정성이 필요하면 <code>/export</code>나 문서화된 스크립트 인터페이스를 쓰십시오.</p>
+<p>저장 위치는 바뀔 수 있습니다. <code>CLAUDE_CONFIG_DIR</code>은 설정 트리를 <code>~/.claude</code> 밖으로 옮깁니다. <code>CLAUDE_CODE_PROJECT_DIR_NAME</code>은 그 설정 디렉터리와 함께 쓸 때 프로젝트 디렉터리 이름을 지정합니다(Anthropic에 따르면 Claude Code v2.1.234 이상). settings.json의 <code>cleanupPeriodDays</code>는 기본 보존 기간을 바꿉니다. 이 설정들은 모두 Download Claude conversations의 기능이 아닙니다.</p>
+<p>따라서 백업용으로 Claude Code 대화 파일을 받는 방법은 폴더를 복사하거나, 정기적으로 <code>/export</code>로 기록을 내보내는 것입니다. 이 사이트에 "JSONL 가져오기" 버튼이 추가될 일은 없습니다. 저희는 사용자의 홈 디렉터리를 읽지 않습니다.</p>
+
+<h2 id="extension-limit">Claude Code 내보내기가 이 확장 프로그램으로 되나요?</h2>
+<p>아니요, 터미널 세션은 안 됩니다. Download Claude conversations는 로컬 Claude Code 세션을 읽지 않습니다. 이 Chrome 확장 프로그램은 claude.ai 페이지에 삽입되어 작동합니다. 터미널을 볼 수 없고, <code>/export</code>를 실행할 수 없으며, JSONL을 열 수 없습니다. claude.ai/code의 웹용 Claude Code는 예외입니다. claude.ai 페이지이므로 일반 채팅처럼 내보낼 수 있습니다. CLI에서 Claude Code 대화를 다운로드하는 방법을 찾고 있었다면 이 페이지의 CLI 단계를 따르십시오.</p>
+<p>검색 결과에서 "Claude"와 "내보내기"가 함께 묶이기 때문에 이 페이지에 오시는 분이 많습니다. 하지만 Web Store 등록 정보대로 이 확장 프로그램은 claude.ai 전용입니다. 설치해도 iTerm, Ghostty, VS Code 터미널, Claude Code의 데스크톱 래퍼에 주황색 버튼이 생기지 않습니다.</p>
+<p>같은 코딩 작업을 claude.ai에서도 별도 스레드로 진행하고 있다면, 그 브라우저 채팅은 확장 프로그램으로 저장할 수 있습니다. 두 기록은 합쳐지지 않습니다. CLI에서만 일어난 도구 호출은 직접 붙여 넣지 않는 한 웹 내보내기에 나타나지 않습니다.</p>
+<div class="expert-quote">
+  <blockquote>매주 같은 문의 메일을 받습니다. Chrome 확장 프로그램을 설치했더니 /export가 나타날 줄 알았다는 내용입니다. 저희는 claude.ai만 파싱합니다. Claude Code에는 이미 /export와 JSONL이 있습니다. CLI를 감싸는 기능은 전혀 다른 제품이 될 것이며, 저희는 그런 제품을 출시하지 않았습니다.</blockquote>
+  <cite><strong>Download Claude conversations 팀</strong> — Claude Chat Downloader Chrome 확장 프로그램 개발팀</cite>
+</div>
+<p>이 확장 프로그램은 Claude Code 플러그인이 아니라 claude.ai용 도구입니다. 한도는 claude.ai에서 내보낼 때만 적용됩니다. Markdown, 텍스트, JSON, XML, CSV, PNG는 계정 없이 무제한이고, PDF와 일괄 ZIP은 Google 로그인 후 하루 3회까지 무료이며, Pro(월 $3.99 또는 연 $26.99)는 이 한도를 없앱니다. <code>/export</code>는 전혀 집계하지 않습니다.</p>
+
+<h2 id="claude-code-web">웹용 Claude Code 세션을 내보낼 수 있나요?</h2>
+<p>네. 웹용 Claude Code(Claude Code on the web)는 claude.ai/code에서 실행되므로, Download Claude conversations가 다른 claude.ai 채팅처럼 그 세션을 내보냅니다. Chrome에서 세션을 열고 주황색 버튼을 눌러 형식을 고른 뒤 "Export"(내보내기)를 클릭하십시오. 확장 프로그램이 지원하는 Claude Code 환경은 이것 하나입니다.</p>
+<p>형식은 다른 모든 채팅과 같은 7가지입니다: PDF, Markdown, Plain Text(일반 텍스트), JSON, XML, CSV, PNG. Markdown, 텍스트, JSON, XML, CSV, PNG는 무제한이며 계정이 필요 없습니다. PDF는 Google 로그인을 요청하며, Pro가 아니라면 무료 플랜의 하루 3회를 일괄 ZIP과 함께 씁니다. 코드 블록은 언어 태그를 유지합니다. 확장 사고는 패널의 "Thinking"(사고 과정) 체크박스로 켜고, 도구 / MCP 단계와 웹 검색 출처는 확장 프로그램 설정에서 선택적으로 켭니다.</p>
+<p>웹 내보내기에는 claude.ai/code가 브라우저에 보여 주는 내용이 담깁니다. 로컬 CLI 실행의 JSONL 로그가 아니며, 터미널에서만 실행한 세션에는 닿지 않습니다. Anthropic에 따르면 웹용 Claude Code는 CLI의 <code>~/.claude/projects</code> 트리와 별도로 자체 세션 기록을 관리합니다. 터미널 세션이라면 여전히 <code>/export</code>를 쓰십시오.</p>
+
+<h2 id="where-stored">Claude Code는 대화 기록을 어디에 저장하나요?</h2>
+<p>Claude Code는 대화 기록을 설정 디렉터리의 projects 폴더 아래에 JSONL 기록으로 저장합니다. macOS와 Linux의 기본값: <code>~/.claude/projects/&lt;encoded-cwd&gt;/&lt;session-id&gt;.jsonl</code>. Windows는 <code>%USERPROFILE%\.claude\projects</code>를 씁니다. Anthropic이 이 구조를 바꿀 수 있으니, 디스크에서 경로가 보이지 않으면 최신 세션 문서를 확인하십시오.</p>
+<p>재개(resume)와 내보내기는 다른 동작입니다. <code>claude --continue</code>와 <code>claude --resume</code>은 세션을 다시 불러와 작업을 이어 가게 합니다. <code>/export</code>는 git에 남기거나 이메일로 보낼 수 있는 사본을 만듭니다. 하나는 맥락을 복원하고, 다른 하나는 기록을 가져갑니다. 재개 시 권한 모드, compact/요약, 선택기 동작은 Anthropic의 세션 페이지에서 다루며, 모두 이 확장 프로그램과는 무관합니다.</p>
+<p>Anthropic에 따르면 데스크톱 앱, 웹의 Claude Code, VS Code 확장 프로그램은 각각 별도의 세션 기록을 관리합니다. 이 가이드의 경로는 CLI 기준입니다. 웹 세션은 claude.ai/code에 남으며, 그곳에서 확장 프로그램으로 내보낼 수 있습니다. Desktop Cowork 기록이 터미널에서 쓰는 JSONL 트리에 함께 있다고 가정하지 마십시오.</p>
+<div class="callout callout-warn">
+  <p><strong>JSONL을 공개 스키마로 취급하지 마십시오.</strong> Anthropic은 줄 형식이 바뀐다고 밝힙니다. 그래도 파싱한다면 Claude Code 버전을 고정하고 깨질 수 있음을 감안하십시오. 사람이 읽을 수 있는 Claude Code 대화를 얻는 안정적인 방법은 <code>/export</code>입니다.</p>
+</div>
+<p><code>CLAUDE_CODE_SKIP_PROMPT_HISTORY</code> 같은 환경 플래그는 기록 저장을 막을 수 있습니다. projects 폴더가 비어 있다면 저장을 비활성화했는지, <code>CLAUDE_CONFIG_DIR</code>을 다른 곳으로 지정했는지, 그 디렉터리에서 대화형 세션을 한 번도 실행하지 않았는지 확인하십시오.</p>
+
+<h2 id="claude-ai-instead">대신 claude.ai에서 Claude 채팅을 다운로드하려면?</h2>
+<p>claude.ai에서 Claude 채팅을 다운로드하는 방법: Download Claude conversations를 설치하고, Chrome에서 스레드를 연 뒤 주황색 버튼을 눌러 PDF, Markdown, Plain Text(일반 텍스트), JSON, XML, CSV, PNG 중 하나를 고릅니다. 이것이 브라우저용 제품이며, claude.ai/code 세션도 지원합니다. 터미널의 Claude Code 내보내기는 아닙니다. 단계별 안내: <a href="/ko/how-to-download-claude-chat/">Claude 채팅 다운로드 방법</a>.</p>
+<p>claude.ai 기록 전체를 개별 파일로 받으려면 <code>/export</code>가 아니라 대시보드의 "Export All"(모두 내보내기)을 씁니다. 무료 플랜에서는 ZIP 안의 채팅마다 하루 3회(PDF와 공유, UTC 자정에 초기화) 중 1회를 쓰며, Pro는 한도를 없앱니다. 가이드: <a href="/ko/bulk/">일괄 Export All</a>. 형식: <a href="/ko/formats/">형식</a>.</p>
+<p>단일 채팅을 Markdown, 텍스트, JSON, XML, CSV, PNG로 내보낼 때는 계정이 필요 없으며 무제한입니다. Google 로그인은 하루 한도를 집계하고 Pro를 복원하기 위해 PDF, 일괄 ZIP, Pro에만 필요합니다. 파일은 PDF를 포함해 모두 로컬에서 만들어집니다. Pro 결제는 Paddle이 처리하며 월 $3.99 또는 연 $26.99입니다. 이 중 어느 것도 터미널의 <code>/export</code>에는 적용되지 않습니다.</p>
+<p>Claude Code에서 시작한 작업의 요약을 claude.ai에 붙여 넣었다면, 메모용으로는 웹 스레드를 다운로드하고 실제 CLI 로그는 <code>/export</code>로 보관하십시오. 뒤섞인 파일 하나보다 명확한 파일 두 개가 낫습니다.</p>
+
+<h2 id="vs-official-zip">Claude Code 내보내기 vs Anthropic 공식 Export data?</h2>
+<p>Claude Code 내보내기(<code>/export</code> 또는 JSONL)는 터미널 세션 하나를 대상으로 합니다. 공식 Export data는 claude.ai의 Settings → Privacy → Export data(claude.ai를 한국어로 설정했다면 메뉴 이름이 번역되어 보일 수 있습니다)로, 시간이 걸려 도착하는 Anthropic 계정 전체의 JSON ZIP입니다. 둘은 같은 아카이브가 아닙니다. ZIP이 <code>/export</code>를 대신하지 않습니다.</p>
+<p>특정 Claude Code 세션이 계정 ZIP에 들어가는지는 Anthropic이 해당 제품의 데이터를 어떻게 저장하느냐에 달려 있으며, 이 확장 프로그램과는 무관합니다. Anthropic의 최신 개인정보 문서에 다른 설명이 없는 한 ZIP은 웹 계정 백업으로 보십시오. 저희는 그 ZIP에 CLI 세션을 추가하지 않습니다.</p>
+<p>웹사이트에서 Claude 채팅을 내보내는 방법(ZIP과 확장 프로그램의 차이 포함)은 여기에 정리되어 있습니다: <a href="/ko/how-to-export-claude-chat/">Claude 채팅 내보내기 방법</a>. 확장 프로그램의 PDF 내보내기도 터미널 UI에는 적용되지 않습니다. 대화가 claude.ai(claude.ai/code 포함)에 있을 때만 <a href="/ko/download-claude-chat-as-pdf/">Claude 채팅 PDF 저장</a>을 참고하십시오.</p>
+<div class="table-wrap">
+  <table>
+    <caption>Claude Code 내보내기와 다른 Claude 저장 방법 비교</caption>
+    <thead>
+      <tr>
+        <th scope="col">사용 중인 환경</th>
+        <th scope="col">내보내는 방법</th>
+        <th scope="col">이 Chrome 확장 프로그램</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">터미널의 Claude Code</th>
+        <td><code>/export</code> 또는 디스크의 JSONL</td>
+        <td>작동하지 않음</td>
+      </tr>
+      <tr>
+        <th scope="row">웹용 Claude Code(claude.ai/code)</th>
+        <td>Chrome의 주황색 버튼</td>
+        <td>일반 채팅처럼 내보냄</td>
+      </tr>
+      <tr>
+        <th scope="row">Chrome의 claude.ai</th>
+        <td>주황색 버튼 또는 <a href="/ko/bulk/">Export All</a></td>
+        <td>바로 이 용도로 만들었습니다</td>
+      </tr>
+      <tr>
+        <th scope="row">Anthropic 계정 백업</th>
+        <td>Settings → Privacy → Export data</td>
+        <td>다른 용도 — 시간이 걸리는 JSON ZIP</td>
+      </tr>
+      <tr>
+        <th scope="row">스크립트 / CI</th>
+        <td><code>claude -p</code> JSON, SDK, transcript_path</td>
+        <td>CLI를 감싸지 않음</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h2 id="three-surfaces">Claude Code vs Desktop vs claude.ai 내보내기?</h2>
+<p>Claude Code, Claude Desktop, claude.ai는 서로 다른 세 가지 환경입니다. Claude Code 내보내기는 <code>/export</code>와 JSONL을 씁니다. Desktop은 이 확장 프로그램의 주황색 버튼이 없는 앱입니다. Download Claude conversations가 실행되는 곳은 Chrome의 claude.ai뿐이며, claude.ai/code의 웹용 Claude Code도 여기에 포함됩니다. 이름을 혼동하면 내보내기가 소리 없이 실패합니다.</p>
+<p>Claude Desktop: 채팅이 같은 Anthropic 계정에 동기화되었다면 claude.ai에서 열어 내보내십시오. Desktop 창에만 있다면 복사해 붙여 넣거나 공식 Export data를 기다리십시오. 가이드: <a href="/ko/export-claude-desktop-chat/">Claude Desktop 채팅 내보내기</a>.</p>
+<p>VS Code의 Claude Code 패널은 claude.ai보다 CLI에 가깝습니다. 저희 콘텐츠 스크립트가 그 웹뷰에 삽입될 것이라고 기대하지 마십시오. 실제 메시지가 있는 세션에서 <code>/export</code>를 사용하십시오.</p>
+<p>Anthropic, PBC와 제휴하지 않은 독립 Chrome 확장 프로그램입니다. Claude는 Anthropic의 상표입니다. Anthropic의 서비스 약관을 따르십시오. 독점 코드가 포함된 도구 출력을 복사하는 것에 대해서는 법률 자문을 드릴 수 없습니다. 이는 사용자, 고용주, Anthropic 사이의 문제입니다.</p>
+
+<h2 id="faq">FAQ: Claude Code 대화 내보내기</h2>
+<h3>Claude Code 대화는 어떻게 내보내나요?</h3>
+<p>Claude Code 터미널에서 <code>/export</code>(파일 이름은 선택)를 입력하면 읽기 쉬운 대화 기록이 저장됩니다. 또는 macOS/Linux에서는 <code>~/.claude/projects</code>, Windows에서는 <code>%USERPROFILE%\.claude\projects</code>에서 JSONL 파일을 복사합니다. 현재 대화 상자는 Anthropic의 세션 문서에 설명되어 있습니다.</p>
+<h3>이 Chrome 확장 프로그램으로 Claude Code 채팅을 다운로드할 수 있나요?</h3>
+<p>터미널에서는 안 됩니다. Download Claude conversations는 Chrome의 claude.ai에서만 작동합니다. 로컬 터미널 세션, JSONL 기록, <code>/export</code> 명령은 읽을 수 없습니다. claude.ai/code의 웹용 Claude Code 세션은 일반 채팅처럼 내보낼 수 있습니다.</p>
+<h3>웹용 Claude Code(claude.ai/code)를 내보낼 수 있나요?</h3>
+<p>네. Chrome에서 claude.ai/code의 세션을 열고 주황색 버튼을 쓰십시오. PDF, Markdown, Plain Text(일반 텍스트), JSON, XML, CSV, PNG 모두 됩니다. PDF를 제외한 6가지 형식은 계정 없이 무제한이며, PDF는 Google 로그인이 필요하고 하루 3회 무료 한도에 포함됩니다.</p>
+<h3>Claude Code는 대화 기록을 어디에 저장하나요?</h3>
+<p>세션 기록은 <code>~/.claude/projects/&lt;encoded-working-directory&gt;/</code> 아래에 세션 ID를 이름으로 한 JSONL 파일로 저장됩니다. 정확한 구조는 바뀔 수 있습니다. JSONL을 파싱하는 대신 읽기 쉬운 파일이 필요하면 <code>/export</code>를 쓰십시오. <code>CLAUDE_CONFIG_DIR</code>로 이 폴더 트리를 옮길 수 있습니다.</p>
+<h3>Claude Code 대화를 Markdown으로 다운로드하려면 어떻게 하나요?</h3>
+<p>Claude Code의 <code>/export</code>는 일반 텍스트 기록이며, 이 확장 프로그램의 Markdown과는 다릅니다. 꼭 Markdown이 필요하다면 claude.ai/code 세션이나 같은 작업의 claude.ai 사본을 Download Claude conversations로 내보내거나 <code>/export</code> 텍스트를 직접 변환하십시오. 저희는 JSONL을 Markdown으로 변환하지 않습니다.</p>
+<h3>대신 claude.ai 대화를 다운로드하려면 어떻게 하나요?</h3>
+<p>무료 Chrome 확장 프로그램을 설치하고 claude.ai에서 채팅을 연 뒤 주황색 버튼을 누르십시오. 기록 전체는 "Export All"(모두 내보내기)을 씁니다. <a href="/ko/how-to-download-claude-chat/">Claude 채팅 다운로드 방법</a>을 참고하십시오. Markdown, 텍스트, JSON, XML, CSV, PNG는 계정 없이 무제한이고, PDF와 일괄 ZIP은 Google 로그인 후 하루 3회까지 무료이며, Pro는 월 $3.99 또는 연 $26.99입니다.</p>
+<h3>/export는 공식 Export data와 같은 것인가요?</h3>
+<p>아니요. <code>/export</code>는 현재 Claude Code 세션만 대상으로 합니다. Settings → Privacy → Export data는 Anthropic 계정 전체를 JSON ZIP으로 이메일 발송합니다. 제품 영역도, 파일도, 대기 시간도 다릅니다.</p>
+<h3>Claude Code JSONL을 jq로 파싱할 수 있나요?</h3>
+<p>가능합니다. 다만 Anthropic이 밝힌 대로 줄 단위 스키마는 내부용이며 바뀔 수 있습니다. 안정적인 형식이 필요하면 <code>/export</code>나 <code>claude -p --output-format json</code>을 쓰십시오. 그래도 JSONL을 파싱한다면 CLI 버전을 고정하십시오.</p>
+<h3>Claude Code 내보내기는 Windows에서도 되나요?</h3>
+<p>네. <code>/export</code>는 CLI 명령입니다. <code>CLAUDE_CONFIG_DIR</code>을 설정하지 않았다면 디스크의 기록은 <code>%USERPROFILE%\.claude\projects</code> 아래에 있습니다. 이 Chrome 확장 프로그램은 여전히 그 터미널 안에서는 실행되지 않습니다.</p>
+<h3>Claude Code와 Claude Desktop은 같은 것인가요?</h3>
+<p>아니요. Claude Code는 터미널 코딩 에이전트, Claude Desktop은 채팅 앱, claude.ai는 웹사이트입니다. 이 확장 프로그램은 claude.ai/code를 포함한 웹사이트에서만 작동합니다. Desktop 내보내기 안내: <a href="/ko/export-claude-desktop-chat/">Claude Desktop</a>.</p>
+<h3>이 확장 프로그램이 앞으로 /export를 지원하나요?</h3>
+<p>버전 1.16.2에서는 지원하지 않습니다. 제품 범위는 웹용 Claude Code를 포함한 claude.ai입니다: 7가지 형식, 로컬 파일, PDF·일괄 내보내기·Pro에만 필요한 Google 로그인. 범위가 바뀌면 이 페이지에 안내합니다. 그전까지 터미널의 Claude Code 내보내기는 Anthropic의 CLI를 쓰십시오.</p>
+<h3>/export에 도구 출력도 포함되나요?</h3>
+<p>Anthropic은 <code>/export</code>를 메시지와 도구 출력을 읽기 쉬운 텍스트로 렌더링한 것이라고 설명합니다. 이는 Anthropic의 기록 형식이지 저희 파서가 아닙니다. 정확한 현재 내용은 사용 중인 빌드에서 <code>/export</code>를 실행해 파일을 직접 확인하십시오. 문서는 릴리스보다 늦게 갱신될 수 있습니다.</p>
+<h3>Claude Code 세션을 일괄 내보내기할 수 있나요?</h3>
+<p>로컬 CLI 세션은 안 됩니다. 대시보드의 "Export All"(모두 내보내기)은 claude.ai 전용입니다. CLI 세션이 많다면 projects 폴더를 복사하거나 세션마다 <code>/export</code>를 실행하십시오. JSONL을 주황색 버튼으로 일괄 내보내는 기능은 없습니다.</p>
+</article>
+</main>
+<section class="final-cta page-cta" aria-label="설치">
+  <div class="wrap">
+    <div class="final-cta-panel">
+      <p class="final-kicker">Download Claude conversations</p>
+      <h2>Claude Code가 아니라 claude.ai 파일이 필요하신가요?</h2>
+      <p>이 Chrome 확장 프로그램은 claude.ai 채팅과 claude.ai/code 세션을 PDF, Markdown, JSON, 텍스트, CSV, XML, PNG로 Chrome에서 로컬 저장합니다.</p>
+      <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=ko-claude-code" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Chrome에 추가</a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="logo" href="/ko/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
+      <p class="legal-note">Claude.ai 채팅을 PDF, Markdown, JSON, 일반 텍스트, CSV, XML, PNG로 다운로드하는 Chrome 확장 프로그램.</p>
+    </div>
+    <div>
+      <h2>설치</h2>
+      <a class="install-link" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=ko-footer" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Chrome 확장 프로그램</a>
+    </div>
+    <div>
+      <h2>제품</h2>
+      <a href="/ko/features/">기능</a>
+      <a href="/ko/formats/">형식</a>
+      <a href="/ko/bulk/">일괄 다운로드</a>
+      <a href="/ko/how-it-works/">작동 방식</a>
+    </div>
+    <div>
+      <h2>가이드</h2>
+      <a href="/ko/how-to-download-claude-chat/">Claude 채팅 다운로드 방법</a>
+      <a href="/ko/how-to-export-claude-chat/">Claude 채팅 내보내는 방법</a>
+      <a href="/ko/export-claude-chat/">Claude 채팅 내보내기</a>
+      <a href="/ko/claude-conversation-extractor/">Claude 대화 추출기</a>
+      <a href="/ko/claude-code-export/">Claude Code 대화 내보내기</a>
+      <a href="/ko/download-claude-chat-as-pdf/">Claude 채팅 PDF 저장</a>
+      <a href="/ko/export-claude-desktop-chat/">Claude Desktop 채팅 내보내기</a>
+      <a href="/ko/claude-export-conversation/">Claude 대화 기록 내보내기</a>
+      <a href="/ko/how-to-save-claude-conversation/">Claude 대화 저장 방법</a>
+      <a href="/ko/download-claude-conversation/">Claude 대화 다운로드</a>
+    </div>
+    <div>
+      <h2>법적 고지</h2>
+      <a href="/ko/about/">소개</a>
+      <a href="/ko/about/#contact">문의</a>
+      <a href="/privacy/" hreflang="en">개인정보 (영어)</a>
+      <a href="/terms/" hreflang="en">약관 (영어)</a>
+      <a href="/refund/" hreflang="en">환불 (영어)</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Download Claude conversations. 모든 권리 보유.</div>
+    <div>
+      <a href="/privacy/" hreflang="en">개인정보처리방침 (영어)</a>
+      <a href="/terms/" hreflang="en">서비스 약관 (영어)</a>
+      <a href="/refund/" hreflang="en">환불 (영어)</a>
+    </div>
+  </div>
+  <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/claude-code-export/" hreflang="en" lang="en">English</a> <a href="/de/claude-code-chat-exportieren/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/exporter-conversation-claude-code/" hreflang="fr" lang="fr">Français</a> <a href="/nl/claude-code-gesprek-exporteren/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/exportera-claude-code-konversation/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/eksportere-claude-code-samtale/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/eksporter-claude-code-samtale/" hreflang="da" lang="da">Dansk</a> <a href="/fi/claude-code-keskustelun-vienti/" hreflang="fi" lang="fi">Suomi</a> <a href="/ja/claude-code-export/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/claude-code-export/" hreflang="ko" lang="ko">한국어</a> <a href="/he/claude-code-export/" hreflang="he" lang="he">עברית</a> <a href="/ar/claude-code-export/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
+  <p class="disclaimer">채팅은 브라우저 안에서 처리됩니다 · Google 로그인은 PDF, 일괄 내보내기, Pro에만 필요 · Anthropic, PBC와 관련이 없습니다. Claude는 Anthropic의 상표입니다. 독립 Chrome 확장 프로그램이며 Anthropic 공식 제품이 아닙니다. 지원: <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>
