@@ -58,7 +58,7 @@
   </script>
   
   
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Kan jeg eksportere Claude-samtaler som JSON i bulk?","acceptedAnswer":{"@type":"Answer","text":"Ja. Export All på oversiktssiden støtter JSON på samme måte som en enkelteksport. Hver ferdige fil teller som én av de 3 gratis eksportene, med mindre du har Pro til 3,99 $/mnd. eller 26,99 $/år."}},{"@type":"Question","name":"Er JSON-strukturen dokumentert?","acceptedAnswer":{"@type":"Answer","text":"Den speiler claude.ai sitt eget meldingstre: avsender, innholdsblokker, tidsstempler og modellmetadata, med artefakter og tenkeblokker når du slår på de bryterne. Det er ikke skjemaet i Anthropics ZIP-fil for kontoen."}},{"@type":"Question","name":"Trenger jeg Pro for å eksportere en Claude-samtale som JSON?","acceptedAnswer":{"@type":"Answer","text":"Nei. JSON er med i de 3 gratis eksportene hver konto som er logget på med Google får, akkurat som alle andre formater. Etter de tre filene koster Pro 3,99 $/mnd. eller 26,99 $/år."}},{"@type":"Question","name":"Kan jeg sammenligne to JSON-eksporter av én chat?","acceptedAnswer":{"@type":"Answer","text":"Ja. Hver gang du eksporterer en Claude-samtale som JSON, får du en selvstendig fil bygd på samme måte. Å sammenligne to eksporter av samme samtale fra ulike tidspunkter fungerer som diff av hvilken som helst annen JSON-fil."}},{"@type":"Question","name":"Er denne JSON-filen det samme som Anthropics Export data?","acceptedAnswer":{"@type":"Answer","text":"Nei. Anthropics Export data er en forsinket ZIP-fil med hele kontoen. Download Claude conversations skriver en JSON-fil per chat (eller per utvalg) med en gang i Chrome. Begge kan være JSON, men de kan ikke byttes ut med hverandre."}},{"@type":"Question","name":"Lager JSON-eksporten en PDF?","acceptedAnswer":{"@type":"Answer","text":"Nei. JSON er strukturerte data. Produktets formater er Markdown, JSON, ren tekst, XML og PNG. For en utskriftsvennlig side bruker du utskriftsdialogen i Chrome, ikke denne nedtrekkslisten."}},{"@type":"Question","name":"Fungerer JSON-eksport i Claude Desktop?","acceptedAnswer":{"@type":"Answer","text":"Nei. Chrome-utvidelsen legges bare inn på claude.ai. Claude Desktop viser aldri JSON-valget. Åpne samme samtale på claude.ai i Chrome hvis den finnes der."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Kan jeg eksportere Claude-samtaler som JSON i bulk?","acceptedAnswer":{"@type":"Answer","text":"Ja. Export All på oversiktssiden støtter JSON og lagrer én ZIP-fil med én JSON-fil per chat. På gratisplanen dekker den 3 chatter om dagen med Google-pålogging; Pro til 3,99 $ i måneden eller 26,99 $ i året er ubegrenset."}},{"@type":"Question","name":"Er JSON-strukturen dokumentert?","acceptedAnswer":{"@type":"Answer","text":"Den speiler claude.ai sitt eget meldingstre: avsender, innholdsblokker, tidsstempler og modellmetadata, med artefakter, tenkeblokker, kilder fra nettsøk og verktøy-/MCP-trinn når du slår på de valgene. Det er ikke skjemaet i Anthropics ZIP-fil for kontoen."}},{"@type":"Question","name":"Trenger jeg Pro for å eksportere en Claude-samtale som JSON?","acceptedAnswer":{"@type":"Answer","text":"Nei. JSON-eksport av én chat er ubegrenset og krever ingen konto, akkurat som alle andre formater unntatt PDF. Pro til 3,99 $ i måneden eller 26,99 $ i året fjerner bare grensen på 3 om dagen for PDF og masseeksport med Export All."}},{"@type":"Question","name":"Kan jeg sammenligne to JSON-eksporter av én chat?","acceptedAnswer":{"@type":"Answer","text":"Ja. Hver gang du eksporterer en Claude-samtale som JSON, får du en selvstendig fil bygd på samme måte. Å sammenligne to eksporter av samme samtale fra ulike tidspunkter fungerer som diff av hvilken som helst annen JSON-fil."}},{"@type":"Question","name":"Er denne JSON-filen det samme som Anthropics Export data?","acceptedAnswer":{"@type":"Answer","text":"Nei. Anthropics Export data er en forsinket ZIP-fil med hele kontoen. Download Claude conversations skriver en JSON-fil per chat (eller per utvalg) med en gang i Chrome. Begge kan være JSON, men de kan ikke byttes ut med hverandre."}},{"@type":"Question","name":"Lager JSON-eksporten en PDF?","acceptedAnswer":{"@type":"Answer","text":"Nei. JSON er strukturerte data. Vil du ha sider, velger du PDF i samme panel; de sju formatene er PDF, Markdown, JSON, ren tekst, XML, CSV og PNG. PDF krever Google-pålogging og teller mot 3 om dagen på gratisplanen."}},{"@type":"Question","name":"Fungerer JSON-eksport i Claude Desktop?","acceptedAnswer":{"@type":"Answer","text":"Nei. Chrome-utvidelsen legges bare inn på claude.ai. Claude Desktop viser aldri JSON-valget. Åpne samme samtale på claude.ai i Chrome hvis den finnes der."}}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Hjem","item":"https://chat-downloader.com/nb/"},{"@type":"ListItem","position":2,"name":"Formater","item":"https://chat-downloader.com/nb/formater/"},{"@type":"ListItem","position":3,"name":"JSON","item":"https://chat-downloader.com/nb/formater/json/"}]}</script>
 </head>
 <body>
@@ -85,14 +85,14 @@
 <nav class="crumbs" aria-label="Brødsmulesti"><a href="/nb/">Hjem</a> / <a href="/nb/formater/">Formater</a> / JSON</nav>
 <main id="main">
 <article class="band prose">
-<p class="article-meta">Oppdatert <time datetime="2026-09">september 2026</time> · Utvidelse 1.13.0</p>
+<p class="article-meta">Oppdatert <time datetime="2026-09">september 2026</time> · Utvidelse 1.16.2</p>
 <h1 class="page-h1">Eksportere Claude-samtale som JSON for skript</h1>
-<p class="lead">For å eksportere en Claude-samtale som JSON installerer du Download Claude conversations, åpner samtalen på claude.ai, klikker den oransje knappen, velger JSON og klikker «Export» (Eksporter). Chrome lagrer én fil per chat med meldingstreet. Filen er ikke Anthropics ZIP-fil for kontoen. Tre eksporter er gratis; Pro koster 3,99 $/mnd. eller 26,99 $/år.</p>
-<aside class="trust-badge" aria-label="Vurdering i Chrome Web Store">
-  <span class="trophy" aria-hidden="true">🏆</span>
+<p class="lead">For å eksportere en Claude-samtale som JSON installerer du Download Claude conversations, åpner samtalen på claude.ai, klikker den oransje knappen, velger JSON og klikker «Export» (Eksporter). Chrome lagrer én fil per chat med meldingstreet. Filen er ikke Anthropics ZIP-fil for kontoen. JSON-eksport er ubegrenset og gratis, uten konto; Pro (3,99 $ i måneden eller 26,99 $ i året) har bare betydning for masseeksport og PDF.</p>
+<aside class="trust-badge" aria-label="Om utvidelsen">
+  <span class="trophy" aria-hidden="true">🧩</span>
   <div>
-    <strong>Download Claude conversations – vurdert til 5.0 i Chrome Web Store</strong>
-    <span>2026 – gratis Chrome-utvidelse som lagrer claude.ai-chatter som Markdown, JSON, tekst, XML eller PNG</span>
+    <strong>Download Claude conversations – gratis Chrome-utvidelse for claude.ai</strong>
+    <span>Versjon 1.16.2 (september 2026) – ubegrenset eksport til Markdown, tekst, JSON, XML, CSV og PNG uten konto; PDF og ZIP-masseeksport gratis opptil 3 om dagen</span>
   </div>
 </aside>
 <nav class="toc" aria-label="På denne siden">
@@ -109,32 +109,32 @@
 </nav>
 
 <h2 id="how-to">Hvordan eksporterer jeg en Claude-samtale som JSON?</h2>
-<p>Åpne samtalen på claude.ai i Chrome, klikk den oransje knappen ved siden av meldingsfeltet, velg JSON og klikk «Export». Download Claude conversations skriver filen lokalt. Slik eksporterer du en Claude-samtale som JSON i versjon 1.13.0. claude.ai har ingen egen knapp for å lagre én chat som JSON per september 2026.</p>
+<p>Åpne samtalen på claude.ai i Chrome, klikk den oransje knappen ved siden av meldingsfeltet, velg JSON og klikk «Export». Download Claude conversations skriver filen lokalt. Slik eksporterer du en Claude-samtale som JSON i versjon 1.16.2. claude.ai har ingen egen knapp for å lagre én chat som JSON per september 2026.</p>
 <ol>
-<li>Installer Download Claude conversations fra Chrome Web Store (oppføringen er vurdert til 5.0).</li>
+<li>Installer Download Claude conversations fra Chrome Web Store.</li>
 <li>Last inn claude.ai på nytt og åpne en ekte samtale-URL, ikke den tomme startsiden med skrivefeltet.</li>
 <li>Klikk den oransje nedlastingsknappen til høyre for meldingsfeltet.</li>
-<li>Velg JSON. Sist brukte format huskes.</li>
-<li>Klikk «Export». Chrome laster ned JSON-filen via nettleserens nedlastings-API.</li>
+<li>Velg JSON. Sist brukte format huskes. Med «Select» (velg) krysser du av bare meldingene du vil ha med.</li>
+<li>Klikk «Export». Chrome laster ned JSON-filen via nettleserens nedlastings-API. Eller klikk «Copy» (Kopier) for å legge JSON-teksten på utklippstavlen.</li>
 </ol>
-<p>Google-pålogging kreves før første JSON-eksport. Download Claude conversations lagrer den verifiserte e-postadressen for å telle de 3 gratis eksportene og gjenopprette Pro etter en ny installasjon. Selve chatteksten er ikke en del av påloggingen. Slik virker det: <a href="/nb/slik-fungerer-det/">slik fungerer det</a>.</p>
-<p>Mangler den oransje knappen, er du ikke på en samtale-URL, fanen må lastes inn på nytt, eller utvidelsen er skjult i puslebrikkemenyen i Chrome. Fest Download Claude conversations og last claude.ai på nytt. Innholdsskriptet legges aldri inn i Claude Desktop eller Claude Code.</p>
+<p>Du trenger ingen pålogging for å eksportere en Claude-samtale som JSON. JSON-eksport av én chat er ubegrenset, anonym og sender ingenting til serverne våre. Google-pålogging kreves bare for PDF og masseeksport med «Export All» (Eksporter alle). Slik virker det: <a href="/nb/slik-fungerer-det/">slik fungerer det</a>.</p>
+<p>Mangler den oransje knappen, er du ikke på en samtale-URL, fanen må lastes inn på nytt, eller utvidelsen er skjult i puslebrikkemenyen i Chrome. Fest Download Claude conversations og last claude.ai på nytt. Innholdsskriptet legges aldri inn i Claude Desktop eller i Claude Code i terminalen.</p>
 <div class="callout callout-tip">
-  <p><strong>Én samtale eller mange filer.</strong> Den oransje knappen eksporterer den åpne chatten som JSON. For mange JSON-filer åpner du «View and Download All Conversations» (Se og last ned alle samtaler) og kjører «Export All» (Eksporter alle) med JSON valgt – se <a href="/nb/eksportere-alle-claude-chatter/">masseeksport med Export All</a>.</p>
+  <p><strong>Én samtale eller mange filer.</strong> Den oransje knappen eksporterer den åpne chatten som JSON. For mange JSON-filer åpner du «View and Download All Conversations» (Se og last ned alle samtaler) og kjører Export All med JSON valgt: én ZIP-fil, 3 chatter om dagen på gratisplanen – se <a href="/nb/eksportere-alle-claude-chatter/">masseeksport med Export All</a>.</p>
 </div>
 
 <h2 id="when">Når bør jeg eksportere en Claude-samtale som JSON?</h2>
-<p>Velg JSON når et skript, en indekserer eller et diff-verktøy skal lese filen. JSON-filen er bygd for meldingstreet, ikke for lesing i Obsidian. Vil du ha overskrifter og kodeblokker for mennesker, velger du heller Markdown.</p>
+<p>Velg JSON når et skript, en indekserer eller et diff-verktøy skal lese filen. JSON-filen er bygd for meldingstreet, ikke for lesing i Obsidian. Vil du ha overskrifter og kodeblokker for mennesker, velger du heller Markdown. Til et regneark velger du <a href="/nb/formater/">CSV</a>: én rad per melding.</p>
 <p>Kopier og lim inn fra claude.ai mister strukturen for hvem som sa hva. Utskrift tar med nettsidens grensesnitt. Når du eksporterer som JSON, beholder Download Claude conversations replikker, avsendere og valgfri tenkning som data, ikke som ett flatt avsnitt. Derfor velger utviklere JSON fremfor ren tekst.</p>
 <div class="expert-quote">
-  <p>Vi skriver JSON fra claude.ai-treet som allerede ligger på siden – avsender, innholdsblokker, tidsstempler, modellmetadata – uten å laste opp samtalen. Denne JSON-filen er ikke Anthropics ZIP-fil for kontoen, og den er ikke PDF. Versjon 1.13.0 leverer fortsatt bare fem formater.</p>
+  <p>Vi skriver JSON fra claude.ai-treet som allerede ligger på siden – avsender, innholdsblokker, tidsstempler, modellmetadata – uten å laste opp samtalen. Denne JSON-filen er ikke Anthropics ZIP-fil for kontoen. I versjon 1.16.2 er den ett av sju formater, ved siden av PDF og CSV, og den er gratis uten konto.</p>
   <footer>Teamet bak Download Claude conversations</footer>
 </div>
 <p>Folk søker også etter Claude Chat Downloader og Claude Conversation Downloader for å finne den samme oppføringen. JSON-eksporten er den oransje knappen, ikke et annet produkt. Juridiske sider kan fortsatt si Claude Exporter.</p>
 
 <h2 id="inside">Hva inneholder en JSON-eksport av en Claude-samtale?</h2>
-<p>En JSON-eksport av en Claude-samtale speiler meldingstreet på claude.ai: avsender, innholdsblokker, tidsstempler og modellmetadata. Tenkeblokker og artefakter tas med når de bryterne er på. Avsenderfilteret kan begrense filen til alle meldinger, bare menneske eller bare assistent («all / human only / assistant only»). Ingenting gjøres om til Markdown først.</p>
-<p>Oppsettet for artefakter i versjon 1.13.0 er «Original», «Inline» (innebygd), «Nested» (nestet) eller «Flat» (flatt). Oppsettene styrer hvordan artefaktinnholdet nestes i JSON – de samme fire valgene som for Markdown og XML. Hele listen med brytere: <a href="/nb/funksjoner/">funksjoner i Chrome-utvidelsen</a>. JSON blir fortsatt ikke til PDF.</p>
+<p>En JSON-eksport av en Claude-samtale speiler meldingstreet på claude.ai: avsender, innholdsblokker, tidsstempler og modellmetadata. Tenkeblokker, kilder fra nettsøk, verktøy-/MCP-trinn og artefakter tas med når de valgene er på: «Thinking» (tenkning) er en avkrysningsboks i eksportpanelet, og verktøy og kilder slår du på i innstillingene. Avsenderfilteret kan begrense filen til alle meldinger, bare menneske eller bare assistent («All / Human / Assistant»). Ingenting gjøres om til Markdown først.</p>
+<p>Oppsettet for artefakter i versjon 1.16.2 er «Original», «Inline» (innebygd), «Nested» (nestet) eller «Flat» (flatt). Oppsettene styrer hvordan artefaktinnholdet nestes i JSON – de samme fire valgene som for Markdown og XML. Hele listen: <a href="/nb/funksjoner/">funksjoner i Chrome-utvidelsen</a>. Vil du ha sider i stedet for data, eksporterer du <a href="/nb/claude-chat-som-pdf/">PDF</a>.</p>
 <table>
   <caption>Felt du vanligvis får når du eksporterer en Claude-samtale som JSON</caption>
   <thead>
@@ -158,11 +158,15 @@
     </tr>
     <tr>
       <td>Tenkeblokker</td>
-      <td>Hvis bryteren «Thinking» (tenkning) er på</td>
+      <td>Hvis avkrysningsboksen «Thinking» er på</td>
     </tr>
     <tr>
       <td>Artefakter</td>
       <td>Ja, i oppsettet du valgte</td>
+    </tr>
+    <tr>
+      <td>Kilder fra nettsøk, verktøy-/MCP-trinn</td>
+      <td>Hvis du slår dem på</td>
     </tr>
     <tr>
       <td>ZIP-innpakning for hele kontoen</td>
@@ -195,39 +199,39 @@
       <td>Lenke på e-post som utløper</td>
     </tr>
     <tr>
-      <td>Skriv ut → Lagre som PDF</td>
-      <td>Synlig nettside</td>
+      <td>PDF fra Download Claude conversations</td>
+      <td>Denne chatten som sider</td>
       <td>Med en gang, men det er PDF, ikke JSON</td>
     </tr>
   </tbody>
 </table>
-<p>Du kan ikke velge Markdown i Anthropics ZIP-forespørsel. Du kan heller ikke bruke JSON fra denne utvidelsen som direkte erstatning for ZIP-skjemaet. Formatoversikt: <a href="/nb/formater/">eksportformater for Claude-chat</a>. Utskrift er en visuell nødløsning, ikke en JSON-eksport.</p>
+<p>Du kan ikke velge Markdown i Anthropics ZIP-forespørsel. Du kan heller ikke bruke JSON fra denne utvidelsen som direkte erstatning for ZIP-skjemaet. Formatoversikt: <a href="/nb/formater/">eksportformater for Claude-chat</a>. <a href="/nb/claude-chat-som-pdf/">PDF</a> er for lesing, ikke en JSON-eksport.</p>
 <p>Download Claude conversations er ikke tilknyttet Anthropic, PBC. Innholdsskriptet bruker økten du allerede har åpnet på claude.ai. Det logger ikke inn hos Anthropic med egne påloggingsdetaljer. Følg Anthropics regler for kontoen din.</p>
 
 <h2 id="bulk">Kan jeg eksportere Claude-samtaler som JSON i bulk?</h2>
-<p>Ja. Åpne «View and Download All Conversations», sett formatet til JSON, filtrer tabellen og klikk Export All. Hver ferdige fil er én av de 3 gratis eksportene. Pro til 3,99 $/mnd. eller 26,99 $/år fjerner grensen for JSON i bulk.</p>
-<p>Tabellen viser claude.ai-historikken med søk på navn og filtrene «All», «New», «Exported» og «Project» (Alle, Nye, Eksportert, Prosjekt). New betyr ikke eksportert ennå med Download Claude conversations. Exported holder styr på chatter du allerede har lagret. Project følger måten du grupperer chatter på i claude.ai. Export All gir mange JSON-filer, ikke én blandet ZIP-fil.</p>
+<p>Ja. Åpne «View and Download All Conversations», sett «Chat format» (chatformat) til JSON, filtrer listen og klikk Export All. Chrome lagrer én ZIP-fil med én JSON-fil per chat. På gratisplanen er det 3 chatter om dagen med Google-pålogging, delt med PDF. Pro til 3,99 $ i måneden eller 26,99 $ i året fjerner grensen for JSON i bulk.</p>
+<p>Oversiktssiden (Dashboard) viser claude.ai-historikken med søk på navn, filtrene «All conversations», «New», «Updated» og «Previously exported» (alle samtaler, nye, oppdaterte, eksportert tidligere), fanene Chat og Cowork og prosjektsøk. New betyr ikke eksportert ennå med Download Claude conversations. Previously exported holder styr på chatter du allerede har lagret. Export All gir én ZIP-fil med JSON-filer per chat, ikke et arkiv med blandede formater.</p>
 <div class="callout callout-warn">
-  <p><strong>Kvoten gjelder hele kontoen.</strong> Tre gratis eksporter totalt – ikke tre JSON-filer per masseeksport. Velger du 40 samtaler, bruker du 40 eksporter hvis alle filene fullføres. Planlegg utvalget, eller bruk Pro.</p>
+  <p><strong>Den daglige grensen gjelder per konto.</strong> Tre chatter om dagen på gratisplanen, delt med PDF. Velger du 40 samtaler og har 3 igjen, blokkeres hele kjøringen – den kuttes ikke av. Velg færre, eller bruk Pro. Enkeltvise JSON-eksporter fra den oransje knappen er fortsatt ubegrenset.</p>
 </div>
-<p>Du kan sammenligne to JSON-eksporter av samme claude.ai-samtale tatt på ulike tidspunkter, slik du ville sammenlignet hvilken som helst JSON-fil med diff. Hver eksport er selvstendig. En ny Export All av de samme chattene bruker fortsatt kvote, med mindre filene ikke fullføres.</p>
+<p>Du kan sammenligne to JSON-eksporter av samme claude.ai-samtale tatt på ulike tidspunkter, slik du ville sammenlignet hvilken som helst JSON-fil med diff. Hver eksport er selvstendig. En ny Export All av de samme chattene teller hver chat på nytt.</p>
 
 <h2 id="cost">Krever JSON-eksport av Claude-samtaler Pro?</h2>
-<p>Nei. JSON er med i de 3 gratis eksportene hver konto som er logget på med Google får, akkurat som Markdown, tekst, XML og PNG. Etter de tre filene koster Pro 3,99 $ per måned eller 26,99 $ per år via Paddle. Download Claude conversations tar ikke ekstra betalt for JSON-eksport.</p>
-<p>De 3 gratis eksportene nullstilles ikke når du installerer utvidelsen på nytt. Derfor kreves Google-pålogging ved første klikk på Export. Pro gjenopprettes på en ny datamaskin med samme Google-konto. Paddle er selger (merchant of record); teamet vårt ser aldri kortnumre.</p>
-<p>Utvidelsen kjører bare på claude.ai i Chrome. Claude Desktop og Claude Code får ingen JSON-knapp. <code>/export</code> i Claude Code eller JSONL på disken er en annen vei. Versjon 1.13.0 fra september 2026 skriver fortsatt ikke PDF, Word eller Notion.</p>
+<p>Nei. JSON-eksport av én chat er gratis og ubegrenset, uten konto og uten teller – akkurat som Markdown, tekst, XML, CSV og PNG. Bare PDF og masseeksport med Export All har en grense på gratisplanen: 3 om dagen med Google-pålogging. Pro koster 3,99 $ i måneden eller 26,99 $ i året via Paddle. Download Claude conversations tar ikke ekstra betalt for JSON-eksport.</p>
+<p>Det er JSON i bulk som møter grensen. Hver chat i en ZIP-fil fra Export All bruker én av de 3 om dagen, og tellingen nullstilles ved midnatt UTC. Pro fjerner grensen og gjenopprettes på en ny datamaskin med samme Google-konto. Paddle er selger (merchant of record); teamet vårt ser aldri kortnumre.</p>
+<p>Utvidelsen kjører bare på claude.ai i Chrome. Claude Desktop og Claude Code i terminalen får ingen JSON-knapp; Claude Code på nettet (claude.ai/code) kjører på claude.ai, så det eksporteres som en hvilken som helst chat. <code>/export</code> i Claude Code i terminalen eller JSONL på disken er en annen vei. Versjon 1.16.2 fra september 2026 skriver fortsatt ikke Word eller Notion.</p>
 
 <h2 id="faq">Vanlige spørsmål: eksportere Claude-samtale som JSON</h2>
-<p>Disse spørsmålene dekker JSON-eksport i Download Claude conversations 1.13.0: masseeksport med Export All, skjema, kvote, diff, Anthropics ZIP-fil og Desktop. Hvert svar er et produktfaktum. FAQPage-JSON-LD i sidehodet samsvarer med denne listen.</p>
+<p>Disse spørsmålene dekker JSON-eksport i Download Claude conversations 1.16.2: masseeksport med Export All, skjema, pris, diff, Anthropics ZIP-fil, PDF og Desktop. Hvert svar er et produktfaktum. FAQPage-JSON-LD i sidehodet samsvarer med denne listen.</p>
 
 <h3>Kan jeg eksportere Claude-samtaler som JSON i bulk?</h3>
-<p>Ja. Export All på oversiktssiden støtter JSON på samme måte som en enkelteksport. Hver ferdige fil teller som én av de 3 gratis eksportene, med mindre du har Pro til 3,99 $/mnd. eller 26,99 $/år.</p>
+<p>Ja. Export All på oversiktssiden støtter JSON og lagrer én ZIP-fil med én JSON-fil per chat. På gratisplanen dekker den 3 chatter om dagen med Google-pålogging; Pro til 3,99 $ i måneden eller 26,99 $ i året er ubegrenset.</p>
 
 <h3>Er JSON-strukturen dokumentert?</h3>
-<p>Den speiler claude.ai sitt eget meldingstre: avsender, innholdsblokker, tidsstempler og modellmetadata, med artefakter og tenkeblokker når du slår på de bryterne. Det er ikke skjemaet i Anthropics ZIP-fil for kontoen.</p>
+<p>Den speiler claude.ai sitt eget meldingstre: avsender, innholdsblokker, tidsstempler og modellmetadata, med artefakter, tenkeblokker, kilder fra nettsøk og verktøy-/MCP-trinn når du slår på de valgene. Det er ikke skjemaet i Anthropics ZIP-fil for kontoen.</p>
 
 <h3>Trenger jeg Pro for å eksportere en Claude-samtale som JSON?</h3>
-<p>Nei. JSON er med i de 3 gratis eksportene hver konto som er logget på med Google får, akkurat som alle andre formater. Etter de tre filene koster Pro 3,99 $/mnd. eller 26,99 $/år.</p>
+<p>Nei. JSON-eksport av én chat er ubegrenset og krever ingen konto, akkurat som alle andre formater unntatt PDF. Pro til 3,99 $ i måneden eller 26,99 $ i året fjerner bare grensen på 3 om dagen for PDF og masseeksport med Export All.</p>
 
 <h3>Kan jeg sammenligne to JSON-eksporter av én chat?</h3>
 <p>Ja. Hver gang du eksporterer en Claude-samtale som JSON, får du en selvstendig fil bygd på samme måte. Å sammenligne to eksporter av samme samtale fra ulike tidspunkter fungerer som diff av hvilken som helst annen JSON-fil.</p>
@@ -236,7 +240,7 @@
 <p>Nei. Anthropics Export data er en forsinket ZIP-fil med hele kontoen. Download Claude conversations skriver en JSON-fil per chat (eller per utvalg) med en gang i Chrome. Begge kan være JSON, men de kan ikke byttes ut med hverandre.</p>
 
 <h3>Lager JSON-eksporten en PDF?</h3>
-<p>Nei. JSON er strukturerte data. Produktets formater er Markdown, JSON, ren tekst, XML og PNG. For en utskriftsvennlig side bruker du utskriftsdialogen i Chrome, ikke denne nedtrekkslisten.</p>
+<p>Nei. JSON er strukturerte data. Vil du ha sider, velger du PDF i samme panel; de sju formatene er PDF, Markdown, JSON, ren tekst, XML, CSV og PNG. PDF krever Google-pålogging og teller mot 3 om dagen på gratisplanen.</p>
 
 <h3>Fungerer JSON-eksport i Claude Desktop?</h3>
 <p>Nei. Chrome-utvidelsen legges bare inn på claude.ai. Claude Desktop viser aldri JSON-valget. Åpne samme samtale på claude.ai i Chrome hvis den finnes der.</p>
@@ -247,7 +251,7 @@
     <div class="final-cta-panel">
       <p class="final-kicker">Download Claude conversations</p>
       <h2>Installer utvidelsen og last ned Claude-chatter på sekunder</h2>
-      <p>Gjør viktige Claude-samtaler om til Markdown, JSON, tekst, XML eller PNG – lokalt, rett fra Chrome.</p>
+      <p>Gjør viktige Claude-samtaler om til PDF, Markdown, JSON, tekst, CSV, XML eller PNG – lokalt, rett fra Chrome.</p>
       <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=nb-formats-json" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Legg til i Chrome</a>
     </div>
   </div>
@@ -256,7 +260,7 @@
   <div class="footer-inner">
     <div>
       <a class="logo" href="/nb/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
-      <p class="legal-note">Chrome-utvidelse for å laste ned Claude.ai-chatter som Markdown, JSON, ren tekst, XML eller PNG. Vurdert til 5,0 i Chrome Web Store.</p>
+      <p class="legal-note">Chrome-utvidelse for å laste ned Claude.ai-chatter som PDF, Markdown, JSON, ren tekst, CSV, XML eller PNG.</p>
     </div>
     <div>
       <h2>Installer</h2>
@@ -276,7 +280,7 @@
       <a href="/nb/eksportere-claude-chat/">Eksportere Claude-chat</a>
       <a href="/nb/claude-samtale-extractor/">Claude-samtale-extractor</a>
       <a href="/nb/eksportere-claude-code-samtale/">Eksportere Claude Code-samtale</a>
-      <a href="/nb/claude-chat-som-pdf/">Utskrift / PDF</a>
+      <a href="/nb/claude-chat-som-pdf/">Claude-chat som PDF</a>
       <a href="/nb/eksportere-claude-desktop-chat/">Eksportere Claude Desktop-chat</a>
       <a href="/nb/eksportere-claude-samtale/">Eksportere Claude-samtale</a>
       <a href="/nb/lagre-claude-samtale/">Lagre Claude-samtale</a>
@@ -300,7 +304,7 @@
     </div>
   </div>
   <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/formats/json/" hreflang="en" lang="en">English</a> <a href="/de/formate/json/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/formats/json/" hreflang="fr" lang="fr">Français</a> <a href="/nl/formaten/json/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/format/json/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/formater/json/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/formater/json/" hreflang="da" lang="da">Dansk</a> <a href="/fi/formaatit/json/" hreflang="fi" lang="fi">Suomi</a> <a href="/ja/formats/json/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/formats/json/" hreflang="ko" lang="ko">한국어</a> <a href="/he/formats/json/" hreflang="he" lang="he">עברית</a> <a href="/ar/formats/json/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
-  <p class="disclaimer">Chatter behandles i nettleseren din · Google-pålogging for kvoten · Ikke tilknyttet Anthropic, PBC. Claude er et varemerke for Anthropic. Uavhengig Chrome-utvidelse – ikke et offisielt Anthropic-produkt. Kundestøtte: <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+  <p class="disclaimer">Chatter behandles i nettleseren din · Google-pålogging kun for PDF, masseeksport og Pro · Ikke tilknyttet Anthropic, PBC. Claude er et varemerke for Anthropic. Uavhengig Chrome-utvidelse – ikke et offisielt Anthropic-produkt. Kundestøtte: <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
 </footer>
 <script src="/assets/site.js" defer></script>
 </body>

@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ClaudeのチャットをPDFで保存する方法｜印刷</title>
-  <meta name="description" content="claude.aiにPDFボタンはなし。印刷でPDFにするか、無料のChrome拡張機能でMarkdown／PNGに保存。印刷で残るもの・崩れるものも紹介。">
+  <title>ClaudeのチャットをPDFで保存する方法｜PDF出力と印刷</title>
+  <meta name="description" content="Chrome拡張機能でClaudeのチャットをPDFで保存。用紙サイズ、余白、ダークモード、ページ番号、目次を設定可能。1日3回まで無料。印刷での方法も解説。">
   <link rel="canonical" href="https://chat-downloader.com/ja/download-claude-chat-as-pdf/">
   <!-- i18n:head -->
   <link rel="alternate" hreflang="en" href="https://chat-downloader.com/download-claude-chat-as-pdf/">
@@ -34,15 +34,15 @@
   <meta property="og:locale:alternate" content="ar_AE">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&amp;display=swap" rel="stylesheet">
   <!-- /i18n:head -->
-  <meta property="og:title" content="ClaudeのチャットをPDFで保存する方法｜印刷">
-  <meta property="og:description" content="claude.aiにPDFボタンはなし。印刷でPDFにするか、無料のChrome拡張機能でMarkdown／PNGに保存。印刷で残るもの・崩れるものも紹介。">
+  <meta property="og:title" content="ClaudeのチャットをPDFで保存する方法｜PDF出力と印刷">
+  <meta property="og:description" content="Chrome拡張機能でClaudeのチャットをPDFで保存。用紙サイズ、余白、ダークモード、ページ番号、目次を設定可能。1日3回まで無料。印刷での方法も解説。">
   <meta property="og:url" content="https://chat-downloader.com/ja/download-claude-chat-as-pdf/">
   <meta property="og:image" content="https://chat-downloader.com/assets/widget-guide.png">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Chat Downloader">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="ClaudeのチャットをPDFで保存する方法｜印刷">
-  <meta name="twitter:description" content="claude.aiにPDFボタンはなし。印刷でPDFにするか、無料のChrome拡張機能でMarkdown／PNGに保存。印刷で残るもの・崩れるものも紹介。">
+  <meta name="twitter:title" content="ClaudeのチャットをPDFで保存する方法｜PDF出力と印刷">
+  <meta name="twitter:description" content="Chrome拡張機能でClaudeのチャットをPDFで保存。用紙サイズ、余白、ダークモード、ページ番号、目次を設定可能。1日3回まで無料。印刷での方法も解説。">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
@@ -57,9 +57,9 @@
     gtag('js', new Date());
     gtag('config', 'G-GME1YXGZKR');
   </script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"ClaudeのチャットをPDFでダウンロードできますか？","acceptedAnswer":{"@type":"Answer","text":"claude.ai自体の機能では、この拡張機能でもできません。見た目どおりのPDFが欲しければ会話を印刷（Ctrl/Cmd+P → PDFとして保存）し、よりきれいな文書が必要ならMarkdownでエクスポートしてそのファイルを変換してください。"}},{"@type":"Question","name":"Claudeの会話を印刷するには？","acceptedAnswer":{"@type":"Answer","text":"claude.aiでチャットを開き、できればサイドバーを閉じて、WindowsならCtrl+P、MacならCmd+Pを押し、「PDFとして保存」かプリンターを選んで印刷します。長いスレッドでは、コードブロックがページをまたいで分割されがちです。先にスクロールして古いやり取りを読み込んでください。"}},{"@type":"Question","name":"スマートフォンからClaudeのチャットを印刷できますか？","acceptedAnswer":{"@type":"Answer","text":"モバイルブラウザでも印刷やPDFへの共有はできますが、レイアウトはパソコンより見劣りします。再利用できるファイルが欲しい場合は、パソコンのChromeで同じチャットを開き、Markdownでエクスポートしてください。拡張機能はモバイルでは動きません。"}},{"@type":"Question","name":"Download Claude conversationsはPDFでエクスポートできますか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。現在の形式はMarkdown、JSON、プレーンテキスト、XML、PNGです。PNGはスレッドの画像で、PDFではありません。PDFへの印刷は引き続きブラウザの役割です。バージョン1.13.0には .pdf の書き出し機能はありません。"}},{"@type":"Question","name":"印刷したPDFはAnthropicのデータエクスポートと同じですか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。印刷は、表示しているページをそのまま写し取ります。Anthropicの Settings → Privacy → Export data は、アカウント全体のJSONをZIPにしてメールで送ります。どちらも、オレンジ色のボタンで得られるチャットごとのMarkdownファイルではありません。"}},{"@type":"Question","name":"コードを読みやすい形でClaudeのチャットをPDFにするには？","acceptedAnswer":{"@type":"Answer","text":"コードが重要なら、印刷から始めないでください。Markdownでエクスポートし、エディターで開いてから、その文書を印刷します。改ページはチャット画面ではなくファイルに対して行われます。Proでない場合、無料エクスポート3回のうち1回を使います。"}},{"@type":"Question","name":"PNGはPDFの代わりになりますか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。PNGはビットマップ画像です。印刷で作ったPDFは、claude.aiをページ分けしたスナップショットです。どちらもチャットの画像のように見えますが、実際にPDFなのは印刷で作ったものだけです。どちらも、検索や差分の用途ではMarkdownの代わりになりません。"}},{"@type":"Question","name":"印刷すると無料エクスポート3回分を使いますか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。印刷はブラウザの機能です。回数制限は拡張機能のファイルにだけ適用されます。claude.aiを印刷するのにGoogleログインは不要です。この拡張機能でMarkdown、JSON、テキスト、XML、PNGをエクスポートするときには必要です。"}},{"@type":"Question","name":"Claudeのチャットを一括でPDFとしてダウンロードできますか？","acceptedAnswer":{"@type":"Answer","text":"PDFとして直接はできません。「Export All」で多数のMarkdownファイルやPNGファイルを書き出せるので、PDFが必要ならMarkdownを後から変換してください。一括でも、各ファイルが無料エクスポート3回の枠に数えられます。「Export All」で一括エクスポートをご覧ください。"}},{"@type":"Question","name":"Claude CodeのセッションをPDFとして印刷できますか？","acceptedAnswer":{"@type":"Answer","text":"claude.aiの印刷ではできません。Claude Codeはターミナルです。/export を使い、紙が必要ならテキストファイルをエディターから印刷してください。ガイド：Claude Codeのエクスポート。"}},{"@type":"Question","name":"TeamやEnterpriseプランならPDFエクスポートは変わりますか？","acceptedAnswer":{"@type":"Answer","text":"それらのプランでもPDFボタンは追加されません。Chromeでチャットを開ければ印刷でき、拡張機能の5つの形式も使えます。プランによって私たちのドロップダウンに .pdf が加わることはありません。"}},{"@type":"Question","name":"対応形式にPDFを追加する予定はありますか？","acceptedAnswer":{"@type":"Answer","text":"1.13.0ではありません。追加した場合は、その日のうちにこのページでお知らせします。それまでは、印刷するかMarkdownを変換してください。存在しない「PDFでダウンロード」機能をでっち上げるより、足りない点をはっきり伝えるほうを選びます。"}}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"ClaudeのチャットをPDFで保存する — 印刷か、本物のファイルか","description":"claude.aiにPDFボタンはなし。印刷でPDFにするか、無料のChrome拡張機能でMarkdown／PNGに保存。印刷で残るもの・崩れるものも紹介。","url":"https://chat-downloader.com/ja/download-claude-chat-as-pdf/","dateModified":"2026-09-10","datePublished":"2026-09-10","inLanguage":"ja","author":{"@type":"Organization","name":"Chat Downloader","url":"https://chat-downloader.com/ja/"},"publisher":{"@type":"Organization","name":"Chat Downloader","url":"https://chat-downloader.com/ja/"},"mainEntityOfPage":"https://chat-downloader.com/ja/download-claude-chat-as-pdf/"}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://chat-downloader.com/ja/"},{"@type":"ListItem","position":2,"name":"PDFと印刷","item":"https://chat-downloader.com/ja/download-claude-chat-as-pdf/"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"ClaudeのチャットをPDFでダウンロードできますか？","acceptedAnswer":{"@type":"Answer","text":"はい、Download Claude conversationsを使えばできます。claude.aiでチャットを開き、オレンジ色のボタンをクリックしてPDFを選び、「Export」をクリックします。ファイルはブラウザの中で作成され、印刷ダイアログは開きません。claude.ai自体にはPDFボタンがありません。インストール不要の代替手段は印刷（Ctrl/Cmd+P → PDFとして保存）です。"}},{"@type":"Question","name":"ClaudeのチャットをPDFで保存するのにアカウントは必要ですか？","acceptedAnswer":{"@type":"Answer","text":"はい。最初のPDFからGoogleサインインが必要です。無料プランの1日3回（PDFと一括エクスポートの合計）を数えるためと、Proを購入した場合にアカウントに紐づけるためです。Markdown、テキスト、JSON、XML、CSV、PNGにはアカウントは要りません。"}},{"@type":"Question","name":"Claudeの会話を印刷するには？","acceptedAnswer":{"@type":"Answer","text":"claude.aiでチャットを開き、できればサイドバーを閉じて、WindowsならCtrl+P、MacならCmd+Pを押し、「PDFとして保存」かプリンターを選んで印刷します。長いスレッドでは、コードブロックがページをまたいで分割されがちです。先にスクロールして古いやり取りを読み込んでください。"}},{"@type":"Question","name":"スマートフォンからClaudeのチャットを印刷できますか？","acceptedAnswer":{"@type":"Answer","text":"モバイルブラウザでも印刷やPDFへの共有はできますが、レイアウトはパソコンより見劣りします。拡張機能はモバイルでは動きません。きれいなPDFが欲しい場合は、パソコンのChromeで同じチャットを開き、PDFでエクスポートしてください。"}},{"@type":"Question","name":"Download Claude conversationsはPDFでエクスポートできますか？","acceptedAnswer":{"@type":"Answer","text":"はい。バージョン1.16.2は、Markdown、プレーンテキスト、JSON、XML、CSV、PNGに加えてPDFでもエクスポートできます。PDFダイアログでは、ファイル名、用紙サイズ、余白、ライトモードまたはダークモード、フォントとサイズ、ページ番号、目次、タイムスタンプ、プロンプトごとの改ページを設定できます。"}},{"@type":"Question","name":"印刷したPDFはAnthropicのデータエクスポートと同じですか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。印刷は、表示しているページをそのまま写し取ります。Anthropicの Settings → Privacy → Export data は、アカウント全体のJSONをZIPにしてメールで送ります。どちらも、拡張機能がオレンジ色のボタンから作成するチャットごとのPDFではありません。"}},{"@type":"Question","name":"コードを読みやすい形でClaudeのチャットをPDFにするには？","acceptedAnswer":{"@type":"Answer","text":"拡張機能でPDFを選んでください。コードブロックは言語と書式が保たれ、用紙サイズと余白も設定できます。コードにとって印刷は不向きな方法で、ブロックが折り返されたり、ページをまたいで分割されたりします。自分で組版したいなら、Markdownでエクスポートしてエディターから印刷してください。"}},{"@type":"Question","name":"PNGはPDFの代わりになりますか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。PNGは会話全体を写した1枚の画像です。拡張機能のPDFは、ページ番号や目次を付けられるページ構成の文書です。印刷で作ったPDFは、claude.aiをページ分けしたスナップショットです。どれも、編集や差分の用途ではMarkdownの代わりになりません。"}},{"@type":"Question","name":"印刷するとPDFの1日の上限を使いますか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。印刷はブラウザの機能で、拡張機能ではありません。無料プランの1日3回の上限は、拡張機能のPDFと一括ZIPにだけ適用されます。claude.aiの印刷にサインインは不要で、Markdown、テキスト、JSON、XML、CSV、PNGのエクスポートは無制限です。"}},{"@type":"Question","name":"Claudeのチャットを一括でPDFとしてダウンロードできますか？","acceptedAnswer":{"@type":"Answer","text":"はい。ダッシュボードで「Chat format」（チャット形式）をPDFにし、チャットにチェックを入れて「Export All」（すべてエクスポート）をクリックすると、チャットごとに1つのPDFが入ったZIPが1つできます。先にGoogleでサインインしてください。無料プランでは1日3件までで、ZIP内のチャット1件が1回に数えられます。Proは無制限です。「Export All」で一括エクスポートをご覧ください。"}},{"@type":"Question","name":"Claude CodeのセッションをPDFで保存できますか？","acceptedAnswer":{"@type":"Answer","text":"Webならできます。Claude Code on the web（claude.ai/code）はclaude.aiで開くので、ふつうのチャットと同じように拡張機能でPDFにエクスポートできます。ローカルのターミナルのセッションはWebページではありません。そこでは /export を使い、テキストファイルをエディターから印刷してください。ガイド：Claude Codeのエクスポート。"}},{"@type":"Question","name":"TeamやEnterpriseプランならPDFエクスポートは変わりますか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。PDFはClaudeのプランではなく、拡張機能の機能です。Chromeのclaude.aiでチャットを開ければ、PDFを含む7つの形式のどれでもエクスポートできます。無料の1日3回の上限もProも、どのClaudeのプランでも同じです。"}},{"@type":"Question","name":"ClaudeのチャットのPDFはサーバーで作成されますか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。PDFは、ほかのすべての形式と同じく、ブラウザの中で作成されます。会話のテキストがアップロード、保存、分析されることはありません。サインイン後に送信されるのは、1日の上限やProを確認するためのGoogleのメールアドレスだけです。"}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"ClaudeのチャットをPDFで保存する — 印刷ではなく本物のファイルで","description":"Chrome拡張機能でClaudeのチャットをPDFで保存。用紙サイズ、余白、ダークモード、ページ番号、目次を設定可能。1日3回まで無料。印刷での方法も解説。","url":"https://chat-downloader.com/ja/download-claude-chat-as-pdf/","dateModified":"2026-09-25","datePublished":"2026-09-10","inLanguage":"ja","author":{"@type":"Organization","name":"Chat Downloader","url":"https://chat-downloader.com/ja/"},"publisher":{"@type":"Organization","name":"Chat Downloader","url":"https://chat-downloader.com/ja/"},"mainEntityOfPage":"https://chat-downloader.com/ja/download-claude-chat-as-pdf/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://chat-downloader.com/ja/"},{"@type":"ListItem","position":2,"name":"ClaudeのチャットをPDFで保存","item":"https://chat-downloader.com/ja/download-claude-chat-as-pdf/"}]}</script>
 </head>
 <body>
 <a class="skip" href="#main">本文へスキップ</a>
@@ -82,17 +82,17 @@
     </div>
   </div>
 </header>
-<nav class="crumbs" aria-label="パンくずリスト"><a href="/ja/">ホーム</a> / PDFと印刷</nav>
+<nav class="crumbs" aria-label="パンくずリスト"><a href="/ja/">ホーム</a> / ClaudeのチャットをPDFで保存</nav>
 <main id="main">
 <article class="band prose">
-<p class="article-meta"><time datetime="2026-09">2026年9月</time>更新 · 拡張機能 1.13.0</p>
-<h1 class="page-h1">ClaudeのチャットをPDFで保存する — 印刷か、本物のファイルか</h1>
-<p class="lead">ClaudeのチャットをPDFで保存するボタンは、claude.aiにはありません。PDFで保存するには、ページを印刷する（Ctrl/Cmd+P → PDFとして保存）か、Markdownでエクスポートして変換します。Download Claude conversationsは .pdf を書き出しません。出力できるのはMarkdown、JSON、テキスト、XML、PNGです。PNGは画像であり、PDFではありません。</p>
-<aside class="trust-badge" aria-label="Chrome Web Storeでの評価">
-  <span class="trophy" aria-hidden="true">🏆</span>
+<p class="article-meta"><time datetime="2026-09">2026年9月</time>更新 · 拡張機能 1.16.2</p>
+<h1 class="page-h1">ClaudeのチャットをPDFで保存する — 印刷ではなく本物のファイルで</h1>
+<p class="lead">ClaudeのチャットをPDFで保存するには、Download Claude conversationsをインストールし、claude.aiでチャットを開いてオレンジ色のボタンをクリックし、PDFを選んで「Export」（エクスポート）をクリックします。拡張機能がブラウザの中で .pdf を作成するので、印刷ダイアログは開きません。PDFにはGoogleサインインが必要で、1日3回まで無料、Proなら無制限です。何もインストールできない場合は、印刷からPDFとして保存する方法も使えます。</p>
+<aside class="trust-badge" aria-label="拡張機能について">
+  <span class="trophy" aria-hidden="true">🧩</span>
   <div>
-    <strong>Download Claude conversations — Chrome Web Storeで評価5.0</strong>
-    <span>2026年 — claude.aiのチャットをMarkdown、JSON、テキスト、XML、PNGで保存できる無料のChrome拡張機能</span>
+    <strong>Download Claude conversations — claude.ai用の無料Chrome拡張機能</strong>
+    <span>バージョン1.16.2（2026年9月）— Markdown、テキスト、JSON、XML、CSV、PNGのエクスポートはアカウント不要で無制限。PDFと一括ZIPは1日3回まで無料</span>
   </div>
 </aside>
 <nav class="toc" aria-label="目次">
@@ -110,9 +110,28 @@
 </nav>
 
 <h2 id="native-pdf">ClaudeのチャットをPDFで直接ダウンロードできる？</h2>
-<p>いいえ。claude.ai自体の機能でClaudeのチャットをPDFとしてダウンロードすることはできず、この拡張機能もPDFには出力しません。見た目どおりのPDFが欲しければ会話を印刷し、そうでなければMarkdownでエクスポートしてその文書を印刷します。バージョン1.13.0には .pdf の書き出し機能はありません。</p>
-<p>現在の形式はMarkdown、JSON、プレーンテキスト、XML、PNGです。これが製品の対応範囲です。.pdf の書き出しに対応した日には、このページでお知らせします。それまでは、ブラウザの印刷ダイアログがPDFを作る手段です。</p>
-<p>Anthropicの Settings → Privacy → Export data（claude.aiを日本語で表示している場合、ラベルは翻訳されていることがあります）もPDFではありません。時間をおいて届く、アカウント全体のJSONのZIPです。ZIPを展開しても、整った体裁の会話は出てきません。開いているスレッドを印刷できる形で欲しいだけなら、メールを待つ必要はありません。</p>
+<p>claude.ai単体ではできません。「PDFでダウンロード」のボタンがないためです。Download Claude conversationsを使えばできます。エクスポートパネルでPDFを選び、「Export」をクリックするだけです。バージョン1.16.2は、印刷ダイアログを使わずにタブの中で .pdf を作成します。何もアップロードされません。</p>
+<ol>
+<li>Chrome Web StoreからDownload Claude conversationsをインストールし、claude.aiを再読み込みします。</li>
+<li>会話を開きます。通常のチャット、プロジェクト、Coworkのセッション、Claude Code on the web（claude.ai/code）のどれでも使えます。</li>
+<li>メッセージ入力欄の右にある、丸いオレンジ色のダウンロードボタンをクリックします。</li>
+<li>「Format」（形式）でPDFを選びます。「Messages」（メッセージ）は「All」（すべて）のままにするか、「Human」（ユーザー）または「Assistant」（アシスタント）を選びます。「Select」（選択）を使えば、必要なメッセージだけにチェックを入れられます。</li>
+<li>「Export」をクリックします。初回はGoogleでサインインし、PDFのオプションを設定して保存します。</li>
+</ol>
+<p>PDFダイアログでは、印刷ではできなかった次の設定ができます。</p>
+<ul>
+<li>ファイル名、用紙サイズ、余白</li>
+<li>ライトモードまたはダークモード</li>
+<li>フォントとフォントサイズ</li>
+<li>ページ番号と目次</li>
+<li>タイムスタンプ</li>
+<li>各プロンプトの前での改ページ</li>
+</ul>
+<p>コードブロックは言語と書式が保たれます。表やリストもそのまま残ります。拡張思考は、エクスポートパネルの「Thinking」（思考）チェックボックスで含めるかどうかを選べます。ツール／MCPのステップとWeb検索の出典は、拡張機能の設定でオンにします。PDFに入るのは、選んだものだけです。</p>
+<div class="callout callout-info">
+  <p><strong>無料プランでのPDFの上限。</strong>PDFは初回からGoogleサインインが必要です。無料アカウントでは、PDFと一括ZIPのエクスポートを合わせて1日3回まで使えます。日付はUTCの午前0時（日本時間の午前9時）にリセットされます。Pro（月額$3.99または年額$26.99）なら上限はなくなります。Markdown、テキスト、JSON、XML、CSV、PNGは、引き続きアカウント不要で無制限です。</p>
+</div>
+<p>Anthropicの Settings → Privacy → Export data（claude.aiを日本語で表示している場合、ラベルは翻訳されていることがあります）もPDFではありません。時間をおいて届く、アカウント全体のJSONのZIPです。ZIPを展開しても、整った体裁の会話は出てきません。開いているスレッドのPDFが欲しいだけなら、メールを待つ必要はありません。</p>
 <div class="table-wrap">
   <table>
     <caption>ClaudeのチャットをPDFで保存する方法と、ほかの保存方法の比較</caption>
@@ -125,19 +144,24 @@
     </thead>
     <tbody>
       <tr>
+        <th scope="row">1つのチャットのきれいなPDF</th>
+        <td><a href="/ja/how-to-download-claude-chat/">Chrome拡張機能</a> → PDF → Export</td>
+        <td>ローカルで作成される、ページ構成のPDF。Googleサインインが必要で、1日3回まで無料</td>
+      </tr>
+      <tr>
         <th scope="row">画面どおりの見た目のPDF</th>
         <td>チャットを開く → Ctrl/Cmd+P → PDFとして保存</td>
         <td>見た目のスナップショット。画面の枠やコードの分割が入りがち</td>
       </tr>
       <tr>
-        <th scope="row">検索や変換ができるファイル</th>
-        <td><a href="/ja/how-to-download-claude-chat/">Chrome拡張機能</a> → Markdownまたはテキスト</td>
-        <td>本物の文書。PDFが必要なら後から印刷</td>
+        <th scope="row">検索や編集ができるファイル</th>
+        <td>拡張機能 → Markdownまたはプレーンテキスト</td>
+        <td>テキスト文書。無制限、アカウント不要</td>
       </tr>
       <tr>
         <th scope="row">スレッドの画像</th>
         <td>拡張機能 → PNG</td>
-        <td>画像であり、PDFではない</td>
+        <td>画像であり、PDFではない。無制限、アカウント不要</td>
       </tr>
       <tr>
         <th scope="row">アカウント全体のバックアップ</th>
@@ -147,10 +171,10 @@
     </tbody>
   </table>
 </div>
-<p>つまり、Claudeの会話を印刷することが、PDFを得る正直な方法です。作業に使えるファイルとしてClaudeのチャットをダウンロードするなら、拡張機能を使います。この2つを分けて考えれば、印刷用スタイルシートと格闘せずに済みます。</p>
+<p>つまり、ClaudeのチャットをPDFにするいちばん直接的な方法は拡張機能です。印刷は、インストールなしで使える代替手段です。自分で組版したいなら、Markdownを経由します。以下のセクションで、この2つの代替手段を説明します。</p>
 
 <h2 id="print-desktop">パソコンでClaudeの会話を印刷するには？</h2>
-<p>パソコンでClaudeの会話を印刷するには、claude.aiでスレッドを開き、できればサイドバーを閉じてから、Ctrl+PまたはCmd+Pを押し、「PDFとして保存」を選んで印刷します。会話が読み込まれるまで待ってください。スクロールしていない長いチャットは、読み込まれている部分（DOM）しか印刷されません。</p>
+<p>パソコンでClaudeの会話を印刷するには、claude.aiでスレッドを開き、できればサイドバーを閉じてから、Ctrl+PまたはCmd+Pを押し、「PDFとして保存」を選んで印刷します。会話が読み込まれるまで待ってください。スクロールしていない長いチャットは、読み込まれている部分（DOM）しか印刷されません。印刷は、拡張機能をインストールできないときや、1回だけ手早く済ませたいときに使います。</p>
 <ol>
 <li>Chromeなどのデスクトップブラウザでclaude.aiの会話を開きます。回答の生成が終わるまで待ちます。</li>
 <li>サイドバーを折りたたみ、会話がページを広く使えるようにします。紙に載せたくないアーティファクトやプロジェクトのパネルは閉じておきます。</li>
@@ -158,8 +182,8 @@
 <li>送信先を「PDFとして保存」（Chrome）または「Microsoft Print to PDF」などに設定します。紙に印刷する場合はプリンターを選びます。</li>
 <li>詳細設定で、ページが薄く見える場合は「背景のグラフィック」を試します。サイドバーがまだ場所を取っている場合は余白を小さくします。保存または印刷します。</li>
 </ol>
-<p>Claudeの会話を印刷する手順はこれだけです。Claudeはヘッダー、ページ番号、目次を付けません。得られるのは、サイトが印刷モードで適用するCSSのとおりの結果で、たいていは「Webページをページ分けしたもの」です。</p>
-<p>もっときれいなレイアウトでClaudeのチャットを印刷できるか？ それにはチャット画面から離れるしかありません。拡張機能でMarkdownをエクスポートし、文書アプリから印刷します。claude.aiの印刷ダイアログが組版ソフトになることはありません。</p>
+<p>Claudeの会話を印刷する手順はこれだけです。印刷では、ページ番号、目次、プロンプトごとの改ページは付きません。得られるのは、サイトが印刷モードで適用するCSSのとおりの結果で、たいていは「Webページをページ分けしたもの」です。</p>
+<p>もっときれいなレイアウトでClaudeのチャットを印刷できるか？ 印刷ダイアログではできません。印刷ダイアログが組版ソフトになることはないからです。代わりに拡張機能でPDFを選んでください。用紙サイズ、余白、フォント、ページ番号、目次は、CSS任せではなく、そこで設定できる項目です。</p>
 <div class="callout callout-warn">
   <p><strong>先にスレッドを読み込んでください。</strong>長いチャットでは、スクロールするまで古いやり取りが読み込まれません。半分しか読み込まれていないページを印刷やPNGにすると、途中で切れたPDFのようになります。最初までスクロールし、待ってから印刷してください。拡張機能のエクスポートにも同じ制約があります。</p>
 </div>
@@ -171,34 +195,83 @@
 <li>表が用紙の幅からはみ出します。幅の広い比較表は読めなくなります。</li>
 <li>入力欄、モデルの選択、サイドバーなどのアプリの画面要素は、事前に隠さないと全ページに入ることがあります。</li>
 <li>アーティファクトや思考プロセスは、画面上で展開されている場合にだけ印刷されます。折りたたまれた部分はPDFに入りません。</li>
-<li>PDF内の検索はいまひとつです。ObsidianでMarkdownとして扱ったり、gitで差分を取ったりはできません。</li>
+<li>そのPDFをObsidianでMarkdownとして扱ったり、gitで差分を取ったりはできません。</li>
 </ul>
-<p>印刷は、Claudeの画面どおりに見える添付ファイルを1回だけ作りたいときには適した方法です。スレッドを作業用の文書として編集、引用、保管するなら適していません。その場合は拡張機能のMarkdownかJSONを使ってください。<a href="/ja/how-to-export-claude-chat/">Claudeのチャットをエクスポートする方法</a>をご覧ください。</p>
-<p>背景のグラフィックや用紙サイズで、スナップショットは変わります。A4かレターかで、コードが改ページされる位置も変わります。ただし、どの設定でも、画面幅より広かった表は元に戻りません。表が重要なら、Markdownでエクスポートしてください。</p>
+<div class="table-wrap">
+  <table>
+    <caption>印刷したClaudeのチャットPDFと、拡張機能のPDFエクスポートの比較</caption>
+    <thead>
+      <tr>
+        <th scope="col">気になる点</th>
+        <th scope="col">印刷 → PDFとして保存</th>
+        <th scope="col">拡張機能 → PDF</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">コードブロック</th>
+        <td>折り返されるか、ページをまたいで分割される</td>
+        <td>言語と書式を保持</td>
+      </tr>
+      <tr>
+        <th scope="row">表とリスト</th>
+        <td>はみ出すか、崩れる</td>
+        <td>表とリストのまま</td>
+      </tr>
+      <tr>
+        <th scope="row">ページ番号、目次</th>
+        <td>なし</td>
+        <td>オプションで追加</td>
+      </tr>
+      <tr>
+        <th scope="row">用紙サイズ、余白、フォント</th>
+        <td>用紙サイズと余白のみ</td>
+        <td>3つすべてに加え、フォントサイズも</td>
+      </tr>
+      <tr>
+        <th scope="row">ライト／ダーク</th>
+        <td>印刷用CSS次第</td>
+        <td>自分で選べる</td>
+      </tr>
+      <tr>
+        <th scope="row">改ページ</th>
+        <td>ページが埋まったところで改ページ</td>
+        <td>各プロンプトの前で改ページ（オプション）</td>
+      </tr>
+      <tr>
+        <th scope="row">アカウントと上限</th>
+        <td>なし</td>
+        <td>Googleサインイン。1日3回まで無料、Proは無制限</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p>Claudeの画面どおりに見える添付ファイルを1回だけ作るなら、印刷で十分です。送信する、保管する、紙で読むためのPDFなら、拡張機能のPDFのほうが良いファイルになります。編集、引用、差分に使う作業用の文書なら、拡張機能のMarkdownかJSONを使ってください。<a href="/ja/how-to-export-claude-chat/">Claudeのチャットをエクスポートする方法</a>をご覧ください。</p>
+<p>背景のグラフィックや用紙サイズで、スナップショットは変わります。A4かレターかで、コードが改ページされる位置も変わります。ただし、どの設定でも、画面幅より広かった表は元に戻りません。表が重要なら、拡張機能からPDFかMarkdownでエクスポートしてください。</p>
 
 <h2 id="print-phone">スマートフォンからClaudeのチャットを印刷できる？</h2>
 <p>場合によります。モバイルブラウザに「共有 → PDF」や「印刷」があれば、スマートフォンからClaudeのチャットを印刷できます。ただしclaude.aiのモバイル表示は、大きな入力欄の付いた細い1列のレイアウトなので、PDFはたいていパソコンより見劣りします。画面要素が多く、行が短く、改ページも増えます。</p>
-<p>このChrome拡張機能はiOSやAndroidでは動きません。Download Claude conversationsのアプリ版はありません。SafariではこのChrome Web Storeのアイテムを読み込めません。再利用するファイルが欲しい場合は、パソコンのChromeで同じ会話を開き、そこで印刷するかMarkdownでエクスポートしてください。</p>
+<p>このChrome拡張機能はiOSやAndroidでは動きません。Download Claude conversationsのアプリ版はありません。SafariではこのChrome Web Storeのアイテムを読み込めません。きれいなPDFが欲しい場合は、パソコンのChromeで同じ会話を開き、拡張機能でPDFを選んでください。</p>
 <p>チャットがスマートフォンのセッションにしかなく、パソコンで開けない場合は、スマートフォンから印刷してレイアウトは妥協するか、ノートパソコンが使えるまで待ちましょう。Settingsからの公式のデータエクスポートも、Web上のアカウントが必要で、やはりPDFではありません。</p>
 <p>デスクトップ拡張機能を禁止するチームのポリシーがあっても、モバイルでの印刷がきれいになるわけではありません。残る手段が印刷と公式のZIPになるだけです。この2つは、私たちのソフトウェアがなくても使えます。</p>
 
 <h2 id="markdown-then-pdf">Markdown経由でClaudeのチャットをPDFにするには？</h2>
-<p>表示中のページを印刷せずにClaudeのチャットをPDFで保存するには、Download Claude conversationsでMarkdownをエクスポートし、.md ファイルをエディターで開いて、そのアプリの「印刷」や「PDFとしてエクスポート」を使います。チャット画面ではなく文書として、フォント、余白、改ページを自分で調整できます。</p>
+<p>Markdown経由でClaudeのチャットをPDFにするには、Download Claude conversationsでMarkdownをエクスポートし、.md ファイルをエディターで開いて、そのアプリの「印刷」や「PDFとしてエクスポート」を使います。先にテキストを編集したいときや、自分のテンプレートを適用したいときの方法です。Markdownのエクスポートは無制限でアカウントも不要なので、PDFの1日の上限にはまったく影響しません。</p>
 <ol>
-<li>拡張機能をインストールし、claude.aiでチャットを開いてMarkdownでエクスポートします。初回のエクスポートにはGoogleログインが必要です。無料エクスポートは3回、Proは月額$3.99または年額$26.99です。</li>
+<li>claude.aiでチャットを開き、オレンジ色のボタンをクリックしてMarkdownを選び、「Export」をクリックします。サインインも回数のカウントもありません。</li>
 <li>VS Code、Obsidian、Typora、Googleドキュメント、Word（貼り付け）などでファイルを開きます。</li>
 <li>そのアプリの「印刷」／「PDFとしてエクスポート」を使います。用紙サイズや見出しは、claude.aiではなくそこで設定します。</li>
 </ol>
-<p>PDFを読みやすいものにする必要があるなら、ほとんどの人にとってこの2段階の方法が、ClaudeのチャットをPDFで保存する最適な手順です。1段階目は構造を保ったエクスポート、2段階目は本物の組版ソフトです。PNGは代わりになりません。ビットマップ画像なので、スライドの1枚には使えても、40ページの設計レビューには使えません。</p>
-<p>ファイルはローカルで作成されます。MarkdownからPDFへの変換をサーバーで行うこともありません。PDFへの対応は、ドロップダウンに新しい形式を追加することを意味しますが、1.13.0にはありません。形式の一覧：<a href="/ja/formats/">対応形式</a>。</p>
+<p>欠点は、1つではなく2つのツールを使うことです。拡張機能のPDFなら、用紙サイズ、余白、フォント、目次はすでに設定できます。Markdownから始めるのは、PDFに手を加えたいとき、社内指定のフォントを使いたいとき、ダイアログにないテンプレートが必要なときだけで十分です。PNGも代わりにはなりません。ビットマップ画像なので、スライドの1枚には使えても、40ページの設計レビューには使えません。</p>
+<p>PDFを含むすべてのファイルは、ブラウザの中でローカルに作成されます。会話のテキストがアップロード、保存、分析されることはありません。形式の一覧：<a href="/ja/formats/">対応形式</a>。</p>
 <div class="expert-quote">
-  <blockquote>PDFに対応してほしいという要望は毎週届きます。それでも .pdf は書き出していません。チャット画面は組版に向いていないからです。今すぐスナップショットが必要ならページを印刷してください。文書が必要ならMarkdownでエクスポートしてください。PDFボタンがあるふりをすれば問い合わせは1件減るかもしれませんが、できあがるファイルは質の悪いものになります。</blockquote>
+  <blockquote>PDFは、ほかのすべての形式と同じくブラウザの中で作成されます。印刷ダイアログもサーバーも使いません。ダイアログでは、印刷ではできなかったこと、つまり用紙サイズ、余白、ダークモード、ページ番号、目次、プロンプトごとの改ページを設定できます。共有する前にテキストを編集したいなら、代わりにMarkdownでエクスポートしてください。</blockquote>
   <cite><strong>Download Claude conversations チーム</strong> — Chrome拡張機能「Claude Chat Downloader」の開発者</cite>
 </div>
-<p>「Export All」（すべてエクスポート）で一括エクスポートすれば、後で変換するためのMarkdownファイルをまとめて作れます。それでも各ファイルが無料エクスポート3回の枠に数えられます。無料アカウントで40件のチャットを「Export All」して、40個のPDFが得られると期待しないでください。ガイド：<a href="/ja/bulk/">一括エクスポート</a>。</p>
+<p>PDFをまとめて作りたい場合は、ダッシュボードを開き、「Chat format」（チャット形式）をPDFにして、チャットにチェックを入れ、「Export All」（すべてエクスポート）をクリックします。チャットごとに1つのPDFが入ったZIPが1つできます。Googleサインインが必要で、無料プランではZIP内のチャット1件ごとに、同じ1日3回の枠を1回使います。今日の残り回数より多く選ぶと、途中で切られるのではなく、全体がブロックされます。Proなら上限はなくなります。ガイド：<a href="/ja/bulk/">一括エクスポート</a>。</p>
 
 <h2 id="png-vs-pdf">ClaudeのチャットはPNG・PDF・Markdownのどれがいい？</h2>
-<p>PNG、PDF、Markdownは、3つのまったく別のものです。ClaudeのチャットをPDFで保存するとは、印刷するか、Markdownファイルを変換することです。この拡張機能のPNGはスレッドの画像です。Markdownは構造を持ったテキストです。名前を混同すると、間違ったファイルを送ってしまいます。</p>
+<p>PNG、PDF、Markdownは、3つのまったく別のものです。この拡張機能のPDFは、ページ構成の文書です。PNGはスレッド全体を写した1枚の画像です。Markdownは構造を持ったテキストです。印刷で作るPDFは、Webページのスナップショットです。名前を混同すると、間違ったファイルを送ってしまいます。</p>
 <div class="table-wrap">
   <table>
     <caption>Claudeのチャットを画面の外に保存したいときのPNG・PDF・Markdownの比較</caption>
@@ -207,69 +280,82 @@
         <th scope="col">形式</th>
         <th scope="col">中身</th>
         <th scope="col">向いている用途</th>
+        <th scope="col">無料プラン</th>
       </tr>
     </thead>
     <tbody>
       <tr>
+        <th scope="row">PDF（この拡張機能）</th>
+        <td>ブラウザの中で作成される、ページ構成の文書</td>
+        <td>読む、共有する、添付する</td>
+        <td>1日3回、Googleサインイン</td>
+      </tr>
+      <tr>
         <th scope="row">印刷 → PDFとして保存</th>
         <td>claude.aiのブラウザ上のスナップショット</td>
         <td>手早い共有、「Claudeの画面どおり」</td>
+        <td>ブラウザの機能、上限なし</td>
       </tr>
       <tr>
         <th scope="row">PNG（この拡張機能）</th>
-        <td>エクスポートしたスレッドの画像</td>
+        <td>会話全体を写した1枚の画像</td>
         <td>スライドの図。文書ではない</td>
+        <td>無制限、アカウント不要</td>
       </tr>
       <tr>
         <th scope="row">Markdown</th>
         <td>構造を持ったテキスト</td>
-        <td>メモ、git、後からのPDF変換</td>
+        <td>メモ、git、後からのPDF作成</td>
+        <td>無制限、アカウント不要</td>
       </tr>
       <tr>
         <th scope="row">JSON</th>
         <td>メッセージのツリー</td>
         <td>スクリプト向け。人やプリンター向けではない</td>
+        <td>無制限、アカウント不要</td>
       </tr>
     </tbody>
   </table>
 </div>
-<p>XMLとプレーンテキストもあります。どちらもPDFではありません。プレーンテキストを印刷すると行がびっしり並ぶだけで、XMLを印刷するとタグがそのまま出ます。納品物がPDFなら、JSONではなく、印刷かMarkdownから始めてください。</p>
-<p>最後に使った形式は記憶されます。スライド用にPNGが欲しかったのにMarkdownが届いたなら、ドロップダウンがMarkdownのままだったということです。無料エクスポートを使う前に確認してください。</p>
+<p>プレーンテキスト、XML、CSVもあります。どれもPDFではありません。プレーンテキストを印刷すると行がびっしり並ぶだけで、XMLを印刷するとタグがそのまま出ます。CSVはメッセージ1件につき1行で、紙ではなくスプレッドシート向けです。納品物がPDFなら、PDFを選んでください。</p>
+<p>最後に使った形式は記憶されます。PDFが欲しかったのにMarkdownが届いたなら、ドロップダウンがMarkdownのままだったということです。「Export」をクリックする前に確認してください。無料プランでは、意図せず作ったPDFでも今日の3回のうち1回を使います。</p>
 
 <h2 id="print-vs-zip">印刷・公式エクスポート・このChrome拡張機能の違いは？</h2>
-<p>印刷、公式のデータエクスポート、このChrome拡張機能は、どれも「エクスポート」と呼ばれがちですが、3つの別の作業です。印刷 → PDFとして保存は、1つの会話を、見た目どおりに、今すぐ保存します。公式のZIPは、アカウント全体をJSONで、後からメールで届けます。拡張機能は5つの形式でローカルに書き出し、回数管理のためにGoogleログインを使います。</p>
-<p>ターミナルのClaude Codeのことなら、印刷は役に立ちません。Webページではないからです。<a href="/ja/claude-code-export/"><code>/export</code></a> を使ってください。Claude Desktopアプリのことなら、それもこの拡張機能の対象外です。<a href="/ja/export-claude-desktop-chat/">Claude Desktopのチャットをエクスポートする</a>をご覧ください。</p>
+<p>印刷、公式のデータエクスポート、このChrome拡張機能は、どれも「エクスポート」と呼ばれがちですが、3つの別の作業です。印刷 → PDFとして保存は、1つの会話を、見た目どおりに、今すぐ保存します。公式のZIPは、アカウント全体をJSONで、後からメールで届けます。拡張機能は、PDFを含む7つの形式でローカルに書き出します。そのうち6つはアカウント不要で、PDFと一括エクスポートにはGoogleサインインが必要です。</p>
+<p>ターミナルのClaude Codeのことなら、印刷は役に立ちません。ローカルのセッションはWebページではないからです。<a href="/ja/claude-code-export/"><code>/export</code></a> を使ってください。Claude Code on the web（claude.ai/code）は別で、claude.aiで開くため、ふつうのチャットと同じように拡張機能でPDFにエクスポートできます。Claude Desktopアプリのことなら、拡張機能はそこでは動きません。<a href="/ja/export-claude-desktop-chat/">Claude Desktopのチャットをエクスポートする</a>をご覧ください。</p>
 <p>ZIPを使う方法とオレンジ色のボタンを使う方法でClaudeのチャットをエクスポートする手順は、エクスポートのガイドで説明しています。ウィジェットを使ってClaudeのチャットをダウンロードする手順は、ダウンロードのガイドにあります。このページはPDFと印刷に絞り、3つのページの役割を分けています。</p>
 <div class="callout callout-info">
-  <p><strong>印刷には回数制限がかかりません。</strong>ブラウザでの印刷は、私たちの3回までのエクスポート上限とは関係ありません。上限は、拡張機能がMarkdown、JSON、テキスト、XML、PNGを書き出すときに適用されます。Pro（月額$3.99または年額$26.99）なら上限はなくなります。支払いはPaddleが処理します。</p>
+  <p><strong>1日の上限は印刷には適用されません。</strong>ブラウザでの印刷は、拡張機能とは関係ありません。無料プランの上限（PDFと一括ZIPのエクスポートを合わせて1日3回、UTCの午前0時にリセット）が適用されるのは、拡張機能のPDFと「Export All」だけです。Markdown、テキスト、JSON、XML、CSV、PNGは無制限です。Pro（月額$3.99または年額$26.99）なら上限はなくなります。支払いはPaddleが処理します。</p>
 </div>
-<p>この拡張機能は独立したChrome拡張機能であり、Anthropic, PBCとは提携していません。Anthropicの利用規約に従ってください。Anthropicが管理する印刷用スタイルシートについて、私たちは何も約束できません。ClaudeのUI変更で印刷が崩れた場合、それはAnthropic側のCSSの問題です。代わりにMarkdownでエクスポートしてください。</p>
+<p>この拡張機能は独立したChrome拡張機能であり、Anthropic, PBCとは提携していません。Anthropicの利用規約に従ってください。Anthropicが管理する印刷用スタイルシートについて、私たちは何も約束できません。ClaudeのUI変更で印刷が崩れた場合、それはAnthropic側のCSSの問題です。代わりに拡張機能からPDFでエクスポートしてください。</p>
 
 <h2 id="faq">よくある質問：ClaudeのチャットをPDFで保存</h2>
 <h3>ClaudeのチャットをPDFでダウンロードできますか？</h3>
-<p>claude.ai自体の機能では、この拡張機能でもできません。見た目どおりのPDFが欲しければ会話を印刷（Ctrl/Cmd+P → PDFとして保存）し、よりきれいな文書が必要ならMarkdownでエクスポートしてそのファイルを変換してください。</p>
+<p>はい、Download Claude conversationsを使えばできます。claude.aiでチャットを開き、オレンジ色のボタンをクリックしてPDFを選び、「Export」をクリックします。ファイルはブラウザの中で作成され、印刷ダイアログは開きません。claude.ai自体にはPDFボタンがありません。インストール不要の代替手段は印刷（Ctrl/Cmd+P → PDFとして保存）です。</p>
+<h3>ClaudeのチャットをPDFで保存するのにアカウントは必要ですか？</h3>
+<p>はい。最初のPDFからGoogleサインインが必要です。無料プランの1日3回（PDFと一括エクスポートの合計）を数えるためと、Proを購入した場合にアカウントに紐づけるためです。Markdown、テキスト、JSON、XML、CSV、PNGにはアカウントは要りません。</p>
 <h3>Claudeの会話を印刷するには？</h3>
 <p>claude.aiでチャットを開き、できればサイドバーを閉じて、WindowsならCtrl+P、MacならCmd+Pを押し、「PDFとして保存」かプリンターを選んで印刷します。長いスレッドでは、コードブロックがページをまたいで分割されがちです。先にスクロールして古いやり取りを読み込んでください。</p>
 <h3>スマートフォンからClaudeのチャットを印刷できますか？</h3>
-<p>モバイルブラウザでも印刷やPDFへの共有はできますが、レイアウトはパソコンより見劣りします。再利用できるファイルが欲しい場合は、パソコンのChromeで同じチャットを開き、Markdownでエクスポートしてください。拡張機能はモバイルでは動きません。</p>
+<p>モバイルブラウザでも印刷やPDFへの共有はできますが、レイアウトはパソコンより見劣りします。拡張機能はモバイルでは動きません。きれいなPDFが欲しい場合は、パソコンのChromeで同じチャットを開き、PDFでエクスポートしてください。</p>
 <h3>Download Claude conversationsはPDFでエクスポートできますか？</h3>
-<p>いいえ。現在の形式はMarkdown、JSON、プレーンテキスト、XML、PNGです。PNGはスレッドの画像で、PDFではありません。PDFへの印刷は引き続きブラウザの役割です。バージョン1.13.0には .pdf の書き出し機能はありません。</p>
+<p>はい。バージョン1.16.2は、Markdown、プレーンテキスト、JSON、XML、CSV、PNGに加えてPDFでもエクスポートできます。PDFダイアログでは、ファイル名、用紙サイズ、余白、ライトモードまたはダークモード、フォントとサイズ、ページ番号、目次、タイムスタンプ、プロンプトごとの改ページを設定できます。</p>
 <h3>印刷したPDFはAnthropicのデータエクスポートと同じですか？</h3>
-<p>いいえ。印刷は、表示しているページをそのまま写し取ります。Anthropicの Settings → Privacy → Export data は、アカウント全体のJSONをZIPにしてメールで送ります。どちらも、オレンジ色のボタンで得られるチャットごとのMarkdownファイルではありません。</p>
+<p>いいえ。印刷は、表示しているページをそのまま写し取ります。Anthropicの Settings → Privacy → Export data は、アカウント全体のJSONをZIPにしてメールで送ります。どちらも、拡張機能がオレンジ色のボタンから作成するチャットごとのPDFではありません。</p>
 <h3>コードを読みやすい形でClaudeのチャットをPDFにするには？</h3>
-<p>コードが重要なら、印刷から始めないでください。Markdownでエクスポートし、エディターで開いてから、その文書を印刷します。改ページはチャット画面ではなくファイルに対して行われます。Proでない場合、無料エクスポート3回のうち1回を使います。</p>
+<p>拡張機能でPDFを選んでください。コードブロックは言語と書式が保たれ、用紙サイズと余白も設定できます。コードにとって印刷は不向きな方法で、ブロックが折り返されたり、ページをまたいで分割されたりします。自分で組版したいなら、Markdownでエクスポートしてエディターから印刷してください。</p>
 <h3>PNGはPDFの代わりになりますか？</h3>
-<p>いいえ。PNGはビットマップ画像です。印刷で作ったPDFは、claude.aiをページ分けしたスナップショットです。どちらもチャットの画像のように見えますが、実際にPDFなのは印刷で作ったものだけです。どちらも、検索や差分の用途ではMarkdownの代わりになりません。</p>
-<h3>印刷すると無料エクスポート3回分を使いますか？</h3>
-<p>いいえ。印刷はブラウザの機能です。回数制限は拡張機能のファイルにだけ適用されます。claude.aiを印刷するのにGoogleログインは不要です。この拡張機能でMarkdown、JSON、テキスト、XML、PNGをエクスポートするときには必要です。</p>
+<p>いいえ。PNGは会話全体を写した1枚の画像です。拡張機能のPDFは、ページ番号や目次を付けられるページ構成の文書です。印刷で作ったPDFは、claude.aiをページ分けしたスナップショットです。どれも、編集や差分の用途ではMarkdownの代わりになりません。</p>
+<h3>印刷するとPDFの1日の上限を使いますか？</h3>
+<p>いいえ。印刷はブラウザの機能で、拡張機能ではありません。無料プランの1日3回の上限は、拡張機能のPDFと一括ZIPにだけ適用されます。claude.aiの印刷にサインインは不要で、Markdown、テキスト、JSON、XML、CSV、PNGのエクスポートは無制限です。</p>
 <h3>Claudeのチャットを一括でPDFとしてダウンロードできますか？</h3>
-<p>PDFとして直接はできません。「Export All」で多数のMarkdownファイルやPNGファイルを書き出せるので、PDFが必要ならMarkdownを後から変換してください。一括でも、各ファイルが無料エクスポート3回の枠に数えられます。<a href="/ja/bulk/">「Export All」で一括エクスポート</a>をご覧ください。</p>
-<h3>Claude CodeのセッションをPDFとして印刷できますか？</h3>
-<p>claude.aiの印刷ではできません。Claude Codeはターミナルです。<code>/export</code> を使い、紙が必要ならテキストファイルをエディターから印刷してください。ガイド：<a href="/ja/claude-code-export/">Claude Codeのエクスポート</a>。</p>
+<p>はい。ダッシュボードで「Chat format」（チャット形式）をPDFにし、チャットにチェックを入れて「Export All」（すべてエクスポート）をクリックすると、チャットごとに1つのPDFが入ったZIPが1つできます。先にGoogleでサインインしてください。無料プランでは1日3件までで、ZIP内のチャット1件が1回に数えられます。Proは無制限です。<a href="/ja/bulk/">「Export All」で一括エクスポート</a>をご覧ください。</p>
+<h3>Claude CodeのセッションをPDFで保存できますか？</h3>
+<p>Webならできます。Claude Code on the web（claude.ai/code）はclaude.aiで開くので、ふつうのチャットと同じように拡張機能でPDFにエクスポートできます。ローカルのターミナルのセッションはWebページではありません。そこでは <code>/export</code> を使い、テキストファイルをエディターから印刷してください。ガイド：<a href="/ja/claude-code-export/">Claude Codeのエクスポート</a>。</p>
 <h3>TeamやEnterpriseプランならPDFエクスポートは変わりますか？</h3>
-<p>それらのプランでもPDFボタンは追加されません。Chromeでチャットを開ければ印刷でき、拡張機能の5つの形式も使えます。プランによって私たちのドロップダウンに .pdf が加わることはありません。</p>
-<h3>対応形式にPDFを追加する予定はありますか？</h3>
-<p>1.13.0ではありません。追加した場合は、その日のうちにこのページでお知らせします。それまでは、印刷するかMarkdownを変換してください。存在しない「PDFでダウンロード」機能をでっち上げるより、足りない点をはっきり伝えるほうを選びます。</p>
+<p>いいえ。PDFはClaudeのプランではなく、拡張機能の機能です。Chromeのclaude.aiでチャットを開ければ、PDFを含む7つの形式のどれでもエクスポートできます。無料の1日3回の上限もProも、どのClaudeのプランでも同じです。</p>
+<h3>ClaudeのチャットのPDFはサーバーで作成されますか？</h3>
+<p>いいえ。PDFは、ほかのすべての形式と同じく、ブラウザの中で作成されます。会話のテキストがアップロード、保存、分析されることはありません。サインイン後に送信されるのは、1日の上限やProを確認するためのGoogleのメールアドレスだけです。</p>
 </article>
 </main>
 <section class="final-cta page-cta" aria-label="インストール">
@@ -277,7 +363,7 @@
     <div class="final-cta-panel">
       <p class="final-kicker">Download Claude conversations</p>
       <h2>欲しいのは印刷物ではなく、ファイルですか？</h2>
-      <p>claude.aiのチャットをMarkdown、JSON、テキスト、XML、PNGでエクスポート。Chromeからローカルで処理されます。PDFは引き続き、印刷かMarkdownからの変換で作ります。</p>
+      <p>claude.aiのチャットをPDFで保存。用紙サイズ、余白、ダークモード、目次も設定できます。Markdown、JSON、テキスト、CSV、XML、PNGにも対応。Chromeからローカルで処理されます。</p>
       <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=ja-pdf" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Chromeに追加</a>
     </div>
   </div>
@@ -286,7 +372,7 @@
   <div class="footer-inner">
     <div>
       <a class="logo" href="/ja/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
-      <p class="legal-note">Claude.aiのチャットをMarkdown、JSON、プレーンテキスト、XML、PNGでダウンロードできるChrome拡張機能。Chrome Web Storeで評価5.0。</p>
+      <p class="legal-note">Claude.aiのチャットをPDF、Markdown、JSON、プレーンテキスト、CSV、XML、PNGでダウンロードできるChrome拡張機能。</p>
     </div>
     <div>
       <h2>インストール</h2>
@@ -306,7 +392,7 @@
       <a href="/ja/export-claude-chat/">Claudeのチャットをエクスポート</a>
       <a href="/ja/claude-conversation-extractor/">Claudeの会話抽出ツール</a>
       <a href="/ja/claude-code-export/">Claude Codeのエクスポート</a>
-      <a href="/ja/download-claude-chat-as-pdf/">印刷 / PDF</a>
+      <a href="/ja/download-claude-chat-as-pdf/">ClaudeのチャットをPDFで保存</a>
       <a href="/ja/export-claude-desktop-chat/">Claude Desktopのエクスポート</a>
       <a href="/ja/claude-export-conversation/">Claudeの会話エクスポート</a>
       <a href="/ja/how-to-save-claude-conversation/">Claudeの会話を保存する方法</a>
@@ -330,7 +416,7 @@
     </div>
   </div>
   <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/download-claude-chat-as-pdf/" hreflang="en" lang="en">English</a> <a href="/de/claude-chat-als-pdf/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/conversation-claude-en-pdf/" hreflang="fr" lang="fr">Français</a> <a href="/nl/claude-chat-als-pdf/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/claude-chatt-som-pdf/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/claude-chat-som-pdf/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/claude-chat-som-pdf/" hreflang="da" lang="da">Dansk</a> <a href="/fi/claude-keskustelu-pdf/" hreflang="fi" lang="fi">Suomi</a> <a href="/ja/download-claude-chat-as-pdf/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/download-claude-chat-as-pdf/" hreflang="ko" lang="ko">한국어</a> <a href="/he/download-claude-chat-as-pdf/" hreflang="he" lang="he">עברית</a> <a href="/ar/download-claude-chat-as-pdf/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
-  <p class="disclaimer">チャットはブラウザ内で処理 · 利用回数の管理にGoogleサインインを使用 · Anthropic, PBCとは提携していません。ClaudeはAnthropicの商標です。独立したChrome拡張機能であり、Anthropicの公式製品ではありません。サポート： <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+  <p class="disclaimer">チャットはブラウザ内で処理 · GoogleサインインはPDF・一括エクスポート・Proのみ · Anthropic, PBCとは提携していません。ClaudeはAnthropicの商標です。独立したChrome拡張機能であり、Anthropicの公式製品ではありません。サポート： <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
 </footer>
 <script src="/assets/site.js" defer></script>
 </body>

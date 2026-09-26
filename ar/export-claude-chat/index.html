@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>تصدير محادثة Claude — إضافة Chrome بصيغ Markdown وJSON وPNG</title>
-  <meta name="description" content="إضافة لتصدير محادثة Claude من claude.ai بصيغ Markdown وJSON والنص وXML وPNG. إضافة Chrome مجانية — محادثة واحدة أو تصدير جماعي عبر Export All.">
+  <meta name="description" content="إضافة لتصدير محادثة Claude من claude.ai بصيغ PDF وMarkdown وJSON والنص وXML وCSV وPNG. إضافة Chrome مجانية، بلا حساب لملفات المحادثة الواحدة.">
   <link rel="canonical" href="https://chat-downloader.com/ar/export-claude-chat/">
   <!-- i18n:head -->
   <link rel="alternate" hreflang="en" href="https://chat-downloader.com/export-claude-chat/">
@@ -35,14 +35,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;700&amp;display=swap" rel="stylesheet">
   <!-- /i18n:head -->
   <meta property="og:title" content="تصدير محادثة Claude — إضافة Chrome بصيغ Markdown وJSON وPNG">
-  <meta property="og:description" content="إضافة لتصدير محادثة Claude من claude.ai بصيغ Markdown وJSON والنص وXML وPNG. إضافة Chrome مجانية — محادثة واحدة أو تصدير جماعي عبر Export All.">
+  <meta property="og:description" content="إضافة لتصدير محادثة Claude من claude.ai بصيغ PDF وMarkdown وJSON والنص وXML وCSV وPNG. إضافة Chrome مجانية، بلا حساب لملفات المحادثة الواحدة.">
   <meta property="og:url" content="https://chat-downloader.com/ar/export-claude-chat/">
   <meta property="og:image" content="https://chat-downloader.com/assets/widget-guide.png">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Chat Downloader">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="تصدير محادثة Claude — إضافة Chrome بصيغ Markdown وJSON وPNG">
-  <meta name="twitter:description" content="إضافة لتصدير محادثة Claude من claude.ai بصيغ Markdown وJSON والنص وXML وPNG. إضافة Chrome مجانية — محادثة واحدة أو تصدير جماعي عبر Export All.">
+  <meta name="twitter:description" content="إضافة لتصدير محادثة Claude من claude.ai بصيغ PDF وMarkdown وJSON والنص وXML وCSV وPNG. إضافة Chrome مجانية، بلا حساب لملفات المحادثة الواحدة.">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
@@ -58,8 +58,8 @@
     gtag('config', 'G-GME1YXGZKR');
   </script>
   
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"ماذا يعني «تصدير محادثة Claude» على هذا الموقع؟","acceptedAnswer":{"@type":"Answer","text":"حفظ محادثة claude.ai كملف عبر Download Claude conversations: الزر البرتقالي، ثم اختيار الصيغة، ثم «Export». المهمة نفسها التي يكتبها كثيرون بالإنجليزية «claude export chat». ليس ملف ZIP الذي ترسله Anthropic بالبريد، وليس أمر /export في Claude Code."}},{"@type":"Question","name":"هل إضافة تصدير Claude هي نفسها Export data؟","acceptedAnswer":{"@type":"Answer","text":"لا. ‏Settings → Privacy → Export data ملف ZIP بصيغة JSON للحساب كله يصل بالبريد. أما إضافة التصدير فتكتب المحادثة المفتوحة أو ما حددته عبر Export All بصيغ Markdown أو JSON أو النص أو XML أو PNG فورًا في Chrome."}},{"@type":"Question","name":"هل يمكنني تصدير محادثة Claude بصيغة PDF؟","acceptedAnswer":{"@type":"Answer","text":"ليس بإضافة التصدير هذه. الصيغ المتاحة هي Markdown وJSON والنص العادي وXML وPNG. للحصول على لقطة شبيهة بـ PDF، اطبع صفحة claude.ai في Chrome. PNG صورة، وليست PDF."}},{"@type":"Question","name":"هل أحتاج إلى Pro لتصدير محادثة Claude مرة واحدة؟","acceptedAnswer":{"@type":"Answer","text":"لا. أول 3 عمليات تصدير على أي حساب مسجّل عبر Google مجانية وبأي صيغة. ويرفع Pro بسعر $3.99 شهريًا أو $26.99 سنويًا الحد عن مزيد من الملفات الفردية أو الجماعية."}},{"@type":"Question","name":"هل يعمل تصدير محادثة Claude مع أي خطة في claude.ai؟","acceptedAnswer":{"@type":"Answer","text":"نعم. تعمل خطط Free وPro وTeam وEnterprise في claude.ai ما دمت تستطيع فتح المحادثة في Chrome. لا تتطلب إضافة التصدير خطة Anthropic المدفوعة."}},{"@type":"Question","name":"هل إضافة تصدير Claude هذه مخصصة لـ Claude Code؟","acceptedAnswer":{"@type":"Answer","text":"لا. تعمل Download Claude conversations على claude.ai في Chrome. أما Claude Code فيستخدم /export أو ملفات JSONL على القرص. راجع دليل تصدير Claude Code."}},{"@type":"Question","name":"هل يمكنني تصدير محادثة Claude من Claude Desktop؟","acceptedAnswer":{"@type":"Answer","text":"ليس بإضافة Chrome هذه. افتح المحادثة نفسها على claude.ai إذا كانت متزامنة، أو انسخها والصقها، أو استخدم Export data الرسمي. لا يُظهر Desktop الزر البرتقالي أبدًا."}},{"@type":"Question","name":"كم عملية تصدير مجانية تمنحها إضافة تصدير Claude؟","acceptedAnswer":{"@type":"Answer","text":"ثلاث لكل حساب، يتقاسمها الزر البرتقالي وExport All. إعادة التثبيت لا تعيد ضبط العدّاد. ويُستعاد Pro عبر تسجيل الدخول بحساب Google."}},{"@type":"Question","name":"أين الزر البرتقالي لتصدير محادثة Claude؟","acceptedAnswer":{"@type":"Answer","text":"على يمين مربع الرسائل في رابط محادثة على claude.ai، بعد تثبيت Download Claude conversations وإعادة تحميل الصفحة. لا يظهر على الصفحة الرئيسية الفارغة لكتابة الرسائل ولا في Desktop."}},{"@type":"Question","name":"هل يرفع تصدير محادثة Claude محادثاتي إلى الخادم؟","acceptedAnswer":{"@type":"Answer","text":"لا. تُنشأ الملفات داخل المتصفح وتُسلَّم إلى واجهة التنزيل في Chrome. يرى خادمنا المصغّر حالة الاشتراك وبريدًا إلكترونيًا موثّقًا عبر Google، لا نصوص المحادثات. التفاصيل في صفحة طريقة العمل."}},{"@type":"Question","name":"ما الصيغ التي تكتبها إضافة تصدير Claude؟","acceptedAnswer":{"@type":"Answer","text":"Markdown وJSON والنص العادي وXML وPNG — الصيغ الخمس نفسها للمحادثة الواحدة ولـ Export All. لا تصدير إلى PDF أو Word أو Notion أو Google Docs في الإصدار 1.13.0."}}]}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Claude Chat Downloader","alternateName":["Download Claude conversations","Claude Conversation Downloader"],"applicationCategory":"BrowserApplication","operatingSystem":"Chrome","url":"https://chat-downloader.com","downloadUrl":"https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","bestRating":"5","worstRating":"1"},"description":"إضافة لتصدير محادثة Claude من claude.ai بصيغ Markdown وJSON والنص وXML وPNG. إضافة Chrome مجانية — محادثة واحدة أو تصدير جماعي عبر Export All."}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"ماذا يعني «تصدير محادثة Claude» على هذا الموقع؟","acceptedAnswer":{"@type":"Answer","text":"حفظ محادثة claude.ai كملف عبر Download Claude conversations: الزر البرتقالي، ثم اختيار الصيغة، ثم «Export». المهمة نفسها التي يكتبها كثيرون بالإنجليزية «claude export chat». ليس ملف ZIP الذي ترسله Anthropic بالبريد، وليس أمر /export في Claude Code."}},{"@type":"Question","name":"هل إضافة تصدير Claude هي نفسها Export data؟","acceptedAnswer":{"@type":"Answer","text":"لا. ‏Settings → Privacy → Export data ملف ZIP بصيغة JSON للحساب كله يصل بالبريد. أما إضافة التصدير فتكتب المحادثة المفتوحة بصيغة PDF أو Markdown أو JSON أو النص أو XML أو CSV أو PNG، أو ما حددته عبر Export All كملف ZIP، فورًا في Chrome."}},{"@type":"Question","name":"هل يمكنني تصدير محادثة Claude بصيغة PDF؟","acceptedAnswer":{"@type":"Answer","text":"نعم. اختر PDF من قائمة الصيغ وانقر على «Export». تُنشئ إضافة التصدير ملف PDF داخل المتصفح، بلا نافذة طباعة. يطلب PDF تسجيل الدخول عبر Google، وهو مجاني حتى 3 مرات يوميًا؛ ويجعله Pro غير محدود. الدليل: تنزيل محادثة Claude بصيغة PDF."}},{"@type":"Question","name":"هل أحتاج إلى Pro لتصدير محادثة Claude مرة واحدة؟","acceptedAnswer":{"@type":"Answer","text":"لا. عمليات التصدير بصيغ Markdown والنص وJSON وXML وCSV وPNG مجانية وغير محدودة، بلا حساب. أما PDF والتصدير الجماعي عبر Export All فمجانيان حتى 3 مرات يوميًا مع تسجيل الدخول عبر Google. ويرفع Pro بسعر $3.99 شهريًا أو $26.99 سنويًا هذا الحد."}},{"@type":"Question","name":"هل يعمل تصدير محادثة Claude مع أي خطة في claude.ai؟","acceptedAnswer":{"@type":"Answer","text":"نعم. تعمل خطط Free وPro وTeam وEnterprise في claude.ai ما دمت تستطيع فتح المحادثة في Chrome. لا تتطلب إضافة التصدير خطة Anthropic المدفوعة."}},{"@type":"Question","name":"هل إضافة تصدير Claude هذه مخصصة لـ Claude Code؟","acceptedAnswer":{"@type":"Answer","text":"فقط لـ Claude Code على الويب. تُفتح الجلسات على claude.ai/code داخل claude.ai وتُصدَّر مثل أي محادثة. أما Claude Code داخل الطرفية فيستخدم /export أو ملفات JSONL على القرص، ولا تقرأ Download Claude conversations تلك الملفات. راجع دليل تصدير Claude Code."}},{"@type":"Question","name":"هل يمكنني تصدير محادثة Claude من Claude Desktop؟","acceptedAnswer":{"@type":"Answer","text":"ليس بإضافة Chrome هذه. افتح المحادثة نفسها على claude.ai إذا كانت متزامنة، أو انسخها والصقها، أو استخدم Export data الرسمي. لا يُظهر Desktop الزر البرتقالي أبدًا."}},{"@type":"Question","name":"كم عملية تصدير مجانية تمنحها إضافة تصدير Claude؟","acceptedAnswer":{"@type":"Answer","text":"غير محدودة لصيغ Markdown والنص وJSON وXML وCSV وPNG، بلا حساب. أما PDF والتصدير الجماعي عبر Export All فيتقاسمان 3 عمليات يوميًا في الخطة المجانية، مع تسجيل الدخول عبر Google؛ وكل محادثة داخل ملف ZIP جماعي تُحتسب واحدة. يُعاد ضبط العدد عند منتصف الليل بتوقيت UTC. ويرفع Pro الحد ويُستعاد عبر تسجيل الدخول بحساب Google."}},{"@type":"Question","name":"أين الزر البرتقالي لتصدير محادثة Claude؟","acceptedAnswer":{"@type":"Answer","text":"على يمين مربع الرسائل في رابط محادثة على claude.ai، بعد تثبيت Download Claude conversations وإعادة تحميل الصفحة. لا يظهر على الصفحة الرئيسية الفارغة لكتابة الرسائل ولا في Desktop."}},{"@type":"Question","name":"هل يرفع تصدير محادثة Claude محادثاتي إلى الخادم؟","acceptedAnswer":{"@type":"Answer","text":"لا. كل الصيغ، بما فيها PDF، تُنشأ داخل المتصفح وتُسلَّم إلى واجهة التنزيل في Chrome. عمليات التصدير بصيغ Markdown والنص وJSON وXML وCSV وPNG لا ترسل إلينا أي شيء. وبعد تسجيل الدخول لـ PDF أو التصدير الجماعي أو Pro، يرى خادمنا المصغّر حالة الحصة أو الاشتراك وبريدك في Google، ولا يرى نصوص المحادثات أبدًا. التفاصيل في صفحة طريقة العمل."}},{"@type":"Question","name":"ما الصيغ التي تكتبها إضافة تصدير Claude؟","acceptedAnswer":{"@type":"Answer","text":"سبع: PDF وMarkdown والنص العادي وJSON وXML وCSV وPNG — الصيغ السبع نفسها للمحادثة الواحدة ولـ Export All. لا تصدير إلى Word أو Notion أو Google Docs في الإصدار 1.16.2."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Claude Chat Downloader","alternateName":["Download Claude conversations","Claude Conversation Downloader"],"applicationCategory":"BrowserApplication","operatingSystem":"Chrome","softwareVersion":"1.16.2","url":"https://chat-downloader.com","downloadUrl":"https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak","offers":[{"@type":"Offer","name":"المجانية","price":"0","priceCurrency":"USD","description":"تصدير غير محدود بصيغ Markdown والنص وJSON وXML وCSV وPNG؛ و3 عمليات تصدير PDF أو جماعية يوميًا"},{"@type":"Offer","name":"Pro الشهري","price":"3.99","priceCurrency":"USD"},{"@type":"Offer","name":"Pro السنوي","price":"26.99","priceCurrency":"USD"}],"description":"إضافة لتصدير محادثة Claude من claude.ai بصيغ PDF وMarkdown وJSON والنص وXML وCSV وPNG. إضافة Chrome مجانية، بلا حساب لملفات المحادثة الواحدة."}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"الرئيسية","item":"https://chat-downloader.com/ar/"},{"@type":"ListItem","position":2,"name":"تصدير محادثة Claude","item":"https://chat-downloader.com/ar/export-claude-chat/"}]}</script>
 </head>
 <body>
@@ -86,14 +86,14 @@
 <nav class="crumbs" aria-label="مسار التنقل"><a href="/ar/">الرئيسية</a> / تصدير محادثة Claude</nav>
 <main id="main">
 <article class="band prose">
-<p class="article-meta">تم التحديث <time datetime="2026-09">سبتمبر 2026</time> · الإضافة 1.13.0</p>
+<p class="article-meta">تم التحديث <time datetime="2026-09">سبتمبر 2026</time> · الإضافة 1.16.2</p>
 <h1 class="page-h1">تصدير محادثة Claude كملف مقروء</h1>
-<p class="lead">لتصدير محادثة Claude من claude.ai، ثبّت Download Claude conversations، وافتح المحادثة، وانقر على الزر البرتقالي، واختر Markdown أو JSON أو النص أو XML أو PNG، ثم انقر على «Export» (تصدير). تكتب إضافة التصدير هذه الملف على جهازك، ولا تعمل في Claude Desktop أو Claude Code. ثلاث عمليات تصدير مجانًا، وPro بسعر $3.99 شهريًا أو $26.99 سنويًا.</p>
-<aside class="trust-badge" aria-label="التقييم في Chrome Web Store">
-  <span class="trophy" aria-hidden="true">🏆</span>
+<p class="lead">لتصدير محادثة Claude من claude.ai، ثبّت Download Claude conversations، وافتح المحادثة، وانقر على الزر البرتقالي، واختر PDF أو Markdown أو JSON أو النص أو XML أو CSV أو PNG، ثم انقر على «Export» (تصدير). تكتب إضافة التصدير هذه الملف على جهازك، ولا تعمل في Claude Desktop أو في Claude Code داخل الطرفية. صيغ Markdown والنص وJSON وXML وCSV وPNG مجانية وغير محدودة وبلا حساب. أما PDF والتصدير الجماعي بملف ZIP فمجانيان حتى 3 مرات يوميًا، وPro بسعر $3.99 شهريًا أو $26.99 سنويًا.</p>
+<aside class="trust-badge" aria-label="عن الإضافة">
+  <span class="trophy" aria-hidden="true">🧩</span>
   <div>
-    <strong>Download Claude conversations — بتقييم 5.0 في Chrome Web Store</strong>
-    <span>2026 — إضافة Chrome مجانية لحفظ محادثات claude.ai بصيغ Markdown وJSON والنص وXML وPNG</span>
+    <strong>Download Claude conversations — إضافة Chrome مجانية لـclaude.ai</strong>
+    <span>الإصدار 1.16.2 (سبتمبر 2026) — تصدير غير محدود بصيغ Markdown والنص العادي وJSON وXML وCSV وPNG بلا حساب؛ وPDF والتصدير الجماعي بملف ZIP مجانيان حتى 3 مرات يوميًا</span>
   </div>
 </aside>
 <nav class="toc" aria-label="في هذه الصفحة">
@@ -111,32 +111,32 @@
 </nav>
 
 <h2 id="export-one">كيف أصدّر محادثة Claude من claude.ai؟</h2>
-<p>افتح المحادثة على claude.ai في Chrome، وانقر على الزر البرتقالي بجوار مربع الرسائل، واختر Markdown أو JSON أو النص العادي أو XML أو PNG، ثم انقر على «Export». تكتب Download Claude conversations ذلك الملف محليًا. لا يوجد في claude.ai نفسه حتى سبتمبر 2026 أي خيار أصلي لتصدير المحادثة.</p>
+<p>افتح المحادثة على claude.ai في Chrome، وانقر على الزر البرتقالي بجوار مربع الرسائل، واختر PDF أو Markdown أو JSON أو النص العادي أو XML أو CSV أو PNG، ثم انقر على «Export». تكتب Download Claude conversations ذلك الملف محليًا. لا يوجد في claude.ai نفسه حتى سبتمبر 2026 أي خيار أصلي لتصدير المحادثة.</p>
 <ol>
-<li>ثبّت Download Claude conversations من Chrome Web Store (بتقييم 5.0).</li>
+<li>ثبّت Download Claude conversations من Chrome Web Store.</li>
 <li>أعد تحميل claude.ai وافتح رابط محادثة فعلية، لا الصفحة الرئيسية الفارغة لكتابة الرسائل.</li>
-<li>انقر على زر التنزيل البرتقالي على يمين مربع الرسائل.</li>
-<li>اختر صيغة. تتذكر إضافة التصدير آخر صيغة استخدمتها.</li>
-<li>انقر على «Export». يحفظ Chrome الملف فورًا عبر واجهة التنزيل في المتصفح.</li>
+<li>انقر على زر التنزيل البرتقالي الدائري على يمين مربع الرسائل.</li>
+<li>في اللوحة، اضبط «Messages» (الرسائل) على «All» أو «Human» أو «Assistant» (الكل أو المستخدم أو المساعد)، ثم اختر صيغة. فعّل «Thinking» (التفكير) لتضمين التفكير الموسّع، أو استخدم «Select» (تحديد) لاختيار رسائل بعينها. تتذكر إضافة التصدير آخر صيغة استخدمتها.</li>
+<li>انقر على «Export». يحفظ Chrome الملف فورًا عبر واجهة التنزيل في المتصفح. أما «Copy» (نسخ) فيضع نص Markdown أو النص أو JSON أو XML أو CSV في الحافظة بدلًا من ذلك.</li>
 </ol>
-<p>يلزم تسجيل الدخول عبر Google قبل أول عملية لتصدير محادثة Claude. تحتفظ Download Claude conversations بالبريد الإلكتروني الموثّق لاحتساب عمليات التصدير المجانية الثلاث واستعادة Pro بعد إعادة التثبيت. ونص المحادثة ليس جزءًا من تسجيل الدخول هذا. الآلية: <a href="/ar/how-it-works/">طريقة العمل</a>.</p>
+<p>لا يلزم أي حساب لتصدير محادثة Claude بصيغة Markdown أو النص أو JSON أو XML أو CSV أو PNG. عمليات التصدير هذه للمحادثة الواحدة غير محدودة، ولا ترسل الإضافة بشأنها أي شيء إلى خوادمنا. لا يظهر تسجيل الدخول عبر Google إلا عند اختيار PDF أو تشغيل التصدير الجماعي عبر Export All: تسمح الخطة المجانية بـ 3 من هذه العمليات يوميًا، مجتمعةً، ويُعاد ضبط العدد عند منتصف الليل بتوقيت UTC. ونص المحادثة لا يكون أبدًا جزءًا من تسجيل الدخول هذا. الآلية: <a href="/ar/how-it-works/">طريقة العمل</a>.</p>
 <p>إذا لم يظهر الزر البرتقالي، فأنت لست على رابط محادثة، أو يحتاج التبويب إلى إعادة تحميل بعد التثبيت، أو ما زالت أيقونة الإضافة مخفية في قائمة الإضافات (أيقونة قطعة الأحجية) في Chrome. ثبّت Download Claude conversations في شريط الأدوات، ثم حدّث claude.ai. لا تُحقن إضافة التصدير إلا في claude.ai، ولا تعمل على أي موقع آخر.</p>
 <div class="callout callout-tip">
-  <p><strong>محادثة واحدة مقابل الحساب كله.</strong> يصدّر الزر البرتقالي المحادثة المفتوحة. ولملفات كثيرة، افتح View and Download All Conversations (عرض كل المحادثات وتنزيلها) وشغّل Export All (تصدير الكل) — راجع <a href="/ar/bulk/">التصدير الجماعي عبر Export All</a>. أما Settings → Privacy → Export data من Anthropic (قد تظهر التسميات بالعربية إذا كانت واجهة claude.ai مضبوطة على العربية) فملف ZIP للحساب يصل متأخرًا، وليس هذا المسار.</p>
+  <p><strong>محادثة واحدة مقابل الحساب كله.</strong> يصدّر الزر البرتقالي المحادثة المفتوحة. ولملفات كثيرة، افتح View and Download All Conversations (عرض كل المحادثات وتنزيلها) من النافذة المنبثقة للإضافة، وشغّل Export All (تصدير الكل) — راجع <a href="/ar/bulk/">التصدير الجماعي عبر Export All</a>. أما Settings → Privacy → Export data من Anthropic (قد تظهر التسميات بالعربية إذا كانت واجهة claude.ai مضبوطة على العربية) فملف ZIP للحساب يصل متأخرًا، وليس هذا المسار.</p>
 </div>
 
 <h2 id="what-extension-does">ماذا تفعل إضافة تصدير Claude فعلًا؟</h2>
-<p>تقرأ إضافة تصدير Claude المحادثة المعروضة أصلًا في تبويب claude.ai الذي سجّلت الدخول فيه، وتكتب ملفًا منظمًا على القرص. ‏Download Claude conversations هي سكربت المحتوى ذاك في Chrome: المرسل، وشجرة الرسائل، والكتل البرمجية المسوّرة، والجداول، والتفكير الاختياري، وتخطيط الـ artifacts — لا لقطة شاشة لإطار الواجهة المحيط بالمحادثة.</p>
-<p>النسخ واللصق من claude.ai يُسقط مسافات الإزاحة ويطوي الجداول. والطباعة (Ctrl/Cmd+P) تُبقي الشريط الجانبي وكثيرًا ما تقسم كتلة الشيفرة الطويلة بين الصفحات. أما إضافة التصدير فتحافظ على وسوم اللغة في الكتل المسوّرة وتُبقي الجداول جداول في Markdown وJSON وXML. وPNG خيار اللقطة المرئية؛ لكنه يظل ليس PDF.</p>
-<p>تخطيط الـ artifacts خيار حقيقي في الإصدار 1.13.0: «Original» أو «Inline» أو «Nested» أو «Flat». كتل التفكير اختيارية («include thinking»)، ويمكن أن ترافق الملفَ البيانات الوصفية («include metadata»: العنوان والطوابع الزمنية والنموذج). ويمكن لمرشّح المرسل أن يقصر الملف على كل الرسائل أو رسائل المستخدم فقط أو رسائل المساعد فقط («all / human only / assistant only»). القائمة الكاملة: <a href="/ar/features/">الميزات</a>.</p>
+<p>تقرأ إضافة تصدير Claude المحادثة المعروضة أصلًا في تبويب claude.ai الذي سجّلت الدخول فيه، وتكتب ملفًا منظمًا على القرص. ‏Download Claude conversations هي سكربت المحتوى ذاك في Chrome: المرسل، وشجرة الرسائل، والكتل البرمجية المسوّرة، والجداول، والتفكير الاختياري، وتخطيط الـ artifacts — لا لقطة شاشة لإطار الواجهة المحيط بالمحادثة. وهي تعمل على المحادثات العادية وProjects (المشاريع) وجلسات Cowork وClaude Code على الويب.</p>
+<p>النسخ واللصق من claude.ai يُسقط مسافات الإزاحة ويطوي الجداول. والطباعة (Ctrl/Cmd+P) تُبقي الشريط الجانبي وكثيرًا ما تقسم كتلة الشيفرة الطويلة بين الصفحات. أما إضافة التصدير فتحافظ على وسوم اللغة في الكتل المسوّرة وتُبقي الجداول جداول في Markdown وJSON وXML. وPNG خيار اللقطة المرئية. أما PDF فهو الخيار المقسّم إلى صفحات، ويُنشأ داخل المتصفح بلا نافذة طباعة.</p>
+<p>تخطيط الـ artifacts خيار حقيقي في الإصدار 1.16.2: «Original» أو «Inline» أو «Nested» أو «Flat»، ويُضبط من لوحة التحكم (Dashboard). التفكير الموسّع مربع اختيار في لوحة التصدير، أما مصادر البحث على الويب وخطوات الأدوات / MCP فتُفعَّل اختياريًا من الإعدادات (Settings). ويمكن أن ترافق الملفَ البيانات الوصفية (العنوان والطوابع الزمنية والنموذج). ويقصر مرشّح «Messages» الملف على كل الرسائل أو رسائل المستخدم فقط أو رسائل المساعد فقط، بينما يتيح «Select» اختيار رسائل بعينها. القائمة الكاملة: <a href="/ar/features/">الميزات</a>.</p>
 <div class="expert-quote">
-  <p>صمّمنا الزر البرتقالي ليكتب ملفًا حقيقيًا من المحادثة الموجودة أصلًا على claude.ai — Markdown أو JSON أو نص أو XML أو PNG — دون رفع المحادثة إلى خوادمنا. ولا يزال الإصدار 1.13.0 لا يُخرج ملفات PDF.</p>
+  <p>صمّمنا الزر البرتقالي ليكتب ملفًا حقيقيًا من المحادثة الموجودة أصلًا على claude.ai — PDF أو Markdown أو JSON أو نص أو XML أو CSV أو PNG — دون رفع المحادثة إلى خوادمنا. والإصدار 1.16.2 يُنشئ ملف PDF داخل المتصفح أيضًا.</p>
   <footer>فريق Download Claude conversations</footer>
 </div>
 <p>يبحث الناس أيضًا عن Claude Chat Downloader وClaude Conversation Downloader للوصول إلى الإضافة نفسها في متجر Chrome. وقد تذكر الصفحات القانونية اسم Claude Exporter. كل هذه الأسماء تشير إلى Download Claude conversations، لا إلى منتج ثانٍ. ومن يبحث عن «استخراج» بدلًا من «تصدير» يصل إلى الزر نفسه؛ وهذه الزاوية يتناولها دليل <a href="/ar/claude-conversation-extractor/">أداة استخراج محادثات Claude</a>.</p>
 
 <h2 id="which-format">إلى أي صيغة أصدّر محادثة Claude؟</h2>
-<p>صدّر محادثة Claude بصيغة Markdown للملاحظات، أو JSON للسكربتات، أو النص العادي لأرشيف مجرّد، أو XML لتبادل البيانات، أو PNG لصورة من المحادثة. تقدم Download Claude conversations هذه الصيغ الخمس في قائمة منسدلة واحدة. لا توجد صيغة PDF في إضافة التصدير.</p>
+<p>صدّر محادثة Claude بصيغة PDF للمشاركة أو الطباعة، أو Markdown للملاحظات، أو JSON للسكربتات، أو النص العادي لأرشيف مجرّد، أو XML لتبادل البيانات، أو CSV لجدول بيانات، أو PNG لصورة من المحادثة. تقدم Download Claude conversations هذه الصيغ السبع في قائمة منسدلة واحدة.</p>
 <table>
   <caption>الصيغ التي تكتبها إضافة تصدير Claude من claude.ai</caption>
   <thead>
@@ -147,6 +147,11 @@
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td>PDF</td>
+      <td>المشاركة والطباعة والعملاء</td>
+      <td>ملف مقسّم إلى صفحات يُنشأ داخل المتصفح — <a href="/ar/download-claude-chat-as-pdf/">دليل PDF</a></td>
+    </tr>
     <tr>
       <td>Markdown</td>
       <td>Obsidian وGitHub والويكي</td>
@@ -168,31 +173,36 @@
       <td>تبادل منظم للبيانات — <a href="/ar/formats/xml/">دليل XML</a></td>
     </tr>
     <tr>
+      <td>CSV</td>
+      <td>Excel وGoogle Sheets وNumbers</td>
+      <td>صف لكل رسالة — <a href="/ar/formats/">دليل الصيغ</a></td>
+    </tr>
+    <tr>
       <td>PNG</td>
       <td>لقطة مرئية</td>
-      <td>صورة للمحادثة، وليست PDF — <a href="/ar/formats/png/">دليل PNG</a></td>
+      <td>صورة واحدة للمحادثة — <a href="/ar/formats/png/">دليل PNG</a></td>
     </tr>
   </tbody>
 </table>
-<p>يصدّر الكتّاب محادثة Claude عادةً بصيغة Markdown، ويختار المطورون JSON عادةً. وإذا احتجت تحديدًا إلى صفحة شبيهة بـ PDF، فاطبع من Chrome بدلًا من انتظار صيغة لا نوفرها — الشرح: <a href="/ar/download-claude-chat-as-pdf/">طباعة محادثة Claude</a>. ملف PNG من إضافة التصدير ملف صورة، وليس مستندًا مقسّمًا إلى صفحات.</p>
-<p>لا تغيّر القائمة المنسدلة للصيغ حصة العمليات الثلاث. يُحتسب كل ملف Markdown أو JSON أو نص أو XML أو PNG عملية تصدير واحدة عند اكتماله. ويرفع Pro بسعر $3.99 شهريًا أو $26.99 سنويًا هذا الحد عن كل الصيغ. لا تضيف Download Claude conversations في الإصدار 1.13.0 تصديرًا إلى Notion أو Word أو Google Docs.</p>
+<p>يصدّر الكتّاب محادثة Claude عادةً بصيغة Markdown، ويختار المطورون JSON عادةً. وإذا احتجت إلى مستند مقسّم إلى صفحات، فاختر PDF: تضبط نافذته حجم الصفحة والهوامش والوضع الفاتح أو الداكن والخط وأرقام الصفحات وجدول المحتويات — الشرح: <a href="/ar/download-claude-chat-as-pdf/">تنزيل محادثة Claude بصيغة PDF</a>. ملف PNG من إضافة التصدير صورة واحدة، وليس مستندًا مقسّمًا إلى صفحات.</p>
+<p>الصيغة هي ما يحدد إن كان هناك حد. صيغ Markdown والنص وJSON وXML وCSV وPNG غير محدودة وبلا حساب. أما PDF فيطلب تسجيل الدخول عبر Google ويُحتسب ضمن 3 عمليات يوميًا في الخطة المجانية، يتقاسمها مع التصدير الجماعي عبر Export All. ويرفع Pro بسعر $3.99 شهريًا أو $26.99 سنويًا هذا الحد. لا تضيف Download Claude conversations في الإصدار 1.16.2 تصديرًا إلى Notion أو Word أو Google Docs.</p>
 
 <h2 id="export-bulk">هل يمكنني تصدير محادثات Claude دفعةً واحدة عبر Export All؟</h2>
-<p>نعم. افتح View and Download All Conversations، وصفِّ الجدول، ثم انقر على Export All. كل ملف مكتمل عملية تصدير واحدة تُحتسب من عمليات التصدير المجانية الثلاث نفسها التي يستخدمها الزر البرتقالي. ويرفع Pro الحد عن التصدير الجماعي كما يرفعه عن المحادثة الواحدة.</p>
-<p>يعرض جدول التصفح سجل claude.ai مع البحث بالاسم والتصفية حسب All وNew وExported وProject. ‏New تعني المحادثات التي لم تُصدَّر بعد عبر Download Claude conversations، وExported تتتبع المحادثات التي حفظتها من قبل كي يتخطاها أي تصدير جماعي لاحق، وProject تطابق طريقة تجميعك للمحادثات على claude.ai.</p>
-<p>يستخدم التصدير الجماعي الخيارات نفسها التي تستخدمها المحادثة الواحدة: Chats وThinking وMetadata وتخطيط الـ artifacts ‏(Original وInline وNested وFlat)، والصيغ الخمس نفسها. ‏Export All ليس ملف ZIP مجرّدًا، بل ملفات كثيرة، ملف لكل محادثة. وإذا أردت أرشيفًا واحدًا متأخرًا للحساب كله، فذلك Export data من Anthropic، وتجد المقارنة في القسم التالي وفي <a href="/ar/bulk/">صفحة التصدير الجماعي</a>.</p>
+<p>نعم. افتح View and Download All Conversations من النافذة المنبثقة للإضافة، وصفِّ الجدول، ثم انقر على Export All للحصول على ملف ZIP. يطلب التصدير الجماعي تسجيل الدخول عبر Google. وفي الخطة المجانية يتقاسم 3 عمليات يوميًا مع PDF، وكل محادثة داخل ملف ZIP تستهلك واحدة منها. ويرفع Pro الحد عن السجل كله.</p>
+<p>تعرض لوحة التحكم (Dashboard) سجل claude.ai مع البحث بالاسم، والمرشّحات (All conversations وNew وUpdated وPreviously exported)، وتبويبَي Chat وCowork، والبحث في المشاريع. ‏New تعني المحادثات التي لم تُصدَّر بعد عبر Download Claude conversations، وPreviously exported تتتبع المحادثات التي حفظتها من قبل كي يتخطاها أي تصدير جماعي لاحق، والبحث في المشاريع يطابق طريقة تجميعك للمحادثات على claude.ai.</p>
+<p>يضم التصدير الجماعي منتقي «Chat format» (صيغة المحادثة) بالصيغ السبع كلها، بما فيها PDF، ومربعات اختيار Chats وThinking وMetadata وTools وSources، وتخطيط الـ artifacts ‏(Original وInline وNested وFlat). ‏Export All ليس أرشيفًا مجرّدًا، بل ملف ZIP واحد فيه ملف لكل محادثة بالصيغة المختارة. وإذا أردت أرشيفًا واحدًا متأخرًا للحساب كله، فذلك Export data من Anthropic، وتجد المقارنة في القسم التالي وفي <a href="/ar/bulk/">صفحة التصدير الجماعي</a>.</p>
 <div class="callout callout-warn">
-  <p><strong>الحصة على مستوى الحساب.</strong> ثلاث عمليات تصدير مجانية إجمالًا — لا ثلاث لكل عملية جماعية. تحديد 40 محادثة في صفحة التصفح سيستهلك 40 عملية تصدير إذا اكتملت كل الملفات. خطّط لما تحدده قبل النقر على Export All، أو استخدم Pro بسعر $3.99 شهريًا أو $26.99 سنويًا.</p>
+  <p><strong>التصدير الجماعي يُحتسب لكل محادثة.</strong> في الخطة المجانية يتقاسم Export All وPDF ‏3 عمليات يوميًا، وكل محادثة داخل ملف ZIP تستهلك واحدة. إذا حددت 40 محادثة وبقيت لك 3، فستُحظر الدفعة كلها، لا أن تُقتطع. حدّد عددًا أقل، أو انتظر إعادة الضبط عند منتصف الليل بتوقيت UTC، أو استخدم Pro بسعر $3.99 شهريًا أو $26.99 سنويًا.</p>
 </div>
 
 <h2 id="desktop-code">هل يعمل تصدير محادثة Claude في Desktop أو Code؟</h2>
-<p>لا. تعمل إضافة التصدير هذه على claude.ai داخل Chrome فقط (أو في متصفح آخر مبني على Chromium يستطيع تحميلها). ‏Claude Desktop تطبيق منفصل لنظامي Mac وWindows، وClaude Code وكيل يعمل في الطرفية. لا يظهر الزر البرتقالي أبدًا في هذه النوافذ.</p>
+<p>ليس في تطبيق Desktop ولا في Claude Code داخل الطرفية. تعمل إضافة التصدير هذه على claude.ai داخل Chrome فقط (أو في متصفح آخر مبني على Chromium يستطيع تحميلها). ‏Claude Desktop تطبيق منفصل لنظامي Mac وWindows، ولا يظهر الزر البرتقالي فيه أبدًا ولا في أي طرفية. الاستثناء هو Claude Code على الويب (claude.ai/code): تُفتح تلك الجلسات على claude.ai وتُصدَّر مثل أي محادثة.</p>
 <p>إذا كانت المحادثة موجودة أيضًا في حسابك على claude.ai، فافتحها في Chrome وصدّر محادثة Claude هناك عبر Download Claude conversations. وإذا كانت المحادثة موجودة في Desktop فقط، فانسخها والصقها من التطبيق أو اطلب Settings → Privacy → Export data عبر الويب. مقارنة خطوة بخطوة: <a href="/ar/export-claude-desktop-chat/">تصدير محادثة Claude Desktop</a>.</p>
-<p>يستخدم Claude Code الأمر <code>/export</code> أو نصوص JSONL المفرّغة على القرص، وهذا ليس Markdown من إضافة Chrome هذه. لا تثبّت Download Claude conversations متوقعًا ربطًا بالطرفية. الدليل: <a href="/ar/claude-code-export/">تصدير Claude Code</a>. البحث عن تصدير محادثة Claude لجلسة سطر أوامر يقود إلى مسار منتج مختلف.</p>
+<p>يستخدم Claude Code داخل الطرفية الأمر <code>/export</code> أو نصوص JSONL المفرّغة على القرص، ولا تقرأ إضافة Chrome هذه تلك الجلسات المحلية. لا تثبّت Download Claude conversations متوقعًا ربطًا بالطرفية. الدليل: <a href="/ar/claude-code-export/">تصدير Claude Code</a>. البحث عن تصدير محادثة Claude لجلسة سطر أوامر يقود إلى مسار منتج مختلف.</p>
 <p>نسخة claude.ai في متصفح الهاتف خارج النطاق أيضًا. تحتاج إضافة التصدير إلى Chrome على الحاسوب، ولا يوجد تطبيق لنظام iOS أو Android من هذا الفريق في 2026. افتح المحادثة على حاسوب، ثم صدّر محادثة Claude بالزر البرتقالي أو عبر Export All.</p>
 
 <h2 id="vs-official">تصدير محادثة Claude أم Export data من Anthropic؟</h2>
-<p>يرسل Export data من Anthropic بالبريد ملف ZIP بصيغة JSON للحساب كله بعد انتظار. أما تصدير محادثة Claude عبر Download Claude conversations فيحفظ المحادثة المفتوحة فورًا بصيغة Markdown أو JSON أو النص أو XML أو PNG. استخدم ملف ZIP للنسخ الاحتياطي، وإضافة التصدير لملف مقروء الآن.</p>
+<p>يرسل Export data من Anthropic بالبريد ملف ZIP بصيغة JSON للحساب كله بعد انتظار. أما تصدير محادثة Claude عبر Download Claude conversations فيحفظ المحادثة المفتوحة فورًا بصيغة PDF أو Markdown أو JSON أو النص أو XML أو CSV أو PNG. استخدم ملف ZIP للنسخ الاحتياطي، وإضافة التصدير لملف مقروء الآن.</p>
 <table>
   <caption>طرق إخراج محادثة Claude من claude.ai</caption>
   <thead>
@@ -207,7 +217,7 @@
     <tr>
       <td>إضافة تصدير Claude</td>
       <td>هذه المحادثة أو مجموعة محددة</td>
-      <td>MD / JSON / TXT / XML / PNG</td>
+      <td>PDF / MD / JSON / TXT / XML / CSV / PNG</td>
       <td>لا — يُنزَّل الملف في Chrome</td>
     </tr>
     <tr>
@@ -234,50 +244,50 @@
 <p>لا علاقة لـ Download Claude conversations بشركة Anthropic, PBC. واستخدام إضافة التصدير لا يغيّر شروط خدمة Anthropic. يستخدم سكربت المحتوى الجلسة التي فتحتها أصلًا على claude.ai، ولا يسجّل الدخول إلى Anthropic ببيانات اعتماد منفصلة. التزم بقواعد Anthropic الخاصة بحسابك.</p>
 
 <h2 id="cost">كم تكلف إضافة تصدير Claude؟</h2>
-<p>يحصل كل حساب مسجّل عبر Google على 3 عمليات تصدير مجانية. بعد ذلك، يبلغ Pro ‏$3.99 شهريًا أو $26.99 سنويًا عبر Paddle. يغطي هذا السعر الزر البرتقالي وExport All. لا تفرض Download Claude conversations رسومًا لكل صيغة. وتعمل أي خطة في claude.ai ما دام Chrome يستطيع فتح المحادثة.</p>
-<p>لا تُعاد عمليات التصدير المجانية الثلاث عند إعادة تثبيت الإضافة. ولهذا يلزم تسجيل الدخول عبر Google عند أول نقرة لتصدير محادثة Claude. يُستعاد Pro على حاسوب جديد من حساب Google نفسه. ‏Paddle هي جهة البيع الرسمية (merchant of record)، ولا يرى هذا الفريق أرقام البطاقات أبدًا. وتتم عمليات الاسترداد عبر Paddle كما هو موضح في صفحة الاسترداد.</p>
+<p>صيغ Markdown والنص وJSON وXML وCSV وPNG مجانية وغير محدودة، بلا حساب. أما PDF والتصدير الجماعي عبر Export All فمجانيان حتى 3 مرات يوميًا مع تسجيل الدخول عبر Google. يبلغ Pro ‏$3.99 شهريًا أو $26.99 سنويًا عبر Paddle، ويجعل PDF والتصدير الجماعي بلا حدود. لا تفرض Download Claude conversations رسومًا لكل صيغة. وتعمل أي خطة في claude.ai ما دام Chrome يستطيع فتح المحادثة.</p>
+<p>يُعاد ضبط العدد اليومي لعمليات PDF والتصدير الجماعي عند منتصف الليل بتوقيت UTC. ويُستعاد Pro على حاسوب جديد عند تسجيل الدخول بحساب Google نفسه. يمكنك الإلغاء في أي وقت من صفحة الخيارات (Options) في الإضافة أو عبر Paddle. ‏Paddle هي جهة البيع الرسمية (merchant of record)، ولا يرى هذا الفريق أرقام البطاقات أبدًا. وتشمل الدفعة الأولى ضمان استرداد المبلغ خلال 14 يومًا، تتولاه Paddle كما هو موضح في صفحة الاسترداد.</p>
 <p>لا تحتاج إلى خطة claude.ai المدفوعة من Anthropic لاستخدام إضافة التصدير. تحتاج إلى حساب claude.ai يستطيع تحميل المحادثة، وإلى Chrome. تعمل Team وEnterprise مع الزر البرتقالي تمامًا مثل Free. وإذا حظر مسؤول مساحة العمل الإضافات، فلن تُحقن Download Claude conversations — وهذه سياسة متصفح، لا قيد على الصيغ.</p>
 <div class="callout callout-info">
   <p><strong>المهمة واحدة، وعبارات البحث مختلفة.</strong> «تصدير محادثة Claude» و«تنزيل محادثة Claude» و«استخراج محادثة Claude» — وبالإنجليزية claude export chat — كلها تعني حفظ هذه المحادثة كملف. الدليل التطبيقي مع بدائل الطباعة وملف ZIP هو <a href="/ar/how-to-download-claude-chat/">كيفية تنزيل محادثة Claude</a>. أما هذه الصفحة فهي مسار المنتج: إضافة التصدير نفسها.</p>
 </div>
-<p>استكشاف أخطاء تصدير محادثة Claude الفاشل: انتظر حتى تُحمَّل المحادثة الطويلة في claude.ai، وتحقق من القائمة المنسدلة للصيغة (آخر صيغة مستخدمة تبقى محددة)، وتحقق من حد العمليات الثلاث. إذا حظر Chrome التنزيل، فاسمح بالتنزيلات من claude.ai. والملفات الناقصة تعني غالبًا أن الصفحة لم تكن قد عرضت شجرة الرسائل كاملة بعد.</p>
-<p>الإصدار الموصوف في هذه الصفحة هو 1.13.0، بتاريخ سبتمبر 2026. تبقى الصيغ Markdown وJSON والنص العادي وXML وPNG. إذا تغيّرت هذه القائمة، يتغيّر هذا الدليل في اليوم نفسه. وحتى ذلك الحين، لا تتوقع Word أو Notion أو PDF أصليًا من إضافة التصدير.</p>
+<p>استكشاف أخطاء تصدير محادثة Claude الفاشل: انتظر حتى تُحمَّل المحادثة الطويلة في claude.ai، وتحقق من القائمة المنسدلة للصيغة (آخر صيغة مستخدمة تبقى محددة)، وفي حالة PDF أو التصدير الجماعي تحقق من عدد ما تبقّى لك من العمليات الثلاث لهذا اليوم. إذا حظر Chrome التنزيل، فاسمح بالتنزيلات من claude.ai. والملفات الناقصة تعني غالبًا أن الصفحة لم تكن قد عرضت شجرة الرسائل كاملة بعد.</p>
+<p>الإصدار الموصوف في هذه الصفحة هو 1.16.2، بتاريخ سبتمبر 2026. الصيغ هي PDF وMarkdown والنص العادي وJSON وXML وCSV وPNG. إذا تغيّرت هذه القائمة، يتغيّر هذا الدليل في اليوم نفسه. وحتى ذلك الحين، لا تتوقع تصديرًا إلى Word أو Notion أو Google Docs من إضافة التصدير.</p>
 
 <h2 id="faq">الأسئلة الشائعة: كيفية تصدير محادثة Claude</h2>
-<p>تغطي هذه الأسئلة الشائعة تصدير محادثة Claude وإضافة التصدير: الصيغ، والحصة، وDesktop، وClaude Code، وملف ZIP من Anthropic، وموقع الزر البرتقالي. كل إجابة حقيقة من الإصدار 1.13.0. وبيانات FAQPage المنظمة (JSON-LD) في رأس الصفحة تطابق هذه القائمة.</p>
+<p>تغطي هذه الأسئلة الشائعة تصدير محادثة Claude وإضافة التصدير: الصيغ، والحدود، وDesktop، وClaude Code، وملف ZIP من Anthropic، وموقع الزر البرتقالي. كل إجابة حقيقة من الإصدار 1.16.2. وبيانات FAQPage المنظمة (JSON-LD) في رأس الصفحة تطابق هذه القائمة.</p>
 
 <h3>ماذا يعني «تصدير محادثة Claude» على هذا الموقع؟</h3>
 <p>حفظ محادثة claude.ai كملف عبر Download Claude conversations: الزر البرتقالي، ثم اختيار الصيغة، ثم «Export». المهمة نفسها التي يكتبها كثيرون بالإنجليزية «claude export chat». ليس ملف ZIP الذي ترسله Anthropic بالبريد، وليس أمر <code>/export</code> في Claude Code.</p>
 
 <h3>هل إضافة تصدير Claude هي نفسها Export data؟</h3>
-<p>لا. ‏Settings → Privacy → Export data ملف ZIP بصيغة JSON للحساب كله يصل بالبريد. أما إضافة التصدير فتكتب المحادثة المفتوحة أو ما حددته عبر Export All بصيغ Markdown أو JSON أو النص أو XML أو PNG فورًا في Chrome.</p>
+<p>لا. ‏Settings → Privacy → Export data ملف ZIP بصيغة JSON للحساب كله يصل بالبريد. أما إضافة التصدير فتكتب المحادثة المفتوحة بصيغة PDF أو Markdown أو JSON أو النص أو XML أو CSV أو PNG، أو ما حددته عبر Export All كملف ZIP، فورًا في Chrome.</p>
 
 <h3>هل يمكنني تصدير محادثة Claude بصيغة PDF؟</h3>
-<p>ليس بإضافة التصدير هذه. الصيغ المتاحة هي Markdown وJSON والنص العادي وXML وPNG. للحصول على لقطة شبيهة بـ PDF، اطبع صفحة claude.ai في Chrome. PNG صورة، وليست PDF.</p>
+<p>نعم. اختر PDF من قائمة الصيغ وانقر على «Export». تُنشئ إضافة التصدير ملف PDF داخل المتصفح، بلا نافذة طباعة. يطلب PDF تسجيل الدخول عبر Google، وهو مجاني حتى 3 مرات يوميًا؛ ويجعله Pro غير محدود. الدليل: <a href="/ar/download-claude-chat-as-pdf/">تنزيل محادثة Claude بصيغة PDF</a>.</p>
 
 <h3>هل أحتاج إلى Pro لتصدير محادثة Claude مرة واحدة؟</h3>
-<p>لا. أول 3 عمليات تصدير على أي حساب مسجّل عبر Google مجانية وبأي صيغة. ويرفع Pro بسعر $3.99 شهريًا أو $26.99 سنويًا الحد عن مزيد من الملفات الفردية أو الجماعية.</p>
+<p>لا. عمليات التصدير بصيغ Markdown والنص وJSON وXML وCSV وPNG مجانية وغير محدودة، بلا حساب. أما PDF والتصدير الجماعي عبر Export All فمجانيان حتى 3 مرات يوميًا مع تسجيل الدخول عبر Google. ويرفع Pro بسعر $3.99 شهريًا أو $26.99 سنويًا هذا الحد.</p>
 
 <h3>هل يعمل تصدير محادثة Claude مع أي خطة في claude.ai؟</h3>
 <p>نعم. تعمل خطط Free وPro وTeam وEnterprise في claude.ai ما دمت تستطيع فتح المحادثة في Chrome. لا تتطلب إضافة التصدير خطة Anthropic المدفوعة.</p>
 
 <h3>هل إضافة تصدير Claude هذه مخصصة لـ Claude Code؟</h3>
-<p>لا. تعمل Download Claude conversations على claude.ai في Chrome. أما Claude Code فيستخدم <code>/export</code> أو ملفات JSONL على القرص. راجع دليل تصدير Claude Code.</p>
+<p>فقط لـ Claude Code على الويب. تُفتح الجلسات على claude.ai/code داخل claude.ai وتُصدَّر مثل أي محادثة. أما Claude Code داخل الطرفية فيستخدم <code>/export</code> أو ملفات JSONL على القرص، ولا تقرأ Download Claude conversations تلك الملفات. راجع دليل تصدير Claude Code.</p>
 
 <h3>هل يمكنني تصدير محادثة Claude من Claude Desktop؟</h3>
 <p>ليس بإضافة Chrome هذه. افتح المحادثة نفسها على claude.ai إذا كانت متزامنة، أو انسخها والصقها، أو استخدم Export data الرسمي. لا يُظهر Desktop الزر البرتقالي أبدًا.</p>
 
 <h3>كم عملية تصدير مجانية تمنحها إضافة تصدير Claude؟</h3>
-<p>ثلاث لكل حساب، يتقاسمها الزر البرتقالي وExport All. إعادة التثبيت لا تعيد ضبط العدّاد. ويُستعاد Pro عبر تسجيل الدخول بحساب Google.</p>
+<p>غير محدودة لصيغ Markdown والنص وJSON وXML وCSV وPNG، بلا حساب. أما PDF والتصدير الجماعي عبر Export All فيتقاسمان 3 عمليات يوميًا في الخطة المجانية، مع تسجيل الدخول عبر Google؛ وكل محادثة داخل ملف ZIP جماعي تُحتسب واحدة. يُعاد ضبط العدد عند منتصف الليل بتوقيت UTC. ويرفع Pro الحد ويُستعاد عبر تسجيل الدخول بحساب Google.</p>
 
 <h3>أين الزر البرتقالي لتصدير محادثة Claude؟</h3>
 <p>على يمين مربع الرسائل في رابط محادثة على claude.ai، بعد تثبيت Download Claude conversations وإعادة تحميل الصفحة. لا يظهر على الصفحة الرئيسية الفارغة لكتابة الرسائل ولا في Desktop.</p>
 
 <h3>هل يرفع تصدير محادثة Claude محادثاتي إلى الخادم؟</h3>
-<p>لا. تُنشأ الملفات داخل المتصفح وتُسلَّم إلى واجهة التنزيل في Chrome. يرى خادمنا المصغّر حالة الاشتراك وبريدًا إلكترونيًا موثّقًا عبر Google، لا نصوص المحادثات. التفاصيل في صفحة طريقة العمل.</p>
+<p>لا. كل الصيغ، بما فيها PDF، تُنشأ داخل المتصفح وتُسلَّم إلى واجهة التنزيل في Chrome. عمليات التصدير بصيغ Markdown والنص وJSON وXML وCSV وPNG لا ترسل إلينا أي شيء. وبعد تسجيل الدخول لـ PDF أو التصدير الجماعي أو Pro، يرى خادمنا المصغّر حالة الحصة أو الاشتراك وبريدك في Google، ولا يرى نصوص المحادثات أبدًا. التفاصيل في صفحة طريقة العمل.</p>
 
 <h3>ما الصيغ التي تكتبها إضافة تصدير Claude؟</h3>
-<p>Markdown وJSON والنص العادي وXML وPNG — الصيغ الخمس نفسها للمحادثة الواحدة ولـ Export All. لا تصدير إلى PDF أو Word أو Notion أو Google Docs في الإصدار 1.13.0.</p>
+<p>سبع: PDF وMarkdown والنص العادي وJSON وXML وCSV وPNG — الصيغ السبع نفسها للمحادثة الواحدة ولـ Export All. لا تصدير إلى Word أو Notion أو Google Docs في الإصدار 1.16.2.</p>
 </article>
 </main>
 <section class="final-cta page-cta" aria-label="التثبيت">
@@ -285,7 +295,7 @@
     <div class="final-cta-panel">
       <p class="final-kicker">Download Claude conversations</p>
       <h2>ثبّت الإضافة وصدّر محادثة Claude في ثوانٍ</h2>
-      <p>حوّل محادثات Claude المهمة إلى ملفات Markdown أو JSON أو نص أو XML أو PNG — محليًا، من Chrome.</p>
+      <p>حوّل محادثات Claude المهمة إلى ملفات PDF أو Markdown أو JSON أو نص أو XML أو CSV أو PNG — محليًا، من Chrome.</p>
       <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=ar-export" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20">إضافة إلى Chrome</a>
     </div>
   </div>
@@ -294,7 +304,7 @@
   <div class="footer-inner">
     <div>
       <a class="logo" href="/ar/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
-      <p class="legal-note">إضافة Chrome لتنزيل محادثات Claude.ai بصيغ Markdown وJSON والنص العادي وXML وPNG. بتقييم 5.0 في Chrome Web Store.</p>
+      <p class="legal-note">إضافة Chrome لتنزيل محادثات Claude.ai بصيغ PDF وMarkdown وJSON والنص العادي وCSV وXML وPNG.</p>
     </div>
     <div>
       <h2>التثبيت</h2>
@@ -314,7 +324,7 @@
       <a href="/ar/export-claude-chat/">تصدير محادثة Claude</a>
       <a href="/ar/claude-conversation-extractor/">أداة استخراج محادثات Claude</a>
       <a href="/ar/claude-code-export/">تصدير محادثات Claude Code</a>
-      <a href="/ar/download-claude-chat-as-pdf/">الطباعة / PDF</a>
+      <a href="/ar/download-claude-chat-as-pdf/">محادثة Claude بصيغة PDF</a>
       <a href="/ar/export-claude-desktop-chat/">تصدير محادثات Claude Desktop</a>
       <a href="/ar/claude-export-conversation/">تصدير محادثات Claude</a>
       <a href="/ar/how-to-save-claude-conversation/">كيفية حفظ محادثة Claude</a>
@@ -338,7 +348,7 @@
     </div>
   </div>
   <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/export-claude-chat/" hreflang="en" lang="en">English</a> <a href="/de/claude-chat-exportieren/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/exporter-conversation-claude/" hreflang="fr" lang="fr">Français</a> <a href="/nl/claude-chat-exporteren/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/exportera-claude-chatt/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/eksportere-claude-chat/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/eksporter-claude-chat/" hreflang="da" lang="da">Dansk</a> <a href="/fi/vie-claude-chat/" hreflang="fi" lang="fi">Suomi</a> <a href="/ja/export-claude-chat/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/export-claude-chat/" hreflang="ko" lang="ko">한국어</a> <a href="/he/export-claude-chat/" hreflang="he" lang="he">עברית</a> <a href="/ar/export-claude-chat/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
-  <p class="disclaimer">تُعالَج المحادثات داخل متصفحك · تسجيل الدخول عبر Google لاحتساب الحصة · لا علاقة لنا بشركة Anthropic, PBC. ‏Claude علامة تجارية مملوكة لشركة Anthropic. إضافة Chrome مستقلة — وليست منتجًا رسميًا من Anthropic. الدعم: <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+  <p class="disclaimer">تُعالَج المحادثات داخل متصفحك · تسجيل الدخول عبر Google فقط لصيغة PDF والتصدير الجماعي وخطة Pro · لا علاقة لنا بشركة Anthropic, PBC. ‏Claude علامة تجارية مملوكة لشركة Anthropic. إضافة Chrome مستقلة — وليست منتجًا رسميًا من Anthropic. الدعم: <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
 </footer>
 <script src="/assets/site.js" defer></script>
 </body>

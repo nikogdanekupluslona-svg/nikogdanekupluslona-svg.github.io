@@ -83,15 +83,15 @@
 <nav class="crumbs" aria-label="Murupolku"><a href="/fi/">Etusivu</a> / Tietoa meistä</nav>
 <main id="main">
 <article class="band prose">
-<p class="updated">Päivitetty 25.8.2026 · Laajennuksen versio 1.13.0</p>
+<p class="updated">Päivitetty 25.9.2026 · Laajennuksen versio 1.16.2</p>
 <h1 class="page-h1">Tietoa meistä</h1>
 <p class="lead"><strong>Download Claude conversations</strong> on itsenäinen Chrome-laajennus (sivuston nimi: <strong>Chat Downloader</strong>). Hakukoneet ja käyttäjät kutsuvat sitä myös nimillä <strong>Claude Chat Downloader</strong> ja <strong>Claude Conversation Downloader</strong>. Sitä ei ole tehnyt Anthropic, PBC, se ei ole yhteydessä Anthropiciin eikä Anthropic ole hyväksynyt sitä – Claude on Anthropicin tavaramerkki. Teimme laajennuksen paikataksemme puutteen claude.ai:ssa: siinä ei ole sisäänrakennettua tapaa ladata yksittäistä keskustelua tiedostona.</p>
-<p>Laajennus lisää claude.ai:hin vientipainikkeen ja selaussivun joukkovientejä varten, ja se kirjoittaa Markdown-, JSON-, teksti-, XML- tai PNG-tiedostoja paikallisesti selaimessasi. Jokainen tili saa 3 ilmaista vientiä; Pro poistaa rajan. Lisätietoja: <a href="/fi/nain-se-toimii/">näin se toimii</a>. Laajennus ei vie <a href="/fi/claude-code-keskustelun-vienti/">Claude Coden</a> terminaali-istuntoja.</p>
+<p>Laajennus lisää claude.ai:hin vientipainikkeen ja joukkovientiä varten hallintapaneelin (Dashboard), ja se kirjoittaa PDF-, Markdown-, pelkkä teksti-, JSON-, XML-, CSV- tai PNG-tiedostoja paikallisesti selaimessasi. Yksittäisen keskustelun viennit Markdown-, teksti-, JSON-, XML-, CSV- ja PNG-muotoon ovat rajattomia eivätkä vaadi tiliä. PDF ja joukkovienti ZIP-tiedostona vaativat Google-kirjautumisen, ja ne ovat ilmaisia enintään 3 kertaa päivässä; Pro (3,99 $/kk tai 26,99 $/v) poistaa tämän rajan. Laajennus toimii tavallisten keskustelujen, Projects-projektien, Cowork-istuntojen ja Claude Code on the web -istuntojen (claude.ai/code) kanssa. Lisätietoja: <a href="/fi/nain-se-toimii/">näin se toimii</a>. Laajennus ei vie <a href="/fi/claude-code-keskustelun-vienti/">Claude Coden</a> terminaali-istuntoja.</p>
 <h2>Chrome Web Store -listaus (pidä ajan tasalla)</h2>
 <p>Käytä Chrome Web Storessa tätä tekstiä, jotta Storen hakutulos vastaa sitä, miten ihmiset hakevat (listaus on englanniksi):</p>
 <ul>
 <li><strong>Nimi (enintään 75 merkkiä):</strong> Claude Chat Downloader</li>
-<li><strong>Lyhyt kuvaus (enintään 132 merkkiä):</strong> Free Chrome extension to save claude.ai chats as Markdown, JSON, text, XML, or PNG — one conversation or bulk Export All.</li>
+<li><strong>Lyhyt kuvaus (enintään 132 merkkiä):</strong> Free Chrome extension to save claude.ai chats as PDF, Markdown, text, JSON, XML, CSV or PNG — one chat or bulk Export All.</li>
 </ul>
 <p>Säilytä nykyinen kohteen tunniste <code>ljcgfcnobiealkonbknnfckhkdbodhak</code>. Storen nimenmuutos voi vaatia tarkastuskierroksen; sivuston otsikot vastaavat jo hakua.</p>
 <h2 id="contact">Yhteystiedot</h2>
@@ -105,7 +105,7 @@
     <div class="final-cta-panel">
       <p class="final-kicker">Download Claude conversations</p>
       <h2>Asenna laajennus ja lataa Claude-chat sekunneissa</h2>
-      <p>Tallenna tärkeät Claude-keskustelut Markdownina, JSONina, tekstinä, XML:nä tai PNG:nä – paikallisesti, Chromesta.</p>
+      <p>Tallenna tärkeät Claude-keskustelut PDF:nä, Markdownina, JSONina, tekstinä, CSV:nä, XML:nä tai PNG:nä – paikallisesti, Chromesta.</p>
       <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=fi-about" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Lisää Chromeen</a>
     </div>
   </div>
@@ -114,7 +114,7 @@
   <div class="footer-inner">
     <div>
       <a class="logo" href="/fi/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
-      <p class="legal-note">Chrome-laajennus Claude.ai-keskustelujen lataamiseen Markdown-, JSON-, pelkkä teksti-, XML- tai PNG-muodossa. Arvosana 5,0 Chrome Web Storessa.</p>
+      <p class="legal-note">Chrome-laajennus Claude.ai-keskustelujen lataamiseen PDF-, Markdown-, JSON-, pelkkä teksti-, CSV-, XML- tai PNG-muodossa.</p>
     </div>
     <div>
       <h2>Asenna</h2>
@@ -134,7 +134,7 @@
       <a href="/fi/vie-claude-chat/">Vie Claude-chat</a>
       <a href="/fi/claude-keskustelu-extractor/">Claude-keskustelujen extractor</a>
       <a href="/fi/claude-code-keskustelun-vienti/">Claude Code -keskustelun vienti</a>
-      <a href="/fi/claude-keskustelu-pdf/">Tulostus / PDF</a>
+      <a href="/fi/claude-keskustelu-pdf/">Claude-chat PDF-muodossa</a>
       <a href="/fi/vie-claude-desktop-chat/">Vie Claude Desktop -chat</a>
       <a href="/fi/claude-keskustelun-vienti/">Claude-keskustelun vienti</a>
       <a href="/fi/tallenna-claude-keskustelu/">Tallenna Claude-keskustelu</a>
@@ -158,7 +158,7 @@
     </div>
   </div>
   <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/about/" hreflang="en" lang="en">English</a> <a href="/de/ueber-uns/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/a-propos/" hreflang="fr" lang="fr">Français</a> <a href="/nl/over-ons/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/om-oss/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/om-oss/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/om-os/" hreflang="da" lang="da">Dansk</a> <a href="/fi/tietoa-meista/" hreflang="fi" lang="fi">Suomi</a> <a href="/ja/about/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/about/" hreflang="ko" lang="ko">한국어</a> <a href="/he/about/" hreflang="he" lang="he">עברית</a> <a href="/ar/about/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
-  <p class="disclaimer">Keskustelut käsitellään selaimessasi · Google-kirjautuminen kiintiötä varten · Ei yhteydessä Anthropic, PBC:hen. Claude on Anthropicin tavaramerkki. Itsenäinen Chrome-laajennus – ei Anthropicin virallinen tuote. Tuki: <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+  <p class="disclaimer">Keskustelut käsitellään selaimessasi · Google-kirjautuminen vain PDF:ää, joukkovientiä ja Pro-tilausta varten · Ei yhteydessä Anthropic, PBC:hen. Claude on Anthropicin tavaramerkki. Itsenäinen Chrome-laajennus – ei Anthropicin virallinen tuote. Tuki: <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
 </footer>
 <script src="/assets/site.js" defer></script>
 </body>

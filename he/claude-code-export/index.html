@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ייצוא שיחה של Claude Code — ‎/export מול תוסף claude.ai</title>
-  <meta name="description" content="ייצוא שיחה של Claude Code נעשה עם ‎/export או מקובצי JSONL ב-‎~/.claude/projects. תוסף Chrome החינמי הזה מוריד צ'אטים מ-claude.ai, לא סשנים מהטרמינל.">
+  <meta name="description" content="ייצוא שיחה של Claude Code: ‎/export או JSONL ב-‎~/.claude/projects לטרמינל. סשנים באתר ב-claude.ai/code מיוצאים עם תוסף Chrome החינמי הזה.">
   <link rel="canonical" href="https://chat-downloader.com/he/claude-code-export/">
   <!-- i18n:head -->
   <link rel="alternate" hreflang="en" href="https://chat-downloader.com/claude-code-export/">
@@ -35,14 +35,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@400;500;700&amp;display=swap" rel="stylesheet">
   <!-- /i18n:head -->
   <meta property="og:title" content="ייצוא שיחה של Claude Code — ‎/export מול תוסף claude.ai">
-  <meta property="og:description" content="ייצוא שיחה של Claude Code נעשה עם ‎/export או מקובצי JSONL ב-‎~/.claude/projects. תוסף Chrome החינמי הזה מוריד צ'אטים מ-claude.ai, לא סשנים מהטרמינל.">
+  <meta property="og:description" content="ייצוא שיחה של Claude Code: ‎/export או JSONL ב-‎~/.claude/projects לטרמינל. סשנים באתר ב-claude.ai/code מיוצאים עם תוסף Chrome החינמי הזה.">
   <meta property="og:url" content="https://chat-downloader.com/he/claude-code-export/">
   <meta property="og:image" content="https://chat-downloader.com/assets/widget-guide.png">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Chat Downloader">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="ייצוא שיחה של Claude Code — ‎/export מול תוסף claude.ai">
-  <meta name="twitter:description" content="ייצוא שיחה של Claude Code נעשה עם ‎/export או מקובצי JSONL ב-‎~/.claude/projects. תוסף Chrome החינמי הזה מוריד צ'אטים מ-claude.ai, לא סשנים מהטרמינל.">
+  <meta name="twitter:description" content="ייצוא שיחה של Claude Code: ‎/export או JSONL ב-‎~/.claude/projects לטרמינל. סשנים באתר ב-claude.ai/code מיוצאים עם תוסף Chrome החינמי הזה.">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
@@ -57,8 +57,8 @@
     gtag('js', new Date());
     gtag('config', 'G-GME1YXGZKR');
   </script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"איך מייצאים שיחה של Claude Code?","acceptedAnswer":{"@type":"Answer","text":"בטרמינל של Claude Code הקלידו /export (אפשר עם שם קובץ) כדי לשמור תמליל קריא, או העתיקו את קובץ ה-JSONL מ-~/.claude/projects ב-macOS/Linux או מ-%USERPROFILE%\\.claude\\projects ב-Windows. תיעוד הסשנים של Anthropic מתאר את חלון הדו-שיח העדכני."}},{"@type":"Question","name":"האם תוסף Chrome הזה מוריד צ'אטים של Claude Code?","acceptedAnswer":{"@type":"Answer","text":"לא. Download Claude conversations עובד רק ב-claude.ai בתוך Chrome. הוא לא יכול לקרוא סשנים מהטרמינל, תמלילי JSONL או את הפקודה /export. ייצוא של Claude Code נשאר ב-CLI."}},{"@type":"Question","name":"איפה Claude Code שומר את היסטוריית השיחות?","acceptedAnswer":{"@type":"Answer","text":"תמלילי הסשנים הם קובצי JSONL תחת ~/.claude/projects/<encoded-working-directory>/, ושמם הוא מזהה הסשן. המבנה המדויק עשוי להשתנות. השתמשו ב-/export כשאתם רוצים קובץ קריא במקום לפענח JSONL. המשתנה CLAUDE_CONFIG_DIR יכול להעביר את התיקייה למקום אחר."}},{"@type":"Question","name":"איך מורידים שיחה של Claude Code כ-Markdown?","acceptedAnswer":{"@type":"Answer","text":"הפקודה /export של Claude Code מפיקה תמליל בטקסט פשוט, לא את ה-Markdown של התוסף הזה. אם אתם צריכים דווקא Markdown, ייצאו עותק של העבודה מ-claude.ai בעזרת Download Claude conversations, או המירו בעצמכם את הטקסט של /export. אנחנו לא ממירים JSONL ל-Markdown."}},{"@type":"Question","name":"ואיך מורידים במקום זאת שיחה מ-Claude.ai?","acceptedAnswer":{"@type":"Answer","text":"התקינו את תוסף Chrome החינמי, פתחו את הצ'אט ב-claude.ai והשתמשו בכפתור הכתום — או ב-Export All להיסטוריה כולה. ראו איך מורידים צ'אט של Claude. 3 ייצואים בחינם; Pro עולה $3.99 לחודש או $26.99 לשנה."}},{"@type":"Question","name":"האם /export זהה ל-Export data הרשמי?","acceptedAnswer":{"@type":"Answer","text":"לא. /export הוא הסשן הנוכחי של Claude Code. Settings → Privacy → Export data שולח באימייל קובץ ZIP עם JSON של כל חשבון Anthropic. מוצרים שונים, קבצים שונים, זמני המתנה שונים."}},{"@type":"Question","name":"אפשר לפענח את ה-JSONL של Claude Code עם jq?","acceptedAnswer":{"@type":"Answer","text":"אפשר, עם ההסתייגות ש-Anthropic מפרסמת: מבנה השורות פנימי ועשוי להשתנות. כשאתם צריכים ממשק יציב, העדיפו את /export או את claude -p --output-format json. אם בכל זאת אתם מפענחים JSONL, קבעו גרסת CLI מסוימת."}},{"@type":"Question","name":"האם ייצוא מ-Claude Code עובד ב-Windows?","acceptedAnswer":{"@type":"Answer","text":"כן. /export היא פקודת CLI. התמלילים בדיסק נמצאים תחת %USERPROFILE%\\.claude\\projects, אלא אם הגדרתם CLAUDE_CONFIG_DIR. תוסף Chrome הזה עדיין לא רץ בתוך הטרמינל הזה."}},{"@type":"Question","name":"האם Claude Code זהה ל-Claude Desktop?","acceptedAnswer":{"@type":"Answer","text":"לא. Claude Code הוא סוכן התכנות בטרמינל. Claude Desktop היא אפליקציית הצ'אט. claude.ai הוא האתר. רק האתר מקבל את התוסף הזה. הערות על ייצוא מ-Desktop: Claude Desktop."}},{"@type":"Question","name":"האם התוסף יעטוף אי פעם את /export?","acceptedAnswer":{"@type":"Answer","text":"לא בגרסה 1.13.0. תחום המוצר הוא claude.ai: חמישה פורמטים, קבצים מקומיים, כניסה עם Google לספירת המכסה. אם התחום ישתנה, הדף הזה יציין זאת. עד אז השתמשו ב-CLI של Anthropic לייצוא מ-Claude Code."}},{"@type":"Question","name":"האם /export כולל פלטים של כלים?","acceptedAnswer":{"@type":"Answer","text":"לפי Anthropic, /export מציג הודעות ופלטי כלים כטקסט קריא. זה התמליל שלהם, לא מנתח שלנו. כדי לדעת מה בדיוק נכלל היום, הריצו /export בגרסה שלכם וקראו את הקובץ — התיעוד עלול לפגר אחרי גרסה חדשה."}},{"@type":"Question","name":"אפשר לייצא סשנים של Claude Code בכמות גדולה?","acceptedAnswer":{"@type":"Answer","text":"לא עם Export All של התוסף הזה. הייצוא המרוכז בדף העיון שלנו מיועד ל-claude.ai בלבד. לסשנים רבים של ה-CLI העתיקו את תיקיית projects או הריצו /export בכל סשן. אין ייצוא מרוכז בכפתור כתום עבור JSONL."}}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"ייצוא שיחה של Claude Code מול claude.ai: בחרו את הדרך הנכונה","description":"ייצוא שיחה של Claude Code נעשה עם /export או מקובצי JSONL ב-~/.claude/projects. תוסף Chrome החינמי הזה מוריד צ'אטים מ-claude.ai, לא סשנים מהטרמינל.","url":"https://chat-downloader.com/he/claude-code-export/","dateModified":"2026-09-10","datePublished":"2026-09-10","inLanguage":"he","author":{"@type":"Organization","name":"Chat Downloader","url":"https://chat-downloader.com/he/"},"publisher":{"@type":"Organization","name":"Chat Downloader","url":"https://chat-downloader.com/he/"},"mainEntityOfPage":"https://chat-downloader.com/he/claude-code-export/"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"איך מייצאים שיחה של Claude Code?","acceptedAnswer":{"@type":"Answer","text":"בטרמינל של Claude Code הקלידו /export (אפשר עם שם קובץ) כדי לשמור תמליל קריא, או העתיקו את קובץ ה-JSONL מ-~/.claude/projects ב-macOS/Linux או מ-%USERPROFILE%\\.claude\\projects ב-Windows. תיעוד הסשנים של Anthropic מתאר את חלון הדו-שיח העדכני."}},{"@type":"Question","name":"האם תוסף Chrome הזה מוריד צ'אטים של Claude Code?","acceptedAnswer":{"@type":"Answer","text":"לא מהטרמינל. Download Claude conversations עובד רק ב-claude.ai בתוך Chrome. הוא לא יכול לקרוא סשנים מקומיים בטרמינל, תמלילי JSONL או את הפקודה /export. סשנים של Claude Code בגרסת הווב ב-claude.ai/code כן מיוצאים, כמו כל צ'אט."}},{"@type":"Question","name":"אפשר לייצא את Claude Code בגרסת הווב (claude.ai/code)?","acceptedAnswer":{"@type":"Answer","text":"כן. פתחו את הסשן ב-claude.ai/code ב-Chrome והשתמשו בכפתור הכתום. PDF,‏ Markdown, טקסט פשוט, JSON,‏ XML,‏ CSV ו-PNG — כולם עובדים. ששת הפורמטים שאינם PDF הם ללא הגבלה ובלי חשבון; PDF דורש התחברות עם Google ונספר במסגרת 3 ייצואים חינמיים ביום."}},{"@type":"Question","name":"איפה Claude Code שומר את היסטוריית השיחות?","acceptedAnswer":{"@type":"Answer","text":"תמלילי הסשנים הם קובצי JSONL תחת ~/.claude/projects/<encoded-working-directory>/, ושמם הוא מזהה הסשן. המבנה המדויק עשוי להשתנות. השתמשו ב-/export כשאתם רוצים קובץ קריא במקום לפענח JSONL. המשתנה CLAUDE_CONFIG_DIR יכול להעביר את התיקייה למקום אחר."}},{"@type":"Question","name":"איך מורידים שיחה של Claude Code כ-Markdown?","acceptedAnswer":{"@type":"Answer","text":"הפקודה /export של Claude Code מפיקה תמליל בטקסט פשוט, לא את ה-Markdown של התוסף הזה. אם אתם צריכים דווקא Markdown, ייצאו סשן של claude.ai/code או עותק של העבודה מ-claude.ai בעזרת Download Claude conversations, או המירו בעצמכם את הטקסט של /export. אנחנו לא ממירים JSONL ל-Markdown."}},{"@type":"Question","name":"ואיך מורידים במקום זאת שיחה מ-Claude.ai?","acceptedAnswer":{"@type":"Answer","text":"התקינו את תוסף Chrome החינמי, פתחו את הצ'אט ב-claude.ai והשתמשו בכפתור הכתום — או ב-Export All להיסטוריה כולה. ראו איך מורידים צ'אט של Claude. Markdown, טקסט, JSON,‏ XML,‏ CSV ו-PNG הם ללא הגבלה ובלי חשבון; PDF ו-ZIP מרוכז הם 3 ביום בחינם עם התחברות עם Google; Pro עולה $3.99 לחודש או $26.99 לשנה."}},{"@type":"Question","name":"האם /export זהה ל-Export data הרשמי?","acceptedAnswer":{"@type":"Answer","text":"לא. /export הוא הסשן הנוכחי של Claude Code. Settings → Privacy → Export data שולח באימייל קובץ ZIP עם JSON של כל חשבון Anthropic. מוצרים שונים, קבצים שונים, זמני המתנה שונים."}},{"@type":"Question","name":"אפשר לפענח את ה-JSONL של Claude Code עם jq?","acceptedAnswer":{"@type":"Answer","text":"אפשר, עם ההסתייגות ש-Anthropic מפרסמת: מבנה השורות פנימי ועשוי להשתנות. כשאתם צריכים ממשק יציב, העדיפו את /export או את claude -p --output-format json. אם בכל זאת אתם מפענחים JSONL, קבעו גרסת CLI מסוימת."}},{"@type":"Question","name":"האם ייצוא מ-Claude Code עובד ב-Windows?","acceptedAnswer":{"@type":"Answer","text":"כן. /export היא פקודת CLI. התמלילים בדיסק נמצאים תחת %USERPROFILE%\\.claude\\projects, אלא אם הגדרתם CLAUDE_CONFIG_DIR. תוסף Chrome הזה עדיין לא רץ בתוך הטרמינל הזה."}},{"@type":"Question","name":"האם Claude Code זהה ל-Claude Desktop?","acceptedAnswer":{"@type":"Answer","text":"לא. Claude Code הוא סוכן התכנות בטרמינל. Claude Desktop היא אפליקציית הצ'אט. claude.ai הוא האתר. רק האתר, כולל claude.ai/code, מקבל את התוסף הזה. הערות על ייצוא מ-Desktop: Claude Desktop."}},{"@type":"Question","name":"האם התוסף יעטוף אי פעם את /export?","acceptedAnswer":{"@type":"Answer","text":"לא בגרסה 1.16.2. תחום המוצר הוא claude.ai, כולל Claude Code בגרסת הווב: שבעה פורמטים, קבצים מקומיים, התחברות עם Google רק עבור PDF, ייצוא מרוכז ו-Pro. אם התחום ישתנה, הדף הזה יציין זאת. עד אז השתמשו ב-CLI של Anthropic לייצוא מ-Claude Code בטרמינל."}},{"@type":"Question","name":"האם /export כולל פלטים של כלים?","acceptedAnswer":{"@type":"Answer","text":"לפי Anthropic, /export מציג הודעות ופלטי כלים כטקסט קריא. זה התמליל שלהם, לא מנתח שלנו. כדי לדעת מה בדיוק נכלל היום, הריצו /export בגרסה שלכם וקראו את הקובץ — התיעוד עלול לפגר אחרי גרסה חדשה."}},{"@type":"Question","name":"אפשר לייצא סשנים של Claude Code בכמות גדולה?","acceptedAnswer":{"@type":"Answer","text":"לא סשנים מקומיים של ה-CLI. Export All בלוח הבקרה מיועד ל-claude.ai בלבד. לסשנים רבים של ה-CLI העתיקו את תיקיית projects או הריצו /export בכל סשן. אין ייצוא מרוכז בכפתור כתום עבור JSONL."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"ייצוא שיחה של Claude Code מול claude.ai: בחרו את הדרך הנכונה","description":"ייצוא שיחה של Claude Code: /export או JSONL ב-~/.claude/projects לטרמינל. סשנים באתר ב-claude.ai/code מיוצאים עם תוסף Chrome החינמי הזה.","url":"https://chat-downloader.com/he/claude-code-export/","dateModified":"2026-09-25","datePublished":"2026-09-10","inLanguage":"he","author":{"@type":"Organization","name":"Chat Downloader","url":"https://chat-downloader.com/he/"},"publisher":{"@type":"Organization","name":"Chat Downloader","url":"https://chat-downloader.com/he/"},"mainEntityOfPage":"https://chat-downloader.com/he/claude-code-export/"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"דף הבית","item":"https://chat-downloader.com/he/"},{"@type":"ListItem","position":2,"name":"ייצוא מ-Claude Code","item":"https://chat-downloader.com/he/claude-code-export/"}]}</script>
 </head>
 <body>
@@ -85,14 +85,14 @@
 <nav class="crumbs" aria-label="פירורי לחם"><a href="/he/">דף הבית</a> / ייצוא מ-Claude Code</nav>
 <main id="main">
 <article class="band prose">
-<p class="article-meta">עודכן <time datetime="2026-09">בספטמבר 2026</time> · גרסת התוסף 1.13.0</p>
+<p class="article-meta">עודכן <time datetime="2026-09-25">בספטמבר 2026</time> · גרסת התוסף 1.16.2</p>
 <h1 class="page-h1">ייצוא שיחה של Claude Code מול claude.ai: בחרו את הדרך הנכונה</h1>
-<p class="lead">ייצוא שיחה של Claude Code הוא משימה של הטרמינל: מקלידים ‎/export בסשן, או מעתיקים קובץ JSONL מ-‎~/.claude/projects. הכפתור הכתום באתר הזה לא מוריד שיחות של Claude Code. Download Claude conversations שומר רק צ'אטים שפותחים ב-claude.ai בתוך Chrome. Desktop ו-Code הם מוצרים נפרדים. (מי שמחפש באנגלית מקליד בדרך כלל claude code export או claude export chat.)</p>
-<aside class="trust-badge" aria-label="דירוג ב-Chrome Web Store">
-  <span class="trophy" aria-hidden="true">🏆</span>
+<p class="lead">ייצוא שיחה של Claude Code הוא משימה של הטרמינל: מקלידים ‎/export בסשן, או מעתיקים קובץ JSONL מ-‎~/.claude/projects. הכפתור הכתום באתר הזה לא מוריד שיחות של Claude Code מהטרמינל. Download Claude conversations שומר צ'אטים שפותחים ב-claude.ai בתוך Chrome — כולל סשנים של Claude Code בגרסת הווב ב-claude.ai/code. סשנים מקומיים בטרמינל ו-Desktop הם נפרדים. (מי שמחפש באנגלית מקליד בדרך כלל claude code export או claude export chat.)</p>
+<aside class="trust-badge" aria-label="על התוסף">
+  <span class="trophy" aria-hidden="true">🧩</span>
   <div>
-    <strong>Download Claude conversations — דירוג 5.0 ב-Chrome Web Store</strong>
-    <span>2026 — תוסף Chrome חינמי לשמירת צ'אטים מ-claude.ai כ-Markdown,‏ JSON, טקסט, XML או PNG</span>
+    <strong>Download Claude conversations — תוסף Chrome חינמי ל-claude.ai</strong>
+    <span>גרסה 1.16.2 (ספטמבר 2026) — ייצוא Markdown, טקסט, JSON, XML, CSV ו-PNG ללא הגבלה ובלי חשבון; PDF ו-ZIP מרוכז בחינם עד 3 ביום</span>
   </div>
 </aside>
 <nav class="toc" aria-label="בדף זה">
@@ -101,6 +101,7 @@
     <li><a href="#what-is-export">מהו ייצוא מ-Claude Code בטרמינל?</a></li>
     <li><a href="#jsonl-disk">איך מורידים שיחה של Claude Code מהדיסק?</a></li>
     <li><a href="#extension-limit">האם ייצוא מ-Claude Code עובד עם התוסף הזה?</a></li>
+    <li><a href="#claude-code-web">אפשר לייצא סשנים של Claude Code בגרסת הווב?</a></li>
     <li><a href="#where-stored">איפה Claude Code שומר את היסטוריית השיחות?</a></li>
     <li><a href="#claude-ai-instead">ואיך מורידים במקום זאת צ'אט של Claude ב-claude.ai?</a></li>
     <li><a href="#vs-official-zip">ייצוא מ-Claude Code מול Export data הרשמי של Anthropic?</a></li>
@@ -129,34 +130,39 @@
 <p>לכן, כדי לגבות קובצי שיחה של Claude Code: העתיקו את התיקייה, או ייצאו תמלילים עם <code>/export</code> באופן קבוע. האתר הזה לא יוסיף כפתור "ייבוא JSONL". אנחנו לא קוראים את תיקיית הבית שלכם.</p>
 
 <h2 id="extension-limit">האם ייצוא מ-Claude Code עובד עם התוסף הזה?</h2>
-<p>לא. ייצוא מ-Claude Code לא עובד עם Download Claude conversations. תוסף Chrome פועל בתוך claude.ai. הוא לא רואה את הטרמינל, לא יכול להריץ <code>/export</code> ולא יכול לפתוח JSONL. אם חיפשתם איך להוריד שיחה של Claude Code, הישארו עם שלבי ה-CLI שבדף הזה.</p>
+<p>לא, לא עבור סשנים בטרמינל. Download Claude conversations לא קורא סשנים מקומיים של Claude Code. תוסף Chrome פועל בתוך claude.ai. הוא לא רואה את הטרמינל, לא יכול להריץ <code>/export</code> ולא יכול לפתוח JSONL. Claude Code בגרסת הווב ב-claude.ai/code הוא היוצא מן הכלל: זה דף של claude.ai, ולכן הוא מיוצא כמו כל צ'אט. אם חיפשתם איך להוריד שיחה של Claude Code מה-CLI, הישארו עם שלבי ה-CLI שבדף הזה.</p>
 <p>אנשים מגיעים לכאן כי בחיפוש המילים "Claude" ו"ייצוא" (export) מופיעות יחד. הדף של התוסף ב-Web Store עדיין מיועד ל-claude.ai בלבד. התקנת התוסף לא תוסיף כפתור כתום ל-iTerm, ל-Ghostty, לטרמינל של VS Code או למעטפת השולחנית של Claude Code.</p>
 <p>אם אתם מנהלים במקביל שרשור ב-claude.ai על אותה משימת תכנות, את הצ'אט הזה בדפדפן אפשר לשמור עם התוסף. שתי הרשומות לא מתמזגות. קריאות לכלים שקרו רק ב-CLI לא יופיעו בייצוא מהאתר, אלא אם הדבקתם אותן שם.</p>
 <div class="expert-quote">
   <blockquote>כל שבוע מגיע אלינו אותו מייל תמיכה: מישהו התקין את תוסף Chrome וציפה שיופיע /export. אנחנו מפענחים רק את claude.ai. ל-Claude Code כבר יש /export ו-JSONL. לעטוף את ה-CLI זה מוצר אחר, ולא השקנו אותו.</blockquote>
   <cite><strong>צוות Download Claude conversations</strong> — מפתחי תוסף Chrome‏ Claude Chat Downloader</cite>
 </div>
-<p>הדירוג 5.0 ב-Chrome Web Store מתייחס לתוסף של claude.ai, לא לפלאגין של Claude Code. 3 הייצואים החינמיים ו-Pro במחיר $3.99 לחודש או $26.99 לשנה חלים רק כשמייצאים מ-claude.ai. הם לא סופרים שימוש ב-<code>/export</code>.</p>
+<p>התוסף הוא כלי ל-claude.ai, לא פלאגין של Claude Code. המגבלות שלו חלות רק כשמייצאים מ-claude.ai: Markdown, טקסט, JSON,‏ XML,‏ CSV ו-PNG הם ללא הגבלה ובלי חשבון; PDF ו-ZIP מרוכז הם 3 ביום בחינם עם התחברות עם Google; Pro ב-$3.99 לחודש או $26.99 לשנה מסיר את המגבלה. שום דבר מזה לא סופר שימוש ב-<code>/export</code>.</p>
+
+<h2 id="claude-code-web">אפשר לייצא סשנים של Claude Code בגרסת הווב?</h2>
+<p>כן. Claude Code בגרסת הווב רץ ב-claude.ai/code, ולכן Download Claude conversations מייצא את הסשנים האלה כמו כל צ'אט של claude.ai. פתחו את הסשן ב-Chrome, לחצו על הכפתור הכתום, בחרו פורמט ולחצו "Export" (ייצוא). זה הממשק היחיד של Claude Code שהתוסף מכסה.</p>
+<p>הפורמטים הם אותם שבעה כמו בכל צ'אט: PDF,‏ Markdown, טקסט פשוט, JSON,‏ XML,‏ CSV ו-PNG. Markdown, טקסט, JSON,‏ XML,‏ CSV ו-PNG הם ללא הגבלה ולא דורשים חשבון. PDF מבקש התחברות עם Google וחולק עם ZIP מרוכז את 3 הייצואים ביום של התוכנית החינמית, אלא אם יש לכם Pro. בלוקי קוד שומרים על תגיות השפה שלהם. חשיבה מורחבת היא תיבת הסימון "Thinking" (חשיבה) בחלונית; שלבי כלים / MCP ומקורות מחיפוש באינטרנט הם מתגים אופציונליים ב-"Settings" (הגדרות).</p>
+<p>הייצוא מהאתר הוא מה ש-claude.ai/code מציג בדפדפן. זה לא יומן ה-JSONL של הרצה מקומית של ה-CLI, והוא לא מגיע לסשנים שרצו רק בטרמינל שלכם. לפי Anthropic, ל-Claude Code בגרסת הווב יש היסטוריית סשנים משלו, נפרדת מעץ <code>~/.claude/projects</code> של ה-CLI. לסשן בטרמינל, <code>/export</code> הוא עדיין הדרך.</p>
 
 <h2 id="where-stored">איפה Claude Code שומר את היסטוריית השיחות?</h2>
 <p>Claude Code שומר את היסטוריית השיחות כתמלילי JSONL בתיקיית projects שבתוך תיקיית ההגדרות. ברירת המחדל ב-macOS וב-Linux: <code>~/.claude/projects/&lt;encoded-cwd&gt;/&lt;session-id&gt;.jsonl</code>. ב-Windows: <code>%USERPROFILE%\.claude\projects</code>. Anthropic עשויה לשנות את המבנה; אם נתיב חסר בדיסק, בדקו את תיעוד הסשנים העדכני.</p>
 <p>חידוש סשן הוא פעולה אחרת מייצוא. <code>claude --continue</code> ו-<code>claude --resume</code> טוענים סשן מחדש כדי שתוכלו להמשיך לעבוד. <code>/export</code> כותב עותק שאפשר להשאיר ב-git או לשלוח במייל. האחד משחזר הקשר; השני נותן לכם רשומה לקחת איתכם. דף הסשנים של Anthropic מכסה את מצב ההרשאות בחידוש, דחיסה וסיכום, ואת התנהגות בורר הסשנים — שום דבר מזה אינו קשור לתוסף הזה.</p>
-<p>לפי Anthropic, לאפליקציה השולחנית, ל-Claude Code באינטרנט ולתוסף של VS Code יש לכל אחד היסטוריית סשנים משלו. הנתיבים במדריך הזה הם של ה-CLI. אל תניחו שתמליל של Cowork ב-Desktop נמצא באותו עץ JSONL שבו אתם משתמשים מהטרמינל.</p>
+<p>לפי Anthropic, לאפליקציה השולחנית, ל-Claude Code בגרסת הווב ולתוסף של VS Code יש לכל אחד היסטוריית סשנים משלו. הנתיבים במדריך הזה הם של ה-CLI. סשנים מהאתר נשארים ב-claude.ai/code, ושם התוסף יכול לייצא אותם. אל תניחו שתמליל של Cowork ב-Desktop נמצא באותו עץ JSONL שבו אתם משתמשים מהטרמינל.</p>
 <div class="callout callout-warn">
   <p><strong>אל תתייחסו ל-JSONL כסכמה ציבורית.</strong> Anthropic מציינת שפורמט השורות משתנה. אם בכל זאת אתם מפענחים אותו, קבעו גרסה של Claude Code וצפו לשבירות. <code>/export</code> היא הדרך היציבה לקבל שיחה קריאה של Claude Code.</p>
 </div>
 <p>משתני סביבה כמו <code>CLAUDE_CODE_SKIP_PROMPT_HISTORY</code> יכולים למנוע כתיבת תמלילים. אם תיקיית projects ריקה, בדקו אם כיביתם את השמירה, הפניתם את <code>CLAUDE_CONFIG_DIR</code> למקום אחר, או מעולם לא הרצתם סשן אינטראקטיבי בתיקייה הזו.</p>
 
 <h2 id="claude-ai-instead">ואיך מורידים במקום זאת צ'אט של Claude ב-claude.ai?</h2>
-<p>כדי להוריד צ'אט של Claude ב-claude.ai: התקינו את Download Claude conversations, פתחו את השרשור ב-Chrome, לחצו על הכפתור הכתום ובחרו Markdown,‏ JSON, טקסט, XML או PNG. זה המוצר לדפדפן. זה לא ייצוא מ-Claude Code. מדריך צעד אחר צעד: <a href="/he/how-to-download-claude-chat/">איך מורידים צ'אט של Claude</a>.</p>
-<p>את כל ההיסטוריה של claude.ai כקבצים נפרדים מורידים עם "Export All" (ייצוא הכול) בדף העיון, לא עם <code>/export</code>. כל קובץ נספר במסגרת 3 הייצואים החינמיים, אלא אם יש לכם Pro. מדריך: <a href="/he/bulk/">ייצוא מרוכז עם Export All</a>. פורמטים: <a href="/he/formats/">פורמטים</a>.</p>
-<p>בייצוא הראשון מ-claude.ai נדרשת כניסה עם Google, כדי שנוכל לספור את המכסה ולשחזר את Pro. הקבצים נבנים באופן מקומי. Paddle גובה על Pro ‏$3.99 לחודש או $26.99 לשנה. שום דבר מזה לא חל על <code>/export</code> בטרמינל.</p>
+<p>כדי להוריד צ'אט של Claude ב-claude.ai: התקינו את Download Claude conversations, פתחו את השרשור ב-Chrome, לחצו על הכפתור הכתום ובחרו PDF,‏ Markdown, טקסט פשוט, JSON,‏ XML,‏ CSV או PNG. זה המוצר לדפדפן, והוא מכסה גם סשנים של claude.ai/code. זה לא ייצוא מ-Claude Code בטרמינל. מדריך צעד אחר צעד: <a href="/he/how-to-download-claude-chat/">איך מורידים צ'אט של Claude</a>.</p>
+<p>את כל ההיסטוריה של claude.ai כקבצים נפרדים מורידים עם "Export All" (ייצוא הכול) בלוח הבקרה (Dashboard), לא עם <code>/export</code>. בתוכנית החינמית כל צ'אט ב-ZIP נספר במסגרת 3 ביום (במשותף עם PDF, האיפוס בחצות UTC); Pro מסיר את המגבלה. מדריך: <a href="/he/bulk/">ייצוא מרוכז עם Export All</a>. פורמטים: <a href="/he/formats/">פורמטים</a>.</p>
+<p>לא צריך חשבון לייצוא של צ'אט בודד ב-Markdown, טקסט, JSON,‏ XML,‏ CSV או PNG — הייצואים האלה ללא הגבלה. התחברות עם Google מופיעה רק עבור PDF,‏ ZIP מרוכז ו-Pro, כדי שנוכל לספור את המכסה היומית ולשחזר את Pro. הקבצים נבנים באופן מקומי, כולל PDF. Paddle גובה על Pro ‏$3.99 לחודש או $26.99 לשנה. שום דבר מזה לא חל על <code>/export</code> בטרמינל.</p>
 <p>אם העבודה התחילה ב-Claude Code והדבקתם סיכום ב-claude.ai, הורידו את השרשור מהאתר בשביל הרשימות ושמרו את <code>/export</code> בשביל היומן האמיתי של ה-CLI. שני קבצים עדיפים על קובץ אחד מבולבל.</p>
 
 <h2 id="vs-official-zip">ייצוא מ-Claude Code מול Export data הרשמי של Anthropic?</h2>
 <p>ייצוא מ-Claude Code (<code>/export</code> או JSONL) הוא סשן אחד בטרמינל. ה-Export data הרשמי הוא Settings → Privacy → Export data ב-claude.ai (התוויות עשויות להופיע בעברית אם claude.ai מוגדר לעברית): קובץ ZIP עם JSON של כל חשבון Anthropic, שמגיע באיחור. אלה לא אותו ארכיון. ה-ZIP לא יחליף את <code>/export</code>.</p>
 <p>אם סשן מסוים של Claude Code מופיע ב-ZIP של החשבון תלוי באופן שבו Anthropic שומרת את המוצר הזה, לא בתוסף הזה. התייחסו ל-ZIP כגיבוי של החשבון באתר, אלא אם תיעוד הפרטיות העדכני של Anthropic אומר אחרת. אנחנו לא מוסיפים סשנים של ה-CLI ל-ZIP הזה.</p>
-<p>איך מייצאים צ'אט של Claude מהאתר, כולל ההבדל בין ה-ZIP לתוסף, מוסבר כאן: <a href="/he/how-to-export-claude-chat/">איך מייצאים צ'אט של Claude</a>. הדפסה ל-PDF של דף אינטרנט לא רלוונטית לממשק טרמינל. עיינו ב<a href="/he/download-claude-chat-as-pdf/">הדפסה / PDF</a> רק כשהשיחה נמצאת בדפדפן.</p>
+<p>איך מייצאים צ'אט של Claude מהאתר, כולל ההבדל בין ה-ZIP לתוסף, מוסבר כאן: <a href="/he/how-to-export-claude-chat/">איך מייצאים צ'אט של Claude</a>. גם ייצוא ה-PDF של התוסף לא רלוונטי לממשק טרמינל. עיינו ב<a href="/he/download-claude-chat-as-pdf/">שמירת צ'אט של Claude כ-PDF</a> רק כשהשיחה נמצאת ב-claude.ai, כולל claude.ai/code.</p>
 <div class="table-wrap">
   <table>
     <caption>ייצוא מ-Claude Code בהשוואה לדרכים אחרות לשמור את Claude</caption>
@@ -172,6 +178,11 @@
         <th scope="row">Claude Code בטרמינל</th>
         <td><code>/export</code>, או JSONL בדיסק</td>
         <td>לא עובד</td>
+      </tr>
+      <tr>
+        <th scope="row">Claude Code בגרסת הווב (claude.ai/code)</th>
+        <td>הכפתור הכתום ב-Chrome</td>
+        <td>מייצא כמו כל צ'אט</td>
       </tr>
       <tr>
         <th scope="row">claude.ai ב-Chrome</th>
@@ -193,7 +204,7 @@
 </div>
 
 <h2 id="three-surfaces">ייצוא מ-Claude Code מול Desktop מול claude.ai?</h2>
-<p>Claude Code,‏ Claude Desktop ו-claude.ai הם שלושה ממשקים שונים. ייצוא מ-Claude Code משתמש ב-<code>/export</code> וב-JSONL. Desktop היא אפליקציה בלי הכפתור הכתום של התוסף. claude.ai ב-Chrome הוא המקום היחיד שבו Download Claude conversations רץ. ערבוב השמות הוא הסיבה שייצואים נכשלים בשקט.</p>
+<p>Claude Code,‏ Claude Desktop ו-claude.ai הם שלושה ממשקים שונים. ייצוא מ-Claude Code משתמש ב-<code>/export</code> וב-JSONL. Desktop היא אפליקציה בלי הכפתור הכתום של התוסף. claude.ai ב-Chrome הוא המקום היחיד שבו Download Claude conversations רץ — כולל Claude Code בגרסת הווב ב-claude.ai/code. ערבוב השמות הוא הסיבה שייצואים נכשלים בשקט.</p>
 <p>Claude Desktop: אם הצ'אט סונכרן לאותו חשבון Anthropic, פתחו אותו ב-claude.ai וייצאו משם. אם הוא קיים רק בחלון של Desktop, העתיקו והדביקו או חכו ל-Export data הרשמי. מדריך: <a href="/he/export-claude-desktop-chat/">ייצוא צ'אט מ-Claude Desktop</a>.</p>
 <p>לוח Claude Code ב-VS Code קרוב יותר ל-CLI מאשר ל-claude.ai. אל תצפו שהסקריפט שלנו ייכנס ל-webview הזה. השתמשו ב-<code>/export</code> מהסשן שבאמת מכיל את ההודעות.</p>
 <p>תוסף Chrome עצמאי, שאינו קשור ל-Anthropic, PBC. ‏Claude הוא סימן מסחרי של Anthropic. פעלו לפי תנאי השימוש שלהם. איננו יכולים לתת ייעוץ משפטי לגבי העתקת פלטי כלים שכוללים קוד קנייני; זה עניין בינכם, בין המעסיק שלכם ובין Anthropic.</p>
@@ -202,13 +213,15 @@
 <h3>איך מייצאים שיחה של Claude Code?</h3>
 <p>בטרמינל של Claude Code הקלידו <code>/export</code> (אפשר עם שם קובץ) כדי לשמור תמליל קריא, או העתיקו את קובץ ה-JSONL מ-<code>~/.claude/projects</code> ב-macOS/Linux או מ-<code>%USERPROFILE%\.claude\projects</code> ב-Windows. תיעוד הסשנים של Anthropic מתאר את חלון הדו-שיח העדכני.</p>
 <h3>האם תוסף Chrome הזה מוריד צ'אטים של Claude Code?</h3>
-<p>לא. Download Claude conversations עובד רק ב-claude.ai בתוך Chrome. הוא לא יכול לקרוא סשנים מהטרמינל, תמלילי JSONL או את הפקודה <code>/export</code>. ייצוא של Claude Code נשאר ב-CLI.</p>
+<p>לא מהטרמינל. Download Claude conversations עובד רק ב-claude.ai בתוך Chrome. הוא לא יכול לקרוא סשנים מקומיים בטרמינל, תמלילי JSONL או את הפקודה <code>/export</code>. סשנים של Claude Code בגרסת הווב ב-claude.ai/code כן מיוצאים, כמו כל צ'אט.</p>
+<h3>אפשר לייצא את Claude Code בגרסת הווב (claude.ai/code)?</h3>
+<p>כן. פתחו את הסשן ב-claude.ai/code ב-Chrome והשתמשו בכפתור הכתום. PDF,‏ Markdown, טקסט פשוט, JSON,‏ XML,‏ CSV ו-PNG — כולם עובדים. ששת הפורמטים שאינם PDF הם ללא הגבלה ובלי חשבון; PDF דורש התחברות עם Google ונספר במסגרת 3 ייצואים חינמיים ביום.</p>
 <h3>איפה Claude Code שומר את היסטוריית השיחות?</h3>
 <p>תמלילי הסשנים הם קובצי JSONL תחת <code>~/.claude/projects/&lt;encoded-working-directory&gt;/</code>, ושמם הוא מזהה הסשן. המבנה המדויק עשוי להשתנות. השתמשו ב-<code>/export</code> כשאתם רוצים קובץ קריא במקום לפענח JSONL. המשתנה <code>CLAUDE_CONFIG_DIR</code> יכול להעביר את התיקייה למקום אחר.</p>
 <h3>איך מורידים שיחה של Claude Code כ-Markdown?</h3>
-<p>הפקודה <code>/export</code> של Claude Code מפיקה תמליל בטקסט פשוט, לא את ה-Markdown של התוסף הזה. אם אתם צריכים דווקא Markdown, ייצאו עותק של העבודה מ-claude.ai בעזרת Download Claude conversations, או המירו בעצמכם את הטקסט של <code>/export</code>. אנחנו לא ממירים JSONL ל-Markdown.</p>
+<p>הפקודה <code>/export</code> של Claude Code מפיקה תמליל בטקסט פשוט, לא את ה-Markdown של התוסף הזה. אם אתם צריכים דווקא Markdown, ייצאו סשן של claude.ai/code או עותק של העבודה מ-claude.ai בעזרת Download Claude conversations, או המירו בעצמכם את הטקסט של <code>/export</code>. אנחנו לא ממירים JSONL ל-Markdown.</p>
 <h3>ואיך מורידים במקום זאת שיחה מ-Claude.ai?</h3>
-<p>התקינו את תוסף Chrome החינמי, פתחו את הצ'אט ב-claude.ai והשתמשו בכפתור הכתום — או ב-Export All להיסטוריה כולה. ראו <a href="/he/how-to-download-claude-chat/">איך מורידים צ'אט של Claude</a>. 3 ייצואים בחינם; Pro עולה $3.99 לחודש או $26.99 לשנה.</p>
+<p>התקינו את תוסף Chrome החינמי, פתחו את הצ'אט ב-claude.ai והשתמשו בכפתור הכתום — או ב-Export All להיסטוריה כולה. ראו <a href="/he/how-to-download-claude-chat/">איך מורידים צ'אט של Claude</a>. Markdown, טקסט, JSON,‏ XML,‏ CSV ו-PNG הם ללא הגבלה ובלי חשבון; PDF ו-ZIP מרוכז הם 3 ביום בחינם עם התחברות עם Google; Pro עולה $3.99 לחודש או $26.99 לשנה.</p>
 <h3>האם /export זהה ל-Export data הרשמי?</h3>
 <p>לא. <code>/export</code> הוא הסשן הנוכחי של Claude Code. Settings → Privacy → Export data שולח באימייל קובץ ZIP עם JSON של כל חשבון Anthropic. מוצרים שונים, קבצים שונים, זמני המתנה שונים.</p>
 <h3>אפשר לפענח את ה-JSONL של Claude Code עם jq?</h3>
@@ -216,13 +229,13 @@
 <h3>האם ייצוא מ-Claude Code עובד ב-Windows?</h3>
 <p>כן. <code>/export</code> היא פקודת CLI. התמלילים בדיסק נמצאים תחת <code>%USERPROFILE%\.claude\projects</code>, אלא אם הגדרתם <code>CLAUDE_CONFIG_DIR</code>. תוסף Chrome הזה עדיין לא רץ בתוך הטרמינל הזה.</p>
 <h3>האם Claude Code זהה ל-Claude Desktop?</h3>
-<p>לא. Claude Code הוא סוכן התכנות בטרמינל. Claude Desktop היא אפליקציית הצ'אט. claude.ai הוא האתר. רק האתר מקבל את התוסף הזה. הערות על ייצוא מ-Desktop: <a href="/he/export-claude-desktop-chat/">Claude Desktop</a>.</p>
+<p>לא. Claude Code הוא סוכן התכנות בטרמינל. Claude Desktop היא אפליקציית הצ'אט. claude.ai הוא האתר. רק האתר, כולל claude.ai/code, מקבל את התוסף הזה. הערות על ייצוא מ-Desktop: <a href="/he/export-claude-desktop-chat/">Claude Desktop</a>.</p>
 <h3>האם התוסף יעטוף אי פעם את /export?</h3>
-<p>לא בגרסה 1.13.0. תחום המוצר הוא claude.ai: חמישה פורמטים, קבצים מקומיים, כניסה עם Google לספירת המכסה. אם התחום ישתנה, הדף הזה יציין זאת. עד אז השתמשו ב-CLI של Anthropic לייצוא מ-Claude Code.</p>
+<p>לא בגרסה 1.16.2. תחום המוצר הוא claude.ai, כולל Claude Code בגרסת הווב: שבעה פורמטים, קבצים מקומיים, התחברות עם Google רק עבור PDF, ייצוא מרוכז ו-Pro. אם התחום ישתנה, הדף הזה יציין זאת. עד אז השתמשו ב-CLI של Anthropic לייצוא מ-Claude Code בטרמינל.</p>
 <h3>האם /export כולל פלטים של כלים?</h3>
 <p>לפי Anthropic, <code>/export</code> מציג הודעות ופלטי כלים כטקסט קריא. זה התמליל שלהם, לא מנתח שלנו. כדי לדעת מה בדיוק נכלל היום, הריצו <code>/export</code> בגרסה שלכם וקראו את הקובץ — התיעוד עלול לפגר אחרי גרסה חדשה.</p>
 <h3>אפשר לייצא סשנים של Claude Code בכמות גדולה?</h3>
-<p>לא עם Export All של התוסף הזה. הייצוא המרוכז בדף העיון שלנו מיועד ל-claude.ai בלבד. לסשנים רבים של ה-CLI העתיקו את תיקיית projects או הריצו <code>/export</code> בכל סשן. אין ייצוא מרוכז בכפתור כתום עבור JSONL.</p>
+<p>לא סשנים מקומיים של ה-CLI. Export All בלוח הבקרה מיועד ל-claude.ai בלבד. לסשנים רבים של ה-CLI העתיקו את תיקיית projects או הריצו <code>/export</code> בכל סשן. אין ייצוא מרוכז בכפתור כתום עבור JSONL.</p>
 </article>
 </main>
 <section class="final-cta page-cta" aria-label="התקנה">
@@ -230,7 +243,7 @@
     <div class="final-cta-panel">
       <p class="final-kicker">Download Claude conversations</p>
       <h2>צריכים קבצים מ-claude.ai, לא מ-Claude Code?</h2>
-      <p>תוסף Chrome שומר צ'אטים מ-claude.ai כ-Markdown,‏ JSON, טקסט, XML או PNG — באופן מקומי, ישירות מ-Chrome.</p>
+      <p>תוסף Chrome שומר צ'אטים מ-claude.ai וסשנים של claude.ai/code כ-PDF,‏ Markdown,‏ JSON, טקסט, CSV,‏ XML או PNG — באופן מקומי, ישירות מ-Chrome.</p>
       <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=he-claude-code" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> הוספה ל-Chrome</a>
     </div>
   </div>
@@ -239,7 +252,7 @@
   <div class="footer-inner">
     <div>
       <a class="logo" href="/he/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
-      <p class="legal-note">תוסף Chrome להורדת צ&#x27;אטים מ-Claude.ai כ-Markdown, JSON, טקסט פשוט, XML או PNG. דירוג 5.0 ב-Chrome Web Store.</p>
+      <p class="legal-note">תוסף Chrome להורדת צ&#x27;אטים מ-Claude.ai כ-PDF, Markdown, JSON, טקסט פשוט, CSV, XML או PNG.</p>
     </div>
     <div>
       <h2>התקנה</h2>
@@ -259,7 +272,7 @@
       <a href="/he/export-claude-chat/">ייצוא צ&#x27;אט של Claude</a>
       <a href="/he/claude-conversation-extractor/">חילוץ שיחות Claude</a>
       <a href="/he/claude-code-export/">ייצוא Claude Code</a>
-      <a href="/he/download-claude-chat-as-pdf/">הדפסה / PDF</a>
+      <a href="/he/download-claude-chat-as-pdf/">צ&#x27;אט של Claude כ-PDF</a>
       <a href="/he/export-claude-desktop-chat/">ייצוא מ-Claude Desktop</a>
       <a href="/he/claude-export-conversation/">ייצוא שיחה מ-Claude</a>
       <a href="/he/how-to-save-claude-conversation/">איך לשמור שיחה של Claude</a>
@@ -283,7 +296,7 @@
     </div>
   </div>
   <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/claude-code-export/" hreflang="en" lang="en">English</a> <a href="/de/claude-code-chat-exportieren/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/exporter-conversation-claude-code/" hreflang="fr" lang="fr">Français</a> <a href="/nl/claude-code-gesprek-exporteren/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/exportera-claude-code-konversation/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/eksportere-claude-code-samtale/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/eksporter-claude-code-samtale/" hreflang="da" lang="da">Dansk</a> <a href="/fi/claude-code-keskustelun-vienti/" hreflang="fi" lang="fi">Suomi</a> <a href="/ja/claude-code-export/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/claude-code-export/" hreflang="ko" lang="ko">한국어</a> <a href="/he/claude-code-export/" hreflang="he" lang="he">עברית</a> <a href="/ar/claude-code-export/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
-  <p class="disclaimer">הצ&#x27;אטים מעובדים בדפדפן שלכם · התחברות עם Google לצורך מכסה · אין קשר ל-Anthropic, PBC. ‏Claude הוא סימן מסחרי של Anthropic. תוסף Chrome עצמאי — לא מוצר רשמי של Anthropic. תמיכה: <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+  <p class="disclaimer">הצ&#x27;אטים מעובדים בדפדפן שלכם · התחברות עם Google רק ל-PDF, לייצוא מרוכז ול-Pro · אין קשר ל-Anthropic, PBC. ‏Claude הוא סימן מסחרי של Anthropic. תוסף Chrome עצמאי — לא מוצר רשמי של Anthropic. תמיכה: <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
 </footer>
 <script src="/assets/site.js" defer></script>
 </body>

@@ -19,7 +19,8 @@ LD = re.compile(r'(<script type="application/ld\+json">)(.*?)(</script>)', re.S)
 def text(fragment):
     fragment = re.sub(r"</?(p|li|ul|ol|div|br|table|thead|tbody|tr|td|th|blockquote|figure|figcaption)\b[^>]*>", " ", fragment)
     fragment = re.sub(r"<[^>]+>", "", fragment)
-    return re.sub(r"\s+", " ", html.unescape(fragment)).strip()
+    # ASCII whitespace only: keep the no-break spaces used in localized prices (3,99 $).
+    return re.sub(r"[ \t\r\n\f\v]+", " ", html.unescape(fragment)).strip(" \t\r\n\f\v")
 
 
 def visible_faq(s):

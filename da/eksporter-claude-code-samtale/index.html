@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Eksportér Claude Code-samtale – /export vs. claude.ai</title>
-  <meta name="description" content="Eksport fra Claude Code sker med /export eller JSONL i ~/.claude/projects. Den gratis Chrome-udvidelse downloader claude.ai-chats, ikke terminalsessioner.">
+  <meta name="description" content="Eksportér en Claude Code-samtale: /export eller JSONL i ~/.claude/projects i terminalen. Sessioner på claude.ai/code klarer den gratis Chrome-udvidelse.">
   <link rel="canonical" href="https://chat-downloader.com/da/eksporter-claude-code-samtale/">
   <!-- i18n:head -->
   <link rel="alternate" hreflang="en" href="https://chat-downloader.com/claude-code-export/">
@@ -34,14 +34,14 @@
   <meta property="og:locale:alternate" content="ar_AE">
   <!-- /i18n:head -->
   <meta property="og:title" content="Eksportér Claude Code-samtale – /export vs. claude.ai">
-  <meta property="og:description" content="Eksport fra Claude Code sker med /export eller JSONL i ~/.claude/projects. Den gratis Chrome-udvidelse downloader claude.ai-chats, ikke terminalsessioner.">
+  <meta property="og:description" content="Eksportér en Claude Code-samtale: /export eller JSONL i ~/.claude/projects i terminalen. Sessioner på claude.ai/code klarer den gratis Chrome-udvidelse.">
   <meta property="og:url" content="https://chat-downloader.com/da/eksporter-claude-code-samtale/">
   <meta property="og:image" content="https://chat-downloader.com/assets/widget-guide.png">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Chat Downloader">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Eksportér Claude Code-samtale – /export vs. claude.ai">
-  <meta name="twitter:description" content="Eksport fra Claude Code sker med /export eller JSONL i ~/.claude/projects. Den gratis Chrome-udvidelse downloader claude.ai-chats, ikke terminalsessioner.">
+  <meta name="twitter:description" content="Eksportér en Claude Code-samtale: /export eller JSONL i ~/.claude/projects i terminalen. Sessioner på claude.ai/code klarer den gratis Chrome-udvidelse.">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
@@ -56,8 +56,8 @@
     gtag('js', new Date());
     gtag('config', 'G-GME1YXGZKR');
   </script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Hvordan eksporterer jeg en Claude Code-samtale?","acceptedAnswer":{"@type":"Answer","text":"Skriv /export i Claude Codes terminal (eventuelt med et filnavn) for at gemme en læsbar udskrift, eller kopiér JSONL-filen fra ~/.claude/projects på macOS/Linux eller %USERPROFILE%\\.claude\\projects på Windows. Anthropics dokumentation om sessioner beskriver den aktuelle dialog."}},{"@type":"Question","name":"Downloader denne Chrome-udvidelse Claude Code-chats?","acceptedAnswer":{"@type":"Answer","text":"Nej. Download Claude conversations virker kun på claude.ai i Chrome. Den kan ikke læse terminalsessioner, JSONL-udskrifter eller kommandoen /export. Eksport fra Claude Code foregår i CLI'en."}},{"@type":"Question","name":"Hvor gemmer Claude Code samtalehistorikken?","acceptedAnswer":{"@type":"Answer","text":"Sessionsudskrifter er JSONL-filer under ~/.claude/projects/<kodet-arbejdsmappe>/, navngivet efter sessions-id. Den præcise struktur kan ændre sig. Brug /export, når du vil have en læsbar fil i stedet for at parse JSONL. CLAUDE_CONFIG_DIR kan flytte hele mappetræet."}},{"@type":"Question","name":"Hvordan downloader jeg en Claude Code-samtale som Markdown?","acceptedAnswer":{"@type":"Answer","text":"Claude Codes /export er en udskrift i ren tekst, ikke udvidelsens Markdown. Har du specifikt brug for Markdown, så eksportér en claude.ai-kopi af arbejdet med Download Claude conversations, eller konvertér selv teksten fra /export. Vi konverterer ikke JSONL til Markdown."}},{"@type":"Question","name":"Hvordan downloader jeg i stedet en samtale fra claude.ai?","acceptedAnswer":{"@type":"Answer","text":"Installér den gratis Chrome-udvidelse, åbn chatten på claude.ai, og brug den orange knap – eller Export All til historikken. Se, hvordan du downloader en Claude-chat. 3 gratis eksporter; Pro koster 3,99 $/md. eller 26,99 $/år."}},{"@type":"Question","name":"Er /export det samme som den officielle Export data?","acceptedAnswer":{"@type":"Answer","text":"Nej. /export er den aktuelle Claude Code-session. Settings → Privacy → Export data sender en ZIP-fil med JSON for Anthropic-kontoen på mail. Forskellige produkter, forskellige filer, forskellige ventetider."}},{"@type":"Question","name":"Kan jeg parse Claude Codes JSONL med jq?","acceptedAnswer":{"@type":"Answer","text":"Ja, med det forbehold, Anthropic selv nævner: linjeskemaet er internt og kan ændre sig. Brug hellere /export eller claude -p --output-format json, når du har brug for en fast kontrakt. Lås din CLI-version, hvis du alligevel parser JSONL."}},{"@type":"Question","name":"Virker eksport fra Claude Code på Windows?","acceptedAnswer":{"@type":"Answer","text":"Ja. /export er en CLI-kommando. Udskrifter på disken ligger under %USERPROFILE%\\.claude\\projects, medmindre du sætter CLAUDE_CONFIG_DIR. Chrome-udvidelsen kører stadig ikke i den terminal."}},{"@type":"Question","name":"Er Claude Code det samme som Claude Desktop?","acceptedAnswer":{"@type":"Answer","text":"Nej. Claude Code er kodeagenten i terminalen. Claude Desktop er chat-appen. claude.ai er webstedet. Kun webstedet får denne udvidelse. Noter om eksport fra Desktop: Claude Desktop."}},{"@type":"Question","name":"Vil udvidelsen nogensinde understøtte /export?","acceptedAnswer":{"@type":"Answer","text":"Ikke i version 1.13.0. Produktet dækker claude.ai: fem formater, lokale filer, Google-login til kvoten. Ændrer det sig, står det på denne side. Indtil da bruger du Anthropics CLI til eksport fra Claude Code."}},{"@type":"Question","name":"Indeholder /export output fra værktøjer?","acceptedAnswer":{"@type":"Answer","text":"Anthropic beskriver /export som beskeder og værktøjsoutput gengivet som læsbar tekst. Det er deres udskrift, ikke vores parser. Vil du vide præcis, hvad den indeholder nu, så kør /export i din version og læs filen – dokumentationen kan halte en udgivelse bagefter."}},{"@type":"Question","name":"Kan jeg masseeksportere Claude Code-sessioner?","acceptedAnswer":{"@type":"Answer","text":"Ikke med udvidelsens Export All. Masseeksport på vores oversigtsside gælder kun claude.ai. Til mange CLI-sessioner kopierer du projects-mappen eller kører /export for hver session. Der findes ingen masseeksport af JSONL med den orange knap."}}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Eksportér Claude Code-samtale eller claude.ai-chat: vælg den rigtige vej","description":"Eksport fra Claude Code sker med /export eller JSONL i ~/.claude/projects. Denne gratis Chrome-udvidelse downloader claude.ai-chats, ikke terminalsessioner.","url":"https://chat-downloader.com/da/eksporter-claude-code-samtale/","dateModified":"2026-09-10","datePublished":"2026-09-10","inLanguage":"da","author":{"@type":"Organization","name":"Chat Downloader","url":"https://chat-downloader.com/da/"},"publisher":{"@type":"Organization","name":"Chat Downloader","url":"https://chat-downloader.com/da/"},"mainEntityOfPage":"https://chat-downloader.com/da/eksporter-claude-code-samtale/"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Hvordan eksporterer jeg en Claude Code-samtale?","acceptedAnswer":{"@type":"Answer","text":"Skriv /export i Claude Codes terminal (eventuelt med et filnavn) for at gemme en læsbar udskrift, eller kopiér JSONL-filen fra ~/.claude/projects på macOS/Linux eller %USERPROFILE%\\.claude\\projects på Windows. Anthropics dokumentation om sessioner beskriver den aktuelle dialog."}},{"@type":"Question","name":"Downloader denne Chrome-udvidelse Claude Code-chats?","acceptedAnswer":{"@type":"Answer","text":"Ikke fra terminalen. Download Claude conversations virker kun på claude.ai i Chrome. Den kan ikke læse lokale terminalsessioner, JSONL-udskrifter eller kommandoen /export. Sessioner i Claude Code på nettet via claude.ai/code kan eksporteres ligesom enhver chat."}},{"@type":"Question","name":"Kan jeg eksportere Claude Code på nettet (claude.ai/code)?","acceptedAnswer":{"@type":"Answer","text":"Ja. Åbn sessionen på claude.ai/code i Chrome, og brug den orange knap. PDF, Markdown, ren tekst, JSON, XML, CSV og PNG virker alle. De seks formater ud over PDF er ubegrænsede uden konto; PDF kræver Google-login og tæller med i de 3 gratis om dagen."}},{"@type":"Question","name":"Hvor gemmer Claude Code samtalehistorikken?","acceptedAnswer":{"@type":"Answer","text":"Sessionsudskrifter er JSONL-filer under ~/.claude/projects/<encoded-working-directory>/, navngivet efter sessions-id. Den præcise struktur kan ændre sig. Brug /export, når du vil have en læsbar fil i stedet for at parse JSONL. CLAUDE_CONFIG_DIR kan flytte hele mappetræet."}},{"@type":"Question","name":"Hvordan downloader jeg en Claude Code-samtale som Markdown?","acceptedAnswer":{"@type":"Answer","text":"Claude Codes /export er en udskrift i ren tekst, ikke udvidelsens Markdown. Har du specifikt brug for Markdown, så eksportér en session fra claude.ai/code eller en claude.ai-kopi af arbejdet med Download Claude conversations, eller konvertér selv teksten fra /export. Vi konverterer ikke JSONL til Markdown."}},{"@type":"Question","name":"Hvordan downloader jeg i stedet en samtale fra claude.ai?","acceptedAnswer":{"@type":"Answer","text":"Installér den gratis Chrome-udvidelse, åbn chatten på claude.ai, og brug den orange knap – eller Export All til historikken. Se, hvordan du downloader en Claude-chat. Markdown, tekst, JSON, XML, CSV og PNG er ubegrænsede uden konto; PDF og masse-ZIP er gratis 3 om dagen med Google-login; Pro koster 3,99 $/md. eller 26,99 $/år."}},{"@type":"Question","name":"Er /export det samme som den officielle Export data?","acceptedAnswer":{"@type":"Answer","text":"Nej. /export er den aktuelle Claude Code-session. Settings → Privacy → Export data sender en ZIP-fil med JSON for Anthropic-kontoen på mail. Forskellige produkter, forskellige filer, forskellige ventetider."}},{"@type":"Question","name":"Kan jeg parse Claude Codes JSONL med jq?","acceptedAnswer":{"@type":"Answer","text":"Ja, med det forbehold, Anthropic selv nævner: linjeskemaet er internt og kan ændre sig. Brug hellere /export eller claude -p --output-format json, når du har brug for en fast kontrakt. Lås din CLI-version, hvis du alligevel parser JSONL."}},{"@type":"Question","name":"Virker eksport fra Claude Code på Windows?","acceptedAnswer":{"@type":"Answer","text":"Ja. /export er en CLI-kommando. Udskrifter på disken ligger under %USERPROFILE%\\.claude\\projects, medmindre du sætter CLAUDE_CONFIG_DIR. Chrome-udvidelsen kører stadig ikke i den terminal."}},{"@type":"Question","name":"Er Claude Code det samme som Claude Desktop?","acceptedAnswer":{"@type":"Answer","text":"Nej. Claude Code er kodeagenten i terminalen. Claude Desktop er chat-appen. claude.ai er webstedet. Kun webstedet, claude.ai/code inklusive, får denne udvidelse. Noter om eksport fra Desktop: Claude Desktop."}},{"@type":"Question","name":"Vil udvidelsen nogensinde understøtte /export?","acceptedAnswer":{"@type":"Answer","text":"Ikke i version 1.16.2. Produktet dækker claude.ai, Claude Code på nettet inklusive: syv formater, lokale filer, Google-login kun til PDF, masseeksport og Pro. Ændrer det sig, står det på denne side. Indtil da bruger du Anthropics CLI til eksport fra Claude Code i terminalen."}},{"@type":"Question","name":"Indeholder /export output fra værktøjer?","acceptedAnswer":{"@type":"Answer","text":"Anthropic beskriver /export som beskeder og værktøjsoutput gengivet som læsbar tekst. Det er deres udskrift, ikke vores parser. Vil du vide præcis, hvad den indeholder nu, så kør /export i din version og læs filen – dokumentationen kan halte en udgivelse bagefter."}},{"@type":"Question","name":"Kan jeg masseeksportere Claude Code-sessioner?","acceptedAnswer":{"@type":"Answer","text":"Ikke lokale CLI-sessioner. Export All på dashboardet gælder kun claude.ai. Til mange CLI-sessioner kopierer du projects-mappen eller kører /export for hver session. Der findes ingen masseeksport af JSONL med den orange knap."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Eksportér Claude Code-samtale eller claude.ai-chat: vælg den rigtige vej","description":"Eksportér en Claude Code-samtale: /export eller JSONL i ~/.claude/projects i terminalen. Sessioner på claude.ai/code klarer den gratis Chrome-udvidelse.","url":"https://chat-downloader.com/da/eksporter-claude-code-samtale/","dateModified":"2026-09-25","datePublished":"2026-09-10","inLanguage":"da","author":{"@type":"Organization","name":"Chat Downloader","url":"https://chat-downloader.com/da/"},"publisher":{"@type":"Organization","name":"Chat Downloader","url":"https://chat-downloader.com/da/"},"mainEntityOfPage":"https://chat-downloader.com/da/eksporter-claude-code-samtale/"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Forside","item":"https://chat-downloader.com/da/"},{"@type":"ListItem","position":2,"name":"Eksport fra Claude Code","item":"https://chat-downloader.com/da/eksporter-claude-code-samtale/"}]}</script>
 </head>
 <body>
@@ -84,14 +84,14 @@
 <nav class="crumbs" aria-label="Brødkrummesti"><a href="/da/">Forside</a> / Eksport fra Claude Code</nav>
 <main id="main">
 <article class="band prose">
-<p class="article-meta">Opdateret <time datetime="2026-09">september 2026</time> · Udvidelse 1.13.0</p>
+<p class="article-meta">Opdateret <time datetime="2026-09-25">september 2026</time> · Udvidelse 1.16.2</p>
 <h1 class="page-h1">Eksportér Claude Code-samtale eller claude.ai-chat: vælg den rigtige vej</h1>
-<p class="lead">At eksportere en Claude Code-samtale er en opgave i terminalen. Skriv /export i sessionen, eller kopiér JSONL fra ~/.claude/projects. Den orange knap på dette websted er ikke vejen til at downloade en Claude Code-samtale. Download Claude conversations gemmer kun chats, du åbner på claude.ai i Chrome. Desktop og Code er separate produkter.</p>
-<aside class="trust-badge" aria-label="Bedømmelse i Chrome Web Store">
-  <span class="trophy" aria-hidden="true">🏆</span>
+<p class="lead">At eksportere en Claude Code-samtale er en opgave i terminalen. Skriv /export i sessionen, eller kopiér JSONL fra ~/.claude/projects. Den orange knap på dette websted er ikke vejen til at downloade en Claude Code-samtale fra terminalen. Download Claude conversations gemmer chats, du åbner på claude.ai i Chrome – også sessioner i Claude Code på nettet via claude.ai/code. Lokale terminalsessioner og Desktop er noget andet.</p>
+<aside class="trust-badge" aria-label="Om udvidelsen">
+  <span class="trophy" aria-hidden="true">🧩</span>
   <div>
-    <strong>Download Claude conversations – bedømt 5.0 i Chrome Web Store</strong>
-    <span>2026 – gratis Chrome-udvidelse, der gemmer claude.ai-chats som Markdown, JSON, tekst, XML eller PNG</span>
+    <strong>Download Claude conversations – gratis Chrome-udvidelse til claude.ai</strong>
+    <span>Version 1.16.2 (september 2026) – ubegrænsede eksporter i Markdown, tekst, JSON, XML, CSV og PNG uden konto; PDF og masse-ZIP gratis op til 3 om dagen</span>
   </div>
 </aside>
 <nav class="toc" aria-label="På denne side">
@@ -100,6 +100,7 @@
     <li><a href="#what-is-export">Hvad er eksport fra Claude Code i terminalen?</a></li>
     <li><a href="#jsonl-disk">Hvordan henter jeg en Claude Code-samtale fra disken?</a></li>
     <li><a href="#extension-limit">Virker eksport fra Claude Code med denne udvidelse?</a></li>
+    <li><a href="#claude-code-web">Kan jeg eksportere sessioner fra Claude Code på nettet?</a></li>
     <li><a href="#where-stored">Hvor gemmer Claude Code samtalehistorikken?</a></li>
     <li><a href="#claude-ai-instead">Hvordan downloader jeg i stedet en chat på claude.ai?</a></li>
     <li><a href="#vs-official-zip">Eksport fra Claude Code vs. Anthropics Export data?</a></li>
@@ -128,34 +129,39 @@
 <p>Vil du tage backup af Claude Code-samtaler, er vejen derfor: kopiér mappen, eller eksportér udskrifter med <code>/export</code> med faste mellemrum. Dette websted tilføjer ikke en knap til at "importere JSONL". Vi læser ikke din hjemmemappe.</p>
 
 <h2 id="extension-limit">Virker eksport af en Claude Code-samtale med denne udvidelse?</h2>
-<p>Nej. Eksport fra Claude Code virker ikke med Download Claude conversations. Chrome-udvidelsen indlæses på claude.ai. Den kan ikke se terminalen, ikke køre <code>/export</code> og ikke åbne JSONL. Søgte du efter, hvordan man downloader en Claude Code-samtale, så hold dig til CLI-trinnene på denne side.</p>
+<p>Nej, ikke for terminalsessioner. Download Claude conversations læser ikke lokale Claude Code-sessioner. Chrome-udvidelsen indlæses på claude.ai. Den kan ikke se terminalen, ikke køre <code>/export</code> og ikke åbne JSONL. Claude Code på nettet via claude.ai/code er undtagelsen: det er en side på claude.ai, så den eksporteres ligesom enhver anden chat. Søgte du efter, hvordan man downloader en Claude Code-samtale fra CLI'en, så hold dig til CLI-trinnene på denne side.</p>
 <p>Mange lander her, fordi søgemaskiner grupperer "Claude" og "eksport". Udvidelsen i Chrome Web Store gælder stadig kun claude.ai. Installationen placerer ingen orange knap i iTerm, Ghostty, terminalen i VS Code eller Claude Codes desktop-indpakning.</p>
 <p>Har du også en parallel tråd på claude.ai om den samme kodeopgave, kan den browserchat gemmes med udvidelsen. De to optegnelser flettes ikke sammen. Værktøjskald, der kun skete i CLI'en, kommer ikke med i web-eksporten, medmindre du har indsat dem dér.</p>
 <div class="expert-quote">
   <blockquote>Vi får den samme supportmail hver uge: nogen har installeret Chrome-udvidelsen og forventede, at /export ville dukke op. Vi læser kun claude.ai. Claude Code har allerede /export og JSONL. At pakke CLI'en ind ville være et andet produkt, og det har vi ikke lavet.</blockquote>
   <cite><strong>Holdet bag Download Claude conversations</strong> – udviklerne af Chrome-udvidelsen Claude Chat Downloader</cite>
 </div>
-<p>Bedømmelsen 5.0 i Chrome Web Store gælder claude.ai-udvidelsen, ikke et plugin til Claude Code. 3 gratis eksporter og Pro til 3,99 $/md. eller 26,99 $/år gælder kun, når du eksporterer fra claude.ai. De måler ikke <code>/export</code>.</p>
+<p>Udvidelsen er et værktøj til claude.ai, ikke et plugin til Claude Code. Dens grænser gælder kun, når du eksporterer fra claude.ai: Markdown, tekst, JSON, XML, CSV og PNG er ubegrænsede uden konto; PDF og masse-ZIP er gratis 3 om dagen med Google-login; Pro til 3,99 $/md. eller 26,99 $/år fjerner loftet. Intet af det måler <code>/export</code>.</p>
+
+<h2 id="claude-code-web">Kan jeg eksportere sessioner fra Claude Code på nettet?</h2>
+<p>Ja. Claude Code på nettet kører på claude.ai/code, så Download Claude conversations eksporterer de sessioner ligesom enhver anden chat på claude.ai. Åbn sessionen i Chrome, klik på den orange knap, vælg et format, og klik på "Export" (eksportér). Det er den eneste Claude Code-flade, udvidelsen dækker.</p>
+<p>Formaterne er de samme syv som for alle chats: PDF, Markdown, ren tekst, JSON, XML, CSV og PNG. Markdown, tekst, JSON, XML, CSV og PNG er ubegrænsede og kræver ingen konto. PDF beder om Google-login og deler gratisplanens 3 om dagen med masse-ZIP, medmindre du har Pro. Kodeblokke beholder deres sprogmærker. Udvidet tænkning er afkrydsningsfeltet "Thinking" (tænkning) i panelet; værktøjs-/MCP-trin og kilder fra websøgning slår du til i udvidelsens indstillinger.</p>
+<p>Eksporten fra nettet er det, claude.ai/code viser i browseren. Det er ikke JSONL-loggen fra en lokal CLI-kørsel, og den når ikke sessioner, der kun har kørt i din terminal. Ifølge Anthropic har Claude Code på nettet sin egen sessionshistorik, adskilt fra CLI'ens <code>~/.claude/projects</code>-træ. Til en terminalsession er <code>/export</code> stadig vejen.</p>
 
 <h2 id="where-stored">Hvor gemmer Claude Code samtalehistorikken?</h2>
 <p>Claude Code gemmer samtalehistorik som JSONL-udskrifter i konfigurationsmappens projects-mappe. Standard på macOS og Linux: <code>~/.claude/projects/&lt;encoded-cwd&gt;/&lt;session-id&gt;.jsonl</code>. Windows bruger <code>%USERPROFILE%\.claude\projects</code>. Anthropic kan ændre strukturen; tjek den aktuelle dokumentation om sessioner, hvis en sti mangler på disken.</p>
 <p>At genoptage er noget andet end at eksportere. <code>claude --continue</code> og <code>claude --resume</code> genindlæser en session, så du kan arbejde videre. <code>/export</code> skriver en kopi, du kan lægge i git eller sende på mail. Det ene genskaber kontekst. Det andet giver dig en optegnelse at tage med. Anthropics side om sessioner dækker tilladelsestilstand ved genoptagelse, compact/opsummering og vælgerens adfærd – intet af det er denne udvidelse.</p>
-<p>Desktop-appen, Claude Code på nettet og VS Code-udvidelsen har ifølge Anthropic hver deres sessionshistorik. Stierne i denne guide gælder CLI'en. Gå ikke ud fra, at en udskrift fra Desktop Cowork ligger i det samme JSONL-træ, som du bruger fra terminalen.</p>
+<p>Desktop-appen, Claude Code på nettet og VS Code-udvidelsen har ifølge Anthropic hver deres sessionshistorik. Stierne i denne guide gælder CLI'en. Sessioner på nettet bliver på claude.ai/code, hvor udvidelsen kan eksportere dem. Gå ikke ud fra, at en udskrift fra Desktop Cowork ligger i det samme JSONL-træ, som du bruger fra terminalen.</p>
 <div class="callout callout-warn">
   <p><strong>Behandl ikke JSONL som et offentligt skema.</strong> Anthropic siger, at linjeformatet ændrer sig. Parser du det alligevel, så lås en version af Claude Code, og forvent, at det går i stykker. <code>/export</code> er den stabile vej til en læsbar Claude Code-samtale.</p>
 </div>
 <p>Miljøvariabler som <code>CLAUDE_CODE_SKIP_PROMPT_HISTORY</code> kan forhindre, at udskrifter skrives. Er projects-mappen tom, så tjek, om du har slået lagring fra, peget <code>CLAUDE_CONFIG_DIR</code> et andet sted hen eller aldrig har kørt en interaktiv session i den mappe.</p>
 
 <h2 id="claude-ai-instead">Hvordan downloader jeg i stedet en Claude-chat på claude.ai?</h2>
-<p>Sådan downloader du en Claude-chat på claude.ai: installér Download Claude conversations, åbn tråden i Chrome, klik på den orange knap, og vælg Markdown, JSON, tekst, XML eller PNG. Det er browserproduktet. Det er ikke eksport fra Claude Code. Trin for trin: <a href="/da/download-claude-chat/">sådan downloader du en Claude-chat</a>.</p>
-<p>Hele din historik fra claude.ai som separate filer kræver "Export All" (eksportér alle) på oversigtssiden, ikke <code>/export</code>. Hver fil tæller med i de 3 gratis eksporter, medmindre du har Pro. Guide: <a href="/da/eksporter-alle-claude-chats/">masseeksport med Export All</a>. Formater: <a href="/da/formater/">formater</a>.</p>
-<p>Google-login kræves ved den første eksport fra claude.ai, så vi kan tælle kvoten og gendanne Pro. Filerne bygges lokalt. Paddle fakturerer Pro til 3,99 $/md. eller 26,99 $/år. Intet af det gælder <code>/export</code> i terminalen.</p>
+<p>Sådan downloader du en Claude-chat på claude.ai: installér Download Claude conversations, åbn tråden i Chrome, klik på den orange knap, og vælg PDF, Markdown, ren tekst, JSON, XML, CSV eller PNG. Det er browserproduktet, og det dækker også sessioner på claude.ai/code. Det er ikke eksport fra Claude Code i terminalen. Trin for trin: <a href="/da/download-claude-chat/">sådan downloader du en Claude-chat</a>.</p>
+<p>Hele din historik fra claude.ai som separate filer kræver "Export All" (eksportér alle) på dashboardet, ikke <code>/export</code>. På gratisplanen tæller hver chat i ZIP-filen med i de 3 om dagen (delt med PDF, nulstilles ved midnat UTC); Pro fjerner loftet. Guide: <a href="/da/eksporter-alle-claude-chats/">masseeksport med Export All</a>. Formater: <a href="/da/formater/">formater</a>.</p>
+<p>Eksport af en enkelt chat i Markdown, tekst, JSON, XML, CSV eller PNG kræver ingen konto – de eksporter er ubegrænsede. Google-login dukker kun op ved PDF, masse-ZIP og Pro, så vi kan tælle den daglige kvote og gendanne Pro. Filerne bygges lokalt, PDF inklusive. Paddle fakturerer Pro til 3,99 $/md. eller 26,99 $/år. Intet af det gælder <code>/export</code> i terminalen.</p>
 <p>Startede dit arbejde i Claude Code, og har du indsat et resumé i claude.ai, så download web-tråden til noter og behold <code>/export</code> som den egentlige CLI-log. To filer er bedre end én forvirret fil.</p>
 
 <h2 id="vs-official-zip">Eksport af en Claude Code-samtale vs. Anthropics officielle Export data?</h2>
 <p>Eksport fra Claude Code (<code>/export</code> eller JSONL) er én terminalsession. Den officielle Export data er Settings → Privacy → Export data på claude.ai (menunavnene kan være oversat, hvis claude.ai er sat til dansk): en forsinket ZIP-fil med JSON for Anthropic-kontoen. Det er ikke det samme arkiv. ZIP-filen erstatter ikke <code>/export</code>.</p>
 <p>Om en given Claude Code-session kommer med i kontoens ZIP-fil, afhænger af, hvordan Anthropic gemmer det produkt – ikke af denne udvidelse. Betragt ZIP-filen som en backup af webkontoen, medmindre Anthropics aktuelle dokumentation om privatliv siger andet. Vi tilføjer ikke CLI-sessioner til den ZIP-fil.</p>
-<p>Hvordan du eksporterer en Claude-chat fra webstedet, inklusive ZIP-filen sammenlignet med udvidelsen, er beskrevet her: <a href="/da/saadan-eksporterer-du-claude-chat/">sådan eksporterer du en Claude-chat</a>. Udskrift til PDF af en webside gælder ikke en terminal. Se kun <a href="/da/claude-chat-som-pdf/">udskriv / PDF</a>, når samtalen er i browseren.</p>
+<p>Hvordan du eksporterer en Claude-chat fra webstedet, inklusive ZIP-filen sammenlignet med udvidelsen, er beskrevet her: <a href="/da/saadan-eksporterer-du-claude-chat/">sådan eksporterer du en Claude-chat</a>. Udvidelsens PDF-eksport gælder heller ikke en terminal. Se kun <a href="/da/claude-chat-som-pdf/">gem en Claude-chat som PDF</a>, når samtalen er på claude.ai – claude.ai/code inklusive.</p>
 <div class="table-wrap">
   <table>
     <caption>Eksport fra Claude Code sammenlignet med andre måder at gemme Claude på</caption>
@@ -171,6 +177,11 @@
         <th scope="row">Claude Code i en terminal</th>
         <td><code>/export</code> eller JSONL på disken</td>
         <td>Virker ikke</td>
+      </tr>
+      <tr>
+        <th scope="row">Claude Code på nettet (claude.ai/code)</th>
+        <td>Orange knap i Chrome</td>
+        <td>Eksporterer ligesom enhver chat</td>
       </tr>
       <tr>
         <th scope="row">claude.ai i Chrome</th>
@@ -192,7 +203,7 @@
 </div>
 
 <h2 id="three-surfaces">Claude Code vs. Desktop vs. eksport fra claude.ai?</h2>
-<p>Claude Code, Claude Desktop og claude.ai er tre forskellige flader. Eksport fra Claude Code bruger <code>/export</code> og JSONL. Desktop er en app uden udvidelsens orange knap. claude.ai i Chrome er det eneste sted, Download Claude conversations kører. Når navnene blandes sammen, fejler eksporter i stilhed.</p>
+<p>Claude Code, Claude Desktop og claude.ai er tre forskellige flader. Eksport fra Claude Code bruger <code>/export</code> og JSONL. Desktop er en app uden udvidelsens orange knap. claude.ai i Chrome er det eneste sted, Download Claude conversations kører – Claude Code på nettet via claude.ai/code inklusive. Når navnene blandes sammen, fejler eksporter i stilhed.</p>
 <p>Claude Desktop: er chatten synkroniseret til den samme Anthropic-konto, så åbn den på claude.ai og eksportér dér. Findes den kun i Desktop-vinduet, så kopiér og indsæt, eller vent på den officielle Export data. Guide: <a href="/da/eksporter-claude-desktop-chat/">eksportér en Claude Desktop-chat</a>.</p>
 <p>Claude Code-panelet i VS Code ligger tættere på CLI'en end på claude.ai. Forvent ikke, at vores content script indlæses i den webview. Brug <code>/export</code> fra den session, der faktisk indeholder beskederne.</p>
 <p>Uafhængig Chrome-udvidelse, ikke tilknyttet Anthropic, PBC. Claude er et varemærke tilhørende Anthropic. Følg deres servicevilkår. Vi kan ikke give juridisk rådgivning om kopiering af værktøjsoutput med proprietær kode; det er et spørgsmål mellem dig, din arbejdsgiver og Anthropic.</p>
@@ -201,13 +212,15 @@
 <h3>Hvordan eksporterer jeg en Claude Code-samtale?</h3>
 <p>Skriv <code>/export</code> i Claude Codes terminal (eventuelt med et filnavn) for at gemme en læsbar udskrift, eller kopiér JSONL-filen fra <code>~/.claude/projects</code> på macOS/Linux eller <code>%USERPROFILE%\.claude\projects</code> på Windows. Anthropics dokumentation om sessioner beskriver den aktuelle dialog.</p>
 <h3>Downloader denne Chrome-udvidelse Claude Code-chats?</h3>
-<p>Nej. Download Claude conversations virker kun på claude.ai i Chrome. Den kan ikke læse terminalsessioner, JSONL-udskrifter eller kommandoen <code>/export</code>. Eksport fra Claude Code foregår i CLI'en.</p>
+<p>Ikke fra terminalen. Download Claude conversations virker kun på claude.ai i Chrome. Den kan ikke læse lokale terminalsessioner, JSONL-udskrifter eller kommandoen <code>/export</code>. Sessioner i Claude Code på nettet via claude.ai/code kan eksporteres ligesom enhver chat.</p>
+<h3>Kan jeg eksportere Claude Code på nettet (claude.ai/code)?</h3>
+<p>Ja. Åbn sessionen på claude.ai/code i Chrome, og brug den orange knap. PDF, Markdown, ren tekst, JSON, XML, CSV og PNG virker alle. De seks formater ud over PDF er ubegrænsede uden konto; PDF kræver Google-login og tæller med i de 3 gratis om dagen.</p>
 <h3>Hvor gemmer Claude Code samtalehistorikken?</h3>
 <p>Sessionsudskrifter er JSONL-filer under <code>~/.claude/projects/&lt;encoded-working-directory&gt;/</code>, navngivet efter sessions-id. Den præcise struktur kan ændre sig. Brug <code>/export</code>, når du vil have en læsbar fil i stedet for at parse JSONL. <code>CLAUDE_CONFIG_DIR</code> kan flytte hele mappetræet.</p>
 <h3>Hvordan downloader jeg en Claude Code-samtale som Markdown?</h3>
-<p>Claude Codes <code>/export</code> er en udskrift i ren tekst, ikke udvidelsens Markdown. Har du specifikt brug for Markdown, så eksportér en claude.ai-kopi af arbejdet med Download Claude conversations, eller konvertér selv teksten fra <code>/export</code>. Vi konverterer ikke JSONL til Markdown.</p>
+<p>Claude Codes <code>/export</code> er en udskrift i ren tekst, ikke udvidelsens Markdown. Har du specifikt brug for Markdown, så eksportér en session fra claude.ai/code eller en claude.ai-kopi af arbejdet med Download Claude conversations, eller konvertér selv teksten fra <code>/export</code>. Vi konverterer ikke JSONL til Markdown.</p>
 <h3>Hvordan downloader jeg i stedet en samtale fra claude.ai?</h3>
-<p>Installér den gratis Chrome-udvidelse, åbn chatten på claude.ai, og brug den orange knap – eller Export All til historikken. Se, <a href="/da/download-claude-chat/">hvordan du downloader en Claude-chat</a>. 3 gratis eksporter; Pro koster 3,99 $/md. eller 26,99 $/år.</p>
+<p>Installér den gratis Chrome-udvidelse, åbn chatten på claude.ai, og brug den orange knap – eller Export All til historikken. Se, <a href="/da/download-claude-chat/">hvordan du downloader en Claude-chat</a>. Markdown, tekst, JSON, XML, CSV og PNG er ubegrænsede uden konto; PDF og masse-ZIP er gratis 3 om dagen med Google-login; Pro koster 3,99 $/md. eller 26,99 $/år.</p>
 <h3>Er /export det samme som den officielle Export data?</h3>
 <p>Nej. <code>/export</code> er den aktuelle Claude Code-session. Settings → Privacy → Export data sender en ZIP-fil med JSON for Anthropic-kontoen på mail. Forskellige produkter, forskellige filer, forskellige ventetider.</p>
 <h3>Kan jeg parse Claude Codes JSONL med jq?</h3>
@@ -215,13 +228,13 @@
 <h3>Virker eksport fra Claude Code på Windows?</h3>
 <p>Ja. <code>/export</code> er en CLI-kommando. Udskrifter på disken ligger under <code>%USERPROFILE%\.claude\projects</code>, medmindre du sætter <code>CLAUDE_CONFIG_DIR</code>. Chrome-udvidelsen kører stadig ikke i den terminal.</p>
 <h3>Er Claude Code det samme som Claude Desktop?</h3>
-<p>Nej. Claude Code er kodeagenten i terminalen. Claude Desktop er chat-appen. claude.ai er webstedet. Kun webstedet får denne udvidelse. Noter om eksport fra Desktop: <a href="/da/eksporter-claude-desktop-chat/">Claude Desktop</a>.</p>
+<p>Nej. Claude Code er kodeagenten i terminalen. Claude Desktop er chat-appen. claude.ai er webstedet. Kun webstedet, claude.ai/code inklusive, får denne udvidelse. Noter om eksport fra Desktop: <a href="/da/eksporter-claude-desktop-chat/">Claude Desktop</a>.</p>
 <h3>Vil udvidelsen nogensinde understøtte /export?</h3>
-<p>Ikke i version 1.13.0. Produktet dækker claude.ai: fem formater, lokale filer, Google-login til kvoten. Ændrer det sig, står det på denne side. Indtil da bruger du Anthropics CLI til eksport fra Claude Code.</p>
+<p>Ikke i version 1.16.2. Produktet dækker claude.ai, Claude Code på nettet inklusive: syv formater, lokale filer, Google-login kun til PDF, masseeksport og Pro. Ændrer det sig, står det på denne side. Indtil da bruger du Anthropics CLI til eksport fra Claude Code i terminalen.</p>
 <h3>Indeholder /export output fra værktøjer?</h3>
 <p>Anthropic beskriver <code>/export</code> som beskeder og værktøjsoutput gengivet som læsbar tekst. Det er deres udskrift, ikke vores parser. Vil du vide præcis, hvad den indeholder nu, så kør <code>/export</code> i din version og læs filen – dokumentationen kan halte en udgivelse bagefter.</p>
 <h3>Kan jeg masseeksportere Claude Code-sessioner?</h3>
-<p>Ikke med udvidelsens Export All. Masseeksport på vores oversigtsside gælder kun claude.ai. Til mange CLI-sessioner kopierer du projects-mappen eller kører <code>/export</code> for hver session. Der findes ingen masseeksport af JSONL med den orange knap.</p>
+<p>Ikke lokale CLI-sessioner. Export All på dashboardet gælder kun claude.ai. Til mange CLI-sessioner kopierer du projects-mappen eller kører <code>/export</code> for hver session. Der findes ingen masseeksport af JSONL med den orange knap.</p>
 </article>
 </main>
 <section class="final-cta page-cta" aria-label="Installér">
@@ -229,7 +242,7 @@
     <div class="final-cta-panel">
       <p class="final-kicker">Download Claude conversations</p>
       <h2>Har du brug for filer fra claude.ai, ikke fra Claude Code?</h2>
-      <p>Chrome-udvidelsen gemmer claude.ai-chats som Markdown, JSON, tekst, XML eller PNG – lokalt, direkte i Chrome.</p>
+      <p>Chrome-udvidelsen gemmer claude.ai-chats og sessioner fra claude.ai/code som PDF, Markdown, JSON, tekst, CSV, XML eller PNG – lokalt, direkte i Chrome.</p>
       <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=da-claude-code" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Tilføj til Chrome</a>
     </div>
   </div>
@@ -238,7 +251,7 @@
   <div class="footer-inner">
     <div>
       <a class="logo" href="/da/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
-      <p class="legal-note">Chrome-udvidelse til at downloade Claude.ai-chats som Markdown, JSON, ren tekst, XML eller PNG. Bedømt 5,0 i Chrome Web Store.</p>
+      <p class="legal-note">Chrome-udvidelse til at downloade Claude.ai-chats som PDF, Markdown, JSON, ren tekst, CSV, XML eller PNG.</p>
     </div>
     <div>
       <h2>Installér</h2>
@@ -258,7 +271,7 @@
       <a href="/da/eksporter-claude-chat/">Eksportér Claude-chat</a>
       <a href="/da/claude-samtale-extractor/">Claude samtale-extractor</a>
       <a href="/da/eksporter-claude-code-samtale/">Eksportér Claude Code-samtale</a>
-      <a href="/da/claude-chat-som-pdf/">Print / PDF</a>
+      <a href="/da/claude-chat-som-pdf/">Claude-chat som PDF</a>
       <a href="/da/eksporter-claude-desktop-chat/">Eksportér Claude Desktop-chat</a>
       <a href="/da/eksporter-claude-samtale/">Eksportér Claude-samtale</a>
       <a href="/da/gem-claude-samtale/">Gem Claude-samtale</a>
@@ -282,7 +295,7 @@
     </div>
   </div>
   <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/claude-code-export/" hreflang="en" lang="en">English</a> <a href="/de/claude-code-chat-exportieren/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/exporter-conversation-claude-code/" hreflang="fr" lang="fr">Français</a> <a href="/nl/claude-code-gesprek-exporteren/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/exportera-claude-code-konversation/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/eksportere-claude-code-samtale/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/eksporter-claude-code-samtale/" hreflang="da" lang="da">Dansk</a> <a href="/fi/claude-code-keskustelun-vienti/" hreflang="fi" lang="fi">Suomi</a> <a href="/ja/claude-code-export/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/claude-code-export/" hreflang="ko" lang="ko">한국어</a> <a href="/he/claude-code-export/" hreflang="he" lang="he">עברית</a> <a href="/ar/claude-code-export/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
-  <p class="disclaimer">Chats behandles i din browser · Google-login til kvoten · Ikke tilknyttet Anthropic, PBC. Claude er et varemærke tilhørende Anthropic. Uafhængig Chrome-udvidelse – ikke et officielt Anthropic-produkt. Support: <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+  <p class="disclaimer">Chats behandles i din browser · Google-login kun til PDF, masseeksport og Pro · Ikke tilknyttet Anthropic, PBC. Claude er et varemærke tilhørende Anthropic. Uafhængig Chrome-udvidelse – ikke et officielt Anthropic-produkt. Support: <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
 </footer>
 <script src="/assets/site.js" defer></script>
 </body>

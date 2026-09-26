@@ -58,7 +58,7 @@
   </script>
   
   
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Kann ich viele Claude Unterhaltungen auf einmal als JSON exportieren?","acceptedAnswer":{"@type":"Answer","text":"Ja. Export All auf der Übersichtsseite unterstützt JSON genauso wie der Einzelexport. Jede fertige Datei zählt als einer der 3 kostenlosen Exporte, außer Sie haben Pro für 3,99 $/Monat oder 26,99 $/Jahr."}},{"@type":"Question","name":"Ist die JSON-Struktur dokumentiert?","acceptedAnswer":{"@type":"Answer","text":"Sie bildet den Nachrichtenbaum von claude.ai ab: Absender, Inhaltsblöcke, Zeitstempel und Modell-Metadaten, dazu Artefakte und Denkschritte, wenn Sie diese Schalter aktivieren. Es ist nicht das Schema des Konto-ZIPs von Anthropic."}},{"@type":"Question","name":"Brauche ich Pro, um eine Claude Unterhaltung als JSON zu exportieren?","acceptedAnswer":{"@type":"Answer","text":"Nein. JSON ist in den 3 kostenlosen Exporten jedes per Google angemeldeten Kontos enthalten, wie jedes andere Format. Nach diesen drei Dateien kostet Pro 3,99 $/Monat oder 26,99 $/Jahr."}},{"@type":"Question","name":"Kann ich zwei JSON-Exporte desselben Chats vergleichen?","acceptedAnswer":{"@type":"Answer","text":"Ja. Jeder JSON-Export einer Claude Unterhaltung ergibt eine eigenständige Datei, die gleich aufgebaut ist. Zwei Exporte desselben Chats zu unterschiedlichen Zeitpunkten vergleichen Sie wie jede andere JSON-Datei."}},{"@type":"Question","name":"Ist dieses JSON dasselbe wie der Datenexport von Anthropic?","acceptedAnswer":{"@type":"Answer","text":"Nein. Der Datenexport von Anthropic ist ein verzögertes ZIP des ganzen Kontos. Download Claude conversations schreibt sofort in Chrome eine JSON-Datei pro Chat (oder pro Auswahl). Beides kann JSON sein; austauschbar ist es nicht."}},{"@type":"Question","name":"Erzeugt der JSON-Export ein PDF?","acceptedAnswer":{"@type":"Answer","text":"Nein. JSON sind strukturierte Daten. Die Formate des Produkts sind Markdown, JSON, reiner Text, XML und PNG. Für eine druckbare Seite nutzen Sie den Druckdialog von Chrome, nicht dieses Menü."}},{"@type":"Question","name":"Funktioniert der JSON-Export in Claude Desktop?","acceptedAnswer":{"@type":"Answer","text":"Nein. Die Chrome-Erweiterung läuft nur auf claude.ai. Claude Desktop zeigt die JSON-Option nie. Öffnen Sie denselben Chat auf claude.ai in Chrome, falls er dort existiert."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Kann ich viele Claude Unterhaltungen auf einmal als JSON exportieren?","acceptedAnswer":{"@type":"Answer","text":"Ja. Export All im Dashboard unterstützt JSON und speichert ein ZIP mit einer JSON-Datei pro Chat. Im kostenlosen Tarif deckt das 3 Chats pro Tag mit Google-Anmeldung ab; mit Pro für 3,99 $ im Monat oder 26,99 $ im Jahr ist es unbegrenzt."}},{"@type":"Question","name":"Ist die JSON-Struktur dokumentiert?","acceptedAnswer":{"@type":"Answer","text":"Sie bildet den Nachrichtenbaum von claude.ai ab: Absender, Inhaltsblöcke, Zeitstempel und Modell-Metadaten, dazu Artefakte, Denkschritte, Quellen der Websuche und Tool-/MCP-Schritte, wenn Sie diese Optionen aktivieren. Es ist nicht das Schema des Konto-ZIPs von Anthropic."}},{"@type":"Question","name":"Brauche ich Pro, um eine Claude Unterhaltung als JSON zu exportieren?","acceptedAnswer":{"@type":"Answer","text":"Nein. Einzelexporte als JSON sind unbegrenzt und brauchen kein Konto, wie jedes Format außer PDF. Pro für 3,99 $ im Monat oder 26,99 $ im Jahr hebt nur das Limit von 3 pro Tag für PDF und den Massenexport mit Export All auf."}},{"@type":"Question","name":"Kann ich zwei JSON-Exporte desselben Chats vergleichen?","acceptedAnswer":{"@type":"Answer","text":"Ja. Jeder JSON-Export einer Claude Unterhaltung ergibt eine eigenständige Datei, die gleich aufgebaut ist. Zwei Exporte desselben Chats zu unterschiedlichen Zeitpunkten vergleichen Sie wie jede andere JSON-Datei."}},{"@type":"Question","name":"Ist dieses JSON dasselbe wie der Datenexport von Anthropic?","acceptedAnswer":{"@type":"Answer","text":"Nein. Der Datenexport von Anthropic ist ein verzögertes ZIP des ganzen Kontos. Download Claude conversations schreibt sofort in Chrome eine JSON-Datei pro Chat (oder pro Auswahl). Beides kann JSON sein; austauschbar ist es nicht."}},{"@type":"Question","name":"Erzeugt der JSON-Export ein PDF?","acceptedAnswer":{"@type":"Answer","text":"Nein. JSON sind strukturierte Daten. Für Seiten wählen Sie im selben Panel PDF; die sieben Formate sind PDF, Markdown, JSON, reiner Text, XML, CSV und PNG. PDF erfordert eine Google-Anmeldung und zählt im kostenlosen Tarif zu den 3 pro Tag."}},{"@type":"Question","name":"Funktioniert der JSON-Export in Claude Desktop?","acceptedAnswer":{"@type":"Answer","text":"Nein. Die Chrome-Erweiterung läuft nur auf claude.ai. Claude Desktop zeigt die JSON-Option nie. Öffnen Sie denselben Chat auf claude.ai in Chrome, falls er dort existiert."}}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Startseite","item":"https://chat-downloader.com/de/"},{"@type":"ListItem","position":2,"name":"Formate","item":"https://chat-downloader.com/de/formate/"},{"@type":"ListItem","position":3,"name":"JSON","item":"https://chat-downloader.com/de/formate/json/"}]}</script>
 </head>
 <body>
@@ -85,14 +85,14 @@
 <nav class="crumbs" aria-label="Brotkrumen"><a href="/de/">Startseite</a> / <a href="/de/formate/">Formate</a> / JSON</nav>
 <main id="main">
 <article class="band prose">
-<p class="article-meta">Aktualisiert <time datetime="2026-09">September 2026</time> · Erweiterung 1.13.0</p>
+<p class="article-meta">Aktualisiert <time datetime="2026-09">September 2026</time> · Erweiterung 1.16.2</p>
 <h1 class="page-h1">Claude Unterhaltung als JSON exportieren – für Skripte</h1>
-<p class="lead">Um eine Claude Unterhaltung als JSON zu exportieren, installieren Sie Download Claude conversations, öffnen den Chat auf claude.ai, klicken auf den orangefarbenen Button, wählen JSON und klicken auf „Export“ (Exportieren). Chrome speichert eine Datei pro Chat mit dem Nachrichtenbaum. Diese Datei ist nicht das Konto-ZIP von Anthropic. Drei Exporte sind kostenlos; Pro kostet 3,99 $/Monat oder 26,99 $/Jahr.</p>
-<aside class="trust-badge" aria-label="Bewertung im Chrome Web Store">
-  <span class="trophy" aria-hidden="true">🏆</span>
+<p class="lead">Um eine Claude Unterhaltung als JSON zu exportieren, installieren Sie Download Claude conversations, öffnen den Chat auf claude.ai, klicken auf den orangefarbenen Button, wählen JSON und klicken auf „Export“ (Exportieren). Chrome speichert eine Datei pro Chat mit dem Nachrichtenbaum. Diese Datei ist nicht das Konto-ZIP von Anthropic. Der JSON-Export ist unbegrenzt und kostenlos, ganz ohne Konto; Pro (3,99 $ im Monat oder 26,99 $ im Jahr) spielt nur für Massenexport und PDF eine Rolle.</p>
+<aside class="trust-badge" aria-label="Über die Erweiterung">
+  <span class="trophy" aria-hidden="true">🧩</span>
   <div>
-    <strong>Download Claude conversations – mit 5,0 bewertet im Chrome Web Store</strong>
-    <span>2026 – kostenlose Chrome-Erweiterung, die claude.ai-Chats als Markdown, JSON, Text, XML oder PNG speichert</span>
+    <strong>Download Claude conversations – kostenlose Chrome-Erweiterung für claude.ai</strong>
+    <span>Version 1.16.2 (September 2026) – unbegrenzte Exporte als Markdown, Text, JSON, XML, CSV und PNG ohne Konto; PDF und Massenexport als ZIP bis zu 3-mal pro Tag kostenlos</span>
   </div>
 </aside>
 <nav class="toc" aria-label="Auf dieser Seite">
@@ -109,32 +109,32 @@
 </nav>
 
 <h2 id="how-to">Wie exportiere ich eine Claude Unterhaltung als JSON?</h2>
-<p>Öffnen Sie die Unterhaltung auf claude.ai in Chrome, klicken Sie auf den orangefarbenen Button neben dem Eingabefeld, wählen Sie JSON und klicken Sie auf „Export“. Download Claude conversations schreibt die Datei lokal. So exportieren Sie in Version 1.13.0 eine Claude Unterhaltung als JSON. Eine eingebaute Funktion „als JSON speichern“ pro Chat hat claude.ai im September 2026 nicht.</p>
+<p>Öffnen Sie die Unterhaltung auf claude.ai in Chrome, klicken Sie auf den orangefarbenen Button neben dem Eingabefeld, wählen Sie JSON und klicken Sie auf „Export“. Download Claude conversations schreibt die Datei lokal. So exportieren Sie in Version 1.16.2 eine Claude Unterhaltung als JSON. Eine eingebaute Funktion „als JSON speichern“ pro Chat hat claude.ai im September 2026 nicht.</p>
 <ol>
-<li>Installieren Sie Download Claude conversations aus dem Chrome Web Store (Bewertung 5,0).</li>
+<li>Installieren Sie Download Claude conversations aus dem Chrome Web Store.</li>
 <li>Laden Sie claude.ai neu und öffnen Sie eine echte Unterhaltung, nicht die leere Startseite mit dem Eingabefeld.</li>
 <li>Klicken Sie auf den orangefarbenen Download-Button rechts neben dem Eingabefeld.</li>
-<li>Wählen Sie JSON. Das zuletzt genutzte Format wird gespeichert.</li>
-<li>Klicken Sie auf „Export“. Chrome lädt das JSON über die Download-Schnittstelle des Browsers herunter.</li>
+<li>Wählen Sie JSON. Das zuletzt genutzte Format wird gespeichert. Mit „Select“ (Auswählen) haken Sie nur die Nachrichten an, die Sie brauchen.</li>
+<li>Klicken Sie auf „Export“. Chrome lädt das JSON über die Download-Schnittstelle des Browsers herunter. Oder klicken Sie auf „Copy“ (Kopieren), um das JSON in die Zwischenablage zu legen.</li>
 </ol>
-<p>Vor dem ersten JSON-Export ist eine Google-Anmeldung nötig. Download Claude conversations speichert die bestätigte E-Mail-Adresse, um die 3 kostenlosen Exporte zu zählen und Pro nach einer Neuinstallation wiederherzustellen. Chat-Inhalte sind nicht Teil dieser Anmeldung. Technik: <a href="/de/so-funktioniert-es/">So funktioniert es</a>.</p>
-<p>Fehlt der orangefarbene Button, sind Sie nicht in einer Unterhaltung, der Tab braucht einen Neuladen, oder die Erweiterung steckt im Puzzle-Menü von Chrome. Pinnen Sie Download Claude conversations und laden Sie claude.ai neu. In Claude Desktop oder Claude Code wird das Content-Skript nie geladen.</p>
+<p>Für den JSON-Export einer Claude Unterhaltung ist keine Anmeldung nötig. Einzelexporte als JSON sind unbegrenzt, anonym und senden nichts an unsere Server. Eine Google-Anmeldung wird nur für PDF und den Massenexport mit Export All verlangt. Technik: <a href="/de/so-funktioniert-es/">So funktioniert es</a>.</p>
+<p>Fehlt der orangefarbene Button, sind Sie nicht in einer Unterhaltung, der Tab braucht einen Neuladen, oder die Erweiterung steckt im Puzzle-Menü von Chrome. Pinnen Sie Download Claude conversations und laden Sie claude.ai neu. In Claude Desktop oder im Terminal von Claude Code wird das Content-Skript nie geladen.</p>
 <div class="callout callout-tip">
-  <p><strong>Ein Chat oder viele Dateien.</strong> Der orangefarbene Button exportiert den offenen Chat als JSON. Für viele JSON-Dateien öffnen Sie „View and Download All Conversations“ (alle Unterhaltungen ansehen und herunterladen) und starten „Export All“ (alles exportieren) mit JSON – siehe <a href="/de/alle-claude-chats-exportieren/">Massenexport mit Export All</a>.</p>
+  <p><strong>Ein Chat oder viele Dateien.</strong> Der orangefarbene Button exportiert den offenen Chat als JSON. Für viele JSON-Dateien öffnen Sie „View and Download All Conversations“ (alle Unterhaltungen ansehen und herunterladen) und starten „Export All“ (alles exportieren) mit JSON: ein ZIP, 3 Chats pro Tag im kostenlosen Tarif – siehe <a href="/de/alle-claude-chats-exportieren/">Massenexport mit Export All</a>.</p>
 </div>
 
 <h2 id="when">Wann lohnt sich JSON?</h2>
-<p>Exportieren Sie eine Claude Unterhaltung als JSON, wenn ein Skript, ein Indexer oder ein Vergleichswerkzeug die Datei liest. Das JSON bildet den Nachrichtenbaum ab und ist nicht zum Lesen in Obsidian gedacht. Wollen Sie Überschriften und Codeblöcke für Menschen, wählen Sie Markdown.</p>
+<p>Exportieren Sie eine Claude Unterhaltung als JSON, wenn ein Skript, ein Indexer oder ein Vergleichswerkzeug die Datei liest. Das JSON bildet den Nachrichtenbaum ab und ist nicht zum Lesen in Obsidian gedacht. Wollen Sie Überschriften und Codeblöcke für Menschen, wählen Sie Markdown. Für eine Tabelle wählen Sie <a href="/de/formate/">CSV</a>: eine Zeile pro Nachricht.</p>
 <p>Kopieren aus claude.ai verliert die Absender-Struktur. Drucken behält die Bedienelemente der Webseite. Beim JSON-Export behält Download Claude conversations Nachrichten, Absender und optional die Denkschritte als Daten, nicht als plattgedrückten Absatz. Deshalb wählen Entwickler JSON statt reinem Text.</p>
 <div class="expert-quote">
-  <p>Wir schreiben JSON aus dem claude.ai-Baum, der schon auf der Seite ist – Absender, Inhaltsblöcke, Zeitstempel, Modell-Metadaten –, ohne den Chat hochzuladen. Dieses JSON ist nicht das Konto-ZIP von Anthropic und kein PDF. Version 1.13.0 liefert weiterhin nur fünf Formate.</p>
+  <p>Wir schreiben JSON aus dem claude.ai-Baum, der schon auf der Seite ist – Absender, Inhaltsblöcke, Zeitstempel, Modell-Metadaten –, ohne den Chat hochzuladen. Dieses JSON ist nicht das Konto-ZIP von Anthropic. In Version 1.16.2 ist es eines von sieben Formaten, neben PDF und CSV, und es ist kostenlos und ohne Konto nutzbar.</p>
   <footer>Das Team von Download Claude conversations</footer>
 </div>
 <p>Viele suchen dieselbe Erweiterung auch als Claude Chat Downloader oder Claude Conversation Downloader. Der JSON-Export ist dieser orangefarbene Button, kein zweites Produkt. In den Rechtstexten kann noch Claude Exporter stehen.</p>
 
 <h2 id="inside">Was steckt in einem JSON-Export?</h2>
-<p>Ein JSON-Export einer Claude Unterhaltung bildet den Nachrichtenbaum auf claude.ai ab: Absender, Inhaltsblöcke, Zeitstempel und Modell-Metadaten. Denkschritte und Artefakte sind enthalten, wenn die Schalter „include thinking“ (Denkschritte einbeziehen) und das Artefakt-Layout gesetzt sind. Der Absenderfilter „all / human only / assistant only“ (alle / nur Mensch / nur Assistent) begrenzt die Datei auf alle Nachrichten, nur Ihre oder nur Claudes. Nichts wird vorher zu Markdown plattgemacht.</p>
-<p>Das Artefakt-Layout in Version 1.13.0 ist „Original“, „Inline“, „Nested“ oder „Flat“ (original, eingebettet, verschachtelt, flach). Diese Layouts ändern, wie Artefakt-Inhalte im JSON verschachtelt sind – dieselben vier Optionen wie bei Markdown und XML. Alle Schalter: <a href="/de/funktionen/">Funktionen der Chrome-Erweiterung</a>. Auch JSON wird kein PDF.</p>
+<p>Ein JSON-Export einer Claude Unterhaltung bildet den Nachrichtenbaum auf claude.ai ab: Absender, Inhaltsblöcke, Zeitstempel und Modell-Metadaten. Denkschritte, Quellen der Websuche, Tool-/MCP-Schritte und Artefakte sind enthalten, wenn diese Optionen an sind: „Thinking“ (Denkprozess) ist ein Häkchen im Export-Panel, Tools und Quellen schalten Sie in den Einstellungen ein. Der Absenderfilter „all / human only / assistant only“ (alle / nur Mensch / nur Assistent) begrenzt die Datei auf alle Nachrichten, nur Ihre oder nur Claudes. Nichts wird vorher zu Markdown plattgemacht.</p>
+<p>Das Artefakt-Layout in Version 1.16.2 ist „Original“, „Inline“, „Nested“ oder „Flat“ (original, eingebettet, verschachtelt, flach). Diese Layouts ändern, wie Artefakt-Inhalte im JSON verschachtelt sind – dieselben vier Optionen wie bei Markdown und XML. Alle Optionen: <a href="/de/funktionen/">Funktionen der Chrome-Erweiterung</a>. Für Seiten statt Daten exportieren Sie <a href="/de/claude-chat-als-pdf/">PDF</a>.</p>
 <table>
   <caption>Felder, die ein JSON-Export einer Claude Unterhaltung typischerweise enthält</caption>
   <thead>
@@ -163,6 +163,10 @@
     <tr>
       <td>Artefakte</td>
       <td>Ja, im gewählten Layout</td>
+    </tr>
+    <tr>
+      <td>Quellen der Websuche, Tool-/MCP-Schritte</td>
+      <td>Wenn Sie sie einschalten</td>
     </tr>
     <tr>
       <td>ZIP-Hülle für das ganze Konto</td>
@@ -195,39 +199,39 @@
       <td>E-Mail-Link, der abläuft</td>
     </tr>
     <tr>
-      <td>Drucken → Als PDF speichern</td>
-      <td>Sichtbare Webseite</td>
+      <td>PDF aus Download Claude conversations</td>
+      <td>Dieser Chat als Seiten</td>
       <td>Sofort, aber als PDF, nicht JSON</td>
     </tr>
   </tbody>
 </table>
-<p>In der ZIP-Anfrage von Anthropic können Sie kein Markdown wählen. Umgekehrt ist das JSON dieser Erweiterung kein direkter Ersatz für das ZIP-Schema. Formatübersicht: <a href="/de/formate/">Exportformate für Claude Chats</a>. Drucken ist ein optischer Umweg, kein JSON-Export.</p>
+<p>In der ZIP-Anfrage von Anthropic können Sie kein Markdown wählen. Umgekehrt ist das JSON dieser Erweiterung kein direkter Ersatz für das ZIP-Schema. Formatübersicht: <a href="/de/formate/">Exportformate für Claude Chats</a>. <a href="/de/claude-chat-als-pdf/">PDF</a> ist zum Lesen da, kein JSON-Export.</p>
 <p>Download Claude conversations ist nicht mit Anthropic, PBC verbunden. Das Content-Skript nutzt die Sitzung, die Sie auf claude.ai bereits geöffnet haben. Es meldet sich nicht mit eigenen Zugangsdaten bei Anthropic an. Halten Sie sich an die Regeln von Anthropic für Ihr Konto.</p>
 
 <h2 id="bulk">Kann ich viele Unterhaltungen auf einmal als JSON exportieren?</h2>
-<p>Ja. Öffnen Sie „View and Download All Conversations“, stellen Sie das Format auf JSON, filtern Sie die Tabelle und klicken Sie auf „Export All“. Jede fertige Datei ist einer der 3 kostenlosen Exporte. Pro für 3,99 $/Monat oder 26,99 $/Jahr hebt die Grenze für den Massenexport als JSON auf.</p>
-<p>Die Tabelle listet Ihren claude.ai-Verlauf mit Namenssuche und den Filtern „All“, „New“, „Exported“ und „Project“ (alle, neu, exportiert, Projekt). „New“ heißt: noch nicht mit Download Claude conversations exportiert. „Exported“ markiert bereits gespeicherte Chats. „Project“ entspricht Ihrer Gruppierung auf claude.ai. Export All ergibt viele JSON-Dateien, kein gemischtes ZIP.</p>
+<p>Ja. Öffnen Sie „View and Download All Conversations“, stellen Sie „Chat format“ (Chat-Format) auf JSON, filtern Sie die Tabelle und klicken Sie auf „Export All“. Chrome speichert ein ZIP mit einer JSON-Datei pro Chat. Im kostenlosen Tarif sind das 3 Chats pro Tag mit Google-Anmeldung, gemeinsam mit PDF. Pro für 3,99 $ im Monat oder 26,99 $ im Jahr hebt diese Grenze für den Massenexport als JSON auf.</p>
+<p>Das Dashboard listet Ihren claude.ai-Verlauf mit Namenssuche, den Filtern „All conversations“, „New“, „Updated“ und „Previously exported“ (alle Unterhaltungen, neu, aktualisiert, bereits exportiert), den Tabs „Chat“ und „Cowork“ und einer Projektsuche. „New“ heißt: noch nicht mit Download Claude conversations exportiert. „Previously exported“ markiert bereits gespeicherte Chats. Export All ergibt ein ZIP mit einer JSON-Datei pro Chat, kein Archiv mit gemischten Formaten.</p>
 <div class="callout callout-warn">
-  <p><strong>Das Kontingent gilt pro Konto.</strong> Insgesamt drei kostenlose Exporte – nicht drei JSON-Dateien pro Durchlauf. Wählen Sie 40 Unterhaltungen aus, verbrauchen Sie 40 Exporte, wenn jede Datei fertig wird. Planen Sie die Auswahl oder nutzen Sie Pro.</p>
+  <p><strong>Das Tageslimit gilt pro Konto.</strong> Drei Chats pro Tag im kostenlosen Tarif, gemeinsam mit PDF. Wählen Sie 40 Unterhaltungen aus, obwohl nur noch 3 übrig sind, wird der ganze Stapel blockiert, nicht gekürzt. Wählen Sie weniger aus oder nutzen Sie Pro. Einzelne JSON-Exporte über den orangefarbenen Button bleiben unbegrenzt.</p>
 </div>
-<p>Zwei JSON-Exporte desselben claude.ai-Chats zu unterschiedlichen Zeitpunkten vergleichen Sie wie jede andere JSON-Datei. Jeder Export ist eigenständig. Ein zweiter Durchlauf von Export All mit denselben Chats verbraucht wieder Kontingent, außer die Dateien werden nicht fertig.</p>
+<p>Zwei JSON-Exporte desselben claude.ai-Chats zu unterschiedlichen Zeitpunkten vergleichen Sie wie jede andere JSON-Datei. Jeder Export ist eigenständig. Ein zweiter Durchlauf von Export All mit denselben Chats zählt jeden Chat erneut.</p>
 
 <h2 id="cost">Braucht der JSON-Export Pro?</h2>
-<p>Nein. JSON ist in den 3 kostenlosen Exporten jedes per Google angemeldeten Kontos enthalten, genau wie Markdown, Text, XML und PNG. Nach diesen drei Dateien kostet Pro 3,99 $ im Monat oder 26,99 $ im Jahr über Paddle. Für den JSON-Export einer Claude Unterhaltung verlangt Download Claude conversations keinen Aufpreis.</p>
-<p>Die 3 kostenlosen Exporte setzen sich bei einer Neuinstallation nicht zurück. Deshalb ist beim ersten Klick auf „Export“ eine Google-Anmeldung nötig. Pro wird auf einem neuen Computer über dasselbe Google-Konto wiederhergestellt. Paddle ist Händler (Merchant of Record); dieses Team sieht nie Kartennummern.</p>
-<p>Die Erweiterung läuft nur auf claude.ai in Chrome. Claude Desktop und Claude Code bekommen keinen JSON-Button. <code>/export</code> oder JSONL auf der Festplatte in Claude Code ist ein anderer Weg. Version 1.13.0, September 2026, schreibt weiterhin kein PDF, Word oder Notion.</p>
+<p>Nein. Der JSON-Export eines Chats ist kostenlos und unbegrenzt, ohne Konto und ohne Zähler – genau wie Markdown, Text, XML, CSV und PNG. Nur PDF und der Massenexport mit Export All haben ein kostenloses Limit: 3 pro Tag mit Google-Anmeldung. Pro kostet 3,99 $ im Monat oder 26,99 $ im Jahr über Paddle. Für den JSON-Export einer Claude Unterhaltung verlangt Download Claude conversations keinen Aufpreis.</p>
+<p>Das Limit zeigt sich erst beim Massenexport als JSON. Jeder Chat in einem ZIP von Export All belegt einen der 3 Plätze pro Tag, und der Zähler beginnt um Mitternacht UTC neu. Pro hebt das Limit auf und wird auf einem neuen Computer über dasselbe Google-Konto wiederhergestellt. Paddle ist Händler (Merchant of Record); dieses Team sieht nie Kartennummern.</p>
+<p>Die Erweiterung läuft nur auf claude.ai in Chrome. Claude Desktop und das Terminal von Claude Code bekommen keinen JSON-Button; Claude Code im Web (claude.ai/code) läuft auf claude.ai und lässt sich deshalb wie jeder Chat exportieren. <code>/export</code> oder JSONL auf der Festplatte in Claude Code im Terminal ist ein anderer Weg. Version 1.16.2, September 2026, schreibt weiterhin kein Word oder Notion.</p>
 
 <h2 id="faq">FAQ: Claude Unterhaltung als JSON exportieren</h2>
-<p>Diese Fragen behandeln den JSON-Export in Download Claude conversations 1.13.0: Export All, Schema, Kontingent, Vergleiche, das ZIP von Anthropic und Desktop. Jede Antwort ist eine Produkt-Tatsache. Das FAQPage-JSON-LD im Kopf der Seite entspricht dieser Liste.</p>
+<p>Diese Fragen behandeln den JSON-Export in Download Claude conversations 1.16.2: Export All, Schema, Kosten, Vergleiche, das ZIP von Anthropic, PDF und Desktop. Jede Antwort ist eine Produkt-Tatsache. Das FAQPage-JSON-LD im Kopf der Seite entspricht dieser Liste.</p>
 
 <h3>Kann ich viele Claude Unterhaltungen auf einmal als JSON exportieren?</h3>
-<p>Ja. Export All auf der Übersichtsseite unterstützt JSON genauso wie der Einzelexport. Jede fertige Datei zählt als einer der 3 kostenlosen Exporte, außer Sie haben Pro für 3,99 $/Monat oder 26,99 $/Jahr.</p>
+<p>Ja. Export All im Dashboard unterstützt JSON und speichert ein ZIP mit einer JSON-Datei pro Chat. Im kostenlosen Tarif deckt das 3 Chats pro Tag mit Google-Anmeldung ab; mit Pro für 3,99 $ im Monat oder 26,99 $ im Jahr ist es unbegrenzt.</p>
 
 <h3>Ist die JSON-Struktur dokumentiert?</h3>
-<p>Sie bildet den Nachrichtenbaum von claude.ai ab: Absender, Inhaltsblöcke, Zeitstempel und Modell-Metadaten, dazu Artefakte und Denkschritte, wenn Sie diese Schalter aktivieren. Es ist nicht das Schema des Konto-ZIPs von Anthropic.</p>
+<p>Sie bildet den Nachrichtenbaum von claude.ai ab: Absender, Inhaltsblöcke, Zeitstempel und Modell-Metadaten, dazu Artefakte, Denkschritte, Quellen der Websuche und Tool-/MCP-Schritte, wenn Sie diese Optionen aktivieren. Es ist nicht das Schema des Konto-ZIPs von Anthropic.</p>
 
 <h3>Brauche ich Pro, um eine Claude Unterhaltung als JSON zu exportieren?</h3>
-<p>Nein. JSON ist in den 3 kostenlosen Exporten jedes per Google angemeldeten Kontos enthalten, wie jedes andere Format. Nach diesen drei Dateien kostet Pro 3,99 $/Monat oder 26,99 $/Jahr.</p>
+<p>Nein. Einzelexporte als JSON sind unbegrenzt und brauchen kein Konto, wie jedes Format außer PDF. Pro für 3,99 $ im Monat oder 26,99 $ im Jahr hebt nur das Limit von 3 pro Tag für PDF und den Massenexport mit Export All auf.</p>
 
 <h3>Kann ich zwei JSON-Exporte desselben Chats vergleichen?</h3>
 <p>Ja. Jeder JSON-Export einer Claude Unterhaltung ergibt eine eigenständige Datei, die gleich aufgebaut ist. Zwei Exporte desselben Chats zu unterschiedlichen Zeitpunkten vergleichen Sie wie jede andere JSON-Datei.</p>
@@ -236,7 +240,7 @@
 <p>Nein. Der Datenexport von Anthropic ist ein verzögertes ZIP des ganzen Kontos. Download Claude conversations schreibt sofort in Chrome eine JSON-Datei pro Chat (oder pro Auswahl). Beides kann JSON sein; austauschbar ist es nicht.</p>
 
 <h3>Erzeugt der JSON-Export ein PDF?</h3>
-<p>Nein. JSON sind strukturierte Daten. Die Formate des Produkts sind Markdown, JSON, reiner Text, XML und PNG. Für eine druckbare Seite nutzen Sie den Druckdialog von Chrome, nicht dieses Menü.</p>
+<p>Nein. JSON sind strukturierte Daten. Für Seiten wählen Sie im selben Panel PDF; die sieben Formate sind PDF, Markdown, JSON, reiner Text, XML, CSV und PNG. PDF erfordert eine Google-Anmeldung und zählt im kostenlosen Tarif zu den 3 pro Tag.</p>
 
 <h3>Funktioniert der JSON-Export in Claude Desktop?</h3>
 <p>Nein. Die Chrome-Erweiterung läuft nur auf claude.ai. Claude Desktop zeigt die JSON-Option nie. Öffnen Sie denselben Chat auf claude.ai in Chrome, falls er dort existiert.</p>
@@ -247,7 +251,7 @@
     <div class="final-cta-panel">
       <p class="final-kicker">Download Claude conversations</p>
       <h2>Erweiterung installieren und Claude Chats in Sekunden herunterladen</h2>
-      <p>Machen Sie wichtige Claude-Chats zu Markdown, JSON, Text, XML oder PNG – lokal, direkt in Chrome.</p>
+      <p>Machen Sie wichtige Claude-Chats zu PDF, Markdown, JSON, Text, CSV, XML oder PNG – lokal, direkt in Chrome.</p>
       <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=de-formats-json" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Zu Chrome hinzufügen</a>
     </div>
   </div>
@@ -256,7 +260,7 @@
   <div class="footer-inner">
     <div>
       <a class="logo" href="/de/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
-      <p class="legal-note">Chrome-Erweiterung zum Herunterladen von Claude.ai-Chats als Markdown, JSON, Nur-Text, XML oder PNG. Bewertet mit 5,0 im Chrome Web Store.</p>
+      <p class="legal-note">Chrome-Erweiterung zum Herunterladen von Claude.ai-Chats als PDF, Markdown, JSON, Nur-Text, CSV, XML oder PNG.</p>
     </div>
     <div>
       <h2>Installieren</h2>
@@ -276,7 +280,7 @@
       <a href="/de/claude-chat-exportieren/">Claude Chat exportieren</a>
       <a href="/de/claude-chat-extractor/">Claude Chat Extractor</a>
       <a href="/de/claude-code-chat-exportieren/">Claude Code Chat exportieren</a>
-      <a href="/de/claude-chat-als-pdf/">Drucken / PDF</a>
+      <a href="/de/claude-chat-als-pdf/">Claude Chat als PDF</a>
       <a href="/de/claude-desktop-chat-exportieren/">Claude Desktop Chat exportieren</a>
       <a href="/de/claude-unterhaltung-exportieren/">Claude Unterhaltung exportieren</a>
       <a href="/de/claude-chat-speichern/">Claude Chat speichern</a>
@@ -300,7 +304,7 @@
     </div>
   </div>
   <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/formats/json/" hreflang="en" lang="en">English</a> <a href="/de/formate/json/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/formats/json/" hreflang="fr" lang="fr">Français</a> <a href="/nl/formaten/json/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/format/json/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/formater/json/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/formater/json/" hreflang="da" lang="da">Dansk</a> <a href="/fi/formaatit/json/" hreflang="fi" lang="fi">Suomi</a> <a href="/ja/formats/json/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/formats/json/" hreflang="ko" lang="ko">한국어</a> <a href="/he/formats/json/" hreflang="he" lang="he">עברית</a> <a href="/ar/formats/json/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
-  <p class="disclaimer">Chats werden in Ihrem Browser verarbeitet · Google-Anmeldung für das Kontingent · Nicht mit Anthropic, PBC verbunden. Claude ist eine Marke von Anthropic. Unabhängige Chrome-Erweiterung – kein offizielles Anthropic-Produkt. Support: <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+  <p class="disclaimer">Chats werden in Ihrem Browser verarbeitet · Google-Anmeldung nur für PDF, Massenexport und Pro · Nicht mit Anthropic, PBC verbunden. Claude ist eine Marke von Anthropic. Unabhängige Chrome-Erweiterung – kein offizielles Anthropic-Produkt. Support: <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
 </footer>
 <script src="/assets/site.js" defer></script>
 </body>

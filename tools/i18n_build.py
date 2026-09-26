@@ -386,9 +386,13 @@ def stamp_sources():
 EN_WORDS = re.compile(r"\b(the|and|you|your|with|this|that|from|when|which|does|not|file|button|download|without)\b", re.I)
 
 
+# Names that stay in English on every localized page (brand, extension UI, Anthropic products).
+KEEP_ENGLISH = re.compile(r"Download Claude conversations|View and Download All Conversations|Claude Code on the web|Export All", re.I)
+
+
 def visible_text(s):
     s = re.sub(r"<(script|style|header|footer|code|pre)\b.*?</\1>", " ", s, flags=re.S)
-    return html.unescape(re.sub(r"<[^>]+>", " ", s))
+    return KEEP_ENGLISH.sub(" ", html.unescape(re.sub(r"<[^>]+>", " ", s)))
 
 
 def check():

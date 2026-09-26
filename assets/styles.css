@@ -993,7 +993,10 @@ h1.page-h1 {
 :root:lang(ko) { --sans: "Figtree", "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; --serif: "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; }
 :root:lang(he) { --sans: "Figtree", "Noto Sans Hebrew", Arial, sans-serif; --serif: "Noto Sans Hebrew", Arial, sans-serif; }
 :root:lang(ar) { --sans: "Figtree", "Noto Sans Arabic", Tahoma, sans-serif; --serif: "Noto Sans Arabic", Tahoma, sans-serif; }
-:root:lang(ja) body, :root:lang(ko) body { word-break: keep-all; overflow-wrap: anywhere; line-height: 1.8; }
+:root:lang(ja) body, :root:lang(ko) body { overflow-wrap: anywhere; line-height: 1.8; }
+/* Korean breaks at spaces; Japanese has none, so break at phrase boundaries where supported. */
+:root:lang(ko) body { word-break: keep-all; }
+:root:lang(ja) body { line-break: strict; word-break: auto-phrase; }
 :root:lang(ar) body { line-height: 1.85; }
 [dir="rtl"] code, [dir="rtl"] pre, [dir="rtl"] kbd { direction: ltr; unicode-bidi: isolate; }
 

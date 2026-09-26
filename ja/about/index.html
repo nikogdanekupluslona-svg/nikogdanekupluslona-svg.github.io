@@ -84,15 +84,15 @@
 <nav class="crumbs" aria-label="パンくずリスト"><a href="/ja/">ホーム</a> / このサイトについて</nav>
 <main id="main">
 <article class="band prose">
-<p class="updated">2026-08-25更新 · 拡張機能 1.13.0</p>
+<p class="updated">2026-09-25更新 · 拡張機能 1.16.2</p>
 <h1 class="page-h1">このサイトについて</h1>
 <p class="lead"><strong>Download Claude conversations</strong>は、独立したChrome拡張機能です（サイト名：<strong>Chat Downloader</strong>）。検索エンジンやユーザーからは<strong>Claude Chat Downloader</strong>や<strong>Claude Conversation Downloader</strong>とも呼ばれています。Anthropic, PBCが作ったものではなく、提携も推奨も受けていません。ClaudeはAnthropicの商標です。私たちがこの拡張機能を作ったのは、claude.ai自体に欠けている機能を補うためです。claude.aiには、1つの会話をファイルとしてダウンロードする標準の方法がありません。</p>
-<p>この拡張機能は、claude.aiにエクスポート用のボタンと、一括エクスポートのための一覧ページを追加し、Markdown、JSON、プレーンテキスト、XML、PNGのファイルをブラウザの中でローカルに書き出します。どのアカウントでも3回まで無料でエクスポートでき、Proなら制限がなくなります。詳しくは<a href="/ja/how-it-works/">仕組み</a>をご覧ください。<a href="/ja/claude-code-export/">Claude Code</a>のターミナルのセッションはエクスポートできません。</p>
+<p>この拡張機能は、claude.aiにエクスポート用のボタンと、一括エクスポートのためのダッシュボードを追加し、PDF、Markdown、プレーンテキスト、JSON、XML、CSV、PNGのファイルをブラウザの中でローカルに書き出します。1つのチャットをMarkdown、テキスト、JSON、XML、CSV、PNGでエクスポートする場合は回数無制限で、アカウントも必要ありません。PDFと一括ZIPはGoogleサインインが必要で、1日3回まで無料です。Pro（月額$3.99または年額$26.99）ならこの上限がなくなります。通常のチャット、プロジェクト、Coworkのセッション、Claude Code on the web（claude.ai/code）のセッションに対応しています。詳しくは<a href="/ja/how-it-works/">仕組み</a>をご覧ください。<a href="/ja/claude-code-export/">Claude Code</a>のターミナルのセッションはエクスポートできません。</p>
 <h2>Chrome Web Storeの掲載内容（同期を保つこと）</h2>
 <p>Chrome Web Storeでは次の文言を使い、ストアの説明文が検索のされ方と一致するようにします（ストアの文言は英語のままです）：</p>
 <ul>
 <li><strong>名前（75文字以内）：</strong> Claude Chat Downloader</li>
-<li><strong>短い説明（132文字以内）：</strong> Free Chrome extension to save claude.ai chats as Markdown, JSON, text, XML, or PNG — one conversation or bulk Export All.</li>
+<li><strong>短い説明（132文字以内）：</strong> Free Chrome extension to save claude.ai chats as PDF, Markdown, text, JSON, XML, CSV or PNG — one chat or bulk Export All.</li>
 </ul>
 <p>既存のアイテムID <code>ljcgfcnobiealkonbknnfckhkdbodhak</code> はそのままにします。ストアでの名前の変更には審査の期間がかかることがあります。Webサイトのタイトルは、すでに検索語句に合わせてあります。</p>
 <h2 id="contact">お問い合わせ</h2>
@@ -106,7 +106,7 @@
     <div class="final-cta-panel">
       <p class="final-kicker">Download Claude conversations</p>
       <h2>拡張機能をインストールして、Claudeのチャットを数秒でダウンロード</h2>
-      <p>大切なClaudeのスレッドを、Markdown、JSON、テキスト、XML、PNGに。Chromeからローカルで保存できます。</p>
+      <p>大切なClaudeのスレッドを、PDF、Markdown、JSON、テキスト、CSV、XML、PNGに。Chromeからローカルで保存できます。</p>
       <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=ja-about" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Chromeに追加</a>
     </div>
   </div>
@@ -115,7 +115,7 @@
   <div class="footer-inner">
     <div>
       <a class="logo" href="/ja/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
-      <p class="legal-note">Claude.aiのチャットをMarkdown、JSON、プレーンテキスト、XML、PNGでダウンロードできるChrome拡張機能。Chrome Web Storeで評価5.0。</p>
+      <p class="legal-note">Claude.aiのチャットをPDF、Markdown、JSON、プレーンテキスト、CSV、XML、PNGでダウンロードできるChrome拡張機能。</p>
     </div>
     <div>
       <h2>インストール</h2>
@@ -135,7 +135,7 @@
       <a href="/ja/export-claude-chat/">Claudeのチャットをエクスポート</a>
       <a href="/ja/claude-conversation-extractor/">Claudeの会話抽出ツール</a>
       <a href="/ja/claude-code-export/">Claude Codeのエクスポート</a>
-      <a href="/ja/download-claude-chat-as-pdf/">印刷 / PDF</a>
+      <a href="/ja/download-claude-chat-as-pdf/">ClaudeのチャットをPDFで保存</a>
       <a href="/ja/export-claude-desktop-chat/">Claude Desktopのエクスポート</a>
       <a href="/ja/claude-export-conversation/">Claudeの会話エクスポート</a>
       <a href="/ja/how-to-save-claude-conversation/">Claudeの会話を保存する方法</a>
@@ -159,7 +159,7 @@
     </div>
   </div>
   <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/about/" hreflang="en" lang="en">English</a> <a href="/de/ueber-uns/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/a-propos/" hreflang="fr" lang="fr">Français</a> <a href="/nl/over-ons/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/om-oss/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/om-oss/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/om-os/" hreflang="da" lang="da">Dansk</a> <a href="/fi/tietoa-meista/" hreflang="fi" lang="fi">Suomi</a> <a href="/ja/about/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/about/" hreflang="ko" lang="ko">한국어</a> <a href="/he/about/" hreflang="he" lang="he">עברית</a> <a href="/ar/about/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
-  <p class="disclaimer">チャットはブラウザ内で処理 · 利用回数の管理にGoogleサインインを使用 · Anthropic, PBCとは提携していません。ClaudeはAnthropicの商標です。独立したChrome拡張機能であり、Anthropicの公式製品ではありません。サポート： <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+  <p class="disclaimer">チャットはブラウザ内で処理 · GoogleサインインはPDF・一括エクスポート・Proのみ · Anthropic, PBCとは提携していません。ClaudeはAnthropicの商標です。独立したChrome拡張機能であり、Anthropicの公式製品ではありません。サポート： <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
 </footer>
 <script src="/assets/site.js" defer></script>
 </body>

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Claude会話エクスポートの仕組み｜ローカル処理</title>
-  <meta name="description" content="Download Claude conversationsの仕組み：ローカルでのファイル生成、Googleログインの目的、サーバーが見るもの・見ないもの。">
+  <meta name="description" content="Download Claude conversationsの仕組み：全ファイルをブラウザ内で作成。大半は登録不要、ログインはPDF・一括・Proのみ。">
   <link rel="canonical" href="https://chat-downloader.com/ja/how-it-works/">
   <!-- i18n:head -->
   <link rel="alternate" hreflang="en" href="https://chat-downloader.com/how-it-works/">
@@ -35,14 +35,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&amp;display=swap" rel="stylesheet">
   <!-- /i18n:head -->
   <meta property="og:title" content="Claude会話エクスポートの仕組み｜ローカル処理">
-  <meta property="og:description" content="Download Claude conversationsの仕組み：ローカルでのファイル生成、Googleログインの目的、サーバーが見るもの・見ないもの。">
+  <meta property="og:description" content="Download Claude conversationsの仕組み：全ファイルをブラウザ内で作成。大半は登録不要、ログインはPDF・一括・Proのみ。">
   <meta property="og:url" content="https://chat-downloader.com/ja/how-it-works/">
   <meta property="og:image" content="https://chat-downloader.com/assets/widget-guide.png">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Chat Downloader">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Claude会話エクスポートの仕組み｜ローカル処理">
-  <meta name="twitter:description" content="Download Claude conversationsの仕組み：ローカルでのファイル生成、Googleログインの目的、サーバーが見るもの・見ないもの。">
+  <meta name="twitter:description" content="Download Claude conversationsの仕組み：全ファイルをブラウザ内で作成。大半は登録不要、ログインはPDF・一括・Proのみ。">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
@@ -59,7 +59,7 @@
   </script>
   
   
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"拡張機能は私のチャットを保存しますか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。エクスポートはローカルで作られ、アップロードされることはありません。私たちが保存するのは、無料エクスポートの利用状況とProの状態を管理するための、Googleで確認されたメールアドレスだけです。チャットの本文は、claude.aiのタブと、Chromeがダウンロードしたファイルの中にとどまります。"}},{"@type":"Question","name":"Googleログインは必須ですか、任意ですか？","acceptedAnswer":{"@type":"Answer","text":"必須で、最初のエクスポートから必要です。再インストールでカウンターがリセットされないようにしながら、無料エクスポート3回を管理するための仕組みです。チャットを読むためのログインではありません。"}},{"@type":"Question","name":"Proの支払いは誰が処理しますか？","acceptedAnswer":{"@type":"Answer","text":"Paddleです。私たちがカード情報を見ることはありません。Proは月額$3.99または年額$26.99です。Paddleが販売者（Merchant of Record）です。返金はPaddleを通じて行います。"}},{"@type":"Question","name":"Anthropicと提携していますか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。独立したChrome拡張機能であり、Anthropic, PBCとは提携していません。ClaudeはAnthropicの商標です。この拡張機能は既存のclaude.aiのセッションを使うもので、Anthropicの製品に代わるものではありません。"}},{"@type":"Question","name":"PDF形式はありますか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。ファイルはMarkdown、JSON、プレーンテキスト、XML、PNGで、すべてローカルで作られます。PDFのようなページが必要なら、Chromeでclaude.aiのタブを印刷してください。PNGは画像で、PDFではありません。"}},{"@type":"Question","name":"エクスポート時、workerには何が見えますか？","acceptedAnswer":{"@type":"Answer","text":"サブスクリプションの状態、つまりProかどうかと、Googleでログインしたアカウントが無料エクスポートを何回使ったかです。workerが会話の内容を受け取ることはありません。エクスポートの処理はブラウザの中にとどまります。"}},{"@type":"Question","name":"使うのにProは必要ですか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。Googleでログインしたどのアカウントでも、最初の3回は無料です。Pro（月額$3.99または年額$26.99）なら、単体や一括でさらに多くのファイルを作れます。ローカルでファイルを作る仕組みは、無料でもProでも同じです。"}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"拡張機能は私のチャットを保存しますか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。PDFを含むすべてのエクスポートはローカルで作られ、アップロードされることはありません。PDF、一括エクスポート、ProのためにGoogleでログインした場合、私たちはそのメールアドレスを、1日の回数を数えてProを紐づけるためだけに保存します。チャットの本文は、claude.aiのタブと、Chromeがダウンロードしたファイルの中にとどまります。"}},{"@type":"Question","name":"Googleログインは必須ですか、任意ですか？","acceptedAnswer":{"@type":"Answer","text":"必要なのは、PDF、一括の「Export All」、Proのときだけです。Markdown、テキスト、JSON、XML、CSV、PNGで1つのチャットをエクスポートする場合、アカウントは要りません。PDFと一括エクスポートでは、再インストールで1日3回のカウンターがリセットされないよう、初回からログインを求めます。チャットを読むためのログインではありません。"}},{"@type":"Question","name":"Proの支払いは誰が処理しますか？","acceptedAnswer":{"@type":"Answer","text":"Paddleです。私たちがカード情報を見ることはありません。Proは月額$3.99または年額$26.99です。Paddleが販売者（Merchant of Record）です。返金はPaddleを通じて行います。"}},{"@type":"Question","name":"Anthropicと提携していますか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。独立したChrome拡張機能であり、Anthropic, PBCとは提携していません。ClaudeはAnthropicの商標です。この拡張機能は既存のclaude.aiのセッションを使うもので、Anthropicの製品に代わるものではありません。"}},{"@type":"Question","name":"PDF形式はありますか？","acceptedAnswer":{"@type":"Answer","text":"はい。PDFは、ほかの6つの形式（Markdown、JSON、プレーンテキスト、XML、CSV、PNG）と同じようにブラウザの中で作られます。印刷ダイアログは使いません。PDFにはGoogleログインが必要で、無料プランでは1日3回の枠に数えられます。"}},{"@type":"Question","name":"エクスポート時、workerには何が見えますか？","acceptedAnswer":{"@type":"Answer","text":"PDF、一括エクスポート、Proのためにログインした後に限り、アカウントのメールアドレス、Proかどうか、今日PDFや一括エクスポートを何回使ったかが見えます。workerが会話の内容を受け取ることはありません。エクスポートの処理はブラウザの中にとどまります。"}},{"@type":"Question","name":"使うのにProは必要ですか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。Markdown、テキスト、JSON、XML、CSV、PNGで1つのチャットをエクスポートするのは、回数無制限で無料、アカウントも要りません。PDFと一括ZIPは、Googleログインで1日3回まで無料です。Pro（月額$3.99または年額$26.99）なら、この上限がなくなります。ローカルでファイルを作る仕組みは、無料でもProでも同じです。"}}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://chat-downloader.com/ja/"},{"@type":"ListItem","position":2,"name":"仕組み","item":"https://chat-downloader.com/ja/how-it-works/"}]}</script>
 </head>
 <body>
@@ -86,14 +86,14 @@
 <nav class="crumbs" aria-label="パンくずリスト"><a href="/ja/">ホーム</a> / 仕組み</nav>
 <main id="main">
 <article class="band prose">
-<p class="article-meta"><time datetime="2026-09">2026年9月</time>更新 · 拡張機能 1.13.0</p>
+<p class="article-meta"><time datetime="2026-09">2026年9月</time>更新 · 拡張機能 1.16.2</p>
 <h1 class="page-h1">Download Claude conversationsがChromeで動く仕組み</h1>
-<p class="lead">Download Claude conversationsの仕組みはこうです。コンテンツスクリプトが、タブにすでに表示されているclaude.aiのスレッドを読み取り、ブラウザの中でMarkdown、JSON、テキスト、XML、PNGを作り、そのファイルをChromeに渡します。Googleログインは、無料エクスポート3回を数え、Proを復元するためのものです。チャットの本文が私たちのサーバー（worker）に送られることはありません。ProはPaddle経由で月額$3.99または年額$26.99です。</p>
-<aside class="trust-badge" aria-label="Chrome Web Storeでの評価">
-  <span class="trophy" aria-hidden="true">🏆</span>
+<p class="lead">Download Claude conversationsの仕組みはこうです。コンテンツスクリプトが、タブにすでに表示されているclaude.aiのスレッドを読み取り、ブラウザの中でPDF、Markdown、JSON、テキスト、XML、CSV、PNGを作り、そのファイルをChromeに渡します。ほとんどのエクスポートにアカウントは要りません。Googleログインを求められるのはPDF、一括ZIP、Proのときだけで、送られるのはメールアドレスだけです。チャットの本文が私たちのサーバー（worker）に届くことはありません。ProはPaddle経由で月額$3.99または年額$26.99です。</p>
+<aside class="trust-badge" aria-label="拡張機能について">
+  <span class="trophy" aria-hidden="true">🧩</span>
   <div>
-    <strong>Download Claude conversations — Chrome Web Storeで評価5.0</strong>
-    <span>2026年 — claude.aiのチャットをMarkdown、JSON、テキスト、XML、PNGで保存できる無料のChrome拡張機能</span>
+    <strong>Download Claude conversations — claude.ai用の無料Chrome拡張機能</strong>
+    <span>バージョン1.16.2（2026年9月）— Markdown、テキスト、JSON、XML、CSV、PNGのエクスポートはアカウント不要で無制限。PDFと一括ZIPは1日3回まで無料</span>
   </div>
 </aside>
 <nav class="toc" aria-label="目次">
@@ -110,39 +110,39 @@
 </nav>
 
 <h2 id="content-script">claude.aiで拡張機能はどう動く？</h2>
-<p>claude.aiでの仕組みはこうです。拡張機能は、あなたがすでに開いているページに、すでにログインしているセッションを使ってコンテンツスクリプトを組み込みます。読み取るのは表示された会話で、Anthropicの別のAPIではありません。オレンジ色のボタンは、実際の会話のURLにだけ表示されます。</p>
+<p>claude.aiでの仕組みはこうです。拡張機能は、あなたがすでに開いているページに、すでにログインしているセッションを使ってコンテンツスクリプトを組み込みます。読み取るのは表示された会話で、Anthropicの別のAPIではありません。オレンジ色のボタンは、実際の会話のURLにだけ表示されます。通常のチャット、プロジェクト内のチャット、Coworkのセッション、Claude Code on the webが対象です。</p>
 <ol>
-<li>Chrome Web Storeから拡張機能をインストールします（評価5.0）。</li>
+<li>Chrome Web Storeから拡張機能をインストールします。</li>
 <li>インストール中にタブを開いていた場合は、claude.aiを再読み込みします。</li>
 <li>会話のURLを開きます。オレンジ色のボタンはメッセージ入力欄の右にあります。</li>
-<li>Markdown、JSON、プレーンテキスト、XML、PNGのいずれかを選び、「Export」（エクスポート）をクリックします。</li>
-<li>Chromeがファイルをダウンロードします。ブラウザ側の処理はこれですべてです。</li>
+<li>PDF、Markdown、JSON、プレーンテキスト、XML、CSV、PNGのいずれかを選び、「Export」（エクスポート）をクリックします。クリップボードに入れる場合は「Copy」（コピー）をクリックします。</li>
+<li>Chromeがファイルをダウンロードします。PDF以外の形式なら、ブラウザ側の処理はこれですべてです。ログインも、私たちのサーバーへの通信もありません。</li>
 </ol>
-<p>空の入力画面のホームにはメッセージのツリーがないため、ボタンは表示されません。アイコンが隠れている場合は、Chromeのパズルのメニューで拡張機能を固定してから、claude.aiを再読み込みしてください。この仕組みはclaude.aiで完結しており、Claude DesktopやClaude Codeにこのスクリプトが組み込まれることはありません。機能の一覧：<a href="/ja/features/">Chrome拡張機能の機能</a>。</p>
+<p>空の入力画面のホームにはメッセージのツリーがないため、ボタンは表示されません。アイコンが隠れている場合は、Chromeのパズルのメニューで拡張機能を固定してから、claude.aiを再読み込みしてください。この仕組みはclaude.aiで完結しており、Claude DesktopやClaude Codeのターミナルにこのスクリプトが組み込まれることはありません。機能の一覧：<a href="/ja/features/">Chrome拡張機能の機能</a>。</p>
 <div class="callout callout-info">
   <p><strong>同じセッション、同じページ。</strong>コンテンツスクリプトに見えるのは、ログイン済みのclaude.aiのタブにすでに表示されている内容です。別のパスワードでAnthropicにログインすることはありません。ご自身のアカウントについてはAnthropicのルールに従ってください。</p>
 </div>
 
 <h2 id="local">ファイルはローカルで作られる？</h2>
-<p>はい。Markdown、JSON、プレーンテキスト、XML、PNGはブラウザの中で組み立てられ、Chromeのダウンロード機能に渡されます。会話のテキストがあなたの端末を離れて私たちのインフラに届くことはありません。オレンジ色のボタンで1件エクスポートする場合も、<a href="/ja/bulk/">一括エクスポートのページ</a>で「Export All」（すべてエクスポート）を使う場合も同じです。</p>
-<p>claude.aiがスレッドを読み込んでしまえば、ファイルの生成に私たちのサーバーを待つことはありません。回数とライセンスの確認は別のリクエストです。Chromeがclaude.aiからのダウンロードをブロックしている場合は許可してください。それはブラウザの設定で、解析の失敗ではありません。長いスレッドを途中までしかスクロールしていないと、DOMが不完全なので、やはり途中までのファイルになります。</p>
+<p>はい。PDFを含むすべての形式がブラウザの中で組み立てられ、Chromeのダウンロード機能に渡されます。会話のテキストがあなたの端末を離れて私たちのインフラに届くことはありません。オレンジ色のボタンで1件エクスポートする場合も、<a href="/ja/bulk/">一括エクスポートのページ</a>で「Export All」（すべてエクスポート）を使う場合も同じです。</p>
+<p>claude.aiがスレッドを読み込んでしまえば、ファイルの生成に私たちのサーバーを待つことはありません。PDFと一括エクスポートでは、先に回数の確認が別に行われます。ほかの形式で1つのチャットをエクスポートする場合、この確認はありません。Chromeがclaude.aiからのダウンロードをブロックしている場合は許可してください。それはブラウザの設定で、解析の失敗ではありません。長いスレッドを途中までしかスクロールしていないと、DOMが不完全なので、やはり途中までのファイルになります。</p>
 <div class="expert-quote">
-  <p>私たちはこの拡張機能の仕組みを、はっきりした線引きのもとに作りました。チャットの本文はタブの中にとどまり、サーバー（worker）が答えるのは「無料エクスポートはあと何回か」と「このGoogleアカウントはProか」だけです。Markdown、JSON、テキスト、XML、PNGを作るためにスレッドをアップロードすることはありませんし、PDFも出力していません。</p>
+  <p>私たちはこの拡張機能の仕組みを、はっきりした線引きのもとに作りました。チャットの本文はタブの中にとどまります。サーバー（worker）が答えるのは「今日のPDFと一括エクスポートはあと何回か」と「このGoogleアカウントはProか」だけです。PDFもブラウザの中でレイアウトされ、印刷ダイアログもアップロードもありません。</p>
   <footer>Download Claude conversations チーム</footer>
 </div>
-<p>PNGは画像としてローカルで描画されます。JSONとXMLは、同じツリーからローカルでシリアライズされます。これらのファイルを私たちがメールで送ることはありません。Anthropicの Settings → Privacy → Export data（claude.aiを日本語で表示している場合、ラベルは翻訳されていることがあります）は、Anthropicから時間をおいて届く別のZIPで、このローカルの処理とは関係ありません。</p>
+<p>PNGは画像としてローカルで描画されます。PDFもローカルでレイアウトされます。JSON、XML、CSVは、同じツリーからローカルでシリアライズされます。これらのファイルを私たちがメールで送ることはありません。Anthropicの Settings → Privacy → Export data（claude.aiを日本語で表示している場合、ラベルは翻訳されていることがあります）は、Anthropicから時間をおいて届く別のZIPで、このローカルの処理とは関係ありません。</p>
 
 <h2 id="google">回数管理にGoogleログインを使うのはなぜ？</h2>
-<p>Googleログインは、アカウントごとに無料エクスポート3回を数え、再インストール後にProを復元するためにあります。最初に「Export」をクリックするときから必要です。私たちが保存するのは確認済みのメールアドレスで、チャットのテキストは保存しません。</p>
-<p>拡張機能を削除して入れ直しても、無料エクスポート3回はリセットされません。ログインが任意ではないのはそのためです。ログインがなければ、再インストールするたびに黙って3回分が増えてしまいます。Pro（月額$3.99または年額$26.99）は、同じGoogleアカウントなら新しいパソコンでも復元されます。</p>
-<p>Googleログインはclaude.aiへのログインではありません。Webサイトでは引き続きAnthropicのセッションを使います。拡張機能がGoogleを必要とするのは、回数を紐づけるためだけです。「Claude Chat Downloader」という名前で検索される方もいますが、同じ拡張機能なので、ログインのルールも同じです。</p>
+<p>Googleログインが必要なのは、PDF、一括の「Export All」、Proのときだけです。Markdown、プレーンテキスト、JSON、XML、CSV、PNGで1つのチャットをエクスポートする場合は、ログインを求められることも、何かが送られることもありません。初めてPDFを選んだとき、または初めて「Export All」を実行したときに、ログインを求められます。私たちが保存するのは確認済みのメールアドレスで、チャットのテキストは保存しません。</p>
+<p>メールアドレスは、サーバー側の1日の回数カウンターに紐づけられます。無料プランでは、PDFと一括エクスポートを合わせて1日3回までで、UTCの午前0時にリセットされます。一括ZIPでは、チャット1件が1回に数えられます。一括エクスポートで選んだ件数がその日の残りより多い場合、途中で切れるのではなく、一括エクスポート全体がブロックされます。カウンターは私たちのworkerにあるため、拡張機能を削除して入れ直してもリセットされません。Pro（月額$3.99または年額$26.99）は、同じGoogleアカウントなら新しいパソコンでも復元されます。</p>
+<p>Googleログインはclaude.aiへのログインではありません。Webサイトでは引き続きAnthropicのセッションを使います。拡張機能がGoogleを必要とするのは、1日の回数とProを紐づけるためだけです。「Claude Chat Downloader」という名前で検索される方もいますが、同じ拡張機能なので、ログインのルールも同じです。</p>
 <div class="callout callout-warn">
-  <p><strong>回数はアカウント全体で数えます。</strong>無料エクスポートは、形式を問わず、「Export All」による一括エクスポートも含めて合計3回です。40件の会話を選んですべてのファイルが完了すれば、40回分を使います。ログインは、このカウンターを再インストール後も保つための仕組みです。</p>
+  <p><strong>1日の上限はアカウントごとです。</strong>無料プランでは、PDFと一括エクスポートを合わせて1日3回までです。残りが3回のときに40件の会話を選ぶと、最初の3件だけがエクスポートされるのではなく、一括エクスポート全体がブロックされます。ログインは、このカウンターを再インストール後も保つための仕組みです。</p>
 </div>
 
 <h2 id="paddle">PaddleとProの支払いの仕組みは？</h2>
-<p>Paddle.com Market Limitedが決済代行業者であり、販売者（Merchant of Record）です。支払いの仕組みはこうです。Paddleがカード情報と税金を処理し、私たちが支払い情報を見ることはありません。Proは月額$3.99または年額$26.99です。返金はPaddleを通じて行います。</p>
-<p>Proでは、オレンジ色のボタンと「Export All」の3回の上限がなくなります。PDF、Notion、Wordが追加されるわけではありません。形式はMarkdown、JSON、テキスト、XML、PNGのままです。Anthropicのclaude.aiの有料プランは必要ありません。Chromeでスレッドを読み込めるclaude.aiのログインがあれば十分です。</p>
+<p>Paddle.com Market Limitedが決済代行業者であり、販売者（Merchant of Record）です。支払いの仕組みはこうです。Paddleがカード情報と税金を処理し、私たちが支払い情報を見ることはありません。Proは月額$3.99または年額$26.99です。解約はいつでも、拡張機能のオプションページ（「Cancel subscription」＝サブスクリプションを解約）またはPaddleからできます。初回のお支払いには14日間の返金保証があります。</p>
+<p>Proでは、PDFと「Export All」の1日3回の上限がなくなります。それ以外の機能は、無料プランですでに無制限です。ProでNotionやWordが追加されるわけではありません。形式は、PDF、Markdown、JSON、テキスト、XML、CSV、PNGの同じ7つです。Anthropicのclaude.aiの有料プランは必要ありません。Chromeでスレッドを読み込めるclaude.aiのログインがあれば十分です。</p>
 <table>
   <caption>料金と得られるもの</caption>
   <thead>
@@ -154,13 +154,18 @@
   </thead>
   <tbody>
     <tr>
+      <td>無料（アカウント不要）</td>
+      <td>Markdown、テキスト、JSON、XML、CSV、PNGが無制限</td>
+      <td>$0</td>
+    </tr>
+    <tr>
       <td>無料（Googleログイン）</td>
-      <td>合計3回、形式は自由</td>
+      <td>さらにPDFまたは一括エクスポートが1日3回</td>
       <td>$0</td>
     </tr>
     <tr>
       <td>Pro 月額</td>
-      <td>単体も「Export All」も無制限</td>
+      <td>PDFも「Export All」も無制限</td>
       <td>Paddle経由で月額$3.99</td>
     </tr>
     <tr>
@@ -173,12 +178,12 @@
 <p>ワークスペースの管理者がChrome拡張機能をブロックしている場合、支払いをしてもボタンは組み込まれません。それはブラウザのポリシーです。スクリプトの実行が許可されていれば、claude.aiのTeamやEnterpriseでも、オレンジ色のボタンはFreeと同じように使えます。</p>
 
 <h2 id="worker">エクスポート中、サーバーには何が見える？</h2>
-<p>Cloudflare Workerが、サブスクリプションの状態、つまりGoogleでログインしたアカウントがProかどうかと、無料エクスポートを何回使ったかを確認します。このworkerが会話の内容を受け取ることはありません。エクスポートの処理とライセンスの確認は、2つの別の経路です。私たちのサーバーに届くのはライセンスの経路だけです。</p>
-<p>再インストールしても無料エクスポート3回がリセットされないのは、このworkerがあるからです。Proが復元されるのもそのためです。チャットのバックアップではありません。claude.aiの履歴は引き続きAnthropic側にあり、私たちが2つ目のコピーを持つことはありません。保存するメールアドレスについては、このサイトのプライバシーポリシーに記載しています。</p>
-<p>バージョン1.13.0、2026年9月時点の情報です。workerに接続できない場合、状態を確認できるまでエクスポートを始められないことがあります。それはライセンスの確認のためで、スレッドのアップロードが必要なわけではありません。確認が成功すれば、ファイルはローカルで組み立てられます。</p>
+<p>Cloudflare Workerが、サブスクリプションと回数の状態、つまりGoogleでログインしたアカウントがProかどうかと、今日PDFや一括エクスポートを何回使ったかを確認します。受け取るのはアカウントのメールアドレスだけで、それもPDF、一括エクスポート、Proのためにログインした後に限られます。このworkerが会話の内容を受け取ることはありません。ほかの形式での1つのチャットのエクスポートが、workerに届くことはありません。</p>
+<p>再インストールしても1日の回数がリセットされないのは、このworkerがあるからです。Proが復元されるのもそのためです。チャットのバックアップではありません。claude.aiの履歴は引き続きAnthropic側にあり、私たちが2つ目のコピーを持つことはありません。保存するメールアドレスについては、このサイトのプライバシーポリシーに記載しています。</p>
+<p>バージョン1.16.2、2026年9月時点の情報です。workerに接続できない場合、状態を確認できるまでPDFや一括エクスポートを始められないことがあります。それはライセンスの確認のためで、スレッドのアップロードが必要なわけではありません。確認が成功すれば、ファイルはローカルで組み立てられます。ほかの形式での1つのチャットのエクスポートは、この確認を待ちません。</p>
 
 <h2 id="safe">このClaudeチャットエクスポーターは安全？</h2>
-<p>「通信はゼロ」とは言いません。この拡張機能は、Google、Paddle、claude.ai、私たちのworkerと通信します。チャットの本文は私たちのAPIに送られませんが、ライセンスとログインの状態は送られます。スクリプトが、あなたのAnthropicアカウントで余計な操作を自動で行うことはありません。</p>
+<p>すべての経路で「通信はゼロ」とは言いません。Markdown、テキスト、JSON、XML、CSV、PNGで1つのチャットをエクスポートする場合、私たちへの通信はありません。PDF、一括エクスポート、ProではGoogleと私たちのworkerと、ProではさらにPaddleと通信します。チャットの本文は私たちのAPIに送られませんが、アカウントのメールアドレスと回数の状態は送られます。スクリプトが、あなたのAnthropicアカウントで余計な操作を自動で行うことはありません。</p>
 <table>
   <caption>エクスポーターの実行中に誰が何を見るか</caption>
   <thead>
@@ -197,12 +202,12 @@
     <tr>
       <td>私たちのCloudflare Worker</td>
       <td>いいえ</td>
-      <td>メールアドレス、無料エクスポートの回数、Proかどうか</td>
+      <td>ログイン後のみ：メールアドレス、今日のPDF／一括エクスポートの回数、Proかどうか</td>
     </tr>
     <tr>
       <td>Google</td>
       <td>いいえ（私たちからは）</td>
-      <td>ログインに選んだアカウント</td>
+      <td>PDF、一括エクスポート、Proのログインに選んだアカウント</td>
     </tr>
     <tr>
       <td>Paddle</td>
@@ -217,16 +222,16 @@
   </tbody>
 </table>
 <p>この拡張機能はAnthropic, PBCとは提携していません。このClaudeチャットエクスポーターを使っても、Anthropicの利用規約は変わりません。「Claudeのエクスポーターは安全か」と気になる方は、上の表をご覧ください。サーバーが見るのは課金の状態で、チャットを見るのはブラウザです。形式の一覧：<a href="/ja/formats/">Claudeのチャットのエクスポート形式</a>。</p>
-<p>PDF形式は引き続きありません。PDFのようなスナップショットが必要ならChromeで印刷してください。モバイルブラウザとClaude Desktopは対象外です。パソコンのChromeでclaude.aiの会話を開いてから、エクスポートしてください。</p>
+<p>PDFも、ほかのすべての形式と同じようにブラウザの中で作られます：<a href="/ja/download-claude-chat-as-pdf/">ClaudeのチャットをPDFで保存</a>。モバイルブラウザとClaude Desktopは対象外です。パソコンのChromeでclaude.aiの会話を開いてから、エクスポートしてください。</p>
 
 <h2 id="faq">よくある質問：Download Claude conversationsの仕組み</h2>
-<p>ここでは、この拡張機能の仕組みについての質問に答えます。ローカルのファイル、Googleログイン、Paddle、worker、Anthropicとの関係、回数制限、Proについてです。どの回答もバージョン1.13.0の製品の事実に基づいています。ページのheadにあるFAQPageのJSON-LDは、このページの一覧と一致しています。</p>
+<p>ここでは、この拡張機能の仕組みについての質問に答えます。ローカルのファイル、Googleログイン、Paddle、worker、Anthropicとの関係、1日の上限、Proについてです。どの回答もバージョン1.16.2の製品の事実に基づいています。ページのheadにあるFAQPageのJSON-LDは、このページの一覧と一致しています。</p>
 
 <h3>拡張機能は私のチャットを保存しますか？</h3>
-<p>いいえ。エクスポートはローカルで作られ、アップロードされることはありません。私たちが保存するのは、無料エクスポートの利用状況とProの状態を管理するための、Googleで確認されたメールアドレスだけです。チャットの本文は、claude.aiのタブと、Chromeがダウンロードしたファイルの中にとどまります。</p>
+<p>いいえ。PDFを含むすべてのエクスポートはローカルで作られ、アップロードされることはありません。PDF、一括エクスポート、ProのためにGoogleでログインした場合、私たちはそのメールアドレスを、1日の回数を数えてProを紐づけるためだけに保存します。チャットの本文は、claude.aiのタブと、Chromeがダウンロードしたファイルの中にとどまります。</p>
 
 <h3>Googleログインは必須ですか、任意ですか？</h3>
-<p>必須で、最初のエクスポートから必要です。再インストールでカウンターがリセットされないようにしながら、無料エクスポート3回を管理するための仕組みです。チャットを読むためのログインではありません。</p>
+<p>必要なのは、PDF、一括の「Export All」、Proのときだけです。Markdown、テキスト、JSON、XML、CSV、PNGで1つのチャットをエクスポートする場合、アカウントは要りません。PDFと一括エクスポートでは、再インストールで1日3回のカウンターがリセットされないよう、初回からログインを求めます。チャットを読むためのログインではありません。</p>
 
 <h3>Proの支払いは誰が処理しますか？</h3>
 <p>Paddleです。私たちがカード情報を見ることはありません。Proは月額$3.99または年額$26.99です。Paddleが販売者（Merchant of Record）です。返金はPaddleを通じて行います。</p>
@@ -235,13 +240,13 @@
 <p>いいえ。独立したChrome拡張機能であり、Anthropic, PBCとは提携していません。ClaudeはAnthropicの商標です。この拡張機能は既存のclaude.aiのセッションを使うもので、Anthropicの製品に代わるものではありません。</p>
 
 <h3>PDF形式はありますか？</h3>
-<p>いいえ。ファイルはMarkdown、JSON、プレーンテキスト、XML、PNGで、すべてローカルで作られます。PDFのようなページが必要なら、Chromeでclaude.aiのタブを印刷してください。PNGは画像で、PDFではありません。</p>
+<p>はい。PDFは、ほかの6つの形式（Markdown、JSON、プレーンテキスト、XML、CSV、PNG）と同じようにブラウザの中で作られます。印刷ダイアログは使いません。PDFにはGoogleログインが必要で、無料プランでは1日3回の枠に数えられます。</p>
 
 <h3>エクスポート時、workerには何が見えますか？</h3>
-<p>サブスクリプションの状態、つまりProかどうかと、Googleでログインしたアカウントが無料エクスポートを何回使ったかです。workerが会話の内容を受け取ることはありません。エクスポートの処理はブラウザの中にとどまります。</p>
+<p>PDF、一括エクスポート、Proのためにログインした後に限り、アカウントのメールアドレス、Proかどうか、今日PDFや一括エクスポートを何回使ったかが見えます。workerが会話の内容を受け取ることはありません。エクスポートの処理はブラウザの中にとどまります。</p>
 
 <h3>使うのにProは必要ですか？</h3>
-<p>いいえ。Googleでログインしたどのアカウントでも、最初の3回は無料です。Pro（月額$3.99または年額$26.99）なら、単体や一括でさらに多くのファイルを作れます。ローカルでファイルを作る仕組みは、無料でもProでも同じです。</p>
+<p>いいえ。Markdown、テキスト、JSON、XML、CSV、PNGで1つのチャットをエクスポートするのは、回数無制限で無料、アカウントも要りません。PDFと一括ZIPは、Googleログインで1日3回まで無料です。Pro（月額$3.99または年額$26.99）なら、この上限がなくなります。ローカルでファイルを作る仕組みは、無料でもProでも同じです。</p>
 </article>
 </main>
 <section class="final-cta page-cta" aria-label="インストール">
@@ -249,7 +254,7 @@
     <div class="final-cta-panel">
       <p class="final-kicker">Download Claude conversations</p>
       <h2>拡張機能をインストールして、Claudeのチャットを数秒でダウンロード</h2>
-      <p>大切なClaudeのスレッドを、Markdown、JSON、テキスト、XML、PNGに。Chromeからローカルで保存できます。</p>
+      <p>大切なClaudeのスレッドを、PDF、Markdown、JSON、テキスト、CSV、XML、PNGに。Chromeからローカルで保存できます。</p>
       <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=ja-how-it-works" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Chromeに追加</a>
     </div>
   </div>
@@ -258,7 +263,7 @@
   <div class="footer-inner">
     <div>
       <a class="logo" href="/ja/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
-      <p class="legal-note">Claude.aiのチャットをMarkdown、JSON、プレーンテキスト、XML、PNGでダウンロードできるChrome拡張機能。Chrome Web Storeで評価5.0。</p>
+      <p class="legal-note">Claude.aiのチャットをPDF、Markdown、JSON、プレーンテキスト、CSV、XML、PNGでダウンロードできるChrome拡張機能。</p>
     </div>
     <div>
       <h2>インストール</h2>
@@ -278,7 +283,7 @@
       <a href="/ja/export-claude-chat/">Claudeのチャットをエクスポート</a>
       <a href="/ja/claude-conversation-extractor/">Claudeの会話抽出ツール</a>
       <a href="/ja/claude-code-export/">Claude Codeのエクスポート</a>
-      <a href="/ja/download-claude-chat-as-pdf/">印刷 / PDF</a>
+      <a href="/ja/download-claude-chat-as-pdf/">ClaudeのチャットをPDFで保存</a>
       <a href="/ja/export-claude-desktop-chat/">Claude Desktopのエクスポート</a>
       <a href="/ja/claude-export-conversation/">Claudeの会話エクスポート</a>
       <a href="/ja/how-to-save-claude-conversation/">Claudeの会話を保存する方法</a>
@@ -302,7 +307,7 @@
     </div>
   </div>
   <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/how-it-works/" hreflang="en" lang="en">English</a> <a href="/de/so-funktioniert-es/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/comment-ca-marche/" hreflang="fr" lang="fr">Français</a> <a href="/nl/hoe-het-werkt/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/sa-fungerar-det/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/slik-fungerer-det/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/saadan-virker-det/" hreflang="da" lang="da">Dansk</a> <a href="/fi/nain-se-toimii/" hreflang="fi" lang="fi">Suomi</a> <a href="/ja/how-it-works/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/how-it-works/" hreflang="ko" lang="ko">한국어</a> <a href="/he/how-it-works/" hreflang="he" lang="he">עברית</a> <a href="/ar/how-it-works/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
-  <p class="disclaimer">チャットはブラウザ内で処理 · 利用回数の管理にGoogleサインインを使用 · Anthropic, PBCとは提携していません。ClaudeはAnthropicの商標です。独立したChrome拡張機能であり、Anthropicの公式製品ではありません。サポート： <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+  <p class="disclaimer">チャットはブラウザ内で処理 · GoogleサインインはPDF・一括エクスポート・Proのみ · Anthropic, PBCとは提携していません。ClaudeはAnthropicの商標です。独立したChrome拡張機能であり、Anthropicの公式製品ではありません。サポート： <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
 </footer>
 <script src="/assets/site.js" defer></script>
 </body>
