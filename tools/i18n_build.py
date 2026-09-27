@@ -178,7 +178,7 @@ def footer(lang, pid, lb):
     product = [("features", "page_features"), ("formats", "page_formats"), ("bulk", "page_bulk"), ("how-it-works", "page_how_it_works")]
     guides = [("how-to-download-claude-chat", "page_how_to_download"), ("how-to-export-claude-chat", "page_how_to_export"),
               ("export-claude-chat", "page_export_claude_chat"), ("claude-conversation-extractor", "page_extractor"),
-              ("claude-code-export", "page_claude_code"), ("download-claude-chat-as-pdf", "page_pdf"),
+              ("claude-code-export", "page_claude_code"), ("download-claude-chat-as-pdf", "page_pdf"), ("export-claude-chat-to-pdf", "page_pdf_export"),
               ("export-claude-desktop-chat", "page_desktop"), ("claude-export-conversation", "page_claude_export_conversation"),
               ("how-to-save-claude-conversation", "page_how_to_save"), ("download-claude-conversation", "page_download_conversation")]
     return """<footer class="site-footer">

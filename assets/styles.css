@@ -926,6 +926,15 @@ h1.page-h1 {
   .final-cta .btn-install { width: 100%; }
 }
 
+/* Parameter → value lists in guides */
+.prose dl.spec-list { display: grid; grid-template-columns: minmax(9rem, 14rem) 1fr; gap: 8px 18px; margin: 18px 0 22px; }
+.prose dl.spec-list dt { font-weight: 700; color: var(--ink); }
+.prose dl.spec-list dd { margin: 0; }
+@media (max-width: 640px) {
+  .prose dl.spec-list { grid-template-columns: 1fr; gap: 2px; }
+  .prose dl.spec-list dd { margin-bottom: 10px; }
+}
+
 /* Language switcher */
 .lang-switch { position: relative; }
 .lang-switch summary {
