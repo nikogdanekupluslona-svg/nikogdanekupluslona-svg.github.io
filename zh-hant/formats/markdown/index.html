@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Claude 聊天匯出 Markdown：筆記用 .md 檔</title>
+  <meta name="description" content="把 Claude 聊天匯出成 Markdown：保留標題、程式碼區塊與表格，可直接放進 Obsidian 或 GitHub。免費、不限次數。">
+  <link rel="canonical" href="https://chat-downloader.com/zh-hant/formats/markdown/">
+  <!-- i18n:head -->
+  <link rel="alternate" hreflang="en" href="https://chat-downloader.com/formats/markdown/">
+  <link rel="alternate" hreflang="de" href="https://chat-downloader.com/de/formate/markdown/">
+  <link rel="alternate" hreflang="fr" href="https://chat-downloader.com/fr/formats/markdown/">
+  <link rel="alternate" hreflang="es" href="https://chat-downloader.com/es/formatos/markdown/">
+  <link rel="alternate" hreflang="it" href="https://chat-downloader.com/it/formati/markdown/">
+  <link rel="alternate" hreflang="pt" href="https://chat-downloader.com/pt/formatos/markdown/">
+  <link rel="alternate" hreflang="nl" href="https://chat-downloader.com/nl/formaten/markdown/">
+  <link rel="alternate" hreflang="sv" href="https://chat-downloader.com/sv/format/markdown/">
+  <link rel="alternate" hreflang="nb" href="https://chat-downloader.com/nb/formater/markdown/">
+  <link rel="alternate" hreflang="da" href="https://chat-downloader.com/da/formater/markdown/">
+  <link rel="alternate" hreflang="fi" href="https://chat-downloader.com/fi/formaatit/markdown/">
+  <link rel="alternate" hreflang="pl" href="https://chat-downloader.com/pl/formaty/markdown/">
+  <link rel="alternate" hreflang="cs" href="https://chat-downloader.com/cs/formaty/markdown/">
+  <link rel="alternate" hreflang="sk" href="https://chat-downloader.com/sk/formaty/markdown/">
+  <link rel="alternate" hreflang="hu" href="https://chat-downloader.com/hu/formatumok/markdown/">
+  <link rel="alternate" hreflang="ro" href="https://chat-downloader.com/ro/formate/markdown/">
+  <link rel="alternate" hreflang="el" href="https://chat-downloader.com/el/formats/markdown/">
+  <link rel="alternate" hreflang="tr" href="https://chat-downloader.com/tr/formatlar/markdown/">
+  <link rel="alternate" hreflang="ja" href="https://chat-downloader.com/ja/formats/markdown/">
+  <link rel="alternate" hreflang="ko" href="https://chat-downloader.com/ko/formats/markdown/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://chat-downloader.com/zh-hant/formats/markdown/">
+  <link rel="alternate" hreflang="he" href="https://chat-downloader.com/he/formats/markdown/">
+  <link rel="alternate" hreflang="ar" href="https://chat-downloader.com/ar/formats/markdown/">
+  <link rel="alternate" hreflang="x-default" href="https://chat-downloader.com/formats/markdown/">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="it_IT">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="sv_SE">
+  <meta property="og:locale:alternate" content="nb_NO">
+  <meta property="og:locale:alternate" content="da_DK">
+  <meta property="og:locale:alternate" content="fi_FI">
+  <meta property="og:locale:alternate" content="pl_PL">
+  <meta property="og:locale:alternate" content="cs_CZ">
+  <meta property="og:locale:alternate" content="sk_SK">
+  <meta property="og:locale:alternate" content="hu_HU">
+  <meta property="og:locale:alternate" content="ro_RO">
+  <meta property="og:locale:alternate" content="el_GR">
+  <meta property="og:locale:alternate" content="tr_TR">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <meta property="og:locale:alternate" content="he_IL">
+  <meta property="og:locale:alternate" content="ar_AE">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&amp;display=swap" rel="stylesheet">
+  <!-- /i18n:head -->
+  <meta property="og:title" content="Claude 聊天匯出 Markdown：筆記用 .md 檔">
+  <meta property="og:description" content="把 Claude 聊天匯出成 Markdown：保留標題、程式碼區塊與表格，可直接放進 Obsidian 或 GitHub。免費、不限次數。">
+  <meta property="og:url" content="https://chat-downloader.com/zh-hant/formats/markdown/">
+  <meta property="og:image" content="https://chat-downloader.com/assets/widget-guide.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chat Downloader">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Claude 聊天匯出 Markdown：筆記用 .md 檔">
+  <meta name="twitter:description" content="把 Claude 聊天匯出成 Markdown：保留標題、程式碼區塊與表格，可直接放進 Obsidian 或 GitHub。免費、不限次數。">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME1YXGZKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GME1YXGZKR');
+  </script>
+  
+  
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"把 Claude 聊天匯出成 Markdown 會弄丟程式碼嗎？","acceptedAnswer":{"@type":"Answer","text":"不會。程式碼區塊會保留語言標籤和縮排，不像從 claude.ai 直接複製貼上。表格仍是 Markdown 表格。這正是選擇匯出成 Markdown、而不是手動選取文字的主要原因。"}},{"@type":"Question","name":"可以一次把多個 Claude 聊天匯出成 Markdown 嗎？","acceptedAnswer":{"@type":"Answer","text":"可以。Dashboard 上的「Export All」支援 Markdown，會存成一個裝滿 .md 檔的 ZIP。免費方案用 Google 登入後每天可匯出 3 個聊天；Pro 不限次數。"}},{"@type":"Question","name":"Markdown 和 Anthropic 的 Export data 一樣嗎？","acceptedAnswer":{"@type":"Answer","text":"不一樣。Anthropic 的官方匯出是整個帳號的 JSON ZIP，要等一段時間才會寄到信箱。用 Download Claude conversations 匯出 Markdown，得到的是單一聊天（或所選訊息）的 .md 檔。"}},{"@type":"Question","name":"Markdown 比其他格式貴嗎？","acceptedAnswer":{"@type":"Answer","text":"不會。單一聊天的 Markdown 匯出不限次數、不需要帳號，和 JSON、文字、XML、CSV、PNG 一樣。只有 PDF 和批次 ZIP 有每天 3 次的免費限制。Pro 是每月 US$3.99 或每年 US$26.99。"}},{"@type":"Question","name":"可以在 Desktop 上把 Claude 聊天匯出成 Markdown 嗎？","acceptedAnswer":{"@type":"Answer","text":"不行。Download Claude conversations 只會注入 Chrome 中的 claude.ai。Claude Desktop 永遠不會出現 Markdown 選單。如果同一個對話也在 claude.ai 上，請在那裡開啟。"}},{"@type":"Question","name":"匯出成 Markdown 會產生 PDF 嗎？","acceptedAnswer":{"@type":"Answer","text":"不會。Markdown 是 .md 文字檔。需要分頁文件時，請改在同一個面板選 PDF：它在瀏覽器中產生，可設定頁面大小、邊界和目錄。PDF 需要 Google 登入，在免費方案中計入每天 3 次。"}},{"@type":"Question","name":"只匯出一次 Markdown 也需要 Pro 嗎？","acceptedAnswer":{"@type":"Answer","text":"不需要。你完全不需要帳號。免費方案中，單一聊天的 Markdown 匯出不限次數。Pro（每月 US$3.99 或每年 US$26.99）只是取消批次「Export All」和 PDF 每天 3 次的限制。"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://chat-downloader.com/zh-hant/"},{"@type":"ListItem","position":2,"name":"格式","item":"https://chat-downloader.com/zh-hant/formats/"},{"@type":"ListItem","position":3,"name":"Markdown","item":"https://chat-downloader.com/zh-hant/formats/markdown/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">跳到主要內容</a>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a class="logo" href="/zh-hant/">
+        <img src="/assets/icon.svg" alt="">
+        <span>Download Claude conversations</span>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="/zh-hant/how-to-download-claude-chat/">下載教學</a><a href="/zh-hant/how-to-export-claude-chat/">匯出</a><a href="/zh-hant/bulk/">批次</a><a href="/zh-hant/formats/">格式</a><a href="/zh-hant/#faq">常見問題</a>
+        <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=zh-hant-formats-markdown" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> 加到 Chrome</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=zh-hant-formats-markdown" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> 加到 Chrome</a>
+      <!-- i18n:switch --><details class="lang-switch"><summary aria-label="語言: 繁體中文"><svg class="lang-globe" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span class="lang-name">繁體中文</span><span class="lang-code" aria-hidden="true">zh</span></summary><ul><li><a href="/formats/markdown/" hreflang="en" lang="en">English</a></li><li><a href="/de/formate/markdown/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/formats/markdown/" hreflang="fr" lang="fr">Français</a></li><li><a href="/es/formatos/markdown/" hreflang="es" lang="es">Español</a></li><li><a href="/it/formati/markdown/" hreflang="it" lang="it">Italiano</a></li><li><a href="/pt/formatos/markdown/" hreflang="pt" lang="pt">Português</a></li><li><a href="/nl/formaten/markdown/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/sv/format/markdown/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="/nb/formater/markdown/" hreflang="nb" lang="nb">Norsk</a></li><li><a href="/da/formater/markdown/" hreflang="da" lang="da">Dansk</a></li><li><a href="/fi/formaatit/markdown/" hreflang="fi" lang="fi">Suomi</a></li><li><a href="/pl/formaty/markdown/" hreflang="pl" lang="pl">Polski</a></li><li><a href="/cs/formaty/markdown/" hreflang="cs" lang="cs">Čeština</a></li><li><a href="/sk/formaty/markdown/" hreflang="sk" lang="sk">Slovenčina</a></li><li><a href="/hu/formatumok/markdown/" hreflang="hu" lang="hu">Magyar</a></li><li><a href="/ro/formate/markdown/" hreflang="ro" lang="ro">Română</a></li><li><a href="/el/formats/markdown/" hreflang="el" lang="el">Ελληνικά</a></li><li><a href="/tr/formatlar/markdown/" hreflang="tr" lang="tr">Türkçe</a></li><li><a href="/ja/formats/markdown/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/ko/formats/markdown/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/zh-hant/formats/markdown/" hreflang="zh-Hant" lang="zh-Hant" aria-current="true">繁體中文</a></li><li><a href="/he/formats/markdown/" hreflang="he" lang="he">עברית</a></li><li><a href="/ar/formats/markdown/" hreflang="ar" lang="ar">العربية</a></li></ul></details><!-- /i18n:switch -->
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="選單">☰</button>
+    </div>
+  </div>
+</header>
+<nav class="crumbs" aria-label="導覽路徑"><a href="/zh-hant/">首頁</a> / <a href="/zh-hant/formats/">格式</a> / Markdown</nav>
+<main id="main">
+<article class="band prose">
+<p class="article-meta">更新於 <time datetime="2026-09">2026 年 9 月</time> · 擴充功能 1.16.2</p>
+<h1 class="page-h1">Claude 聊天匯出 Markdown，整理成筆記</h1>
+<p class="lead">要把 Claude 聊天匯出成 Markdown：安裝 Download Claude conversations，在 claude.ai 開啟對話，點橘色按鈕，選擇 Markdown，再按「Export」（匯出）。Chrome 會存下一個 .md 檔，保留標題、程式碼區塊和表格。Markdown 匯出免費、不限次數，也不需要帳號。需要分頁的文件？同一個選單裡也有 <a href="/zh-hant/download-claude-chat-as-pdf/">PDF</a>。</p>
+<aside class="trust-badge" aria-label="關於擴充功能">
+  <span class="trophy" aria-hidden="true">🧩</span>
+  <div>
+    <strong>Download Claude conversations：適用於 claude.ai 的免費 Chrome 擴充功能</strong>
+    <span>版本 1.16.2（2026 年 9 月）：Markdown、文字、JSON、XML、CSV 與 PNG 匯出不限次數、免帳號；PDF 與批次 ZIP 每天免費 3 次</span>
+  </div>
+</aside>
+<nav class="toc" aria-label="本頁內容">
+  <p>本頁內容</p>
+  <ol>
+    <li><a href="#how-to">如何把 Claude 聊天匯出成 Markdown？</a></li>
+    <li><a href="#why-markdown">為什麼做筆記要用 Markdown？</a></li>
+    <li><a href="#preserved">Markdown 檔會保留哪些內容？</a></li>
+    <li><a href="#bulk">可以一次把多個聊天匯出成 Markdown 嗎？</a></li>
+    <li><a href="#vs-json">匯出 Claude 聊天時，該選 Markdown 還是 JSON？</a></li>
+    <li><a href="#cost">匯出 Markdown 要額外付費嗎？</a></li>
+    <li><a href="#faq">常見問題：Claude 聊天匯出 Markdown</a></li>
+  </ol>
+</nav>
+
+<h2 id="how-to">如何把 Claude 聊天匯出成 Markdown？</h2>
+<p>在 Chrome 中開啟 claude.ai 上的對話，點訊息輸入框旁的橘色按鈕，選擇 Markdown，再按「Export」。Download Claude conversations 會在本機寫出一個 .md 檔。這就是在 1.16.2 版中把 Claude 聊天匯出成 Markdown 的方法（香港使用者常說「導出」，指的是同一件事）。</p>
+<ol>
+<li>從 Chrome Web Store 安裝 Download Claude conversations。</li>
+<li>重新整理 claude.ai，開啟一個真正的對話網址，而不是空白的輸入首頁。</li>
+<li>點訊息輸入框右側的橘色下載按鈕。</li>
+<li>選擇 Markdown。擴充功能會記住你上次使用的格式。用「Select」（選取）只勾選你需要的訊息。</li>
+<li>按「Export」。Chrome 會透過瀏覽器的下載 API 存下 .md 檔。也可以按「Copy」（複製），把 Markdown 放到剪貼簿。</li>
+</ol>
+<p>匯出 Markdown 不需要登入。單一聊天的 Markdown 匯出不限次數、匿名進行，不會傳送任何資料到我們的伺服器。只有 PDF 和批次「Export All」（全部匯出）才會要求 Google 登入。運作機制請見<a href="/zh-hant/how-it-works/">運作方式</a>。</p>
+<p>如果看不到橘色按鈕，可能是你不在對話網址上、安裝後分頁還沒重新整理，或擴充功能仍藏在 Chrome 的拼圖選單裡。釘選 Download Claude conversations，再重新整理 claude.ai。內容腳本永遠不會注入 Claude Desktop 或 Claude Code 終端機。</p>
+<div class="callout callout-tip">
+  <p><strong>一個聊天或很多個。</strong>橘色按鈕會把目前開啟的對話匯出成 Markdown。要產出很多 .md 檔，請開啟「View and Download All Conversations」（查看並下載所有對話），選好 Markdown 後執行「Export All」：產出一個 ZIP，免費方案每天 3 個聊天，詳見<a href="/zh-hant/bulk/">批次「Export All」</a>。</p>
+</div>
+
+<h2 id="why-markdown">為什麼做筆記要用 Markdown？</h2>
+<p>如果你會在 Obsidian、GitHub wiki 或任何能顯示標題和程式碼區塊的編輯器裡閱讀檔案，就選 Markdown。.md 檔仍然是純文字，可以搜尋，也可以比對差異。JSON 比較適合解析程式；PNG 則是一張圖片，無法用 grep 搜尋。</p>
+<p>從 claude.ai 複製貼上，通常會弄丟縮排，表格也會被攤平。列印（Ctrl/Cmd+P）會連側邊欄一起印出，長的程式碼區塊也常被切到好幾頁。匯出成 Markdown 時，程式碼區塊會保留語言標籤，表格仍是表格。這就是撰稿者優先選這個格式的原因。</p>
+<div class="expert-quote">
+  <p>我們把 Markdown 當作預設的人類可讀檔案：包含 claude.ai 對話裡的標題、帶語言標籤的程式碼區塊和表格。需要分頁文件時，請在同一個面板選 <a href="/zh-hant/download-claude-chat-as-pdf/">PDF</a>。它在瀏覽器中排版，可設定頁面大小、邊界和目錄。</p>
+  <footer>Download Claude conversations 團隊</footer>
+</div>
+<p>也有人搜尋 Claude Chat Downloader 找到同一個商店頁面。把 Claude 聊天匯出成 Markdown 用的就是同一個橘色按鈕，不是另一個產品。法律頁面上可能仍寫著 Claude Exporter。這些名稱都指向 Download Claude conversations。</p>
+
+<h2 id="preserved">Markdown 檔會保留哪些內容？</h2>
+<p>匯出成 Markdown 時，Download Claude conversations 會保留標題、帶語言標籤與縮排的程式碼區塊、表格和連結。思考區塊、網頁搜尋來源，以及工具／MCP 步驟都需要自行開啟：「Thinking」（思考過程）是匯出面板中的核取方塊，另外兩項在設定頁開啟。中繼資料（標題、時間戳記、模型）也可以一併匯出。傳送者篩選可以讓 .md 檔只包含全部訊息、只有使用者，或只有助理的訊息。</p>
+<p>在 1.16.2 版中，Artifact 版面是真正可切換的選項：「Original」「Inline」「Nested」或「Flat」（原始、內嵌、巢狀、扁平）。Markdown 匯出可以照畫面上的 Artifact 結構呈現、攤平成一份線性文件，或把 Artifact 放進 ZIP 裡各自的資料夾。設定頁可以把圖片嵌入 .md 檔。完整清單：<a href="/zh-hant/features/">Chrome 擴充功能特色</a>。Markdown 不會保留訊息泡泡的顏色；要視覺快照請用 PNG，要分頁文件請用 PDF。</p>
+<table>
+  <caption>Markdown 格式的 Claude 聊天匯出包含哪些內容</caption>
+  <thead>
+    <tr>
+      <th scope="col">元素</th>
+      <th scope="col">在 .md 檔裡嗎？</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>標題與清單</td>
+      <td>是</td>
+    </tr>
+    <tr>
+      <td>程式碼區塊＋語言標籤</td>
+      <td>是</td>
+    </tr>
+    <tr>
+      <td>表格</td>
+      <td>是，以 Markdown 表格呈現</td>
+    </tr>
+    <tr>
+      <td>思考區塊</td>
+      <td>開啟「Thinking」時才有</td>
+    </tr>
+    <tr>
+      <td>Artifact</td>
+      <td>是，可選 Original／Inline／Nested／Flat</td>
+    </tr>
+    <tr>
+      <td>圖片</td>
+      <td>在設定頁開啟「Embed images in Markdown」（在 Markdown 中嵌入圖片）時會嵌入</td>
+    </tr>
+    <tr>
+      <td>網頁搜尋來源、工具／MCP 步驟</td>
+      <td>開啟後才有</td>
+    </tr>
+    <tr>
+      <td>介面外觀／PDF 分頁</td>
+      <td>否，Markdown 是文字；要分頁請選 PDF</td>
+    </tr>
+  </tbody>
+</table>
+<p>如果對話很長，匯出成 Markdown 前請先往上捲動，讓 claude.ai 載入較早的訊息。擴充功能只能寫出頁面已經顯示的內容。只載入一半的對話會產生只有一半的 .md 檔，看起來像錯誤，其實通常只是還沒捲動載入。</p>
+
+<h2 id="bulk">可以一次把多個聊天匯出成 Markdown 嗎？</h2>
+<p>可以。開啟「View and Download All Conversations」，把「Chat format」（聊天格式）設為 Markdown，篩選表格，再按「Export All」。Chrome 會存下一個 ZIP，每個聊天一個 .md 檔。免費方案用 Google 登入後每天可匯出 3 個聊天，與 PDF 共用。Pro（每月 US$3.99 或每年 US$26.99）取消批次 Markdown 的這個上限。</p>
+<p>Dashboard（控制台）會列出 claude.ai 的對話紀錄，可依名稱搜尋，提供 All conversations、New、Updated 和 Previously exported（所有對話、新的、已更新、先前已匯出）篩選條件、Chat 與 Cowork 分頁，以及專案搜尋。New 表示尚未用 Download Claude conversations 匯出過。Previously exported 會記錄你已存過的聊天，讓第二次「Export All」可以略過它們。</p>
+<div class="callout callout-warn">
+  <p><strong>每日限制以帳號計算。</strong>免費方案每天 3 個聊天，與 PDF 共用。如果只剩 3 次卻選了 40 個對話，整批會被擋下，而不是只匯出一部分。少選一些，或改用 Pro。從橘色按鈕匯出的單一 .md 檔仍然不限次數。</p>
+</div>
+<p>批次 Markdown 使用 Dashboard 的「Chats」「Thinking」「Metadata」「Tools」「Sources」（聊天、思考過程、中繼資料、工具、來源）核取方塊，以及 Artifact 格式。「Export All」不是 Anthropic 稍後寄出的 ZIP，而是一個 ZIP，裡面每個聊天各一個 .md 檔。如果你想要整個帳號的單一封存檔，那是 Settings → Privacy → Export data（若 claude.ai 設為中文，選單名稱可能會顯示為中文），格式是 JSON，不是 Markdown。</p>
+
+<h2 id="vs-json">匯出 Claude 聊天時，該選 Markdown 還是 JSON？</h2>
+<p>檔案要給人閱讀時，選 Markdown。要讓腳本解析訊息結構時，匯出成 JSON。Download Claude conversations 在同一個選單裡提供這兩種，還有 PDF、純文字、XML、CSV 和 PNG。格式總覽：<a href="/zh-hant/formats/">Claude 聊天匯出格式</a>。</p>
+<table>
+  <caption>Markdown 與其他 claude.ai 匯出檔案比較</caption>
+  <thead>
+    <tr>
+      <th scope="col">格式</th>
+      <th scope="col">適合的情況</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Markdown</td>
+      <td>筆記、Obsidian、GitHub、wiki</td>
+    </tr>
+    <tr>
+      <td>JSON</td>
+      <td>差異比對、資料流程、工具：<a href="/zh-hant/formats/json/">JSON 教學</a></td>
+    </tr>
+    <tr>
+      <td>純文字</td>
+      <td>不含標記、貼到哪裡都能用的封存</td>
+    </tr>
+    <tr>
+      <td>XML</td>
+      <td>需要 XML 的系統</td>
+    </tr>
+    <tr>
+      <td>CSV</td>
+      <td>試算表，每則訊息一列</td>
+    </tr>
+    <tr>
+      <td>PDF</td>
+      <td>閱讀、列印、寄送：<a href="/zh-hant/download-claude-chat-as-pdf/">PDF 教學</a></td>
+    </tr>
+    <tr>
+      <td>PNG</td>
+      <td>對話的一張圖片，不是可搜尋的文字</td>
+    </tr>
+  </tbody>
+</table>
+<p>Anthropic 的 Export data 也是 JSON，但它是以電子郵件寄送的帳號 ZIP，不是單一聊天的 .md 檔。在那個申請裡無法選擇 Markdown。瀏覽器列印則是網頁快照。兩者都無法取代用橘色按鈕把 Claude 聊天匯出成 Markdown。</p>
+<p>擴充功能只在 Chrome 的 claude.ai 上執行。Claude Desktop 和 Claude Code 終端機都沒有 Markdown 按鈕。Claude Code 網頁版（claude.ai/code）在 claude.ai 上執行，所以能像一般聊天一樣匯出。如果某個對話也在 claude.ai 上，請在那裡開啟再匯出成 Markdown。終端機版 Claude Code 的 <code>/export</code> 是另一條產品路徑。</p>
+
+<h2 id="cost">匯出 Markdown 要額外付費嗎？</h2>
+<p>不用。單一聊天的 Markdown 匯出免費、不限次數，不需要帳號，也沒有計數，和 JSON、文字、XML、CSV、PNG 一樣。只有 PDF 和批次「Export All」有免費限制：用 Google 登入後每天 3 次。Pro 透過 Paddle 付款，每月 US$3.99 或每年 US$26.99。Download Claude conversations 不會為 Markdown 額外收費。</p>
+<p>限制只會出現在批次 Markdown。「Export All」ZIP 裡的每個聊天都會用掉每天 3 次中的 1 次，計數在 UTC 午夜重設。Pro 取消這個限制，在新電腦上用同一個 Google 帳號登入即可恢復。Paddle 是正式的交易商家；我們團隊永遠看不到卡號。</p>
+<p>你不需要 Anthropic 的付費 claude.ai 方案，只需要一個能在 Chrome 中載入對話的登入帳號。Team 和 Enterprise 使用橘色按鈕的方式和 Free 相同。2026 年 9 月的 1.16.2 版仍然不會寫出 Word 或 Notion 檔案。</p>
+
+<h2 id="faq">常見問題：Claude 聊天匯出 Markdown</h2>
+<p>這些常見問題說明如何在 Download Claude conversations 1.16.2 中把 Claude 聊天匯出成 Markdown：程式碼區塊、批次「Export All」、Anthropic 的 ZIP、費用、PDF 和 Desktop。每個回答都是產品事實。頁首的 FAQPage JSON-LD 與這份清單一致。</p>
+
+<h3>把 Claude 聊天匯出成 Markdown 會弄丟程式碼嗎？</h3>
+<p>不會。程式碼區塊會保留語言標籤和縮排，不像從 claude.ai 直接複製貼上。表格仍是 Markdown 表格。這正是選擇匯出成 Markdown、而不是手動選取文字的主要原因。</p>
+
+<h3>可以一次把多個 Claude 聊天匯出成 Markdown 嗎？</h3>
+<p>可以。Dashboard 上的「Export All」支援 Markdown，會存成一個裝滿 .md 檔的 ZIP。免費方案用 Google 登入後每天可匯出 3 個聊天；Pro 不限次數。</p>
+
+<h3>Markdown 和 Anthropic 的 Export data 一樣嗎？</h3>
+<p>不一樣。Anthropic 的官方匯出是整個帳號的 JSON ZIP，要等一段時間才會寄到信箱。用 Download Claude conversations 匯出 Markdown，得到的是單一聊天（或所選訊息）的 .md 檔。</p>
+
+<h3>Markdown 比其他格式貴嗎？</h3>
+<p>不會。單一聊天的 Markdown 匯出不限次數、不需要帳號，和 JSON、文字、XML、CSV、PNG 一樣。只有 PDF 和批次 ZIP 有每天 3 次的免費限制。Pro 是每月 US$3.99 或每年 US$26.99。</p>
+
+<h3>可以在 Desktop 上把 Claude 聊天匯出成 Markdown 嗎？</h3>
+<p>不行。Download Claude conversations 只會注入 Chrome 中的 claude.ai。Claude Desktop 永遠不會出現 Markdown 選單。如果同一個對話也在 claude.ai 上，請在那裡開啟。</p>
+
+<h3>匯出成 Markdown 會產生 PDF 嗎？</h3>
+<p>不會。Markdown 是 .md 文字檔。需要分頁文件時，請改在同一個面板選 PDF：它在瀏覽器中產生，可設定頁面大小、邊界和目錄。PDF 需要 Google 登入，在免費方案中計入每天 3 次。</p>
+
+<h3>只匯出一次 Markdown 也需要 Pro 嗎？</h3>
+<p>不需要。你完全不需要帳號。免費方案中，單一聊天的 Markdown 匯出不限次數。Pro（每月 US$3.99 或每年 US$26.99）只是取消批次「Export All」和 PDF 每天 3 次的限制。</p>
+</article>
+</main>
+<section class="final-cta page-cta" aria-label="安裝">
+  <div class="wrap">
+    <div class="final-cta-panel">
+      <p class="final-kicker">Download Claude conversations</p>
+      <h2>安裝擴充功能，幾秒內下載 Claude 聊天</h2>
+      <p>把重要的 Claude 對話存成 PDF、Markdown、JSON、文字、CSV、XML 或 PNG，在 Chrome 中於本機完成。</p>
+      <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=zh-hant-formats-markdown" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> 加到 Chrome</a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="logo" href="/zh-hant/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
+      <p class="legal-note">把 Claude.ai 聊天下載成 PDF、Markdown、JSON、純文字、CSV、XML 或 PNG 的 Chrome 擴充功能。</p>
+    </div>
+    <div>
+      <h2>安裝</h2>
+      <a class="install-link" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=zh-hant-footer" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Chrome 擴充功能</a>
+    </div>
+    <div>
+      <h2>產品</h2>
+      <a href="/zh-hant/features/">功能</a>
+      <a href="/zh-hant/formats/">格式</a>
+      <a href="/zh-hant/bulk/">批次下載</a>
+      <a href="/zh-hant/how-it-works/">運作方式</a>
+    </div>
+    <div>
+      <h2>教學</h2>
+      <a href="/zh-hant/how-to-download-claude-chat/">如何下載 Claude 聊天</a>
+      <a href="/zh-hant/how-to-export-claude-chat/">如何匯出 Claude 聊天</a>
+      <a href="/zh-hant/export-claude-chat/">匯出 Claude 聊天</a>
+      <a href="/zh-hant/claude-conversation-extractor/">Claude 對話擷取工具</a>
+      <a href="/zh-hant/claude-code-export/">Claude Code 匯出</a>
+      <a href="/zh-hant/download-claude-chat-as-pdf/">Claude 聊天存成 PDF</a>
+      <a href="/zh-hant/export-claude-desktop-chat/">Claude Desktop 匯出</a>
+      <a href="/zh-hant/claude-export-conversation/">Claude 對話匯出</a>
+      <a href="/zh-hant/how-to-save-claude-conversation/">如何儲存 Claude 對話</a>
+      <a href="/zh-hant/download-claude-conversation/">下載 Claude 對話</a>
+    </div>
+    <div>
+      <h2>法律資訊</h2>
+      <a href="/zh-hant/about/">關於我們</a>
+      <a href="/zh-hant/about/#contact">聯絡我們</a>
+      <a href="/privacy/" hreflang="en">隱私權 （英文）</a>
+      <a href="/terms/" hreflang="en">條款 （英文）</a>
+      <a href="/refund/" hreflang="en">退款 （英文）</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Download Claude conversations. 保留所有權利。</div>
+    <div>
+      <a href="/privacy/" hreflang="en">隱私權政策 （英文）</a>
+      <a href="/terms/" hreflang="en">服務條款 （英文）</a>
+      <a href="/refund/" hreflang="en">退款 （英文）</a>
+    </div>
+  </div>
+  <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/formats/markdown/" hreflang="en" lang="en">English</a> <a href="/de/formate/markdown/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/formats/markdown/" hreflang="fr" lang="fr">Français</a> <a href="/es/formatos/markdown/" hreflang="es" lang="es">Español</a> <a href="/it/formati/markdown/" hreflang="it" lang="it">Italiano</a> <a href="/pt/formatos/markdown/" hreflang="pt" lang="pt">Português</a> <a href="/nl/formaten/markdown/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/format/markdown/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/formater/markdown/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/formater/markdown/" hreflang="da" lang="da">Dansk</a> <a href="/fi/formaatit/markdown/" hreflang="fi" lang="fi">Suomi</a> <a href="/pl/formaty/markdown/" hreflang="pl" lang="pl">Polski</a> <a href="/cs/formaty/markdown/" hreflang="cs" lang="cs">Čeština</a> <a href="/sk/formaty/markdown/" hreflang="sk" lang="sk">Slovenčina</a> <a href="/hu/formatumok/markdown/" hreflang="hu" lang="hu">Magyar</a> <a href="/ro/formate/markdown/" hreflang="ro" lang="ro">Română</a> <a href="/el/formats/markdown/" hreflang="el" lang="el">Ελληνικά</a> <a href="/tr/formatlar/markdown/" hreflang="tr" lang="tr">Türkçe</a> <a href="/ja/formats/markdown/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/formats/markdown/" hreflang="ko" lang="ko">한국어</a> <a href="/zh-hant/formats/markdown/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="/he/formats/markdown/" hreflang="he" lang="he">עברית</a> <a href="/ar/formats/markdown/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
+  <p class="disclaimer">聊天在你的瀏覽器中處理 · 只有 PDF、批次匯出和 Pro 需要 Google 登入 · 與 Anthropic, PBC 無關。Claude 是 Anthropic 的商標。本擴充功能為獨立開發的 Chrome 擴充功能，不是 Anthropic 的官方產品。客服： <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

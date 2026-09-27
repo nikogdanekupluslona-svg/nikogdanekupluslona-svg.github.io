@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Claude chat exportálása Markdownba</title>
+  <meta name="description" content="Claude chat exportálása Markdownba a Download Claude conversations bővítménnyel. Megmaradnak a címsorok, kódblokkok és táblázatok — Obsidianhez, GitHubhoz.">
+  <link rel="canonical" href="https://chat-downloader.com/hu/formatumok/markdown/">
+  <!-- i18n:head -->
+  <link rel="alternate" hreflang="en" href="https://chat-downloader.com/formats/markdown/">
+  <link rel="alternate" hreflang="de" href="https://chat-downloader.com/de/formate/markdown/">
+  <link rel="alternate" hreflang="fr" href="https://chat-downloader.com/fr/formats/markdown/">
+  <link rel="alternate" hreflang="es" href="https://chat-downloader.com/es/formatos/markdown/">
+  <link rel="alternate" hreflang="it" href="https://chat-downloader.com/it/formati/markdown/">
+  <link rel="alternate" hreflang="pt" href="https://chat-downloader.com/pt/formatos/markdown/">
+  <link rel="alternate" hreflang="nl" href="https://chat-downloader.com/nl/formaten/markdown/">
+  <link rel="alternate" hreflang="sv" href="https://chat-downloader.com/sv/format/markdown/">
+  <link rel="alternate" hreflang="nb" href="https://chat-downloader.com/nb/formater/markdown/">
+  <link rel="alternate" hreflang="da" href="https://chat-downloader.com/da/formater/markdown/">
+  <link rel="alternate" hreflang="fi" href="https://chat-downloader.com/fi/formaatit/markdown/">
+  <link rel="alternate" hreflang="pl" href="https://chat-downloader.com/pl/formaty/markdown/">
+  <link rel="alternate" hreflang="cs" href="https://chat-downloader.com/cs/formaty/markdown/">
+  <link rel="alternate" hreflang="sk" href="https://chat-downloader.com/sk/formaty/markdown/">
+  <link rel="alternate" hreflang="hu" href="https://chat-downloader.com/hu/formatumok/markdown/">
+  <link rel="alternate" hreflang="ro" href="https://chat-downloader.com/ro/formate/markdown/">
+  <link rel="alternate" hreflang="el" href="https://chat-downloader.com/el/formats/markdown/">
+  <link rel="alternate" hreflang="tr" href="https://chat-downloader.com/tr/formatlar/markdown/">
+  <link rel="alternate" hreflang="ja" href="https://chat-downloader.com/ja/formats/markdown/">
+  <link rel="alternate" hreflang="ko" href="https://chat-downloader.com/ko/formats/markdown/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://chat-downloader.com/zh-hant/formats/markdown/">
+  <link rel="alternate" hreflang="he" href="https://chat-downloader.com/he/formats/markdown/">
+  <link rel="alternate" hreflang="ar" href="https://chat-downloader.com/ar/formats/markdown/">
+  <link rel="alternate" hreflang="x-default" href="https://chat-downloader.com/formats/markdown/">
+  <meta property="og:locale" content="hu_HU">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="it_IT">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="sv_SE">
+  <meta property="og:locale:alternate" content="nb_NO">
+  <meta property="og:locale:alternate" content="da_DK">
+  <meta property="og:locale:alternate" content="fi_FI">
+  <meta property="og:locale:alternate" content="pl_PL">
+  <meta property="og:locale:alternate" content="cs_CZ">
+  <meta property="og:locale:alternate" content="sk_SK">
+  <meta property="og:locale:alternate" content="ro_RO">
+  <meta property="og:locale:alternate" content="el_GR">
+  <meta property="og:locale:alternate" content="tr_TR">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <meta property="og:locale:alternate" content="zh_TW">
+  <meta property="og:locale:alternate" content="he_IL">
+  <meta property="og:locale:alternate" content="ar_AE">
+  <!-- /i18n:head -->
+  <meta property="og:title" content="Claude chat exportálása Markdownba">
+  <meta property="og:description" content="Claude chat exportálása Markdownba a Download Claude conversations bővítménnyel. Megmaradnak a címsorok, kódblokkok és táblázatok — Obsidianhez, GitHubhoz.">
+  <meta property="og:url" content="https://chat-downloader.com/hu/formatumok/markdown/">
+  <meta property="og:image" content="https://chat-downloader.com/assets/widget-guide.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chat Downloader">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Claude chat exportálása Markdownba">
+  <meta name="twitter:description" content="Claude chat exportálása Markdownba a Download Claude conversations bővítménnyel. Megmaradnak a címsorok, kódblokkok és táblázatok — Obsidianhez, GitHubhoz.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME1YXGZKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GME1YXGZKR');
+  </script>
+  
+  
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Elveszik a kód, ha Markdownba exportálom a Claude chatet?","acceptedAnswer":{"@type":"Answer","text":"Nem. A kódblokkok megtartják a nyelvcímkéjüket és a behúzásukat, szemben a claude.ai oldalról egyszerűen kimásolt szöveggel. A táblázatok Markdown-táblázatok maradnak. Ez a fő ok, amiért érdemes Markdownba exportálni a chatet a kézi szövegkijelölés helyett."}},{"@type":"Question","name":"Exportálhatom tömegesen Markdownba a Claude chateket?","acceptedAnswer":{"@type":"Answer","text":"Igen. Az irányítópult „Export All” funkciója támogatja a Markdownt, és egyetlen ZIP-be menti a .md fájlokat. Az ingyenes csomagban ez napi 3 chat Google-bejelentkezéssel; a Pro korlátlan."}},{"@type":"Question","name":"Ugyanaz a Markdown, mint az Anthropic Export data?","acceptedAnswer":{"@type":"Answer","text":"Nem. Az Anthropic hivatalos exportja a teljes fiók JSON-ZIP-je, amelyet várakozás után e-mailben kapsz meg. A Markdown-export a Download Claude conversations bővítményből egy chatenkénti (vagy kijelölésenkénti) .md fájl."}},{"@type":"Question","name":"Többe kerül a Markdown, mint a többi formátum?","acceptedAnswer":{"@type":"Answer","text":"Nem. Az egyes chatek Markdown-exportja korlátlan és fiók nélküli, ugyanúgy, mint a JSON, a szöveg, az XML, a CSV és a PNG. Csak a PDF-nek és a tömeges ZIP-nek van napi 3-as ingyenes korlátja. A Pro havi 3,99 USD vagy évi 26,99 USD."}},{"@type":"Question","name":"Exportálhatom Markdownba a Claude chatet a Desktop alkalmazásban?","acceptedAnswer":{"@type":"Answer","text":"Nem. A Download Claude conversations csak a claude.ai oldalon fut, a Chrome-ban. A Claude Desktop sosem mutatja a Markdown legördülő listát. Nyisd meg ugyanazt a beszélgetést a claude.ai-on, ha ott is megvan."}},{"@type":"Question","name":"PDF-et is készít a Markdown-export?","acceptedAnswer":{"@type":"Answer","text":"Nem. A Markdown egy .md szövegfájl. Oldalakhoz válaszd inkább a PDF-et ugyanabban a panelben: ezt a böngésző készíti el oldalmérettel, margókkal és tartalomjegyzékkel. A PDF-hez Google-bejelentkezés kell, és az ingyenes csomagban beleszámít a napi 3 alkalomba."}},{"@type":"Question","name":"Kell Pro egyetlen Claude chat Markdownba exportálásához?","acceptedAnswer":{"@type":"Answer","text":"Nem. Egyáltalán nem kell fiók. Az egyes chatek Markdown-exportja az ingyenes csomagban korlátlan. A havi 3,99 USD vagy évi 26,99 USD árú Pro csak a tömeges „Export All” és a PDF napi 3-as korlátját oldja fel."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Kezdőlap","item":"https://chat-downloader.com/hu/"},{"@type":"ListItem","position":2,"name":"Formátumok","item":"https://chat-downloader.com/hu/formatumok/"},{"@type":"ListItem","position":3,"name":"Markdown","item":"https://chat-downloader.com/hu/formatumok/markdown/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Ugrás a tartalomra</a>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a class="logo" href="/hu/">
+        <img src="/assets/icon.svg" alt="">
+        <span>Download Claude conversations</span>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="/hu/claude-chat-letoltese/">Letöltés</a><a href="/hu/hogyan-exportaljam-a-claude-chatet/">Exportálás</a><a href="/hu/osszes-claude-chat-exportalasa/">Összes chat</a><a href="/hu/formatumok/">Formátumok</a><a href="/hu/#faq">GYIK</a>
+        <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=hu-formats-markdown" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Hozzáadás a Chrome-hoz</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=hu-formats-markdown" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Hozzáadás a Chrome-hoz</a>
+      <!-- i18n:switch --><details class="lang-switch"><summary aria-label="Nyelv: Magyar"><svg class="lang-globe" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span class="lang-name">Magyar</span><span class="lang-code" aria-hidden="true">hu</span></summary><ul><li><a href="/formats/markdown/" hreflang="en" lang="en">English</a></li><li><a href="/de/formate/markdown/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/formats/markdown/" hreflang="fr" lang="fr">Français</a></li><li><a href="/es/formatos/markdown/" hreflang="es" lang="es">Español</a></li><li><a href="/it/formati/markdown/" hreflang="it" lang="it">Italiano</a></li><li><a href="/pt/formatos/markdown/" hreflang="pt" lang="pt">Português</a></li><li><a href="/nl/formaten/markdown/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/sv/format/markdown/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="/nb/formater/markdown/" hreflang="nb" lang="nb">Norsk</a></li><li><a href="/da/formater/markdown/" hreflang="da" lang="da">Dansk</a></li><li><a href="/fi/formaatit/markdown/" hreflang="fi" lang="fi">Suomi</a></li><li><a href="/pl/formaty/markdown/" hreflang="pl" lang="pl">Polski</a></li><li><a href="/cs/formaty/markdown/" hreflang="cs" lang="cs">Čeština</a></li><li><a href="/sk/formaty/markdown/" hreflang="sk" lang="sk">Slovenčina</a></li><li><a href="/hu/formatumok/markdown/" hreflang="hu" lang="hu" aria-current="true">Magyar</a></li><li><a href="/ro/formate/markdown/" hreflang="ro" lang="ro">Română</a></li><li><a href="/el/formats/markdown/" hreflang="el" lang="el">Ελληνικά</a></li><li><a href="/tr/formatlar/markdown/" hreflang="tr" lang="tr">Türkçe</a></li><li><a href="/ja/formats/markdown/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/ko/formats/markdown/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/zh-hant/formats/markdown/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li><li><a href="/he/formats/markdown/" hreflang="he" lang="he">עברית</a></li><li><a href="/ar/formats/markdown/" hreflang="ar" lang="ar">العربية</a></li></ul></details><!-- /i18n:switch -->
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menü">☰</button>
+    </div>
+  </div>
+</header>
+<nav class="crumbs" aria-label="Morzsamenü"><a href="/hu/">Kezdőlap</a> / <a href="/hu/formatumok/">Formátumok</a> / Markdown</nav>
+<main id="main">
+<article class="band prose">
+<p class="article-meta">Frissítve: <time datetime="2026-09">2026. szeptember</time> · Bővítmény 1.16.2</p>
+<h1 class="page-h1">Claude chat exportálása Markdownba jegyzetekhez</h1>
+<p class="lead">A Claude chat exportálása Markdownba így megy: telepítsd a Download Claude conversations bővítményt, nyisd meg a beszélgetést a claude.ai oldalon, kattints a narancssárga gombra, válaszd a Markdown formátumot, majd kattints az „Export” (exportálás) gombra. A Chrome egy .md fájlt ment címsorokkal, kódblokkokkal és táblázatokkal. A Markdown-exportálás korlátlan és ingyenes, fiók nélkül. Oldalakra van szükséged? Ugyanebben a legördülő listában ott a <a href="/hu/claude-chat-pdf-ben/">PDF</a> is.</p>
+<aside class="trust-badge" aria-label="A bővítményről">
+  <span class="trophy" aria-hidden="true">🧩</span>
+  <div>
+    <strong>Download Claude conversations — ingyenes Chrome-bővítmény a claude.ai-hoz</strong>
+    <span>1.16.2-es verzió (2026. szeptember) — korlátlan Markdown-, szöveg-, JSON-, XML-, CSV- és PNG-exportálás fiók nélkül; a PDF és a tömeges ZIP napi 3 alkalomig ingyenes</span>
+  </div>
+</aside>
+<nav class="toc" aria-label="Ezen az oldalon">
+  <p>Ezen az oldalon</p>
+  <ol>
+    <li><a href="#how-to">Hogyan exportálhatom a Claude chatet Markdownba?</a></li>
+    <li><a href="#why-markdown">Miért érdemes Markdownba menteni a chatet jegyzetekhez?</a></li>
+    <li><a href="#preserved">Mi marad meg a Markdown-exportban?</a></li>
+    <li><a href="#bulk">Exportálhatok tömegesen Markdownba?</a></li>
+    <li><a href="#vs-json">Markdown vagy JSON a Claude chat exportálásához?</a></li>
+    <li><a href="#cost">Kerül valamibe a Markdown-exportálás?</a></li>
+    <li><a href="#faq">GYIK: Claude chat exportálása Markdownba</a></li>
+  </ol>
+</nav>
+
+<h2 id="how-to">Hogyan exportálhatom a Claude chatet Markdownba?</h2>
+<p>Nyisd meg a beszélgetést a claude.ai oldalon a Chrome-ban, kattints az üzenetmező melletti narancssárga gombra, válaszd a Markdown formátumot, majd kattints az „Export” gombra. A Download Claude conversations helyben, a gépeden írja meg a .md fájlt. Az 1.16.2-es verzióban így működik a Markdown-export. Angolul sokan így keresik: „claude export chat to markdown”.</p>
+<ol>
+<li>Telepítsd a Download Claude conversations bővítményt a Chrome Web Store-ból.</li>
+<li>Töltsd újra a claude.ai oldalt, és nyiss meg egy valódi beszélgetés-URL-t, ne az üres kezdő szerkesztőt.</li>
+<li>Kattints az üzenetmezőtől jobbra lévő narancssárga letöltés gombra.</li>
+<li>Válaszd a Markdown formátumot. A bővítmény megjegyzi a legutóbb használt formátumot. A „Select” (kijelölés) gombbal csak a kívánt üzeneteket jelölheted be.</li>
+<li>Kattints az „Export” gombra. A Chrome a böngésző letöltési API-ján keresztül menti a .md fájlt. Vagy kattints a „Copy” (másolás) gombra, és a Markdown a vágólapra kerül.</li>
+</ol>
+<p>A Markdown-exportáláshoz nem kell bejelentkezni. Az egyes chatek Markdown-exportja korlátlan, névtelen, és semmit sem küld a szervereinkre. Google-bejelentkezést csak a PDF és a tömeges „Export All” (összes exportálása) kér. A részletek: <a href="/hu/hogyan-mukodik/">hogyan működik</a>.</p>
+<p>Ha nem látod a narancssárga gombot, akkor nem beszélgetés-URL-en vagy, a lapot telepítés után újra kell tölteni, vagy a bővítmény még a Chrome puzzle-menüjében rejtőzik. Rögzítsd a Download Claude conversations bővítményt, majd frissítsd a claude.ai oldalt. A tartalomszkript sosem fut a Claude Desktop alkalmazásban vagy a Claude Code terminálban.</p>
+<div class="callout callout-tip">
+  <p><strong>Egy chat vagy sok.</strong> A narancssárga gomb a megnyitott beszélgetést exportálja Markdownba. Sok .md fájlhoz nyisd meg a „View and Download All Conversations” (összes beszélgetés megtekintése és letöltése) nézetet, és indítsd el az „Export All” funkciót Markdown formátummal: egy ZIP, az ingyenes csomagban napi 3 chat — lásd: <a href="/hu/osszes-claude-chat-exportalasa/">tömeges „Export All”</a>.</p>
+</div>
+
+<h2 id="why-markdown">Miért érdemes Markdownba menteni a chatet jegyzetekhez?</h2>
+<p>Akkor válaszd a Markdownt, ha a fájlt Obsidianben, GitHub-wikiben vagy bármilyen szerkesztőben olvasod, amely megjeleníti a címsorokat és a kódblokkokat. A .md fájl közben sima szöveg marad, amelyben kereshetsz, és amelynek a változásait összehasonlíthatod. Elemzőprogramokhoz a JSON jobb; a PNG kép, amelyben nem lehet keresni.</p>
+<p>A claude.ai oldalról másolt-beillesztett szövegből általában eltűnik a behúzás, a táblázatok pedig szétesnek. A nyomtatás (Ctrl/Cmd+P) megtartja az oldalsávot, és egy hosszú kódblokkot gyakran több oldalra tör. Markdown-exportnál a kódblokkokon megmarad a nyelvcímke, a táblázatok pedig táblázatok maradnak. Ezért választják az írók elsőként ezt a formátumot.</p>
+<div class="expert-quote">
+  <p>A Markdownt tekintjük alapértelmezett, ember által olvasható fájlnak: címsorok, nyelvcímkés kódblokkok és táblázatok a claude.ai beszélgetésből. Ha inkább oldalakra van szükséged, válaszd ugyanabban a panelben a <a href="/hu/claude-chat-pdf-ben/">PDF</a> formátumot. Ezt a böngésző tördeli, oldalmérettel, margókkal és tartalomjegyzékkel.</p>
+  <footer>A Download Claude conversations csapata</footer>
+</div>
+<p>Ugyanezt a bővítményt sokan Claude Chat Downloader néven keresik. A Markdown-export ugyanaz a narancssárga gomb, nem egy második termék. A jogi oldalakon még szerepelhet a Claude Exporter név is. Mindegyik név a Download Claude conversations bővítményt jelenti.</p>
+
+<h2 id="preserved">Mi marad meg a Markdown-exportban?</h2>
+<p>Markdownba exportáláskor a Download Claude conversations megtartja a címsorokat, a nyelvcímkés és behúzott kódblokkokat, a táblázatokat és a hivatkozásokat. A gondolkodási blokkok, a webes keresési források és az eszköz- / MCP-lépések egyenként bekapcsolhatók: a „Thinking” (gondolkodás) jelölőnégyzet az exportpanelen van, a másik kettőt a beállításokban kapcsolod be. A metaadatok (cím, időbélyegek, modell) is bekerülhetnek. A feladószűrővel a .md fájl tartalmazhat minden üzenetet, csak az emberi vagy csak az asszisztensi üzeneteket.</p>
+<p>Az artifactok elrendezése az 1.16.2-es verzióban valódi kapcsoló: „Original”, „Inline”, „Nested” vagy „Flat” (eredeti, szövegbe ágyazott, egymásba ágyazott vagy lapos). A Markdown-export követheti a képernyőn látható artifact-szerkezetet, egyetlen lineáris dokumentummá lapíthatja, vagy egy ZIP-en belül külön mappába teheti az artifactokat. A beállításokban a képeket is beágyazhatod a .md fájlba. A teljes lista: <a href="/hu/funkciok/">a Chrome-bővítmény funkciói</a>. A Markdown nem őrzi meg az üzenetbuborékok színeit; vizuális pillanatképhez használd a PNG-t, oldalakhoz a PDF-et.</p>
+<table>
+  <caption>Mit tartalmaz egy Claude chat Markdown-exportja</caption>
+  <thead>
+    <tr>
+      <th scope="col">Elem</th>
+      <th scope="col">Benne van a .md fájlban?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Címsorok és listák</td>
+      <td>Igen</td>
+    </tr>
+    <tr>
+      <td>Kódblokk + nyelvcímke</td>
+      <td>Igen</td>
+    </tr>
+    <tr>
+      <td>Táblázatok</td>
+      <td>Igen, Markdown-táblázatként</td>
+    </tr>
+    <tr>
+      <td>Gondolkodási blokkok</td>
+      <td>Ha a „Thinking” kapcsoló be van kapcsolva</td>
+    </tr>
+    <tr>
+      <td>Artifactok</td>
+      <td>Igen, „Original” / „Inline” / „Nested” / „Flat” elrendezésben</td>
+    </tr>
+    <tr>
+      <td>Képek</td>
+      <td>Beágyazva, ha a beállításokban be van kapcsolva az „Embed images in Markdown” (képek beágyazása Markdownba)</td>
+    </tr>
+    <tr>
+      <td>Webes keresési források, eszköz- / MCP-lépések</td>
+      <td>Ha bekapcsolod őket</td>
+    </tr>
+    <tr>
+      <td>Vizuális keret / PDF-oldalak</td>
+      <td>Nem — a Markdown szöveg; oldalakhoz válaszd a PDF-et</td>
+    </tr>
+  </tbody>
+</table>
+<p>Nagyon hosszú beszélgetésnél görgess addig, amíg a claude.ai be nem tölti a korábbi üzeneteket is, és csak utána exportálj. A bővítmény csak azt tudja kiírni, amit az oldal már megjelenített. A félig betöltött beszélgetésből félig kész .md fájl lesz, ami hibának tűnik, pedig általában csak a DOM nincs végiggörgetve.</p>
+
+<h2 id="bulk">Exportálhatok tömegesen Markdownba?</h2>
+<p>Igen. Nyisd meg a „View and Download All Conversations” nézetet, állítsd a „Chat format” (chatformátum) értékét Markdownra, szűrd a táblázatot, majd kattints az „Export All” gombra. A Chrome egy ZIP-et ment, benne chatenként egy .md fájllal. Az ingyenes csomagban ez napi 3 chat Google-bejelentkezéssel, a PDF-fel közösen. A Pro havi 3,99 USD vagy évi 26,99 USD áron megszünteti ezt a korlátot a tömeges Markdown-exportnál.</p>
+<p>Az irányítópult (Dashboard) a claude.ai előzményeit listázza: név szerinti keresés, „All conversations”, „New”, „Updated” és „Previously exported” szűrők (összes beszélgetés, új, frissített, korábban exportált), „Chat” és „Cowork” fülek, valamint projektkeresés. A „New” azt jelenti, hogy a chatet még nem exportáltad a Download Claude conversations bővítménnyel. A „Previously exported” a már mentett chateket követi, így egy második „Export All” kihagyhatja őket.</p>
+<div class="callout callout-warn">
+  <p><strong>A napi korlát fiókonként érvényes.</strong> Az ingyenes csomagban napi három chat, a PDF-fel közösen. Ha 40 beszélgetést jelölsz ki, és már csak 3 maradt, a teljes köteg blokkolva lesz, nem csak megrövidül. Jelölj ki kevesebbet, vagy használd a Pro csomagot. A narancssárga gombbal indított egyedi .md exportok korlátlanok maradnak.</p>
+</div>
+<p>A tömeges Markdown-export az irányítópult „Chats”, „Thinking”, „Metadata”, „Tools” és „Sources” jelölőnégyzeteit (chatek, gondolkodás, metaadatok, eszközök, források) és az artifact-formátumot használja. Az „Export All” nem az Anthropic késleltetett ZIP-je, hanem egy ZIP, benne chatenkénti .md fájlokkal. Ha a teljes fiók egyetlen archívumára van szükséged, az a Settings → Privacy → Export data (a feliratok magyarul is megjelenhetnek, ha a claude.ai nyelve magyar), és az JSON, nem Markdown.</p>
+
+<h2 id="vs-json">Markdown vagy JSON a Claude chat exportálásához?</h2>
+<p>Markdownt válassz, ha ember olvassa majd a fájlt. JSON-t, ha egy szkript dolgozza fel az üzenetfát. A Download Claude conversations mindkettőt egy legördülő listában kínálja, a PDF, a sima szöveg, az XML, a CSV és a PNG mellett. Formátum-áttekintő: <a href="/hu/formatumok/">Claude chat exportformátumok</a>.</p>
+<table>
+  <caption>A Markdown és a többi claude.ai exportfájl összevetése</caption>
+  <thead>
+    <tr>
+      <th scope="col">Formátum</th>
+      <th scope="col">Mikor válaszd</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Markdown</td>
+      <td>Jegyzetek, Obsidian, GitHub, wikik</td>
+    </tr>
+    <tr>
+      <td>JSON</td>
+      <td>Összehasonlítások, adatfolyamatok, eszközök — <a href="/hu/formatumok/json/">JSON-útmutató</a></td>
+    </tr>
+    <tr>
+      <td>Sima szöveg</td>
+      <td>Jelölés nélküli archívum, bárhová beilleszthető</td>
+    </tr>
+    <tr>
+      <td>XML</td>
+      <td>Olyan rendszerhez, amely XML-t követel meg</td>
+    </tr>
+    <tr>
+      <td>CSV</td>
+      <td>Táblázatkezelők, üzenetenként egy sor</td>
+    </tr>
+    <tr>
+      <td>PDF</td>
+      <td>Olvasás, nyomtatás, küldés — <a href="/hu/claude-chat-pdf-ben/">PDF-útmutató</a></td>
+    </tr>
+    <tr>
+      <td>PNG</td>
+      <td>Kép a beszélgetésről, nem kereshető szöveg</td>
+    </tr>
+  </tbody>
+</table>
+<p>Az Anthropic Export data is JSON, de az egy e-mailben érkező fiók-ZIP, nem chatenkénti .md fájl. Ebben a kérésben nem választhatsz Markdownt. A böngészős nyomtatás a weboldal pillanatképe. Egyik sem helyettesíti a narancssárga gombbal végzett Markdown-exportot.</p>
+<p>A bővítmény csak a claude.ai oldalon fut, a Chrome-ban. A Claude Desktop és a Claude Code terminál nem kap Markdown-gombot. A Claude Code on the web (claude.ai/code) a claude.ai-on fut, így ugyanúgy exportálható, mint bármely chat. Ha egy beszélgetés a claude.ai-on is megvan, nyisd meg ott, és exportáld Markdownba. A terminálos Claude Code <code>/export</code> parancsa egy másik termékútvonal.</p>
+
+<h2 id="cost">Kerül valamibe a Markdown-exportálás?</h2>
+<p>Nem. Egy chat Markdown-exportja ingyenes és korlátlan, fiók és számláló nélkül — ugyanúgy, mint a JSON, a szöveg, az XML, a CSV és a PNG. Csak a PDF-nek és a tömeges „Export All” funkciónak van ingyenes korlátja: napi 3 Google-bejelentkezéssel. A Pro havi 3,99 USD vagy évi 26,99 USD a Paddle-en keresztül. A Download Claude conversations nem számol fel külön díjat a Markdownért.</p>
+<p>A korlát a tömeges Markdown-exportnál jelenik meg. Az „Export All” ZIP minden chatje egyet használ el a napi 3-ból, a számláló pedig éjfélkor (UTC) nullázódik. A Pro megszünteti a korlátot, és ugyanazzal a Google-fiókkal új gépen is visszaállítható. A Paddle a hivatalos eladó (merchant of record); ez a csapat sosem látja a kártyaszámokat.</p>
+<p>Nincs szükséged az Anthropic fizetős claude.ai csomagjára. Elég egy bejelentkezés, amellyel a beszélgetés betölthető a Chrome-ban. A Team és az Enterprise csomag ugyanúgy működik a narancssárga gombbal, mint a Free. Az 1.16.2-es verzió (2026. szeptember) továbbra sem készít Word- vagy Notion-fájlt.</p>
+
+<h2 id="faq">GYIK: Claude chat exportálása Markdownba</h2>
+<p>Ezek a kérdések a Download Claude conversations 1.16.2 Markdown-exportjáról szólnak: kódblokkok, tömeges „Export All”, az Anthropic ZIP-je, költség, PDF és Desktop. Minden válasz termékinformáció. Az oldal fejlécében lévő FAQPage JSON-LD ugyanezt a listát tartalmazza.</p>
+
+<h3>Elveszik a kód, ha Markdownba exportálom a Claude chatet?</h3>
+<p>Nem. A kódblokkok megtartják a nyelvcímkéjüket és a behúzásukat, szemben a claude.ai oldalról egyszerűen kimásolt szöveggel. A táblázatok Markdown-táblázatok maradnak. Ez a fő ok, amiért érdemes Markdownba exportálni a chatet a kézi szövegkijelölés helyett.</p>
+
+<h3>Exportálhatom tömegesen Markdownba a Claude chateket?</h3>
+<p>Igen. Az irányítópult „Export All” funkciója támogatja a Markdownt, és egyetlen ZIP-be menti a .md fájlokat. Az ingyenes csomagban ez napi 3 chat Google-bejelentkezéssel; a Pro korlátlan.</p>
+
+<h3>Ugyanaz a Markdown, mint az Anthropic Export data?</h3>
+<p>Nem. Az Anthropic hivatalos exportja a teljes fiók JSON-ZIP-je, amelyet várakozás után e-mailben kapsz meg. A Markdown-export a Download Claude conversations bővítményből egy chatenkénti (vagy kijelölésenkénti) .md fájl.</p>
+
+<h3>Többe kerül a Markdown, mint a többi formátum?</h3>
+<p>Nem. Az egyes chatek Markdown-exportja korlátlan és fiók nélküli, ugyanúgy, mint a JSON, a szöveg, az XML, a CSV és a PNG. Csak a PDF-nek és a tömeges ZIP-nek van napi 3-as ingyenes korlátja. A Pro havi 3,99 USD vagy évi 26,99 USD.</p>
+
+<h3>Exportálhatom Markdownba a Claude chatet a Desktop alkalmazásban?</h3>
+<p>Nem. A Download Claude conversations csak a claude.ai oldalon fut, a Chrome-ban. A Claude Desktop sosem mutatja a Markdown legördülő listát. Nyisd meg ugyanazt a beszélgetést a claude.ai-on, ha ott is megvan.</p>
+
+<h3>PDF-et is készít a Markdown-export?</h3>
+<p>Nem. A Markdown egy .md szövegfájl. Oldalakhoz válaszd inkább a PDF-et ugyanabban a panelben: ezt a böngésző készíti el oldalmérettel, margókkal és tartalomjegyzékkel. A PDF-hez Google-bejelentkezés kell, és az ingyenes csomagban beleszámít a napi 3 alkalomba.</p>
+
+<h3>Kell Pro egyetlen Claude chat Markdownba exportálásához?</h3>
+<p>Nem. Egyáltalán nem kell fiók. Az egyes chatek Markdown-exportja az ingyenes csomagban korlátlan. A havi 3,99 USD vagy évi 26,99 USD árú Pro csak a tömeges „Export All” és a PDF napi 3-as korlátját oldja fel.</p>
+</article>
+</main>
+<section class="final-cta page-cta" aria-label="Telepítés">
+  <div class="wrap">
+    <div class="final-cta-panel">
+      <p class="final-kicker">Download Claude conversations</p>
+      <h2>Telepítsd a bővítményt, és töltsd le a Claude chatet másodpercek alatt</h2>
+      <p>Mentsd a fontos Claude-beszélgetéseket PDF, Markdown, JSON, szöveg, CSV, XML vagy PNG formátumba — helyben, a Chrome-ból.</p>
+      <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=hu-formats-markdown" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Hozzáadás a Chrome-hoz</a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="logo" href="/hu/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
+      <p class="legal-note">Chrome-bővítmény Claude.ai-chatek letöltéséhez PDF, Markdown, JSON, egyszerű szöveg, CSV, XML vagy PNG formátumban.</p>
+    </div>
+    <div>
+      <h2>Telepítés</h2>
+      <a class="install-link" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=hu-footer" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Chrome-bővítmény</a>
+    </div>
+    <div>
+      <h2>Termék</h2>
+      <a href="/hu/funkciok/">Funkciók</a>
+      <a href="/hu/formatumok/">Formátumok</a>
+      <a href="/hu/osszes-claude-chat-exportalasa/">Összes chat exportálása</a>
+      <a href="/hu/hogyan-mukodik/">Hogyan működik</a>
+    </div>
+    <div>
+      <h2>Útmutatók</h2>
+      <a href="/hu/claude-chat-letoltese/">Claude-chat letöltése</a>
+      <a href="/hu/hogyan-exportaljam-a-claude-chatet/">Hogyan exportáljam a Claude-chatet?</a>
+      <a href="/hu/claude-chat-exportalasa/">Claude-chat exportálása</a>
+      <a href="/hu/claude-beszelgetes-kinyero/">Claude-beszélgetés kinyerő</a>
+      <a href="/hu/claude-code-beszelgetes-exportalasa/">Claude Code-beszélgetés exportálása</a>
+      <a href="/hu/claude-chat-pdf-ben/">Claude-chat PDF-ben</a>
+      <a href="/hu/claude-desktop-chat-exportalasa/">Claude Desktop-chat exportálása</a>
+      <a href="/hu/claude-beszelgetes-exportalasa/">Claude-beszélgetés exportálása</a>
+      <a href="/hu/claude-beszelgetes-mentese/">Claude-beszélgetés mentése</a>
+      <a href="/hu/claude-beszelgetes-letoltese/">Claude-beszélgetés letöltése</a>
+    </div>
+    <div>
+      <h2>Jogi információk</h2>
+      <a href="/hu/rolunk/">Rólunk</a>
+      <a href="/hu/rolunk/#contact">Kapcsolat</a>
+      <a href="/privacy/" hreflang="en">Adatvédelem (angolul)</a>
+      <a href="/terms/" hreflang="en">Felhasználási feltételek (angolul)</a>
+      <a href="/refund/" hreflang="en">Visszatérítés (angolul)</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Download Claude conversations. Minden jog fenntartva.</div>
+    <div>
+      <a href="/privacy/" hreflang="en">Adatvédelmi irányelvek (angolul)</a>
+      <a href="/terms/" hreflang="en">Felhasználási feltételek (angolul)</a>
+      <a href="/refund/" hreflang="en">Visszatérítés (angolul)</a>
+    </div>
+  </div>
+  <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/formats/markdown/" hreflang="en" lang="en">English</a> <a href="/de/formate/markdown/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/formats/markdown/" hreflang="fr" lang="fr">Français</a> <a href="/es/formatos/markdown/" hreflang="es" lang="es">Español</a> <a href="/it/formati/markdown/" hreflang="it" lang="it">Italiano</a> <a href="/pt/formatos/markdown/" hreflang="pt" lang="pt">Português</a> <a href="/nl/formaten/markdown/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/format/markdown/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/formater/markdown/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/formater/markdown/" hreflang="da" lang="da">Dansk</a> <a href="/fi/formaatit/markdown/" hreflang="fi" lang="fi">Suomi</a> <a href="/pl/formaty/markdown/" hreflang="pl" lang="pl">Polski</a> <a href="/cs/formaty/markdown/" hreflang="cs" lang="cs">Čeština</a> <a href="/sk/formaty/markdown/" hreflang="sk" lang="sk">Slovenčina</a> <a href="/hu/formatumok/markdown/" hreflang="hu" lang="hu">Magyar</a> <a href="/ro/formate/markdown/" hreflang="ro" lang="ro">Română</a> <a href="/el/formats/markdown/" hreflang="el" lang="el">Ελληνικά</a> <a href="/tr/formatlar/markdown/" hreflang="tr" lang="tr">Türkçe</a> <a href="/ja/formats/markdown/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/formats/markdown/" hreflang="ko" lang="ko">한국어</a> <a href="/zh-hant/formats/markdown/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="/he/formats/markdown/" hreflang="he" lang="he">עברית</a> <a href="/ar/formats/markdown/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
+  <p class="disclaimer">A chateket a böngésződ dolgozza fel · Google-bejelentkezés csak PDF-hez, tömeges exportáláshoz és Pro csomaghoz · Nem áll kapcsolatban az Anthropic, PBC-vel. A Claude az Anthropic védjegye. Független Chrome-bővítmény – nem hivatalos Anthropic-termék. Támogatás: <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

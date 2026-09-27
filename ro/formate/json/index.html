@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Export conversație Claude în JSON pentru scripturi</title>
+  <meta name="description" content="Exportați un chat Claude AI în JSON, cu arborele complet de mesaje — altceva decât arhiva ZIP a contului de la Anthropic. Un singur chat sau în bloc.">
+  <link rel="canonical" href="https://chat-downloader.com/ro/formate/json/">
+  <!-- i18n:head -->
+  <link rel="alternate" hreflang="en" href="https://chat-downloader.com/formats/json/">
+  <link rel="alternate" hreflang="de" href="https://chat-downloader.com/de/formate/json/">
+  <link rel="alternate" hreflang="fr" href="https://chat-downloader.com/fr/formats/json/">
+  <link rel="alternate" hreflang="es" href="https://chat-downloader.com/es/formatos/json/">
+  <link rel="alternate" hreflang="it" href="https://chat-downloader.com/it/formati/json/">
+  <link rel="alternate" hreflang="pt" href="https://chat-downloader.com/pt/formatos/json/">
+  <link rel="alternate" hreflang="nl" href="https://chat-downloader.com/nl/formaten/json/">
+  <link rel="alternate" hreflang="sv" href="https://chat-downloader.com/sv/format/json/">
+  <link rel="alternate" hreflang="nb" href="https://chat-downloader.com/nb/formater/json/">
+  <link rel="alternate" hreflang="da" href="https://chat-downloader.com/da/formater/json/">
+  <link rel="alternate" hreflang="fi" href="https://chat-downloader.com/fi/formaatit/json/">
+  <link rel="alternate" hreflang="pl" href="https://chat-downloader.com/pl/formaty/json/">
+  <link rel="alternate" hreflang="cs" href="https://chat-downloader.com/cs/formaty/json/">
+  <link rel="alternate" hreflang="sk" href="https://chat-downloader.com/sk/formaty/json/">
+  <link rel="alternate" hreflang="hu" href="https://chat-downloader.com/hu/formatumok/json/">
+  <link rel="alternate" hreflang="ro" href="https://chat-downloader.com/ro/formate/json/">
+  <link rel="alternate" hreflang="el" href="https://chat-downloader.com/el/formats/json/">
+  <link rel="alternate" hreflang="tr" href="https://chat-downloader.com/tr/formatlar/json/">
+  <link rel="alternate" hreflang="ja" href="https://chat-downloader.com/ja/formats/json/">
+  <link rel="alternate" hreflang="ko" href="https://chat-downloader.com/ko/formats/json/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://chat-downloader.com/zh-hant/formats/json/">
+  <link rel="alternate" hreflang="he" href="https://chat-downloader.com/he/formats/json/">
+  <link rel="alternate" hreflang="ar" href="https://chat-downloader.com/ar/formats/json/">
+  <link rel="alternate" hreflang="x-default" href="https://chat-downloader.com/formats/json/">
+  <meta property="og:locale" content="ro_RO">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="it_IT">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="sv_SE">
+  <meta property="og:locale:alternate" content="nb_NO">
+  <meta property="og:locale:alternate" content="da_DK">
+  <meta property="og:locale:alternate" content="fi_FI">
+  <meta property="og:locale:alternate" content="pl_PL">
+  <meta property="og:locale:alternate" content="cs_CZ">
+  <meta property="og:locale:alternate" content="sk_SK">
+  <meta property="og:locale:alternate" content="hu_HU">
+  <meta property="og:locale:alternate" content="el_GR">
+  <meta property="og:locale:alternate" content="tr_TR">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <meta property="og:locale:alternate" content="zh_TW">
+  <meta property="og:locale:alternate" content="he_IL">
+  <meta property="og:locale:alternate" content="ar_AE">
+  <!-- /i18n:head -->
+  <meta property="og:title" content="Export conversație Claude în JSON pentru scripturi">
+  <meta property="og:description" content="Exportați un chat Claude AI în JSON, cu arborele complet de mesaje — altceva decât arhiva ZIP a contului de la Anthropic. Un singur chat sau în bloc.">
+  <meta property="og:url" content="https://chat-downloader.com/ro/formate/json/">
+  <meta property="og:image" content="https://chat-downloader.com/assets/widget-guide.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chat Downloader">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Export conversație Claude în JSON pentru scripturi">
+  <meta name="twitter:description" content="Exportați un chat Claude AI în JSON, cu arborele complet de mesaje — altceva decât arhiva ZIP a contului de la Anthropic. Un singur chat sau în bloc.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME1YXGZKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GME1YXGZKR');
+  </script>
+  
+  
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Pot exporta conversații Claude în JSON în bloc?","acceptedAnswer":{"@type":"Answer","text":"Da. „Export All” din Dashboard acceptă JSON și salvează o arhivă ZIP cu câte un fișier JSON pe chat. Pe planul gratuit acoperă 3 chaturi pe zi, cu autentificare Google; Pro, la 3,99 USD pe lună sau 26,99 USD pe an, este nelimitat."}},{"@type":"Question","name":"Structura JSON este documentată?","acceptedAnswer":{"@type":"Answer","text":"Reproduce arborele de mesaje al claude.ai: expeditor, blocuri de conținut, marcaje de timp și metadatele modelului, cu artefacte, blocuri de gândire, surse ale căutării web și pași tool / MCP incluși când activați aceste opțiuni. Nu este schema arhivei ZIP a contului de la Anthropic."}},{"@type":"Question","name":"Am nevoie de Pro pentru exportul unei conversații Claude în JSON?","acceptedAnswer":{"@type":"Answer","text":"Nu. Exporturile JSON ale unui singur chat sunt nelimitate și nu cer cont, la fel ca toate formatele în afară de PDF. Pro, la 3,99 USD pe lună sau 26,99 USD pe an, ridică doar limita de 3 pe zi pentru PDF și pentru „Export All” în bloc."}},{"@type":"Question","name":"Pot compara două exporturi JSON ale aceluiași chat?","acceptedAnswer":{"@type":"Answer","text":"Da. De fiecare dată când exportați conversația Claude în JSON, primiți un fișier de sine stătător, construit la fel. Compararea a două exporturi ale aceluiași fir, făcute în momente diferite, funcționează ca pentru orice alt fișier JSON."}},{"@type":"Question","name":"Acest JSON este același lucru cu exportul de date Anthropic?","acceptedAnswer":{"@type":"Answer","text":"Nu. Exportul de date Anthropic este o arhivă ZIP a întregului cont, livrată cu întârziere. Download Claude conversations scrie imediat, în Chrome, un fișier JSON per chat (sau per selecție). Ambele pot fi JSON, dar nu sunt interschimbabile."}},{"@type":"Question","name":"Exportul conversației Claude în JSON creează un PDF?","acceptedAnswer":{"@type":"Answer","text":"Nu. JSON înseamnă date structurate. Pentru pagini, alegeți PDF în același panou; cele șapte formate sunt PDF, Markdown, JSON, text simplu, XML, CSV și PNG. PDF-ul cere autentificare Google și intră în limita de 3 pe zi pe planul gratuit."}},{"@type":"Question","name":"Exportul JSON funcționează în Claude Desktop?","acceptedAnswer":{"@type":"Answer","text":"Nu. Extensia Chrome se injectează doar pe claude.ai. Claude Desktop nu afișează niciodată opțiunea JSON. Deschideți același fir pe claude.ai în Chrome, dacă există acolo."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Acasă","item":"https://chat-downloader.com/ro/"},{"@type":"ListItem","position":2,"name":"Formate","item":"https://chat-downloader.com/ro/formate/"},{"@type":"ListItem","position":3,"name":"JSON","item":"https://chat-downloader.com/ro/formate/json/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Salt la conținut</a>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a class="logo" href="/ro/">
+        <img src="/assets/icon.svg" alt="">
+        <span>Download Claude conversations</span>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="/ro/cum-descarcati-chat-claude/">Descărcare</a><a href="/ro/cum-exportati-chat-claude/">Export</a><a href="/ro/export-toate-chaturile-claude/">Tot istoricul</a><a href="/ro/formate/">Formate</a><a href="/ro/#faq">Întrebări</a>
+        <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=ro-formats-json" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Adăugați în Chrome</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=ro-formats-json" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Adăugați în Chrome</a>
+      <!-- i18n:switch --><details class="lang-switch"><summary aria-label="Limbă: Română"><svg class="lang-globe" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span class="lang-name">Română</span><span class="lang-code" aria-hidden="true">ro</span></summary><ul><li><a href="/formats/json/" hreflang="en" lang="en">English</a></li><li><a href="/de/formate/json/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/formats/json/" hreflang="fr" lang="fr">Français</a></li><li><a href="/es/formatos/json/" hreflang="es" lang="es">Español</a></li><li><a href="/it/formati/json/" hreflang="it" lang="it">Italiano</a></li><li><a href="/pt/formatos/json/" hreflang="pt" lang="pt">Português</a></li><li><a href="/nl/formaten/json/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/sv/format/json/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="/nb/formater/json/" hreflang="nb" lang="nb">Norsk</a></li><li><a href="/da/formater/json/" hreflang="da" lang="da">Dansk</a></li><li><a href="/fi/formaatit/json/" hreflang="fi" lang="fi">Suomi</a></li><li><a href="/pl/formaty/json/" hreflang="pl" lang="pl">Polski</a></li><li><a href="/cs/formaty/json/" hreflang="cs" lang="cs">Čeština</a></li><li><a href="/sk/formaty/json/" hreflang="sk" lang="sk">Slovenčina</a></li><li><a href="/hu/formatumok/json/" hreflang="hu" lang="hu">Magyar</a></li><li><a href="/ro/formate/json/" hreflang="ro" lang="ro" aria-current="true">Română</a></li><li><a href="/el/formats/json/" hreflang="el" lang="el">Ελληνικά</a></li><li><a href="/tr/formatlar/json/" hreflang="tr" lang="tr">Türkçe</a></li><li><a href="/ja/formats/json/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/ko/formats/json/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/zh-hant/formats/json/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li><li><a href="/he/formats/json/" hreflang="he" lang="he">עברית</a></li><li><a href="/ar/formats/json/" hreflang="ar" lang="ar">العربية</a></li></ul></details><!-- /i18n:switch -->
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Meniu">☰</button>
+    </div>
+  </div>
+</header>
+<nav class="crumbs" aria-label="Traseu de navigare"><a href="/ro/">Acasă</a> / <a href="/ro/formate/">Formate</a> / JSON</nav>
+<main id="main">
+<article class="band prose">
+<p class="article-meta">Actualizat <time datetime="2026-09">septembrie 2026</time> · Extensia 1.16.2</p>
+<h1 class="page-h1">Export conversație Claude în JSON pentru scripturi</h1>
+<p class="lead">Pentru exportul unei conversații Claude în JSON, instalați Download Claude conversations, deschideți firul pe claude.ai, faceți clic pe butonul portocaliu, alegeți JSON, apoi apăsați „Export” (Exportă). Chrome salvează un fișier per chat, cu arborele mesajelor. Acest fișier nu este arhiva ZIP a contului de la Anthropic. Exportul JSON este nelimitat și gratuit, fără cont; Pro (3,99 USD pe lună sau 26,99 USD pe an) contează doar pentru exportul în bloc și PDF.</p>
+<aside class="trust-badge" aria-label="Despre extensie">
+  <span class="trophy" aria-hidden="true">🧩</span>
+  <div>
+    <strong>Download Claude conversations — extensie Chrome gratuită pentru claude.ai</strong>
+    <span>Versiunea 1.16.2 (septembrie 2026) — exporturi nelimitate în Markdown, text, JSON, XML, CSV și PNG, fără cont; PDF și ZIP în bloc gratuite până la 3 pe zi</span>
+  </div>
+</aside>
+<nav class="toc" aria-label="Pe această pagină">
+  <p>Pe această pagină</p>
+  <ol>
+    <li><a href="#how-to">Cum fac exportul unei conversații Claude în JSON?</a></li>
+    <li><a href="#when">Când merită exportul în JSON?</a></li>
+    <li><a href="#inside">Ce conține exportul JSON al unei conversații Claude?</a></li>
+    <li><a href="#vs-zip">JSON-ul conversației sau exportul de date Anthropic?</a></li>
+    <li><a href="#bulk">Pot exporta conversații Claude în JSON în bloc?</a></li>
+    <li><a href="#cost">Exportul JSON are nevoie de Pro?</a></li>
+    <li><a href="#faq">Întrebări frecvente: export conversație Claude în JSON</a></li>
+  </ol>
+</nav>
+
+<h2 id="how-to">Cum fac exportul unei conversații Claude în JSON?</h2>
+<p>Deschideți conversația pe claude.ai în Chrome, faceți clic pe butonul portocaliu de lângă caseta de mesaj, alegeți JSON, apoi apăsați „Export”. Download Claude conversations scrie fișierul local. Așa funcționează exportul unei conversații Claude în JSON în versiunea 1.16.2. În septembrie 2026, claude.ai nu are o comandă proprie de salvare în JSON pentru un singur chat.</p>
+<ol>
+<li>Instalați Download Claude conversations din Chrome Web Store.</li>
+<li>Reîncărcați claude.ai și deschideți adresa unei conversații reale, nu pagina de start goală.</li>
+<li>Faceți clic pe butonul portocaliu de descărcare, aflat în dreapta casetei de mesaj.</li>
+<li>Alegeți JSON. Ultimul format folosit este reținut. Cu „Select” (Selectare) bifați doar mesajele dorite.</li>
+<li>Apăsați „Export”. Chrome descarcă fișierul JSON prin API-ul de descărcări al browserului. Sau apăsați „Copy” (Copiere) ca să puneți JSON-ul în clipboard.</li>
+</ol>
+<p>Pentru exportul în JSON nu este nevoie de autentificare. Exporturile JSON ale unui singur chat sunt nelimitate, anonime și nu trimit nimic către serverele noastre. Autentificarea Google este cerută doar pentru PDF și pentru exportul în bloc „Export All” (Exportă tot). Mecanismul: <a href="/ro/cum-functioneaza/">cum funcționează</a>.</p>
+<p>Dacă butonul portocaliu lipsește, nu vă aflați pe adresa unei conversații, fila trebuie reîncărcată sau extensia este ascunsă în meniul cu piesa de puzzle din Chrome. Fixați Download Claude conversations, apoi reîmprospătați claude.ai. Scriptul extensiei nu se injectează niciodată în Claude Desktop sau în terminalul Claude Code.</p>
+<div class="callout callout-tip">
+  <p><strong>Un fir sau mai multe fișiere.</strong> Butonul portocaliu exportă chatul deschis în JSON. Pentru mai multe fișiere JSON, deschideți „View and Download All Conversations” (Vizualizați și descărcați toate conversațiile) și rulați „Export All” cu JSON selectat: o singură arhivă ZIP, 3 chaturi pe zi pe planul gratuit — vedeți <a href="/ro/export-toate-chaturile-claude/">exportul în bloc „Export All”</a>.</p>
+</div>
+
+<h2 id="when">Când merită exportul în JSON?</h2>
+<p>Exportați conversația Claude în JSON când fișierul va fi citit de un script, de un indexator sau de un instrument de comparare. JSON-ul este construit pentru arborele mesajelor, nu pentru lectură în Obsidian. Dacă doriți titluri și cod delimitat pentru oameni, alegeți Markdown. Pentru o foaie de calcul, alegeți <a href="/ro/formate/">CSV</a>: câte un rând pe mesaj.</p>
+<p>Copierea din claude.ai pierde structura expeditorilor. Tipărirea păstrează elementele paginii web. La exportul în JSON, Download Claude conversations păstrează replicile, expeditorii și, opțional, gândirea ca date, nu ca un paragraf aplatizat. De aceea dezvoltatorii preferă JSON în locul textului simplu.</p>
+<div class="expert-quote">
+  <p>Scriem JSON-ul din arborele claude.ai deja încărcat în pagină — expeditor, blocuri de conținut, marcaje de timp, metadatele modelului — fără să încărcăm firul nicăieri. Acest JSON nu este arhiva ZIP a contului de la Anthropic. În versiunea 1.16.2 este unul dintre cele șapte formate, alături de PDF și CSV, și este gratuit, fără cont.</p>
+  <footer>Echipa Download Claude conversations</footer>
+</div>
+<p>Mulți caută și „Claude Chat Downloader”, „Claude Conversation Downloader” sau, în engleză, „claude export chat” pentru aceeași extensie. Exportul conversației Claude în JSON înseamnă același buton portocaliu, nu un al doilea produs. Paginile juridice pot folosi încă numele Claude Exporter.</p>
+
+<h2 id="inside">Ce conține exportul JSON al unei conversații Claude?</h2>
+<p>Exportul JSON al unei conversații Claude reproduce arborele de mesaje de pe claude.ai: expeditor, blocuri de conținut, marcaje de timp și metadatele modelului. Blocurile de gândire, sursele căutării web, pașii tool / MCP și artefactele sunt incluse când aceste opțiuni sunt active: „Thinking” (Gândire) este o casetă de bifat în panoul de export, iar uneltele și sursele se activează în Settings (Setări). Filtrul după expeditor poate limita fișierul la toate mesajele, doar la cele ale omului sau doar la cele ale asistentului. Nimic nu este convertit mai întâi în Markdown.</p>
+<p>Aranjarea artefactelor în versiunea 1.16.2 este „Original”, „Inline”, „Nested” sau „Flat” (original, în text, imbricat, plat). Aceste variante schimbă felul în care conținutul artefactelor este imbricat în JSON, aceleași patru opțiuni ca pentru Markdown și XML. Lista completă: <a href="/ro/functii/">funcțiile extensiei Chrome</a>. Pentru pagini în loc de date, exportați <a href="/ro/chat-claude-in-pdf/">PDF</a>.</p>
+<table>
+  <caption>Câmpurile pe care le primiți de obicei la exportul unei conversații Claude în JSON</caption>
+  <thead>
+    <tr>
+      <th scope="col">Element</th>
+      <th scope="col">În JSON?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Arborele mesajelor (replici, expeditor)</td>
+      <td>Da</td>
+    </tr>
+    <tr>
+      <td>Blocuri de conținut</td>
+      <td>Da</td>
+    </tr>
+    <tr>
+      <td>Marcaje de timp și metadatele modelului</td>
+      <td>Da, când „Metadata” (Metadate) este activă</td>
+    </tr>
+    <tr>
+      <td>Blocuri de gândire</td>
+      <td>Dacă opțiunea „Thinking” este activă</td>
+    </tr>
+    <tr>
+      <td>Artefacte</td>
+      <td>Da, în aranjarea aleasă</td>
+    </tr>
+    <tr>
+      <td>Surse ale căutării web, pași tool / MCP</td>
+      <td>Dacă le activați</td>
+    </tr>
+    <tr>
+      <td>Învelișul ZIP pentru tot contul</td>
+      <td>Nu — acela este exportul de date Anthropic</td>
+    </tr>
+  </tbody>
+</table>
+<p>Dacă firul este lung, derulați până când claude.ai încarcă mesajele mai vechi, înainte de export. Extensia poate serializa doar ce a afișat pagina. O pagină încărcată pe jumătate produce un fișier JSON trunchiat.</p>
+
+<h2 id="vs-zip">JSON-ul conversației sau exportul de date Anthropic?</h2>
+<p>Ambele sunt JSON, dar nu au aceeași formă și nici aceeași acoperire. Settings → Privacy → Export data (etichetele pot fi traduse dacă claude.ai este setat în română) de la Anthropic trimite pe e-mail, după o așteptare, o singură arhivă ZIP a întregului cont. La exportul unei conversații Claude în JSON primiți imediat un singur fir, în Chrome. Folosiți arhiva ZIP pentru copii de siguranță.</p>
+<table>
+  <caption>Două căi diferite de a obține JSON din claude.ai</caption>
+  <thead>
+    <tr>
+      <th scope="col">Metodă</th>
+      <th scope="col">Acoperire</th>
+      <th scope="col">Când sosește fișierul</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>JSON din Download Claude conversations</td>
+      <td>Acest chat sau o selecție în bloc</td>
+      <td>Imediat, prin descărcarea din Chrome</td>
+    </tr>
+    <tr>
+      <td>Settings → Privacy → Export data</td>
+      <td>Întregul cont</td>
+      <td>Link pe e-mail care expiră</td>
+    </tr>
+    <tr>
+      <td>PDF din Download Claude conversations</td>
+      <td>Acest chat, ca pagini</td>
+      <td>Imediat, dar este PDF, nu JSON</td>
+    </tr>
+  </tbody>
+</table>
+<p>În cererea de arhivă ZIP a Anthropic nu puteți alege Markdown. Nici nu puteți folosi JSON-ul acestei extensii ca înlocuitor direct pentru schema acelei arhive. Pagina formatelor: <a href="/ro/formate/">formatele de export pentru chaturile Claude</a>. <a href="/ro/chat-claude-in-pdf/">PDF-ul</a> este pentru lectură, nu un export JSON.</p>
+<p>Download Claude conversations nu este afiliată cu Anthropic, PBC. Scriptul extensiei folosește sesiunea pe care ați deschis-o deja pe claude.ai. Nu se autentifică la Anthropic cu date de acces separate. Respectați regulile Anthropic pentru contul dumneavoastră.</p>
+
+<h2 id="bulk">Pot exporta conversații Claude în JSON în bloc?</h2>
+<p>Da. Deschideți „View and Download All Conversations”, setați „Chat format” (Formatul chatului) la JSON, filtrați tabelul, apoi apăsați „Export All”. Chrome salvează o singură arhivă ZIP, cu câte un fișier JSON pentru fiecare chat. Pe planul gratuit asta înseamnă 3 chaturi pe zi, cu autentificare Google, limită comună cu PDF-ul. Pro, la 3,99 USD pe lună sau 26,99 USD pe an, elimină limita pentru JSON în bloc.</p>
+<p>Dashboard-ul listează istoricul claude.ai, cu căutare după nume, filtrele „All conversations”, „New”, „Updated” și „Previously exported” (toate, noi, actualizate, exportate anterior), taburile Chat și Cowork și căutare după proiect. „New” înseamnă că firul nu a fost încă exportat cu Download Claude conversations. „Previously exported” urmărește chaturile deja salvate. „Export All” produce o arhivă ZIP cu fișiere JSON, câte unul pe chat, nu o arhivă cu formate amestecate.</p>
+<div class="callout callout-warn">
+  <p><strong>Limita zilnică este per cont.</strong> Trei chaturi pe zi pe planul gratuit, în comun cu PDF-ul. Dacă selectați 40 de conversații și mai aveți 3, întregul lot este blocat, nu trunchiat. Selectați mai puține sau folosiți Pro. Exporturile JSON individuale din butonul portocaliu rămân nelimitate.</p>
+</div>
+<p>Puteți compara două exporturi JSON ale aceluiași fir claude.ai, făcute în momente diferite, la fel ca orice fișiere JSON. Fiecare export este de sine stătător. Un al doilea „Export All” al acelorași chaturi consumă din nou câte o unitate pentru fiecare chat.</p>
+
+<h2 id="cost">Exportul JSON are nevoie de Pro?</h2>
+<p>Nu. Exportul JSON al unui singur chat este gratuit și nelimitat, fără cont și fără contor — la fel ca Markdown, text, XML, CSV și PNG. Doar PDF-ul și exportul în bloc „Export All” au o limită gratuită: 3 pe zi, cu autentificare Google. Pro costă 3,99 USD pe lună sau 26,99 USD pe an, prin Paddle. Download Claude conversations nu percepe nimic în plus pentru exportul unei conversații Claude în JSON.</p>
+<p>Limita se vede la JSON în bloc. Fiecare chat dintr-o arhivă ZIP „Export All” consumă unul din cele 3 pe zi, iar numărătoarea se resetează la miezul nopții UTC. Pro elimină limita și se restaurează pe un calculator nou din același cont Google. Paddle este comerciantul înregistrat; echipa noastră nu vede niciodată numerele cardurilor.</p>
+<p>Extensia rulează doar pe claude.ai în Chrome. Claude Desktop și terminalul Claude Code nu primesc un buton JSON; Claude Code on the web (claude.ai/code) rulează pe claude.ai, deci se exportă ca orice chat. Comanda <code>/export</code> din terminalul Claude Code sau fișierele JSONL de pe disc sunt o cale diferită. Versiunea 1.16.2, din septembrie 2026, tot nu scrie fișiere Word sau Notion.</p>
+
+<h2 id="faq">Întrebări frecvente: export conversație Claude în JSON</h2>
+<p>Aceste întrebări acoperă exportul unei conversații Claude în JSON cu Download Claude conversations 1.16.2: „Export All” în bloc, structura datelor, cost, comparații, arhiva ZIP a Anthropic, PDF și Desktop. Fiecare răspuns este un fapt despre produs. Datele structurate FAQPage din antetul paginii corespund acestei liste.</p>
+
+<h3>Pot exporta conversații Claude în JSON în bloc?</h3>
+<p>Da. „Export All” din Dashboard acceptă JSON și salvează o arhivă ZIP cu câte un fișier JSON pe chat. Pe planul gratuit acoperă 3 chaturi pe zi, cu autentificare Google; Pro, la 3,99 USD pe lună sau 26,99 USD pe an, este nelimitat.</p>
+
+<h3>Structura JSON este documentată?</h3>
+<p>Reproduce arborele de mesaje al claude.ai: expeditor, blocuri de conținut, marcaje de timp și metadatele modelului, cu artefacte, blocuri de gândire, surse ale căutării web și pași tool / MCP incluși când activați aceste opțiuni. Nu este schema arhivei ZIP a contului de la Anthropic.</p>
+
+<h3>Am nevoie de Pro pentru exportul unei conversații Claude în JSON?</h3>
+<p>Nu. Exporturile JSON ale unui singur chat sunt nelimitate și nu cer cont, la fel ca toate formatele în afară de PDF. Pro, la 3,99 USD pe lună sau 26,99 USD pe an, ridică doar limita de 3 pe zi pentru PDF și pentru „Export All” în bloc.</p>
+
+<h3>Pot compara două exporturi JSON ale aceluiași chat?</h3>
+<p>Da. De fiecare dată când exportați conversația Claude în JSON, primiți un fișier de sine stătător, construit la fel. Compararea a două exporturi ale aceluiași fir, făcute în momente diferite, funcționează ca pentru orice alt fișier JSON.</p>
+
+<h3>Acest JSON este același lucru cu exportul de date Anthropic?</h3>
+<p>Nu. Exportul de date Anthropic este o arhivă ZIP a întregului cont, livrată cu întârziere. Download Claude conversations scrie imediat, în Chrome, un fișier JSON per chat (sau per selecție). Ambele pot fi JSON, dar nu sunt interschimbabile.</p>
+
+<h3>Exportul conversației Claude în JSON creează un PDF?</h3>
+<p>Nu. JSON înseamnă date structurate. Pentru pagini, alegeți PDF în același panou; cele șapte formate sunt PDF, Markdown, JSON, text simplu, XML, CSV și PNG. PDF-ul cere autentificare Google și intră în limita de 3 pe zi pe planul gratuit.</p>
+
+<h3>Exportul JSON funcționează în Claude Desktop?</h3>
+<p>Nu. Extensia Chrome se injectează doar pe claude.ai. Claude Desktop nu afișează niciodată opțiunea JSON. Deschideți același fir pe claude.ai în Chrome, dacă există acolo.</p>
+</article>
+</main>
+<section class="final-cta page-cta" aria-label="Instalare">
+  <div class="wrap">
+    <div class="final-cta-panel">
+      <p class="final-kicker">Download Claude conversations</p>
+      <h2>Instalați extensia și descărcați chaturile Claude în câteva secunde</h2>
+      <p>Transformați firele Claude importante în PDF, Markdown, JSON, text, CSV, XML sau PNG — local, din Chrome.</p>
+      <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=ro-formats-json" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Adăugați în Chrome</a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="logo" href="/ro/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
+      <p class="legal-note">Extensie Chrome pentru descărcarea chaturilor Claude.ai în PDF, Markdown, JSON, text simplu, CSV, XML sau PNG.</p>
+    </div>
+    <div>
+      <h2>Instalare</h2>
+      <a class="install-link" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=ro-footer" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Extensie Chrome</a>
+    </div>
+    <div>
+      <h2>Produs</h2>
+      <a href="/ro/functii/">Funcții</a>
+      <a href="/ro/formate/">Formate</a>
+      <a href="/ro/export-toate-chaturile-claude/">Export toate chaturile</a>
+      <a href="/ro/cum-functioneaza/">Cum funcționează</a>
+    </div>
+    <div>
+      <h2>Ghiduri</h2>
+      <a href="/ro/cum-descarcati-chat-claude/">Cum descărcați un chat Claude</a>
+      <a href="/ro/cum-exportati-chat-claude/">Cum exportați un chat Claude</a>
+      <a href="/ro/export-chat-claude/">Export chat Claude</a>
+      <a href="/ro/extractor-conversatii-claude/">Extractor de conversații Claude</a>
+      <a href="/ro/export-conversatie-claude-code/">Export Claude Code</a>
+      <a href="/ro/chat-claude-in-pdf/">Chat Claude în PDF</a>
+      <a href="/ro/export-chat-claude-desktop/">Export Claude Desktop</a>
+      <a href="/ro/export-conversatie-claude/">Export conversație Claude</a>
+      <a href="/ro/cum-salvati-conversatie-claude/">Cum salvați o conversație Claude</a>
+      <a href="/ro/descarcare-conversatie-claude/">Descărcare conversație Claude</a>
+    </div>
+    <div>
+      <h2>Informații legale</h2>
+      <a href="/ro/despre-noi/">Despre noi</a>
+      <a href="/ro/despre-noi/#contact">Contact</a>
+      <a href="/privacy/" hreflang="en">Confidențialitate (în engleză)</a>
+      <a href="/terms/" hreflang="en">Termeni (în engleză)</a>
+      <a href="/refund/" hreflang="en">Rambursări (în engleză)</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Download Claude conversations. Toate drepturile rezervate.</div>
+    <div>
+      <a href="/privacy/" hreflang="en">Politica de confidențialitate (în engleză)</a>
+      <a href="/terms/" hreflang="en">Termeni și condiții (în engleză)</a>
+      <a href="/refund/" hreflang="en">Rambursări (în engleză)</a>
+    </div>
+  </div>
+  <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/formats/json/" hreflang="en" lang="en">English</a> <a href="/de/formate/json/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/formats/json/" hreflang="fr" lang="fr">Français</a> <a href="/es/formatos/json/" hreflang="es" lang="es">Español</a> <a href="/it/formati/json/" hreflang="it" lang="it">Italiano</a> <a href="/pt/formatos/json/" hreflang="pt" lang="pt">Português</a> <a href="/nl/formaten/json/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/format/json/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/formater/json/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/formater/json/" hreflang="da" lang="da">Dansk</a> <a href="/fi/formaatit/json/" hreflang="fi" lang="fi">Suomi</a> <a href="/pl/formaty/json/" hreflang="pl" lang="pl">Polski</a> <a href="/cs/formaty/json/" hreflang="cs" lang="cs">Čeština</a> <a href="/sk/formaty/json/" hreflang="sk" lang="sk">Slovenčina</a> <a href="/hu/formatumok/json/" hreflang="hu" lang="hu">Magyar</a> <a href="/ro/formate/json/" hreflang="ro" lang="ro">Română</a> <a href="/el/formats/json/" hreflang="el" lang="el">Ελληνικά</a> <a href="/tr/formatlar/json/" hreflang="tr" lang="tr">Türkçe</a> <a href="/ja/formats/json/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/formats/json/" hreflang="ko" lang="ko">한국어</a> <a href="/zh-hant/formats/json/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="/he/formats/json/" hreflang="he" lang="he">עברית</a> <a href="/ar/formats/json/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
+  <p class="disclaimer">Chaturi procesate în browser · Autentificare Google doar pentru PDF, export în bloc și Pro · Nu este afiliat cu Anthropic, PBC. Claude este o marcă comercială a Anthropic. Extensie Chrome independentă — nu este un produs oficial Anthropic. Asistență: <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

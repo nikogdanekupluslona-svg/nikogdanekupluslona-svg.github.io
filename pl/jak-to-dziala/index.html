@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jak działa Download Claude conversations – eksport lokalny</title>
+  <meta name="description" content="Jak działa Download Claude conversations: każdy plik powstaje w przeglądarce, większość eksportów bez konta, Google tylko dla PDF, zbiorczych i Pro.">
+  <link rel="canonical" href="https://chat-downloader.com/pl/jak-to-dziala/">
+  <!-- i18n:head -->
+  <link rel="alternate" hreflang="en" href="https://chat-downloader.com/how-it-works/">
+  <link rel="alternate" hreflang="de" href="https://chat-downloader.com/de/so-funktioniert-es/">
+  <link rel="alternate" hreflang="fr" href="https://chat-downloader.com/fr/comment-ca-marche/">
+  <link rel="alternate" hreflang="es" href="https://chat-downloader.com/es/como-funciona/">
+  <link rel="alternate" hreflang="it" href="https://chat-downloader.com/it/come-funziona/">
+  <link rel="alternate" hreflang="pt" href="https://chat-downloader.com/pt/como-funciona/">
+  <link rel="alternate" hreflang="nl" href="https://chat-downloader.com/nl/hoe-het-werkt/">
+  <link rel="alternate" hreflang="sv" href="https://chat-downloader.com/sv/sa-fungerar-det/">
+  <link rel="alternate" hreflang="nb" href="https://chat-downloader.com/nb/slik-fungerer-det/">
+  <link rel="alternate" hreflang="da" href="https://chat-downloader.com/da/saadan-virker-det/">
+  <link rel="alternate" hreflang="fi" href="https://chat-downloader.com/fi/nain-se-toimii/">
+  <link rel="alternate" hreflang="pl" href="https://chat-downloader.com/pl/jak-to-dziala/">
+  <link rel="alternate" hreflang="cs" href="https://chat-downloader.com/cs/jak-to-funguje/">
+  <link rel="alternate" hreflang="sk" href="https://chat-downloader.com/sk/ako-to-funguje/">
+  <link rel="alternate" hreflang="hu" href="https://chat-downloader.com/hu/hogyan-mukodik/">
+  <link rel="alternate" hreflang="ro" href="https://chat-downloader.com/ro/cum-functioneaza/">
+  <link rel="alternate" hreflang="el" href="https://chat-downloader.com/el/how-it-works/">
+  <link rel="alternate" hreflang="tr" href="https://chat-downloader.com/tr/nasil-calisir/">
+  <link rel="alternate" hreflang="ja" href="https://chat-downloader.com/ja/how-it-works/">
+  <link rel="alternate" hreflang="ko" href="https://chat-downloader.com/ko/how-it-works/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://chat-downloader.com/zh-hant/how-it-works/">
+  <link rel="alternate" hreflang="he" href="https://chat-downloader.com/he/how-it-works/">
+  <link rel="alternate" hreflang="ar" href="https://chat-downloader.com/ar/how-it-works/">
+  <link rel="alternate" hreflang="x-default" href="https://chat-downloader.com/how-it-works/">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="it_IT">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="sv_SE">
+  <meta property="og:locale:alternate" content="nb_NO">
+  <meta property="og:locale:alternate" content="da_DK">
+  <meta property="og:locale:alternate" content="fi_FI">
+  <meta property="og:locale:alternate" content="cs_CZ">
+  <meta property="og:locale:alternate" content="sk_SK">
+  <meta property="og:locale:alternate" content="hu_HU">
+  <meta property="og:locale:alternate" content="ro_RO">
+  <meta property="og:locale:alternate" content="el_GR">
+  <meta property="og:locale:alternate" content="tr_TR">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <meta property="og:locale:alternate" content="zh_TW">
+  <meta property="og:locale:alternate" content="he_IL">
+  <meta property="og:locale:alternate" content="ar_AE">
+  <!-- /i18n:head -->
+  <meta property="og:title" content="Jak działa Download Claude conversations – eksport lokalny">
+  <meta property="og:description" content="Jak działa Download Claude conversations: każdy plik powstaje w przeglądarce, większość eksportów bez konta, Google tylko dla PDF, zbiorczych i Pro.">
+  <meta property="og:url" content="https://chat-downloader.com/pl/jak-to-dziala/">
+  <meta property="og:image" content="https://chat-downloader.com/assets/widget-guide.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chat Downloader">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Jak działa Download Claude conversations – eksport lokalny">
+  <meta name="twitter:description" content="Jak działa Download Claude conversations: każdy plik powstaje w przeglądarce, większość eksportów bez konta, Google tylko dla PDF, zbiorczych i Pro.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME1YXGZKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GME1YXGZKR');
+  </script>
+  
+  
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Czy Download Claude conversations przechowuje moje czaty?","acceptedAnswer":{"@type":"Answer","text":"Nie. Każdy eksport, również PDF, powstaje lokalnie i nigdy nie jest wysyłany. Jeśli logujesz się przez Google dla PDF, eksportu zbiorczego lub Pro, przechowujemy tylko ten adres e-mail, żeby liczyć dzienny limit i przypisać Pro. Treść czatów zostaje w karcie claude.ai i w pliku, który pobiera Chrome."}},{"@type":"Question","name":"Czy logowanie Google jest wymagane, czy opcjonalne?","acceptedAnswer":{"@type":"Answer","text":"Tylko dla PDF, zbiorczego „Export All” i Pro. Eksporty pojedynczych czatów do Markdown, tekstu, JSON, XML, CSV i PNG nie wymagają konta. Przy PDF i eksporcie zbiorczym logowanie pojawia się od pierwszego użycia, żeby ponowna instalacja nie resetowała limitu 3 dziennie. To nie jest logowanie do odczytu Twoich czatów."}},{"@type":"Question","name":"Kto obsługuje płatności za Pro?","acceptedAnswer":{"@type":"Answer","text":"Paddle. Nigdy nie widzimy danych Twojej karty. Pro kosztuje 3,99 USD miesięcznie lub 26,99 USD rocznie. Paddle jest sprzedawcą (merchant of record). Zwroty realizuje Paddle."}},{"@type":"Question","name":"Czy to jest powiązane z Anthropic?","acceptedAnswer":{"@type":"Answer","text":"Nie. To niezależne rozszerzenie Chrome, niepowiązane z Anthropic, PBC. Claude jest znakiem towarowym Anthropic. Download Claude conversations korzysta z Twojej istniejącej sesji claude.ai; nie zastępuje produktów Anthropic."}},{"@type":"Question","name":"Czy rozszerzenie obsługuje format PDF?","acceptedAnswer":{"@type":"Answer","text":"Tak. PDF jest tworzony w przeglądarce tak jak pozostałe sześć formatów: Markdown, JSON, zwykły tekst, XML, CSV i PNG. Okno drukowania nie jest potrzebne. PDF wymaga logowania Google i w darmowym planie liczy się do limitu 3 dziennie."}},{"@type":"Question","name":"Co widzi worker podczas eksportu?","acceptedAnswer":{"@type":"Answer","text":"Tylko po zalogowaniu dla PDF, eksportu zbiorczego lub Pro: adres e-mail konta, status Pro i liczbę eksportów PDF lub zbiorczych wykorzystanych dzisiaj. Worker nie otrzymuje treści rozmów. Cały proces eksportu zostaje w przeglądarce."}},{"@type":"Question","name":"Czy potrzebuję Pro, żeby korzystać z Download Claude conversations?","acceptedAnswer":{"@type":"Answer","text":"Nie. Eksporty pojedynczych czatów do Markdown, tekstu, JSON, XML, CSV i PNG są bez limitu i darmowe, bez konta. PDF i zbiorczy ZIP są darmowe do 3 dziennie z logowaniem Google. Pro za 3,99 USD miesięcznie lub 26,99 USD rocznie znosi ten limit. Plik powstaje lokalnie tak samo w planie darmowym i w Pro."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Strona główna","item":"https://chat-downloader.com/pl/"},{"@type":"ListItem","position":2,"name":"Jak to działa","item":"https://chat-downloader.com/pl/jak-to-dziala/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Przejdź do treści</a>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a class="logo" href="/pl/">
+        <img src="/assets/icon.svg" alt="">
+        <span>Download Claude conversations</span>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="/pl/jak-pobrac-czat-claude/">Pobieranie</a><a href="/pl/jak-eksportowac-czat-claude/">Eksport</a><a href="/pl/eksport-wszystkich-czatow-claude/">Wszystkie czaty</a><a href="/pl/formaty/">Formaty</a><a href="/pl/#faq">FAQ</a>
+        <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=pl-how-it-works" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Dodaj do Chrome</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=pl-how-it-works" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Dodaj do Chrome</a>
+      <!-- i18n:switch --><details class="lang-switch"><summary aria-label="Język: Polski"><svg class="lang-globe" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span class="lang-name">Polski</span><span class="lang-code" aria-hidden="true">pl</span></summary><ul><li><a href="/how-it-works/" hreflang="en" lang="en">English</a></li><li><a href="/de/so-funktioniert-es/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/comment-ca-marche/" hreflang="fr" lang="fr">Français</a></li><li><a href="/es/como-funciona/" hreflang="es" lang="es">Español</a></li><li><a href="/it/come-funziona/" hreflang="it" lang="it">Italiano</a></li><li><a href="/pt/como-funciona/" hreflang="pt" lang="pt">Português</a></li><li><a href="/nl/hoe-het-werkt/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/sv/sa-fungerar-det/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="/nb/slik-fungerer-det/" hreflang="nb" lang="nb">Norsk</a></li><li><a href="/da/saadan-virker-det/" hreflang="da" lang="da">Dansk</a></li><li><a href="/fi/nain-se-toimii/" hreflang="fi" lang="fi">Suomi</a></li><li><a href="/pl/jak-to-dziala/" hreflang="pl" lang="pl" aria-current="true">Polski</a></li><li><a href="/cs/jak-to-funguje/" hreflang="cs" lang="cs">Čeština</a></li><li><a href="/sk/ako-to-funguje/" hreflang="sk" lang="sk">Slovenčina</a></li><li><a href="/hu/hogyan-mukodik/" hreflang="hu" lang="hu">Magyar</a></li><li><a href="/ro/cum-functioneaza/" hreflang="ro" lang="ro">Română</a></li><li><a href="/el/how-it-works/" hreflang="el" lang="el">Ελληνικά</a></li><li><a href="/tr/nasil-calisir/" hreflang="tr" lang="tr">Türkçe</a></li><li><a href="/ja/how-it-works/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/ko/how-it-works/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/zh-hant/how-it-works/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li><li><a href="/he/how-it-works/" hreflang="he" lang="he">עברית</a></li><li><a href="/ar/how-it-works/" hreflang="ar" lang="ar">العربية</a></li></ul></details><!-- /i18n:switch -->
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+<nav class="crumbs" aria-label="Ścieżka nawigacji"><a href="/pl/">Strona główna</a> / Jak to działa</nav>
+<main id="main">
+<article class="band prose">
+<p class="article-meta">Aktualizacja: <time datetime="2026-09">wrzesień 2026</time> · Rozszerzenie 1.16.2</p>
+<h1 class="page-h1">Jak działa Download Claude conversations w Chrome</h1>
+<p class="lead">Jak działa Download Claude conversations? Skrypt rozszerzenia odczytuje wątek z claude.ai, który już masz w karcie, tworzy w przeglądarce PDF, Markdown, JSON, tekst, XML, CSV lub PNG i przekazuje plik do Chrome. Większość eksportów nie wymaga konta. Logowanie Google pojawia się tylko przy PDF, zbiorczym ZIP i Pro, i wysyła wyłącznie Twój adres e-mail. Treść czatów nigdy nie trafia do naszego workera. Pro kosztuje 3,99 USD miesięcznie lub 26,99 USD rocznie przez Paddle.</p>
+<aside class="trust-badge" aria-label="O rozszerzeniu">
+  <span class="trophy" aria-hidden="true">🧩</span>
+  <div>
+    <strong>Download Claude conversations — darmowe rozszerzenie Chrome dla claude.ai</strong>
+    <span>Wersja 1.16.2 (wrzesień 2026) — bez limitu eksporty do Markdown, tekstu, JSON, XML, CSV i PNG bez konta; PDF i zbiorczy ZIP darmowe do 3 dziennie</span>
+  </div>
+</aside>
+<nav class="toc" aria-label="Na tej stronie">
+  <p>Na tej stronie</p>
+  <ol>
+    <li><a href="#content-script">Jak Download Claude conversations działa na claude.ai?</a></li>
+    <li><a href="#local">Czy pliki powstają lokalnie?</a></li>
+    <li><a href="#google">Dlaczego logowanie Google służy do limitu?</a></li>
+    <li><a href="#paddle">Jak działają płatności przez Paddle i Pro?</a></li>
+    <li><a href="#worker">Co widzi worker podczas eksportu?</a></li>
+    <li><a href="#safe">Czy to narzędzie do eksportu czatów Claude jest bezpieczne?</a></li>
+    <li><a href="#faq">FAQ: jak działa Download Claude conversations</a></li>
+  </ol>
+</nav>
+
+<h2 id="content-script">Jak Download Claude conversations działa na claude.ai?</h2>
+<p>Rozszerzenie wstrzykuje skrypt do strony claude.ai, którą już otworzyłeś, i korzysta z sesji, na którą jesteś już zalogowany. Odczytuje wyrenderowaną rozmowę, a nie osobne API Anthropic. Pomarańczowy przycisk pojawia się tylko na adresie konkretnej rozmowy — czatu, czatu w projekcie, sesji Cowork albo Claude Code on the web.</p>
+<ol>
+<li>Zainstaluj Download Claude conversations z Chrome Web Store.</li>
+<li>Odśwież claude.ai, jeśli karta była otwarta podczas instalacji.</li>
+<li>Otwórz adres rozmowy. Pomarańczowy przycisk jest po prawej stronie pola wiadomości.</li>
+<li>Wybierz PDF, Markdown, JSON, zwykły tekst, XML, CSV lub PNG. Kliknij „Export” (Eksportuj) albo „Copy” (Kopiuj), żeby skopiować do schowka.</li>
+<li>Chrome pobierze plik. Dla każdego formatu poza PDF to cała ścieżka po stronie przeglądarki: bez logowania i bez połączenia z naszymi serwerami.</li>
+</ol>
+<p>Pusta strona startowa nie ma drzewa wiadomości, więc przycisk się na niej nie pokazuje. Jeśli ikona jest schowana, przypnij rozszerzenie w menu puzzla w Chrome i odśwież claude.ai. Działanie rozszerzenia kończy się na claude.ai: Claude Desktop i terminal Claude Code nigdy nie dostają tego skryptu. Lista funkcji: <a href="/pl/funkcje/">funkcje rozszerzenia Chrome</a>.</p>
+<div class="callout callout-info">
+  <p><strong>Ta sama sesja, ta sama strona.</strong> Skrypt widzi to, co już pokazuje Twoja zalogowana karta claude.ai. Nie loguje się do Anthropic drugim hasłem. Przestrzegaj zasad Anthropic dotyczących Twojego konta.</p>
+</div>
+
+<h2 id="local">Czy pliki powstają lokalnie?</h2>
+<p>Tak. Download Claude conversations składa każdy format — również PDF — w Twojej przeglądarce i przekazuje go do API pobierania Chrome. Tekst rozmowy nigdy nie opuszcza Twojego urządzenia w drodze do naszej infrastruktury. Dotyczy to zarówno pojedynczego eksportu z pomarańczowego przycisku, jak i „Export All” (Eksportuj wszystko) na <a href="/pl/eksport-wszystkich-czatow-claude/">stronie eksportu zbiorczego</a>.</p>
+<p>Gdy claude.ai wczyta wątek, tworzenie pliku nie czeka na nasz serwer. Przy PDF i eksporcie zbiorczym najpierw działa osobne sprawdzenie limitu; eksporty pojedynczych czatów w pozostałych formatach je pomijają. Jeśli Chrome blokuje pobieranie z claude.ai, zezwól na nie — to ustawienie przeglądarki, a nie błąd odczytu. Długi wątek przewinięty do połowy nadal da plik do połowy, bo strona nie była wczytana w całości.</p>
+<div class="expert-quote">
+  <p>Zbudowaliśmy Download Claude conversations wokół twardej zasady: treść czatów zostaje w karcie. Nasz worker odpowiada tylko na pytania „ile eksportów PDF lub zbiorczych zostało dziś” i „czy to konto Google ma Pro”. PDF też jest składany w przeglądarce, bez okna drukowania i bez wysyłania.</p>
+  <footer>Zespół Download Claude conversations</footer>
+</div>
+<p>PNG jest renderowany lokalnie jako obraz. PDF jest składany lokalnie. JSON, XML i CSV są serializowane lokalnie z tego samego drzewa. Żadnego z tych plików nie wysyłamy mailem. Settings → Privacy → Export data od Anthropic (nazwy mogą być po polsku, jeśli claude.ai masz ustawione na polski) to inny, opóźniony ZIP od Anthropic, a nie ta lokalna ścieżka.</p>
+
+<h2 id="google">Dlaczego logowanie Google służy do limitu?</h2>
+<p>Logowanie Google istnieje tylko dla PDF, zbiorczego „Export All” i Pro. Eksporty pojedynczych czatów do Markdown, zwykłego tekstu, JSON, XML, CSV i PNG nigdy o nie nie proszą i niczego nie wysyłają. Gdy pierwszy raz wybierzesz PDF albo uruchomisz „Export All”, rozszerzenie poprosi o zalogowanie. Zapisujemy zweryfikowany adres e-mail. Nie zapisujemy treści czatów.</p>
+<p>Adres e-mail jest kluczem dla dziennego licznika po stronie serwera: w darmowym planie 3 eksporty PDF lub zbiorcze dziennie łącznie, z resetem o północy UTC. Każdy czat w zbiorczym ZIP liczy się jako jeden. Jeśli zaznaczenie jest większe niż pozostały dzienny limit, cała paczka zostaje zablokowana, a nie przycięta. Licznik działa na naszym workerze, więc usunięcie i ponowne dodanie rozszerzenia go nie resetuje. Pro za 3,99 USD miesięcznie lub 26,99 USD rocznie przywrócisz na nowym komputerze tym samym kontem Google.</p>
+<p>Logowanie Google to nie logowanie do claude.ai. Na stronie nadal korzystasz ze swojej sesji Anthropic. Download Claude conversations potrzebuje Google tylko do dziennego licznika i Pro. Ludzie szukają też Claude Chat Downloader — to ten sam wpis w sklepie, a zasada logowania jest identyczna.</p>
+<div class="callout callout-warn">
+  <p><strong>Dzienny limit dotyczy konta.</strong> Trzy eksporty PDF lub zbiorcze dziennie w darmowym planie, łącznie. Zaznaczenie 40 rozmów przy 3 pozostałych blokuje całą paczkę; nie eksportuje pierwszych trzech. Dzięki logowaniu licznik przetrwa ponowną instalację.</p>
+</div>
+
+<h2 id="paddle">Jak działają płatności przez Paddle i Pro?</h2>
+<p>Paddle.com Market Limited obsługuje płatności i jest sprzedawcą (merchant of record). Rozliczenia wyglądają tak: Paddle pobiera dane karty i podatki. My nigdy nie widzimy danych płatniczych. Pro kosztuje 3,99 USD miesięcznie lub 26,99 USD rocznie. Anulujesz w dowolnym momencie na stronie opcji („Cancel subscription”, czyli anuluj subskrypcję) albo przez Paddle. Pierwsza płatność jest objęta 14-dniową gwarancją zwrotu pieniędzy.</p>
+<p>Pro znosi limit 3 dziennie dla PDF i zbiorczego „Export All”. Wszystko inne jest już bez limitu w darmowym planie. Pro nie dodaje Notion ani Worda; formatów jest nadal siedem: PDF, Markdown, JSON, tekst, XML, CSV i PNG. Nie potrzebujesz płatnego planu claude.ai od Anthropic. Wystarczy dowolne konto claude.ai, które otwiera wątek w Chrome.</p>
+<table>
+  <caption>Ile płacisz i co dostajesz</caption>
+  <thead>
+    <tr>
+      <th scope="col">Plan</th>
+      <th scope="col">Eksporty</th>
+      <th scope="col">Cena</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Darmowy, bez konta</td>
+      <td>Bez limitu Markdown, tekst, JSON, XML, CSV, PNG</td>
+      <td>0 USD</td>
+    </tr>
+    <tr>
+      <td>Darmowy, z logowaniem Google</td>
+      <td>Do tego 3 eksporty PDF lub zbiorcze dziennie</td>
+      <td>0 USD</td>
+    </tr>
+    <tr>
+      <td>Pro miesięcznie</td>
+      <td>Bez limitu PDF + „Export All”</td>
+      <td>3,99 USD/mies. przez Paddle</td>
+    </tr>
+    <tr>
+      <td>Pro rocznie</td>
+      <td>To samo, bez limitu</td>
+      <td>26,99 USD/rok przez Paddle</td>
+    </tr>
+  </tbody>
+</table>
+<p>Jeśli administrator środowiska blokuje rozszerzenia Chrome, płatność nie sprawi, że przycisk się pojawi. To polityka przeglądarki. Plany Team i Enterprise na claude.ai działają z pomarańczowym przyciskiem tak samo jak Free, gdy skrypt może się uruchomić.</p>
+
+<h2 id="worker">Co widzi worker podczas eksportu?</h2>
+<p>Cloudflare Worker sprawdza status subskrypcji i limitu: czy konto zalogowane przez Google ma Pro i ile eksportów PDF lub zbiorczych wykorzystało dzisiaj. Otrzymuje tylko adres e-mail konta, i to dopiero po zalogowaniu dla PDF, eksportu zbiorczego lub Pro. Ten worker nie otrzymuje treści rozmów. Eksporty pojedynczych czatów w pozostałych formatach w ogóle do niego nie trafiają.</p>
+<p>Dzięki workerowi ponowna instalacja nie resetuje dziennego licznika. Dzięki niemu też przywracasz Pro. To nie jest kopia zapasowa czatów. Historię claude.ai nadal przechowuje Anthropic po swojej stronie. My nie trzymamy drugiej kopii. Polityka prywatności na tej stronie opisuje, jaki adres e-mail przechowujemy.</p>
+<p>Wersja 1.16.2, wrzesień 2026. Jeśli worker jest niedostępny, możesz nie móc rozpocząć eksportu PDF lub zbiorczego, dopóki status nie zostanie sprawdzony. To bramka licencji, a nie wymóg wysłania wątku. Po udanym sprawdzeniu pliki nadal składane są lokalnie. Eksporty pojedynczych czatów w pozostałych formatach na to nie czekają.</p>
+
+<h2 id="safe">Czy to narzędzie do eksportu czatów Claude jest bezpieczne?</h2>
+<p>Nie obiecujemy „zero ruchu sieciowego” dla każdej ścieżki. Eksporty pojedynczych czatów do Markdown, tekstu, JSON, XML, CSV i PNG nie łączą się z nami. PDF, eksport zbiorczy i Pro komunikują się z Google i naszym workerem, a Pro także z Paddle. Treść czatów nie jest wysyłana do naszego API. Wysyłany jest adres e-mail konta i status limitu. Skrypt nie wykonuje żadnych dodatkowych automatycznych działań na Twoim koncie Anthropic.</p>
+<table>
+  <caption>Kto co widzi podczas działania rozszerzenia</caption>
+  <thead>
+    <tr>
+      <th scope="col">Strona</th>
+      <th scope="col">Widzi treść czatu?</th>
+      <th scope="col">Widzi zamiast tego</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Twoja przeglądarka</td>
+      <td>Tak — tworzy plik</td>
+      <td>Stronę claude.ai, którą już wczytałeś</td>
+    </tr>
+    <tr>
+      <td>Nasz Cloudflare Worker</td>
+      <td>Nie</td>
+      <td>Tylko po zalogowaniu: e-mail, dzisiejszą liczbę eksportów PDF/zbiorczych, status Pro</td>
+    </tr>
+    <tr>
+      <td>Google</td>
+      <td>Nie (od nas)</td>
+      <td>Konto, które wybierasz do logowania dla PDF, eksportu zbiorczego lub Pro</td>
+    </tr>
+    <tr>
+      <td>Paddle</td>
+      <td>Nie</td>
+      <td>Dane płatnicze, jeśli wykupisz subskrypcję</td>
+    </tr>
+    <tr>
+      <td>Anthropic</td>
+      <td>Swoją zwykłą sesję claude.ai</td>
+      <td>Bez zmian przez to rozszerzenie</td>
+    </tr>
+  </tbody>
+</table>
+<p>Download Claude conversations nie jest powiązane z Anthropic, PBC. Korzystanie z tego narzędzia do eksportu czatów Claude nie zmienia warunków korzystania z usług Anthropic. Kto pyta, czy eksporter Claude (po angielsku „claude chat exporter”) jest bezpieczny, powinien spojrzeć na tę tabelę: serwer widzi stan rozliczeń, przeglądarka widzi Twój czat. Lista formatów: <a href="/pl/formaty/">formaty eksportu czatu Claude</a>.</p>
+<p>PDF jest tworzony w przeglądarce jak każdy inny format: <a href="/pl/czat-claude-do-pdf/">czat Claude jako PDF</a>. Przeglądarki mobilne i Claude Desktop nie są obsługiwane. Otwórz rozmowę na claude.ai w Chrome na komputerze i wtedy eksportuj.</p>
+
+<h2 id="faq">FAQ: jak działa Download Claude conversations</h2>
+<p>Te pytania dotyczą działania Download Claude conversations: lokalnych plików, logowania Google, Paddle, workera, powiązań z Anthropic, dziennego limitu i Pro. Każda odpowiedź opisuje fakt o produkcie w wersji 1.16.2. Dane FAQPage JSON-LD w nagłówku strony odpowiadają tej liście.</p>
+
+<h3>Czy Download Claude conversations przechowuje moje czaty?</h3>
+<p>Nie. Każdy eksport, również PDF, powstaje lokalnie i nigdy nie jest wysyłany. Jeśli logujesz się przez Google dla PDF, eksportu zbiorczego lub Pro, przechowujemy tylko ten adres e-mail, żeby liczyć dzienny limit i przypisać Pro. Treść czatów zostaje w karcie claude.ai i w pliku, który pobiera Chrome.</p>
+
+<h3>Czy logowanie Google jest wymagane, czy opcjonalne?</h3>
+<p>Tylko dla PDF, zbiorczego „Export All” i Pro. Eksporty pojedynczych czatów do Markdown, tekstu, JSON, XML, CSV i PNG nie wymagają konta. Przy PDF i eksporcie zbiorczym logowanie pojawia się od pierwszego użycia, żeby ponowna instalacja nie resetowała limitu 3 dziennie. To nie jest logowanie do odczytu Twoich czatów.</p>
+
+<h3>Kto obsługuje płatności za Pro?</h3>
+<p>Paddle. Nigdy nie widzimy danych Twojej karty. Pro kosztuje 3,99 USD miesięcznie lub 26,99 USD rocznie. Paddle jest sprzedawcą (merchant of record). Zwroty realizuje Paddle.</p>
+
+<h3>Czy to jest powiązane z Anthropic?</h3>
+<p>Nie. To niezależne rozszerzenie Chrome, niepowiązane z Anthropic, PBC. Claude jest znakiem towarowym Anthropic. Download Claude conversations korzysta z Twojej istniejącej sesji claude.ai; nie zastępuje produktów Anthropic.</p>
+
+<h3>Czy rozszerzenie obsługuje format PDF?</h3>
+<p>Tak. PDF jest tworzony w przeglądarce tak jak pozostałe sześć formatów: Markdown, JSON, zwykły tekst, XML, CSV i PNG. Okno drukowania nie jest potrzebne. PDF wymaga logowania Google i w darmowym planie liczy się do limitu 3 dziennie.</p>
+
+<h3>Co widzi worker podczas eksportu?</h3>
+<p>Tylko po zalogowaniu dla PDF, eksportu zbiorczego lub Pro: adres e-mail konta, status Pro i liczbę eksportów PDF lub zbiorczych wykorzystanych dzisiaj. Worker nie otrzymuje treści rozmów. Cały proces eksportu zostaje w przeglądarce.</p>
+
+<h3>Czy potrzebuję Pro, żeby korzystać z Download Claude conversations?</h3>
+<p>Nie. Eksporty pojedynczych czatów do Markdown, tekstu, JSON, XML, CSV i PNG są bez limitu i darmowe, bez konta. PDF i zbiorczy ZIP są darmowe do 3 dziennie z logowaniem Google. Pro za 3,99 USD miesięcznie lub 26,99 USD rocznie znosi ten limit. Plik powstaje lokalnie tak samo w planie darmowym i w Pro.</p>
+</article>
+</main>
+<section class="final-cta page-cta" aria-label="Instalacja">
+  <div class="wrap">
+    <div class="final-cta-panel">
+      <p class="final-kicker">Download Claude conversations</p>
+      <h2>Zainstaluj rozszerzenie i pobierz czat Claude w kilka sekund</h2>
+      <p>Zamieniaj ważne wątki z Claude w PDF, Markdown, JSON, tekst, CSV, XML lub PNG — lokalnie, w Chrome.</p>
+      <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=pl-how-it-works" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Dodaj do Chrome</a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="logo" href="/pl/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
+      <p class="legal-note">Rozszerzenie Chrome do pobierania czatów z Claude.ai jako PDF, Markdown, JSON, zwykły tekst, CSV, XML lub PNG.</p>
+    </div>
+    <div>
+      <h2>Instalacja</h2>
+      <a class="install-link" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=pl-footer" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Rozszerzenie Chrome</a>
+    </div>
+    <div>
+      <h2>Produkt</h2>
+      <a href="/pl/funkcje/">Funkcje</a>
+      <a href="/pl/formaty/">Formaty</a>
+      <a href="/pl/eksport-wszystkich-czatow-claude/">Eksport wszystkich czatów</a>
+      <a href="/pl/jak-to-dziala/">Jak to działa</a>
+    </div>
+    <div>
+      <h2>Poradniki</h2>
+      <a href="/pl/jak-pobrac-czat-claude/">Jak pobrać czat Claude</a>
+      <a href="/pl/jak-eksportowac-czat-claude/">Jak eksportować czat Claude</a>
+      <a href="/pl/eksport-czatu-claude/">Eksport czatu Claude</a>
+      <a href="/pl/ekstraktor-rozmow-claude/">Ekstraktor rozmów Claude</a>
+      <a href="/pl/eksport-rozmowy-claude-code/">Eksport rozmowy Claude Code</a>
+      <a href="/pl/czat-claude-do-pdf/">Czat Claude jako PDF</a>
+      <a href="/pl/eksport-czatu-claude-desktop/">Eksport czatu Claude Desktop</a>
+      <a href="/pl/eksport-rozmowy-claude/">Eksport rozmowy Claude</a>
+      <a href="/pl/jak-zapisac-rozmowe-claude/">Jak zapisać rozmowę Claude</a>
+      <a href="/pl/pobierz-rozmowe-claude/">Pobierz rozmowę Claude</a>
+    </div>
+    <div>
+      <h2>Informacje prawne</h2>
+      <a href="/pl/o-nas/">O nas</a>
+      <a href="/pl/o-nas/#contact">Kontakt</a>
+      <a href="/privacy/" hreflang="en">Prywatność (po angielsku)</a>
+      <a href="/terms/" hreflang="en">Regulamin (po angielsku)</a>
+      <a href="/refund/" hreflang="en">Zwroty (po angielsku)</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Download Claude conversations. Wszelkie prawa zastrzeżone.</div>
+    <div>
+      <a href="/privacy/" hreflang="en">Polityka prywatności (po angielsku)</a>
+      <a href="/terms/" hreflang="en">Regulamin (po angielsku)</a>
+      <a href="/refund/" hreflang="en">Zwroty (po angielsku)</a>
+    </div>
+  </div>
+  <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/how-it-works/" hreflang="en" lang="en">English</a> <a href="/de/so-funktioniert-es/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/comment-ca-marche/" hreflang="fr" lang="fr">Français</a> <a href="/es/como-funciona/" hreflang="es" lang="es">Español</a> <a href="/it/come-funziona/" hreflang="it" lang="it">Italiano</a> <a href="/pt/como-funciona/" hreflang="pt" lang="pt">Português</a> <a href="/nl/hoe-het-werkt/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/sa-fungerar-det/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/slik-fungerer-det/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/saadan-virker-det/" hreflang="da" lang="da">Dansk</a> <a href="/fi/nain-se-toimii/" hreflang="fi" lang="fi">Suomi</a> <a href="/pl/jak-to-dziala/" hreflang="pl" lang="pl">Polski</a> <a href="/cs/jak-to-funguje/" hreflang="cs" lang="cs">Čeština</a> <a href="/sk/ako-to-funguje/" hreflang="sk" lang="sk">Slovenčina</a> <a href="/hu/hogyan-mukodik/" hreflang="hu" lang="hu">Magyar</a> <a href="/ro/cum-functioneaza/" hreflang="ro" lang="ro">Română</a> <a href="/el/how-it-works/" hreflang="el" lang="el">Ελληνικά</a> <a href="/tr/nasil-calisir/" hreflang="tr" lang="tr">Türkçe</a> <a href="/ja/how-it-works/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/how-it-works/" hreflang="ko" lang="ko">한국어</a> <a href="/zh-hant/how-it-works/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="/he/how-it-works/" hreflang="he" lang="he">עברית</a> <a href="/ar/how-it-works/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
+  <p class="disclaimer">Czaty przetwarzane w Twojej przeglądarce · Logowanie Google tylko dla PDF, eksportu zbiorczego i Pro · Brak powiązań z Anthropic, PBC. Claude jest znakiem towarowym Anthropic. Niezależne rozszerzenie Chrome — nie jest oficjalnym produktem Anthropic. Pomoc: <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

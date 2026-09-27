@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Claude 對話匯出 JSON：給腳本用的訊息結構</title>
+  <meta name="description" content="把 Claude 對話匯出成 JSON，保留完整訊息結構，和 Anthropic 的帳號匯出 ZIP 不同。可單一聊天或批次匯出。">
+  <link rel="canonical" href="https://chat-downloader.com/zh-hant/formats/json/">
+  <!-- i18n:head -->
+  <link rel="alternate" hreflang="en" href="https://chat-downloader.com/formats/json/">
+  <link rel="alternate" hreflang="de" href="https://chat-downloader.com/de/formate/json/">
+  <link rel="alternate" hreflang="fr" href="https://chat-downloader.com/fr/formats/json/">
+  <link rel="alternate" hreflang="es" href="https://chat-downloader.com/es/formatos/json/">
+  <link rel="alternate" hreflang="it" href="https://chat-downloader.com/it/formati/json/">
+  <link rel="alternate" hreflang="pt" href="https://chat-downloader.com/pt/formatos/json/">
+  <link rel="alternate" hreflang="nl" href="https://chat-downloader.com/nl/formaten/json/">
+  <link rel="alternate" hreflang="sv" href="https://chat-downloader.com/sv/format/json/">
+  <link rel="alternate" hreflang="nb" href="https://chat-downloader.com/nb/formater/json/">
+  <link rel="alternate" hreflang="da" href="https://chat-downloader.com/da/formater/json/">
+  <link rel="alternate" hreflang="fi" href="https://chat-downloader.com/fi/formaatit/json/">
+  <link rel="alternate" hreflang="pl" href="https://chat-downloader.com/pl/formaty/json/">
+  <link rel="alternate" hreflang="cs" href="https://chat-downloader.com/cs/formaty/json/">
+  <link rel="alternate" hreflang="sk" href="https://chat-downloader.com/sk/formaty/json/">
+  <link rel="alternate" hreflang="hu" href="https://chat-downloader.com/hu/formatumok/json/">
+  <link rel="alternate" hreflang="ro" href="https://chat-downloader.com/ro/formate/json/">
+  <link rel="alternate" hreflang="el" href="https://chat-downloader.com/el/formats/json/">
+  <link rel="alternate" hreflang="tr" href="https://chat-downloader.com/tr/formatlar/json/">
+  <link rel="alternate" hreflang="ja" href="https://chat-downloader.com/ja/formats/json/">
+  <link rel="alternate" hreflang="ko" href="https://chat-downloader.com/ko/formats/json/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://chat-downloader.com/zh-hant/formats/json/">
+  <link rel="alternate" hreflang="he" href="https://chat-downloader.com/he/formats/json/">
+  <link rel="alternate" hreflang="ar" href="https://chat-downloader.com/ar/formats/json/">
+  <link rel="alternate" hreflang="x-default" href="https://chat-downloader.com/formats/json/">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="it_IT">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="sv_SE">
+  <meta property="og:locale:alternate" content="nb_NO">
+  <meta property="og:locale:alternate" content="da_DK">
+  <meta property="og:locale:alternate" content="fi_FI">
+  <meta property="og:locale:alternate" content="pl_PL">
+  <meta property="og:locale:alternate" content="cs_CZ">
+  <meta property="og:locale:alternate" content="sk_SK">
+  <meta property="og:locale:alternate" content="hu_HU">
+  <meta property="og:locale:alternate" content="ro_RO">
+  <meta property="og:locale:alternate" content="el_GR">
+  <meta property="og:locale:alternate" content="tr_TR">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <meta property="og:locale:alternate" content="he_IL">
+  <meta property="og:locale:alternate" content="ar_AE">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&amp;display=swap" rel="stylesheet">
+  <!-- /i18n:head -->
+  <meta property="og:title" content="Claude 對話匯出 JSON：給腳本用的訊息結構">
+  <meta property="og:description" content="把 Claude 對話匯出成 JSON，保留完整訊息結構，和 Anthropic 的帳號匯出 ZIP 不同。可單一聊天或批次匯出。">
+  <meta property="og:url" content="https://chat-downloader.com/zh-hant/formats/json/">
+  <meta property="og:image" content="https://chat-downloader.com/assets/widget-guide.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chat Downloader">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Claude 對話匯出 JSON：給腳本用的訊息結構">
+  <meta name="twitter:description" content="把 Claude 對話匯出成 JSON，保留完整訊息結構，和 Anthropic 的帳號匯出 ZIP 不同。可單一聊天或批次匯出。">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME1YXGZKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GME1YXGZKR');
+  </script>
+  
+  
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"可以批次把 Claude 對話匯出成 JSON 嗎？","acceptedAnswer":{"@type":"Answer","text":"可以。Dashboard 上的「Export All」支援 JSON，會存成一個 ZIP，每個聊天一個 JSON 檔。免費方案用 Google 登入後每天可匯出 3 個聊天；Pro（每月 US$3.99 或每年 US$26.99）不限次數。"}},{"@type":"Question","name":"JSON 結構有文件說明嗎？","acceptedAnswer":{"@type":"Answer","text":"它對應 claude.ai 本身的訊息結構：傳送者、內容區塊、時間戳記和模型中繼資料；開啟相關選項時，也會包含 Artifact、思考區塊、網頁搜尋來源和工具／MCP 步驟。它不是 Anthropic 帳號 ZIP 的結構。"}},{"@type":"Question","name":"把 Claude 對話匯出成 JSON 需要 Pro 嗎？","acceptedAnswer":{"@type":"Answer","text":"不需要。單一聊天的 JSON 匯出不限次數、不需要帳號，除了 PDF 以外的每種格式都一樣。Pro（每月 US$3.99 或每年 US$26.99）只是取消 PDF 和批次「Export All」每天 3 次的限制。"}},{"@type":"Question","name":"可以比對同一個聊天的兩個 JSON 匯出檔嗎？","acceptedAnswer":{"@type":"Answer","text":"可以。每次把 Claude 對話匯出成 JSON，都會得到用同樣方式產生、獨立完整的檔案。比對同一個對話在不同時間的兩次匯出，就和比對其他 JSON 檔一樣。"}},{"@type":"Question","name":"這個 JSON 和 Anthropic 的 Export data 一樣嗎？","acceptedAnswer":{"@type":"Answer","text":"不一樣。Anthropic 的 Export data 是延遲寄出的整個帳號 ZIP。Download Claude conversations 會在 Chrome 中立即寫出單一聊天（或所選訊息）的 JSON 檔。兩者可能都是 JSON，但不能互相替代。"}},{"@type":"Question","name":"匯出成 JSON 會產生 PDF 嗎？","acceptedAnswer":{"@type":"Answer","text":"不會。JSON 是結構化資料。需要分頁文件時，請在同一個面板選 PDF；七種格式是 PDF、Markdown、JSON、純文字、XML、CSV 和 PNG。PDF 需要 Google 登入，在免費方案中計入每天 3 次。"}},{"@type":"Question","name":"JSON 匯出能在 Claude Desktop 上使用嗎？","acceptedAnswer":{"@type":"Answer","text":"不能。這個 Chrome 擴充功能只會注入 claude.ai。Claude Desktop 永遠不會出現 JSON 選項。如果同一個對話也在 claude.ai 上，請在 Chrome 中開啟它。"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://chat-downloader.com/zh-hant/"},{"@type":"ListItem","position":2,"name":"格式","item":"https://chat-downloader.com/zh-hant/formats/"},{"@type":"ListItem","position":3,"name":"JSON","item":"https://chat-downloader.com/zh-hant/formats/json/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">跳到主要內容</a>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a class="logo" href="/zh-hant/">
+        <img src="/assets/icon.svg" alt="">
+        <span>Download Claude conversations</span>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="/zh-hant/how-to-download-claude-chat/">下載教學</a><a href="/zh-hant/how-to-export-claude-chat/">匯出</a><a href="/zh-hant/bulk/">批次</a><a href="/zh-hant/formats/">格式</a><a href="/zh-hant/#faq">常見問題</a>
+        <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=zh-hant-formats-json" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> 加到 Chrome</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=zh-hant-formats-json" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> 加到 Chrome</a>
+      <!-- i18n:switch --><details class="lang-switch"><summary aria-label="語言: 繁體中文"><svg class="lang-globe" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span class="lang-name">繁體中文</span><span class="lang-code" aria-hidden="true">zh</span></summary><ul><li><a href="/formats/json/" hreflang="en" lang="en">English</a></li><li><a href="/de/formate/json/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/formats/json/" hreflang="fr" lang="fr">Français</a></li><li><a href="/es/formatos/json/" hreflang="es" lang="es">Español</a></li><li><a href="/it/formati/json/" hreflang="it" lang="it">Italiano</a></li><li><a href="/pt/formatos/json/" hreflang="pt" lang="pt">Português</a></li><li><a href="/nl/formaten/json/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/sv/format/json/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="/nb/formater/json/" hreflang="nb" lang="nb">Norsk</a></li><li><a href="/da/formater/json/" hreflang="da" lang="da">Dansk</a></li><li><a href="/fi/formaatit/json/" hreflang="fi" lang="fi">Suomi</a></li><li><a href="/pl/formaty/json/" hreflang="pl" lang="pl">Polski</a></li><li><a href="/cs/formaty/json/" hreflang="cs" lang="cs">Čeština</a></li><li><a href="/sk/formaty/json/" hreflang="sk" lang="sk">Slovenčina</a></li><li><a href="/hu/formatumok/json/" hreflang="hu" lang="hu">Magyar</a></li><li><a href="/ro/formate/json/" hreflang="ro" lang="ro">Română</a></li><li><a href="/el/formats/json/" hreflang="el" lang="el">Ελληνικά</a></li><li><a href="/tr/formatlar/json/" hreflang="tr" lang="tr">Türkçe</a></li><li><a href="/ja/formats/json/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/ko/formats/json/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/zh-hant/formats/json/" hreflang="zh-Hant" lang="zh-Hant" aria-current="true">繁體中文</a></li><li><a href="/he/formats/json/" hreflang="he" lang="he">עברית</a></li><li><a href="/ar/formats/json/" hreflang="ar" lang="ar">العربية</a></li></ul></details><!-- /i18n:switch -->
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="選單">☰</button>
+    </div>
+  </div>
+</header>
+<nav class="crumbs" aria-label="導覽路徑"><a href="/zh-hant/">首頁</a> / <a href="/zh-hant/formats/">格式</a> / JSON</nav>
+<main id="main">
+<article class="band prose">
+<p class="article-meta">更新於 <time datetime="2026-09">2026 年 9 月</time> · 擴充功能 1.16.2</p>
+<h1 class="page-h1">Claude 對話匯出 JSON，交給腳本處理</h1>
+<p class="lead">要把 Claude 對話匯出成 JSON：安裝 Download Claude conversations，在 claude.ai 開啟對話，點橘色按鈕，選擇 JSON，再按「Export」（匯出）。Chrome 會存下單一聊天的檔案，內含訊息結構。這個檔案不是 Anthropic 的帳號 ZIP。JSON 匯出免費、不限次數，也不需要帳號；Pro（每月 US$3.99 或每年 US$26.99）只和批次匯出與 PDF 有關。</p>
+<aside class="trust-badge" aria-label="關於擴充功能">
+  <span class="trophy" aria-hidden="true">🧩</span>
+  <div>
+    <strong>Download Claude conversations：適用於 claude.ai 的免費 Chrome 擴充功能</strong>
+    <span>版本 1.16.2（2026 年 9 月）：Markdown、文字、JSON、XML、CSV 與 PNG 匯出不限次數、免帳號；PDF 與批次 ZIP 每天免費 3 次</span>
+  </div>
+</aside>
+<nav class="toc" aria-label="本頁內容">
+  <p>本頁內容</p>
+  <ol>
+    <li><a href="#how-to">如何把 Claude 對話匯出成 JSON？</a></li>
+    <li><a href="#when">什麼時候該匯出成 JSON？</a></li>
+    <li><a href="#inside">JSON 匯出檔裡有什麼？</a></li>
+    <li><a href="#vs-zip">對話 JSON 和 Anthropic 的 Export data 有什麼不同？</a></li>
+    <li><a href="#bulk">可以批次匯出成 JSON 嗎？</a></li>
+    <li><a href="#cost">匯出 JSON 需要 Pro 嗎？</a></li>
+    <li><a href="#faq">常見問題：Claude 對話匯出 JSON</a></li>
+  </ol>
+</nav>
+
+<h2 id="how-to">如何把 Claude 對話匯出成 JSON？</h2>
+<p>在 Chrome 中開啟 claude.ai 上的對話，點訊息輸入框旁的橘色按鈕，選擇 JSON，再按「Export」。Download Claude conversations 會在本機寫出檔案。這就是在 1.16.2 版中把 Claude 對話匯出成 JSON（香港使用者常說「導出」）的方法。截至 2026 年 9 月，claude.ai 本身沒有把單一聊天另存為 JSON 的功能。</p>
+<ol>
+<li>從 Chrome Web Store 安裝 Download Claude conversations。</li>
+<li>重新整理 claude.ai，開啟一個真正的對話網址，而不是空白的輸入首頁。</li>
+<li>點訊息輸入框右側的橘色下載按鈕。</li>
+<li>選擇 JSON。擴充功能會記住你上次使用的格式。用「Select」（選取）只勾選你需要的訊息。</li>
+<li>按「Export」。Chrome 會透過瀏覽器的下載 API 存下 JSON。也可以按「Copy」（複製），把 JSON 放到剪貼簿。</li>
+</ol>
+<p>匯出 JSON 不需要登入。單一聊天的 JSON 匯出不限次數、匿名進行，不會傳送任何資料到我們的伺服器。只有 PDF 和批次「Export All」（全部匯出）才會要求 Google 登入。運作機制請見<a href="/zh-hant/how-it-works/">運作方式</a>。</p>
+<p>如果看不到橘色按鈕，可能是你不在對話網址上、分頁需要重新整理，或擴充功能藏在 Chrome 的拼圖選單裡。釘選 Download Claude conversations，再重新整理 claude.ai。內容腳本永遠不會注入 Claude Desktop 或 Claude Code 終端機。</p>
+<div class="callout callout-tip">
+  <p><strong>一個對話或很多檔案。</strong>橘色按鈕會把目前開啟的聊天匯出成 JSON。要產出很多 JSON 檔，請開啟「View and Download All Conversations」（查看並下載所有對話），選好 JSON 後執行「Export All」：產出一個 ZIP，免費方案每天 3 個聊天，詳見<a href="/zh-hant/bulk/">批次「Export All」</a>。</p>
+</div>
+
+<h2 id="when">什麼時候該匯出成 JSON？</h2>
+<p>當腳本、索引工具或差異比對工具要讀取檔案時，就把對話匯出成 JSON。這個 JSON 是為訊息結構設計的，不是用來在 Obsidian 裡閱讀的。如果你要給人看的標題和程式碼區塊，請改選 Markdown。要放進試算表，請選 <a href="/zh-hant/formats/">CSV</a>：每則訊息一列。</p>
+<p>從 claude.ai 複製貼上會失去傳送者結構。列印會連網頁介面一起保留。把 Claude 對話匯出成 JSON 時，Download Claude conversations 會把每一輪、傳送者和選用的思考過程保留為資料，而不是攤平成一段文字。這就是開發者選 JSON 而不選純文字的原因。</p>
+<div class="expert-quote">
+  <p>我們從頁面上已有的 claude.ai 結構寫出 JSON：傳送者、內容區塊、時間戳記、模型中繼資料，完全不上傳對話內容。這個 JSON 不是 Anthropic 的帳號 ZIP。在 1.16.2 版中，它是七種格式之一，和 PDF、CSV 並列，免費且不需要帳號。</p>
+  <footer>Download Claude conversations 團隊</footer>
+</div>
+<p>也有人搜尋 Claude Chat Downloader 或 Claude Conversation Downloader 找到同一個商店頁面。把對話匯出成 JSON 用的就是那個橘色按鈕，不是另一個產品。法律頁面上可能仍寫著 Claude Exporter。</p>
+
+<h2 id="inside">JSON 匯出檔裡有什麼？</h2>
+<p>Claude 對話的 JSON 匯出檔會對應 claude.ai 上的訊息結構：傳送者、內容區塊、時間戳記和模型中繼資料。開啟相關選項時，也會包含思考區塊、網頁搜尋來源、工具／MCP 步驟和 Artifact：「Thinking」（思考過程）是匯出面板中的核取方塊，工具和來源在設定頁開啟。傳送者篩選可以讓檔案只包含全部訊息、只有使用者，或只有助理的訊息。內容不會先被轉成 Markdown 再攤平。</p>
+<p>1.16.2 版的 Artifact 版面有「Original」「Inline」「Nested」「Flat」（原始、內嵌、巢狀、扁平）。這些版面會改變 Artifact 內容在 JSON 中的巢狀方式，和 Markdown、XML 使用的是同樣四個選項。完整清單：<a href="/zh-hant/features/">Chrome 擴充功能特色</a>。需要分頁文件而不是資料時，請匯出 <a href="/zh-hant/download-claude-chat-as-pdf/">PDF</a>。</p>
+<table>
+  <caption>把 Claude 對話匯出成 JSON 時通常會有的欄位</caption>
+  <thead>
+    <tr>
+      <th scope="col">項目</th>
+      <th scope="col">在 JSON 裡嗎？</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>訊息結構（每一輪、傳送者）</td>
+      <td>是</td>
+    </tr>
+    <tr>
+      <td>內容區塊</td>
+      <td>是</td>
+    </tr>
+    <tr>
+      <td>時間戳記與模型中繼資料</td>
+      <td>是，開啟「Metadata」（中繼資料）時</td>
+    </tr>
+    <tr>
+      <td>思考區塊</td>
+      <td>開啟「Thinking」時才有</td>
+    </tr>
+    <tr>
+      <td>Artifact</td>
+      <td>是，依你選的版面</td>
+    </tr>
+    <tr>
+      <td>網頁搜尋來源、工具／MCP 步驟</td>
+      <td>開啟後才有</td>
+    </tr>
+    <tr>
+      <td>整個帳號的 ZIP 包裝</td>
+      <td>否，那是 Anthropic 的 Export data</td>
+    </tr>
+  </tbody>
+</table>
+<p>如果對話很長，匯出成 JSON 前請先往上捲動，讓 claude.ai 載入較早的訊息。擴充功能只能序列化頁面已經顯示的內容。只載入一半的 DOM 會產生被截斷的 JSON 檔。</p>
+
+<h2 id="vs-zip">對話 JSON 和 Anthropic 的 Export data 有什麼不同？</h2>
+<p>兩者都是 JSON，但結構和範圍不同。Anthropic 的 Settings → Privacy → Export data（若 claude.ai 設為中文，選單名稱可能會顯示為中文）會在一段時間後，以電子郵件寄出整個帳號的一個 ZIP。用擴充功能把 Claude 對話匯出成 JSON，則會在 Chrome 中立即拿到一個對話。ZIP 適合拿來備份。</p>
+<table>
+  <caption>從 claude.ai 取得 JSON 的兩種不同途徑</caption>
+  <thead>
+    <tr>
+      <th scope="col">方法</th>
+      <th scope="col">範圍</th>
+      <th scope="col">檔案何時到手</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Download Claude conversations 的 JSON</td>
+      <td>這個聊天或批次選取的聊天</td>
+      <td>立即透過 Chrome 下載</td>
+    </tr>
+    <tr>
+      <td>Settings → Privacy → Export data</td>
+      <td>整個帳號</td>
+      <td>會過期的電子郵件連結</td>
+    </tr>
+    <tr>
+      <td>Download Claude conversations 的 PDF</td>
+      <td>這個聊天的分頁文件</td>
+      <td>立即，但是 PDF，不是 JSON</td>
+    </tr>
+  </tbody>
+</table>
+<p>在 Anthropic 的 ZIP 申請裡無法選擇 Markdown。這個擴充功能產出的 JSON 也不能直接當作那個 ZIP 結構的替代品。格式總覽：<a href="/zh-hant/formats/">Claude 聊天匯出格式</a>。<a href="/zh-hant/download-claude-chat-as-pdf/">PDF</a> 是給人閱讀的，不是 JSON 匯出。</p>
+<p>Download Claude conversations 與 Anthropic, PBC 沒有關聯。內容腳本使用你在 claude.ai 上已經開啟的工作階段，不會用另外的帳密登入 Anthropic。請遵守 Anthropic 對你帳號的規範。</p>
+
+<h2 id="bulk">可以批次匯出成 JSON 嗎？</h2>
+<p>可以。開啟「View and Download All Conversations」，把「Chat format」（聊天格式）設為 JSON，篩選表格，再按「Export All」。Chrome 會存下一個 ZIP，每個聊天一個 JSON 檔。免費方案用 Google 登入後每天可匯出 3 個聊天，與 PDF 共用。Pro（每月 US$3.99 或每年 US$26.99）取消批次 JSON 的這個上限。</p>
+<p>Dashboard（控制台）會列出 claude.ai 的對話紀錄，可依名稱搜尋，提供 All conversations、New、Updated 和 Previously exported（所有對話、新的、已更新、先前已匯出）篩選條件、Chat 與 Cowork 分頁，以及專案搜尋。New 表示尚未用 Download Claude conversations 匯出過。Previously exported 會記錄你已存過的聊天。「Export All」產出的是一個 ZIP，每個聊天各一個 JSON 檔，不是混合格式的封存檔。</p>
+<div class="callout callout-warn">
+  <p><strong>每日限制以帳號計算。</strong>免費方案每天 3 個聊天，與 PDF 共用。如果只剩 3 次卻選了 40 個對話，整批會被擋下，而不是只匯出一部分。少選一些，或改用 Pro。從橘色按鈕匯出的單一 JSON 仍然不限次數。</p>
+</div>
+<p>同一個 claude.ai 對話在不同時間匯出的兩個 JSON 檔，可以像比對任何 JSON 檔一樣比對差異。每次匯出都是獨立完整的檔案。對同一批聊天再執行一次「Export All」，每個聊天都會再計算一次。</p>
+
+<h2 id="cost">匯出 JSON 需要 Pro 嗎？</h2>
+<p>不需要。單一聊天的 JSON 匯出免費、不限次數，不需要帳號，也沒有計數，和 Markdown、文字、XML、CSV、PNG 一樣。只有 PDF 和批次「Export All」有免費限制：用 Google 登入後每天 3 次。Pro 透過 Paddle 付款，每月 US$3.99 或每年 US$26.99。用 Download Claude conversations 把 Claude 對話匯出成 JSON 不會額外收費。</p>
+<p>限制只會出現在批次 JSON。「Export All」ZIP 裡的每個聊天都會用掉每天 3 次中的 1 次，計數在 UTC 午夜重設。Pro 取消這個限制，在新電腦上用同一個 Google 帳號登入即可恢復。Paddle 是正式的交易商家；我們團隊永遠看不到卡號。</p>
+<p>擴充功能只在 Chrome 的 claude.ai 上執行。Claude Desktop 和 Claude Code 終端機都沒有 JSON 按鈕；Claude Code 網頁版（claude.ai/code）在 claude.ai 上執行，所以能像一般聊天一樣匯出。終端機版 Claude Code 的 <code>/export</code> 或磁碟上的 JSONL 是另一條途徑。2026 年 9 月的 1.16.2 版仍然不會寫出 Word 或 Notion 檔案。</p>
+
+<h2 id="faq">常見問題：Claude 對話匯出 JSON</h2>
+<p>這些常見問題說明如何在 Download Claude conversations 1.16.2 中把 Claude 對話匯出成 JSON：批次「Export All」、資料結構、費用、差異比對、Anthropic 的 ZIP、PDF 和 Desktop。每個回答都是產品事實。頁首的 FAQPage JSON-LD 與這份清單一致。</p>
+
+<h3>可以批次把 Claude 對話匯出成 JSON 嗎？</h3>
+<p>可以。Dashboard 上的「Export All」支援 JSON，會存成一個 ZIP，每個聊天一個 JSON 檔。免費方案用 Google 登入後每天可匯出 3 個聊天；Pro（每月 US$3.99 或每年 US$26.99）不限次數。</p>
+
+<h3>JSON 結構有文件說明嗎？</h3>
+<p>它對應 claude.ai 本身的訊息結構：傳送者、內容區塊、時間戳記和模型中繼資料；開啟相關選項時，也會包含 Artifact、思考區塊、網頁搜尋來源和工具／MCP 步驟。它不是 Anthropic 帳號 ZIP 的結構。</p>
+
+<h3>把 Claude 對話匯出成 JSON 需要 Pro 嗎？</h3>
+<p>不需要。單一聊天的 JSON 匯出不限次數、不需要帳號，除了 PDF 以外的每種格式都一樣。Pro（每月 US$3.99 或每年 US$26.99）只是取消 PDF 和批次「Export All」每天 3 次的限制。</p>
+
+<h3>可以比對同一個聊天的兩個 JSON 匯出檔嗎？</h3>
+<p>可以。每次把 Claude 對話匯出成 JSON，都會得到用同樣方式產生、獨立完整的檔案。比對同一個對話在不同時間的兩次匯出，就和比對其他 JSON 檔一樣。</p>
+
+<h3>這個 JSON 和 Anthropic 的 Export data 一樣嗎？</h3>
+<p>不一樣。Anthropic 的 Export data 是延遲寄出的整個帳號 ZIP。Download Claude conversations 會在 Chrome 中立即寫出單一聊天（或所選訊息）的 JSON 檔。兩者可能都是 JSON，但不能互相替代。</p>
+
+<h3>匯出成 JSON 會產生 PDF 嗎？</h3>
+<p>不會。JSON 是結構化資料。需要分頁文件時，請在同一個面板選 PDF；七種格式是 PDF、Markdown、JSON、純文字、XML、CSV 和 PNG。PDF 需要 Google 登入，在免費方案中計入每天 3 次。</p>
+
+<h3>JSON 匯出能在 Claude Desktop 上使用嗎？</h3>
+<p>不能。這個 Chrome 擴充功能只會注入 claude.ai。Claude Desktop 永遠不會出現 JSON 選項。如果同一個對話也在 claude.ai 上，請在 Chrome 中開啟它。</p>
+</article>
+</main>
+<section class="final-cta page-cta" aria-label="安裝">
+  <div class="wrap">
+    <div class="final-cta-panel">
+      <p class="final-kicker">Download Claude conversations</p>
+      <h2>安裝擴充功能，幾秒內下載 Claude 聊天</h2>
+      <p>把重要的 Claude 對話存成 PDF、Markdown、JSON、文字、CSV、XML 或 PNG，在 Chrome 中於本機完成。</p>
+      <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=zh-hant-formats-json" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> 加到 Chrome</a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="logo" href="/zh-hant/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
+      <p class="legal-note">把 Claude.ai 聊天下載成 PDF、Markdown、JSON、純文字、CSV、XML 或 PNG 的 Chrome 擴充功能。</p>
+    </div>
+    <div>
+      <h2>安裝</h2>
+      <a class="install-link" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=zh-hant-footer" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Chrome 擴充功能</a>
+    </div>
+    <div>
+      <h2>產品</h2>
+      <a href="/zh-hant/features/">功能</a>
+      <a href="/zh-hant/formats/">格式</a>
+      <a href="/zh-hant/bulk/">批次下載</a>
+      <a href="/zh-hant/how-it-works/">運作方式</a>
+    </div>
+    <div>
+      <h2>教學</h2>
+      <a href="/zh-hant/how-to-download-claude-chat/">如何下載 Claude 聊天</a>
+      <a href="/zh-hant/how-to-export-claude-chat/">如何匯出 Claude 聊天</a>
+      <a href="/zh-hant/export-claude-chat/">匯出 Claude 聊天</a>
+      <a href="/zh-hant/claude-conversation-extractor/">Claude 對話擷取工具</a>
+      <a href="/zh-hant/claude-code-export/">Claude Code 匯出</a>
+      <a href="/zh-hant/download-claude-chat-as-pdf/">Claude 聊天存成 PDF</a>
+      <a href="/zh-hant/export-claude-desktop-chat/">Claude Desktop 匯出</a>
+      <a href="/zh-hant/claude-export-conversation/">Claude 對話匯出</a>
+      <a href="/zh-hant/how-to-save-claude-conversation/">如何儲存 Claude 對話</a>
+      <a href="/zh-hant/download-claude-conversation/">下載 Claude 對話</a>
+    </div>
+    <div>
+      <h2>法律資訊</h2>
+      <a href="/zh-hant/about/">關於我們</a>
+      <a href="/zh-hant/about/#contact">聯絡我們</a>
+      <a href="/privacy/" hreflang="en">隱私權 （英文）</a>
+      <a href="/terms/" hreflang="en">條款 （英文）</a>
+      <a href="/refund/" hreflang="en">退款 （英文）</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Download Claude conversations. 保留所有權利。</div>
+    <div>
+      <a href="/privacy/" hreflang="en">隱私權政策 （英文）</a>
+      <a href="/terms/" hreflang="en">服務條款 （英文）</a>
+      <a href="/refund/" hreflang="en">退款 （英文）</a>
+    </div>
+  </div>
+  <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/formats/json/" hreflang="en" lang="en">English</a> <a href="/de/formate/json/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/formats/json/" hreflang="fr" lang="fr">Français</a> <a href="/es/formatos/json/" hreflang="es" lang="es">Español</a> <a href="/it/formati/json/" hreflang="it" lang="it">Italiano</a> <a href="/pt/formatos/json/" hreflang="pt" lang="pt">Português</a> <a href="/nl/formaten/json/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/format/json/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/formater/json/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/formater/json/" hreflang="da" lang="da">Dansk</a> <a href="/fi/formaatit/json/" hreflang="fi" lang="fi">Suomi</a> <a href="/pl/formaty/json/" hreflang="pl" lang="pl">Polski</a> <a href="/cs/formaty/json/" hreflang="cs" lang="cs">Čeština</a> <a href="/sk/formaty/json/" hreflang="sk" lang="sk">Slovenčina</a> <a href="/hu/formatumok/json/" hreflang="hu" lang="hu">Magyar</a> <a href="/ro/formate/json/" hreflang="ro" lang="ro">Română</a> <a href="/el/formats/json/" hreflang="el" lang="el">Ελληνικά</a> <a href="/tr/formatlar/json/" hreflang="tr" lang="tr">Türkçe</a> <a href="/ja/formats/json/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/formats/json/" hreflang="ko" lang="ko">한국어</a> <a href="/zh-hant/formats/json/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="/he/formats/json/" hreflang="he" lang="he">עברית</a> <a href="/ar/formats/json/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
+  <p class="disclaimer">聊天在你的瀏覽器中處理 · 只有 PDF、批次匯出和 Pro 需要 Google 登入 · 與 Anthropic, PBC 無關。Claude 是 Anthropic 的商標。本擴充功能為獨立開發的 Chrome 擴充功能，不是 Anthropic 的官方產品。客服： <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

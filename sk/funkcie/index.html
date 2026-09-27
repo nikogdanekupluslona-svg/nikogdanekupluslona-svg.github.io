@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Funkcie rozšírenia pre Chrome – export, formáty, artefakty</title>
+  <meta name="description" content="Rozšírenie Claude Chat Downloader pre Chrome: PDF a šesť ďalších formátov, „Select“, „Copy“, „Export All“, artefakty, nastavenia. Zadarmo, bez účtu.">
+  <link rel="canonical" href="https://chat-downloader.com/sk/funkcie/">
+  <!-- i18n:head -->
+  <link rel="alternate" hreflang="en" href="https://chat-downloader.com/features/">
+  <link rel="alternate" hreflang="de" href="https://chat-downloader.com/de/funktionen/">
+  <link rel="alternate" hreflang="fr" href="https://chat-downloader.com/fr/fonctionnalites/">
+  <link rel="alternate" hreflang="es" href="https://chat-downloader.com/es/funciones/">
+  <link rel="alternate" hreflang="it" href="https://chat-downloader.com/it/funzionalita/">
+  <link rel="alternate" hreflang="pt" href="https://chat-downloader.com/pt/recursos/">
+  <link rel="alternate" hreflang="nl" href="https://chat-downloader.com/nl/functies/">
+  <link rel="alternate" hreflang="sv" href="https://chat-downloader.com/sv/funktioner/">
+  <link rel="alternate" hreflang="nb" href="https://chat-downloader.com/nb/funksjoner/">
+  <link rel="alternate" hreflang="da" href="https://chat-downloader.com/da/funktioner/">
+  <link rel="alternate" hreflang="fi" href="https://chat-downloader.com/fi/ominaisuudet/">
+  <link rel="alternate" hreflang="pl" href="https://chat-downloader.com/pl/funkcje/">
+  <link rel="alternate" hreflang="cs" href="https://chat-downloader.com/cs/funkce/">
+  <link rel="alternate" hreflang="sk" href="https://chat-downloader.com/sk/funkcie/">
+  <link rel="alternate" hreflang="hu" href="https://chat-downloader.com/hu/funkciok/">
+  <link rel="alternate" hreflang="ro" href="https://chat-downloader.com/ro/functii/">
+  <link rel="alternate" hreflang="el" href="https://chat-downloader.com/el/features/">
+  <link rel="alternate" hreflang="tr" href="https://chat-downloader.com/tr/ozellikler/">
+  <link rel="alternate" hreflang="ja" href="https://chat-downloader.com/ja/features/">
+  <link rel="alternate" hreflang="ko" href="https://chat-downloader.com/ko/features/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://chat-downloader.com/zh-hant/features/">
+  <link rel="alternate" hreflang="he" href="https://chat-downloader.com/he/features/">
+  <link rel="alternate" hreflang="ar" href="https://chat-downloader.com/ar/features/">
+  <link rel="alternate" hreflang="x-default" href="https://chat-downloader.com/features/">
+  <meta property="og:locale" content="sk_SK">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="it_IT">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="sv_SE">
+  <meta property="og:locale:alternate" content="nb_NO">
+  <meta property="og:locale:alternate" content="da_DK">
+  <meta property="og:locale:alternate" content="fi_FI">
+  <meta property="og:locale:alternate" content="pl_PL">
+  <meta property="og:locale:alternate" content="cs_CZ">
+  <meta property="og:locale:alternate" content="hu_HU">
+  <meta property="og:locale:alternate" content="ro_RO">
+  <meta property="og:locale:alternate" content="el_GR">
+  <meta property="og:locale:alternate" content="tr_TR">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <meta property="og:locale:alternate" content="zh_TW">
+  <meta property="og:locale:alternate" content="he_IL">
+  <meta property="og:locale:alternate" content="ar_AE">
+  <!-- /i18n:head -->
+  <meta property="og:title" content="Funkcie rozšírenia pre Chrome – export, formáty, artefakty">
+  <meta property="og:description" content="Rozšírenie Claude Chat Downloader pre Chrome: PDF a šesť ďalších formátov, „Select“, „Copy“, „Export All“, artefakty, nastavenia. Zadarmo, bez účtu.">
+  <meta property="og:url" content="https://chat-downloader.com/sk/funkcie/">
+  <meta property="og:image" content="https://chat-downloader.com/assets/widget-guide.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chat Downloader">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Funkcie rozšírenia pre Chrome – export, formáty, artefakty">
+  <meta name="twitter:description" content="Rozšírenie Claude Chat Downloader pre Chrome: PDF a šesť ďalších formátov, „Select“, „Copy“, „Export All“, artefakty, nastavenia. Zadarmo, bez účtu.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME1YXGZKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GME1YXGZKR');
+  </script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Ktoré funkcie rozšírenia exportujú jeden chat?","acceptedAnswer":{"@type":"Answer","text":"Oranžové tlačidlo vedľa poľa na správu na adrese konverzácie na claude.ai. Vyberte PDF, Markdown, JSON, text, XML, CSV alebo PNG a kliknite na „Export“ alebo „Copy“. To je najrýchlejšia cesta pre jedno vlákno a prihlásenie potrebuje len PDF."}},{"@type":"Question","name":"Patrí medzi funkcie rozšírenia hromadný „Export All“?","acceptedAnswer":{"@type":"Answer","text":"Áno. Dashboard („View and Download All Conversations“) zobrazuje históriu claude.ai s filtrami „All conversations“, „New“, „Updated“ a „Previously exported“, kartami Chat a Cowork a vyhľadávaním v projektoch. „Export All“ uloží jeden ZIP. Bezplatný plán pokrýva 3 chaty denne s prihlásením cez Google; Pro je neobmedzené."}},{"@type":"Question","name":"Aké formáty funkcie rozšírenia podporujú?","acceptedAnswer":{"@type":"Answer","text":"Sedem: PDF, Markdown, čistý text, JSON, XML, CSV a PNG. PDF sa vytvára v prehliadači s vlastným dialógom. CSV má jeden riadok na správu. PNG je jeden obrázok konverzácie."}},{"@type":"Question","name":"Exportujú funkcie rozšírenia artefakty a uvažovanie?","acceptedAnswer":{"@type":"Answer","text":"Áno. Rozloženie artefaktov je „Original“, „Inline“, „Nested“ alebo „Flat“ a artefakty môžu ísť do vlastného priečinka v ZIP-e. Uvažovanie, kroky nástrojov / MCP a zdroje z webového vyhľadávania sa zapínajú každé zvlášť. Metadáta, filter odosielateľa a „Select“ sú voliteľné."}},{"@type":"Question","name":"Dajú sa funkcie rozšírenia vyskúšať zadarmo?","acceptedAnswer":{"@type":"Answer","text":"Áno. Exporty do Markdown, textu, JSON, XML, CSV a PNG sú neobmedzené a nevyžadujú účet. PDF a hromadný ZIP sú 3 denne s prihlásením cez Google. Pro za 3,99 USD mesačne alebo 26,99 USD ročne cez Paddle tento limit ruší."}},{"@type":"Question","name":"Fungujú funkcie rozšírenia v Desktope alebo Code?","acceptedAnswer":{"@type":"Answer","text":"V Claude Desktop ani v termináli Claude Code nie. Obsahový skript sa vkladá len na claude.ai v Chrome. Claude Code on the web (claude.ai/code) a relácie Cowork bežia tam, takže sa exportujú. Vlákno z Desktopu otvorte na claude.ai, ak tam existuje."}},{"@type":"Question","name":"Nahrávajú funkcie rozšírenia moje chaty?","acceptedAnswer":{"@type":"Answer","text":"Nie. Každý súbor vrátane PDF sa vytvára v prehliadači. Exporty jedného chatu v ostatných formátoch neposielajú nič. Pri PDF, hromadnom exporte alebo Pro sa odosiela len váš e-mail Google, kvôli dennému počtu a predplatnému. Hranicu opisuje stránka ako to funguje."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Domov","item":"https://chat-downloader.com/sk/"},{"@type":"ListItem","position":2,"name":"Funkcie","item":"https://chat-downloader.com/sk/funkcie/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Preskočiť na obsah</a>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a class="logo" href="/sk/">
+        <img src="/assets/icon.svg" alt="">
+        <span>Download Claude conversations</span>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="/sk/ako-stiahnut-chat-claude/">Stiahnutie</a><a href="/sk/ako-exportovat-chat-claude/">Export</a><a href="/sk/export-vsetkych-chatov-claude/">Všetky chaty</a><a href="/sk/formaty/">Formáty</a><a href="/sk/#faq">Otázky</a>
+        <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=sk-features" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Pridať do Chromu</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=sk-features" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Pridať do Chromu</a>
+      <!-- i18n:switch --><details class="lang-switch"><summary aria-label="Jazyk: Slovenčina"><svg class="lang-globe" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span class="lang-name">Slovenčina</span><span class="lang-code" aria-hidden="true">sk</span></summary><ul><li><a href="/features/" hreflang="en" lang="en">English</a></li><li><a href="/de/funktionen/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/fonctionnalites/" hreflang="fr" lang="fr">Français</a></li><li><a href="/es/funciones/" hreflang="es" lang="es">Español</a></li><li><a href="/it/funzionalita/" hreflang="it" lang="it">Italiano</a></li><li><a href="/pt/recursos/" hreflang="pt" lang="pt">Português</a></li><li><a href="/nl/functies/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/sv/funktioner/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="/nb/funksjoner/" hreflang="nb" lang="nb">Norsk</a></li><li><a href="/da/funktioner/" hreflang="da" lang="da">Dansk</a></li><li><a href="/fi/ominaisuudet/" hreflang="fi" lang="fi">Suomi</a></li><li><a href="/pl/funkcje/" hreflang="pl" lang="pl">Polski</a></li><li><a href="/cs/funkce/" hreflang="cs" lang="cs">Čeština</a></li><li><a href="/sk/funkcie/" hreflang="sk" lang="sk" aria-current="true">Slovenčina</a></li><li><a href="/hu/funkciok/" hreflang="hu" lang="hu">Magyar</a></li><li><a href="/ro/functii/" hreflang="ro" lang="ro">Română</a></li><li><a href="/el/features/" hreflang="el" lang="el">Ελληνικά</a></li><li><a href="/tr/ozellikler/" hreflang="tr" lang="tr">Türkçe</a></li><li><a href="/ja/features/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/ko/features/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/zh-hant/features/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li><li><a href="/he/features/" hreflang="he" lang="he">עברית</a></li><li><a href="/ar/features/" hreflang="ar" lang="ar">العربية</a></li></ul></details><!-- /i18n:switch -->
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+<nav class="crumbs" aria-label="Navigačná cesta"><a href="/sk/">Domov</a> / Funkcie</nav>
+<main id="main">
+<article class="band prose">
+<p class="article-meta">Aktualizované <time datetime="2026-09">v septembri 2026</time> · Rozšírenie 1.16.2</p>
+<h1 class="page-h1">Funkcie rozšírenia pre Chrome na export z claude.ai</h1>
+<p class="lead">Funkcie rozšírenia pre Chrome Download Claude conversations sú oranžové tlačidlo vo vlákne na claude.ai, hromadný „Export All“ (Exportovať všetko), sedem formátov vrátane PDF a CSV, „Select“ (Vybrať) a „Copy“ (Kopírovať), rozloženia artefaktov, uvažovanie a nastavenia. Súbory sa vytvárajú vo vašom počítači. Markdown, text, JSON, XML, CSV a PNG sú neobmedzené a bez účtu; PDF a hromadný ZIP sú zadarmo 3 denne, s Pro neobmedzené (3,99 USD mesačne alebo 26,99 USD ročne).</p>
+<aside class="trust-badge" aria-label="O rozšírení">
+  <span class="trophy" aria-hidden="true">🧩</span>
+  <div>
+    <strong>Download Claude conversations – bezplatné rozšírenie pre Chrome na claude.ai</strong>
+    <span>Verzia 1.16.2 (september 2026) – neobmedzený export do Markdown, textu, JSON, XML, CSV a PNG bez účtu; PDF a hromadný ZIP zadarmo do 3 denne</span>
+  </div>
+</aside>
+<nav class="toc" aria-label="Na tejto stránke">
+  <p>Na tejto stránke</p>
+  <ol>
+    <li><a href="#widget">Ktoré funkcie rozšírenia exportujú jeden chat?</a></li>
+    <li><a href="#bulk">Ktoré funkcie rozšírenia pokrývajú „Export All“?</a></li>
+    <li><a href="#formats">Do akých formátov rozšírenie zapisuje?</a></li>
+    <li><a href="#artifacts">Zachovajú funkcie rozšírenia artefakty?</a></li>
+    <li><a href="#settings">Ktoré funkcie rozšírenia sú v nastaveniach?</a></li>
+    <li><a href="#signin">Ako funkcie rozšírenia riešia prihlásenie?</a></li>
+    <li><a href="#not-in">Ktoré funkcie vo verzii 1.16.2 nie sú?</a></li>
+    <li><a href="#faq">Časté otázky: funkcie rozšírenia pre Chrome</a></li>
+  </ol>
+</nav>
+
+<h2 id="widget">Ktoré funkcie rozšírenia exportujú jeden chat?</h2>
+<p>Hlavnou funkciou pre jedno vlákno je oranžové tlačidlo, ktoré Download Claude conversations pridá vedľa poľa na správu na claude.ai. Otvorte adresu konverzácie, vyberte formát a kliknite na „Export“ (Exportovať) alebo „Copy“. Súbor sa stiahne okamžite. Prihlásenie vyžaduje len PDF; ostatných šesť formátov účet nepotrebuje.</p>
+<ol>
+<li>Nainštalujte Download Claude conversations z Chrome Web Store.</li>
+<li>Obnovte claude.ai a otvorte skutočnú adresu konverzácie – chat, chat v projekte, reláciu Cowork alebo Claude Code on the web.</li>
+<li>Kliknite na oranžové tlačidlo sťahovania vpravo od poľa na správu.</li>
+<li>Vyberte Messages („All“, „Human“ alebo „Assistant“ – všetky, človek, asistent), formát a políčko „Thinking“ (uvažovanie), alebo kliknite na „Select“ a označte jednotlivé správy. Rozšírenie si pamätá naposledy použitý formát.</li>
+<li>Kliknutím na „Export“ súbor stiahnete, kliknutím na „Copy“ ho vložíte do schránky. „Copy“ funguje pre Markdown, text, JSON, XML a CSV.</li>
+</ol>
+<p>Oranžové tlačidlo sa zobrazí len v načítanej konverzácii. Prázdna úvodná stránka s poľom na správu nemá čo spracovať. Ak tlačidlo chýba, pripnite rozšírenie v ponuke dielika skladačky v Chrome a obnovte claude.ai. Tieto funkcie sa nikdy nevložia do Claude Desktop ani do terminálu Claude Code. Výber PDF otvorí dialóg na názov súboru, veľkosť strany, okraje, svetlý alebo tmavý režim, písmo a jeho veľkosť, čísla strán, obsah, časové údaje a zlom strany pred každým promptom: <a href="/sk/chat-claude-do-pdf/">chat Claude do PDF</a>.</p>
+<div class="callout callout-info">
+  <p><strong>Lokálny súbor.</strong> PDF, Markdown, JSON, text, XML, CSV a PNG sa vytvárajú na karte. Exporty jedného chatu vo formátoch okrem PDF neposielajú na naše servery nič. PDF a hromadný export odosielajú len váš e-mail Google kvôli dennému počtu. Text chatu nikdy neodíde. Mechanika: <a href="/sk/ako-to-funguje/">ako to funguje</a>.</p>
+</div>
+
+<h2 id="bulk">Ktoré funkcie rozšírenia pokrývajú „Export All“?</h2>
+<p>Hromadné funkcie sú na Dashboarde, „View and Download All Conversations“ (zobraziť a stiahnuť všetky konverzácie): vyhľadávanie, filtre „All conversations“ / „New“ / „Updated“ / „Previously exported“ (všetky, nové, aktualizované, už exportované), karty Chat a Cowork, vyhľadávanie v projektoch a „Export All“. „Export All“ uloží jeden ZIP. Bezplatný plán pokrýva 3 chaty denne s prihlásením cez Google; Pro za 3,99 USD mesačne alebo 26,99 USD ročne tento limit ruší.</p>
+<p>„New“ znamená ešte neexportované cez Download Claude conversations. „Previously exported“ sleduje chaty, ktoré ste už uložili, takže ďalší „Export All“ ich môže vynechať. Karta Cowork zobrazuje relácie Cowork vedľa bežných chatov. Vyhľadávanie v projektoch nájde chaty v jednom projekte na claude.ai. Vyhľadáva sa podľa názvu konverzácie. Celý postup: <a href="/sk/export-vsetkych-chatov-claude/">hromadný „Export All“</a>.</p>
+<div class="callout callout-warn">
+  <p><strong>Denný limit platí pre účet.</strong> Na bezplatnom pláne tri chaty denne, spolu s PDF – nie tri na jedno hromadné spustenie. Ak označíte 40 konverzácií a zostávajú vám 3, celá dávka sa zablokuje, neskráti sa. Výber si naplánujte skôr, než kliknete na „Export All“, alebo použite Pro.</p>
+</div>
+<p>„Export All“ používa výber „Chat format“ (formát chatu) na Dashboarde (všetkých sedem formátov vrátane PDF), zaškrtávacie políčka „Chats“, „Thinking“, „Metadata“, „Tools“ a „Sources“ (chaty, uvažovanie, metadáta, nástroje, zdroje) a formát artefaktov. Je to jeden ZIP s jedným súborom na chat, nie oneskorený ZIP účtu od Anthropic. Na jedno spustenie vyberiete jeden formát. Markdown a JSON jedným kliknutím nezmiešate. Dashboard má aj zálohu a obnovenie.</p>
+
+<h2 id="formats">Do akých formátov rozšírenie zapisuje?</h2>
+<p>Funkcie rozšírenia pre Chrome zapisujú sedem formátov: PDF, Markdown, čistý text, JSON, XML, CSV a PNG. Markdown, text, JSON, XML, CSV a PNG sú neobmedzené a bez účtu. PDF sa vytvára v prehliadači, vyžaduje prihlásenie cez Google a na bezplatnom pláne sa počíta do 3 denne. Zoznam je rovnaký pri oranžovom tlačidle aj vo výbere „Chat format“ na Dashboarde. Stránky formátov: <a href="/sk/formaty/">formáty exportu chatu Claude</a>.</p>
+<table>
+  <caption>Formáty, do ktorých rozšírenie pre Chrome zapisuje z claude.ai</caption>
+  <thead>
+    <tr>
+      <th scope="col">Formát</th>
+      <th scope="col">Najlepšie na</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PDF</td>
+      <td>Čítanie, tlač, posielanie – <a href="/sk/chat-claude-do-pdf/">návod pre PDF</a></td>
+    </tr>
+    <tr>
+      <td>Markdown</td>
+      <td>Poznámky, Obsidian, GitHub – <a href="/sk/formaty/markdown/">návod pre Markdown</a></td>
+    </tr>
+    <tr>
+      <td>JSON</td>
+      <td>Skripty a porovnávanie zmien – <a href="/sk/formaty/json/">návod pre JSON</a></td>
+    </tr>
+    <tr>
+      <td>Čistý text</td>
+      <td>Archív, ktorý vložíte kamkoľvek, bez značiek</td>
+    </tr>
+    <tr>
+      <td>XML</td>
+      <td>Systémy, ktoré vyžadujú XML – <a href="/sk/formaty/xml/">návod pre XML</a></td>
+    </tr>
+    <tr>
+      <td>CSV</td>
+      <td>Tabuľky, jeden riadok na správu – <a href="/sk/formaty/">prehľad formátov</a></td>
+    </tr>
+    <tr>
+      <td>PNG</td>
+      <td>Jeden obrázok konverzácie – <a href="/sk/formaty/png/">návod pre PNG</a></td>
+    </tr>
+  </tbody>
+</table>
+<div class="expert-quote">
+  <p>Funkcie rozšírenia držíme zámerne úzko: sedem typov súborov z vlákna claude.ai, ktoré už je na stránke, plus hromadný „Export All“ a možnosti, ktoré menia obsah týchto súborov. PDF medzi ne teraz patrí, sadzba prebieha v prehliadači bez dialógu tlače. Notion ani Word stále nedodávame. Ak sa to zmení, táto stránka sa zmení v ten istý deň.</p>
+  <footer>Tím Download Claude conversations</footer>
+</div>
+<p>Autori textov zvyčajne volia Markdown. Vývojári zvyčajne JSON. CSV dáva jeden riadok na správu pre Excel, Google Sheets alebo Numbers. PNG je obrázok; nedá sa v ňom vyhľadávať príkazom grep. PDF je súbor na čítanie, tlač alebo posielanie, s veľkosťou strany, okrajmi a obsahom nastavenými v jeho dialógu.</p>
+
+<h2 id="artifacts">Zachovajú funkcie rozšírenia artefakty?</h2>
+<p>Áno. Medzi funkcie rozšírenia patrí rozloženie artefaktov: „Original“, „Inline“, „Nested“ alebo „Flat“ (pôvodné, vložené, vnorené, ploché). Bloky uvažovania, kroky nástrojov / MCP a zdroje z webového vyhľadávania sa zapínajú každé zvlášť: „Thinking“ je políčko v paneli exportu, nástroje a zdroje sa zapínajú v nastaveniach a Dashboard má políčka pre všetky tri. „Metadata“ môžu pridať názov, časové údaje a model. Filter odosielateľa obmedzí súbor na všetky správy, len vaše alebo len odpovede asistenta a „Select“ označí jednotlivé správy.</p>
+<p>Artefakty sú súčasťou vlákna na claude.ai. Rozloženie určuje, či zostanú v súbore Markdown, JSON, XML či v texte, alebo pôjdu do vlastného priečinka v ZIP-e. ZIP-y artefaktov sú neobmedzené a zadarmo, rovnako ako ZIP súborov projektu: na stránke projektu kliknite na „Project files“ → „Download ZIP“ (súbory projektu → stiahnuť ZIP). V PNG sa artefakty vykreslia, neukladajú sa ako značky. Ak je uvažovanie vypnuté, export vynechá rozšírené uvažovanie, aj keď ho claude.ai na obrazovke zobrazilo.</p>
+<p>Ak je vlákno dlhé, posúvajte sa, kým claude.ai nenačíta staršie správy. Rozšírenie dokáže exportovať len to, čo stránka vykreslila. Polovične načítaný DOM vytvorí orezaný súbor, ktorý vyzerá ako chyba s chýbajúcim artefaktom, no zvyčajne ide o konverzáciu, ktorou ste neposunuli.</p>
+<table>
+  <caption>Možnosti, ktoré rozšírenie vo verzii 1.16.2 uplatní na každý súbor</caption>
+  <thead>
+    <tr>
+      <th scope="col">Možnosť</th>
+      <th scope="col">Čo robí</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>„Thinking“</td>
+      <td>Zahrnie alebo vynechá bloky rozšíreného uvažovania</td>
+    </tr>
+    <tr>
+      <td>„Metadata“</td>
+      <td>Názov, časové údaje a model v súbore</td>
+    </tr>
+    <tr>
+      <td>„Tools“</td>
+      <td>Zahrnie kroky nástrojov a MCP</td>
+    </tr>
+    <tr>
+      <td>„Sources“</td>
+      <td>Zahrnie zdroje z webového vyhľadávania</td>
+    </tr>
+    <tr>
+      <td>Odosielateľ</td>
+      <td>Všetky / len človek / len asistent</td>
+    </tr>
+    <tr>
+      <td>„Select“</td>
+      <td>Označenie jednotlivých správ na export</td>
+    </tr>
+    <tr>
+      <td>Rozloženie artefaktov</td>
+      <td>„Original“, „Inline“, „Nested“ alebo „Flat“</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="settings">Ktoré funkcie rozšírenia sú v nastaveniach?</h2>
+<p>Nastavenia sú stránka možností rozšírenia (Options). Obsahujú šablónu názvu súboru, „Copy instead of download“ (kopírovať namiesto sťahovania), vkladanie obrázkov do Markdownu, kroky nástrojov / MCP, zdroje z webového vyhľadávania, formát dátumu a času, zálohu a obnovenie a vaše predplatné. Rozhranie rozšírenia je len v angličtine.</p>
+<table>
+  <caption>Funkcie rozšírenia pre Chrome na stránke nastavení</caption>
+  <thead>
+    <tr>
+      <th scope="col">Nastavenie</th>
+      <th scope="col">Čo mení</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Šablóna názvu súboru</td>
+      <td>Ako sa stiahnuté súbory pomenujú</td>
+    </tr>
+    <tr>
+      <td>„Copy instead of download“</td>
+      <td>„Export“ vloží výsledok do schránky</td>
+    </tr>
+    <tr>
+      <td>Vkladanie obrázkov do Markdownu</td>
+      <td>Obrázky putujú priamo v súbore .md</td>
+    </tr>
+    <tr>
+      <td>Kroky nástrojov / MCP</td>
+      <td>Zahrnie volania nástrojov do exportov</td>
+    </tr>
+    <tr>
+      <td>Zdroje z webového vyhľadávania</td>
+      <td>Zahrnie zdroje, z ktorých vychádzajú odpovede z webového vyhľadávania</td>
+    </tr>
+    <tr>
+      <td>Formát dátumu a času</td>
+      <td>Ako sa zobrazujú časové údaje</td>
+    </tr>
+    <tr>
+      <td>Záloha a obnovenie</td>
+      <td>Aj na Dashboarde</td>
+    </tr>
+    <tr>
+      <td>Predplatné</td>
+      <td>Stav Pro a „Cancel subscription“ (zrušiť predplatné)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="signin">Ako funkcie rozšírenia riešia prihlásenie?</h2>
+<p>Väčšina funkcií rozšírenia prihlásenie nevyžaduje. Exporty jedného chatu do Markdown, čistého textu, JSON, XML, CSV a PNG sú neobmedzené a anonymné, rovnako ako „Copy“, „Select“, ZIP-y artefaktov a ZIP súborov projektu. Prihlásenie cez Google sa vyžaduje len pri PDF, hromadnom „Export All“ a Pro. Obsah konverzácií nikdy nie je súčasťou tohto procesu.</p>
+<p>PDF a hromadný ZIP zdieľajú na bezplatnom pláne 3 denne, počítané na našom serveri podľa vášho e-mailu Google. Deň sa vynuluje o polnoci UTC a preinštalovanie ho nevynuluje. Pro stojí 3,99 USD mesačne alebo 26,99 USD ročne cez Paddle. Paddle je predajcom (merchant of record); tento tím nikdy nevidí čísla kariet. Pro sa na novom počítači obnoví, keď sa prihlásite tým istým účtom Google.</p>
+<p>Platený plán claude.ai od Anthropic nepotrebujete. Fungujú plány claude.ai Free, Pro, Team aj Enterprise, ak Chrome dokáže chat otvoriť. Ak správca pracovného priestoru rozšírenia blokuje, Download Claude conversations sa nevloží – ide o pravidlo prehliadača, nie o chýbajúcu funkciu z tejto stránky.</p>
+
+<h2 id="not-in">Ktoré funkcie vo verzii 1.16.2 nie sú?</h2>
+<p>Vo verzii 1.16.2 chýbajú tieto funkcie: export do Notion, export do Wordu, odoslanie do Google Docs, napojenie na Claude Desktop a lokálne relácie Claude Code v termináli (<code>/export</code>, <code>~/.claude/projects</code>). Download Claude conversations je obsahový skript pre Chrome na claude.ai, nie ďalšia aplikácia pod iným názvom. PDF už v tomto zozname nie je; je zabudované.</p>
+<p>Claude Desktop je aplikácia pre Mac a Windows. Claude Code v termináli je lokálny agent. Ani jeden nedostane oranžové tlačidlo. Claude Code on the web (claude.ai/code) a relácie Cowork sa otvárajú na claude.ai, takže sa exportujú ako každý chat. Ak vlákno z Desktopu existuje aj na claude.ai, otvorte ho v Chrome a použite funkcie rozšírenia tam. Porovnanie s Desktopom: <a href="/sk/export-chatu-claude-desktop/">export chatu z Claude Desktop</a>. Porovnanie s Code: <a href="/sk/export-konverzacie-claude-code/">export z Claude Code</a>.</p>
+<p>Mobilné claude.ai v prehliadači telefónu je mimo záberu. Tento tím v roku 2026 nemá aplikáciu pre iOS ani Android. „Copy“ nie je dostupné pre PDF ani PNG. Verzia zo septembra 2026. Ak pridáme formát, táto stránka sa aktualizuje v ten istý deň.</p>
+
+<h2 id="faq">Časté otázky: funkcie rozšírenia pre Chrome</h2>
+<p>Tieto otázky sa týkajú funkcií rozšírenia Download Claude conversations 1.16.2: oranžového tlačidla, „Export All“, formátov, artefaktov, bezplatného plánu, Desktopu a Pro. Každá odpoveď je fakt o produkte. JSON-LD so schémou FAQPage v hlavičke stránky zodpovedá tomuto zoznamu.</p>
+
+<h3>Ktoré funkcie rozšírenia exportujú jeden chat?</h3>
+<p>Oranžové tlačidlo vedľa poľa na správu na adrese konverzácie na claude.ai. Vyberte PDF, Markdown, JSON, text, XML, CSV alebo PNG a kliknite na „Export“ alebo „Copy“. To je najrýchlejšia cesta pre jedno vlákno a prihlásenie potrebuje len PDF.</p>
+
+<h3>Patrí medzi funkcie rozšírenia hromadný „Export All“?</h3>
+<p>Áno. Dashboard („View and Download All Conversations“) zobrazuje históriu claude.ai s filtrami „All conversations“, „New“, „Updated“ a „Previously exported“, kartami Chat a Cowork a vyhľadávaním v projektoch. „Export All“ uloží jeden ZIP. Bezplatný plán pokrýva 3 chaty denne s prihlásením cez Google; Pro je neobmedzené.</p>
+
+<h3>Aké formáty funkcie rozšírenia podporujú?</h3>
+<p>Sedem: PDF, Markdown, čistý text, JSON, XML, CSV a PNG. PDF sa vytvára v prehliadači s vlastným dialógom. CSV má jeden riadok na správu. PNG je jeden obrázok konverzácie.</p>
+
+<h3>Exportujú funkcie rozšírenia artefakty a uvažovanie?</h3>
+<p>Áno. Rozloženie artefaktov je „Original“, „Inline“, „Nested“ alebo „Flat“ a artefakty môžu ísť do vlastného priečinka v ZIP-e. Uvažovanie, kroky nástrojov / MCP a zdroje z webového vyhľadávania sa zapínajú každé zvlášť. Metadáta, filter odosielateľa a „Select“ sú voliteľné.</p>
+
+<h3>Dajú sa funkcie rozšírenia vyskúšať zadarmo?</h3>
+<p>Áno. Exporty do Markdown, textu, JSON, XML, CSV a PNG sú neobmedzené a nevyžadujú účet. PDF a hromadný ZIP sú 3 denne s prihlásením cez Google. Pro za 3,99 USD mesačne alebo 26,99 USD ročne cez Paddle tento limit ruší.</p>
+
+<h3>Fungujú funkcie rozšírenia v Desktope alebo Code?</h3>
+<p>V Claude Desktop ani v termináli Claude Code nie. Obsahový skript sa vkladá len na claude.ai v Chrome. Claude Code on the web (claude.ai/code) a relácie Cowork bežia tam, takže sa exportujú. Vlákno z Desktopu otvorte na claude.ai, ak tam existuje.</p>
+
+<h3>Nahrávajú funkcie rozšírenia moje chaty?</h3>
+<p>Nie. Každý súbor vrátane PDF sa vytvára v prehliadači. Exporty jedného chatu v ostatných formátoch neposielajú nič. Pri PDF, hromadnom exporte alebo Pro sa odosiela len váš e-mail Google, kvôli dennému počtu a predplatnému. Hranicu opisuje stránka ako to funguje.</p>
+</article>
+</main>
+<section class="final-cta page-cta" aria-label="Inštalácia">
+  <div class="wrap">
+    <div class="final-cta-panel">
+      <p class="final-kicker">Download Claude conversations</p>
+      <h2>Nainštalujte rozšírenie a stiahnite chat Claude za pár sekúnd</h2>
+      <p>Premeňte dôležité vlákna Claude na PDF, Markdown, JSON, text, CSV, XML alebo PNG – lokálne, v Chrome.</p>
+      <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=sk-features" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Pridať do Chrome</a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="logo" href="/sk/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
+      <p class="legal-note">Rozšírenie pre Chrome na stiahnutie chatov z Claude.ai ako PDF, Markdown, JSON, obyčajný text, CSV, XML alebo PNG.</p>
+    </div>
+    <div>
+      <h2>Inštalácia</h2>
+      <a class="install-link" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=sk-footer" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Rozšírenie pre Chrome</a>
+    </div>
+    <div>
+      <h2>Produkt</h2>
+      <a href="/sk/funkcie/">Funkcie</a>
+      <a href="/sk/formaty/">Formáty</a>
+      <a href="/sk/export-vsetkych-chatov-claude/">Export všetkých chatov</a>
+      <a href="/sk/ako-to-funguje/">Ako to funguje</a>
+    </div>
+    <div>
+      <h2>Návody</h2>
+      <a href="/sk/ako-stiahnut-chat-claude/">Ako stiahnuť chat Claude</a>
+      <a href="/sk/ako-exportovat-chat-claude/">Ako exportovať chat Claude</a>
+      <a href="/sk/export-chatu-claude/">Export chatu Claude</a>
+      <a href="/sk/extraktor-konverzacii-claude/">Extraktor konverzácií Claude</a>
+      <a href="/sk/export-konverzacie-claude-code/">Export z Claude Code</a>
+      <a href="/sk/chat-claude-do-pdf/">Chat Claude do PDF</a>
+      <a href="/sk/export-chatu-claude-desktop/">Export chatu z Claude Desktop</a>
+      <a href="/sk/export-konverzacie-claude/">Export konverzácie Claude</a>
+      <a href="/sk/ako-ulozit-konverzaciu-claude/">Ako uložiť konverzáciu Claude</a>
+      <a href="/sk/stiahnut-konverzaciu-claude/">Stiahnuť konverzáciu Claude</a>
+    </div>
+    <div>
+      <h2>Právne informácie</h2>
+      <a href="/sk/o-nas/">O nás</a>
+      <a href="/sk/o-nas/#contact">Kontakt</a>
+      <a href="/privacy/" hreflang="en">Súkromie (po anglicky)</a>
+      <a href="/terms/" hreflang="en">Podmienky (po anglicky)</a>
+      <a href="/refund/" hreflang="en">Vrátenie peňazí (po anglicky)</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Download Claude conversations. Všetky práva vyhradené.</div>
+    <div>
+      <a href="/privacy/" hreflang="en">Zásady ochrany osobných údajov (po anglicky)</a>
+      <a href="/terms/" hreflang="en">Podmienky používania (po anglicky)</a>
+      <a href="/refund/" hreflang="en">Vrátenie peňazí (po anglicky)</a>
+    </div>
+  </div>
+  <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/features/" hreflang="en" lang="en">English</a> <a href="/de/funktionen/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/fonctionnalites/" hreflang="fr" lang="fr">Français</a> <a href="/es/funciones/" hreflang="es" lang="es">Español</a> <a href="/it/funzionalita/" hreflang="it" lang="it">Italiano</a> <a href="/pt/recursos/" hreflang="pt" lang="pt">Português</a> <a href="/nl/functies/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/funktioner/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/funksjoner/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/funktioner/" hreflang="da" lang="da">Dansk</a> <a href="/fi/ominaisuudet/" hreflang="fi" lang="fi">Suomi</a> <a href="/pl/funkcje/" hreflang="pl" lang="pl">Polski</a> <a href="/cs/funkce/" hreflang="cs" lang="cs">Čeština</a> <a href="/sk/funkcie/" hreflang="sk" lang="sk">Slovenčina</a> <a href="/hu/funkciok/" hreflang="hu" lang="hu">Magyar</a> <a href="/ro/functii/" hreflang="ro" lang="ro">Română</a> <a href="/el/features/" hreflang="el" lang="el">Ελληνικά</a> <a href="/tr/ozellikler/" hreflang="tr" lang="tr">Türkçe</a> <a href="/ja/features/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/features/" hreflang="ko" lang="ko">한국어</a> <a href="/zh-hant/features/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="/he/features/" hreflang="he" lang="he">עברית</a> <a href="/ar/features/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
+  <p class="disclaimer">Chaty sa spracúvajú vo vašom prehliadači · Prihlásenie cez Google len pre PDF, hromadný export a Pro · Nie sme prepojení so spoločnosťou Anthropic, PBC. Claude je ochranná známka spoločnosti Anthropic. Nezávislé rozšírenie pre Chrome – nie je to oficiálny produkt Anthropic. Podpora: <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

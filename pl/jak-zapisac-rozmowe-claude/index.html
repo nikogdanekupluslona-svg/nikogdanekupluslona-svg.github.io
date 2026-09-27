@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jak zapisać rozmowę Claude jako plik — PDF, Markdown, JSON</title>
+  <meta name="description" content="Historia claude.ai już trzyma czaty. Aby zapisać rozmowę Claude jako plik, użyj rozszerzenia Chrome, wydruku lub „Export data”. Brak przycisku Zapisz.">
+  <link rel="canonical" href="https://chat-downloader.com/pl/jak-zapisac-rozmowe-claude/">
+  <!-- i18n:head -->
+  <link rel="alternate" hreflang="en" href="https://chat-downloader.com/how-to-save-claude-conversation/">
+  <link rel="alternate" hreflang="de" href="https://chat-downloader.com/de/claude-chat-speichern/">
+  <link rel="alternate" hreflang="fr" href="https://chat-downloader.com/fr/sauvegarder-conversation-claude/">
+  <link rel="alternate" hreflang="es" href="https://chat-downloader.com/es/como-guardar-conversacion-claude/">
+  <link rel="alternate" hreflang="it" href="https://chat-downloader.com/it/come-salvare-chat-claude/">
+  <link rel="alternate" hreflang="pt" href="https://chat-downloader.com/pt/como-salvar-conversa-claude/">
+  <link rel="alternate" hreflang="nl" href="https://chat-downloader.com/nl/claude-gesprek-opslaan/">
+  <link rel="alternate" hreflang="sv" href="https://chat-downloader.com/sv/spara-claude-konversation/">
+  <link rel="alternate" hreflang="nb" href="https://chat-downloader.com/nb/lagre-claude-samtale/">
+  <link rel="alternate" hreflang="da" href="https://chat-downloader.com/da/gem-claude-samtale/">
+  <link rel="alternate" hreflang="fi" href="https://chat-downloader.com/fi/tallenna-claude-keskustelu/">
+  <link rel="alternate" hreflang="pl" href="https://chat-downloader.com/pl/jak-zapisac-rozmowe-claude/">
+  <link rel="alternate" hreflang="cs" href="https://chat-downloader.com/cs/jak-ulozit-konverzaci-claude/">
+  <link rel="alternate" hreflang="sk" href="https://chat-downloader.com/sk/ako-ulozit-konverzaciu-claude/">
+  <link rel="alternate" hreflang="hu" href="https://chat-downloader.com/hu/claude-beszelgetes-mentese/">
+  <link rel="alternate" hreflang="ro" href="https://chat-downloader.com/ro/cum-salvati-conversatie-claude/">
+  <link rel="alternate" hreflang="el" href="https://chat-downloader.com/el/how-to-save-claude-conversation/">
+  <link rel="alternate" hreflang="tr" href="https://chat-downloader.com/tr/claude-sohbet-kaydetme/">
+  <link rel="alternate" hreflang="ja" href="https://chat-downloader.com/ja/how-to-save-claude-conversation/">
+  <link rel="alternate" hreflang="ko" href="https://chat-downloader.com/ko/how-to-save-claude-conversation/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://chat-downloader.com/zh-hant/how-to-save-claude-conversation/">
+  <link rel="alternate" hreflang="he" href="https://chat-downloader.com/he/how-to-save-claude-conversation/">
+  <link rel="alternate" hreflang="ar" href="https://chat-downloader.com/ar/how-to-save-claude-conversation/">
+  <link rel="alternate" hreflang="x-default" href="https://chat-downloader.com/how-to-save-claude-conversation/">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="it_IT">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="sv_SE">
+  <meta property="og:locale:alternate" content="nb_NO">
+  <meta property="og:locale:alternate" content="da_DK">
+  <meta property="og:locale:alternate" content="fi_FI">
+  <meta property="og:locale:alternate" content="cs_CZ">
+  <meta property="og:locale:alternate" content="sk_SK">
+  <meta property="og:locale:alternate" content="hu_HU">
+  <meta property="og:locale:alternate" content="ro_RO">
+  <meta property="og:locale:alternate" content="el_GR">
+  <meta property="og:locale:alternate" content="tr_TR">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <meta property="og:locale:alternate" content="zh_TW">
+  <meta property="og:locale:alternate" content="he_IL">
+  <meta property="og:locale:alternate" content="ar_AE">
+  <!-- /i18n:head -->
+  <meta property="og:title" content="Jak zapisać rozmowę Claude jako plik — PDF, Markdown, JSON">
+  <meta property="og:description" content="Historia claude.ai już trzyma czaty. Aby zapisać rozmowę Claude jako plik, użyj rozszerzenia Chrome, wydruku lub „Export data”. Brak przycisku Zapisz.">
+  <meta property="og:url" content="https://chat-downloader.com/pl/jak-zapisac-rozmowe-claude/">
+  <meta property="og:image" content="https://chat-downloader.com/assets/widget-guide.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chat Downloader">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Jak zapisać rozmowę Claude jako plik — PDF, Markdown, JSON">
+  <meta name="twitter:description" content="Historia claude.ai już trzyma czaty. Aby zapisać rozmowę Claude jako plik, użyj rozszerzenia Chrome, wydruku lub „Export data”. Brak przycisku Zapisz.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME1YXGZKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GME1YXGZKR');
+  </script>
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Jak zapisać rozmowę Claude jako plik?","acceptedAnswer":{"@type":"Answer","text":"Zainstaluj Download Claude conversations, otwórz wątek na claude.ai, kliknij pomarańczowy przycisk na prawo od pola wiadomości, wybierz PDF, Markdown, JSON, tekst, XML, CSV lub PNG i kliknij „Export”. Plik pobiera się lokalnie, bez konta — z wyjątkiem PDF. Historia już przechowuje czat na koncie Anthropic; pomarańczowy przycisk zapisuje kopię na dysku."}},{"@type":"Question","name":"Jak zapisać czat Claude na claude.ai?","acceptedAnswer":{"@type":"Answer","text":"Nie potrzebujesz przycisku „Zapisz”, by zachować wątek na koncie. Historia na claude.ai już pokazuje czaty zalogowanego użytkownika. Aby zapisać czat Claude jako plik, użyj rozszerzenia Chrome, opcji Drukuj → Zapisz jako PDF albo Settings → Privacy → Export data, by dostać później archiwum ZIP z JSON całego konta."}},{"@type":"Question","name":"Jak zapisać rozmowę w Claude bez rozszerzenia?","acceptedAnswer":{"@type":"Answer","text":"Wydrukuj stronę claude.ai (Ctrl/Cmd+P → Zapisz jako PDF), by mieć kopię wizualną, albo użyj Settings → Privacy → Export data, by dostać e-mailem archiwum ZIP z JSON całego konta. Kopiuj-wklej wystarczy dla krótkiej odpowiedzi. Żadna z tych metod nie tworzy uporządkowanego pliku Markdown dla pojedynczego czatu, tak jak robi to rozszerzenie Chrome."}},{"@type":"Question","name":"Czy Claude już zapisuje rozmowę w historii?","acceptedAnswer":{"@type":"Answer","text":"Tak. Czaty zalogowanego użytkownika na claude.ai zostają w historii na koncie Anthropic. Zamknięcie karty, odświeżenie strony czy otwarcie innego urządzenia z tym samym loginem nie kasuje wątku. Historia to jednak nie PDF, Markdown, JSON ani żaden inny plik na Twoim dysku."}},{"@type":"Question","name":"Czy rozmowa z Claude zniknie, jeśli zamknę kartę?","acceptedAnswer":{"@type":"Answer","text":"Nie. Zamknięcie karty claude.ai nie usuwa rozmowy z historii. Usunięcie czatu z historii kasuje go z interfejsu konta. Plik, który wcześniej wyeksportowałeś przez Download Claude conversations, zostaje na dysku nawet po takim usunięciu."}},{"@type":"Question","name":"Czy mogę zapisać rozmowę Claude jako PDF?","acceptedAnswer":{"@type":"Answer","text":"Tak. Download Claude conversations 1.16.2 eksportuje PDF bezpośrednio: wybierz PDF w panelu pomarańczowego przycisku i kliknij „Export”. Plik powstaje w przeglądarce, bez okna drukowania. PDF wymaga logowania Google i jest darmowy do 3 dziennie; w Pro bez limitu. Poradnik: czat Claude jako PDF."}},{"@type":"Question","name":"Ile darmowych plików mogę zapisać?","acceptedAnswer":{"@type":"Answer","text":"Bez limitu dla Markdown, zwykłego tekstu, JSON, XML, CSV i PNG, bez konta. PDF i zbiorczy ZIP dzielą 3 miejsca dziennie w planie darmowym, z logowaniem Google; każdy czat w zbiorczym ZIP liczy się jako jeden, a dzień odnawia się o północy UTC. Pro kosztuje 3,99 USD miesięcznie lub 26,99 USD rocznie i znosi limit. Płatności obsługuje Paddle."}},{"@type":"Question","name":"Czy zapisywanie rozmów działa na telefonie?","acceptedAnswer":{"@type":"Answer","text":"Rozszerzenie Chrome — nie. Działa w Chrome na komputerze (lub innej przeglądarce Chromium, która instaluje dodatki z Chrome Web Store). Nie ma aplikacji na iOS ani Androida. Przeglądarki mobilne mogą otworzyć historię i wydrukować czat Claude, ale nie pokażą pomarańczowego przycisku."}},{"@type":"Question","name":"Czy mogę zapisać wiele czatów z historii naraz?","acceptedAnswer":{"@type":"Answer","text":"Tak. Otwórz „View and Download All Conversations” z menu rozszerzenia, przefiltruj tabelę i kliknij „Export All”. Eksport zbiorczy wymaga logowania Google i w planie darmowym wlicza się do limitu 3 dziennie. To nie jest archiwum ZIP z „Export data” od Anthropic. Oficjalny „Export data” to jedno archiwum całego konta, wysyłane później e-mailem. Zobacz eksport wszystkich czatów."}},{"@type":"Question","name":"Czy to zapisuje rozmowy z Claude Code?","acceptedAnswer":{"@type":"Answer","text":"Tylko w sieci. Sesje Claude Code pod adresem claude.ai/code zapisujesz jak każdy czat na claude.ai. Lokalne sesje terminala — nie: użyj /export lub skopiuj JSONL z ~/.claude/projects (Windows: %USERPROFILE%\\.claude\\projects). To rozszerzenie Chrome działa tylko na claude.ai. Poradnik: eksport rozmowy Claude Code."}},{"@type":"Question","name":"Czy do zapisania czatu Claude potrzebne jest logowanie Google?","acceptedAnswer":{"@type":"Answer","text":"Nie dla Markdown, zwykłego tekstu, JSON, XML, CSV i PNG. Logowanie Google jest wymagane tylko dla PDF, zbiorczego „Export All” i Pro — żebyśmy mogli stosować limit 3 dziennie i przywrócić Pro po ponownej instalacji. Treść rozmów nie jest wysyłana przy logowaniu. Zweryfikowany adres e-mail przechowujemy wyłącznie na potrzeby limitu i statusu Pro."}},{"@type":"Question","name":"Gdzie jest oficjalny „Export data” do zapisania czatów Claude?","acceptedAnswer":{"@type":"Answer","text":"Na claude.ai: Settings → Privacy → Export data. Anthropic wysyła e-mailem link, który wygasa. ZIP to archiwum JSON na poziomie konta, a nie nazwany plik Markdown z czatem, który czytałeś. Używaj „Export data” jako kopii zapasowej; pomarańczowego przycisku — by od razu dostać jeden czytelny plik."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Jak zapisać rozmowę Claude jako plik, który zostaje u Ciebie","description":"Historia claude.ai już trzyma czaty. Aby zapisać rozmowę Claude jako plik, użyj rozszerzenia Chrome, wydruku lub „Export data”. Brak przycisku Zapisz.","url":"https://chat-downloader.com/pl/jak-zapisac-rozmowe-claude/","dateModified":"2026-09-25","datePublished":"2026-09-15","inLanguage":"pl","author":{"@type":"Organization","name":"Chat Downloader","url":"https://chat-downloader.com/pl/"},"publisher":{"@type":"Organization","name":"Chat Downloader","url":"https://chat-downloader.com/pl/"},"mainEntityOfPage":"https://chat-downloader.com/pl/jak-zapisac-rozmowe-claude/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Strona główna","item":"https://chat-downloader.com/pl/"},{"@type":"ListItem","position":2,"name":"Jak zapisać rozmowę Claude","item":"https://chat-downloader.com/pl/jak-zapisac-rozmowe-claude/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Przejdź do treści</a>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a class="logo" href="/pl/">
+        <img src="/assets/icon.svg" alt="">
+        <span>Download Claude conversations</span>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="/pl/jak-pobrac-czat-claude/">Pobieranie</a><a href="/pl/jak-eksportowac-czat-claude/">Eksport</a><a href="/pl/eksport-wszystkich-czatow-claude/">Wszystkie czaty</a><a href="/pl/formaty/">Formaty</a><a href="/pl/#faq">FAQ</a>
+        <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=pl-how-to-save-claude-conversation" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Dodaj do Chrome</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=pl-how-to-save-claude-conversation" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Dodaj do Chrome</a>
+      <!-- i18n:switch --><details class="lang-switch"><summary aria-label="Język: Polski"><svg class="lang-globe" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span class="lang-name">Polski</span><span class="lang-code" aria-hidden="true">pl</span></summary><ul><li><a href="/how-to-save-claude-conversation/" hreflang="en" lang="en">English</a></li><li><a href="/de/claude-chat-speichern/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/sauvegarder-conversation-claude/" hreflang="fr" lang="fr">Français</a></li><li><a href="/es/como-guardar-conversacion-claude/" hreflang="es" lang="es">Español</a></li><li><a href="/it/come-salvare-chat-claude/" hreflang="it" lang="it">Italiano</a></li><li><a href="/pt/como-salvar-conversa-claude/" hreflang="pt" lang="pt">Português</a></li><li><a href="/nl/claude-gesprek-opslaan/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/sv/spara-claude-konversation/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="/nb/lagre-claude-samtale/" hreflang="nb" lang="nb">Norsk</a></li><li><a href="/da/gem-claude-samtale/" hreflang="da" lang="da">Dansk</a></li><li><a href="/fi/tallenna-claude-keskustelu/" hreflang="fi" lang="fi">Suomi</a></li><li><a href="/pl/jak-zapisac-rozmowe-claude/" hreflang="pl" lang="pl" aria-current="true">Polski</a></li><li><a href="/cs/jak-ulozit-konverzaci-claude/" hreflang="cs" lang="cs">Čeština</a></li><li><a href="/sk/ako-ulozit-konverzaciu-claude/" hreflang="sk" lang="sk">Slovenčina</a></li><li><a href="/hu/claude-beszelgetes-mentese/" hreflang="hu" lang="hu">Magyar</a></li><li><a href="/ro/cum-salvati-conversatie-claude/" hreflang="ro" lang="ro">Română</a></li><li><a href="/el/how-to-save-claude-conversation/" hreflang="el" lang="el">Ελληνικά</a></li><li><a href="/tr/claude-sohbet-kaydetme/" hreflang="tr" lang="tr">Türkçe</a></li><li><a href="/ja/how-to-save-claude-conversation/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/ko/how-to-save-claude-conversation/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/zh-hant/how-to-save-claude-conversation/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li><li><a href="/he/how-to-save-claude-conversation/" hreflang="he" lang="he">עברית</a></li><li><a href="/ar/how-to-save-claude-conversation/" hreflang="ar" lang="ar">العربية</a></li></ul></details><!-- /i18n:switch -->
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+<nav class="crumbs" aria-label="Ścieżka nawigacji"><a href="/pl/">Strona główna</a> / Jak zapisać</nav>
+<main id="main">
+<article class="band prose">
+<p class="article-meta">Aktualizacja: <time datetime="2026-09">wrzesień 2026</time> · Rozszerzenie 1.16.2</p>
+<h1 class="page-h1">Jak zapisać rozmowę Claude jako plik, który zostaje u Ciebie</h1>
+<p class="lead">Jak zapisać rozmowę Claude, skoro claude.ai już trzyma każdy czat zalogowanego użytkownika w historii (History)? Nie ma tam przycisku „Zapisz”, który tworzyłby plik. Aby zapisać rozmowę jako PDF, Markdown, JSON, tekst, XML, CSV lub PNG, użyj Download Claude conversations w Chrome, wydrukuj stronę albo zamów Settings → Privacy → Export data (etykiety mogą być przetłumaczone, jeśli claude.ai jest ustawione na polski). Zamknięcie karty nie usuwa wątku. Po angielsku szuka się tego jako „save claude chat” lub „claude export chat”.</p>
+<aside class="trust-badge" aria-label="O rozszerzeniu">
+  <span class="trophy" aria-hidden="true">🧩</span>
+  <div>
+    <strong>Download Claude conversations — darmowe rozszerzenie Chrome do claude.ai</strong>
+    <span>Wersja 1.16.2 (wrzesień 2026) — eksporty do Markdown, tekstu, JSON, XML, CSV i PNG bez limitu i bez konta; PDF i zbiorczy ZIP za darmo do 3 dziennie</span>
+  </div>
+</aside>
+<nav class="toc" aria-label="Na tej stronie">
+  <p>Na tej stronie</p>
+  <ol>
+    <li><a href="#history-keeps-it">Czy Claude już zapisuje rozmowę w historii?</a></li>
+    <li><a href="#save-as-file">Jak zapisać rozmowę Claude jako plik?</a></li>
+    <li><a href="#save-with-chrome">Jak zapisać czat Claude rozszerzeniem Chrome?</a></li>
+    <li><a href="#without-extension">Jak zapisać rozmowę w Claude bez rozszerzenia?</a></li>
+    <li><a href="#will-it-vanish">Czy historia zachowa rozmowę po zamknięciu karty?</a></li>
+    <li><a href="#markdown-json">Jak zapisać rozmowę Claude w Markdown lub JSON?</a></li>
+    <li><a href="#save-bulk">Jak zapisać całą historię czatów Claude naraz?</a></li>
+    <li><a href="#desktop-code">Czy zapiszę rozmowę w Claude Desktop lub Code?</a></li>
+    <li><a href="#faq">FAQ: jak zapisać rozmowę Claude</a></li>
+  </ol>
+</nav>
+
+<h2 id="history-keeps-it">Czy Claude już zapisuje rozmowę w historii?</h2>
+<p>Tak. Claude.ai przechowuje wątek zalogowanego użytkownika w historii na koncie Anthropic. Zamknięcie karty nie kasuje rozmowy. Wciąż jednak nie ma przycisku „Zapisz”, który tworzyłby plik na dysku. Zapisanie rozmowy jako Markdown lub JSON to zadanie niezależne od historii.</p>
+<p>Historia to lista czatów po lewej stronie claude.ai. Każdy wiersz to rozmowa, którą Anthropic przechowuje dla danego loginu. Otwórz wiersz później, a te same wypowiedzi wrócą. To przechowywanie na koncie, a nie folder pobranych plików na Twoim laptopie.</p>
+<p>Osoby, które wpisują „jak zapisać rozmowę w Claude”, często pytają tak naprawdę: „czy to zniknie, gdy wyjdę?”. W zwykłej zalogowanej sesji — nie. Claude.ai nie wymaga kliknięcia „Zapisz”, by zachować wątek na koncie. Brakuje eksportera plików, a nie przełącznika „zachowaj”.</p>
+<p>Historia to nie plik Markdown, nie drzewo JSON, które przeszukasz, i nie obraz PNG, który wrzucisz na slajd. Historia jest dostępna tylko po zalogowaniu do Anthropic. Jeśli nie możesz się zalogować, nie otworzysz tych czatów. Lokalny plik otworzy się nawet wtedy, gdy hasła już nie masz.</p>
+<div class="callout callout-info">
+  <p><strong>Dwa różne „zapisy”.</strong> Historia = Anthropic trzyma czat na koncie. Plik = Ty zapisujesz PDF, Markdown, JSON, tekst, XML, CSV lub PNG na dysku. Claude.ai ma to pierwsze. Na to drugie nie ma na claude.ai przycisku.</p>
+</div>
+<p>Projekty i lista ostatnich czatów na claude.ai to wciąż historia. Przeniesienie czatu do projektu nie tworzy pliku. Zmiana nazwy rozmowy nie tworzy pliku. Oznaczenie gwiazdką czy przypięcie, jeśli interfejs to oferuje, też nie zapisuje Markdown. Download Claude conversations eksportuje czaty z projektu jak każde inne, a na stronie projektu „Project files” → „Download ZIP” (pliki projektu → pobierz ZIP) zapisuje pliki projektu.</p>
+<p>W obszarach roboczych Team i Enterprise obowiązuje ten sam podział. Jeśli możesz otworzyć rozmowę na claude.ai, Anthropic już ją przechowuje dla obszaru roboczego. Firmowe zasady przechowywania mogą jednak usuwać lub ukrywać czaty według harmonogramu, na który nie masz wpływu. Wtedy wyeksportowany plik jest kopią, która zostaje u Ciebie.</p>
+<p>Tryb incognito i drugi profil Chrome nie dzielą historii. Wątek jest powiązany z kontem Anthropic użytym w danej sesji. Po zalogowaniu na inne konto Anthropic zobaczysz inną listę. „Zapis” między kontami to plik, a nie scalenie historii.</p>
+
+<h2 id="save-as-file">Jak zapisać rozmowę Claude jako plik?</h2>
+<p>Aby zapisać rozmowę Claude jako plik, wybierz metodę, która zapisuje na dysk: Download Claude conversations w Chrome, Drukuj → Zapisz jako PDF albo Settings → Privacy → Export data. Historia na claude.ai to przechowywanie na koncie, a nie plik PDF, Markdown, JSON, tekst, XML, CSV czy PNG.</p>
+<p>Rozszerzenie Chrome to droga dla pojedynczego czatu. Otwórz adres rozmowy, kliknij pomarańczowy przycisk obok pola wiadomości, wybierz format i kliknij „Export” (Eksportuj). Mechanizm pobierania Chrome zapisze plik lokalnie. Markdown, tekst, JSON, XML, CSV i PNG nie wymagają konta; o logowanie Google prosi tylko PDF. Treść czatów zostaje na komputerze.</p>
+<p>Wydruk to droga wizualna. Ctrl+P lub Cmd+P, miejsce docelowe „Zapisz jako PDF”. Wynik wygląda jak strona claude.ai, łącznie z elementami interfejsu, których style wydruku nie ukryły. Bloki kodu często rozdzielają się między kartki. Drukuj, gdy recenzent chce zrzutu, a nie pliku z notatkami. Jeśli chcesz PDF zbudowany z wiadomości, a nie z ekranu, wybierz PDF w rozszerzeniu.</p>
+<p>Oficjalny „Export data” to droga dla całego konta. Settings → Privacy → Export data na claude.ai. Anthropic wysyła e-mailem link, który wygasa. ZIP zawiera JSON całego konta, a nie jeden nazwany plik z czatem z ekranu. Czekanie to cena pełnej kopii zapasowej.</p>
+<div class="table-wrap">
+  <table>
+    <caption>Co znaczy „zapisać” na claude.ai, a co plik na dysku</caption>
+    <thead>
+      <tr>
+        <th scope="col">Chcesz</th>
+        <th scope="col">Metoda</th>
+        <th scope="col">Co dostajesz</th>
+        <th scope="col">Czego wciąż brakuje</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Żeby czat nie zniknął</th>
+        <td>Pozostań zalogowany; korzystaj z historii</td>
+        <td>Wątek na koncie Anthropic</td>
+        <td>Pliku, który wyślesz e-mailem lub dodasz do gita</td>
+      </tr>
+      <tr>
+        <th scope="row">Jeden czat, czytelny plik, od razu</th>
+        <td>Rozszerzenie Chrome (ten produkt)</td>
+        <td>PDF, Markdown, JSON, tekst, XML, CSV lub PNG</td>
+        <td>Oficjalnego archiwum konta od Anthropic</td>
+      </tr>
+      <tr>
+        <th scope="row">Wizualny PDF tego ekranu</th>
+        <td>Drukuj → Zapisz jako PDF</td>
+        <td>Zrzut claude.ai podzielony na strony</td>
+        <td>Czystego kodu, tabel, zwiniętych artefaktów</td>
+      </tr>
+      <tr>
+        <th scope="row">Pełna kopia zapasowa konta</th>
+        <td>Settings → Privacy → Export data</td>
+        <td>ZIP z JSON wysłany e-mailem</td>
+        <td>Formatowania poszczególnych czatów; trzeba czekać na link</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p>Wybierz wiersz, który pasuje do zadania. Większość osób, które szukają, jak zapisać czat Claude, chce drugiego wiersza: pliku, który otworzą w Obsidianie, VS Code czy wiki. Pierwszy wiersz załatwia już historia. Wydruk i „Export data” nadal są prawdziwymi metodami; rozwiązują po prostu inne zadania.</p>
+<p>Plik to dobry ruch przed odejściem z firmy, przed wyczyszczeniem laptopa, przed założeniem archiwum badawczego albo zanim wkleisz przegląd kodu do gita. Historia wystarczy, gdy chcesz jutro otworzyć ten sam wątek na tym samym koncie Anthropic.</p>
+<p>Kopiuj-wklej to piąta metoda i słaby plik. Zaznaczasz tekst na claude.ai i wklejasz go do Dokumentów Google. Bloki kodu się rozsypują. Tabele zamieniają się w ciągłe linie. Granice wiadomości znikają. Dobre dla jednego akapitu. Słabe jako jedyny zapis przeglądu projektu z 40 wymianami. Przycisk „Copy” (Kopiuj) w rozszerzeniu kopiuje za to czysty Markdown do schowka.</p>
+
+<h2 id="save-with-chrome">Jak zapisać czat Claude rozszerzeniem Chrome?</h2>
+<p>Z Download Claude conversations robisz to tak: zainstaluj rozszerzenie Chrome, otwórz wątek na claude.ai, kliknij pomarańczowy przycisk obok pola wiadomości, wybierz PDF, Markdown, JSON, tekst, XML, CSV lub PNG i kliknij „Export”. Konto jest potrzebne tylko dla PDF.</p>
+<ol>
+<li>Zainstaluj Download Claude conversations z Chrome Web Store (działają też przeglądarki Chromium, które wczytują rozszerzenia Chrome).</li>
+<li>Odśwież claude.ai, jeśli strona była otwarta podczas instalacji. Chrome nie zawsze wstrzykuje skrypt treści do starych kart.</li>
+<li>Otwórz z historii adres prawdziwej rozmowy — pomarańczowy przycisk pojawia się w wątku, a nie na pustej stronie startowej.</li>
+<li>Kliknij okrągły pomarańczowy przycisk pobierania na prawo od pola wiadomości. Otworzy się panel z opcjami „Messages” (All / Human / Assistant — wszystkie / Ty / Claude), „Format”, „Thinking” (myślenie), „Select” (Zaznacz), „Copy” i „Export”.</li>
+<li>Wybierz PDF, Markdown, Plain Text (zwykły tekst), JSON, XML, CSV lub PNG. Kliknij „Export”. Chrome od razu pobierze plik.</li>
+</ol>
+<p>Rozszerzenie działa jako skrypt treści Chrome wyłącznie na claude.ai. Parser odczytuje rozmowę, która jest już załadowana w zalogowanej sesji. Download Claude conversations nie łączy się z osobnym API Anthropic przy użyciu własnych danych logowania i nie wysyła wątku na nasze serwery, żeby wygenerować plik.</p>
+<p>Do Markdown, zwykłego tekstu, JSON, XML, CSV i PNG konto nie jest potrzebne. Eksporty pojedynczego czatu w tych formatach są bez limitu i za darmo: bez logowania, bez licznika. Logowanie Google pojawia się tylko, gdy wybierzesz PDF albo uruchomisz zbiorczy „Export All”. Logowanie Google nie służy do odczytu czatów. Treść rozmów zostaje na Twoim komputerze.</p>
+<p>PDF i zbiorczy ZIP mają wspólny darmowy limit 3 dziennie, odnawiany o północy UTC. Każdy czat w zbiorczym ZIP liczy się jako jeden. Pro kosztuje 3,99 USD miesięcznie lub 26,99 USD rocznie i znosi ten limit. Płatności za Pro obsługuje Paddle. Nie widzimy numerów kart. Kroki dla PDF: <a href="/pl/czat-claude-do-pdf/">czat Claude jako PDF</a>.</p>
+<div class="callout callout-tip">
+  <p><strong>Pliki lokalne.</strong> Każdy format, także PDF, powstaje w przeglądarce i trafia do mechanizmu pobierania Chrome. Treść czatu nigdy nie jest wysyłana. Tylko eksporty PDF i zbiorcze wysyłają sprawdzenie limitu z Twoim adresem e-mail Google. Wersja 1.16.2, wrzesień 2026.</p>
+</div>
+<p>W tym samym panelu filtrujesz według nadawcy — All, Human lub Assistant. Pole „Thinking” dołącza lub pomija rozszerzone myślenie. „Select” pozwala zaznaczyć pojedyncze wiadomości, tak by plik zawierał tylko te wypowiedzi. „Copy” kopiuje Markdown, tekst, JSON, XML lub CSV do schowka zamiast pobierać plik. Kroki narzędzi / MCP i źródła z wyszukiwania w sieci włączasz przełącznikami w ustawieniach. Metadane i układ artefaktów — „Original”, „Inline”, „Nested” lub „Flat” (oryginalny, wbudowany, zagnieżdżony, płaski) — ustawiasz w panelu Dashboard.</p>
+<p>Jeśli wątek jest bardzo długi, przewiń go, aż claude.ai wczyta wcześniejsze wiadomości. Rozszerzenie eksportuje tylko to, co strona wyrenderowała. Wątek wczytany w połowie daje plik w połowie pusty. Wygląda to na błąd, ale zwykle chodzi o nieprzewiniętą stronę.</p>
+<p>Przed eksportem poczekaj, aż asystent skończy generować odpowiedź. Plik zapisany w trakcie urwie ostatnią odpowiedź. Druga próba z Markdown lub JSON nic nie kosztuje. Drugi PDF zużywa kolejne z 3 dziennych miejsc w planie darmowym — to jeden z powodów, by najpierw upewnić się, że wątek jest kompletny.</p>
+<p>Ostatnio użyty format jest zapamiętywany. Jeśli chciałeś Markdown, a dostałeś JSON, lista rozwijana wciąż była ustawiona na JSON z poprzedniego eksportu. Sprawdzaj ją za każdym razem, gdy zmieniasz zadanie. Zrzuty ekranu krok po kroku z tym samym pomarańczowym przyciskiem znajdziesz w poradniku <a href="/pl/jak-pobrac-czat-claude/">jak pobrać czat Claude</a>.</p>
+<div class="expert-quote">
+  <blockquote>Co tydzień słyszymy o tym samym nieporozumieniu: ludzie szukają przycisku „Zapisz”, bo myślą, że historia to szkic, który zniknie. Claude.ai już przechowuje wątek. Nasz pomarańczowy przycisk tylko zapisuje lokalny plik — PDF, Markdown, JSON, tekst, XML, CSV lub PNG — ze strony, którą już otworzyłeś.</blockquote>
+  <cite><strong>Zespół Download Claude conversations</strong> — twórcy rozszerzenia Chrome Claude Chat Downloader</cite>
+</div>
+
+<h2 id="without-extension">Jak zapisać rozmowę w Claude bez rozszerzenia?</h2>
+<p>Bez rozszerzenia możesz wydrukować stronę claude.ai albo zamówić archiwum ZIP z „Export data” od Anthropic. Wydruk to wizualny PDF strony internetowej. „Export data” to archiwum JSON całego konta, dostarczane z opóźnieniem. Żadna z tych metod nie tworzy pliku Markdown dla pojedynczego czatu.</p>
+<p>Wydruk: otwórz rozmowę na claude.ai, ukryj pasek boczny, jeśli interfejs na to pozwala, naciśnij Ctrl+P (Windows/Linux) lub Cmd+P (Mac), jako miejsce docelowe ustaw „Zapisz jako PDF” i zapisz. Elementy interfejsu, takie jak pole wiadomości, mogą powtarzać się na każdej kartce. Pełne uwagi o drukowaniu: <a href="/pl/czat-claude-do-pdf/">czat Claude jako PDF</a>.</p>
+<p>Droga oficjalna: Settings → Privacy → Export data na claude.ai. Anthropic wysyła e-mailem link, który wygasa. Rozpakuj ZIP sam, jeśli potrzebujesz jednej rozmowy spośród tysięcy. To archiwum jest kopią zapasową „na wszelki wypadek”, a nie plikiem z notatkami na jutrzejsze spotkanie zespołu.</p>
+<p>Kopiuj-wklej działa bez żadnej instalacji. Zaznacz wypowiedzi na claude.ai i wklej je do aplikacji do notatek. Wcięcia w kodzie zwykle znikają. Wieloetapowy wątek staje się jednolitą ścianą tekstu. Używaj kopiuj-wklej do pojedynczego fragmentu, a nie jako jedynego sposobu zapisywania rozmów.</p>
+<div class="table-wrap">
+  <table>
+    <caption>Sposoby bez rozszerzenia na wydostanie czatu Claude z ekranu</caption>
+    <thead>
+      <tr>
+        <th scope="col">Metoda</th>
+        <th scope="col">Szybkość</th>
+        <th scope="col">Zakres</th>
+        <th scope="col">Najlepsza do</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Drukuj → Zapisz jako PDF</th>
+        <td>Od razu</td>
+        <td>Otwarta strona</td>
+        <td>Wizualnego załącznika</td>
+      </tr>
+      <tr>
+        <th scope="row">Settings → Privacy → Export data</th>
+        <td>E-mail z opóźnieniem</td>
+        <td>Całe konto</td>
+        <td>Odejścia z firmy lub wymogów prawnych</td>
+      </tr>
+      <tr>
+        <th scope="row">Kopiuj-wklej</th>
+        <td>Od razu</td>
+        <td>To, co zaznaczyłeś</td>
+        <td>Jednej krótkiej odpowiedzi</td>
+      </tr>
+      <tr>
+        <th scope="row">Tylko historia (bez pliku)</th>
+        <td>Już zrobione</td>
+        <td>Czaty zalogowanego użytkownika</td>
+        <td>Ponownego otwarcia tego samego wątku</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p>Żaden z tych wierszy nie zastąpi Download Claude conversations, gdy potrzebujesz od razu uporządkowanego Markdown z jednej pozycji historii. Metody bez rozszerzenia wciąż mają znaczenie, gdy dział IT blokuje rozszerzenia Chrome, gdy potrzebujesz oficjalnego ZIP albo gdy produktem końcowym ma być wydruk dokładnie tego ekranu.</p>
+<p>Safari i Chrome na telefonie potrafią drukować. Te przeglądarki nie zainstalują tego dodatku z Chrome Web Store. Po plik Markdown wielokrotnego użytku otwórz tę samą pozycję historii w Chrome na komputerze, po dodaniu rozszerzenia.</p>
+
+<h2 id="will-it-vanish">Czy historia zachowa rozmowę po zamknięciu karty?</h2>
+<p>Tak. Historia zachowa rozmowę po zamknięciu karty, odświeżeniu claude.ai czy wyłączeniu laptopa — pod warunkiem że czat powstał, gdy byłeś zalogowany. Zamknięcie karty to nie usunięcie. To usunięcie z historii kasuje wątek z interfejsu konta.</p>
+<p>Wyloguj się z claude.ai, a strona zrobi się pusta. Zaloguj się ponownie na to samo konto Anthropic, a historia pokaże te czaty. Wylogowanie ukrywa listę; samo w sobie nie kasuje danych konta. Inny login Anthropic pokazuje inną historię.</p>
+<p>Usunięcie z historii to przypadek, w którym rozmowa naprawdę znika. Usuń rozmowę w interfejsie claude.ai, a wątek zniknie z paska bocznego. Plik Markdown, który wcześniej wyeksportowałeś pomarańczowym przyciskiem, zostaje na dysku. Wyeksportuj go najpierw, jeśli czat ma zostać wyczyszczony.</p>
+<div class="callout callout-warn">
+  <p><strong>Usunięcie to nie zamknięcie.</strong> Zamknięcie karty claude.ai zostawia historię nietkniętą. Usunięcie rozmowy z historii kasuje czat z interfejsu konta. Oficjalny „Export data” nie pomoże po usunięciu, jeśli Anthropic nie obejmuje już tego wątku. Zapisz plik, zanim zaczniesz porządki.</p>
+</div>
+<p>Tryb incognito kończy się z zamknięciem okna. Jeśli korzystałeś z claude.ai w oknie prywatnym bez trwałego logowania, nie zakładaj, że historia zachowała pracę. Zaloguj się w zwykłym profilu Chrome albo wyeksportuj plik, zanim sesja incognito się skończy.</p>
+<p>Administratorzy obszarów roboczych Team i Enterprise mogą przechowywać lub ograniczać czaty. Zasada, której nie ustawiałeś, może później ukryć wątek. Traktuj firmową historię jak pożyczone miejsce. Traktuj wyeksportowany plik Markdown lub JSON jak kopię po Twojej stronie tych zasad.</p>
+<p>Przejście z telefonu na laptopa nie wymaga żadnego specjalnego zapisywania, jeśli oba urządzenia używają tego samego konta Anthropic. Otwórz historię na laptopie. Jeśli czatu brakuje, jesteś na innym loginie, w innym obszarze roboczym albo wątek został usunięty — a nie „niezapisany”.</p>
+<p>Claude Desktop może pokazywać czaty tego samego konta, jeśli aplikacja jest zalogowana na tego samego użytkownika Anthropic. Synchronizacja to zadanie Anthropic. Rozszerzenie Chrome nigdy nie działa w Desktop. Jeśli wątek istnieje na claude.ai, otwórz claude.ai w Chrome, by zapisać plik.</p>
+
+<h2 id="markdown-json">Jak zapisać rozmowę Claude w Markdown lub JSON?</h2>
+<p>Kliknij pomarańczowy przycisk na claude.ai, wybierz format i kliknij „Export”. Markdown to plik z notatkami. JSON to drzewo wiadomości dla skryptów. Zwykły tekst nie ma znaczników. CSV to jeden wiersz na wiadomość. PDF to dokument podzielony na strony. PNG to obraz.</p>
+<p>Markdown zachowuje nagłówki, bloki kodu z oznaczeniem języka i tabele. Markdown to typowy wybór do Obsidiana, GitHuba czy wiki. Uwagi o układzie tego formatu: <a href="/pl/formaty/markdown/">eksport do Markdown</a>. JSON zachowuje drzewo, które zbudował parser, łącznie z artefaktami i myśleniem, jeśli te opcje są włączone.</p>
+<p>JSON z Download Claude conversations ma inny kształt niż archiwum ZIP konta od Anthropic. JSON z rozszerzenia to jedna rozmowa w takiej postaci, w jakiej wyrenderowała ją strona. JSON z „Export data” to zrzut całego konta, który Anthropic wysyła później e-mailem. Nie mieszaj tych dwóch schematów w jednym skrypcie bez sprawdzenia kluczy.</p>
+<p>Zwykły tekst sprawdza się tam, gdzie miejsce docelowe usuwa znaczniki — pole w systemie zgłoszeń, treść e-maila, indeks wyszukiwania, który chce czystego tekstu. XML to niszowy wybór do wymiany danych. CSV otworzysz w Excelu, Arkuszach Google lub Numbers. PNG nadaje się na slajd albo ilustrację do zgłoszenia błędu, a nie do przeglądu z 40 wymianami, który będziesz przeszukiwać.</p>
+<div class="table-wrap">
+  <table>
+    <caption>Formaty, które Download Claude conversations zapisuje z claude.ai</caption>
+    <thead>
+      <tr>
+        <th scope="col">Format</th>
+        <th scope="col">Najlepszy do</th>
+        <th scope="col">Nie do</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">PDF</th>
+        <td>Udostępniania, drukowania, załączników dla klientów</td>
+        <td>Przeszukiwania, porównywania wersji, ponownej edycji</td>
+      </tr>
+      <tr>
+        <th scope="row">Markdown</th>
+        <td>Notatek, gita, późniejszej konwersji</td>
+        <td>Układu co do piksela</td>
+      </tr>
+      <tr>
+        <th scope="row">JSON</th>
+        <td>Skryptów, drzewa wiadomości</td>
+        <td>Czytania w edytorze tekstu</td>
+      </tr>
+      <tr>
+        <th scope="row">Zwykły tekst</th>
+        <td>Archiwów bez znaczników</td>
+        <td>Zachowania tabel jako tabel</td>
+      </tr>
+      <tr>
+        <th scope="row">XML</th>
+        <td>Potoków przyjmujących tylko XML</td>
+        <td>Swobodnej lektury</td>
+      </tr>
+      <tr>
+        <th scope="row">CSV</th>
+        <td>Arkuszy, jeden wiersz na wiadomość</td>
+        <td>Czytania jak dokumentu</td>
+      </tr>
+      <tr>
+        <th scope="row">PNG</th>
+        <td>Ilustracji wątku</td>
+        <td>Wyszukiwania, porównywania, dokumentu wielostronicowego</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p>PDF jest wbudowany w wersję 1.16.2. Po wybraniu PDF okno pozwala ustawić nazwę pliku, rozmiar strony, marginesy, tryb jasny lub ciemny, czcionkę i jej rozmiar, numery stron, spis treści, znaczniki czasu oraz podział strony przed każdym promptem. PDF wymaga logowania Google i w planie darmowym jest ograniczony do 3 dziennie. W Pro nie ma limitu. Szczegóły: <a href="/pl/czat-claude-do-pdf/">czat Claude jako PDF</a>.</p>
+<p>Myślenie, metadane, filtr nadawcy i układ artefaktów zmieniają to, co trafia do Markdown i JSON. Zaznacz „Thinking” w panelu, gdy potrzebujesz w archiwum rozszerzonego rozumowania. Zostaw je wyłączone, gdy plik jest dla czytelnika, który ma zobaczyć tylko ostateczną odpowiedź. Metadane dodają tytuł, znaczniki czasu i model, jeśli chcesz mieć nagłówek w pliku z notatkami.</p>
+<p>„Messages” ustawione na „Human” zapisuje Twoje prompty. „Assistant” zapisuje odpowiedzi Claude. „All” to cały wątek. „Select” zawęża plik do zaznaczonych wiadomości. Układ artefaktów w panelu Dashboard — „Original”, „Inline”, „Nested” lub „Flat” — decyduje, czy artefakty są w pliku, czy we własnym folderze w ZIP. Wybierz układ raz i trzymaj się go, żeby folder zapisanych czatów był spójny.</p>
+
+<h2 id="save-bulk">Jak zapisać całą historię czatów Claude naraz?</h2>
+<p>Aby zapisać historię czatów Claude jako wiele plików, nie klikaj pomarańczowego przycisku osobno w każdej karcie. Otwórz „View and Download All Conversations” (Wyświetl i pobierz wszystkie rozmowy) z menu rozszerzenia, przefiltruj tabelę i kliknij „Export All” (Eksportuj wszystko). „Export All” wymaga logowania Google. W planie darmowym każdy czat w ZIP zużywa jedno z 3 dziennych miejsc, wspólnych z PDF. Pro znosi limit.</p>
+<p>Dashboard pokazuje rozmowy z konta claude.ai, na którym jesteś zalogowany — tę samą historię, którą już masz, zamienioną w tabelę z filtrami. Szukaj po nazwie. Filtruj według „All conversations”, „New”, „Updated” lub „Previously exported” (wszystkie, nowe, zaktualizowane, już wyeksportowane). Przełączaj karty „Chat” i „Cowork” i szukaj według projektu, jeśli tak grupujesz czaty na claude.ai.</p>
+<p>Eksport zbiorczy zapisuje jeden ZIP z osobnym plikiem dla każdego czatu, w formacie wybranym w polu „Chat format” — dowolnym z siedmiu, łącznie z PDF. Używa tego samego parsera co eksport pojedynczego czatu. Pola wyboru decydują o zawartości — „Chats”, „Thinking”, „Metadata”, „Tools”, „Sources” (czaty, myślenie, metadane, narzędzia, źródła) — plus układ artefaktów. „Export All” to nie uproszczona ścieżka. „Export All” to ten sam parser zastosowany do wielu rozmów za jednym razem. Szczegóły: <a href="/pl/eksport-wszystkich-czatow-claude/">eksport wszystkich czatów</a>.</p>
+<p>„Export data” od Anthropic nadal jest kopią zapasową konta. Jeden ZIP, jeden e-mail, JSON dla wszystkiego, także czatów, o których zapomniałeś. Zbiorczy „Export All” to odwrotne zadanie: sam wybierasz wiersze z historii i format, a ZIP pojawia się od razu. Korzystaj z obu, jeśli chcesz mieć i archiwum „na wszelki wypadek”, i folder czytelnych notatek.</p>
+<div class="callout callout-warn">
+  <p><strong>Limit jest wspólny i dzienny.</strong> W planie darmowym eksporty PDF i czaty w eksporcie zbiorczym dzielą 3 miejsca dziennie, odnawiane o północy UTC. Zaznacz 40 rozmów, a cała partia zostanie zablokowana, a nie przycięta. Wybierz mniej albo przejdź na Pro za 3,99 USD miesięcznie lub 26,99 USD rocznie przez Paddle.</p>
+</div>
+<p>Dashboard pamięta, co już wyeksportowałeś, więc przy kolejnej wizycie możesz pokazać tylko „New” lub „Updated”. Dzięki temu cotygodniowe zapisywanie czatów Claude jest przyrostowe i nie dubluje Markdown z zeszłego miesiąca. Licznik 3 dziennie jest powiązany z kontem Google, a nie z instalacją, i odnawia się o północy UTC.</p>
+<p>Zaznacz tylko część, gdy historia jest pełna jednolinijkowych szkiców. „Export All” nie oznacza, że musisz brać każdy wiersz. Wąski filtr plus Markdown dają czystszy folder badawczy niż 200 pustych wątków z „cześć”.</p>
+<p>„Eksportuj czat Claude” jako czasownik produktowy to ten sam pomarańczowy przycisk i ta sama tabela „Export All”. Sąsiednia strona <a href="/pl/eksport-czatu-claude/">eksport czatu Claude</a> opisuje te elementy, jeśli trafiłeś tu z zapytania o „eksport”, a nie o „zapisanie”.</p>
+
+<h2 id="desktop-code">Czy zapiszę rozmowę w Claude Desktop lub Code?</h2>
+<p>Desktop — nie. Code — tylko w sieci. Download Claude conversations nie zapisze rozmowy z Claude Desktop ani z lokalnego terminala Claude Code. Sesje pod adresem claude.ai/code otwierają się w Chrome na komputerze, więc zapisujesz je jak każdy czat. Claude Desktop to osobna aplikacja. Lokalny Claude Code to agent w terminalu z poleceniem <code>/export</code> i plikami JSONL na dysku.</p>
+<p>Jeśli czat z Desktop istnieje też na claude.ai, otwórz ten adres w Chrome i użyj pomarańczowego przycisku. Jeśli wątek jest tylko w Desktop, skopiuj i wklej albo poczekaj na Settings → Privacy → Export data. Rozszerzenie nigdy nie działa w oknie Desktop.</p>
+<p>W aktywnej sesji Claude Code wpisz <code>/export</code>. CLI od Anthropic otworzy menu, w którym skopiujesz zapis rozmowy lub zapiszesz go jako zwykły tekst. Podaj nazwę pliku, by pominąć menu. Taki zapis to wyrenderowany tekst do czytania, a nie Markdown, JSON czy PDF z tego rozszerzenia. Pełne ścieżki: <a href="/pl/eksport-rozmowy-claude-code/">eksport rozmowy Claude Code</a>.</p>
+<p>JSONL na dysku to wewnętrzny dziennik w <code>~/.claude/projects</code> (Windows: <code>%USERPROFILE%\.claude\projects</code>). Jego schemat może się zmieniać między wersjami Claude Code. Dokumentacja Anthropic zaleca <code>/export</code> zamiast parsowania JSONL. Nie opakowujemy tego CLI. Nie czytamy <code>~/.claude</code>.</p>
+<div class="table-wrap">
+  <table>
+    <caption>Gdzie każde środowisko Claude przechowuje rozmowę, którą możesz zachować</caption>
+    <thead>
+      <tr>
+        <th scope="col">Środowisko</th>
+        <th scope="col">Już „zapisane”?</th>
+        <th scope="col">Jak zapisać plik</th>
+        <th scope="col">To rozszerzenie Chrome</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">claude.ai w Chrome (czaty, Projekty, Cowork)</th>
+        <td>Tak — historia na koncie</td>
+        <td>Pomarańczowy przycisk lub „Export All”</td>
+        <td>Tak — właśnie do tego służy</td>
+      </tr>
+      <tr>
+        <th scope="row">Claude Code on the web (claude.ai/code)</th>
+        <td>Tak — sesje na koncie</td>
+        <td>Otwórz sesję w Chrome i wyeksportuj</td>
+        <td>Tak</td>
+      </tr>
+      <tr>
+        <th scope="row">Claude Code w lokalnym terminalu</th>
+        <td>JSONL sesji na dysku</td>
+        <td><code>/export</code> lub skopiuj JSONL</td>
+        <td>Nie</td>
+      </tr>
+      <tr>
+        <th scope="row">Aplikacja Claude Desktop</th>
+        <td>Jeśli to samo konto Anthropic się synchronizuje</td>
+        <td>Otwórz czat na claude.ai lub skopiuj i wklej</td>
+        <td>Nie — nie działa w Desktop</td>
+      </tr>
+      <tr>
+        <th scope="row">Kopia zapasowa całego konta</th>
+        <td>Magazyn Anthropic plus ZIP wysyłany e-mailem</td>
+        <td>Settings → Privacy → Export data</td>
+        <td>Inne zadanie — ZIP z JSON z opóźnieniem</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p>Obszary robocze Team i Enterprise działają z rozszerzeniem, jeśli możesz otworzyć rozmowę na claude.ai w Chrome. Parser czyta wyrenderowaną stronę, a nie API tylko dla kont prywatnych. Jeśli polityka firmy blokuje rozszerzenia, to decyzja działu IT, a nie przełącznik planu w naszych ustawieniach.</p>
+<p>Niezależne rozszerzenie Chrome, niepowiązane z Anthropic, PBC. Claude jest znakiem towarowym Anthropic. Przestrzegaj Warunków korzystania z usługi Anthropic. Nie udzielamy porad prawnych co do tego, czy dany eksport jest dozwolony w Twojej firmie. Rozszerzenie korzysta z Twojej istniejącej sesji tak samo jak strona internetowa i nie automatyzuje działań na koncie.</p>
+<p>Pro rozlicza Paddle. Logowanie Google, używane tylko do PDF, eksportu zbiorczego i Pro, nie daje nam dostępu do rozmowy. Worker Cloudflare, który sprawdza limit i status Pro, otrzymuje Twój adres e-mail Google, a nie treść wiadomości. Pozostałe eksporty pojedynczego czatu nic nie wysyłają. Rozliczenia na serwerze, czat na dysku — na tej granicy opiera się prywatność każdego pliku, który zapisuje ten produkt.</p>
+
+<h2 id="faq">FAQ: jak zapisać rozmowę Claude</h2>
+<h3>Jak zapisać rozmowę Claude jako plik?</h3>
+<p>Zainstaluj Download Claude conversations, otwórz wątek na claude.ai, kliknij pomarańczowy przycisk na prawo od pola wiadomości, wybierz PDF, Markdown, JSON, tekst, XML, CSV lub PNG i kliknij „Export”. Plik pobiera się lokalnie, bez konta — z wyjątkiem PDF. Historia już przechowuje czat na koncie Anthropic; pomarańczowy przycisk zapisuje kopię na dysku.</p>
+<h3>Jak zapisać czat Claude na claude.ai?</h3>
+<p>Nie potrzebujesz przycisku „Zapisz”, by zachować wątek na koncie. Historia na claude.ai już pokazuje czaty zalogowanego użytkownika. Aby zapisać czat Claude jako plik, użyj rozszerzenia Chrome, opcji Drukuj → Zapisz jako PDF albo Settings → Privacy → Export data, by dostać później archiwum ZIP z JSON całego konta.</p>
+<h3>Jak zapisać rozmowę w Claude bez rozszerzenia?</h3>
+<p>Wydrukuj stronę claude.ai (Ctrl/Cmd+P → Zapisz jako PDF), by mieć kopię wizualną, albo użyj Settings → Privacy → Export data, by dostać e-mailem archiwum ZIP z JSON całego konta. Kopiuj-wklej wystarczy dla krótkiej odpowiedzi. Żadna z tych metod nie tworzy uporządkowanego pliku Markdown dla pojedynczego czatu, tak jak robi to rozszerzenie Chrome.</p>
+<h3>Czy Claude już zapisuje rozmowę w historii?</h3>
+<p>Tak. Czaty zalogowanego użytkownika na claude.ai zostają w historii na koncie Anthropic. Zamknięcie karty, odświeżenie strony czy otwarcie innego urządzenia z tym samym loginem nie kasuje wątku. Historia to jednak nie PDF, Markdown, JSON ani żaden inny plik na Twoim dysku.</p>
+<h3>Czy rozmowa z Claude zniknie, jeśli zamknę kartę?</h3>
+<p>Nie. Zamknięcie karty claude.ai nie usuwa rozmowy z historii. Usunięcie czatu z historii kasuje go z interfejsu konta. Plik, który wcześniej wyeksportowałeś przez Download Claude conversations, zostaje na dysku nawet po takim usunięciu.</p>
+<h3>Czy mogę zapisać rozmowę Claude jako PDF?</h3>
+<p>Tak. Download Claude conversations 1.16.2 eksportuje PDF bezpośrednio: wybierz PDF w panelu pomarańczowego przycisku i kliknij „Export”. Plik powstaje w przeglądarce, bez okna drukowania. PDF wymaga logowania Google i jest darmowy do 3 dziennie; w Pro bez limitu. Poradnik: <a href="/pl/czat-claude-do-pdf/">czat Claude jako PDF</a>.</p>
+<h3>Ile darmowych plików mogę zapisać?</h3>
+<p>Bez limitu dla Markdown, zwykłego tekstu, JSON, XML, CSV i PNG, bez konta. PDF i zbiorczy ZIP dzielą 3 miejsca dziennie w planie darmowym, z logowaniem Google; każdy czat w zbiorczym ZIP liczy się jako jeden, a dzień odnawia się o północy UTC. Pro kosztuje 3,99 USD miesięcznie lub 26,99 USD rocznie i znosi limit. Płatności obsługuje Paddle.</p>
+<h3>Czy zapisywanie rozmów działa na telefonie?</h3>
+<p>Rozszerzenie Chrome — nie. Działa w Chrome na komputerze (lub innej przeglądarce Chromium, która instaluje dodatki z Chrome Web Store). Nie ma aplikacji na iOS ani Androida. Przeglądarki mobilne mogą otworzyć historię i wydrukować czat Claude, ale nie pokażą pomarańczowego przycisku.</p>
+<h3>Czy mogę zapisać wiele czatów z historii naraz?</h3>
+<p>Tak. Otwórz „View and Download All Conversations” z menu rozszerzenia, przefiltruj tabelę i kliknij „Export All”. Eksport zbiorczy wymaga logowania Google i w planie darmowym wlicza się do limitu 3 dziennie. To nie jest archiwum ZIP z „Export data” od Anthropic. Oficjalny „Export data” to jedno archiwum całego konta, wysyłane później e-mailem. Zobacz <a href="/pl/eksport-wszystkich-czatow-claude/">eksport wszystkich czatów</a>.</p>
+<h3>Czy to zapisuje rozmowy z Claude Code?</h3>
+<p>Tylko w sieci. Sesje Claude Code pod adresem claude.ai/code zapisujesz jak każdy czat na claude.ai. Lokalne sesje terminala — nie: użyj <code>/export</code> lub skopiuj JSONL z <code>~/.claude/projects</code> (Windows: <code>%USERPROFILE%\.claude\projects</code>). To rozszerzenie Chrome działa tylko na claude.ai. Poradnik: <a href="/pl/eksport-rozmowy-claude-code/">eksport rozmowy Claude Code</a>.</p>
+<h3>Czy do zapisania czatu Claude potrzebne jest logowanie Google?</h3>
+<p>Nie dla Markdown, zwykłego tekstu, JSON, XML, CSV i PNG. Logowanie Google jest wymagane tylko dla PDF, zbiorczego „Export All” i Pro — żebyśmy mogli stosować limit 3 dziennie i przywrócić Pro po ponownej instalacji. Treść rozmów nie jest wysyłana przy logowaniu. Zweryfikowany adres e-mail przechowujemy wyłącznie na potrzeby limitu i statusu Pro.</p>
+<h3>Gdzie jest oficjalny „Export data” do zapisania czatów Claude?</h3>
+<p>Na claude.ai: Settings → Privacy → Export data. Anthropic wysyła e-mailem link, który wygasa. ZIP to archiwum JSON na poziomie konta, a nie nazwany plik Markdown z czatem, który czytałeś. Używaj „Export data” jako kopii zapasowej; pomarańczowego przycisku — by od razu dostać jeden czytelny plik.</p>
+</article>
+</main>
+<section class="final-cta page-cta" aria-label="Instalacja">
+  <div class="wrap">
+    <div class="final-cta-panel">
+      <p class="final-kicker">Download Claude conversations</p>
+      <h2>Zainstaluj rozszerzenie i zapisz rozmowę Claude jako plik</h2>
+      <p>Historia już przechowuje czat. Zamień otwarty wątek z claude.ai w PDF, Markdown, JSON, tekst, XML, CSV lub PNG — lokalnie, w Chrome.</p>
+      <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=pl-save-conversation" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Dodaj do Chrome</a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="logo" href="/pl/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
+      <p class="legal-note">Rozszerzenie Chrome do pobierania czatów z Claude.ai jako PDF, Markdown, JSON, zwykły tekst, CSV, XML lub PNG.</p>
+    </div>
+    <div>
+      <h2>Instalacja</h2>
+      <a class="install-link" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=pl-footer" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Rozszerzenie Chrome</a>
+    </div>
+    <div>
+      <h2>Produkt</h2>
+      <a href="/pl/funkcje/">Funkcje</a>
+      <a href="/pl/formaty/">Formaty</a>
+      <a href="/pl/eksport-wszystkich-czatow-claude/">Eksport wszystkich czatów</a>
+      <a href="/pl/jak-to-dziala/">Jak to działa</a>
+    </div>
+    <div>
+      <h2>Poradniki</h2>
+      <a href="/pl/jak-pobrac-czat-claude/">Jak pobrać czat Claude</a>
+      <a href="/pl/jak-eksportowac-czat-claude/">Jak eksportować czat Claude</a>
+      <a href="/pl/eksport-czatu-claude/">Eksport czatu Claude</a>
+      <a href="/pl/ekstraktor-rozmow-claude/">Ekstraktor rozmów Claude</a>
+      <a href="/pl/eksport-rozmowy-claude-code/">Eksport rozmowy Claude Code</a>
+      <a href="/pl/czat-claude-do-pdf/">Czat Claude jako PDF</a>
+      <a href="/pl/eksport-czatu-claude-desktop/">Eksport czatu Claude Desktop</a>
+      <a href="/pl/eksport-rozmowy-claude/">Eksport rozmowy Claude</a>
+      <a href="/pl/jak-zapisac-rozmowe-claude/">Jak zapisać rozmowę Claude</a>
+      <a href="/pl/pobierz-rozmowe-claude/">Pobierz rozmowę Claude</a>
+    </div>
+    <div>
+      <h2>Informacje prawne</h2>
+      <a href="/pl/o-nas/">O nas</a>
+      <a href="/pl/o-nas/#contact">Kontakt</a>
+      <a href="/privacy/" hreflang="en">Prywatność (po angielsku)</a>
+      <a href="/terms/" hreflang="en">Regulamin (po angielsku)</a>
+      <a href="/refund/" hreflang="en">Zwroty (po angielsku)</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Download Claude conversations. Wszelkie prawa zastrzeżone.</div>
+    <div>
+      <a href="/privacy/" hreflang="en">Polityka prywatności (po angielsku)</a>
+      <a href="/terms/" hreflang="en">Regulamin (po angielsku)</a>
+      <a href="/refund/" hreflang="en">Zwroty (po angielsku)</a>
+    </div>
+  </div>
+  <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/how-to-save-claude-conversation/" hreflang="en" lang="en">English</a> <a href="/de/claude-chat-speichern/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/sauvegarder-conversation-claude/" hreflang="fr" lang="fr">Français</a> <a href="/es/como-guardar-conversacion-claude/" hreflang="es" lang="es">Español</a> <a href="/it/come-salvare-chat-claude/" hreflang="it" lang="it">Italiano</a> <a href="/pt/como-salvar-conversa-claude/" hreflang="pt" lang="pt">Português</a> <a href="/nl/claude-gesprek-opslaan/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/spara-claude-konversation/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/lagre-claude-samtale/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/gem-claude-samtale/" hreflang="da" lang="da">Dansk</a> <a href="/fi/tallenna-claude-keskustelu/" hreflang="fi" lang="fi">Suomi</a> <a href="/pl/jak-zapisac-rozmowe-claude/" hreflang="pl" lang="pl">Polski</a> <a href="/cs/jak-ulozit-konverzaci-claude/" hreflang="cs" lang="cs">Čeština</a> <a href="/sk/ako-ulozit-konverzaciu-claude/" hreflang="sk" lang="sk">Slovenčina</a> <a href="/hu/claude-beszelgetes-mentese/" hreflang="hu" lang="hu">Magyar</a> <a href="/ro/cum-salvati-conversatie-claude/" hreflang="ro" lang="ro">Română</a> <a href="/el/how-to-save-claude-conversation/" hreflang="el" lang="el">Ελληνικά</a> <a href="/tr/claude-sohbet-kaydetme/" hreflang="tr" lang="tr">Türkçe</a> <a href="/ja/how-to-save-claude-conversation/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/how-to-save-claude-conversation/" hreflang="ko" lang="ko">한국어</a> <a href="/zh-hant/how-to-save-claude-conversation/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="/he/how-to-save-claude-conversation/" hreflang="he" lang="he">עברית</a> <a href="/ar/how-to-save-claude-conversation/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
+  <p class="disclaimer">Czaty przetwarzane w Twojej przeglądarce · Logowanie Google tylko dla PDF, eksportu zbiorczego i Pro · Brak powiązań z Anthropic, PBC. Claude jest znakiem towarowym Anthropic. Niezależne rozszerzenie Chrome — nie jest oficjalnym produktem Anthropic. Pomoc: <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

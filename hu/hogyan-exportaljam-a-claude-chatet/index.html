@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hogyan exportáljam a Claude chatet? Bővítmény vagy ZIP</title>
+  <meta name="description" content="Claude chat exportálása: ingyenes Chrome-bővítmény egy beszélgetéshez, vagy az Anthropic ZIP-je a teljes fiókhoz. Nézd meg, mit őriz meg és mit veszít el.">
+  <link rel="canonical" href="https://chat-downloader.com/hu/hogyan-exportaljam-a-claude-chatet/">
+  <!-- i18n:head -->
+  <link rel="alternate" hreflang="en" href="https://chat-downloader.com/how-to-export-claude-chat/">
+  <link rel="alternate" hreflang="de" href="https://chat-downloader.com/de/anleitung-claude-chat-exportieren/">
+  <link rel="alternate" hreflang="fr" href="https://chat-downloader.com/fr/comment-exporter-conversation-claude/">
+  <link rel="alternate" hreflang="es" href="https://chat-downloader.com/es/como-exportar-chat-claude/">
+  <link rel="alternate" hreflang="it" href="https://chat-downloader.com/it/come-esportare-chat-claude/">
+  <link rel="alternate" hreflang="pt" href="https://chat-downloader.com/pt/como-exportar-conversa-claude/">
+  <link rel="alternate" hreflang="nl" href="https://chat-downloader.com/nl/hoe-claude-chat-exporteren/">
+  <link rel="alternate" hreflang="sv" href="https://chat-downloader.com/sv/sa-exporterar-du-claude-chatt/">
+  <link rel="alternate" hreflang="nb" href="https://chat-downloader.com/nb/slik-eksporterer-du-claude-chat/">
+  <link rel="alternate" hreflang="da" href="https://chat-downloader.com/da/saadan-eksporterer-du-claude-chat/">
+  <link rel="alternate" hreflang="fi" href="https://chat-downloader.com/fi/nain-viet-claude-chatin/">
+  <link rel="alternate" hreflang="pl" href="https://chat-downloader.com/pl/jak-eksportowac-czat-claude/">
+  <link rel="alternate" hreflang="cs" href="https://chat-downloader.com/cs/jak-exportovat-chat-claude/">
+  <link rel="alternate" hreflang="sk" href="https://chat-downloader.com/sk/ako-exportovat-chat-claude/">
+  <link rel="alternate" hreflang="hu" href="https://chat-downloader.com/hu/hogyan-exportaljam-a-claude-chatet/">
+  <link rel="alternate" hreflang="ro" href="https://chat-downloader.com/ro/cum-exportati-chat-claude/">
+  <link rel="alternate" hreflang="el" href="https://chat-downloader.com/el/how-to-export-claude-chat/">
+  <link rel="alternate" hreflang="tr" href="https://chat-downloader.com/tr/claude-sohbet-nasil-disa-aktarilir/">
+  <link rel="alternate" hreflang="ja" href="https://chat-downloader.com/ja/how-to-export-claude-chat/">
+  <link rel="alternate" hreflang="ko" href="https://chat-downloader.com/ko/how-to-export-claude-chat/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://chat-downloader.com/zh-hant/how-to-export-claude-chat/">
+  <link rel="alternate" hreflang="he" href="https://chat-downloader.com/he/how-to-export-claude-chat/">
+  <link rel="alternate" hreflang="ar" href="https://chat-downloader.com/ar/how-to-export-claude-chat/">
+  <link rel="alternate" hreflang="x-default" href="https://chat-downloader.com/how-to-export-claude-chat/">
+  <meta property="og:locale" content="hu_HU">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="it_IT">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="sv_SE">
+  <meta property="og:locale:alternate" content="nb_NO">
+  <meta property="og:locale:alternate" content="da_DK">
+  <meta property="og:locale:alternate" content="fi_FI">
+  <meta property="og:locale:alternate" content="pl_PL">
+  <meta property="og:locale:alternate" content="cs_CZ">
+  <meta property="og:locale:alternate" content="sk_SK">
+  <meta property="og:locale:alternate" content="ro_RO">
+  <meta property="og:locale:alternate" content="el_GR">
+  <meta property="og:locale:alternate" content="tr_TR">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <meta property="og:locale:alternate" content="zh_TW">
+  <meta property="og:locale:alternate" content="he_IL">
+  <meta property="og:locale:alternate" content="ar_AE">
+  <!-- /i18n:head -->
+  <meta property="og:title" content="Hogyan exportáljam a Claude chatet? Bővítmény vagy ZIP">
+  <meta property="og:description" content="Claude chat exportálása: ingyenes Chrome-bővítmény egy beszélgetéshez, vagy az Anthropic ZIP-je a teljes fiókhoz. Nézd meg, mit őriz meg és mit veszít el.">
+  <meta property="og:url" content="https://chat-downloader.com/hu/hogyan-exportaljam-a-claude-chatet/">
+  <meta property="og:image" content="https://chat-downloader.com/assets/widget-guide.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chat Downloader">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Hogyan exportáljam a Claude chatet? Bővítmény vagy ZIP">
+  <meta name="twitter:description" content="Claude chat exportálása: ingyenes Chrome-bővítmény egy beszélgetéshez, vagy az Anthropic ZIP-je a teljes fiókhoz. Nézd meg, mit őriz meg és mit veszít el.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME1YXGZKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GME1YXGZKR');
+  </script>
+  
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Hogyan exportálhatok egyetlen beszélgetést a Claude-ból?","acceptedAnswer":{"@type":"Answer","text":"Használd a Download Claude conversations bővítményt a megnyitott claude.ai-beszélgetésen. A hivatalos Export data folyamat az egész fiókra vonatkozik, és egyetlen beszélgetéshez lassabb a kelleténél. A nyomtatás vizuális PDF, nem Markdown."}},{"@type":"Question","name":"Hogyan exportálhatom a Claude chatet PDF-be?","acceptedAnswer":{"@type":"Answer","text":"Válaszd a PDF-et a bővítmény formátumlistájában, és kattints az „Export” gombra. A PDF a böngészőben készül, nyomtatási párbeszédablak nélkül; Google-bejelentkezést kér, napi 3 alkalomig ingyenes, Próval korlátlan. A nyomtatás (Ctrl/Cmd+P → Mentés PDF-ként) továbbra is működik a weboldal durva pillanatképéhez. Útmutató: Claude chat letöltése PDF-ben."}},{"@type":"Question","name":"A hivatalos exportálás tartalmazza az artefaktumokat és a gondolkodást?","acceptedAnswer":{"@type":"Answer","text":"A ZIP mindazt tartalmazza, amit az Anthropic a fiók JSON-jában tárolt. Nem chatenkénti Markdownként van formázva választott artefaktum-elrendezéssel. A bővítmény exportálása arra készült, hogy ezeket olvashatóan megőrizze, ha a kapcsolók be vannak kapcsolva, és az oldal betöltötte őket."}},{"@type":"Question","name":"Veszélyezteti egy Chrome-bővítmény az Anthropic-fiókomat?","acceptedAnswer":{"@type":"Answer","text":"A bővítmény a meglévő, bejelentkezett claude.ai munkamenetedet ugyanúgy használja, mint a weboldal. Nem automatizál fiókműveleteket, és nem hívja az Anthropicot saját hitelesítő adatokkal. Nem vagyunk az Anthropic. Továbbra is az ő felhasználási feltételeik kötnek."}},{"@type":"Question","name":"Van ingyenes módja a Claude chat exportálásának?","acceptedAnswer":{"@type":"Answer","text":"Igen. A Markdown-, JSON-, szöveg-, XML-, CSV- és PNG-exportálás ingyenes és korlátlan, fiók nélkül. A PDF és a tömeges exportálás napi 3 alkalomig ingyenes; a Pro havi 3,99 USD vagy évi 26,99 USD. A nyomtatás és a hivatalos Export data nem használja ezt a kvótát."}},{"@type":"Question","name":"Exportálhatok Claude chatet Team munkaterületről?","acceptedAnswer":{"@type":"Answer","text":"Igen, ha meg tudod nyitni a beszélgetést a claude.ai oldalon Chrome-ban. A bővítmény az oldalból dolgozik, nem egy csak magánfelhasználóknak szóló csomagból. A céges bővítmény-engedélyezési listák továbbra is érvényesek."}},{"@type":"Question","name":"Az exportálás felhasználja az Anthropic-fiók korlátait?","acceptedAnswer":{"@type":"Answer","text":"Nem. A Download Claude conversations a már betöltött oldalt olvassa. Nem küld további generálási kéréseket a Claude-nak, és nem számít bele az Anthropic üzenet- vagy használati korlátaiba."}},{"@type":"Question","name":"Ingyenes az első tömeges exportálás?","acceptedAnswer":{"@type":"Answer","text":"Igen, az ingyenes csomagban napi 3 beszélgetésig, a PDF-fel közösen, Google-bejelentkezés után. A ZIP minden chatje egynek számít. A nagyobb kijelölés egészében letiltódik, nem csonkul; a Pro megszünteti a korlátot."}},{"@type":"Question","name":"Hogyan exportálhatok egy Claude Code-beszélgetést?","acceptedAnswer":{"@type":"Answer","text":"A claude.ai/code címen futó webes Claude Code munkamenetek a narancssárga gombbal exportálhatók, mint bármely chat. A terminálban futtasd a /export parancsot, vagy másold ki a JSONL-fájlokat a ~/.claude/projects mappából; ez a Chrome-bővítmény nem olvassa a helyi munkameneteket. Részletes lépések: Claude Code exportálása."}},{"@type":"Question","name":"Kell Google-bejelentkezés a Claude chat exportálásához?","acceptedAnswer":{"@type":"Answer","text":"Csak a PDF-hez, a tömeges „Export All” funkcióhoz és a Próhoz. A Markdown-, szöveg-, JSON-, XML-, CSV- és PNG-exportáláshoz nem kell fiók. A bejelentkezés érvényesíti a napi 3-as PDF- és tömeges korlátot, és visszaállítja a Prót. A bejelentkezés részeként a chatek szövege nem kerül feltöltésre. A megerősített e-mail-címet a kvóta és az előfizetési állapot miatt tároljuk."}},{"@type":"Question","name":"Milyen formátumokba exportálhatom a Claude chatet?","acceptedAnswer":{"@type":"Answer","text":"PDF, Markdown, JSON, egyszerű szöveg, XML, CSV és PNG. A PNG kép, a PDF oldalakra tördelt dokumentum. Hogy mikor melyiket válaszd, lásd: formátumok."}},{"@type":"Question","name":"Ugyanaz a bővítmény a Claude Conversation Downloader?","acceptedAnswer":{"@type":"Answer","text":"Igen. A Download Claude conversations, a Claude Chat Downloader és a Claude Conversation Downloader ugyanazt a Chrome-bővítményt jelenti: narancssárga gomb a claude.ai oldalon, hét formátum, ezek közül hatban korlátlan ingyenes exportálás, PDF és tömeges exportálás napi 3 alkalomig ingyen, Pro havi 3,99 USD vagy évi 26,99 USD áron."}}]}</script>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Hogyan exportáljam a Claude chatet strukturált fájlba?","description":"Claude chat exportálása: ingyenes Chrome-bővítmény egy beszélgetéshez, vagy az Anthropic ZIP-je a teljes fiókhoz. Nézd meg, mit őriz meg és mit veszít el.","url":"https://chat-downloader.com/hu/hogyan-exportaljam-a-claude-chatet/","dateModified":"2026-09-25","datePublished":"2026-09-10","inLanguage":"hu","author":{"@type":"Organization","name":"Chat Downloader","url":"https://chat-downloader.com/hu/"},"publisher":{"@type":"Organization","name":"Chat Downloader","url":"https://chat-downloader.com/hu/"},"mainEntityOfPage":"https://chat-downloader.com/hu/hogyan-exportaljam-a-claude-chatet/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Kezdőlap","item":"https://chat-downloader.com/hu/"},{"@type":"ListItem","position":2,"name":"Exportálási útmutató","item":"https://chat-downloader.com/hu/hogyan-exportaljam-a-claude-chatet/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Ugrás a tartalomra</a>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a class="logo" href="/hu/">
+        <img src="/assets/icon.svg" alt="">
+        <span>Download Claude conversations</span>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="/hu/claude-chat-letoltese/">Letöltés</a><a href="/hu/hogyan-exportaljam-a-claude-chatet/" aria-current="page">Exportálás</a><a href="/hu/osszes-claude-chat-exportalasa/">Összes chat</a><a href="/hu/formatumok/">Formátumok</a><a href="/hu/#faq">GYIK</a>
+        <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=hu-how-to-export-claude-chat" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Hozzáadás a Chrome-hoz</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=hu-how-to-export-claude-chat" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Hozzáadás a Chrome-hoz</a>
+      <!-- i18n:switch --><details class="lang-switch"><summary aria-label="Nyelv: Magyar"><svg class="lang-globe" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span class="lang-name">Magyar</span><span class="lang-code" aria-hidden="true">hu</span></summary><ul><li><a href="/how-to-export-claude-chat/" hreflang="en" lang="en">English</a></li><li><a href="/de/anleitung-claude-chat-exportieren/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/comment-exporter-conversation-claude/" hreflang="fr" lang="fr">Français</a></li><li><a href="/es/como-exportar-chat-claude/" hreflang="es" lang="es">Español</a></li><li><a href="/it/come-esportare-chat-claude/" hreflang="it" lang="it">Italiano</a></li><li><a href="/pt/como-exportar-conversa-claude/" hreflang="pt" lang="pt">Português</a></li><li><a href="/nl/hoe-claude-chat-exporteren/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/sv/sa-exporterar-du-claude-chatt/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="/nb/slik-eksporterer-du-claude-chat/" hreflang="nb" lang="nb">Norsk</a></li><li><a href="/da/saadan-eksporterer-du-claude-chat/" hreflang="da" lang="da">Dansk</a></li><li><a href="/fi/nain-viet-claude-chatin/" hreflang="fi" lang="fi">Suomi</a></li><li><a href="/pl/jak-eksportowac-czat-claude/" hreflang="pl" lang="pl">Polski</a></li><li><a href="/cs/jak-exportovat-chat-claude/" hreflang="cs" lang="cs">Čeština</a></li><li><a href="/sk/ako-exportovat-chat-claude/" hreflang="sk" lang="sk">Slovenčina</a></li><li><a href="/hu/hogyan-exportaljam-a-claude-chatet/" hreflang="hu" lang="hu" aria-current="true">Magyar</a></li><li><a href="/ro/cum-exportati-chat-claude/" hreflang="ro" lang="ro">Română</a></li><li><a href="/el/how-to-export-claude-chat/" hreflang="el" lang="el">Ελληνικά</a></li><li><a href="/tr/claude-sohbet-nasil-disa-aktarilir/" hreflang="tr" lang="tr">Türkçe</a></li><li><a href="/ja/how-to-export-claude-chat/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/ko/how-to-export-claude-chat/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/zh-hant/how-to-export-claude-chat/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li><li><a href="/he/how-to-export-claude-chat/" hreflang="he" lang="he">עברית</a></li><li><a href="/ar/how-to-export-claude-chat/" hreflang="ar" lang="ar">العربية</a></li></ul></details><!-- /i18n:switch -->
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menü">☰</button>
+    </div>
+  </div>
+</header>
+<nav class="crumbs" aria-label="Morzsamenü"><a href="/hu/">Kezdőlap</a> / Exportálási útmutató</nav>
+<main id="main">
+<article class="band prose">
+<p class="article-meta">Frissítve: <time datetime="2026-09">2026. szeptember</time> · Bővítmény 1.16.2</p>
+<h1 class="page-h1">Hogyan exportáljam a Claude chatet strukturált fájlba?</h1>
+<p class="lead">Hogyan exportáljam a Claude chatet, ha a claude.ai-on nincs egyetlen beszélgetésre szóló exportálási vezérlő? Fájlba a Download Claude conversations bővítménnyel mentheted PDF, Markdown, JSON, szöveg, XML, CSV vagy PNG formátumban; a Settings → Privacy → Export data útvonallal (a feliratok magyarul is megjelenhetnek, ha a claude.ai magyar nyelvre van állítva) késleltetett fiók-ZIP-et kapsz; nyomtatással pedig a weboldal nagyjából hű PDF-jét.</p>
+<aside class="trust-badge" aria-label="A bővítményről">
+  <span class="trophy" aria-hidden="true">🧩</span>
+  <div>
+    <strong>Download Claude conversations — ingyenes Chrome-bővítmény a claude.ai-hoz</strong>
+    <span>1.16.2-es verzió (2026. szeptember) — korlátlan Markdown-, szöveg-, JSON-, XML-, CSV- és PNG-exportálás fiók nélkül; a PDF és a tömeges ZIP napi 3 alkalomig ingyenes</span>
+  </div>
+</aside>
+<nav class="toc" aria-label="Ezen az oldalon">
+  <p>Ezen az oldalon</p>
+  <ol>
+    <li><a href="#export-with-extension">Hogyan exportáljam a Claude chatet a bővítménnyel?</a></li>
+    <li><a href="#official-zip">Hogyan exportálhatok a Claude-ból a hivatalos ZIP-pel?</a></li>
+    <li><a href="#formats">Hogyan exportálhatom a Claude chatet Markdownba vagy JSON-ba?</a></li>
+    <li><a href="#free-quota">Exportálhatom a Claude chatet fizetés nélkül?</a></li>
+    <li><a href="#copy-paste">Claude chat exportálása vagy másolás és beillesztés?</a></li>
+    <li><a href="#code-desktop">Hogyan exportáljam a Claude Code-ot és a claude.ai chateket?</a></li>
+    <li><a href="#what-is-kept">Mit őriz meg és mit veszít el a Claude chat exportálása?</a></li>
+    <li><a href="#faq">GYIK: hogyan exportáljam a Claude chatet</a></li>
+  </ol>
+</nav>
+
+<h2 id="export-with-extension">Hogyan exportáljam a Claude chatet a bővítménnyel?</h2>
+<p>Ha olvasható fájlt szeretnél, a Claude chat exportálásának módja a narancssárga gomb a claude.ai oldalon. Telepítsd a Download Claude conversations bővítményt, nyisd meg a beszélgetést, válaszd a PDF, Markdown, JSON, szöveg, XML, CSV vagy PNG formátumot, majd kattints az „Export” (exportálás) gombra. A fájl a böngésződben készül, és helyben mentődik. Fiók csak a PDF-hez és a tömeges exportáláshoz kell.</p>
+<p>A bővítmény tartalomszkript a már betöltött oldalon. Nem nyit második Anthropic-munkamenetet, és a fájl elkészítéséhez nem tölti fel a beszélgetést. Ezért jelenik meg a gomb csak beszélgetés-URL-en, miután a beszélgetés már a DOM-ban van.</p>
+<ol>
+<li>Telepítsd a bővítményt a Chrome Web Store-ból.</li>
+<li>Nyisd meg a beszélgetést a claude.ai oldalon. Ha a lap a telepítés alatt nyitva volt, töltsd újra.</li>
+<li>Kattints az üzenetmező melletti kerek, narancssárga letöltés gombra.</li>
+<li>Állítsd az üzeneteket „All”, „Human” vagy „Assistant” (mind, ember vagy asszisztens) értékre, és válaszd a PDF, Markdown, JSON, egyszerű szöveg, XML, CSV vagy PNG formátumot.</li>
+<li>Jelöld be a „Thinking” (gondolkodás) négyzetet a kiterjesztett gondolkodáshoz. Ha csak a beszélgetés egy része kell, a „Select” (kijelölés) gombbal jelölj ki egyes üzeneteket. Kattints az „Export” gombra — vagy a „Copy” (másolás) gombbal tedd a vágólapra a Markdown, szöveg, JSON, XML vagy CSV tartalmat.</li>
+</ol>
+<p>Több beszélgetéshez nyisd meg a felugró ablakban a „View and Download All Conversations” (az összes beszélgetés megtekintése és letöltése) nézetet. Keress, szűrj a „New”, „Updated” vagy „Previously exported” (új, frissített, korábban exportált) szerint, keress projektekre, válassz „Chat format” (chatformátum) beállítást, majd az „Export All” (összes exportálása) gombbal egyetlen ZIP-et kapsz, chatenként egy fájllal. A tömeges exportálás Google-bejelentkezést kér; az ingyenes csomagban a ZIP minden chatje a napi 3 alkalom egyikét használja, amelyen a PDF-fel osztozik. Útmutató: <a href="/hu/osszes-claude-chat-exportalasa/">tömeges „Export All”</a>.</p>
+<p>A Team és Enterprise chatek ugyanígy exportálhatók, ha meg tudod nyitni őket Chrome-ban. A feldolgozó nem ellenőrzi az Anthropic-csomagok nevét. Ha egy szervezet letiltja a bővítményeket, az informatikai házirend, nem egy nálunk hiányzó Pro-kapcsoló.</p>
+<div class="callout callout-info">
+  <p><strong>Kvóta kontra Anthropic-használat.</strong> Az exportálás ezzel a bővítménnyel nem fogyaszt Claude-üzenetkeretet. Csak beolvassa az oldalt. A PDF-re és a tömeges exportálásra vonatkozó napi 3-as korlát a mi kvótánk; a Pro havi 3,99 USD vagy évi 26,99 USD áron, a Paddle-en keresztül külön számlázva, megszünteti.</p>
+</div>
+<p>Egy chatre szóló lépések azoknak, akik exportálás helyett letöltésre kerestek: <a href="/hu/claude-chat-letoltese/">hogyan tölthetek le egy Claude chatet</a>. Ugyanaz a termék, ugyanaz a narancssárga gomb, más keresőszavak — és ugyanide vezet az angol „claude export chat” keresés is.</p>
+
+<h2 id="official-zip">Hogyan exportálhatok a Claude-ból a hivatalos ZIP-pel?</h2>
+<p>A teljes fiók szintjén a Settings → Privacy → Export data útvonallal exportálhatsz a Claude-ból. Az Anthropic e-mailben küld egy linket, amely lejár. A ZIP a teljes fiók JSON-adatait tartalmazza, nem egy szép fájlt egyetlen beszélgetésről. Biztonsági mentésként használd.</p>
+<p>A hivatalos ZIP a megfelelő eszköz, ha elhagysz egy munkaterületet, mindent archiválsz, vagy egy „add ki az összes adatomat” kérést teljesítesz. Rossz eszköz, ha egy tervezési áttekintés van nyitva, és a következő percben kell egy fájl.</p>
+<p>Ebben a folyamatban nincs szűrő egyetlen beszélgetésazonosítóra. Vársz, letöltöd az archívumot, kicsomagolod, és megkeresed a beszélgetést. A JSON szerkezete fiókszintű, nem az a chatenkénti JSON, amelyet ez a bővítmény a megnyitott oldalból ír.</p>
+<p>Ha mindkettő kell, futtasd egyszer az Export data funkciót a biztonsági mentéshez, és használd a Download Claude conversations bővítményt, amikor munkafájlra van szükséged. A két feladat nem helyettesíti egymást. A ZIP-ből nem lesz Markdown. A narancssárga gomb pedig nem küldi el e-mailben 2024 minden elfeledett chatjét.</p>
+<p>A hivatalos Export data nem is nyomtatás PDF-be. A nyomtatás a weboldalt rögzíti, a ZIP strukturált fiókadat. A nyomtatás és a bővítmény beépített PDF-je összevetve: <a href="/hu/claude-chat-pdf-ben/">Claude chat letöltése PDF-ben</a>.</p>
+
+<h2 id="formats">Hogyan exportálhatom a Claude chatet Markdownba vagy JSON-ba?</h2>
+<p>A Claude chat Markdownba vagy JSON-ba exportálásához az „Export” előtt válaszd ki az adott formátumot a legördülő listában. A Markdown jegyzetekhez és gitez való. A JSON az üzenetfa szkriptekhez. Az egyszerű szöveg eltávolítja a jelölést. A CSV soronként egy üzenetet tartalmaz. A PNG kép, a PDF pedig oldalakra tördelt dokumentum.</p>
+<p>A Markdown megőrzi a címsorokat, a nyelvi címkés kódblokkokat és a táblázatokat. Az artefaktum-elrendezés lehet „Original”, „Inline”, „Nested” vagy „Flat” (eredeti, szövegbe ágyazott, egymásba ágyazott vagy lapos). A gondolkodásblokkok opcionálisak. A legtöbben ezt a fájlt értik olvasható exportáláson. Áttekintés: <a href="/hu/formatumok/">formátumok</a>.</p>
+<p>A bővítmény JSON-fájlja beszélgetésenként (vagy tömeges kijelölésenként) készül. Nem az Anthropic átnevezett fiók-ZIP-je. Ha feldolgozót írsz, egy beszélgetéshez ezt a JSON-t használd, a hivatalos ZIP-et pedig csak akkor, ha valóban minden beszélgetés kell, amelyet az Anthropic tárolt.</p>
+<div class="table-wrap">
+  <table>
+    <caption>Hogyan exportáljam a Claude chatet: négy módszer összevetése</caption>
+    <thead>
+      <tr>
+        <th scope="col">Módszer</th>
+        <th scope="col">Mire a legjobb</th>
+        <th scope="col">Kimenet</th>
+        <th scope="col">Korlát</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Hivatalos Export data</th>
+        <td>A teljes fiók biztonsági mentése</td>
+        <td>JSON-ZIP e-mailben</td>
+        <td>Lassú; nem szép chatenkénti fájl</td>
+      </tr>
+      <tr>
+        <th scope="row">Nyomtatás → Mentés PDF-ként</th>
+        <td>Gyors vizuális másolat</td>
+        <td>A weboldal PDF-je</td>
+        <td>Oldalsáv; rossz oldaltörések</td>
+      </tr>
+      <tr>
+        <th scope="row">Másolás Docsba</th>
+        <td>Egyetlen kidolgozott válasz</td>
+        <td>Amit beillesztesz</td>
+        <td>Kézi munka; hiányos beszélgetés</td>
+      </tr>
+      <tr>
+        <th scope="row">Download Claude conversations</th>
+        <td>Ez a chat vagy tömeges fájlok</td>
+        <td>PDF / MD / JSON / TXT / XML / CSV / PNG</td>
+        <td>Hat formátum korlátlan, fiók nélkül; PDF és tömeges exportálás napi 3 ingyen</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p>A PNG nem PDF. Ha egy ügyfél PDF-et kér, válaszd a PDF-et a formátumlistában. A böngészőben készül, beállítható oldalmérettel, margókkal, oldalszámokkal és tartalomjegyzékkel, és Google-bejelentkezést kér. Útmutató: <a href="/hu/claude-chat-pdf-ben/">Claude chat letöltése PDF-ben</a>.</p>
+<p>A legördülő lista megjegyzi a legutóbbi formátumot. A leggyakoribb „rossz fájl” panasz az, hogy valaki egy szkriptelős munka után véletlenül JSON-t exportál. Kattintás előtt nézd meg a legördülő listát, főleg PDF előtt, amely az ingyenes csomagban a napi 3 alkalom egyikét használja.</p>
+
+<h2 id="free-quota">Exportálhatom a Claude chatet fizetés nélkül?</h2>
+<p>Igen. Fizetés nélkül exportálhatod a Claude chatet Markdown, szöveg, JSON, XML, CSV vagy PNG formátumban, ahányszor csak szeretnéd, fiók nélkül. A PDF és a tömeges „Export All” Google-bejelentkezéssel napi 3 alkalomig ingyenes. A Pro havi 3,99 USD vagy évi 26,99 USD áron ezeket korlátlanná teszi.</p>
+<p>A tömeges „Export All” és a PDF ezen a napi 3 alkalmon osztozik. A tömeges ZIP minden beszélgetése egynek számít. Ha ingyenes fiókkal húszat jelölsz ki, a teljes köteg letiltódik, nem csonkul: válassz kevesebbet, várd meg az éjféli (UTC) nullázást, vagy válts Próra. Tervezd meg a kijelölést.</p>
+<p>A nyomtatás és az Anthropic Export data nem használja a mi kvótánkat. Viszont egyetlen chatről sem adnak Markdownt. A bővítmény nélküli „ingyenes” megoldásnak is ára van: idő és utólagos rendbetétel.</p>
+<div class="callout callout-warn">
+  <p><strong>Google-bejelentkezés csak a PDF-hez és a tömeges exportáláshoz kell.</strong> Az első PDF-exportálás vagy „Export All” esetén a Google-nek meg kell erősítenie egy e-mail-címet. Ha ezt megszakítod, úgy tűnik, mintha az exportálás hibás lenne. Fejezd be a bejelentkezést, majd kattints újra az „Export” gombra. Az ingyenes csomaghoz nem kell bankkártya, a Markdown, szöveg, JSON, XML, CSV és PNG pedig sosem kér bejelentkezést.</p>
+</div>
+<p>A Pro visszaállítása ezt a Google e-mail-címet követi, ha gépet váltasz vagy újratelepítesz. Nem az Anthropic-jelszót. Ugyanazzal a Google-fiókkal jelentkezz be, amellyel fizettél.</p>
+<div class="expert-quote">
+  <blockquote>A hivatalos ZIP-et és a mi exportálásunkat szándékosan két külön feladatként kezeljük. Az e-mailben küldött fiók-JSON az Anthropic biztonsági mentése. A chatenkénti Markdownt és JSON-t mi a böngészőben állítjuk elő a megnyitott beszélgetésből. Ha a kettőt egy gombba kevernénk, mindkettő rosszabb lenne.</blockquote>
+  <cite><strong>A Download Claude conversations csapata</strong> — a Claude Chat Downloader Chrome-bővítmény fejlesztői</cite>
+</div>
+
+<h2 id="copy-paste">Claude chat exportálása vagy másolás és beillesztés?</h2>
+<p>Másolással és beillesztéssel csak a legszűkebb értelemben exportálhatod a Claude chatet: kijelöltél szöveget, és áthelyezted. A kód elveszíti a behúzást, a táblázatok összecsúsznak, egy hosszú beszélgetésben nincsenek üzenethatárok. Strukturált fájlhoz továbbra is a bővítmény, a nyomtatás vagy a hivatalos ZIP a megoldás.</p>
+<p>Köztes megoldás az összes kijelölése és beillesztése Google Docsba vagy Wordbe, majd a formázás kézi javítása. Ez egyszeri ügyfélanyaghoz jó, nem heti archívumhoz. Minden új üzenet újabb rendbetételt jelent. A bővítmény azért létezik, hogy a rendbetétel ne egy beillesztett szövegből induljon.</p>
+<p>A másolás a becsukott gondolkodást és a ki nem nyitott artefaktumokat is kihagyja. A nyomtatásnál ugyanez a hiány: a becsukott felületelemek nem kerülnek a PDF-be. A bővítmény kapcsolóival a gondolkodás és az artefaktumok is bekerülhetnek, ha szerepelnek a betöltött oldal adataiban — ez más réteg, mint az, hogy „mely képpontok látszanak”.</p>
+<p>Ha csak egy bekezdés kell a Slackbe, a másolás őszinte és gyorsabb megoldás. Ha a teljes áttekintés kell kódblokkokkal együtt, exportáld Markdownba — ingyen, korlátlanul, fiók nélkül —, vagy a panel „Copy” gombjával tedd a vágólapra ezt a Markdownt.</p>
+
+<h2 id="code-desktop">Hogyan exportáljam a Claude Code-ot és a claude.ai chateket?</h2>
+<p>A claude.ai-on futó Claude chatet ezzel a Chrome-bővítménnyel exportálhatod, és ebbe a claude.ai/code címen futó webes Claude Code munkamenetek is beletartoznak. Egy helyi, terminálos Claude Code-beszélgetést a terminálban a <code>/export</code> paranccsal, vagy a <code>~/.claude/projects</code> alatti JSONL-fájlokból exportálhatsz. A Claude Desktop egy harmadik ablak, és nem kapja meg a narancssárga gombot.</p>
+<p>A Claude Code <code>/export</code> parancsa megjelenített, egyszerű szöveges átiratot ír (vágólapra vagy fájlba). Az Anthropic dokumentációja szerint a lemezen lévő JSONL belső formátum, amely változhat. Amit meg akarsz tartani, ahhoz inkább a <code>/export</code> parancsot vagy a szkriptfelületeiket használd. Lépések: <a href="/hu/claude-code-beszelgetes-exportalasa/">Claude Code exportálása</a>.</p>
+<p>Claude Desktop: nyisd meg ugyanazt a chatet a claude.ai oldalon, ha szinkronizálódott, és ott exportáld. Egyébként másold ki a Desktop alkalmazásból, vagy támaszkodj a Settings → Privacy → Export data fiókszintű JSON-jára. Útmutató: <a href="/hu/claude-desktop-chat-exportalasa/">Claude Desktop chat exportálása</a>.</p>
+<p>Ha ezen az oldalon a „claude code export” kifejezésre keresel, egy egyértelműsítő oldalra jutsz, nem a Web Store-bővítmény egy funkciójára. A bővítmény csak a claude.ai oldalon működik: a webes Claude Code-ot lefedi, a terminált nem. Ez a korlát maga a termék, nem egy hiányzó jelölőnégyzet.</p>
+
+<h2 id="what-is-kept">Mit őriz meg és mit veszít el a Claude chat exportálása?</h2>
+<p>Ezzel a bővítménnyel a Claude chat exportálása megőrzi az oldal által betöltött üzenetfát: a feladókat, a szöveget, a kódblokkokat, a táblázatokat és — ha be vannak kapcsolva — a gondolkodást, a metaadatokat és az artefaktumokat. Elhagyja mindazt, ami még nem jelent meg, valamint a CSS-kezelőelemeket, például a szövegmezőt.</p>
+<p>A nyomtatás a képpontokat őrzi meg, a tiszta kódelrendezést viszont többnyire elveszíti. A hivatalos ZIP megőrzi mindazt, amit az Anthropic a fiókarchívumba tett, de nem ad emberileg olvasható, chatenkénti dokumentumot. A másolás a kijelölt karaktereket őrzi meg, a szerkezetet elveszíti.</p>
+<p>Feladószűrő: összes üzenet, csak emberi vagy csak asszisztensi. Hasznos, ha a promptokat válaszok nélkül szeretnéd, vagy fordítva. A metaadat-kapcsoló címeket, időbélyegeket és modellt ad hozzá, ha a fájlba forrásmegjelölés kell.</p>
+<p>A fájlok a lemezen maradnak. A szerverünk csak akkor látja a kvóta- és előfizetési állapotot, ha PDF-hez, tömeges exportáláshoz vagy Próhoz bejelentkezel, a Google pedig az akkor jóváhagyott OAuth-hozzájárulást látja. A claude.ai-nál a beszélgetés már eleve megvolt. Ez a résztvevők teljes listája. Nem vagyunk az Anthropic. A Claude az Anthropic, PBC védjegye.</p>
+<p>Ha az exportált fájl rövidnek tűnik, tölts be többet a beszélgetésből, és exportáld újra. Markdown, szöveg, JSON, XML, CSV vagy PNG formátumban ez a második próbálkozás ingyenes; egy második PDF viszont a napi 3 alkalom egy újabbját használja. Kattintás előtt győződj meg róla, hogy a válasz betöltődött, és a korábbi üzenetek is a képernyőn vannak.</p>
+
+<h2 id="faq">GYIK: hogyan exportáljam a Claude chatet</h2>
+<h3>Hogyan exportálhatok egyetlen beszélgetést a Claude-ból?</h3>
+<p>Használd a Download Claude conversations bővítményt a megnyitott claude.ai-beszélgetésen. A hivatalos Export data folyamat az egész fiókra vonatkozik, és egyetlen beszélgetéshez lassabb a kelleténél. A nyomtatás vizuális PDF, nem Markdown.</p>
+<h3>Hogyan exportálhatom a Claude chatet PDF-be?</h3>
+<p>Válaszd a PDF-et a bővítmény formátumlistájában, és kattints az „Export” gombra. A PDF a böngészőben készül, nyomtatási párbeszédablak nélkül; Google-bejelentkezést kér, napi 3 alkalomig ingyenes, Próval korlátlan. A nyomtatás (Ctrl/Cmd+P → Mentés PDF-ként) továbbra is működik a weboldal durva pillanatképéhez. Útmutató: <a href="/hu/claude-chat-pdf-ben/">Claude chat letöltése PDF-ben</a>.</p>
+<h3>A hivatalos exportálás tartalmazza az artefaktumokat és a gondolkodást?</h3>
+<p>A ZIP mindazt tartalmazza, amit az Anthropic a fiók JSON-jában tárolt. Nem chatenkénti Markdownként van formázva választott artefaktum-elrendezéssel. A bővítmény exportálása arra készült, hogy ezeket olvashatóan megőrizze, ha a kapcsolók be vannak kapcsolva, és az oldal betöltötte őket.</p>
+<h3>Veszélyezteti egy Chrome-bővítmény az Anthropic-fiókomat?</h3>
+<p>A bővítmény a meglévő, bejelentkezett claude.ai munkamenetedet ugyanúgy használja, mint a weboldal. Nem automatizál fiókműveleteket, és nem hívja az Anthropicot saját hitelesítő adatokkal. Nem vagyunk az Anthropic. Továbbra is az ő felhasználási feltételeik kötnek.</p>
+<h3>Van ingyenes módja a Claude chat exportálásának?</h3>
+<p>Igen. A Markdown-, JSON-, szöveg-, XML-, CSV- és PNG-exportálás ingyenes és korlátlan, fiók nélkül. A PDF és a tömeges exportálás napi 3 alkalomig ingyenes; a Pro havi 3,99 USD vagy évi 26,99 USD. A nyomtatás és a hivatalos Export data nem használja ezt a kvótát.</p>
+<h3>Exportálhatok Claude chatet Team munkaterületről?</h3>
+<p>Igen, ha meg tudod nyitni a beszélgetést a claude.ai oldalon Chrome-ban. A bővítmény az oldalból dolgozik, nem egy csak magánfelhasználóknak szóló csomagból. A céges bővítmény-engedélyezési listák továbbra is érvényesek.</p>
+<h3>Az exportálás felhasználja az Anthropic-fiók korlátait?</h3>
+<p>Nem. A Download Claude conversations a már betöltött oldalt olvassa. Nem küld további generálási kéréseket a Claude-nak, és nem számít bele az Anthropic üzenet- vagy használati korlátaiba.</p>
+<h3>Ingyenes az első tömeges exportálás?</h3>
+<p>Igen, az ingyenes csomagban napi 3 beszélgetésig, a PDF-fel közösen, Google-bejelentkezés után. A ZIP minden chatje egynek számít. A nagyobb kijelölés egészében letiltódik, nem csonkul; a Pro megszünteti a korlátot.</p>
+<h3>Hogyan exportálhatok egy Claude Code-beszélgetést?</h3>
+<p>A claude.ai/code címen futó webes Claude Code munkamenetek a narancssárga gombbal exportálhatók, mint bármely chat. A terminálban futtasd a <code>/export</code> parancsot, vagy másold ki a JSONL-fájlokat a <code>~/.claude/projects</code> mappából; ez a Chrome-bővítmény nem olvassa a helyi munkameneteket. Részletes lépések: <a href="/hu/claude-code-beszelgetes-exportalasa/">Claude Code exportálása</a>.</p>
+<h3>Kell Google-bejelentkezés a Claude chat exportálásához?</h3>
+<p>Csak a PDF-hez, a tömeges „Export All” funkcióhoz és a Próhoz. A Markdown-, szöveg-, JSON-, XML-, CSV- és PNG-exportáláshoz nem kell fiók. A bejelentkezés érvényesíti a napi 3-as PDF- és tömeges korlátot, és visszaállítja a Prót. A bejelentkezés részeként a chatek szövege nem kerül feltöltésre. A megerősített e-mail-címet a kvóta és az előfizetési állapot miatt tároljuk.</p>
+<h3>Milyen formátumokba exportálhatom a Claude chatet?</h3>
+<p>PDF, Markdown, JSON, egyszerű szöveg, XML, CSV és PNG. A PNG kép, a PDF oldalakra tördelt dokumentum. Hogy mikor melyiket válaszd, lásd: <a href="/hu/formatumok/">formátumok</a>.</p>
+<h3>Ugyanaz a bővítmény a Claude Conversation Downloader?</h3>
+<p>Igen. A Download Claude conversations, a Claude Chat Downloader és a Claude Conversation Downloader ugyanazt a Chrome-bővítményt jelenti: narancssárga gomb a claude.ai oldalon, hét formátum, ezek közül hatban korlátlan ingyenes exportálás, PDF és tömeges exportálás napi 3 alkalomig ingyen, Pro havi 3,99 USD vagy évi 26,99 USD áron.</p>
+</article>
+</main>
+<section class="final-cta page-cta" aria-label="Telepítés">
+  <div class="wrap">
+    <div class="final-cta-panel">
+      <p class="final-kicker">Download Claude conversations</p>
+      <h2>Telepítsd a bővítményt, és töltsd le a Claude chatet másodpercek alatt</h2>
+      <p>Mentsd a fontos Claude-beszélgetéseket PDF, Markdown, JSON, szöveg, XML, CSV vagy PNG formátumba — helyben, a Chrome-ból.</p>
+      <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=hu-how-to-export" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Hozzáadás a Chrome-hoz</a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="logo" href="/hu/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
+      <p class="legal-note">Chrome-bővítmény Claude.ai-chatek letöltéséhez PDF, Markdown, JSON, egyszerű szöveg, CSV, XML vagy PNG formátumban.</p>
+    </div>
+    <div>
+      <h2>Telepítés</h2>
+      <a class="install-link" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=hu-footer" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Chrome-bővítmény</a>
+    </div>
+    <div>
+      <h2>Termék</h2>
+      <a href="/hu/funkciok/">Funkciók</a>
+      <a href="/hu/formatumok/">Formátumok</a>
+      <a href="/hu/osszes-claude-chat-exportalasa/">Összes chat exportálása</a>
+      <a href="/hu/hogyan-mukodik/">Hogyan működik</a>
+    </div>
+    <div>
+      <h2>Útmutatók</h2>
+      <a href="/hu/claude-chat-letoltese/">Claude-chat letöltése</a>
+      <a href="/hu/hogyan-exportaljam-a-claude-chatet/">Hogyan exportáljam a Claude-chatet?</a>
+      <a href="/hu/claude-chat-exportalasa/">Claude-chat exportálása</a>
+      <a href="/hu/claude-beszelgetes-kinyero/">Claude-beszélgetés kinyerő</a>
+      <a href="/hu/claude-code-beszelgetes-exportalasa/">Claude Code-beszélgetés exportálása</a>
+      <a href="/hu/claude-chat-pdf-ben/">Claude-chat PDF-ben</a>
+      <a href="/hu/claude-desktop-chat-exportalasa/">Claude Desktop-chat exportálása</a>
+      <a href="/hu/claude-beszelgetes-exportalasa/">Claude-beszélgetés exportálása</a>
+      <a href="/hu/claude-beszelgetes-mentese/">Claude-beszélgetés mentése</a>
+      <a href="/hu/claude-beszelgetes-letoltese/">Claude-beszélgetés letöltése</a>
+    </div>
+    <div>
+      <h2>Jogi információk</h2>
+      <a href="/hu/rolunk/">Rólunk</a>
+      <a href="/hu/rolunk/#contact">Kapcsolat</a>
+      <a href="/privacy/" hreflang="en">Adatvédelem (angolul)</a>
+      <a href="/terms/" hreflang="en">Felhasználási feltételek (angolul)</a>
+      <a href="/refund/" hreflang="en">Visszatérítés (angolul)</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Download Claude conversations. Minden jog fenntartva.</div>
+    <div>
+      <a href="/privacy/" hreflang="en">Adatvédelmi irányelvek (angolul)</a>
+      <a href="/terms/" hreflang="en">Felhasználási feltételek (angolul)</a>
+      <a href="/refund/" hreflang="en">Visszatérítés (angolul)</a>
+    </div>
+  </div>
+  <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/how-to-export-claude-chat/" hreflang="en" lang="en">English</a> <a href="/de/anleitung-claude-chat-exportieren/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/comment-exporter-conversation-claude/" hreflang="fr" lang="fr">Français</a> <a href="/es/como-exportar-chat-claude/" hreflang="es" lang="es">Español</a> <a href="/it/come-esportare-chat-claude/" hreflang="it" lang="it">Italiano</a> <a href="/pt/como-exportar-conversa-claude/" hreflang="pt" lang="pt">Português</a> <a href="/nl/hoe-claude-chat-exporteren/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/sa-exporterar-du-claude-chatt/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/slik-eksporterer-du-claude-chat/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/saadan-eksporterer-du-claude-chat/" hreflang="da" lang="da">Dansk</a> <a href="/fi/nain-viet-claude-chatin/" hreflang="fi" lang="fi">Suomi</a> <a href="/pl/jak-eksportowac-czat-claude/" hreflang="pl" lang="pl">Polski</a> <a href="/cs/jak-exportovat-chat-claude/" hreflang="cs" lang="cs">Čeština</a> <a href="/sk/ako-exportovat-chat-claude/" hreflang="sk" lang="sk">Slovenčina</a> <a href="/hu/hogyan-exportaljam-a-claude-chatet/" hreflang="hu" lang="hu">Magyar</a> <a href="/ro/cum-exportati-chat-claude/" hreflang="ro" lang="ro">Română</a> <a href="/el/how-to-export-claude-chat/" hreflang="el" lang="el">Ελληνικά</a> <a href="/tr/claude-sohbet-nasil-disa-aktarilir/" hreflang="tr" lang="tr">Türkçe</a> <a href="/ja/how-to-export-claude-chat/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/how-to-export-claude-chat/" hreflang="ko" lang="ko">한국어</a> <a href="/zh-hant/how-to-export-claude-chat/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="/he/how-to-export-claude-chat/" hreflang="he" lang="he">עברית</a> <a href="/ar/how-to-export-claude-chat/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
+  <p class="disclaimer">A chateket a böngésződ dolgozza fel · Google-bejelentkezés csak PDF-hez, tömeges exportáláshoz és Pro csomaghoz · Nem áll kapcsolatban az Anthropic, PBC-vel. A Claude az Anthropic védjegye. Független Chrome-bővítmény – nem hivatalos Anthropic-termék. Támogatás: <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

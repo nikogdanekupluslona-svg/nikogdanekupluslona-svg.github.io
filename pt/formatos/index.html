@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formatos para exportar conversas do Claude: PDF, JSON, CSV</title>
+  <meta name="description" content="Os sete formatos da Download Claude conversations: PDF, Markdown, texto simples, JSON, XML, CSV, PNG. Para que serve cada um e qual escolher.">
+  <link rel="canonical" href="https://chat-downloader.com/pt/formatos/">
+  <!-- i18n:head -->
+  <link rel="alternate" hreflang="en" href="https://chat-downloader.com/formats/">
+  <link rel="alternate" hreflang="de" href="https://chat-downloader.com/de/formate/">
+  <link rel="alternate" hreflang="fr" href="https://chat-downloader.com/fr/formats/">
+  <link rel="alternate" hreflang="es" href="https://chat-downloader.com/es/formatos/">
+  <link rel="alternate" hreflang="it" href="https://chat-downloader.com/it/formati/">
+  <link rel="alternate" hreflang="pt" href="https://chat-downloader.com/pt/formatos/">
+  <link rel="alternate" hreflang="nl" href="https://chat-downloader.com/nl/formaten/">
+  <link rel="alternate" hreflang="sv" href="https://chat-downloader.com/sv/format/">
+  <link rel="alternate" hreflang="nb" href="https://chat-downloader.com/nb/formater/">
+  <link rel="alternate" hreflang="da" href="https://chat-downloader.com/da/formater/">
+  <link rel="alternate" hreflang="fi" href="https://chat-downloader.com/fi/formaatit/">
+  <link rel="alternate" hreflang="pl" href="https://chat-downloader.com/pl/formaty/">
+  <link rel="alternate" hreflang="cs" href="https://chat-downloader.com/cs/formaty/">
+  <link rel="alternate" hreflang="sk" href="https://chat-downloader.com/sk/formaty/">
+  <link rel="alternate" hreflang="hu" href="https://chat-downloader.com/hu/formatumok/">
+  <link rel="alternate" hreflang="ro" href="https://chat-downloader.com/ro/formate/">
+  <link rel="alternate" hreflang="el" href="https://chat-downloader.com/el/formats/">
+  <link rel="alternate" hreflang="tr" href="https://chat-downloader.com/tr/formatlar/">
+  <link rel="alternate" hreflang="ja" href="https://chat-downloader.com/ja/formats/">
+  <link rel="alternate" hreflang="ko" href="https://chat-downloader.com/ko/formats/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://chat-downloader.com/zh-hant/formats/">
+  <link rel="alternate" hreflang="he" href="https://chat-downloader.com/he/formats/">
+  <link rel="alternate" hreflang="ar" href="https://chat-downloader.com/ar/formats/">
+  <link rel="alternate" hreflang="x-default" href="https://chat-downloader.com/formats/">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="it_IT">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="sv_SE">
+  <meta property="og:locale:alternate" content="nb_NO">
+  <meta property="og:locale:alternate" content="da_DK">
+  <meta property="og:locale:alternate" content="fi_FI">
+  <meta property="og:locale:alternate" content="pl_PL">
+  <meta property="og:locale:alternate" content="cs_CZ">
+  <meta property="og:locale:alternate" content="sk_SK">
+  <meta property="og:locale:alternate" content="hu_HU">
+  <meta property="og:locale:alternate" content="ro_RO">
+  <meta property="og:locale:alternate" content="el_GR">
+  <meta property="og:locale:alternate" content="tr_TR">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <meta property="og:locale:alternate" content="zh_TW">
+  <meta property="og:locale:alternate" content="he_IL">
+  <meta property="og:locale:alternate" content="ar_AE">
+  <!-- /i18n:head -->
+  <meta property="og:title" content="Formatos para exportar conversas do Claude: PDF, JSON, CSV">
+  <meta property="og:description" content="Os sete formatos da Download Claude conversations: PDF, Markdown, texto simples, JSON, XML, CSV, PNG. Para que serve cada um e qual escolher.">
+  <meta property="og:url" content="https://chat-downloader.com/pt/formatos/">
+  <meta property="og:image" content="https://chat-downloader.com/assets/widget-guide.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chat Downloader">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Formatos para exportar conversas do Claude: PDF, JSON, CSV">
+  <meta name="twitter:description" content="Os sete formatos da Download Claude conversations: PDF, Markdown, texto simples, JSON, XML, CSV, PNG. Para que serve cada um e qual escolher.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME1YXGZKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GME1YXGZKR');
+  </script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Em quais formatos posso baixar as conversas do Claude?","acceptedAnswer":{"@type":"Answer","text":"Sete: PDF, Markdown, texto simples, JSON, XML, CSV e PNG. Markdown, texto, JSON, XML, CSV e PNG são ilimitados e não exigem conta. O PDF exige login com o Google e é grátis até 3 por dia."}},{"@type":"Question","name":"O PDF é um dos formatos de exportação?","acceptedAnswer":{"@type":"Answer","text":"Sim. Escolha PDF no painel de exportação. A janela do PDF define nome do arquivo, tamanho da página, margens, modo claro ou escuro, fonte e tamanho, números de página, sumário, data e hora e uma quebra de página antes de cada prompt. O arquivo é gerado no navegador, sem janela de impressão."}},{"@type":"Question","name":"Para que serve a exportação em CSV?","acceptedAnswer":{"@type":"Answer","text":"Para planilhas. O CSV grava uma linha por mensagem e abre no Excel, no Google Sheets e no Numbers. É ilimitado, não exige conta e pode ser copiado para a área de transferência em vez de baixado."}},{"@type":"Question","name":"Os formatos de exportação têm limite diário?","acceptedAnswer":{"@type":"Answer","text":"Só PDF e lote. Exportações de um chat em Markdown, texto, JSON, XML, CSV e PNG são ilimitadas e grátis. PDF e ZIP em lote dividem 3 por dia no plano grátis, que zeram à meia-noite UTC. O Pro, por US$ 3,99 por mês ou US$ 26,99 por ano, remove o limite."}},{"@type":"Question","name":"Dá para misturar formatos no “Export All”?","acceptedAnswer":{"@type":"Answer","text":"Não. Cada execução do “Export All” usa um formato e gera um ZIP. Rode de novo com outro formato se precisar de dois arquivos do mesmo chat do claude.ai. No plano grátis, cada chat de cada ZIP conta no limite de 3 exportações diárias em PDF ou em lote."}},{"@type":"Question","name":"Os formatos de exportação são a mesma coisa que o Export data?","acceptedAnswer":{"@type":"Answer","text":"Não. O Export data da Anthropic é um ZIP em JSON da conta, que chega depois. Os formatos para exportar conversas do Claude são arquivos por chat (ou por seleção) gerados na hora no Chrome pela Download Claude conversations."}},{"@type":"Question","name":"Os formatos funcionam no Desktop ou no Claude Code?","acceptedAnswer":{"@type":"Answer","text":"Na web, sim. Chats, Projects, sessões do Cowork e o Claude Code na web (claude.ai/code) têm todos os formatos no Chrome. O app Claude Desktop e as sessões locais do Claude Code no terminal nunca mostram a lista de formatos. Abra a mesma conversa no claude.ai, no Chrome, se ela existir lá."}},{"@type":"Question","name":"Preciso do Pro para experimentar os formatos de exportação?","acceptedAnswer":{"@type":"Answer","text":"Não. Seis formatos são ilimitados no plano grátis, sem conta. O PDF é grátis até 3 por dia com login do Google, dividido com o ZIP em lote. O Pro custa US$ 3,99 por mês ou US$ 26,99 por ano, para quando você precisar de PDF ou lote ilimitados."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://chat-downloader.com/pt/"},{"@type":"ListItem","position":2,"name":"Formatos","item":"https://chat-downloader.com/pt/formatos/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Pular para o conteúdo</a>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a class="logo" href="/pt/">
+        <img src="/assets/icon.svg" alt="">
+        <span>Download Claude conversations</span>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="/pt/como-baixar-conversa-claude/">Como baixar</a><a href="/pt/como-exportar-conversa-claude/">Exportar</a><a href="/pt/exportar-todas-conversas-claude/">Em lote</a><a href="/pt/formatos/" aria-current="page">Formatos</a><a href="/pt/#faq">FAQ</a>
+        <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=pt-formats" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Adicionar ao Chrome</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=pt-formats" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Adicionar ao Chrome</a>
+      <!-- i18n:switch --><details class="lang-switch"><summary aria-label="Idioma: Português"><svg class="lang-globe" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span class="lang-name">Português</span><span class="lang-code" aria-hidden="true">pt</span></summary><ul><li><a href="/formats/" hreflang="en" lang="en">English</a></li><li><a href="/de/formate/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/formats/" hreflang="fr" lang="fr">Français</a></li><li><a href="/es/formatos/" hreflang="es" lang="es">Español</a></li><li><a href="/it/formati/" hreflang="it" lang="it">Italiano</a></li><li><a href="/pt/formatos/" hreflang="pt" lang="pt" aria-current="true">Português</a></li><li><a href="/nl/formaten/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/sv/format/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="/nb/formater/" hreflang="nb" lang="nb">Norsk</a></li><li><a href="/da/formater/" hreflang="da" lang="da">Dansk</a></li><li><a href="/fi/formaatit/" hreflang="fi" lang="fi">Suomi</a></li><li><a href="/pl/formaty/" hreflang="pl" lang="pl">Polski</a></li><li><a href="/cs/formaty/" hreflang="cs" lang="cs">Čeština</a></li><li><a href="/sk/formaty/" hreflang="sk" lang="sk">Slovenčina</a></li><li><a href="/hu/formatumok/" hreflang="hu" lang="hu">Magyar</a></li><li><a href="/ro/formate/" hreflang="ro" lang="ro">Română</a></li><li><a href="/el/formats/" hreflang="el" lang="el">Ελληνικά</a></li><li><a href="/tr/formatlar/" hreflang="tr" lang="tr">Türkçe</a></li><li><a href="/ja/formats/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/ko/formats/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/zh-hant/formats/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li><li><a href="/he/formats/" hreflang="he" lang="he">עברית</a></li><li><a href="/ar/formats/" hreflang="ar" lang="ar">العربية</a></li></ul></details><!-- /i18n:switch -->
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+<nav class="crumbs" aria-label="Trilha de navegação"><a href="/pt/">Início</a> / Formatos</nav>
+<main id="main">
+<article class="band prose">
+<p class="article-meta">Atualizado em <time datetime="2026-09">setembro de 2026</time> · Extensão 1.16.2</p>
+<h1 class="page-h1">Formatos para exportar conversas do Claude que continuam legíveis</h1>
+<p class="lead">Os formatos para exportar conversas do Claude na Download Claude conversations são PDF, Markdown, texto simples, JSON, XML, CSV e PNG. Escolha um no botão laranja do claude.ai ou no “Export All” (exportar tudo). Markdown, texto, JSON, XML, CSV e PNG são ilimitados e sem conta. PDF e ZIP em lote são grátis até 3 por dia com login do Google; o Pro custa US$ 3,99 por mês ou US$ 26,99 por ano. Os arquivos são gerados no Chrome, não enviados por e-mail como o ZIP da conta da Anthropic.</p>
+<aside class="trust-badge" aria-label="Sobre a extensão">
+  <span class="trophy" aria-hidden="true">🧩</span>
+  <div>
+    <strong>Download Claude conversations — extensão gratuita do Chrome para o claude.ai</strong>
+    <span>Versão 1.16.2 (setembro de 2026) — exportações ilimitadas em Markdown, texto, JSON, XML, CSV e PNG sem conta; PDF e ZIP em lote grátis até 3 por dia</span>
+  </div>
+</aside>
+<nav class="toc" aria-label="Nesta página">
+  <p>Nesta página</p>
+  <ol>
+    <li><a href="#what-formats">Quais são os formatos de exportação aqui?</a></li>
+    <li><a href="#which-format">Qual formato escolher para exportar a conversa?</a></li>
+    <li><a href="#how-to-export">Como escolher o formato na hora de exportar?</a></li>
+    <li><a href="#bulk">Os formatos funcionam no “Export All”?</a></li>
+    <li><a href="#vs-zip">Formatos da extensão ou ZIP da Anthropic?</a></li>
+    <li><a href="#cost">Quanto custam os formatos de exportação?</a></li>
+    <li><a href="#faq">Perguntas frequentes: formatos para exportar conversas do Claude</a></li>
+  </ol>
+</nav>
+
+<h2 id="what-formats">Quais são os formatos de exportação aqui?</h2>
+<p>Os formatos de exportação deste site são os sete arquivos que a Download Claude conversations gera a partir de uma conversa do claude.ai: PDF, Markdown, texto simples, JSON, XML, CSV e PNG. A versão 1.16.2 gera todos eles no seu navegador. Seis são ilimitados e sem conta. O PDF pede login com o Google e é grátis até 3 por dia.</p>
+<p>A extensão funciona onde quer que uma conversa abra no claude.ai, no Chrome: chats, Projects, sessões do Cowork e Claude Code na web (claude.ai/code). O app Claude Desktop e as sessões locais do Claude Code no terminal nunca mostram o botão laranja. Se a mesma conversa existir na sua conta do claude.ai, abra essa URL no Chrome e escolha o formato lá. A lista suspensa lembra o último formato de exportação que você usou.</p>
+<p>Muita gente também pesquisa em inglês por Claude Chat Downloader e Claude Conversation Downloader para chegar a esta mesma extensão. Esses nomes são este produto, não um segundo exportador. As páginas jurídicas ainda podem dizer Claude Exporter. Os arquivos que você recebe são os mesmos sete formatos.</p>
+<div class="callout callout-info">
+  <p><strong>Uma lista, duas portas de entrada.</strong> O botão laranja exporta o chat aberto. O “Export All” no Dashboard exporta muitos chats em um ZIP, um arquivo por chat, em qualquer um dos sete formatos que você escolher como “Chat format” (formato do chat) — inclusive PDF. Detalhes: <a href="/pt/exportar-todas-conversas-claude/">“Export All” em lote</a>.</p>
+</div>
+
+<h2 id="which-format">Qual formato escolher para exportar a conversa?</h2>
+<p>Escolha PDF para ler e compartilhar, Markdown para notas, JSON para scripts, CSV para planilhas, texto simples para um arquivo que se cola em qualquer lugar, XML quando um sistema exige XML e PNG para uma imagem da conversa. A Download Claude conversations não elege um como o melhor. Os formatos para exportar conversas do Claude diferem na forma; só o PDF tem limite diário no plano grátis.</p>
+<table>
+  <caption>Formatos para exportar conversas do Claude na Download Claude conversations 1.16.2</caption>
+  <thead>
+    <tr>
+      <th scope="col">Formato</th>
+      <th scope="col">Melhor para</th>
+      <th scope="col">O que é o arquivo</th>
+      <th scope="col">Plano grátis</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PDF</td>
+      <td>Ler, compartilhar, anexar</td>
+      <td>Documento paginado com números de página e sumário opcionais — <a href="/pt/conversa-claude-em-pdf/">guia do PDF</a></td>
+      <td>3 por dia, login com o Google</td>
+    </tr>
+    <tr>
+      <td>Markdown</td>
+      <td>Obsidian, GitHub, wikis</td>
+      <td>Títulos, blocos de código, tabelas — <a href="/pt/formatos/markdown/">guia do Markdown</a></td>
+      <td>Ilimitado, sem conta</td>
+    </tr>
+    <tr>
+      <td>Texto simples</td>
+      <td>Arquivo simples, destinos para colar</td>
+      <td>A conversa em ordem, sem marcação</td>
+      <td>Ilimitado, sem conta</td>
+    </tr>
+    <tr>
+      <td>JSON</td>
+      <td>Comparação de versões, pipelines, parsers</td>
+      <td>Árvore de mensagens, não o ZIP da conta da Anthropic — <a href="/pt/formatos/json/">guia do JSON</a></td>
+      <td>Ilimitado, sem conta</td>
+    </tr>
+    <tr>
+      <td>XML</td>
+      <td>Sistemas que exigem XML</td>
+      <td>Intercâmbio estruturado — <a href="/pt/formatos/xml/">guia do XML</a></td>
+      <td>Ilimitado, sem conta</td>
+    </tr>
+    <tr>
+      <td>CSV</td>
+      <td>Excel, Google Sheets, Numbers</td>
+      <td>Uma linha por mensagem</td>
+      <td>Ilimitado, sem conta</td>
+    </tr>
+    <tr>
+      <td>PNG</td>
+      <td>Slides, chats, prova visual</td>
+      <td>Uma imagem da conversa, não um PDF — <a href="/pt/formatos/png/">guia do PNG</a></td>
+      <td>Ilimitado, sem conta</td>
+    </tr>
+  </tbody>
+</table>
+<p>Quem escreve costuma ficar com o Markdown. Desenvolvedores costumam ficar com o JSON. O PNG é a única imagem entre os formatos de exportação; depois não dá para pesquisar nele nem copiar código direito. Se você precisa de uma página para imprimir, escolha PDF: a extensão gera o arquivo diretamente, com tamanho da página, margens, modo claro ou escuro e sumário. A janela de impressão do Chrome é só uma alternativa.</p>
+<p>O CSV grava uma linha por mensagem, então a conversa vira uma planilha que você pode ordenar e filtrar. Abre no Excel, no Google Sheets e no Numbers. Não há um guia separado para o CSV; esta página central cobre o formato. Assim como Markdown, JSON, XML e texto simples, o CSV também pode ir para a área de transferência com o “Copy” (copiar), em vez de ser baixado.</p>
+<div class="expert-quote">
+  <p>Oferecemos sete formatos para exportar conversas do Claude — PDF, Markdown, texto simples, JSON, XML, CSV e PNG — e todos são gerados no seu navegador. Seis são ilimitados e sem conta. PDF e ZIP em lote pedem login com o Google e são grátis até 3 por dia.</p>
+  <footer>Equipe da Download Claude conversations</footer>
+</div>
+
+<h2 id="how-to-export">Como escolher o formato na hora de exportar?</h2>
+<p>Abra a URL de uma conversa no claude.ai, no Chrome, clique no botão laranja ao lado da caixa de mensagem, escolha um dos formatos de exportação e clique em “Export” (exportar). A Download Claude conversations monta o arquivo na aba. Em setembro de 2026, o claude.ai não tem um controle nativo para exportar a conversa.</p>
+<ol>
+<li>Instale a Download Claude conversations pela Chrome Web Store.</li>
+<li>Recarregue o claude.ai e abra a URL de uma conversa de verdade, não a tela inicial com a caixa de mensagem vazia.</li>
+<li>Clique no botão laranja redondo de download, à direita da caixa de mensagem.</li>
+<li>Escolha PDF, Markdown, texto simples, JSON, XML, CSV ou PNG. O último formato fica salvo.</li>
+<li>Clique em “Export”. O Chrome salva o arquivo na hora. Para PDF, ajuste as opções na janela do PDF; o primeiro PDF pede login com o Google.</li>
+</ol>
+<p>Sem login para Markdown, texto, JSON, XML, CSV ou PNG: essas exportações são ilimitadas, anônimas e não enviam nada. O login com o Google só aparece para PDF, “Export All” ou Pro. Nesse caso, a extensão envia só o e-mail do Google, para verificar o limite diário e restaurar o Pro depois de uma reinstalação. O texto do chat nunca é enviado. Detalhes: <a href="/pt/como-funciona/">como funciona</a>.</p>
+<p>O painel de exportação também define as mensagens (“All”, “Human”, “Assistant” — todas, usuário, assistente), uma caixa “Thinking” (raciocínio) e o “Select” (selecionar), que marca mensagens individuais. O “Copy” coloca Markdown, texto, JSON, XML ou CSV na área de transferência em vez de gerar um arquivo; é ilimitado e não está disponível para PDF nem PNG. Etapas de ferramentas / MCP e fontes da pesquisa na web são ativadas nas configurações. Metadados e layout dos artefatos (“Original”, “Inline”, “Nested”, “Flat” — original, embutido, aninhado, plano) são opções do Dashboard; o layout define se os artefatos ficam dentro do arquivo ou em uma pasta própria no ZIP.</p>
+
+<h2 id="bulk">Os formatos funcionam no “Export All”?</h2>
+<p>Sim. Abra o pop-up da extensão → “View and Download All Conversations” (ver e baixar todas as conversas), filtre a lista, marque os chats, escolha qualquer um dos sete formatos como “Chat format” e clique em “Export All”. Você recebe um ZIP com um arquivo por chat. O lote exige login com o Google; no plano grátis, cada chat do ZIP usa uma das 3 exportações diárias em PDF ou em lote. O Pro, por US$ 3,99 por mês ou US$ 26,99 por ano, remove esse limite.</p>
+<p>O Dashboard lista o histórico do claude.ai com pesquisa por nome, pesquisa por projeto, abas Chat e Cowork e os filtros “All conversations”, “New”, “Updated” e “Previously exported” (todas, novas, atualizadas, já exportadas). “New” são os chats ainda não exportados com a Download Claude conversations. “Previously exported” registra os chats que você já salvou. O “Export All” não é um ZIP da conta que chega depois.</p>
+<div class="callout callout-warn">
+  <p><strong>O limite do lote é diário.</strong> No plano grátis, PDF e lote dividem 3 exportações por dia, que zeram à meia-noite UTC. Cada chat de um ZIP conta como uma. Se você selecionar mais do que resta no dia, o lote inteiro é bloqueado, não cortado. Escolha menos chats ou use o Pro.</p>
+</div>
+<p>O lote tem as próprias caixas de inclusão — “Chats”, “Thinking”, “Metadata”, “Tools”, “Sources” (conversas, raciocínio, metadados, ferramentas, fontes) — além do layout dos artefatos. Você não recebe um pacote misto de Markdown e JSON em um clique. Você escolhe um dos formatos de exportação no seletor “Chat format” para aquela execução. Rode o “Export All” de novo com outro formato se precisar de duas versões da mesma conversa; no plano grátis, essa segunda execução conta de novo.</p>
+
+<h2 id="vs-zip">Formatos da extensão ou ZIP da Anthropic?</h2>
+<p>O Settings → Privacy → Export data da Anthropic (os nomes dos menus podem aparecer em português se o claude.ai estiver configurado nesse idioma) envia por e-mail, depois de uma espera, um ZIP em JSON da conta inteira. Os formatos para exportar conversas do Claude da Download Claude conversations salvam a conversa aberta na hora, em PDF, Markdown, texto, JSON, XML, CSV ou PNG. Use o ZIP para backup; use esta extensão para ter o arquivo agora.</p>
+<table>
+  <caption>Como tirar uma conversa do Claude do claude.ai</caption>
+  <thead>
+    <tr>
+      <th scope="col">Método</th>
+      <th scope="col">Você recebe</th>
+      <th scope="col">Você espera</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Download Claude conversations</td>
+      <td>PDF / MD / TXT / JSON / XML / CSV / PNG</td>
+      <td>Não — o Chrome baixa o arquivo</td>
+    </tr>
+    <tr>
+      <td>Settings → Privacy → Export data</td>
+      <td>ZIP em JSON da conta, por e-mail</td>
+      <td>Sim — o link expira; sem Markdown ou PDF por chat</td>
+    </tr>
+    <tr>
+      <td>Imprimir → Salvar como PDF</td>
+      <td>PDF da página da web</td>
+      <td>Não, mas o código e a barra lateral costumam quebrar</td>
+    </tr>
+    <tr>
+      <td>Copiar e colar</td>
+      <td>O que você selecionar</td>
+      <td>Sem estrutura para uma conversa longa</td>
+    </tr>
+  </tbody>
+</table>
+<p>O ZIP oficial não é uma versão mais bonita dos formatos de exportação. Não dá para escolher Markdown ou PDF nesse pedido. A Download Claude conversations não substitui esse ZIP se você precisa de todas as conversas esquecidas em um único arquivo. A impressão é um improviso visual; o PDF da própria extensão é o arquivo mais limpo.</p>
+<p>A Download Claude conversations não tem vínculo com a Anthropic, PBC. Usar a extensão não muda os Termos de Serviço da Anthropic. O script de conteúdo usa a sessão que você já abriu no claude.ai. Siga as regras da Anthropic para a sua conta.</p>
+
+<h2 id="cost">Quanto custam os formatos de exportação?</h2>
+<p>Seis formatos de exportação não custam nada e não exigem conta: Markdown, texto simples, JSON, XML, CSV e PNG são ilimitados. PDF e ZIP em lote são grátis até 3 por dia, somados, com login do Google. O Pro custa US$ 3,99 por mês ou US$ 26,99 por ano pela Paddle e deixa PDF e lote ilimitados. A Download Claude conversations não cobra a mais por nenhum formato específico.</p>
+<p>A contagem diária zera à meia-noite UTC e fica ligada à sua conta do Google, por isso PDF e lote pedem login. O Pro é restaurado em outro computador quando você entra com a mesma conta do Google. A Paddle é a revendedora oficial (merchant of record); esta equipe nunca vê números de cartão. Cancele quando quiser na página de opções; o primeiro pagamento tem garantia de reembolso de 14 dias.</p>
+<p>A versão desta página é a 1.16.2, de setembro de 2026. Os formatos para exportar conversas do Claude são PDF, Markdown, texto simples, JSON, XML, CSV e PNG. Não há gravação para Notion ou Word. Se essa lista mudar, esta página muda no mesmo dia.</p>
+
+<h2 id="faq">Perguntas frequentes: formatos para exportar conversas do Claude</h2>
+<p>Estas perguntas tratam dos formatos para exportar conversas do Claude na Download Claude conversations 1.16.2: a lista de sete formatos, PDF, CSV, limites, “Export All”, o ZIP da Anthropic, Desktop e Claude Code, e o Pro. Cada resposta é um fato do produto. O JSON-LD FAQPage no head da página corresponde a esta lista.</p>
+
+<h3>Em quais formatos posso baixar as conversas do Claude?</h3>
+<p>Sete: PDF, Markdown, texto simples, JSON, XML, CSV e PNG. Markdown, texto, JSON, XML, CSV e PNG são ilimitados e não exigem conta. O PDF exige login com o Google e é grátis até 3 por dia.</p>
+
+<h3>O PDF é um dos formatos de exportação?</h3>
+<p>Sim. Escolha PDF no painel de exportação. A janela do PDF define nome do arquivo, tamanho da página, margens, modo claro ou escuro, fonte e tamanho, números de página, sumário, data e hora e uma quebra de página antes de cada prompt. O arquivo é gerado no navegador, sem janela de impressão.</p>
+
+<h3>Para que serve a exportação em CSV?</h3>
+<p>Para planilhas. O CSV grava uma linha por mensagem e abre no Excel, no Google Sheets e no Numbers. É ilimitado, não exige conta e pode ser copiado para a área de transferência em vez de baixado.</p>
+
+<h3>Os formatos de exportação têm limite diário?</h3>
+<p>Só PDF e lote. Exportações de um chat em Markdown, texto, JSON, XML, CSV e PNG são ilimitadas e grátis. PDF e ZIP em lote dividem 3 por dia no plano grátis, que zeram à meia-noite UTC. O Pro, por US$ 3,99 por mês ou US$ 26,99 por ano, remove o limite.</p>
+
+<h3>Dá para misturar formatos no “Export All”?</h3>
+<p>Não. Cada execução do “Export All” usa um formato e gera um ZIP. Rode de novo com outro formato se precisar de dois arquivos do mesmo chat do claude.ai. No plano grátis, cada chat de cada ZIP conta no limite de 3 exportações diárias em PDF ou em lote.</p>
+
+<h3>Os formatos de exportação são a mesma coisa que o Export data?</h3>
+<p>Não. O Export data da Anthropic é um ZIP em JSON da conta, que chega depois. Os formatos para exportar conversas do Claude são arquivos por chat (ou por seleção) gerados na hora no Chrome pela Download Claude conversations.</p>
+
+<h3>Os formatos funcionam no Desktop ou no Claude Code?</h3>
+<p>Na web, sim. Chats, Projects, sessões do Cowork e o Claude Code na web (claude.ai/code) têm todos os formatos no Chrome. O app Claude Desktop e as sessões locais do Claude Code no terminal nunca mostram a lista de formatos. Abra a mesma conversa no claude.ai, no Chrome, se ela existir lá.</p>
+
+<h3>Preciso do Pro para experimentar os formatos de exportação?</h3>
+<p>Não. Seis formatos são ilimitados no plano grátis, sem conta. O PDF é grátis até 3 por dia com login do Google, dividido com o ZIP em lote. O Pro custa US$ 3,99 por mês ou US$ 26,99 por ano, para quando você precisar de PDF ou lote ilimitados.</p>
+</article>
+</main>
+<section class="final-cta page-cta" aria-label="Instalar">
+  <div class="wrap">
+    <div class="final-cta-panel">
+      <p class="final-kicker">Download Claude conversations</p>
+      <h2>Instale a extensão e baixe conversas do Claude em segundos</h2>
+      <p>Transforme conversas importantes do Claude em PDF, Markdown, JSON, texto, CSV, XML ou PNG — localmente, pelo Chrome.</p>
+      <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=pt-formats" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Adicionar ao Chrome</a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="logo" href="/pt/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
+      <p class="legal-note">Extensão do Chrome para baixar conversas do Claude.ai em PDF, Markdown, JSON, texto simples, CSV, XML ou PNG.</p>
+    </div>
+    <div>
+      <h2>Instalar</h2>
+      <a class="install-link" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=pt-footer" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Extensão do Chrome</a>
+    </div>
+    <div>
+      <h2>Produto</h2>
+      <a href="/pt/recursos/">Recursos</a>
+      <a href="/pt/formatos/">Formatos</a>
+      <a href="/pt/exportar-todas-conversas-claude/">Exportar todas as conversas</a>
+      <a href="/pt/como-funciona/">Como funciona</a>
+    </div>
+    <div>
+      <h2>Guias</h2>
+      <a href="/pt/como-baixar-conversa-claude/">Como baixar uma conversa do Claude</a>
+      <a href="/pt/como-exportar-conversa-claude/">Como exportar uma conversa do Claude</a>
+      <a href="/pt/exportar-chat-claude/">Exportar chat do Claude</a>
+      <a href="/pt/extrator-conversas-claude/">Extrator de conversas do Claude</a>
+      <a href="/pt/exportar-conversa-claude-code/">Exportar conversa do Claude Code</a>
+      <a href="/pt/conversa-claude-em-pdf/">Conversa do Claude em PDF</a>
+      <a href="/pt/exportar-chat-claude-desktop/">Exportar chat do Claude Desktop</a>
+      <a href="/pt/exportar-conversa-claude/">Exportar conversa do Claude</a>
+      <a href="/pt/como-salvar-conversa-claude/">Como salvar uma conversa do Claude</a>
+      <a href="/pt/baixar-conversa-claude/">Baixar conversa do Claude</a>
+    </div>
+    <div>
+      <h2>Informações legais</h2>
+      <a href="/pt/sobre/">Sobre</a>
+      <a href="/pt/sobre/#contact">Contato</a>
+      <a href="/privacy/" hreflang="en">Privacidade (em inglês)</a>
+      <a href="/terms/" hreflang="en">Termos (em inglês)</a>
+      <a href="/refund/" hreflang="en">Reembolsos (em inglês)</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Download Claude conversations. Todos os direitos reservados.</div>
+    <div>
+      <a href="/privacy/" hreflang="en">Política de Privacidade (em inglês)</a>
+      <a href="/terms/" hreflang="en">Termos de Serviço (em inglês)</a>
+      <a href="/refund/" hreflang="en">Reembolsos (em inglês)</a>
+    </div>
+  </div>
+  <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/formats/" hreflang="en" lang="en">English</a> <a href="/de/formate/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/formats/" hreflang="fr" lang="fr">Français</a> <a href="/es/formatos/" hreflang="es" lang="es">Español</a> <a href="/it/formati/" hreflang="it" lang="it">Italiano</a> <a href="/pt/formatos/" hreflang="pt" lang="pt">Português</a> <a href="/nl/formaten/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/format/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/formater/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/formater/" hreflang="da" lang="da">Dansk</a> <a href="/fi/formaatit/" hreflang="fi" lang="fi">Suomi</a> <a href="/pl/formaty/" hreflang="pl" lang="pl">Polski</a> <a href="/cs/formaty/" hreflang="cs" lang="cs">Čeština</a> <a href="/sk/formaty/" hreflang="sk" lang="sk">Slovenčina</a> <a href="/hu/formatumok/" hreflang="hu" lang="hu">Magyar</a> <a href="/ro/formate/" hreflang="ro" lang="ro">Română</a> <a href="/el/formats/" hreflang="el" lang="el">Ελληνικά</a> <a href="/tr/formatlar/" hreflang="tr" lang="tr">Türkçe</a> <a href="/ja/formats/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/formats/" hreflang="ko" lang="ko">한국어</a> <a href="/zh-hant/formats/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="/he/formats/" hreflang="he" lang="he">עברית</a> <a href="/ar/formats/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
+  <p class="disclaimer">Conversas processadas no seu navegador · Login com o Google só para PDF, exportação em lote e Pro · Sem vínculo com a Anthropic, PBC. Claude é uma marca registrada da Anthropic. Extensão independente do Chrome — não é um produto oficial da Anthropic. Suporte: <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

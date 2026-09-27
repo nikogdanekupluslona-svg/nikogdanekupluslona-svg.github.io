@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Export konverzácie Claude do JSON – pre skripty</title>
+  <meta name="description" content="Exportujte konverzáciu Claude do JSON s celým stromom správ – iné ako ZIP celého účtu od Anthropic. Jeden chat alebo hromadne.">
+  <link rel="canonical" href="https://chat-downloader.com/sk/formaty/json/">
+  <!-- i18n:head -->
+  <link rel="alternate" hreflang="en" href="https://chat-downloader.com/formats/json/">
+  <link rel="alternate" hreflang="de" href="https://chat-downloader.com/de/formate/json/">
+  <link rel="alternate" hreflang="fr" href="https://chat-downloader.com/fr/formats/json/">
+  <link rel="alternate" hreflang="es" href="https://chat-downloader.com/es/formatos/json/">
+  <link rel="alternate" hreflang="it" href="https://chat-downloader.com/it/formati/json/">
+  <link rel="alternate" hreflang="pt" href="https://chat-downloader.com/pt/formatos/json/">
+  <link rel="alternate" hreflang="nl" href="https://chat-downloader.com/nl/formaten/json/">
+  <link rel="alternate" hreflang="sv" href="https://chat-downloader.com/sv/format/json/">
+  <link rel="alternate" hreflang="nb" href="https://chat-downloader.com/nb/formater/json/">
+  <link rel="alternate" hreflang="da" href="https://chat-downloader.com/da/formater/json/">
+  <link rel="alternate" hreflang="fi" href="https://chat-downloader.com/fi/formaatit/json/">
+  <link rel="alternate" hreflang="pl" href="https://chat-downloader.com/pl/formaty/json/">
+  <link rel="alternate" hreflang="cs" href="https://chat-downloader.com/cs/formaty/json/">
+  <link rel="alternate" hreflang="sk" href="https://chat-downloader.com/sk/formaty/json/">
+  <link rel="alternate" hreflang="hu" href="https://chat-downloader.com/hu/formatumok/json/">
+  <link rel="alternate" hreflang="ro" href="https://chat-downloader.com/ro/formate/json/">
+  <link rel="alternate" hreflang="el" href="https://chat-downloader.com/el/formats/json/">
+  <link rel="alternate" hreflang="tr" href="https://chat-downloader.com/tr/formatlar/json/">
+  <link rel="alternate" hreflang="ja" href="https://chat-downloader.com/ja/formats/json/">
+  <link rel="alternate" hreflang="ko" href="https://chat-downloader.com/ko/formats/json/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://chat-downloader.com/zh-hant/formats/json/">
+  <link rel="alternate" hreflang="he" href="https://chat-downloader.com/he/formats/json/">
+  <link rel="alternate" hreflang="ar" href="https://chat-downloader.com/ar/formats/json/">
+  <link rel="alternate" hreflang="x-default" href="https://chat-downloader.com/formats/json/">
+  <meta property="og:locale" content="sk_SK">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="it_IT">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="sv_SE">
+  <meta property="og:locale:alternate" content="nb_NO">
+  <meta property="og:locale:alternate" content="da_DK">
+  <meta property="og:locale:alternate" content="fi_FI">
+  <meta property="og:locale:alternate" content="pl_PL">
+  <meta property="og:locale:alternate" content="cs_CZ">
+  <meta property="og:locale:alternate" content="hu_HU">
+  <meta property="og:locale:alternate" content="ro_RO">
+  <meta property="og:locale:alternate" content="el_GR">
+  <meta property="og:locale:alternate" content="tr_TR">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <meta property="og:locale:alternate" content="zh_TW">
+  <meta property="og:locale:alternate" content="he_IL">
+  <meta property="og:locale:alternate" content="ar_AE">
+  <!-- /i18n:head -->
+  <meta property="og:title" content="Export konverzácie Claude do JSON – pre skripty">
+  <meta property="og:description" content="Exportujte konverzáciu Claude do JSON s celým stromom správ – iné ako ZIP celého účtu od Anthropic. Jeden chat alebo hromadne.">
+  <meta property="og:url" content="https://chat-downloader.com/sk/formaty/json/">
+  <meta property="og:image" content="https://chat-downloader.com/assets/widget-guide.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chat Downloader">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Export konverzácie Claude do JSON – pre skripty">
+  <meta name="twitter:description" content="Exportujte konverzáciu Claude do JSON s celým stromom správ – iné ako ZIP celého účtu od Anthropic. Jeden chat alebo hromadne.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME1YXGZKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GME1YXGZKR');
+  </script>
+  
+  
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Dá sa exportovať konverzácia Claude do JSON hromadne?","acceptedAnswer":{"@type":"Answer","text":"Áno. „Export All“ na Dashboarde podporuje JSON a uloží jeden ZIP so súborom JSON pre každý chat. Na bezplatnom pláne pokryje 3 chaty denne s prihlásením cez Google; Pro za 3,99 USD mesačne alebo 26,99 USD ročne je neobmedzený."}},{"@type":"Question","name":"Je štruktúra JSON zdokumentovaná?","acceptedAnswer":{"@type":"Answer","text":"Kopíruje vlastný strom správ claude.ai: odosielateľa, bloky obsahu, časové údaje a metadáta modelu, plus artefakty, bloky uvažovania, zdroje z webového vyhľadávania a kroky nástrojov / MCP, ak tieto možnosti zapnete. Nie je to schéma ZIP-u účtu od Anthropic."}},{"@type":"Question","name":"Potrebujem Pro na export konverzácie Claude do JSON?","acceptedAnswer":{"@type":"Answer","text":"Nie. Export jedného chatu do JSON je neobmedzený a bez účtu, rovnako ako každý formát okrem PDF. Pro za 3,99 USD mesačne alebo 26,99 USD ročne ruší iba limit 3 denne pri PDF a hromadnom „Export All“."}},{"@type":"Question","name":"Dajú sa porovnať dva exporty jedného chatu do JSON?","acceptedAnswer":{"@type":"Answer","text":"Áno. Pri každom exporte konverzácie Claude do JSON dostanete samostatný súbor vytvorený rovnakým spôsobom. Dva exporty tej istej konverzácie z rôzneho času porovnáte ako akékoľvek iné súbory JSON."}},{"@type":"Question","name":"Je tento JSON to isté ako Export data od Anthropic?","acceptedAnswer":{"@type":"Answer","text":"Nie. Export data od Anthropic je oneskorený ZIP celého účtu. Download Claude conversations zapíše súbor JSON pre jeden chat (alebo výber správ) okamžite v Chrome. Oba môžu byť v JSON, no nie sú zameniteľné."}},{"@type":"Question","name":"Vytvorí export konverzácie Claude do JSON aj PDF?","acceptedAnswer":{"@type":"Answer","text":"Nie. JSON sú štruktúrované dáta. Na stránky zvoľte v tom istom paneli PDF; sedem formátov je PDF, Markdown, JSON, čistý text, XML, CSV a PNG. PDF vyžaduje prihlásenie cez Google a na bezplatnom pláne sa započítava do 3 denne."}},{"@type":"Question","name":"Funguje export do JSON v Claude Desktop?","acceptedAnswer":{"@type":"Answer","text":"Nie. Rozšírenie pre Chrome sa načítava iba na claude.ai. Claude Desktop možnosť JSON nikdy nezobrazí. Otvorte tú istú konverzáciu na claude.ai v Chrome, ak tam existuje."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Domov","item":"https://chat-downloader.com/sk/"},{"@type":"ListItem","position":2,"name":"Formáty","item":"https://chat-downloader.com/sk/formaty/"},{"@type":"ListItem","position":3,"name":"JSON","item":"https://chat-downloader.com/sk/formaty/json/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Preskočiť na obsah</a>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a class="logo" href="/sk/">
+        <img src="/assets/icon.svg" alt="">
+        <span>Download Claude conversations</span>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="/sk/ako-stiahnut-chat-claude/">Stiahnutie</a><a href="/sk/ako-exportovat-chat-claude/">Export</a><a href="/sk/export-vsetkych-chatov-claude/">Všetky chaty</a><a href="/sk/formaty/">Formáty</a><a href="/sk/#faq">Otázky</a>
+        <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=sk-formats-json" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Pridať do Chromu</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=sk-formats-json" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Pridať do Chromu</a>
+      <!-- i18n:switch --><details class="lang-switch"><summary aria-label="Jazyk: Slovenčina"><svg class="lang-globe" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span class="lang-name">Slovenčina</span><span class="lang-code" aria-hidden="true">sk</span></summary><ul><li><a href="/formats/json/" hreflang="en" lang="en">English</a></li><li><a href="/de/formate/json/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/formats/json/" hreflang="fr" lang="fr">Français</a></li><li><a href="/es/formatos/json/" hreflang="es" lang="es">Español</a></li><li><a href="/it/formati/json/" hreflang="it" lang="it">Italiano</a></li><li><a href="/pt/formatos/json/" hreflang="pt" lang="pt">Português</a></li><li><a href="/nl/formaten/json/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/sv/format/json/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="/nb/formater/json/" hreflang="nb" lang="nb">Norsk</a></li><li><a href="/da/formater/json/" hreflang="da" lang="da">Dansk</a></li><li><a href="/fi/formaatit/json/" hreflang="fi" lang="fi">Suomi</a></li><li><a href="/pl/formaty/json/" hreflang="pl" lang="pl">Polski</a></li><li><a href="/cs/formaty/json/" hreflang="cs" lang="cs">Čeština</a></li><li><a href="/sk/formaty/json/" hreflang="sk" lang="sk" aria-current="true">Slovenčina</a></li><li><a href="/hu/formatumok/json/" hreflang="hu" lang="hu">Magyar</a></li><li><a href="/ro/formate/json/" hreflang="ro" lang="ro">Română</a></li><li><a href="/el/formats/json/" hreflang="el" lang="el">Ελληνικά</a></li><li><a href="/tr/formatlar/json/" hreflang="tr" lang="tr">Türkçe</a></li><li><a href="/ja/formats/json/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/ko/formats/json/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/zh-hant/formats/json/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li><li><a href="/he/formats/json/" hreflang="he" lang="he">עברית</a></li><li><a href="/ar/formats/json/" hreflang="ar" lang="ar">العربية</a></li></ul></details><!-- /i18n:switch -->
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+<nav class="crumbs" aria-label="Navigačná cesta"><a href="/sk/">Domov</a> / <a href="/sk/formaty/">Formáty</a> / JSON</nav>
+<main id="main">
+<article class="band prose">
+<p class="article-meta">Aktualizované v <time datetime="2026-09">septembri 2026</time> · Rozšírenie 1.16.2</p>
+<h1 class="page-h1">Export konverzácie Claude do JSON pre skripty</h1>
+<p class="lead">Export konverzácie Claude do JSON urobíte takto: nainštalujte Download Claude conversations, otvorte konverzáciu na claude.ai, kliknite na oranžové tlačidlo, vyberte JSON a kliknite na „Export“ (Exportovať). Po anglicky sa to hľadá ako „claude export chat to json“. Chrome uloží súbor pre jeden chat so stromom správ. Tento súbor nie je ZIP účtu od Anthropic. Export do JSON je neobmedzený, zadarmo a bez účtu; Pro (3,99 USD mesačne alebo 26,99 USD ročne) má význam len pre hromadný export a PDF.</p>
+<aside class="trust-badge" aria-label="O rozšírení">
+  <span class="trophy" aria-hidden="true">🧩</span>
+  <div>
+    <strong>Download Claude conversations – bezplatné rozšírenie pre Chrome na claude.ai</strong>
+    <span>Verzia 1.16.2 (september 2026) – neobmedzený export do Markdown, textu, JSON, XML, CSV a PNG bez účtu; PDF a hromadný ZIP zadarmo do 3 denne</span>
+  </div>
+</aside>
+<nav class="toc" aria-label="Na tejto stránke">
+  <p>Na tejto stránke</p>
+  <ol>
+    <li><a href="#how-to">Ako exportovať konverzáciu Claude do JSON?</a></li>
+    <li><a href="#when">Kedy exportovať konverzáciu Claude do JSON?</a></li>
+    <li><a href="#inside">Čo obsahuje export konverzácie Claude do JSON?</a></li>
+    <li><a href="#vs-zip">JSON konverzácie Claude, alebo Export data od Anthropic?</a></li>
+    <li><a href="#bulk">Dá sa exportovať konverzácia Claude do JSON hromadne?</a></li>
+    <li><a href="#cost">Potrebuje export konverzácie Claude do JSON Pro?</a></li>
+    <li><a href="#faq">Časté otázky: export konverzácie Claude do JSON</a></li>
+  </ol>
+</nav>
+
+<h2 id="how-to">Ako exportovať konverzáciu Claude do JSON?</h2>
+<p>Otvorte konverzáciu na claude.ai v Chrome, kliknite na oranžové tlačidlo vedľa poľa na správu, vyberte JSON a kliknite na „Export“. Download Claude conversations zapíše súbor lokálne. Takto exportujete konverzáciu Claude do JSON vo verzii 1.16.2. Samotné claude.ai v septembri 2026 nemá tlačidlo na uloženie jedného chatu ako JSON.</p>
+<ol>
+<li>Nainštalujte Download Claude conversations z Chrome Web Store.</li>
+<li>Obnovte claude.ai a otvorte skutočnú adresu konverzácie, nie prázdnu úvodnú stránku s poľom na písanie.</li>
+<li>Kliknite na oranžové tlačidlo sťahovania vpravo od poľa na správu.</li>
+<li>Vyberte JSON. Rozšírenie si pamätá posledný použitý formát. Cez „Select“ (Vybrať) označte len tie správy, ktoré chcete.</li>
+<li>Kliknite na „Export“. Chrome stiahne JSON cez rozhranie sťahovania prehliadača. Alebo kliknite na „Copy“ (Kopírovať) a JSON sa vloží do schránky.</li>
+</ol>
+<p>Na export konverzácie Claude do JSON sa nemusíte prihlasovať. Export jedného chatu do JSON je neobmedzený, anonymný a na naše servery nič neposiela. Prihlásenie cez Google sa vyžaduje iba pri PDF a hromadnom „Export All“ (Exportovať všetko). Podrobnosti: <a href="/sk/ako-to-funguje/">ako to funguje</a>.</p>
+<p>Ak oranžové tlačidlo chýba, nie ste na adrese konverzácie, karta potrebuje obnoviť alebo je rozšírenie skryté v ponuke rozšírení Chrome (ikona puzzle). Pripnite Download Claude conversations a obnovte claude.ai. Obsahový skript sa nikdy nenačíta v Claude Desktop ani v termináli Claude Code.</p>
+<div class="callout callout-tip">
+  <p><strong>Jedna konverzácia verzus veľa súborov.</strong> Oranžové tlačidlo exportuje otvorený chat do JSON. Pre veľa súborov JSON otvorte „View and Download All Conversations“ (Zobraziť a stiahnuť všetky konverzácie) a spustite „Export All“ so zvoleným JSON: jeden ZIP, na bezplatnom pláne 3 chaty denne – pozrite <a href="/sk/export-vsetkych-chatov-claude/">hromadný Export All</a>.</p>
+</div>
+
+<h2 id="when">Kedy exportovať konverzáciu Claude do JSON?</h2>
+<p>Exportujte konverzáciu Claude do JSON, keď bude súbor čítať skript, indexer alebo nástroj na porovnávanie. JSON je postavený na strome správ, nie na čítanie v Obsidiane. Ak chcete nadpisy a bloky kódu pre ľudí, zvoľte radšej Markdown. Pre tabuľkový procesor zvoľte <a href="/sk/formaty/">CSV</a>: jeden riadok na správu.</p>
+<p>Kopírovanie z claude.ai stráca štruktúru odosielateľov. Tlač ponechá prvky webovej stránky. Pri exporte konverzácie Claude do JSON zachová Download Claude conversations jednotlivé ťahy, odosielateľov aj voliteľné uvažovanie ako dáta, nie ako zlúčený odsek. Preto vývojári uprednostňujú JSON pred čistým textom.</p>
+<div class="expert-quote">
+  <p>JSON zapisujeme zo stromu claude.ai, ktorý už je na stránke – odosielateľ, bloky obsahu, časové údaje, metadáta modelu – bez nahrávania konverzácie. Tento JSON nie je ZIP účtu od Anthropic. Vo verzii 1.16.2 je jedným zo siedmich formátov, vedľa PDF a CSV, a je zadarmo bez účtu.</p>
+  <footer>Tím Download Claude conversations</footer>
+</div>
+<p>Ten istý záznam v obchode ľudia hľadajú aj ako Claude Chat Downloader a Claude Conversation Downloader. Export konverzácie Claude do JSON je to oranžové tlačidlo, nie ďalší produkt. Právne stránky môžu ešte uvádzať Claude Exporter.</p>
+
+<h2 id="inside">Čo obsahuje export konverzácie Claude do JSON?</h2>
+<p>Export konverzácie Claude do JSON kopíruje strom správ na claude.ai: odosielateľa, bloky obsahu, časové údaje a metadáta modelu. Bloky uvažovania, zdroje z webového vyhľadávania, kroky nástrojov / MCP a artefakty sú zahrnuté, keď tieto možnosti zapnete: „Thinking“ (uvažovanie) je zaškrtávacie políčko v paneli exportu, nástroje a zdroje sa zapínajú v nastaveniach. Filter odosielateľa obmedzí súbor na všetky správy, len vaše alebo len odpovede asistenta. Nič sa predtým neprevádza do Markdown.</p>
+<p>Rozloženie artefaktov je vo verzii 1.16.2 „Original“, „Inline“, „Nested“ alebo „Flat“ (pôvodné, vložené, vnorené, ploché). Tieto rozloženia menia, ako je obsah artefaktov vnorený v JSON – sú to tie isté štyri možnosti ako pri Markdown a XML. Úplný zoznam: <a href="/sk/funkcie/">funkcie rozšírenia pre Chrome</a>. Ak chcete namiesto dát stránky, exportujte <a href="/sk/chat-claude-do-pdf/">PDF</a>.</p>
+<table>
+  <caption>Polia, ktoré zvyčajne dostanete pri exporte konverzácie Claude do JSON</caption>
+  <thead>
+    <tr>
+      <th scope="col">Časť</th>
+      <th scope="col">V JSON?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strom správ (ťahy, odosielateľ)</td>
+      <td>Áno</td>
+    </tr>
+    <tr>
+      <td>Bloky obsahu</td>
+      <td>Áno</td>
+    </tr>
+    <tr>
+      <td>Časové údaje a metadáta modelu</td>
+      <td>Áno, keď je zapnuté „Metadata“ (metadáta)</td>
+    </tr>
+    <tr>
+      <td>Bloky uvažovania</td>
+      <td>Ak je zapnutý prepínač „Thinking“</td>
+    </tr>
+    <tr>
+      <td>Artefakty</td>
+      <td>Áno, v rozložení, ktoré ste zvolili</td>
+    </tr>
+    <tr>
+      <td>Zdroje z webového vyhľadávania, kroky nástrojov / MCP</td>
+      <td>Ak ich zapnete</td>
+    </tr>
+    <tr>
+      <td>Obal ZIP celého účtu</td>
+      <td>Nie – to je Export data od Anthropic</td>
+    </tr>
+  </tbody>
+</table>
+<p>Ak je konverzácia dlhá, pred exportom konverzácie Claude do JSON posúvajte stránku, kým claude.ai nenačíta staršie správy. Rozšírenie dokáže serializovať len to, čo stránka vykreslila. Napoly načítaná stránka dá orezaný súbor JSON.</p>
+
+<h2 id="vs-zip">JSON konverzácie Claude, alebo Export data od Anthropic?</h2>
+<p>Oba sú JSON, no nemajú rovnaký tvar ani rozsah. Settings → Privacy → Export data od Anthropic (ak máte claude.ai v slovenčine, názvy môžu byť preložené) po čase pošle e-mailom jeden ZIP celého účtu. Pri exporte konverzácie Claude do JSON dostanete jednu konverzáciu okamžite v Chrome. ZIP použite na zálohu.</p>
+<table>
+  <caption>Dve rôzne cesty k JSON z claude.ai</caption>
+  <thead>
+    <tr>
+      <th scope="col">Spôsob</th>
+      <th scope="col">Rozsah</th>
+      <th scope="col">Kedy príde súbor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>JSON z Download Claude conversations</td>
+      <td>Tento chat alebo hromadný výber</td>
+      <td>Okamžite cez sťahovanie v Chrome</td>
+    </tr>
+    <tr>
+      <td>Settings → Privacy → Export data</td>
+      <td>Celý účet</td>
+      <td>Odkaz v e-maile, ktorý vyprší</td>
+    </tr>
+    <tr>
+      <td>PDF z Download Claude conversations</td>
+      <td>Tento chat ako stránky</td>
+      <td>Okamžite, ale je to PDF, nie JSON</td>
+    </tr>
+  </tbody>
+</table>
+<p>V žiadosti o ZIP od Anthropic si Markdown vybrať nemôžete. JSON z tohto rozšírenia zase nemôžete použiť ako priamu náhradu schémy toho ZIP-u. Prehľad formátov: <a href="/sk/formaty/">formáty exportu chatu Claude</a>. <a href="/sk/chat-claude-do-pdf/">PDF</a> slúži na čítanie, nie je to export do JSON.</p>
+<p>Download Claude conversations nie je prepojené so spoločnosťou Anthropic, PBC. Obsahový skript využíva reláciu, ktorú ste už otvorili na claude.ai. Neprihlasuje sa do Anthropic so samostatnými prihlasovacími údajmi. Dodržiavajte pravidlá Anthropic pre svoj účet.</p>
+
+<h2 id="bulk">Dá sa exportovať konverzácia Claude do JSON hromadne?</h2>
+<p>Áno. Otvorte „View and Download All Conversations“, v „Chat format“ (formát chatu) nastavte JSON, vyfiltrujte tabuľku a kliknite na „Export All“. Chrome uloží jeden ZIP s jedným súborom JSON na chat. Na bezplatnom pláne to sú 3 chaty denne s prihlásením cez Google, spoločne s PDF. Pro za 3,99 USD mesačne alebo 26,99 USD ročne tento limit pre hromadný JSON ruší.</p>
+<p>Dashboard zobrazuje históriu claude.ai s vyhľadávaním podľa názvu, filtrami „All conversations“, „New“, „Updated“ a „Previously exported“ (všetky, nové, aktualizované, už exportované), kartami „Chat“ a „Cowork“ a vyhľadávaním v projektoch. „New“ znamená, že chat ešte nebol exportovaný cez Download Claude conversations. „Previously exported“ sleduje už uložené chaty. „Export All“ je jeden ZIP so samostatnými súbormi JSON pre každý chat, nie archív so zmiešanými formátmi.</p>
+<div class="callout callout-warn">
+  <p><strong>Denný limit platí pre celý účet.</strong> Na bezplatnom pláne tri chaty denne, spoločne s PDF. Ak vyberiete 40 konverzácií a zostávajú vám 3, celá dávka sa zablokuje, neskráti sa. Vyberte menej alebo prejdite na Pro. Jednotlivé exporty do JSON cez oranžové tlačidlo zostávajú neobmedzené.</p>
+</div>
+<p>Dva exporty do JSON tej istej konverzácie z claude.ai, urobené v rôznom čase, porovnáte rovnako ako akékoľvek súbory JSON. Každý export je samostatný. Druhý „Export All“ tých istých chatov započíta každý chat znova.</p>
+
+<h2 id="cost">Potrebuje export konverzácie Claude do JSON Pro?</h2>
+<p>Nie. Export jedného chatu do JSON je zadarmo a neobmedzený, bez účtu a bez počítadla – rovnako ako Markdown, text, XML, CSV a PNG. Bezplatný limit majú iba PDF a hromadný „Export All“: 3 denne s prihlásením cez Google. Pro stojí 3,99 USD mesačne alebo 26,99 USD ročne cez Paddle. Download Claude conversations si za export konverzácie Claude do JSON nič navyše neúčtuje.</p>
+<p>Limit sa prejaví pri hromadnom JSON. Každý chat v ZIP-e z „Export All“ spotrebuje jeden z 3 denne a počítadlo sa vynuluje o polnoci UTC. Pro limit ruší a na novom počítači sa obnoví z toho istého účtu Google. Predajcom je Paddle; tento tím čísla kariet nikdy nevidí.</p>
+<p>Rozšírenie beží iba na claude.ai v Chrome. Claude Desktop ani terminál Claude Code tlačidlo pre JSON nedostanú; Claude Code on the web (claude.ai/code) beží na claude.ai, takže sa exportuje ako každý chat. Príkaz <code>/export</code> v termináli Claude Code alebo súbory JSONL na disku sú iná cesta. Verzia 1.16.2 zo septembra 2026 stále nezapisuje do Wordu ani Notion.</p>
+
+<h2 id="faq">Časté otázky: export konverzácie Claude do JSON</h2>
+<p>Tieto otázky sa týkajú exportu konverzácie Claude do JSON v Download Claude conversations 1.16.2: hromadný „Export All“, schéma, cena, porovnávanie, ZIP od Anthropic, PDF a Desktop. Každá odpoveď je fakt o produkte. JSON-LD FAQPage v hlavičke stránky zodpovedá tomuto zoznamu.</p>
+
+<h3>Dá sa exportovať konverzácia Claude do JSON hromadne?</h3>
+<p>Áno. „Export All“ na Dashboarde podporuje JSON a uloží jeden ZIP so súborom JSON pre každý chat. Na bezplatnom pláne pokryje 3 chaty denne s prihlásením cez Google; Pro za 3,99 USD mesačne alebo 26,99 USD ročne je neobmedzený.</p>
+
+<h3>Je štruktúra JSON zdokumentovaná?</h3>
+<p>Kopíruje vlastný strom správ claude.ai: odosielateľa, bloky obsahu, časové údaje a metadáta modelu, plus artefakty, bloky uvažovania, zdroje z webového vyhľadávania a kroky nástrojov / MCP, ak tieto možnosti zapnete. Nie je to schéma ZIP-u účtu od Anthropic.</p>
+
+<h3>Potrebujem Pro na export konverzácie Claude do JSON?</h3>
+<p>Nie. Export jedného chatu do JSON je neobmedzený a bez účtu, rovnako ako každý formát okrem PDF. Pro za 3,99 USD mesačne alebo 26,99 USD ročne ruší iba limit 3 denne pri PDF a hromadnom „Export All“.</p>
+
+<h3>Dajú sa porovnať dva exporty jedného chatu do JSON?</h3>
+<p>Áno. Pri každom exporte konverzácie Claude do JSON dostanete samostatný súbor vytvorený rovnakým spôsobom. Dva exporty tej istej konverzácie z rôzneho času porovnáte ako akékoľvek iné súbory JSON.</p>
+
+<h3>Je tento JSON to isté ako Export data od Anthropic?</h3>
+<p>Nie. Export data od Anthropic je oneskorený ZIP celého účtu. Download Claude conversations zapíše súbor JSON pre jeden chat (alebo výber správ) okamžite v Chrome. Oba môžu byť v JSON, no nie sú zameniteľné.</p>
+
+<h3>Vytvorí export konverzácie Claude do JSON aj PDF?</h3>
+<p>Nie. JSON sú štruktúrované dáta. Na stránky zvoľte v tom istom paneli PDF; sedem formátov je PDF, Markdown, JSON, čistý text, XML, CSV a PNG. PDF vyžaduje prihlásenie cez Google a na bezplatnom pláne sa započítava do 3 denne.</p>
+
+<h3>Funguje export do JSON v Claude Desktop?</h3>
+<p>Nie. Rozšírenie pre Chrome sa načítava iba na claude.ai. Claude Desktop možnosť JSON nikdy nezobrazí. Otvorte tú istú konverzáciu na claude.ai v Chrome, ak tam existuje.</p>
+</article>
+</main>
+<section class="final-cta page-cta" aria-label="Inštalácia">
+  <div class="wrap">
+    <div class="final-cta-panel">
+      <p class="final-kicker">Download Claude conversations</p>
+      <h2>Nainštalujte rozšírenie a stiahnite chat Claude za pár sekúnd</h2>
+      <p>Premeňte dôležité konverzácie s Claude na PDF, Markdown, JSON, text, CSV, XML alebo PNG – lokálne, priamo z Chrome.</p>
+      <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=sk-formats-json" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Pridať do Chrome</a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="logo" href="/sk/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
+      <p class="legal-note">Rozšírenie pre Chrome na stiahnutie chatov z Claude.ai ako PDF, Markdown, JSON, obyčajný text, CSV, XML alebo PNG.</p>
+    </div>
+    <div>
+      <h2>Inštalácia</h2>
+      <a class="install-link" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=sk-footer" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Rozšírenie pre Chrome</a>
+    </div>
+    <div>
+      <h2>Produkt</h2>
+      <a href="/sk/funkcie/">Funkcie</a>
+      <a href="/sk/formaty/">Formáty</a>
+      <a href="/sk/export-vsetkych-chatov-claude/">Export všetkých chatov</a>
+      <a href="/sk/ako-to-funguje/">Ako to funguje</a>
+    </div>
+    <div>
+      <h2>Návody</h2>
+      <a href="/sk/ako-stiahnut-chat-claude/">Ako stiahnuť chat Claude</a>
+      <a href="/sk/ako-exportovat-chat-claude/">Ako exportovať chat Claude</a>
+      <a href="/sk/export-chatu-claude/">Export chatu Claude</a>
+      <a href="/sk/extraktor-konverzacii-claude/">Extraktor konverzácií Claude</a>
+      <a href="/sk/export-konverzacie-claude-code/">Export z Claude Code</a>
+      <a href="/sk/chat-claude-do-pdf/">Chat Claude do PDF</a>
+      <a href="/sk/export-chatu-claude-desktop/">Export chatu z Claude Desktop</a>
+      <a href="/sk/export-konverzacie-claude/">Export konverzácie Claude</a>
+      <a href="/sk/ako-ulozit-konverzaciu-claude/">Ako uložiť konverzáciu Claude</a>
+      <a href="/sk/stiahnut-konverzaciu-claude/">Stiahnuť konverzáciu Claude</a>
+    </div>
+    <div>
+      <h2>Právne informácie</h2>
+      <a href="/sk/o-nas/">O nás</a>
+      <a href="/sk/o-nas/#contact">Kontakt</a>
+      <a href="/privacy/" hreflang="en">Súkromie (po anglicky)</a>
+      <a href="/terms/" hreflang="en">Podmienky (po anglicky)</a>
+      <a href="/refund/" hreflang="en">Vrátenie peňazí (po anglicky)</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Download Claude conversations. Všetky práva vyhradené.</div>
+    <div>
+      <a href="/privacy/" hreflang="en">Zásady ochrany osobných údajov (po anglicky)</a>
+      <a href="/terms/" hreflang="en">Podmienky používania (po anglicky)</a>
+      <a href="/refund/" hreflang="en">Vrátenie peňazí (po anglicky)</a>
+    </div>
+  </div>
+  <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/formats/json/" hreflang="en" lang="en">English</a> <a href="/de/formate/json/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/formats/json/" hreflang="fr" lang="fr">Français</a> <a href="/es/formatos/json/" hreflang="es" lang="es">Español</a> <a href="/it/formati/json/" hreflang="it" lang="it">Italiano</a> <a href="/pt/formatos/json/" hreflang="pt" lang="pt">Português</a> <a href="/nl/formaten/json/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/format/json/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/formater/json/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/formater/json/" hreflang="da" lang="da">Dansk</a> <a href="/fi/formaatit/json/" hreflang="fi" lang="fi">Suomi</a> <a href="/pl/formaty/json/" hreflang="pl" lang="pl">Polski</a> <a href="/cs/formaty/json/" hreflang="cs" lang="cs">Čeština</a> <a href="/sk/formaty/json/" hreflang="sk" lang="sk">Slovenčina</a> <a href="/hu/formatumok/json/" hreflang="hu" lang="hu">Magyar</a> <a href="/ro/formate/json/" hreflang="ro" lang="ro">Română</a> <a href="/el/formats/json/" hreflang="el" lang="el">Ελληνικά</a> <a href="/tr/formatlar/json/" hreflang="tr" lang="tr">Türkçe</a> <a href="/ja/formats/json/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/formats/json/" hreflang="ko" lang="ko">한국어</a> <a href="/zh-hant/formats/json/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="/he/formats/json/" hreflang="he" lang="he">עברית</a> <a href="/ar/formats/json/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
+  <p class="disclaimer">Chaty sa spracúvajú vo vašom prehliadači · Prihlásenie cez Google len pre PDF, hromadný export a Pro · Nie sme prepojení so spoločnosťou Anthropic, PBC. Claude je ochranná známka spoločnosti Anthropic. Nezávislé rozšírenie pre Chrome – nie je to oficiálny produkt Anthropic. Podpora: <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

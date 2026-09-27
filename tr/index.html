@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Claude Chat Downloader — Claude sohbetlerini dışa aktarın</title>
+  <meta name="description" content="Claude.ai’de indirme düğmesi yok. Sohbetleri PDF, Markdown, JSON, metin, CSV, XML veya PNG olarak kaydedin. Ücretsiz Chrome uzantısı, çoğu format hesapsız.">
+  <link rel="canonical" href="https://chat-downloader.com/tr/">
+  <!-- i18n:head -->
+  <link rel="alternate" hreflang="en" href="https://chat-downloader.com/">
+  <link rel="alternate" hreflang="de" href="https://chat-downloader.com/de/">
+  <link rel="alternate" hreflang="fr" href="https://chat-downloader.com/fr/">
+  <link rel="alternate" hreflang="es" href="https://chat-downloader.com/es/">
+  <link rel="alternate" hreflang="it" href="https://chat-downloader.com/it/">
+  <link rel="alternate" hreflang="pt" href="https://chat-downloader.com/pt/">
+  <link rel="alternate" hreflang="nl" href="https://chat-downloader.com/nl/">
+  <link rel="alternate" hreflang="sv" href="https://chat-downloader.com/sv/">
+  <link rel="alternate" hreflang="nb" href="https://chat-downloader.com/nb/">
+  <link rel="alternate" hreflang="da" href="https://chat-downloader.com/da/">
+  <link rel="alternate" hreflang="fi" href="https://chat-downloader.com/fi/">
+  <link rel="alternate" hreflang="pl" href="https://chat-downloader.com/pl/">
+  <link rel="alternate" hreflang="cs" href="https://chat-downloader.com/cs/">
+  <link rel="alternate" hreflang="sk" href="https://chat-downloader.com/sk/">
+  <link rel="alternate" hreflang="hu" href="https://chat-downloader.com/hu/">
+  <link rel="alternate" hreflang="ro" href="https://chat-downloader.com/ro/">
+  <link rel="alternate" hreflang="el" href="https://chat-downloader.com/el/">
+  <link rel="alternate" hreflang="tr" href="https://chat-downloader.com/tr/">
+  <link rel="alternate" hreflang="ja" href="https://chat-downloader.com/ja/">
+  <link rel="alternate" hreflang="ko" href="https://chat-downloader.com/ko/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://chat-downloader.com/zh-hant/">
+  <link rel="alternate" hreflang="he" href="https://chat-downloader.com/he/">
+  <link rel="alternate" hreflang="ar" href="https://chat-downloader.com/ar/">
+  <link rel="alternate" hreflang="x-default" href="https://chat-downloader.com/">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="it_IT">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="sv_SE">
+  <meta property="og:locale:alternate" content="nb_NO">
+  <meta property="og:locale:alternate" content="da_DK">
+  <meta property="og:locale:alternate" content="fi_FI">
+  <meta property="og:locale:alternate" content="pl_PL">
+  <meta property="og:locale:alternate" content="cs_CZ">
+  <meta property="og:locale:alternate" content="sk_SK">
+  <meta property="og:locale:alternate" content="hu_HU">
+  <meta property="og:locale:alternate" content="ro_RO">
+  <meta property="og:locale:alternate" content="el_GR">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <meta property="og:locale:alternate" content="zh_TW">
+  <meta property="og:locale:alternate" content="he_IL">
+  <meta property="og:locale:alternate" content="ar_AE">
+  <!-- /i18n:head -->
+  <meta property="og:title" content="Claude Chat Downloader — Claude sohbetlerini dışa aktarın">
+  <meta property="og:description" content="Claude.ai’de indirme düğmesi yok. Sohbetleri PDF, Markdown, JSON, metin, CSV, XML veya PNG olarak kaydedin. Ücretsiz Chrome uzantısı, çoğu format hesapsız.">
+  <meta property="og:url" content="https://chat-downloader.com/tr/">
+  <meta property="og:image" content="https://chat-downloader.com/assets/widget-guide.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chat Downloader">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Claude Chat Downloader — Claude sohbetlerini dışa aktarın">
+  <meta name="twitter:description" content="Claude.ai’de indirme düğmesi yok. Sohbetleri PDF, Markdown, JSON, metin, CSV, XML veya PNG olarak kaydedin. Ücretsiz Chrome uzantısı, çoğu format hesapsız.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME1YXGZKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GME1YXGZKR');
+  </script>
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Claude konuşmasını claude.ai’den indirebilir miyim?","acceptedAnswer":{"@type":"Answer","text":"Yerleşik bir düğmeyle hayır. Chrome Web Store’dan Download Claude conversations uzantısını yükleyin, sohbeti açın ve bir dosya olarak dışa aktarın."}},{"@type":"Question","name":"Claude sohbetlerini indirmek ücretsiz mi?","acceptedAnswer":{"@type":"Answer","text":"Evet. Markdown, düz metin, JSON, XML, CSV ve PNG dışa aktarmaları sınırsızdır ve hesap gerektirmez. PDF ve toplu ZIP dışa aktarmaları Google ile giriş ister ve günde 3 adede kadar ücretsizdir. Ayda 3,99 $ veya yılda 26,99 $ olan Pro bu sınırı kaldırır."}},{"@type":"Question","name":"Hangi tarayıcılarda çalışır?","acceptedAnswer":{"@type":"Answer","text":"Masaüstü Chrome’da ve uzantıları Chrome Web Store’dan yükleyen Chromium tabanlı tarayıcılarda. Mobil uygulaması yoktur ve Claude Desktop içinde çalışmaz."}},{"@type":"Question","name":"Pro’yu nasıl iptal ederim, para iadesi alabilir miyim?","acceptedAnswer":{"@type":"Answer","text":"Uzantının Seçenekler sayfasından (“Cancel subscription” — Aboneliği iptal et) veya Paddle üzerinden istediğiniz zaman iptal edin. İlk ödemeniz soru sorulmadan 14 gün para iade garantisi kapsamındadır."}},{"@type":"Question","name":"Bu, Claude’un Export data özelliğiyle aynı mı?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Anthropic’in Settings → Privacy → Export data yolu (claude.ai Türkçe ayarlıysa etiketler çevrilmiş olabilir) hesabınızın ZIP arşivini (JSON) e-postayla gönderir. Bu uzantı ise açık sohbeti — veya toplu bir seçimi — hemen okunabilir dosyalar olarak indirir."}},{"@type":"Question","name":"Claude sohbetlerimi saklıyor musunuz?","acceptedAnswer":{"@type":"Answer","text":"Hayır. PDF dahil her format tarayıcınızda oluşturulur ve konuşma metni asla sunucularımıza ulaşmaz. PDF, toplu dışa aktarma veya Pro için Google ile giriş yaparsanız, e-posta adresinizi yalnızca günlük hakkı saymak ve aboneliğinizi bağlamak için saklarız."}},{"@type":"Question","name":"“Claude sohbet indirme” ile “claude export chat” arasında fark var mı?","acceptedAnswer":{"@type":"Answer","text":"Aynı iş, iki farklı yazım. Kimi “Claude sohbet indirme” ya da “Claude sohbeti dışa aktarma” diye arar, kimi İngilizce “claude export chat” yazar. Her iki durumda da claude.ai’deki turuncu düğmeyi kullanın."}},{"@type":"Question","name":"PDF olarak dışa aktarıyor mu?","acceptedAnswer":{"@type":"Answer","text":"Evet. Dışa aktarma panelinde PDF’yi seçin; sayfa boyutu, kenar boşlukları, açık veya koyu mod, yazı tipi, sayfa numaraları ve içindekiler tablosunu ayarlayın. PDF için Google ile giriş gerekir; ücretsiz plan günde 3 PDF veya toplu dışa aktarma içerir, Pro’da sınır yoktur. Ayrıntılı rehber: Claude sohbetini PDF olarak indirme."}},{"@type":"Question","name":"Claude Pro / Team ile çalışır mı?","acceptedAnswer":{"@type":"Answer","text":"Evet, konuşmayı tarayıcıda claude.ai üzerinde açabiliyorsanız çalışır. Biz Anthropic değiliz."}},{"@type":"Question","name":"Claude konuşmasını nasıl kaydederim?","acceptedAnswer":{"@type":"Answer","text":"Ücretsiz Chrome uzantısını yükleyin, sohbeti claude.ai’de açın, turuncu düğmeye tıklayın, bir format seçin ve “Export” (Dışa aktar) düğmesine tıklayın. Markdown, metin, JSON, XML, CSV veya PNG için hesap gerekmez. Claude konuşmasını gerçek bir dosya olarak kaydetmenin yolu budur. Diğer iki seçenek sayfayı yazdırmak ve Anthropic’in hesap ZIP’idir — karşılaştırma için: Claude sohbeti nasıl indirilir."}},{"@type":"Question","name":"Claude Code konuşmalarını da indiriyor mu?","acceptedAnswer":{"@type":"Answer","text":"Yalnızca claude.ai’dekileri. Claude Code on the web (claude.ai/code) ve Cowork oturumları herhangi bir sohbet gibi dışa aktarılır. Yerel terminal oturumlarını uzantı okumaz; onlar için /export veya diskteki JSONL dosyaları kullanılır — bkz. Claude Code dışa aktarma."}},{"@type":"Question","name":"Download Claude conversations’ın Anthropic ile bir bağlantısı var mı?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Claude, Anthropic, PBC’nin ticari markasıdır. Bu, bağımsız bir Chrome uzantısıdır; resmi bir Anthropic ürünü değildir."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Chat Downloader","alternateName":["Claude Chat Downloader","Claude Conversation Downloader","chatdownloader"],"url":"https://chat-downloader.com/tr/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Chat Downloader","url":"https://chat-downloader.com","logo":"https://chat-downloader.com/assets/apple-touch-icon.png","sameAs":["https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Claude Chat Downloader","alternateName":["Download Claude conversations","Claude Conversation Downloader"],"applicationCategory":"BrowserApplication","operatingSystem":"Chrome","softwareVersion":"1.16.2","url":"https://chat-downloader.com","downloadUrl":"https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak","offers":[{"@type":"Offer","name":"Ücretsiz","price":"0","priceCurrency":"USD","description":"Sınırsız Markdown, metin, JSON, XML, CSV ve PNG dışa aktarma; günde 3 PDF veya toplu dışa aktarma"},{"@type":"Offer","name":"Pro aylık","price":"3.99","priceCurrency":"USD"},{"@type":"Offer","name":"Pro yıllık","price":"26.99","priceCurrency":"USD"}],"description":"Claude.ai’de indirme düğmesi yok. Sohbetleri PDF, Markdown, JSON, metin, CSV, XML veya PNG olarak kaydedin. Ücretsiz Chrome uzantısı, çoğu format hesapsız."}</script>
+</head>
+<body class="home">
+<a class="skip" href="#main">İçeriğe geç</a>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a class="logo" href="/tr/">
+        <img src="/assets/icon.svg" alt="">
+        <span>Download Claude conversations</span>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="/tr/claude-sohbet-nasil-indirilir/">Nasıl indirilir</a><a href="/tr/claude-sohbet-nasil-disa-aktarilir/">Dışa aktar</a><a href="/tr/tum-claude-sohbetlerini-disa-aktarma/">Toplu</a><a href="/tr/formatlar/">Formatlar</a><a href="/tr/#faq">SSS</a>
+        <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=tr-home" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Chrome’a ekle</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=tr-home" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Chrome’a ekle</a>
+      <!-- i18n:switch --><details class="lang-switch"><summary aria-label="Dil: Türkçe"><svg class="lang-globe" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span class="lang-name">Türkçe</span><span class="lang-code" aria-hidden="true">tr</span></summary><ul><li><a href="/" hreflang="en" lang="en">English</a></li><li><a href="/de/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/" hreflang="fr" lang="fr">Français</a></li><li><a href="/es/" hreflang="es" lang="es">Español</a></li><li><a href="/it/" hreflang="it" lang="it">Italiano</a></li><li><a href="/pt/" hreflang="pt" lang="pt">Português</a></li><li><a href="/nl/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/sv/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="/nb/" hreflang="nb" lang="nb">Norsk</a></li><li><a href="/da/" hreflang="da" lang="da">Dansk</a></li><li><a href="/fi/" hreflang="fi" lang="fi">Suomi</a></li><li><a href="/pl/" hreflang="pl" lang="pl">Polski</a></li><li><a href="/cs/" hreflang="cs" lang="cs">Čeština</a></li><li><a href="/sk/" hreflang="sk" lang="sk">Slovenčina</a></li><li><a href="/hu/" hreflang="hu" lang="hu">Magyar</a></li><li><a href="/ro/" hreflang="ro" lang="ro">Română</a></li><li><a href="/el/" hreflang="el" lang="el">Ελληνικά</a></li><li><a href="/tr/" hreflang="tr" lang="tr" aria-current="true">Türkçe</a></li><li><a href="/ja/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/ko/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/zh-hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li><li><a href="/he/" hreflang="he" lang="he">עברית</a></li><li><a href="/ar/" hreflang="ar" lang="ar">العربية</a></li></ul></details><!-- /i18n:switch -->
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menü">☰</button>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="landing">
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <h1>Claude Chat Downloader: Claude sohbetlerini dışa aktarın</h1>
+      <p class="hero-sub">Claude konuşmalarını PDF, Markdown, JSON, metin, CSV, XML veya PNG olarak kaydedin</p>
+      <p class="hero-desc">Claude sohbetlerini dışa aktarmak için Claude.ai’de tek bir sohbeti indiren yerleşik bir düğme yok. <strong>Download Claude conversations</strong> — <strong>Claude Chat Downloader</strong> ya da <strong>Claude Conversation Downloader</strong> diye de bilinen ücretsiz Chrome uzantısı — açık olan sohbeti veya <a href="/tr/tum-claude-sohbetlerini-disa-aktarma/">tüm sohbet geçmişinizi</a> PDF, Markdown, JSON, düz metin, CSV, XML ya da PNG olarak kaydeder. Dosyalar tarayıcınızda oluşturulur ve çoğu dışa aktarma için hesap gerekmez. <a href="/tr/claude-sohbet-nasil-indirilir/">Claude sohbeti nasıl indirilir</a>. Claude Code’u terminalde mi kullanıyorsunuz? O konu bu uzantı değil, <a href="/tr/claude-code-konusma-disa-aktarma/">Claude Code dışa aktarma</a> rehberidir.</p>
+      <div class="hero-actions">
+        <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=tr-home_hero" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="22" height="22"> Chrome’a ekleyin — ücretsiz</a>
+        <a class="hero-link" href="#how">Nasıl çalıştığını görün ↓</a>
+      </div>
+      <ul class="hero-trust">
+        <li>6 formatta sınırsız ücretsiz dışa aktarma</li>
+        <li>Hesap gerekmez</li>
+        <li>Sohbetler tarayıcınızda kalır</li>
+        <li>Pro’da 14 gün iade</li>
+      </ul>
+      <p class="platforms-kicker">Claude sohbetini şu formatta kaydedin</p>
+      <ul class="format-chips">
+        <li><a href="/tr/claude-sohbet-pdf/">PDF</a></li>
+        <li><a href="/tr/formatlar/markdown/">Markdown</a></li>
+        <li><a href="/tr/formatlar/json/">JSON</a></li>
+        <li><a href="/tr/formatlar/">Düz metin</a></li>
+        <li><a href="/tr/formatlar/">CSV</a></li>
+        <li><a href="/tr/formatlar/xml/">XML</a></li>
+        <li><a href="/tr/formatlar/png/">PNG</a></li>
+      </ul>
+      <p class="platforms-note"><img src="/assets/images/claude.svg" alt="" width="16" height="16"> claude.ai’de Free, Pro, Team ve Enterprise planlarıyla çalışır — sohbetler, Projects ve Cowork oturumları, tek bir konuşma ya da toplu geçmiş.</p>
+    </div>
+  </section>
+
+  <section class="steps-band" id="how">
+    <div class="wrap">
+      <h2 class="section-title">Claude sohbeti 3 adımda nasıl indirilir</h2>
+      <ol class="steps">
+        <li>
+          <span class="step-num" aria-hidden="true">1</span>
+          <h3>Uzantıyı ekleyin</h3>
+          <p><strong>Download Claude conversations</strong> uzantısını Chrome Web Store’dan yükleyin ve sabitleyin. Yaklaşık on saniye sürer.</p>
+        </li>
+        <li>
+          <span class="step-num" aria-hidden="true">2</span>
+          <h3>claude.ai’de bir sohbet açın</h3>
+          <p>Mesaj kutusunun sağında turuncu bir indirme düğmesi belirir. Çok sayıda sohbet için <strong>View and Download All Conversations</strong> (Tüm konuşmaları görüntüle ve indir) ekranını açın.</p>
+        </li>
+        <li>
+          <span class="step-num" aria-hidden="true">3</span>
+          <h3>Format seçin ve dışa aktarın</h3>
+          <p>PDF, Markdown, JSON, metin, CSV, XML veya PNG’yi seçip <strong>“Export”</strong> (Dışa aktar) düğmesine tıklayın. Hesap gerekmez — Google ile giriş yalnızca PDF ve toplu dışa aktarmada istenir.</p>
+        </li>
+      </ol>
+      <p class="steps-more">Ekran görüntülü ayrıntılı rehber: <a href="/tr/claude-sohbet-nasil-indirilir/">Claude sohbeti nasıl indirilir</a>.</p>
+    </div>
+  </section>
+
+  <section class="features-block" id="features">
+    <div class="wrap">
+      <h2 class="section-title">Claude sohbetlerini indirmek için 6 temel özellik</h2>
+      <article class="feature-row">
+        <div class="feature-copy">
+          <span class="num" aria-hidden="true">01</span>
+          <h3>PDF, Markdown, JSON, CSV ve daha fazlası</h3>
+          <p>Claude sohbetini gerçek bir dosya olarak indirin — web sayfasının ekran görüntüsü olarak değil. Okumak ve paylaşmak için PDF, notlar için Markdown, geliştiriciler için JSON, tablolar için CSV, en sade arşiv için düz metin, veri alışverişi için XML, görsel bir anlık görüntü için PNG. Ya da sonucu panoya almak için <strong>“Copy”</strong> (Kopyala) düğmesine basın.</p>
+        </div>
+        <div class="feature-media">
+          <img src="/assets/widget-guide.png" alt="Claude.ai mesaj kutusunun sağındaki turuncu indirme düğmesi">
+        </div>
+      </article>
+      <article class="feature-row reverse">
+        <div class="feature-copy">
+          <span class="num" aria-hidden="true">02</span>
+          <h3>Claude sohbetlerini toplu indirin</h3>
+          <p>Geçmişinizi listelemek için <strong>View and Download All Conversations</strong> ekranını açın, ada göre arayın, projeye veya Cowork’e göre filtreleyin ve <strong>“Export All”</strong> (Tümünü dışa aktar) düğmesine tıklayın. Sekme sekme uğraşmak yerine tek bir ZIP — ücretsiz planda günde 3 sohbet, Pro’da sınırsız.</p>
+        </div>
+        <div class="feature-media">
+          <img src="/assets/browse-guide.jpg" alt="Arama ve Export All düğmesiyle Claude konuşmalarını listeleyen panel">
+        </div>
+      </article>
+      <article class="feature-row">
+        <div class="feature-copy">
+          <span class="num" aria-hidden="true">03</span>
+          <h3>Kod, tablolar ve artifact’ler korunur</h3>
+          <p>Dışa aktarma motoru mesaj ağacını ayrıştırır; böylece kod bloklarının girintisi korunur, tablolar tablo olarak kalır ve artifact’ler “Original”, “Inline”, “Nested” veya “Flat” (özgün, satır içi, iç içe, düz) düzeninde kaydedilebilir.</p>
+        </div>
+        <div class="feature-media">
+          <img src="/assets/widget-guide.png" alt="Bir Claude konuşmasındaki sayfa içi dışa aktarıcı">
+        </div>
+      </article>
+      <article class="feature-row reverse">
+        <div class="feature-copy">
+          <span class="num" aria-hidden="true">04</span>
+          <h3>Dosyaya neyin gireceğini seçin</h3>
+          <p>Konuşmanın tamamını, yalnızca sizin istemlerinizi, yalnızca Claude’un yanıtlarını ya da <strong>“Select”</strong> (Seç) ile işaretlediğiniz mesajları dışa aktarın. Denetim kaydı gerektiğinde genişletilmiş düşünmeyi ekleyin, gerekmiyorsa dışarıda bırakın. Başlıklar, zaman damgaları ve model meta verileri de aynı dosyaya eklenebilir.</p>
+        </div>
+        <div class="feature-media">
+          <img src="/assets/pin-guide.png" alt="İndirme denetimi tek tık uzakta kalsın diye uzantıyı sabitleyin">
+        </div>
+      </article>
+      <article class="feature-row">
+        <div class="feature-copy">
+          <span class="num" aria-hidden="true">05</span>
+          <h3>Dışa aktarmadan önce arayın ve filtreleyin</h3>
+          <p>Listeyi yeni sohbetlere, daha önce dışa aktarılmış sohbetlere veya bir Claude projesine göre daraltın, ardından yalnızca seçtiklerinizi dışa aktarın.</p>
+        </div>
+        <div class="feature-media">
+          <img src="/assets/browse-guide.jpg" alt="Arama ve filtrelerle konuşma listesi">
+        </div>
+      </article>
+      <article class="feature-row reverse">
+        <div class="feature-copy">
+          <span class="num" aria-hidden="true">06</span>
+          <h3>Tarayıcınızda yerel olarak oluşturulur</h3>
+          <p>PDF dahil her dosya cihazınızda oluşturulur ve diske indirilir. Çoğu dışa aktarma için hesap gerekmez. Google ile giriş yalnızca PDF ve toplu dışa aktarmaları sayar ve Pro aboneliğini hesabınıza bağlar — sohbet metnini asla sunucularımıza yüklemez.</p>
+        </div>
+        <div class="feature-media">
+          <img src="/assets/widget-guide.png" alt="Claude mesaj kutusunun yanındaki dışa aktarma paneli">
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="value-band">
+    <div class="wrap">
+      <h2>Biçimlendirmeyi bozmayan Claude sohbet indirici</h2>
+      <div class="value-grid">
+        <div class="value-media">
+          <img id="value-shot" src="/assets/widget-guide.png" alt="claude.ai üzerinde Download Claude conversations">
+        </div>
+        <ul class="checks" id="value-checks">
+          <li class="is-active" data-shot="/assets/widget-guide.png" data-alt="claude.ai için tek uzantı">
+            <span class="check-icon" aria-hidden="true">✓</span>
+            <span>
+              <strong>claude.ai için tek uzantı</strong>
+              <span>Bir kez yükleyin; açık sohbeti ya da tüm geçmişi toplu olarak dışa aktarın.</span>
+            </span>
+          </li>
+          <li data-shot="/assets/browse-guide.jpg" data-alt="Dışa aktarılan dosyalarda biçim sadakati">
+            <span class="check-icon" aria-hidden="true">✓</span>
+            <span>
+              <strong>Biçim sadakati</strong>
+              <span>Kod, tablolar ve artifact’ler dışa aktarmadan sağlam çıkar.</span>
+            </span>
+          </li>
+          <li data-shot="/assets/pin-guide.png" data-alt="Sohbetler cihazınızda kalır">
+            <span class="check-icon" aria-hidden="true">✓</span>
+            <span>
+              <strong>Sohbet yedeği olarak hiçbir şey gönderilmez</strong>
+              <span>Dosyalar Chrome’da yerel olarak oluşturulur.</span>
+            </span>
+          </li>
+          <li data-shot="/assets/widget-guide.png" data-alt="Yedi dışa aktarma formatı">
+            <span class="check-icon" aria-hidden="true">✓</span>
+            <span>
+              <strong>Yedi format</strong>
+              <span>PDF, Markdown, JSON, düz metin, CSV, XML, PNG.</span>
+            </span>
+          </li>
+          <li data-shot="/assets/browse-guide.jpg" data-alt="Uzun Claude konuşmaları">
+            <span class="check-icon" aria-hidden="true">✓</span>
+            <span>
+              <strong>Uzun konuşmalar</strong>
+              <span>Kopyalanmış tek bir mesaj için değil, konuşmanın tamamı için tasarlandı.</span>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="usecases-band" id="use-cases">
+    <div class="wrap">
+      <h2 class="section-title">Claude sohbetini hangi formatta indirmelisiniz?</h2>
+      <div class="cards usecases">
+        <a class="card" href="/tr/claude-sohbet-pdf/">
+          <span class="card-tag">PDF</span>
+          <h3>Okuyun, yazdırın veya gönderin</h3>
+          <p>Seçtiğiniz sayfa boyutu, açık veya koyu tema, yazı tipi ve içindekiler tablosuyla sayfalara bölünmüş bir dosya.</p>
+        </a>
+        <a class="card" href="/tr/formatlar/markdown/">
+          <span class="card-tag">Markdown</span>
+          <h3>Obsidian veya Notion’da notlar</h3>
+          <p>Başlıklar, kod blokları ve tablolar not arşivinize veya doküman deponuza temiz biçimde yapışır.</p>
+        </a>
+        <a class="card" href="/tr/formatlar/json/">
+          <span class="card-tag">JSON</span>
+          <h3>Betikler, veri kümeleri ve RAG</h3>
+          <p>Rolleri ve meta verileriyle yapılandırılmış mesajlar; kodun okumasına hazır.</p>
+        </a>
+        <a class="card" href="/tr/formatlar/">
+          <span class="card-tag">Düz metin</span>
+          <h3>Sade bir arşiv</h3>
+          <p>Her yerde açılır, hızlı aranır ve araçlar değiştiğinde bozulmaz.</p>
+        </a>
+        <a class="card" href="/tr/formatlar/">
+          <span class="card-tag">CSV</span>
+          <h3>Tablolar ve inceleme</h3>
+          <p>Excel, Google Sheets veya Numbers için mesaj başına bir satır.</p>
+        </a>
+        <a class="card" href="/tr/formatlar/xml/">
+          <span class="card-tag">XML</span>
+          <h3>Başka sistemlere aktarın</h3>
+          <p>XML bekleyen iş akışları ve araçlar için etiketli mesajlar.</p>
+        </a>
+        <a class="card" href="/tr/formatlar/png/">
+          <span class="card-tag">PNG</span>
+          <h3>Görsel bir anlık görüntü paylaşın</h3>
+          <p>Sunum, destek kaydı veya mesaj için konuşmanın tek bir görüntüsü.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="pricing-band" id="pricing">
+    <div class="wrap">
+      <h2 class="section-title">Günlük dışa aktarmalar ücretsiz. Sınırsız PDF ve toplu işlem için Pro.</h2>
+      <div class="plans">
+        <div class="plan">
+          <h3>Ücretsiz</h3>
+          <p class="plan-price">0 $</p>
+          <ul>
+            <li>Sınırsız Markdown, metin, JSON, XML, CSV ve PNG</li>
+            <li>Hesap yok, kayıt yok</li>
+            <li>Günde 3 PDF veya toplu dışa aktarma (Google ile giriş)</li>
+            <li>Mesaj seçimi ve gönderen filtreleri</li>
+          </ul>
+          <a class="btn btn-ghost" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=tr-home_pricing_free" target="_blank" rel="noopener noreferrer">Chrome’a ekleyin</a>
+        </div>
+        <div class="plan plan-pro">
+          <h3>Pro</h3>
+          <p class="plan-price">3,99 $<span>/ay</span></p>
+          <p class="plan-alt">veya 26,99 $/yıl — ayda yaklaşık 2,25 $</p>
+          <ul>
+            <li>Sınırsız PDF dışa aktarma</li>
+            <li>Tüm geçmişinizin sınırsız toplu dışa aktarımı</li>
+            <li>Aynı Google hesabıyla her bilgisayarda geri yüklenir</li>
+            <li>İstediğiniz zaman iptal · <a href="/refund/">14 gün para iade garantisi</a></li>
+          </ul>
+          <a class="btn btn-primary" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=tr-home_pricing_pro" target="_blank" rel="noopener noreferrer">Yükleyin, önce ücretsiz deneyin</a>
+        </div>
+      </div>
+      <p class="plans-note">Ödemeler Paddle üzerinden alınır. Kart bilgilerinizi asla görmeyiz.</p>
+    </div>
+  </section>
+
+  <section class="faq-band" id="faq">
+    <div class="wrap narrow">
+      <h2 class="section-title">Sıkça Sorulan Sorular</h2>
+      <div class="faq-list">
+        <details open>
+          <summary>Claude konuşmasını claude.ai’den indirebilir miyim?</summary>
+          <p>Yerleşik bir düğmeyle hayır. <a href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=tr-home" target="_blank" rel="noopener noreferrer">Chrome Web Store</a>’dan <strong>Download Claude conversations</strong> uzantısını yükleyin, sohbeti açın ve bir dosya olarak dışa aktarın.</p>
+        </details>
+        <details>
+          <summary>Claude sohbetlerini indirmek ücretsiz mi?</summary>
+          <p>Evet. Markdown, düz metin, JSON, XML, CSV ve PNG dışa aktarmaları sınırsızdır ve hesap gerektirmez. PDF ve toplu ZIP dışa aktarmaları Google ile giriş ister ve günde 3 adede kadar ücretsizdir. Ayda 3,99 $ veya yılda 26,99 $ olan <a href="#pricing">Pro</a> bu sınırı kaldırır.</p>
+        </details>
+        <details>
+          <summary>Hangi tarayıcılarda çalışır?</summary>
+          <p>Masaüstü Chrome’da ve uzantıları Chrome Web Store’dan yükleyen Chromium tabanlı tarayıcılarda. Mobil uygulaması yoktur ve Claude Desktop içinde çalışmaz.</p>
+        </details>
+        <details>
+          <summary>Pro’yu nasıl iptal ederim, para iadesi alabilir miyim?</summary>
+          <p>Uzantının Seçenekler sayfasından (“Cancel subscription” — Aboneliği iptal et) veya Paddle üzerinden istediğiniz zaman iptal edin. İlk ödemeniz soru sorulmadan <a href="/refund/">14 gün para iade garantisi</a> kapsamındadır.</p>
+        </details>
+        <details>
+          <summary>Bu, Claude’un Export data özelliğiyle aynı mı?</summary>
+          <p>Hayır. Anthropic’in Settings → Privacy → Export data yolu (claude.ai Türkçe ayarlıysa etiketler çevrilmiş olabilir) hesabınızın ZIP arşivini (JSON) e-postayla gönderir. Bu uzantı ise açık sohbeti — veya toplu bir seçimi — hemen okunabilir dosyalar olarak indirir.</p>
+        </details>
+        <details>
+          <summary>Claude sohbetlerimi saklıyor musunuz?</summary>
+          <p>Hayır. PDF dahil her format tarayıcınızda oluşturulur ve konuşma metni asla sunucularımıza ulaşmaz. PDF, toplu dışa aktarma veya Pro için Google ile giriş yaparsanız, e-posta adresinizi yalnızca günlük hakkı saymak ve aboneliğinizi bağlamak için saklarız.</p>
+        </details>
+        <details>
+          <summary>“Claude sohbet indirme” ile “claude export chat” arasında fark var mı?</summary>
+          <p>Aynı iş, iki farklı yazım. Kimi “Claude sohbet indirme” ya da “Claude sohbeti dışa aktarma” diye arar, kimi İngilizce “claude export chat” yazar. Her iki durumda da claude.ai’deki turuncu düğmeyi kullanın.</p>
+        </details>
+        <details>
+          <summary>PDF olarak dışa aktarıyor mu?</summary>
+          <p>Evet. Dışa aktarma panelinde PDF’yi seçin; sayfa boyutu, kenar boşlukları, açık veya koyu mod, yazı tipi, sayfa numaraları ve içindekiler tablosunu ayarlayın. PDF için Google ile giriş gerekir; ücretsiz plan günde 3 PDF veya toplu dışa aktarma içerir, Pro’da sınır yoktur. Ayrıntılı rehber: <a href="/tr/claude-sohbet-pdf/">Claude sohbetini PDF olarak indirme</a>.</p>
+        </details>
+        <details>
+          <summary>Claude Pro / Team ile çalışır mı?</summary>
+          <p>Evet, konuşmayı tarayıcıda claude.ai üzerinde açabiliyorsanız çalışır. Biz Anthropic değiliz.</p>
+        </details>
+        <details>
+          <summary>Claude konuşmasını nasıl kaydederim?</summary>
+          <p>Ücretsiz Chrome uzantısını yükleyin, sohbeti claude.ai’de açın, turuncu düğmeye tıklayın, bir format seçin ve <strong>“Export”</strong> (Dışa aktar) düğmesine tıklayın. Markdown, metin, JSON, XML, CSV veya PNG için hesap gerekmez. Claude konuşmasını gerçek bir dosya olarak kaydetmenin yolu budur. Diğer iki seçenek sayfayı yazdırmak ve Anthropic’in hesap ZIP’idir — karşılaştırma için: <a href="/tr/claude-sohbet-nasil-indirilir/">Claude sohbeti nasıl indirilir</a>.</p>
+        </details>
+        <details>
+          <summary>Claude Code konuşmalarını da indiriyor mu?</summary>
+          <p>Yalnızca claude.ai’dekileri. Claude Code on the web (claude.ai/code) ve Cowork oturumları herhangi bir sohbet gibi dışa aktarılır. Yerel terminal oturumlarını uzantı okumaz; onlar için <code>/export</code> veya diskteki JSONL dosyaları kullanılır — bkz. <a href="/tr/claude-code-konusma-disa-aktarma/">Claude Code dışa aktarma</a>.</p>
+        </details>
+        <details>
+          <summary>Download Claude conversations’ın Anthropic ile bir bağlantısı var mı?</summary>
+          <p>Hayır. Claude, Anthropic, PBC’nin ticari markasıdır. Bu, bağımsız bir Chrome uzantısıdır; resmi bir Anthropic ürünü değildir.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="final-cta">
+    <div class="wrap">
+      <div class="final-cta-panel">
+        <p class="final-kicker">Download Claude conversations</p>
+        <h2>Uzantıyı yükleyin, Claude sohbetini saniyeler içinde indirin</h2>
+        <p>Önemli Claude konuşmalarını PDF, Markdown, JSON, metin, CSV, XML veya PNG dosyasına dönüştürün — yerel olarak, Chrome’dan.</p>
+        <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=tr-home_final" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="22" height="22"> Chrome’a ekleyin — ücretsiz</a>
+        <p class="final-note">Hesap gerekmez · 6 formatta sınırsız ücretsiz dışa aktarma · Pro’da 14 gün iade</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="logo" href="/tr/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
+      <p class="legal-note">Claude.ai sohbetlerini PDF, Markdown, JSON, düz metin, CSV, XML veya PNG olarak indiren Chrome uzantısı.</p>
+    </div>
+    <div>
+      <h2>Yükle</h2>
+      <a class="install-link" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=tr-footer" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Chrome uzantısı</a>
+    </div>
+    <div>
+      <h2>Ürün</h2>
+      <a href="/tr/ozellikler/">Özellikler</a>
+      <a href="/tr/formatlar/">Formatlar</a>
+      <a href="/tr/tum-claude-sohbetlerini-disa-aktarma/">Toplu indirme</a>
+      <a href="/tr/nasil-calisir/">Nasıl çalışır</a>
+    </div>
+    <div>
+      <h2>Rehberler</h2>
+      <a href="/tr/claude-sohbet-nasil-indirilir/">Claude sohbeti nasıl indirilir</a>
+      <a href="/tr/claude-sohbet-nasil-disa-aktarilir/">Claude sohbeti nasıl dışa aktarılır</a>
+      <a href="/tr/claude-sohbet-disa-aktarma/">Claude sohbetini dışa aktarma</a>
+      <a href="/tr/claude-konusma-cikarici/">Claude konuşma çıkarıcı</a>
+      <a href="/tr/claude-code-konusma-disa-aktarma/">Claude Code dışa aktarma</a>
+      <a href="/tr/claude-sohbet-pdf/">Claude sohbeti PDF olarak</a>
+      <a href="/tr/claude-desktop-sohbet-disa-aktarma/">Claude Desktop dışa aktarma</a>
+      <a href="/tr/claude-konusma-disa-aktarma/">Claude konuşmasını dışa aktarma</a>
+      <a href="/tr/claude-sohbet-kaydetme/">Claude sohbeti nasıl kaydedilir</a>
+      <a href="/tr/claude-konusma-indir/">Claude konuşması indirme</a>
+    </div>
+    <div>
+      <h2>Yasal</h2>
+      <a href="/tr/hakkimizda/">Hakkımızda</a>
+      <a href="/tr/hakkimizda/#contact">İletişim</a>
+      <a href="/privacy/" hreflang="en">Gizlilik (İngilizce)</a>
+      <a href="/terms/" hreflang="en">Koşullar (İngilizce)</a>
+      <a href="/refund/" hreflang="en">İadeler (İngilizce)</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Download Claude conversations. Tüm hakları saklıdır.</div>
+    <div>
+      <a href="/privacy/" hreflang="en">Gizlilik Politikası (İngilizce)</a>
+      <a href="/terms/" hreflang="en">Hizmet Koşulları (İngilizce)</a>
+      <a href="/refund/" hreflang="en">İadeler (İngilizce)</a>
+    </div>
+  </div>
+  <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/" hreflang="en" lang="en">English</a> <a href="/de/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/" hreflang="fr" lang="fr">Français</a> <a href="/es/" hreflang="es" lang="es">Español</a> <a href="/it/" hreflang="it" lang="it">Italiano</a> <a href="/pt/" hreflang="pt" lang="pt">Português</a> <a href="/nl/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/" hreflang="da" lang="da">Dansk</a> <a href="/fi/" hreflang="fi" lang="fi">Suomi</a> <a href="/pl/" hreflang="pl" lang="pl">Polski</a> <a href="/cs/" hreflang="cs" lang="cs">Čeština</a> <a href="/sk/" hreflang="sk" lang="sk">Slovenčina</a> <a href="/hu/" hreflang="hu" lang="hu">Magyar</a> <a href="/ro/" hreflang="ro" lang="ro">Română</a> <a href="/el/" hreflang="el" lang="el">Ελληνικά</a> <a href="/tr/" hreflang="tr" lang="tr">Türkçe</a> <a href="/ja/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/" hreflang="ko" lang="ko">한국어</a> <a href="/zh-hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="/he/" hreflang="he" lang="he">עברית</a> <a href="/ar/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
+  <p class="disclaimer">Sohbetler tarayıcınızda işlenir · Google ile giriş yalnızca PDF, toplu dışa aktarma ve Pro için · Anthropic, PBC ile bağlantılı değildir. Claude, Anthropic’in ticari markasıdır. Bağımsız Chrome uzantısı — resmi bir Anthropic ürünü değildir. Destek: <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

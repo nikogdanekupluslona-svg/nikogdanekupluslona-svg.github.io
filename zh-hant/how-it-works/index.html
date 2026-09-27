@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>運作方式：Claude 對話匯出全在本機完成</title>
+  <meta name="description" content="Download Claude conversations 的運作方式：檔案全在瀏覽器產生，多數匯出免帳號，僅 PDF、批次與 Pro 需 Google 登入。">
+  <link rel="canonical" href="https://chat-downloader.com/zh-hant/how-it-works/">
+  <!-- i18n:head -->
+  <link rel="alternate" hreflang="en" href="https://chat-downloader.com/how-it-works/">
+  <link rel="alternate" hreflang="de" href="https://chat-downloader.com/de/so-funktioniert-es/">
+  <link rel="alternate" hreflang="fr" href="https://chat-downloader.com/fr/comment-ca-marche/">
+  <link rel="alternate" hreflang="es" href="https://chat-downloader.com/es/como-funciona/">
+  <link rel="alternate" hreflang="it" href="https://chat-downloader.com/it/come-funziona/">
+  <link rel="alternate" hreflang="pt" href="https://chat-downloader.com/pt/como-funciona/">
+  <link rel="alternate" hreflang="nl" href="https://chat-downloader.com/nl/hoe-het-werkt/">
+  <link rel="alternate" hreflang="sv" href="https://chat-downloader.com/sv/sa-fungerar-det/">
+  <link rel="alternate" hreflang="nb" href="https://chat-downloader.com/nb/slik-fungerer-det/">
+  <link rel="alternate" hreflang="da" href="https://chat-downloader.com/da/saadan-virker-det/">
+  <link rel="alternate" hreflang="fi" href="https://chat-downloader.com/fi/nain-se-toimii/">
+  <link rel="alternate" hreflang="pl" href="https://chat-downloader.com/pl/jak-to-dziala/">
+  <link rel="alternate" hreflang="cs" href="https://chat-downloader.com/cs/jak-to-funguje/">
+  <link rel="alternate" hreflang="sk" href="https://chat-downloader.com/sk/ako-to-funguje/">
+  <link rel="alternate" hreflang="hu" href="https://chat-downloader.com/hu/hogyan-mukodik/">
+  <link rel="alternate" hreflang="ro" href="https://chat-downloader.com/ro/cum-functioneaza/">
+  <link rel="alternate" hreflang="el" href="https://chat-downloader.com/el/how-it-works/">
+  <link rel="alternate" hreflang="tr" href="https://chat-downloader.com/tr/nasil-calisir/">
+  <link rel="alternate" hreflang="ja" href="https://chat-downloader.com/ja/how-it-works/">
+  <link rel="alternate" hreflang="ko" href="https://chat-downloader.com/ko/how-it-works/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://chat-downloader.com/zh-hant/how-it-works/">
+  <link rel="alternate" hreflang="he" href="https://chat-downloader.com/he/how-it-works/">
+  <link rel="alternate" hreflang="ar" href="https://chat-downloader.com/ar/how-it-works/">
+  <link rel="alternate" hreflang="x-default" href="https://chat-downloader.com/how-it-works/">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="it_IT">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="sv_SE">
+  <meta property="og:locale:alternate" content="nb_NO">
+  <meta property="og:locale:alternate" content="da_DK">
+  <meta property="og:locale:alternate" content="fi_FI">
+  <meta property="og:locale:alternate" content="pl_PL">
+  <meta property="og:locale:alternate" content="cs_CZ">
+  <meta property="og:locale:alternate" content="sk_SK">
+  <meta property="og:locale:alternate" content="hu_HU">
+  <meta property="og:locale:alternate" content="ro_RO">
+  <meta property="og:locale:alternate" content="el_GR">
+  <meta property="og:locale:alternate" content="tr_TR">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <meta property="og:locale:alternate" content="he_IL">
+  <meta property="og:locale:alternate" content="ar_AE">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&amp;display=swap" rel="stylesheet">
+  <!-- /i18n:head -->
+  <meta property="og:title" content="運作方式：Claude 對話匯出全在本機完成">
+  <meta property="og:description" content="Download Claude conversations 的運作方式：檔案全在瀏覽器產生，多數匯出免帳號，僅 PDF、批次與 Pro 需 Google 登入。">
+  <meta property="og:url" content="https://chat-downloader.com/zh-hant/how-it-works/">
+  <meta property="og:image" content="https://chat-downloader.com/assets/widget-guide.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chat Downloader">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="運作方式：Claude 對話匯出全在本機完成">
+  <meta name="twitter:description" content="Download Claude conversations 的運作方式：檔案全在瀏覽器產生，多數匯出免帳號，僅 PDF、批次與 Pro 需 Google 登入。">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME1YXGZKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GME1YXGZKR');
+  </script>
+  
+  
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Download Claude conversations 會儲存我的聊天嗎？","acceptedAnswer":{"@type":"Answer","text":"不會。每次匯出（包括 PDF）都在本機產生，永遠不會上傳。如果你為 PDF、批次匯出或 Pro 用 Google 登入，我們只會儲存那個電子郵件地址，用來計算每日額度和綁定 Pro。聊天內容只留在 claude.ai 分頁和 Chrome 下載的檔案裡。"}},{"@type":"Question","name":"Google 登入是必要的，還是選用的？","acceptedAnswer":{"@type":"Answer","text":"只有 PDF、批次「Export All」和 Pro 需要。Markdown、文字、JSON、XML、CSV 和 PNG 的單一聊天匯出不需要帳號。PDF 和批次匯出從第一次使用就會要求登入，這樣重新安裝就無法重設每天 3 次的計數。它不是用來讀取你聊天內容的登入。"}},{"@type":"Question","name":"Pro 的付款由誰處理？","acceptedAnswer":{"@type":"Answer","text":"Paddle。我們永遠看不到你的卡片資料。Pro 是每月 US$3.99 或每年 US$26.99。Paddle 是正式的交易商家。退款透過 Paddle 處理。"}},{"@type":"Question","name":"這和 Anthropic 有關嗎？","acceptedAnswer":{"@type":"Answer","text":"沒有。這是獨立的 Chrome 擴充功能，與 Anthropic, PBC 沒有關聯。Claude 是 Anthropic 的商標。Download Claude conversations 的運作方式是使用你現有的 claude.ai 工作階段；它不會取代 Anthropic 的產品。"}},{"@type":"Question","name":"運作方式中包含 PDF 格式嗎？","acceptedAnswer":{"@type":"Answer","text":"包含。PDF 和其他六種格式一樣在瀏覽器中產生：Markdown、JSON、純文字、XML、CSV 和 PNG。過程中不會用到列印對話框。PDF 需要 Google 登入，在免費方案中計入每天 3 次。"}},{"@type":"Question","name":"匯出時，Worker 會看到什麼？","acceptedAnswer":{"@type":"Answer","text":"只有在你為 PDF、批次匯出或 Pro 登入之後：帳號的電子郵件地址、Pro 標記，以及今天已使用的 PDF 或批次匯出次數。Worker 不會收到對話內容。匯出流程始終留在瀏覽器中。"}},{"@type":"Question","name":"使用 Download Claude conversations 需要 Pro 嗎？","acceptedAnswer":{"@type":"Answer","text":"不需要。Markdown、文字、JSON、XML、CSV 和 PNG 的單一聊天匯出免費、不限次數，也不需要帳號。PDF 和批次 ZIP 用 Google 登入後每天免費 3 次。Pro（每月 US$3.99 或每年 US$26.99）取消這個上限。免費版和 Pro 的本機檔案產生流程完全相同。"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://chat-downloader.com/zh-hant/"},{"@type":"ListItem","position":2,"name":"運作方式","item":"https://chat-downloader.com/zh-hant/how-it-works/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">跳到主要內容</a>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a class="logo" href="/zh-hant/">
+        <img src="/assets/icon.svg" alt="">
+        <span>Download Claude conversations</span>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="/zh-hant/how-to-download-claude-chat/">下載教學</a><a href="/zh-hant/how-to-export-claude-chat/">匯出</a><a href="/zh-hant/bulk/">批次</a><a href="/zh-hant/formats/">格式</a><a href="/zh-hant/#faq">常見問題</a>
+        <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=zh-hant-how-it-works" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> 加到 Chrome</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=zh-hant-how-it-works" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> 加到 Chrome</a>
+      <!-- i18n:switch --><details class="lang-switch"><summary aria-label="語言: 繁體中文"><svg class="lang-globe" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span class="lang-name">繁體中文</span><span class="lang-code" aria-hidden="true">zh</span></summary><ul><li><a href="/how-it-works/" hreflang="en" lang="en">English</a></li><li><a href="/de/so-funktioniert-es/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/comment-ca-marche/" hreflang="fr" lang="fr">Français</a></li><li><a href="/es/como-funciona/" hreflang="es" lang="es">Español</a></li><li><a href="/it/come-funziona/" hreflang="it" lang="it">Italiano</a></li><li><a href="/pt/como-funciona/" hreflang="pt" lang="pt">Português</a></li><li><a href="/nl/hoe-het-werkt/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/sv/sa-fungerar-det/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="/nb/slik-fungerer-det/" hreflang="nb" lang="nb">Norsk</a></li><li><a href="/da/saadan-virker-det/" hreflang="da" lang="da">Dansk</a></li><li><a href="/fi/nain-se-toimii/" hreflang="fi" lang="fi">Suomi</a></li><li><a href="/pl/jak-to-dziala/" hreflang="pl" lang="pl">Polski</a></li><li><a href="/cs/jak-to-funguje/" hreflang="cs" lang="cs">Čeština</a></li><li><a href="/sk/ako-to-funguje/" hreflang="sk" lang="sk">Slovenčina</a></li><li><a href="/hu/hogyan-mukodik/" hreflang="hu" lang="hu">Magyar</a></li><li><a href="/ro/cum-functioneaza/" hreflang="ro" lang="ro">Română</a></li><li><a href="/el/how-it-works/" hreflang="el" lang="el">Ελληνικά</a></li><li><a href="/tr/nasil-calisir/" hreflang="tr" lang="tr">Türkçe</a></li><li><a href="/ja/how-it-works/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/ko/how-it-works/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/zh-hant/how-it-works/" hreflang="zh-Hant" lang="zh-Hant" aria-current="true">繁體中文</a></li><li><a href="/he/how-it-works/" hreflang="he" lang="he">עברית</a></li><li><a href="/ar/how-it-works/" hreflang="ar" lang="ar">العربية</a></li></ul></details><!-- /i18n:switch -->
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="選單">☰</button>
+    </div>
+  </div>
+</header>
+<nav class="crumbs" aria-label="導覽路徑"><a href="/zh-hant/">首頁</a> / 運作方式</nav>
+<main id="main">
+<article class="band prose">
+<p class="article-meta">更新於 <time datetime="2026-09">2026 年 9 月</time> · 擴充功能 1.16.2</p>
+<h1 class="page-h1">Download Claude conversations 在 Chrome 中的運作方式</h1>
+<p class="lead">Download Claude conversations 的運作方式：內容腳本讀取你分頁中已經顯示的 claude.ai 對話，在瀏覽器中產生 PDF、Markdown、JSON、文字、XML、CSV 或 PNG，再把檔案交給 Chrome。大多數匯出都不需要帳號。只有 PDF、批次 ZIP 和 Pro 才會要求 Google 登入，而且只會傳送你的電子郵件地址。聊天內容永遠不會傳到我們的 Worker（伺服器端程式）。Pro 透過 Paddle 付款，每月 US$3.99 或每年 US$26.99。</p>
+<aside class="trust-badge" aria-label="關於擴充功能">
+  <span class="trophy" aria-hidden="true">🧩</span>
+  <div>
+    <strong>Download Claude conversations：適用於 claude.ai 的免費 Chrome 擴充功能</strong>
+    <span>版本 1.16.2（2026 年 9 月）：Markdown、文字、JSON、XML、CSV 與 PNG 匯出不限次數、免帳號；PDF 與批次 ZIP 每天免費 3 次</span>
+  </div>
+</aside>
+<nav class="toc" aria-label="本頁內容">
+  <p>本頁內容</p>
+  <ol>
+    <li><a href="#content-script">擴充功能在 claude.ai 上的運作方式是什麼？</a></li>
+    <li><a href="#local">匯出的檔案是在本機產生的嗎？</a></li>
+    <li><a href="#google">為什麼額度要用 Google 登入來計算？</a></li>
+    <li><a href="#paddle">Paddle 與 Pro 的付款如何運作？</a></li>
+    <li><a href="#worker">匯出時，Worker 會看到什麼？</a></li>
+    <li><a href="#safe">使用這個 Claude 聊天匯出工具安全嗎？</a></li>
+    <li><a href="#faq">常見問題：Download Claude conversations 的運作方式</a></li>
+  </ol>
+</nav>
+
+<h2 id="content-script">擴充功能在 claude.ai 上的運作方式是什麼？</h2>
+<p>Download Claude conversations 在 claude.ai 上是這樣運作的：它會在你已經開啟的頁面注入一個內容腳本，使用你已經登入的工作階段。它讀取的是頁面上已顯示的對話，而不是另外呼叫 Anthropic 的 API。橘色按鈕只會出現在真正的對話網址上：一般聊天、Project 裡的聊天、Cowork 工作階段，或 Claude Code 網頁版。</p>
+<ol>
+<li>從 Chrome Web Store 安裝 Download Claude conversations。</li>
+<li>如果安裝時 claude.ai 分頁已經開著，請重新整理。</li>
+<li>開啟一個對話網址。橘色按鈕位於訊息輸入框的右側。</li>
+<li>選擇 PDF、Markdown、JSON、純文字、XML、CSV 或 PNG。按「Export」（匯出），或按「Copy」（複製）放到剪貼簿。</li>
+<li>Chrome 會下載檔案。除了 PDF 以外的每種格式，整個流程都在用戶端完成：不需要登入，也不會呼叫我們的伺服器。</li>
+</ol>
+<p>空白的輸入首頁沒有訊息結構，所以按鈕不會出現。如果圖示被隱藏，請在 Chrome 的拼圖選單中釘選擴充功能，再重新整理 claude.ai。這套運作方式只限於 claude.ai：Claude Desktop 和 Claude Code 終端機永遠不會載入這個腳本。功能清單：<a href="/zh-hant/features/">Chrome 擴充功能特色</a>。</p>
+<div class="callout callout-info">
+  <p><strong>同一個工作階段、同一個頁面。</strong>內容腳本看到的，就是你已登入的 claude.ai 分頁上已經顯示的內容。它不會用第二組密碼登入 Anthropic。請遵守 Anthropic 對你帳號的規範。</p>
+</div>
+
+<h2 id="local">匯出的檔案是在本機產生的嗎？</h2>
+<p>是的。Download Claude conversations 運作時，每種格式（包括 PDF）都在你的瀏覽器中組成，再交給 Chrome 的下載 API。對話文字永遠不會離開你的裝置、傳到我們的基礎設施。無論是用橘色按鈕匯出單一對話，還是在<a href="/zh-hant/bulk/">批次匯出頁面</a>上使用「Export All」（全部匯出），都是如此。</p>
+<p>claude.ai 載入對話後，產生檔案不需要等待我們的伺服器。PDF 和批次匯出會先另外檢查額度；其他格式的單一聊天匯出則會略過這一步。如果 Chrome 封鎖了來自 claude.ai 的下載，請允許下載；那是瀏覽器設定，不是解析失敗。很長的對話如果只捲動到一半，產出的檔案也只會有一半，因為 DOM 還不完整。</p>
+<div class="expert-quote">
+  <p>我們在設計 Download Claude conversations 的運作方式時守住一條底線：聊天內容只留在分頁裡。我們的 Worker 只回答「今天還剩幾次 PDF 或批次匯出」和「這個 Google 帳號是不是 Pro」。PDF 也是在瀏覽器中排版，不經過列印對話框，也不上傳。</p>
+  <footer>Download Claude conversations 團隊</footer>
+</div>
+<p>PNG 在本機繪製成圖片。PDF 在本機排版。JSON、XML 和 CSV 則從同一個結構在本機序列化。我們不會以電子郵件寄送任何這些檔案。Anthropic 的 Settings → Privacy → Export data（若 claude.ai 設為中文，選單名稱可能會顯示為中文）是 Anthropic 另外提供、延遲寄出的 ZIP，不是這條本機路徑。</p>
+
+<h2 id="google">為什麼額度要用 Google 登入來計算？</h2>
+<p>Google 登入只用於 PDF、批次「Export All」和 Pro。Markdown、Plain Text、JSON、XML、CSV 和 PNG 的單一聊天匯出永遠不會要求登入，也不會傳送任何資料。你第一次選擇 PDF 或執行「Export All」時，擴充功能會請你登入。我們會儲存經過驗證的電子郵件地址，不會儲存聊天文字。</p>
+<p>這個電子郵件地址是伺服器端每日計數的依據：免費方案每天合計 3 次 PDF 或批次匯出，在 UTC 午夜重設。批次 ZIP 裡的每個聊天各算一次。如果批次選取的數量超過今天剩下的額度，整批會被擋下，而不是只匯出一部分。因為計數存在我們的 Worker 上，移除再重新安裝擴充功能並不會重設它。Pro（每月 US$3.99 或每年 US$26.99）在新電腦上用同一個 Google 帳號登入即可恢復。</p>
+<p>Google 登入不是登入 claude.ai。你在網站上仍然使用自己的 Anthropic 工作階段。Download Claude conversations 只需要 Google 帳號來記錄每日計數和 Pro。也有人搜尋 Claude Chat Downloader 找到同一個商店頁面；登入規則完全相同。</p>
+<div class="callout callout-warn">
+  <p><strong>每日限制以帳號計算。</strong>免費方案每天合計 3 次 PDF 或批次匯出。只剩 3 次時選了 40 個對話，整批會被擋下，而不是匯出前三個。登入是讓這個計數在重新安裝後依然有效的方式。</p>
+</div>
+
+<h2 id="paddle">Paddle 與 Pro 的付款如何運作？</h2>
+<p>Paddle.com Market Limited 是付款處理商，也是正式的交易商家。Download Claude conversations 的計費是這樣運作的：由 Paddle 收取卡片資料和稅金。我們永遠看不到付款資料。Pro 是每月 US$3.99 或每年 US$26.99。隨時可以在設定頁（「Cancel subscription」，取消訂閱）或透過 Paddle 取消。首次付款享有 14 天退款保證。</p>
+<p>Pro 取消 PDF 和批次「Export All」每天 3 次的上限。其他功能在免費方案中就已經不限次數。Pro 不會加入 Notion 或 Word；格式仍然是同樣七種：PDF、Markdown、JSON、文字、XML、CSV 和 PNG。你不需要 Anthropic 的付費 claude.ai 方案。任何能在 Chrome 中載入對話的 claude.ai 帳號都可以。</p>
+<table>
+  <caption>你付的費用與得到的功能</caption>
+  <thead>
+    <tr>
+      <th scope="col">方案</th>
+      <th scope="col">匯出</th>
+      <th scope="col">價格</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>免費，不需帳號</td>
+      <td>Markdown、文字、JSON、XML、CSV、PNG 不限次數</td>
+      <td>US$0</td>
+    </tr>
+    <tr>
+      <td>免費，Google 登入</td>
+      <td>另加每天 3 次 PDF 或批次匯出</td>
+      <td>US$0</td>
+    </tr>
+    <tr>
+      <td>Pro 月繳</td>
+      <td>PDF＋「Export All」不限次數</td>
+      <td>每月 US$3.99，透過 Paddle</td>
+    </tr>
+    <tr>
+      <td>Pro 年繳</td>
+      <td>相同，不限次數</td>
+      <td>每年 US$26.99，透過 Paddle</td>
+    </tr>
+  </tbody>
+</table>
+<p>如果工作區管理員封鎖了 Chrome 擴充功能，付款也無法讓按鈕出現。那是瀏覽器政策。只要腳本獲准執行，claude.ai 的 Team 和 Enterprise 方案使用橘色按鈕的方式都和 Free 相同。</p>
+
+<h2 id="worker">匯出時，Worker 會看到什麼？</h2>
+<p>一個 Cloudflare Worker 負責檢查訂閱和額度狀態：這個用 Google 登入的帳號是否為 Pro，以及今天已經用了幾次 PDF 或批次匯出。它只會收到帳號的電子郵件地址，而且只在你為 PDF、批次匯出或 Pro 登入之後。Download Claude conversations 運作時，這個 Worker 不會收到對話內容。其他格式的單一聊天匯出完全不會連到它。</p>
+<p>正因為有 Worker，重新安裝無法重設每日計數，Pro 也才能恢復。它不是聊天備份。Anthropic 仍然在他們那邊保存你的 claude.ai 對話紀錄。我們不保留第二份副本。本網站的隱私權政策說明了我們儲存的電子郵件地址。</p>
+<p>1.16.2 版，2026 年 9 月。如果連不上 Worker，你可能暫時無法開始 PDF 或批次匯出，直到狀態可以確認為止。那是授權檢查，不是要求上傳對話。檢查通過後，檔案仍然在本機組成。其他格式的單一聊天匯出不需要等待它。</p>
+
+<h2 id="safe">使用這個 Claude 聊天匯出工具安全嗎？</h2>
+<p>我們不會保證每條路徑都「零網路連線」。Markdown、文字、JSON、XML、CSV 和 PNG 的單一聊天匯出不會連到我們。PDF、批次匯出和 Pro 會連到 Google 和我們的 Worker，Pro 還會連到 Paddle。聊天內容不會傳到我們的 API；傳送的是帳號電子郵件地址和額度狀態。腳本不會在你的 Anthropic 帳號上自動執行其他動作。</p>
+<table>
+  <caption>匯出工具執行時，誰會看到什麼</caption>
+  <thead>
+    <tr>
+      <th scope="col">對象</th>
+      <th scope="col">會看到聊天內容嗎？</th>
+      <th scope="col">看到的是</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>你的瀏覽器</td>
+      <td>會，由它產生檔案</td>
+      <td>你已經載入的 claude.ai DOM</td>
+    </tr>
+    <tr>
+      <td>我們的 Cloudflare Worker</td>
+      <td>不會</td>
+      <td>僅限登入後：電子郵件地址、今天的 PDF／批次匯出次數、Pro 標記</td>
+    </tr>
+    <tr>
+      <td>Google</td>
+      <td>不會（我們不傳送）</td>
+      <td>你為 PDF、批次匯出或 Pro 登入所選的帳號</td>
+    </tr>
+    <tr>
+      <td>Paddle</td>
+      <td>不會</td>
+      <td>訂閱時的付款資料</td>
+    </tr>
+    <tr>
+      <td>Anthropic</td>
+      <td>他們原本的 claude.ai 工作階段</td>
+      <td>不受這個擴充功能影響</td>
+    </tr>
+  </tbody>
+</table>
+<p>Download Claude conversations 與 Anthropic, PBC 沒有關聯。使用這個 Claude 聊天匯出工具不會改變 Anthropic 的服務條款。想知道「用 Claude 匯出工具安全嗎」的人，看這張表就知道：伺服器看到的是計費狀態，瀏覽器看到的是你的聊天。格式清單：<a href="/zh-hant/formats/">Claude 聊天匯出格式</a>。</p>
+<p>PDF 和其他格式一樣在瀏覽器中產生：<a href="/zh-hant/download-claude-chat-as-pdf/">Claude 聊天存成 PDF</a>。行動瀏覽器和 Claude Desktop 不在支援範圍內。請在桌面版 Chrome 的 claude.ai 上開啟對話，再進行匯出。</p>
+
+<h2 id="faq">常見問題：Download Claude conversations 的運作方式</h2>
+<p>這些常見問題說明 Download Claude conversations 的運作方式：本機檔案、Google 登入、Paddle、Worker、與 Anthropic 的關係、每日限制和 Pro。每個回答都是 1.16.2 版的產品事實。頁首的 FAQPage JSON-LD 與本頁的這份清單一致。</p>
+
+<h3>Download Claude conversations 會儲存我的聊天嗎？</h3>
+<p>不會。每次匯出（包括 PDF）都在本機產生，永遠不會上傳。如果你為 PDF、批次匯出或 Pro 用 Google 登入，我們只會儲存那個電子郵件地址，用來計算每日額度和綁定 Pro。聊天內容只留在 claude.ai 分頁和 Chrome 下載的檔案裡。</p>
+
+<h3>Google 登入是必要的，還是選用的？</h3>
+<p>只有 PDF、批次「Export All」和 Pro 需要。Markdown、文字、JSON、XML、CSV 和 PNG 的單一聊天匯出不需要帳號。PDF 和批次匯出從第一次使用就會要求登入，這樣重新安裝就無法重設每天 3 次的計數。它不是用來讀取你聊天內容的登入。</p>
+
+<h3>Pro 的付款由誰處理？</h3>
+<p>Paddle。我們永遠看不到你的卡片資料。Pro 是每月 US$3.99 或每年 US$26.99。Paddle 是正式的交易商家。退款透過 Paddle 處理。</p>
+
+<h3>這和 Anthropic 有關嗎？</h3>
+<p>沒有。這是獨立的 Chrome 擴充功能，與 Anthropic, PBC 沒有關聯。Claude 是 Anthropic 的商標。Download Claude conversations 的運作方式是使用你現有的 claude.ai 工作階段；它不會取代 Anthropic 的產品。</p>
+
+<h3>運作方式中包含 PDF 格式嗎？</h3>
+<p>包含。PDF 和其他六種格式一樣在瀏覽器中產生：Markdown、JSON、純文字、XML、CSV 和 PNG。過程中不會用到列印對話框。PDF 需要 Google 登入，在免費方案中計入每天 3 次。</p>
+
+<h3>匯出時，Worker 會看到什麼？</h3>
+<p>只有在你為 PDF、批次匯出或 Pro 登入之後：帳號的電子郵件地址、Pro 標記，以及今天已使用的 PDF 或批次匯出次數。Worker 不會收到對話內容。匯出流程始終留在瀏覽器中。</p>
+
+<h3>使用 Download Claude conversations 需要 Pro 嗎？</h3>
+<p>不需要。Markdown、文字、JSON、XML、CSV 和 PNG 的單一聊天匯出免費、不限次數，也不需要帳號。PDF 和批次 ZIP 用 Google 登入後每天免費 3 次。Pro（每月 US$3.99 或每年 US$26.99）取消這個上限。免費版和 Pro 的本機檔案產生流程完全相同。</p>
+</article>
+</main>
+<section class="final-cta page-cta" aria-label="安裝">
+  <div class="wrap">
+    <div class="final-cta-panel">
+      <p class="final-kicker">Download Claude conversations</p>
+      <h2>安裝擴充功能，幾秒內下載 Claude 聊天</h2>
+      <p>把重要的 Claude 對話存成 PDF、Markdown、JSON、文字、CSV、XML 或 PNG，在 Chrome 中於本機完成。</p>
+      <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=zh-hant-how-it-works" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> 加到 Chrome</a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="logo" href="/zh-hant/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
+      <p class="legal-note">把 Claude.ai 聊天下載成 PDF、Markdown、JSON、純文字、CSV、XML 或 PNG 的 Chrome 擴充功能。</p>
+    </div>
+    <div>
+      <h2>安裝</h2>
+      <a class="install-link" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=zh-hant-footer" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Chrome 擴充功能</a>
+    </div>
+    <div>
+      <h2>產品</h2>
+      <a href="/zh-hant/features/">功能</a>
+      <a href="/zh-hant/formats/">格式</a>
+      <a href="/zh-hant/bulk/">批次下載</a>
+      <a href="/zh-hant/how-it-works/">運作方式</a>
+    </div>
+    <div>
+      <h2>教學</h2>
+      <a href="/zh-hant/how-to-download-claude-chat/">如何下載 Claude 聊天</a>
+      <a href="/zh-hant/how-to-export-claude-chat/">如何匯出 Claude 聊天</a>
+      <a href="/zh-hant/export-claude-chat/">匯出 Claude 聊天</a>
+      <a href="/zh-hant/claude-conversation-extractor/">Claude 對話擷取工具</a>
+      <a href="/zh-hant/claude-code-export/">Claude Code 匯出</a>
+      <a href="/zh-hant/download-claude-chat-as-pdf/">Claude 聊天存成 PDF</a>
+      <a href="/zh-hant/export-claude-desktop-chat/">Claude Desktop 匯出</a>
+      <a href="/zh-hant/claude-export-conversation/">Claude 對話匯出</a>
+      <a href="/zh-hant/how-to-save-claude-conversation/">如何儲存 Claude 對話</a>
+      <a href="/zh-hant/download-claude-conversation/">下載 Claude 對話</a>
+    </div>
+    <div>
+      <h2>法律資訊</h2>
+      <a href="/zh-hant/about/">關於我們</a>
+      <a href="/zh-hant/about/#contact">聯絡我們</a>
+      <a href="/privacy/" hreflang="en">隱私權 （英文）</a>
+      <a href="/terms/" hreflang="en">條款 （英文）</a>
+      <a href="/refund/" hreflang="en">退款 （英文）</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Download Claude conversations. 保留所有權利。</div>
+    <div>
+      <a href="/privacy/" hreflang="en">隱私權政策 （英文）</a>
+      <a href="/terms/" hreflang="en">服務條款 （英文）</a>
+      <a href="/refund/" hreflang="en">退款 （英文）</a>
+    </div>
+  </div>
+  <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/how-it-works/" hreflang="en" lang="en">English</a> <a href="/de/so-funktioniert-es/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/comment-ca-marche/" hreflang="fr" lang="fr">Français</a> <a href="/es/como-funciona/" hreflang="es" lang="es">Español</a> <a href="/it/come-funziona/" hreflang="it" lang="it">Italiano</a> <a href="/pt/como-funciona/" hreflang="pt" lang="pt">Português</a> <a href="/nl/hoe-het-werkt/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/sa-fungerar-det/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/slik-fungerer-det/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/saadan-virker-det/" hreflang="da" lang="da">Dansk</a> <a href="/fi/nain-se-toimii/" hreflang="fi" lang="fi">Suomi</a> <a href="/pl/jak-to-dziala/" hreflang="pl" lang="pl">Polski</a> <a href="/cs/jak-to-funguje/" hreflang="cs" lang="cs">Čeština</a> <a href="/sk/ako-to-funguje/" hreflang="sk" lang="sk">Slovenčina</a> <a href="/hu/hogyan-mukodik/" hreflang="hu" lang="hu">Magyar</a> <a href="/ro/cum-functioneaza/" hreflang="ro" lang="ro">Română</a> <a href="/el/how-it-works/" hreflang="el" lang="el">Ελληνικά</a> <a href="/tr/nasil-calisir/" hreflang="tr" lang="tr">Türkçe</a> <a href="/ja/how-it-works/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/how-it-works/" hreflang="ko" lang="ko">한국어</a> <a href="/zh-hant/how-it-works/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="/he/how-it-works/" hreflang="he" lang="he">עברית</a> <a href="/ar/how-it-works/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
+  <p class="disclaimer">聊天在你的瀏覽器中處理 · 只有 PDF、批次匯出和 Pro 需要 Google 登入 · 與 Anthropic, PBC 無關。Claude 是 Anthropic 的商標。本擴充功能為獨立開發的 Chrome 擴充功能，不是 Anthropic 的官方產品。客服： <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>
