@@ -972,7 +972,13 @@ h1.page-h1 {
   border: 1px solid var(--line);
   border-radius: 10px;
   box-shadow: var(--shadow);
-  min-width: 11rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(9rem, 1fr));
+  gap: 2px;
+  width: max-content;
+  max-width: calc(100vw - 32px);
+  max-height: min(70vh, 34rem);
+  overflow-y: auto;
   z-index: 12;
 }
 .lang-switch li a {
@@ -992,11 +998,14 @@ h1.page-h1 {
 :root:lang(ja) { --sans: "Figtree", "Noto Sans JP", "Hiragino Sans", "Yu Gothic", sans-serif; --serif: "Noto Sans JP", "Hiragino Sans", sans-serif; }
 :root:lang(ko) { --sans: "Figtree", "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; --serif: "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; }
 :root:lang(he) { --sans: "Figtree", "Noto Sans Hebrew", Arial, sans-serif; --serif: "Noto Sans Hebrew", Arial, sans-serif; }
+:root:lang(el) { --sans: "Figtree", "Noto Sans", Arial, sans-serif; --serif: "Noto Sans", Arial, sans-serif; }
+:root:lang(zh-Hant) { --sans: "Figtree", "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif; --serif: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif; }
 :root:lang(ar) { --sans: "Figtree", "Noto Sans Arabic", Tahoma, sans-serif; --serif: "Noto Sans Arabic", Tahoma, sans-serif; }
-:root:lang(ja) body, :root:lang(ko) body { overflow-wrap: anywhere; line-height: 1.8; }
+:root:lang(ja) body, :root:lang(ko) body, :root:lang(zh-Hant) body { overflow-wrap: anywhere; line-height: 1.8; }
 /* Korean breaks at spaces; Japanese has none, so break at phrase boundaries where supported. */
 :root:lang(ko) body { word-break: keep-all; }
 :root:lang(ja) body { line-break: strict; word-break: auto-phrase; }
+:root:lang(zh-Hant) body { line-break: strict; }
 :root:lang(ar) body { line-height: 1.85; }
 [dir="rtl"] code, [dir="rtl"] pre, [dir="rtl"] kbd { direction: ltr; unicode-bidi: isolate; }
 

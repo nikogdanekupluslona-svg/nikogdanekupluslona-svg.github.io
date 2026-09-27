@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Πώς να αποθηκεύσετε συνομιλία Claude ως αρχείο</title>
+  <meta name="description" content="Το ιστορικό του Claude.ai ήδη κρατά τις συνομιλίες. Για αποθήκευση ως αρχείο: επέκταση Chrome, εκτύπωση ή επίσημο Export data. Κουμπί Save δεν υπάρχει.">
+  <link rel="canonical" href="https://chat-downloader.com/el/how-to-save-claude-conversation/">
+  <!-- i18n:head -->
+  <link rel="alternate" hreflang="en" href="https://chat-downloader.com/how-to-save-claude-conversation/">
+  <link rel="alternate" hreflang="de" href="https://chat-downloader.com/de/claude-chat-speichern/">
+  <link rel="alternate" hreflang="fr" href="https://chat-downloader.com/fr/sauvegarder-conversation-claude/">
+  <link rel="alternate" hreflang="es" href="https://chat-downloader.com/es/como-guardar-conversacion-claude/">
+  <link rel="alternate" hreflang="it" href="https://chat-downloader.com/it/come-salvare-chat-claude/">
+  <link rel="alternate" hreflang="pt" href="https://chat-downloader.com/pt/como-salvar-conversa-claude/">
+  <link rel="alternate" hreflang="nl" href="https://chat-downloader.com/nl/claude-gesprek-opslaan/">
+  <link rel="alternate" hreflang="sv" href="https://chat-downloader.com/sv/spara-claude-konversation/">
+  <link rel="alternate" hreflang="nb" href="https://chat-downloader.com/nb/lagre-claude-samtale/">
+  <link rel="alternate" hreflang="da" href="https://chat-downloader.com/da/gem-claude-samtale/">
+  <link rel="alternate" hreflang="fi" href="https://chat-downloader.com/fi/tallenna-claude-keskustelu/">
+  <link rel="alternate" hreflang="pl" href="https://chat-downloader.com/pl/jak-zapisac-rozmowe-claude/">
+  <link rel="alternate" hreflang="cs" href="https://chat-downloader.com/cs/jak-ulozit-konverzaci-claude/">
+  <link rel="alternate" hreflang="sk" href="https://chat-downloader.com/sk/ako-ulozit-konverzaciu-claude/">
+  <link rel="alternate" hreflang="hu" href="https://chat-downloader.com/hu/claude-beszelgetes-mentese/">
+  <link rel="alternate" hreflang="ro" href="https://chat-downloader.com/ro/cum-salvati-conversatie-claude/">
+  <link rel="alternate" hreflang="el" href="https://chat-downloader.com/el/how-to-save-claude-conversation/">
+  <link rel="alternate" hreflang="tr" href="https://chat-downloader.com/tr/claude-sohbet-kaydetme/">
+  <link rel="alternate" hreflang="ja" href="https://chat-downloader.com/ja/how-to-save-claude-conversation/">
+  <link rel="alternate" hreflang="ko" href="https://chat-downloader.com/ko/how-to-save-claude-conversation/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://chat-downloader.com/zh-hant/how-to-save-claude-conversation/">
+  <link rel="alternate" hreflang="he" href="https://chat-downloader.com/he/how-to-save-claude-conversation/">
+  <link rel="alternate" hreflang="ar" href="https://chat-downloader.com/ar/how-to-save-claude-conversation/">
+  <link rel="alternate" hreflang="x-default" href="https://chat-downloader.com/how-to-save-claude-conversation/">
+  <meta property="og:locale" content="el_GR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="it_IT">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="sv_SE">
+  <meta property="og:locale:alternate" content="nb_NO">
+  <meta property="og:locale:alternate" content="da_DK">
+  <meta property="og:locale:alternate" content="fi_FI">
+  <meta property="og:locale:alternate" content="pl_PL">
+  <meta property="og:locale:alternate" content="cs_CZ">
+  <meta property="og:locale:alternate" content="sk_SK">
+  <meta property="og:locale:alternate" content="hu_HU">
+  <meta property="og:locale:alternate" content="ro_RO">
+  <meta property="og:locale:alternate" content="tr_TR">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <meta property="og:locale:alternate" content="zh_TW">
+  <meta property="og:locale:alternate" content="he_IL">
+  <meta property="og:locale:alternate" content="ar_AE">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet">
+  <!-- /i18n:head -->
+  <meta property="og:title" content="Πώς να αποθηκεύσετε συνομιλία Claude ως αρχείο">
+  <meta property="og:description" content="Το ιστορικό του Claude.ai ήδη κρατά τις συνομιλίες. Για αποθήκευση ως αρχείο: επέκταση Chrome, εκτύπωση ή επίσημο Export data. Κουμπί Save δεν υπάρχει.">
+  <meta property="og:url" content="https://chat-downloader.com/el/how-to-save-claude-conversation/">
+  <meta property="og:image" content="https://chat-downloader.com/assets/widget-guide.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chat Downloader">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Πώς να αποθηκεύσετε συνομιλία Claude ως αρχείο">
+  <meta name="twitter:description" content="Το ιστορικό του Claude.ai ήδη κρατά τις συνομιλίες. Για αποθήκευση ως αρχείο: επέκταση Chrome, εκτύπωση ή επίσημο Export data. Κουμπί Save δεν υπάρχει.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME1YXGZKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GME1YXGZKR');
+  </script>
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Πώς αποθηκεύω μια συνομιλία Claude ως αρχείο;","acceptedAnswer":{"@type":"Answer","text":"Εγκαταστήστε την Download Claude conversations, ανοίξτε το νήμα στο claude.ai, κάντε κλικ στο πορτοκαλί κουμπί δεξιά από το πλαίσιο μηνύματος, επιλέξτε PDF, Markdown, JSON, κείμενο, XML, CSV ή PNG και πατήστε «Export». Το αρχείο κατεβαίνει τοπικά, χωρίς λογαριασμό, εκτός από το PDF. Το ιστορικό έχει ήδη αποθηκεύσει τη συνομιλία στον λογαριασμό Anthropic· το πορτοκαλί κουμπί γράφει ένα αντίγραφο στον δίσκο."}},{"@type":"Question","name":"Πώς αποθηκεύω ένα chat του Claude στο claude.ai;","acceptedAnswer":{"@type":"Answer","text":"Δεν χρειάζεστε κουμπί «Save» για να κρατήσετε το νήμα στον λογαριασμό. Το ιστορικό του Claude.ai ήδη δείχνει τις συνομιλίες σας με σύνδεση. Για να αποθηκεύσετε ένα chat ως αρχείο, χρησιμοποιήστε την επέκταση Chrome, Εκτύπωση → Αποθήκευση ως PDF, ή Settings → Privacy → Export data για ένα ZIP με JSON του λογαριασμού, που φτάνει με καθυστέρηση."}},{"@type":"Question","name":"Πώς αποθηκεύω μια συνομιλία στο Claude χωρίς επέκταση;","acceptedAnswer":{"@type":"Answer","text":"Εκτυπώστε τη σελίδα του claude.ai (Ctrl/Cmd+P → Αποθήκευση ως PDF) για ένα οπτικό αντίγραφο, ή χρησιμοποιήστε το Settings → Privacy → Export data για ένα ZIP με JSON ολόκληρου του λογαριασμού μέσω email. Η αντιγραφή-επικόλληση αρκεί για μια σύντομη απάντηση. Καμία από αυτές τις μεθόδους δεν γράφει δομημένο αρχείο Markdown ανά συνομιλία, όπως κάνει η επέκταση Chrome."}},{"@type":"Question","name":"Αποθηκεύει ήδη το Claude τις συνομιλίες στο ιστορικό;","acceptedAnswer":{"@type":"Answer","text":"Ναι. Οι συνομιλίες με σύνδεση στο claude.ai μένουν στο ιστορικό του λογαριασμού Anthropic. Το κλείσιμο της καρτέλας, η ανανέωση ή το άνοιγμα άλλης συσκευής με την ίδια σύνδεση δεν σβήνουν το νήμα. Το ιστορικό δεν είναι PDF, Markdown, JSON ή οποιοδήποτε άλλο αρχείο στον δίσκο σας."}},{"@type":"Question","name":"Θα χαθεί μια συνομιλία Claude αν κλείσω την καρτέλα;","acceptedAnswer":{"@type":"Answer","text":"Όχι. Το κλείσιμο μιας καρτέλας του claude.ai δεν διαγράφει τη συνομιλία από το ιστορικό. Η διαγραφή της συνομιλίας από το ιστορικό την αφαιρεί από τη διεπαφή του λογαριασμού. Ένα αρχείο που έχετε ήδη εξαγάγει με την Download Claude conversations μένει στον δίσκο ακόμη και μετά τη διαγραφή."}},{"@type":"Question","name":"Μπορώ να αποθηκεύσω μια συνομιλία Claude σε PDF;","acceptedAnswer":{"@type":"Answer","text":"Ναι. Η Download Claude conversations 1.16.2 εξάγει απευθείας σε PDF: επιλέξτε PDF στο πάνελ του πορτοκαλί κουμπιού και πατήστε «Export». Το αρχείο δημιουργείται στο πρόγραμμα περιήγησης, χωρίς παράθυρο εκτύπωσης. Το PDF χρειάζεται σύνδεση με Google και είναι δωρεάν έως 3 την ημέρα· στο Pro είναι απεριόριστο. Οδηγός: συνομιλία Claude σε PDF."}},{"@type":"Question","name":"Πόσα δωρεάν αρχεία μπορώ να αποθηκεύσω;","acceptedAnswer":{"@type":"Answer","text":"Απεριόριστα για Markdown, Plain Text, JSON, XML, CSV και PNG, χωρίς λογαριασμό. Το PDF και το μαζικό ZIP μοιράζονται 3 την ημέρα στο δωρεάν πρόγραμμα, με σύνδεση Google· κάθε συνομιλία σε μαζικό ZIP μετρά ως μία, και η ημέρα μηδενίζεται τα μεσάνυχτα UTC. Το Pro κοστίζει 3,99 $ τον μήνα ή 26,99 $ τον χρόνο και καταργεί το όριο. Την πληρωμή τη διεκπεραιώνει η Paddle."}},{"@type":"Question","name":"Λειτουργεί η αποθήκευση συνομιλιών σε κινητό;","acceptedAnswer":{"@type":"Answer","text":"Η επέκταση Chrome όχι. Τρέχει στο Chrome για υπολογιστή (ή σε άλλο πρόγραμμα περιήγησης Chromium που εγκαθιστά στοιχεία από το Chrome Web Store). Δεν υπάρχει εφαρμογή για iOS ή Android. Τα προγράμματα περιήγησης κινητών μπορούν ακόμη να ανοίξουν το ιστορικό και να εκτυπώσουν μια συνομιλία Claude· δεν μπορούν να δείξουν το πορτοκαλί κουμπί."}},{"@type":"Question","name":"Μπορώ να αποθηκεύσω μαζικά συνομιλίες από το ιστορικό;","acceptedAnswer":{"@type":"Answer","text":"Ναι. Ανοίξτε το «View and Download All Conversations» από το αναδυόμενο παράθυρο της επέκτασης, φιλτράρετε τον πίνακα και πατήστε «Export All». Η μαζική εξαγωγή χρειάζεται σύνδεση με Google και μετρά στο όριο των 3 την ημέρα του δωρεάν προγράμματος. Αυτή η μαζική διαδρομή δεν είναι το ZIP του Export data της Anthropic. Το επίσημο Export data είναι ένα αρχείο ολόκληρου του λογαριασμού, που στέλνεται αργότερα με email. Δείτε τη μαζική λήψη."}},{"@type":"Question","name":"Αποθηκεύει συνομιλίες από το Claude Code;","acceptedAnswer":{"@type":"Answer","text":"Μόνο στο web. Τα sessions του Claude Code στο claude.ai/code αποθηκεύονται όπως κάθε συνομιλία του claude.ai. Τα τοπικά sessions τερματικού όχι: χρησιμοποιήστε /export ή αντιγράψτε το JSONL από το ~/.claude/projects (Windows: %USERPROFILE%\\.claude\\projects). Αυτή η επέκταση Chrome τρέχει μόνο στο claude.ai. Οδηγός: εξαγωγή Claude Code."}},{"@type":"Question","name":"Χρειάζεται σύνδεση με Google για να αποθηκεύσω ένα chat του Claude;","acceptedAnswer":{"@type":"Answer","text":"Όχι, όχι για Markdown, Plain Text, JSON, XML, CSV ή PNG. Η σύνδεση με Google απαιτείται μόνο για PDF, μαζικό «Export All» και Pro, ώστε να εφαρμόζουμε το όριο των 3 την ημέρα και να επαναφέρουμε το Pro μετά από επανεγκατάσταση. Με αυτή τη σύνδεση δεν στέλνεται περιεχόμενο συνομιλιών. Αποθηκεύουμε το επαληθευμένο email μόνο για το όριο και την κατάσταση Pro."}},{"@type":"Question","name":"Πού βρίσκεται το επίσημο Export data για αποθήκευση συνομιλιών Claude;","acceptedAnswer":{"@type":"Answer","text":"Στο claude.ai: Settings → Privacy → Export data. Η Anthropic στέλνει με email έναν σύνδεσμο που λήγει. Το ZIP είναι αρχείο JSON σε επίπεδο λογαριασμού, όχι αρχείο Markdown με όνομα για τη συνομιλία που διαβάζατε. Χρησιμοποιήστε το Export data ως αντίγραφο ασφαλείας· χρησιμοποιήστε το πορτοκαλί κουμπί για ένα αναγνώσιμο αρχείο τώρα."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Πώς να αποθηκεύσετε μια συνομιλία Claude ως αρχείο που κρατάτε","description":"Το ιστορικό του Claude.ai ήδη κρατά τις συνομιλίες. Για αποθήκευση ως αρχείο: επέκταση Chrome, εκτύπωση ή επίσημο Export data. Κουμπί Save δεν υπάρχει.","url":"https://chat-downloader.com/el/how-to-save-claude-conversation/","dateModified":"2026-09-25","datePublished":"2026-09-15","inLanguage":"el","author":{"@type":"Organization","name":"Chat Downloader","url":"https://chat-downloader.com/el/"},"publisher":{"@type":"Organization","name":"Chat Downloader","url":"https://chat-downloader.com/el/"},"mainEntityOfPage":"https://chat-downloader.com/el/how-to-save-claude-conversation/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Αρχική","item":"https://chat-downloader.com/el/"},{"@type":"ListItem","position":2,"name":"Αποθήκευση","item":"https://chat-downloader.com/el/how-to-save-claude-conversation/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Μετάβαση στο περιεχόμενο</a>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a class="logo" href="/el/">
+        <img src="/assets/icon.svg" alt="">
+        <span>Download Claude conversations</span>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="/el/how-to-download-claude-chat/">Λήψη</a><a href="/el/how-to-export-claude-chat/">Εξαγωγή</a><a href="/el/bulk/">Ιστορικό</a><a href="/el/formats/">Μορφές</a><a href="/el/#faq">Ερωτήσεις</a>
+        <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=el-how-to-save-claude-conversation" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Προσθήκη στο Chrome</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=el-how-to-save-claude-conversation" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Προσθήκη στο Chrome</a>
+      <!-- i18n:switch --><details class="lang-switch"><summary aria-label="Γλώσσα: Ελληνικά"><svg class="lang-globe" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span class="lang-name">Ελληνικά</span><span class="lang-code" aria-hidden="true">el</span></summary><ul><li><a href="/how-to-save-claude-conversation/" hreflang="en" lang="en">English</a></li><li><a href="/de/claude-chat-speichern/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/sauvegarder-conversation-claude/" hreflang="fr" lang="fr">Français</a></li><li><a href="/es/como-guardar-conversacion-claude/" hreflang="es" lang="es">Español</a></li><li><a href="/it/come-salvare-chat-claude/" hreflang="it" lang="it">Italiano</a></li><li><a href="/pt/como-salvar-conversa-claude/" hreflang="pt" lang="pt">Português</a></li><li><a href="/nl/claude-gesprek-opslaan/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/sv/spara-claude-konversation/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="/nb/lagre-claude-samtale/" hreflang="nb" lang="nb">Norsk</a></li><li><a href="/da/gem-claude-samtale/" hreflang="da" lang="da">Dansk</a></li><li><a href="/fi/tallenna-claude-keskustelu/" hreflang="fi" lang="fi">Suomi</a></li><li><a href="/pl/jak-zapisac-rozmowe-claude/" hreflang="pl" lang="pl">Polski</a></li><li><a href="/cs/jak-ulozit-konverzaci-claude/" hreflang="cs" lang="cs">Čeština</a></li><li><a href="/sk/ako-ulozit-konverzaciu-claude/" hreflang="sk" lang="sk">Slovenčina</a></li><li><a href="/hu/claude-beszelgetes-mentese/" hreflang="hu" lang="hu">Magyar</a></li><li><a href="/ro/cum-salvati-conversatie-claude/" hreflang="ro" lang="ro">Română</a></li><li><a href="/el/how-to-save-claude-conversation/" hreflang="el" lang="el" aria-current="true">Ελληνικά</a></li><li><a href="/tr/claude-sohbet-kaydetme/" hreflang="tr" lang="tr">Türkçe</a></li><li><a href="/ja/how-to-save-claude-conversation/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/ko/how-to-save-claude-conversation/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/zh-hant/how-to-save-claude-conversation/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li><li><a href="/he/how-to-save-claude-conversation/" hreflang="he" lang="he">עברית</a></li><li><a href="/ar/how-to-save-claude-conversation/" hreflang="ar" lang="ar">العربية</a></li></ul></details><!-- /i18n:switch -->
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Μενού">☰</button>
+    </div>
+  </div>
+</header>
+<nav class="crumbs" aria-label="Διαδρομή πλοήγησης"><a href="/el/">Αρχική</a> / Αποθήκευση</nav>
+<main id="main">
+<article class="band prose">
+<p class="article-meta">Ενημέρωση <time datetime="2026-09">Σεπτέμβριος 2026</time> · Επέκταση 1.16.2</p>
+<h1 class="page-h1">Πώς να αποθηκεύσετε μια συνομιλία Claude ως αρχείο που κρατάτε</h1>
+<p class="lead">Πριν μάθετε πώς να αποθηκεύσετε μια συνομιλία Claude ως αρχείο, να ξέρετε ότι το Claude.ai ήδη κρατά κάθε συνομιλία σας, όταν είστε συνδεδεμένοι, στο ιστορικό (History). Δεν υπάρχει κουμπί «Save» που να γράφει αρχείο. Για να την αποθηκεύσετε σε PDF, Markdown, JSON, κείμενο, XML, CSV ή PNG, χρησιμοποιήστε την Download Claude conversations στο Chrome, εκτυπώστε τη σελίδα ή ζητήστε το Settings → Privacy → Export data (οι ετικέτες μπορεί να εμφανίζονται στα ελληνικά, αν το claude.ai είναι ρυθμισμένο στα ελληνικά). Στα αγγλικά πολλοί αναζητούν «save claude conversation» ή «claude export chat». Το κλείσιμο της καρτέλας δεν διαγράφει το νήμα.</p>
+<aside class="trust-badge" aria-label="Σχετικά με την επέκταση">
+  <span class="trophy" aria-hidden="true">🧩</span>
+  <div>
+    <strong>Download Claude conversations — δωρεάν επέκταση Chrome για το claude.ai</strong>
+    <span>Έκδοση 1.16.2 (Σεπτέμβριος 2026) — απεριόριστες εξαγωγές σε Markdown, κείμενο, JSON, XML, CSV και PNG χωρίς λογαριασμό· PDF και μαζικό ZIP δωρεάν έως 3 την ημέρα</span>
+  </div>
+</aside>
+<nav class="toc" aria-label="Σε αυτή τη σελίδα">
+  <p>Σε αυτή τη σελίδα</p>
+  <ol>
+    <li><a href="#history-keeps-it">Αποθηκεύει ήδη το Claude τη συνομιλία στο ιστορικό;</a></li>
+    <li><a href="#save-as-file">Πώς να αποθηκεύσετε μια συνομιλία Claude ως αρχείο;</a></li>
+    <li><a href="#save-with-chrome">Πώς αποθηκεύω ένα chat του Claude με την επέκταση Chrome;</a></li>
+    <li><a href="#without-extension">Πώς αποθηκεύω μια συνομιλία στο Claude χωρίς επέκταση;</a></li>
+    <li><a href="#will-it-vanish">Μένει η συνομιλία στο ιστορικό αφού κλείσω την καρτέλα;</a></li>
+    <li><a href="#markdown-json">Πώς αποθηκεύω μια συνομιλία Claude σε Markdown ή JSON;</a></li>
+    <li><a href="#save-bulk">Πώς αποθηκεύω μαζικά το ιστορικό συνομιλιών του Claude;</a></li>
+    <li><a href="#desktop-code">Αποθηκεύονται συνομιλίες από το Desktop ή το Claude Code;</a></li>
+    <li><a href="#faq">Συχνές ερωτήσεις: αποθήκευση συνομιλίας Claude</a></li>
+  </ol>
+</nav>
+
+<h2 id="history-keeps-it">Αποθηκεύει ήδη το Claude τη συνομιλία στο ιστορικό;</h2>
+<p>Ναι. Το Claude.ai ήδη αποθηκεύει το νήμα στο ιστορικό του λογαριασμού σας στην Anthropic, όταν είστε συνδεδεμένοι. Το κλείσιμο της καρτέλας δεν σβήνει τη συνομιλία. Εξακολουθεί όμως να μην υπάρχει κουμπί αποθήκευσης που να γράφει αρχείο στον δίσκο. Η αποθήκευση μιας συνομιλίας σε Markdown ή JSON είναι ξεχωριστή δουλειά από το ιστορικό.</p>
+<p>Το ιστορικό είναι η λίστα συνομιλιών στα αριστερά στο claude.ai. Κάθε γραμμή είναι μια συνομιλία που η Anthropic αποθήκευσε για αυτή τη σύνδεση. Ανοίξτε μια γραμμή αργότερα και επιστρέφουν οι ίδιοι γύροι. Αυτό είναι αποθήκευση στον λογαριασμό, όχι φάκελος λήψεων στον υπολογιστή σας.</p>
+<p>Όσοι ρωτούν πώς να αποθηκεύσουν μια συνομιλία στο Claude συχνά εννοούν «θα χαθεί όταν φύγω;». Για μια κανονική συνεδρία με σύνδεση, η απάντηση είναι όχι. Το Claude.ai δεν χρειάζεται κλικ σε «Save» για να κρατήσει το νήμα στον λογαριασμό. Αυτό που λείπει είναι ένα εργαλείο εξαγωγής αρχείων, όχι ένας διακόπτης διατήρησης.</p>
+<p>Το ιστορικό δεν είναι αρχείο Markdown, ούτε δέντρο JSON που μπορείτε να ψάξετε με grep, ούτε PNG για να το βάλετε σε διαφάνεια. Το ιστορικό βρίσκεται πίσω από τη σύνδεση στην Anthropic. Αν δεν μπορείτε να συνδεθείτε, δεν μπορείτε να ανοίξετε αυτές τις συνομιλίες. Ένα τοπικό αρχείο ανοίγει ακόμη κι όταν ο κωδικός δεν υπάρχει πια.</p>
+<div class="callout callout-info">
+  <p><strong>Δύο διαφορετικές «αποθηκεύσεις».</strong> Ιστορικό = η Anthropic κρατά τη συνομιλία στον λογαριασμό. Αρχείο = εσείς γράφετε PDF, Markdown, JSON, κείμενο, XML, CSV ή PNG στον δίσκο. Το Claude.ai έχει το πρώτο. Για το δεύτερο το Claude.ai δεν έχει κουμπί.</p>
+</div>
+<p>Τα Projects και τα Recents στο claude.ai είναι κι αυτά ιστορικό. Η ομαδοποίηση μιας συνομιλίας σε Project δεν δημιουργεί αρχείο. Η μετονομασία της συνομιλίας δεν δημιουργεί αρχείο. Το αστέρι ή το καρφίτσωμα, αν τα προσφέρει η διεπαφή, επίσης δεν γράφουν Markdown. Η Download Claude conversations εξάγει τις συνομιλίες μέσα σε ένα Project όπως κάθε άλλη, και σε μια σελίδα Project το «Project files» → «Download ZIP» (αρχεία project → λήψη ZIP) αποθηκεύει τα αρχεία του project.</p>
+<p>Οι χώροι εργασίας Team και Enterprise ακολουθούν τον ίδιο διαχωρισμό. Αν μπορείτε να ανοίξετε τη συνομιλία στο claude.ai, η Anthropic την έχει ήδη αποθηκεύσει για τον χώρο εργασίας. Οι εταιρικοί κανόνες διατήρησης μπορεί ωστόσο να διαγράφουν ή να κρύβουν συνομιλίες με χρονοδιάγραμμα που δεν ελέγχετε. Ένα αρχείο που έχετε εξαγάγει είναι τότε το αντίγραφο που κρατάτε.</p>
+<p>Η ανώνυμη περιήγηση και ένα δεύτερο προφίλ Chrome δεν μοιράζονται ιστορικό. Το νήμα συνδέεται με τον λογαριασμό Anthropic που χρησιμοποιήθηκε σε εκείνη τη συνεδρία. Αν συνδεθείτε με άλλον λογαριασμό Anthropic, βλέπετε διαφορετική λίστα ιστορικού. Η «αποθήκευση» ανάμεσα σε λογαριασμούς είναι αρχείο, όχι συγχώνευση ιστορικού.</p>
+
+<h2 id="save-as-file">Πώς να αποθηκεύσετε μια συνομιλία Claude ως αρχείο;</h2>
+<p>Για να αποθηκεύσετε μια συνομιλία Claude ως αρχείο, διαλέξτε μέθοδο που γράφει στον δίσκο: την Download Claude conversations στο Chrome, Εκτύπωση → Αποθήκευση ως PDF, ή Settings → Privacy → Export data. Το ιστορικό στο claude.ai είναι αποθήκευση στον λογαριασμό, όχι αρχείο PDF, Markdown, JSON, κειμένου, XML, CSV ή PNG.</p>
+<p>Η επέκταση Chrome είναι η λύση ανά συνομιλία. Ανοίξτε τη διεύθυνση της συνομιλίας, κάντε κλικ στο πορτοκαλί κουμπί δίπλα στο πλαίσιο μηνύματος, επιλέξτε μορφή και πατήστε «Export» (Εξαγωγή). Το API λήψεων του Chrome γράφει το αρχείο τοπικά. Markdown, κείμενο, JSON, XML, CSV και PNG δεν χρειάζονται λογαριασμό· μόνο το PDF ζητά σύνδεση με Google. Το περιεχόμενο των συνομιλιών μένει στον υπολογιστή.</p>
+<p>Η εκτύπωση είναι η οπτική λύση. Ctrl+P ή Cmd+P, προορισμός «Αποθήκευση ως PDF». Το αποτέλεσμα μοιάζει με τη σελίδα του claude.ai, μαζί με στοιχεία της διεπαφής που δεν έκρυψαν τα στυλ εκτύπωσης. Τα μπλοκ κώδικα συχνά σπάνε ανάμεσα σε φύλλα. Χρησιμοποιήστε την εκτύπωση όταν κάποιος θέλει ένα στιγμιότυπο, όχι αρχείο σημειώσεων. Για PDF που φτιάχνεται από τα μηνύματα και όχι από την οθόνη, επιλέξτε PDF στην επέκταση.</p>
+<p>Το επίσημο Export data είναι η λύση σε επίπεδο λογαριασμού. Settings → Privacy → Export data στο claude.ai. Η Anthropic στέλνει με email έναν σύνδεσμο που λήγει. Το ZIP είναι JSON για ολόκληρο τον λογαριασμό, όχι ένα αρχείο με όνομα για τη συνομιλία στην οθόνη. Ο χρόνος αναμονής είναι το τίμημα ενός πλήρους αντιγράφου ασφαλείας.</p>
+<div class="table-wrap">
+  <table>
+    <caption>Τι σημαίνει «αποθήκευση» στο claude.ai σε σύγκριση με ένα αρχείο στον δίσκο</caption>
+    <thead>
+      <tr>
+        <th scope="col">Θέλετε</th>
+        <th scope="col">Μέθοδος</th>
+        <th scope="col">Τι παίρνετε</th>
+        <th scope="col">Τι σας λείπει ακόμη</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Να μη χαθεί η συνομιλία</th>
+        <td>Μείνετε συνδεδεμένοι· χρησιμοποιήστε το ιστορικό</td>
+        <td>Το νήμα στον λογαριασμό Anthropic</td>
+        <td>Ένα αρχείο για email ή git</td>
+      </tr>
+      <tr>
+        <th scope="row">Μία συνομιλία, αναγνώσιμο αρχείο, τώρα</th>
+        <td>Επέκταση Chrome (αυτό το προϊόν)</td>
+        <td>PDF, Markdown, JSON, κείμενο, XML, CSV ή PNG</td>
+        <td>Το επίσημο αρχείο λογαριασμού της Anthropic</td>
+      </tr>
+      <tr>
+        <th scope="row">Οπτικό PDF αυτής της οθόνης</th>
+        <td>Εκτύπωση → Αποθήκευση ως PDF</td>
+        <td>Στιγμιότυπο του claude.ai σε σελίδες</td>
+        <td>Καθαρό κώδικα, πίνακες, συμπτυγμένα artifacts</td>
+      </tr>
+      <tr>
+        <th scope="row">Πλήρες αντίγραφο λογαριασμού</th>
+        <td>Settings → Privacy → Export data</td>
+        <td>ZIP με JSON μέσω email</td>
+        <td>Μορφοποίηση ανά συνομιλία· αναμονή για τον σύνδεσμο</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p>Διαλέξτε τη γραμμή που ταιριάζει στη δουλειά. Οι περισσότεροι που ψάχνουν πώς να αποθηκεύσουν ένα chat του Claude θέλουν τη δεύτερη γραμμή: ένα αρχείο που ανοίγει σε Obsidian, VS Code ή wiki. Την πρώτη γραμμή την έχει ήδη καλύψει το ιστορικό. Η εκτύπωση και το Export data υπάρχουν· απλώς λύνουν άλλα προβλήματα.</p>
+<p>Ένα αρχείο είναι η σωστή κίνηση πριν από αποχώρηση από εταιρεία, πριν από καθαρισμό του laptop, για ένα ερευνητικό αρχείο ή πριν βάλετε έναν έλεγχο κώδικα στο git. Το ιστορικό αρκεί όταν απλώς θέλετε να ξανανοίξετε το ίδιο νήμα αύριο με την ίδια σύνδεση στην Anthropic.</p>
+<p>Η αντιγραφή-επικόλληση είναι μια πέμπτη μέθοδος και ένα αδύναμο αρχείο. Επιλέγετε κείμενο στο claude.ai και το επικολλάτε σε Docs. Τα μπλοκ κώδικα καταρρέουν. Οι πίνακες γίνονται συνεχόμενες γραμμές. Τα όρια των μηνυμάτων χάνονται. Αρκεί για μία παράγραφο. Είναι φτωχή επιλογή ως μοναδικό αρχείο αποθήκευσης για έναν έλεγχο σχεδίασης 40 γύρων. Το κουμπί «Copy» (Αντιγραφή) της επέκτασης βάζει αντί γι' αυτό καθαρό Markdown στο πρόχειρο.</p>
+
+<h2 id="save-with-chrome">Πώς αποθηκεύω ένα chat του Claude με την επέκταση Chrome;</h2>
+<p>Με την Download Claude conversations: εγκαταστήστε την επέκταση Chrome, ανοίξτε το νήμα στο claude.ai, κάντε κλικ στο πορτοκαλί κουμπί δίπλα στο πλαίσιο μηνύματος, επιλέξτε PDF, Markdown, JSON, κείμενο, XML, CSV ή PNG και πατήστε «Export». Δεν χρειάζεται λογαριασμός, εκτός από το PDF.</p>
+<ol>
+<li>Εγκαταστήστε την Download Claude conversations από το Chrome Web Store (λειτουργούν και οι browsers Chromium που φορτώνουν επεκτάσεις Chrome).</li>
+<li>Ανανεώστε το claude.ai αν η σελίδα ήταν ήδη ανοιχτή κατά την εγκατάσταση. Το Chrome δεν εισάγει πάντα content script σε παλιές καρτέλες.</li>
+<li>Ανοίξτε μια πραγματική διεύθυνση συνομιλίας από το ιστορικό — το πορτοκαλί κουμπί εμφανίζεται σε νήμα, όχι στην κενή αρχική σελίδα σύνταξης.</li>
+<li>Κάντε κλικ στο στρογγυλό πορτοκαλί κουμπί λήψης δεξιά από το πλαίσιο μηνύματος. Ανοίγει ένα πάνελ με Messages (All / Human / Assistant — όλα, χρήστης, βοηθός), Format (μορφή), «Thinking» (σκέψη), «Select» (Επιλογή), «Copy» και «Export».</li>
+<li>Επιλέξτε PDF, Markdown, Plain Text, JSON, XML, CSV ή PNG. Πατήστε «Export». Το Chrome κατεβάζει το αρχείο αμέσως.</li>
+</ol>
+<p>Η επέκταση είναι ένα content script του Chrome μόνο για το claude.ai. Ο αναλυτής διαβάζει τη συνομιλία που έχει ήδη φορτωθεί στη συνδεδεμένη συνεδρία. Η Download Claude conversations δεν καλεί κάποιο ξεχωριστό API της Anthropic με δικά της διαπιστευτήρια και δεν ανεβάζει το νήμα στους διακομιστές μας για να φτιάξει το αρχείο.</p>
+<p>Για Markdown, Plain Text, JSON, XML, CSV ή PNG δεν χρειάζεται λογαριασμός. Αυτές οι εξαγωγές μεμονωμένων συνομιλιών είναι απεριόριστες και δωρεάν: χωρίς σύνδεση, χωρίς μετρητή. Η σύνδεση με Google εμφανίζεται μόνο όταν επιλέγετε PDF ή τρέχετε μαζικό «Export All» (Εξαγωγή όλων). Η σύνδεση με Google δεν είναι σύνδεση για ανάγνωση συνομιλιών. Το περιεχόμενο των συνομιλιών μένει στον υπολογιστή σας.</p>
+<p>Το PDF και το μαζικό ZIP μοιράζονται ένα δωρεάν όριο 3 την ημέρα, που μηδενίζεται τα μεσάνυχτα UTC. Κάθε συνομιλία μέσα σε ένα μαζικό ZIP μετρά ως μία. Το Pro κοστίζει 3,99 $ τον μήνα ή 26,99 $ τον χρόνο και καταργεί αυτό το όριο. Τις πληρωμές Pro τις διεκπεραιώνει η Paddle. Δεν βλέπουμε αριθμούς καρτών. Βήματα για PDF: <a href="/el/download-claude-chat-as-pdf/">λήψη συνομιλίας Claude σε PDF</a>.</p>
+<div class="callout callout-tip">
+  <p><strong>Τοπικά αρχεία.</strong> Κάθε μορφή, ακόμη και το PDF, δημιουργείται στο πρόγραμμα περιήγησης και παραδίδεται στο API λήψεων του Chrome. Το κείμενο των συνομιλιών δεν ανεβαίνει ποτέ. Μόνο οι εξαγωγές PDF και οι μαζικές εξαγωγές στέλνουν έλεγχο ορίου με το email σας στο Google. Έκδοση 1.16.2, Σεπτέμβριος 2026.</p>
+</div>
+<p>Το ίδιο πάνελ φιλτράρει ανά αποστολέα — All, Human ή Assistant. Το πλαίσιο ελέγχου «Thinking» συμπεριλαμβάνει ή παραλείπει το extended thinking. Το «Select» σάς επιτρέπει να τσεκάρετε μεμονωμένα μηνύματα, ώστε το αρχείο να περιέχει μόνο αυτά. Το «Copy» βάζει Markdown, κείμενο, JSON, XML ή CSV στο πρόχειρο αντί να κατεβάσει αρχείο. Τα βήματα εργαλείων / MCP και οι πηγές αναζήτησης στο web ενεργοποιούνται προαιρετικά από τις ρυθμίσεις (Settings). Τα μεταδεδομένα και η διάταξη των artifacts — «Original» (αρχική), «Inline» (ενσωματωμένη), «Nested» (εμφωλευμένη) ή «Flat» (επίπεδη) — ορίζονται στον πίνακα ελέγχου (Dashboard).</p>
+<p>Αν το νήμα είναι πολύ μεγάλο, κάντε κύλιση μέχρι το claude.ai να φορτώσει τα παλαιότερα μηνύματα. Η επέκταση μπορεί να εξαγάγει μόνο ό,τι έχει αποδώσει η σελίδα. Ένα μισοφορτωμένο νήμα βγάζει μισοφορτωμένο αρχείο. Μοιάζει με σφάλμα, αλλά συνήθως είναι απλώς DOM χωρίς κύλιση.</p>
+<p>Περιμένετε να ολοκληρώσει ο βοηθός τη ροή πριν πατήσετε «Export». Ένα αρχείο που αποθηκεύεται στη μέση της ροής κόβει την τελευταία απάντηση. Μια δεύτερη προσπάθεια σε Markdown ή JSON δεν κοστίζει τίποτα. Ένα δεύτερο PDF καταναλώνει άλλη μία από τις 3 ημερήσιες θέσεις στο δωρεάν πρόγραμμα — ένας λόγος να βεβαιωθείτε πρώτα ότι το νήμα είναι πλήρες.</p>
+<p>Η τελευταία μορφή που χρησιμοποιήσατε απομνημονεύεται. Αν θέλατε Markdown και πήρατε JSON, η λίστα ήταν ακόμη στο JSON από την προηγούμενη εξαγωγή. Ελέγχετε τη λίστα κάθε φορά που αλλάζετε εργασία. Βήμα προς βήμα στιγμιότυπα του ίδιου πορτοκαλί κουμπιού θα βρείτε στον οδηγό <a href="/el/how-to-download-claude-chat/">πώς να κατεβάσετε chat του Claude</a>.</p>
+<div class="expert-quote">
+  <blockquote>Ακούμε κάθε εβδομάδα την ίδια παρανόηση: οι χρήστες ψάχνουν κουμπί αποθήκευσης επειδή νομίζουν ότι το ιστορικό είναι ένα πρόχειρο που θα χαθεί. Το Claude.ai έχει ήδη αποθηκεύσει το νήμα. Το πορτοκαλί μας κουμπί απλώς γράφει ένα τοπικό αρχείο — PDF, Markdown, JSON, κείμενο, XML, CSV ή PNG — από τη σελίδα που έχετε ήδη ανοίξει.</blockquote>
+  <cite><strong>Η ομάδα της Download Claude conversations</strong> — δημιουργοί της επέκτασης Chrome Claude Chat Downloader</cite>
+</div>
+
+<h2 id="without-extension">Πώς αποθηκεύω μια συνομιλία στο Claude χωρίς επέκταση;</h2>
+<p>Χωρίς επέκταση έχετε δύο τρόπους: εκτυπώνετε τη σελίδα του claude.ai ή ζητάτε το ZIP του Export data της Anthropic. Η εκτύπωση δίνει ένα οπτικό PDF της ιστοσελίδας. Το Export data είναι ένα αρχείο JSON ολόκληρου του λογαριασμού, που φτάνει με καθυστέρηση. Κανένα από τα δύο δεν γράφει αρχείο Markdown ανά συνομιλία.</p>
+<p>Μέσω εκτύπωσης: ανοίξτε τη συνομιλία στο claude.ai, κρύψτε την πλαϊνή στήλη αν το επιτρέπει η διεπαφή, πατήστε Ctrl+P (Windows/Linux) ή Cmd+P (Mac), ορίστε ως προορισμό «Αποθήκευση ως PDF» και αποθηκεύστε. Στοιχεία της διεπαφής σύνταξης μπορεί να επαναλαμβάνονται σε κάθε φύλλο. Αναλυτικές σημειώσεις για την εκτύπωση στη σελίδα <a href="/el/download-claude-chat-as-pdf/">λήψη συνομιλίας Claude σε PDF</a>.</p>
+<p>Ο επίσημος τρόπος: Settings → Privacy → Export data στο claude.ai. Η Anthropic στέλνει με email έναν σύνδεσμο που λήγει. Αποσυμπιέστε μόνοι σας το ZIP αν χρειάζεστε μία συνομιλία ανάμεσα σε χιλιάδες. Αυτό το αρχείο είναι αντίγραφο ασφαλείας τύπου νομικής φύλαξης, όχι αρχείο σημειώσεων για τη σύσκεψη της επόμενης μέρας.</p>
+<p>Η αντιγραφή-επικόλληση είναι διαθέσιμη χωρίς καμία εγκατάσταση. Επισημάνετε γύρους στο claude.ai και επικολλήστε τους σε εφαρμογή σημειώσεων. Οι εσοχές στον κώδικα συνήθως χάνονται. Ένα νήμα με πολλούς γύρους γίνεται ένας αδόμητος τοίχος κειμένου. Χρησιμοποιήστε την αντιγραφή-επικόλληση για ένα μεμονωμένο απόσπασμα, όχι ως τη μοναδική σας στρατηγική αποθήκευσης.</p>
+<div class="table-wrap">
+  <table>
+    <caption>Τρόποι χωρίς επέκταση για να βγάλετε μια συνομιλία Claude από την οθόνη</caption>
+    <thead>
+      <tr>
+        <th scope="col">Μέθοδος</th>
+        <th scope="col">Ταχύτητα</th>
+        <th scope="col">Εύρος</th>
+        <th scope="col">Ιδανική για</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Εκτύπωση → Αποθήκευση ως PDF</th>
+        <td>Άμεση</td>
+        <td>Η ανοιχτή σελίδα</td>
+        <td>Ένα οπτικό συνημμένο</td>
+      </tr>
+      <tr>
+        <th scope="row">Settings → Privacy → Export data</th>
+        <td>Email με καθυστέρηση</td>
+        <td>Ολόκληρος ο λογαριασμός</td>
+        <td>Αποχώρηση από εταιρεία ή νομική διατήρηση δεδομένων</td>
+      </tr>
+      <tr>
+        <th scope="row">Αντιγραφή-επικόλληση</th>
+        <td>Άμεση</td>
+        <td>Ό,τι επιλέξατε</td>
+        <td>Μία σύντομη απάντηση</td>
+      </tr>
+      <tr>
+        <th scope="row">Μόνο ιστορικό (χωρίς αρχείο)</th>
+        <td>Έχει ήδη γίνει</td>
+        <td>Συνομιλίες με σύνδεση</td>
+        <td>Να ξανανοίξετε το ίδιο νήμα</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p>Καμία από αυτές τις γραμμές δεν αντικαθιστά την Download Claude conversations όταν χρειάζεστε δομημένο Markdown από μία συνομιλία του ιστορικού τώρα. Οι μέθοδοι χωρίς επέκταση έχουν ακόμη αξία όταν το τμήμα IT μπλοκάρει τις επεκτάσεις Chrome, όταν χρειάζεστε το επίσημο ZIP ή όταν το ζητούμενο είναι μια εκτύπωση της ακριβούς οθόνης.</p>
+<p>Το Safari και το Chrome σε κινητό μπορούν να εκτυπώσουν. Αυτά τα προγράμματα περιήγησης δεν μπορούν να εγκαταστήσουν αυτό το στοιχείο του Chrome Web Store. Για ένα επαναχρησιμοποιήσιμο αρχείο Markdown, ανοίξτε την ίδια συνομιλία του ιστορικού στο Chrome για υπολογιστή αφού προσθέσετε την επέκταση.</p>
+
+<h2 id="will-it-vanish">Μένει η συνομιλία στο ιστορικό αφού κλείσω την καρτέλα;</h2>
+<p>Ναι. Το ιστορικό συνεχίζει να κρατά τη συνομιλία αφού κλείσετε την καρτέλα, ανανεώσετε το claude.ai ή κλείσετε το laptop — αρκεί η συνομιλία να δημιουργήθηκε ενώ ήσασταν συνδεδεμένοι. Το κλείσιμο καρτέλας δεν είναι διαγραφή. Η διαγραφή από το ιστορικό είναι η ενέργεια που αφαιρεί το νήμα από τη διεπαφή του λογαριασμού.</p>
+<p>Αποσυνδεθείτε από το claude.ai και η σελίδα αδειάζει. Συνδεθείτε ξανά στον ίδιο λογαριασμό Anthropic και το ιστορικό επαναφέρει αυτές τις συνομιλίες. Η αποσύνδεση κρύβει τη λίστα· από μόνη της δεν σβήνει τα δεδομένα του λογαριασμού. Μια διαφορετική σύνδεση Anthropic δείχνει διαφορετικό ιστορικό.</p>
+<p>Η διαγραφή από το ιστορικό είναι η περίπτωση όπου οι συνομιλίες πραγματικά χάνονται. Αφαιρέστε μια συνομιλία στη διεπαφή του claude.ai και το νήμα φεύγει από την πλαϊνή στήλη. Ένα αρχείο Markdown που έχετε ήδη εξαγάγει με το πορτοκαλί κουμπί μένει στον δίσκο. Κάντε πρώτα εξαγωγή αν η συνομιλία πρόκειται να καθαριστεί.</p>
+<div class="callout callout-warn">
+  <p><strong>Η διαγραφή δεν είναι κλείσιμο.</strong> Το κλείσιμο μιας καρτέλας του claude.ai αφήνει το ιστορικό ανέπαφο. Η διαγραφή της συνομιλίας από το ιστορικό την αφαιρεί από τη διεπαφή του λογαριασμού. Το επίσημο Export data δεν θα βοηθήσει μετά από διαγραφή, αν η Anthropic δεν περιλαμβάνει πλέον εκείνο το νήμα. Γράψτε το αρχείο πριν κάνετε εκκαθάριση.</p>
+</div>
+<p>Η ανώνυμη περιήγηση τελειώνει όταν κλείνει το παράθυρο. Αν χρησιμοποιήσατε το claude.ai σε ιδιωτικό παράθυρο χωρίς μόνιμη σύνδεση, μη θεωρείτε δεδομένο ότι το ιστορικό κράτησε τη δουλειά. Συνδεθείτε σε κανονικό προφίλ Chrome ή εξαγάγετε ένα αρχείο πριν τελειώσει η ανώνυμη συνεδρία.</p>
+<p>Οι διαχειριστές χώρων εργασίας μπορούν να διατηρούν ή να περιορίζουν συνομιλίες σε Team και Enterprise. Μια πολιτική που δεν ορίσατε εσείς μπορεί να κρύψει ένα νήμα αργότερα. Αντιμετωπίστε το εταιρικό ιστορικό ως δανεικό χώρο. Αντιμετωπίστε ένα εξαγμένο αρχείο Markdown ή JSON ως το αντίγραφο που μένει στη δική σας πλευρά.</p>
+<p>Η μετάβαση από κινητό σε laptop δεν απαιτεί κάποιο ειδικό κλικ αποθήκευσης όταν και οι δύο συσκευές χρησιμοποιούν τον ίδιο λογαριασμό Anthropic. Ανοίξτε το ιστορικό στο laptop. Αν η συνομιλία λείπει, είστε σε άλλη σύνδεση, σε άλλον χώρο εργασίας ή το νήμα διαγράφηκε — δεν είναι «μη αποθηκευμένο».</p>
+<p>Το Claude Desktop μπορεί να δείχνει τις συνομιλίες του ίδιου λογαριασμού όταν η εφαρμογή είναι συνδεδεμένη με τον ίδιο χρήστη Anthropic. Ο συγχρονισμός είναι δουλειά της Anthropic. Η επέκταση Chrome δεν ενσωματώνεται ποτέ στο Desktop. Αν το νήμα υπάρχει στο claude.ai, ανοίξτε το claude.ai στο Chrome για να γράψετε αρχείο.</p>
+
+<h2 id="markdown-json">Πώς αποθηκεύω μια συνομιλία Claude σε Markdown ή JSON;</h2>
+<p>Ανοίξτε το πορτοκαλί κουμπί στο claude.ai, επιλέξτε τη μορφή και πατήστε «Export». Το Markdown είναι το αρχείο σημειώσεων. Το JSON είναι το δέντρο μηνυμάτων για scripts. Το απλό κείμενο δεν έχει σήμανση. Το CSV έχει μία γραμμή ανά μήνυμα. Το PDF είναι έγγραφο με σελίδες. Το PNG είναι εικόνα.</p>
+<p>Το Markdown διατηρεί επικεφαλίδες, μπλοκ κώδικα με ετικέτες γλώσσας και πίνακες. Είναι η συνηθισμένη επιλογή για Obsidian, GitHub ή wiki. Σημειώσεις διάταξης για αυτή τη μορφή: <a href="/el/formats/markdown/">εξαγωγή σε Markdown</a>. Το JSON διατηρεί το δέντρο που έχει ήδη φτιάξει ο αναλυτής, μαζί με artifacts και thinking όταν είναι ενεργοποιημένα.</p>
+<p>Το JSON της Download Claude conversations δεν έχει την ίδια δομή με το ZIP λογαριασμού της Anthropic. Το JSON της επέκτασης είναι μία συνομιλία όπως την απέδωσε η σελίδα. Το JSON του Export data είναι μια πλήρης εξαγωγή λογαριασμού που η Anthropic στέλνει αργότερα με email. Μην ανακατεύετε τις δύο δομές στο ίδιο script χωρίς να ελέγξετε τα κλειδιά.</p>
+<p>Το απλό κείμενο είναι η σωστή επιλογή όταν ο προορισμός αφαιρεί τη σήμανση — πεδίο ticket, σώμα email, ευρετήριο αναζήτησης που θέλει σκέτο κείμενο. Το XML είναι η εξειδικευμένη επιλογή για ανταλλαγή δεδομένων. Το CSV ανοίγει σε Excel, Google Sheets ή Numbers. Το PNG είναι για διαφάνεια ή για εικόνα του νήματος σε αναφορά σφάλματος, όχι για έναν έλεγχο 40 γύρων που θα ψάξετε με grep.</p>
+<div class="table-wrap">
+  <table>
+    <caption>Μορφές που γράφει η Download Claude conversations από το claude.ai</caption>
+    <thead>
+      <tr>
+        <th scope="col">Μορφή</th>
+        <th scope="col">Ιδανική για</th>
+        <th scope="col">Όχι για</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">PDF</th>
+        <td>Κοινοποίηση, εκτύπωση, συνημμένα σε πελάτες</td>
+        <td>Grep, diff ή επεξεργασία</td>
+      </tr>
+      <tr>
+        <th scope="row">Markdown</th>
+        <td>Σημειώσεις, git, μετατροπή αργότερα</td>
+        <td>Διάταξη ακριβή στο pixel</td>
+      </tr>
+      <tr>
+        <th scope="row">JSON</th>
+        <td>Scripts, δέντρο μηνυμάτων</td>
+        <td>Ανάγνωση σε επεξεργαστή κειμένου</td>
+      </tr>
+      <tr>
+        <th scope="row">Απλό κείμενο</th>
+        <td>Αρχεία φύλαξης χωρίς σήμανση</td>
+        <td>Διατήρηση πινάκων ως πινάκων</td>
+      </tr>
+      <tr>
+        <th scope="row">XML</th>
+        <td>Pipelines που δέχονται μόνο XML</td>
+        <td>Απλή ανάγνωση</td>
+      </tr>
+      <tr>
+        <th scope="row">CSV</th>
+        <td>Υπολογιστικά φύλλα, μία γραμμή ανά μήνυμα</td>
+        <td>Ανάγνωση ως έγγραφο</td>
+      </tr>
+      <tr>
+        <th scope="row">PNG</th>
+        <td>Μια εικόνα του νήματος</td>
+        <td>Αναζήτηση, diff ή έγγραφο πολλών σελίδων</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p>Το PDF είναι ενσωματωμένο στην έκδοση 1.16.2. Επιλέξτε PDF και ένα παράθυρο ορίζει όνομα αρχείου, μέγεθος σελίδας, περιθώρια, φωτεινή ή σκούρα λειτουργία, γραμματοσειρά και μέγεθος γραμματοσειράς, αρίθμηση σελίδων, πίνακα περιεχομένων, χρονοσημάνσεις και αλλαγή σελίδας πριν από κάθε prompt. Το PDF χρειάζεται σύνδεση με Google και έχει όριο 3 την ημέρα στο δωρεάν πρόγραμμα. Στο Pro είναι απεριόριστο. Λεπτομέρειες: <a href="/el/download-claude-chat-as-pdf/">συνομιλία Claude σε PDF</a>.</p>
+<p>Το thinking, τα μεταδεδομένα, το φίλτρο αποστολέα και η διάταξη των artifacts αλλάζουν τι καταλήγει στο Markdown και στο JSON. Τσεκάρετε το «Thinking» στο πάνελ όταν χρειάζεστε την εκτεταμένη συλλογιστική στο αρχείο. Αφήστε το ανενεργό όταν το αρχείο προορίζεται για αναγνώστη που πρέπει να δει μόνο την τελική απάντηση. Τα μεταδεδομένα προσθέτουν τίτλο, χρονοσημάνσεις και μοντέλο, όταν θέλετε κεφαλίδα στο αρχείο σημειώσεων.</p>
+<p>Στο Messages, το «Human» γράφει τα δικά σας prompts. Το «Assistant» γράφει τις απαντήσεις του Claude. Το «All» είναι ολόκληρο το νήμα. Το «Select» περιορίζει το αρχείο στα μηνύματα που τσεκάρετε. Η διάταξη artifacts στον πίνακα ελέγχου — «Original», «Inline», «Nested» ή «Flat» — καθορίζει αν τα artifacts μένουν μέσα στο αρχείο ή σε δικό τους φάκελο στο ZIP. Διαλέξτε μια διάταξη μία φορά και κρατήστε την, ώστε ένας φάκελος με αποθηκευμένες συνομιλίες να μένει συνεπής.</p>
+
+<h2 id="save-bulk">Πώς αποθηκεύω μαζικά το ιστορικό συνομιλιών του Claude;</h2>
+<p>Για να αποθηκεύσετε το ιστορικό συνομιλιών του Claude σε πολλά αρχεία, μην πατάτε το πορτοκαλί κουμπί σε κάθε καρτέλα ξεχωριστά. Ανοίξτε το «View and Download All Conversations» (Προβολή και λήψη όλων των συνομιλιών) από το αναδυόμενο παράθυρο της επέκτασης, φιλτράρετε τον πίνακα και πατήστε «Export All». Το «Export All» ζητά σύνδεση με Google. Στο δωρεάν πρόγραμμα κάθε συνομιλία στο ZIP καταναλώνει μία από τις 3 ημερήσιες θέσεις που μοιράζεται με το PDF. Το Pro καταργεί το όριο.</p>
+<p>Ο πίνακας ελέγχου δείχνει τις συνομιλίες του λογαριασμού claude.ai στον οποίο είστε συνδεδεμένοι — το ίδιο ιστορικό που ήδη έχετε, σε μορφή πίνακα με φίλτρα. Αναζητήστε με βάση το όνομα. Φιλτράρετε με All conversations, New, Updated ή Previously exported (όλες, νέες, ενημερωμένες, ήδη εξαγμένες). Εναλλάξτε ανάμεσα στις καρτέλες Chat και Cowork, και αναζητήστε ανά Project αν οργανώνετε έτσι τις συνομιλίες σας στο claude.ai.</p>
+<p>Η μαζική εξαγωγή γράφει ένα ZIP με ένα αρχείο ανά συνομιλία, στη μορφή που επιλέγετε στο «Chat format» — οποιαδήποτε από τις επτά, και το PDF. Χρησιμοποιεί τον ίδιο αναλυτή με την εξαγωγή μίας συνομιλίας. Τα πλαίσια ελέγχου ορίζουν τι μπαίνει μέσα — «Chats», «Thinking», «Metadata», «Tools», «Sources» (συνομιλίες, σκέψη, μεταδεδομένα, εργαλεία, πηγές) — μαζί με μια διάταξη artifacts. Το «Export All» δεν είναι υποδεέστερη διαδικασία. Είναι ο ίδιος αναλυτής εφαρμοσμένος σε πολλά αναγνωριστικά συνομιλιών με μία κίνηση. Λεπτομέρειες: <a href="/el/bulk/">μαζικό Export All</a>.</p>
+<p>Το Export data της Anthropic παραμένει το αντίγραφο ασφαλείας του λογαριασμού. Ένα ZIP, ένα email, JSON για όλα, ακόμη και για συνομιλίες που είχατε ξεχάσει. Το μαζικό «Export All» κάνει το αντίθετο: εσείς διαλέγετε ποιες γραμμές του ιστορικού, εσείς διαλέγετε τη μορφή, και το ZIP φτάνει αμέσως. Χρησιμοποιήστε και τα δύο αν θέλετε ένα αρχείο τύπου νομικής φύλαξης και έναν φάκελο με αναγνώσιμες σημειώσεις.</p>
+<div class="callout callout-warn">
+  <p><strong>Το όριο είναι κοινό και ημερήσιο.</strong> Στο δωρεάν πρόγραμμα, οι εξαγωγές PDF και οι συνομιλίες σε μαζική εξαγωγή μοιράζονται 3 την ημέρα, με μηδενισμό τα μεσάνυχτα UTC. Αν επιλέξετε 40 συνομιλίες, μπλοκάρεται ολόκληρη η παρτίδα — δεν κόβεται στη μέση. Επιλέξτε λιγότερες ή περάστε στο Pro με 3,99 $ τον μήνα ή 26,99 $ τον χρόνο μέσω Paddle.</p>
+</div>
+<p>Ο πίνακας ελέγχου θυμάται τι έχετε ήδη εξαγάγει, οπότε σε μια επόμενη επίσκεψη μπορείτε να φιλτράρετε μόνο τις New ή Updated. Έτσι η εβδομαδιαία αποθήκευση συνομιλιών Claude μένει σταδιακή, αντί να διπλασιάζει το Markdown του προηγούμενου μήνα. Η μέτρηση των 3 την ημέρα ακολουθεί τον λογαριασμό Google, όχι την εγκατάσταση, και μηδενίζεται τα μεσάνυχτα UTC.</p>
+<p>Επιλέξτε ένα υποσύνολο όταν το ιστορικό είναι γεμάτο πρόχειρα μίας γραμμής. Το «Export All» δεν σημαίνει ότι πρέπει να πάρετε κάθε γραμμή. Ένα στενό φίλτρο μαζί με Markdown δίνει πιο καθαρό ερευνητικό φάκελο από 200 κενά νήματα με ένα «γεια».</p>
+<p>Η «εξαγωγή chat του Claude», ως ρήμα του προϊόντος, είναι το ίδιο πορτοκαλί κουμπί και ο ίδιος πίνακας «Export All». Η διπλανή σελίδα <a href="/el/export-claude-chat/">εξαγωγή chat του Claude</a> εξηγεί αυτά τα στοιχεία ελέγχου, αν φτάσατε εδώ ψάχνοντας «εξαγωγή» αντί για «αποθήκευση».</p>
+
+<h2 id="desktop-code">Αποθηκεύονται συνομιλίες από το Desktop ή το Claude Code;</h2>
+<p>Από το Desktop, όχι. Από το Code, μόνο στο web. Η Download Claude conversations δεν μπορεί να αποθηκεύσει συνομιλίες από το Claude Desktop ή από τοπικό τερματικό του Claude Code. Τα sessions στο claude.ai/code ανοίγουν στο Chrome για υπολογιστή, οπότε αποθηκεύονται όπως κάθε συνομιλία. Το Claude Desktop είναι ξεχωριστή εφαρμογή. Το τοπικό Claude Code είναι ο agent του τερματικού, με <code>/export</code> και JSONL στον δίσκο.</p>
+<p>Αν η συνομιλία του Desktop υπάρχει και στο claude.ai, ανοίξτε εκείνη τη διεύθυνση στο Chrome και χρησιμοποιήστε το πορτοκαλί κουμπί. Αν το νήμα υπάρχει μόνο στο Desktop, κάντε αντιγραφή-επικόλληση ή περιμένετε το Settings → Privacy → Export data. Η επέκταση δεν ενσωματώνεται ποτέ στο παράθυρο του Desktop.</p>
+<p>Μέσα σε ενεργό session του Claude Code, πληκτρολογήστε <code>/export</code>. Το CLI της Anthropic ανοίγει ένα μενού για αντιγραφή της απομαγνητοφώνησης ή αποθήκευση σε αρχείο απλού κειμένου. Δώστε ένα όνομα αρχείου για να παρακάμψετε το μενού. Αυτή η απομαγνητοφώνηση είναι κείμενο για ανθρώπινη ανάγνωση, όχι το Markdown, το JSON ή το PDF αυτής της επέκτασης. Πλήρεις διαδρομές: <a href="/el/claude-code-export/">εξαγωγή Claude Code</a>.</p>
+<p>Το JSONL στον δίσκο είναι το εσωτερικό αρχείο καταγραφής στο <code>~/.claude/projects</code> (Windows: <code>%USERPROFILE%\.claude\projects</code>). Η δομή του μπορεί να αλλάζει ανάμεσα σε εκδόσεις του Claude Code. Η ίδια η τεκμηρίωση της Anthropic συνιστά το <code>/export</code> αντί για ανάλυση του JSONL. Δεν «τυλίγουμε» αυτό το CLI. Δεν διαβάζουμε το <code>~/.claude</code>.</p>
+<div class="table-wrap">
+  <table>
+    <caption>Πού αποθηκεύει κάθε περιβάλλον του Claude μια συνομιλία που μπορείτε να κρατήσετε</caption>
+    <thead>
+      <tr>
+        <th scope="col">Περιβάλλον</th>
+        <th scope="col">Ήδη «αποθηκευμένη»;</th>
+        <th scope="col">Πώς γράφετε αρχείο</th>
+        <th scope="col">Αυτή η επέκταση Chrome</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">claude.ai στο Chrome (συνομιλίες, Projects, Cowork)</th>
+        <td>Ναι — ιστορικό στον λογαριασμό</td>
+        <td>Πορτοκαλί κουμπί ή «Export All»</td>
+        <td>Ναι — αυτό είναι το προϊόν</td>
+      </tr>
+      <tr>
+        <th scope="row">Claude Code on the web (claude.ai/code)</th>
+        <td>Ναι — sessions στον λογαριασμό</td>
+        <td>Ανοίξτε το session στο Chrome και κάντε εξαγωγή</td>
+        <td>Ναι</td>
+      </tr>
+      <tr>
+        <th scope="row">Claude Code σε τοπικό τερματικό</th>
+        <td>JSONL στον δίσκο για το session</td>
+        <td><code>/export</code> ή αντιγραφή του JSONL</td>
+        <td>Όχι</td>
+      </tr>
+      <tr>
+        <th scope="row">Εφαρμογή Claude Desktop</th>
+        <td>Αν συγχρονίζεται ο ίδιος λογαριασμός Anthropic</td>
+        <td>Ανοίξτε τη συνομιλία στο claude.ai ή κάντε αντιγραφή-επικόλληση</td>
+        <td>Όχι — δεν ενσωματώνεται στο Desktop</td>
+      </tr>
+      <tr>
+        <th scope="row">Αντίγραφο ολόκληρου του λογαριασμού</th>
+        <td>Αποθήκευση της Anthropic, συν ZIP μέσω email</td>
+        <td>Settings → Privacy → Export data</td>
+        <td>Άλλη δουλειά — ZIP με JSON, με καθυστέρηση</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p>Οι χώροι εργασίας Team και Enterprise λειτουργούν με την επέκταση, αρκεί να μπορείτε να ανοίξετε τη συνομιλία στο claude.ai μέσα στο Chrome. Ο αναλυτής διαβάζει τη σελίδα όπως εμφανίζεται, όχι κάποιο API μόνο για ιδιώτες χρήστες. Αν μια εταιρική πολιτική μπλοκάρει τις επεκτάσεις, αυτό είναι απόφαση του τμήματος IT, όχι ρύθμιση προγράμματος συνδρομής στις δικές μας ρυθμίσεις.</p>
+<p>Ανεξάρτητη επέκταση Chrome, χωρίς σχέση με την Anthropic, PBC. Το Claude είναι εμπορικό σήμα της Anthropic. Τηρείτε τους Όρους Χρήσης της Anthropic. Δεν μπορούμε να δώσουμε νομικές συμβουλές για το αν μια συγκεκριμένη εξαγωγή επιτρέπεται στον χώρο εργασίας σας. Η επέκταση χρησιμοποιεί την υπάρχουσα συνεδρία σας με τον ίδιο τρόπο που τη χρησιμοποιεί ο ιστότοπος και δεν αυτοματοποιεί ενέργειες στον λογαριασμό.</p>
+<p>Η Paddle χρεώνει το Pro. Η σύνδεση με Google, που χρησιμοποιείται μόνο για PDF, μαζική εξαγωγή και Pro, δεν μας δίνει πρόσβαση στη συνομιλία. Ο worker του Cloudflare που ελέγχει το όριο και την κατάσταση Pro λαμβάνει το email σας στο Google, όχι κείμενο μηνυμάτων. Οι υπόλοιπες εξαγωγές μεμονωμένων συνομιλιών δεν στέλνουν τίποτα. Η χρέωση στον διακομιστή, η συνομιλία στον δίσκο — αυτό το όριο είναι όλη η ιστορία του απορρήτου για κάθε αρχείο που γράφει αυτό το προϊόν.</p>
+
+<h2 id="faq">Συχνές ερωτήσεις: αποθήκευση συνομιλίας Claude</h2>
+<h3>Πώς αποθηκεύω μια συνομιλία Claude ως αρχείο;</h3>
+<p>Εγκαταστήστε την Download Claude conversations, ανοίξτε το νήμα στο claude.ai, κάντε κλικ στο πορτοκαλί κουμπί δεξιά από το πλαίσιο μηνύματος, επιλέξτε PDF, Markdown, JSON, κείμενο, XML, CSV ή PNG και πατήστε «Export». Το αρχείο κατεβαίνει τοπικά, χωρίς λογαριασμό, εκτός από το PDF. Το ιστορικό έχει ήδη αποθηκεύσει τη συνομιλία στον λογαριασμό Anthropic· το πορτοκαλί κουμπί γράφει ένα αντίγραφο στον δίσκο.</p>
+<h3>Πώς αποθηκεύω ένα chat του Claude στο claude.ai;</h3>
+<p>Δεν χρειάζεστε κουμπί «Save» για να κρατήσετε το νήμα στον λογαριασμό. Το ιστορικό του Claude.ai ήδη δείχνει τις συνομιλίες σας με σύνδεση. Για να αποθηκεύσετε ένα chat ως αρχείο, χρησιμοποιήστε την επέκταση Chrome, Εκτύπωση → Αποθήκευση ως PDF, ή Settings → Privacy → Export data για ένα ZIP με JSON του λογαριασμού, που φτάνει με καθυστέρηση.</p>
+<h3>Πώς αποθηκεύω μια συνομιλία στο Claude χωρίς επέκταση;</h3>
+<p>Εκτυπώστε τη σελίδα του claude.ai (Ctrl/Cmd+P → Αποθήκευση ως PDF) για ένα οπτικό αντίγραφο, ή χρησιμοποιήστε το Settings → Privacy → Export data για ένα ZIP με JSON ολόκληρου του λογαριασμού μέσω email. Η αντιγραφή-επικόλληση αρκεί για μια σύντομη απάντηση. Καμία από αυτές τις μεθόδους δεν γράφει δομημένο αρχείο Markdown ανά συνομιλία, όπως κάνει η επέκταση Chrome.</p>
+<h3>Αποθηκεύει ήδη το Claude τις συνομιλίες στο ιστορικό;</h3>
+<p>Ναι. Οι συνομιλίες με σύνδεση στο claude.ai μένουν στο ιστορικό του λογαριασμού Anthropic. Το κλείσιμο της καρτέλας, η ανανέωση ή το άνοιγμα άλλης συσκευής με την ίδια σύνδεση δεν σβήνουν το νήμα. Το ιστορικό δεν είναι PDF, Markdown, JSON ή οποιοδήποτε άλλο αρχείο στον δίσκο σας.</p>
+<h3>Θα χαθεί μια συνομιλία Claude αν κλείσω την καρτέλα;</h3>
+<p>Όχι. Το κλείσιμο μιας καρτέλας του claude.ai δεν διαγράφει τη συνομιλία από το ιστορικό. Η διαγραφή της συνομιλίας από το ιστορικό την αφαιρεί από τη διεπαφή του λογαριασμού. Ένα αρχείο που έχετε ήδη εξαγάγει με την Download Claude conversations μένει στον δίσκο ακόμη και μετά τη διαγραφή.</p>
+<h3>Μπορώ να αποθηκεύσω μια συνομιλία Claude σε PDF;</h3>
+<p>Ναι. Η Download Claude conversations 1.16.2 εξάγει απευθείας σε PDF: επιλέξτε PDF στο πάνελ του πορτοκαλί κουμπιού και πατήστε «Export». Το αρχείο δημιουργείται στο πρόγραμμα περιήγησης, χωρίς παράθυρο εκτύπωσης. Το PDF χρειάζεται σύνδεση με Google και είναι δωρεάν έως 3 την ημέρα· στο Pro είναι απεριόριστο. Οδηγός: <a href="/el/download-claude-chat-as-pdf/">συνομιλία Claude σε PDF</a>.</p>
+<h3>Πόσα δωρεάν αρχεία μπορώ να αποθηκεύσω;</h3>
+<p>Απεριόριστα για Markdown, Plain Text, JSON, XML, CSV και PNG, χωρίς λογαριασμό. Το PDF και το μαζικό ZIP μοιράζονται 3 την ημέρα στο δωρεάν πρόγραμμα, με σύνδεση Google· κάθε συνομιλία σε μαζικό ZIP μετρά ως μία, και η ημέρα μηδενίζεται τα μεσάνυχτα UTC. Το Pro κοστίζει 3,99 $ τον μήνα ή 26,99 $ τον χρόνο και καταργεί το όριο. Την πληρωμή τη διεκπεραιώνει η Paddle.</p>
+<h3>Λειτουργεί η αποθήκευση συνομιλιών σε κινητό;</h3>
+<p>Η επέκταση Chrome όχι. Τρέχει στο Chrome για υπολογιστή (ή σε άλλο πρόγραμμα περιήγησης Chromium που εγκαθιστά στοιχεία από το Chrome Web Store). Δεν υπάρχει εφαρμογή για iOS ή Android. Τα προγράμματα περιήγησης κινητών μπορούν ακόμη να ανοίξουν το ιστορικό και να εκτυπώσουν μια συνομιλία Claude· δεν μπορούν να δείξουν το πορτοκαλί κουμπί.</p>
+<h3>Μπορώ να αποθηκεύσω μαζικά συνομιλίες από το ιστορικό;</h3>
+<p>Ναι. Ανοίξτε το «View and Download All Conversations» από το αναδυόμενο παράθυρο της επέκτασης, φιλτράρετε τον πίνακα και πατήστε «Export All». Η μαζική εξαγωγή χρειάζεται σύνδεση με Google και μετρά στο όριο των 3 την ημέρα του δωρεάν προγράμματος. Αυτή η μαζική διαδρομή δεν είναι το ZIP του Export data της Anthropic. Το επίσημο Export data είναι ένα αρχείο ολόκληρου του λογαριασμού, που στέλνεται αργότερα με email. Δείτε τη <a href="/el/bulk/">μαζική λήψη</a>.</p>
+<h3>Αποθηκεύει συνομιλίες από το Claude Code;</h3>
+<p>Μόνο στο web. Τα sessions του Claude Code στο claude.ai/code αποθηκεύονται όπως κάθε συνομιλία του claude.ai. Τα τοπικά sessions τερματικού όχι: χρησιμοποιήστε <code>/export</code> ή αντιγράψτε το JSONL από το <code>~/.claude/projects</code> (Windows: <code>%USERPROFILE%\.claude\projects</code>). Αυτή η επέκταση Chrome τρέχει μόνο στο claude.ai. Οδηγός: <a href="/el/claude-code-export/">εξαγωγή Claude Code</a>.</p>
+<h3>Χρειάζεται σύνδεση με Google για να αποθηκεύσω ένα chat του Claude;</h3>
+<p>Όχι, όχι για Markdown, Plain Text, JSON, XML, CSV ή PNG. Η σύνδεση με Google απαιτείται μόνο για PDF, μαζικό «Export All» και Pro, ώστε να εφαρμόζουμε το όριο των 3 την ημέρα και να επαναφέρουμε το Pro μετά από επανεγκατάσταση. Με αυτή τη σύνδεση δεν στέλνεται περιεχόμενο συνομιλιών. Αποθηκεύουμε το επαληθευμένο email μόνο για το όριο και την κατάσταση Pro.</p>
+<h3>Πού βρίσκεται το επίσημο Export data για αποθήκευση συνομιλιών Claude;</h3>
+<p>Στο claude.ai: Settings → Privacy → Export data. Η Anthropic στέλνει με email έναν σύνδεσμο που λήγει. Το ZIP είναι αρχείο JSON σε επίπεδο λογαριασμού, όχι αρχείο Markdown με όνομα για τη συνομιλία που διαβάζατε. Χρησιμοποιήστε το Export data ως αντίγραφο ασφαλείας· χρησιμοποιήστε το πορτοκαλί κουμπί για ένα αναγνώσιμο αρχείο τώρα.</p>
+</article>
+</main>
+<section class="final-cta page-cta" aria-label="Εγκατάσταση">
+  <div class="wrap">
+    <div class="final-cta-panel">
+      <p class="final-kicker">Download Claude conversations</p>
+      <h2>Εγκαταστήστε την επέκταση και αποθηκεύστε τη συνομιλία Claude ως αρχείο</h2>
+      <p>Το ιστορικό ήδη κρατά τη συνομιλία. Μετατρέψτε το ανοιχτό νήμα του claude.ai σε PDF, Markdown, JSON, κείμενο, XML, CSV ή PNG — τοπικά, από το Chrome.</p>
+      <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=el-save-conversation" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Προσθήκη στο Chrome</a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="logo" href="/el/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
+      <p class="legal-note">Επέκταση Chrome για λήψη συνομιλιών του Claude.ai σε PDF, Markdown, JSON, απλό κείμενο, CSV, XML ή PNG.</p>
+    </div>
+    <div>
+      <h2>Εγκατάσταση</h2>
+      <a class="install-link" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=el-footer" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Επέκταση Chrome</a>
+    </div>
+    <div>
+      <h2>Προϊόν</h2>
+      <a href="/el/features/">Λειτουργίες</a>
+      <a href="/el/formats/">Μορφές</a>
+      <a href="/el/bulk/">Μαζική λήψη</a>
+      <a href="/el/how-it-works/">Πώς λειτουργεί</a>
+    </div>
+    <div>
+      <h2>Οδηγοί</h2>
+      <a href="/el/how-to-download-claude-chat/">Πώς να κατεβάσετε chat του Claude</a>
+      <a href="/el/how-to-export-claude-chat/">Πώς να κάνετε εξαγωγή chat του Claude</a>
+      <a href="/el/export-claude-chat/">Εξαγωγή chat του Claude</a>
+      <a href="/el/claude-conversation-extractor/">Εξαγωγέας συνομιλιών Claude</a>
+      <a href="/el/claude-code-export/">Εξαγωγή Claude Code</a>
+      <a href="/el/download-claude-chat-as-pdf/">Συνομιλία Claude σε PDF</a>
+      <a href="/el/export-claude-desktop-chat/">Εξαγωγή από το Claude Desktop</a>
+      <a href="/el/claude-export-conversation/">Εξαγωγή συνομιλίας Claude</a>
+      <a href="/el/how-to-save-claude-conversation/">Πώς να αποθηκεύσετε συνομιλία Claude</a>
+      <a href="/el/download-claude-conversation/">Λήψη συνομιλίας Claude</a>
+    </div>
+    <div>
+      <h2>Νομικά</h2>
+      <a href="/el/about/">Σχετικά</a>
+      <a href="/el/about/#contact">Επικοινωνία</a>
+      <a href="/privacy/" hreflang="en">Απόρρητο (στα αγγλικά)</a>
+      <a href="/terms/" hreflang="en">Όροι (στα αγγλικά)</a>
+      <a href="/refund/" hreflang="en">Επιστροφές χρημάτων (στα αγγλικά)</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Download Claude conversations. Με την επιφύλαξη παντός δικαιώματος.</div>
+    <div>
+      <a href="/privacy/" hreflang="en">Πολιτική απορρήτου (στα αγγλικά)</a>
+      <a href="/terms/" hreflang="en">Όροι χρήσης (στα αγγλικά)</a>
+      <a href="/refund/" hreflang="en">Επιστροφές χρημάτων (στα αγγλικά)</a>
+    </div>
+  </div>
+  <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/how-to-save-claude-conversation/" hreflang="en" lang="en">English</a> <a href="/de/claude-chat-speichern/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/sauvegarder-conversation-claude/" hreflang="fr" lang="fr">Français</a> <a href="/es/como-guardar-conversacion-claude/" hreflang="es" lang="es">Español</a> <a href="/it/come-salvare-chat-claude/" hreflang="it" lang="it">Italiano</a> <a href="/pt/como-salvar-conversa-claude/" hreflang="pt" lang="pt">Português</a> <a href="/nl/claude-gesprek-opslaan/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/spara-claude-konversation/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/lagre-claude-samtale/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/gem-claude-samtale/" hreflang="da" lang="da">Dansk</a> <a href="/fi/tallenna-claude-keskustelu/" hreflang="fi" lang="fi">Suomi</a> <a href="/pl/jak-zapisac-rozmowe-claude/" hreflang="pl" lang="pl">Polski</a> <a href="/cs/jak-ulozit-konverzaci-claude/" hreflang="cs" lang="cs">Čeština</a> <a href="/sk/ako-ulozit-konverzaciu-claude/" hreflang="sk" lang="sk">Slovenčina</a> <a href="/hu/claude-beszelgetes-mentese/" hreflang="hu" lang="hu">Magyar</a> <a href="/ro/cum-salvati-conversatie-claude/" hreflang="ro" lang="ro">Română</a> <a href="/el/how-to-save-claude-conversation/" hreflang="el" lang="el">Ελληνικά</a> <a href="/tr/claude-sohbet-kaydetme/" hreflang="tr" lang="tr">Türkçe</a> <a href="/ja/how-to-save-claude-conversation/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/how-to-save-claude-conversation/" hreflang="ko" lang="ko">한국어</a> <a href="/zh-hant/how-to-save-claude-conversation/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="/he/how-to-save-claude-conversation/" hreflang="he" lang="he">עברית</a> <a href="/ar/how-to-save-claude-conversation/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
+  <p class="disclaimer">Οι συνομιλίες επεξεργάζονται στο πρόγραμμα περιήγησής σας · Σύνδεση με Google μόνο για PDF, μαζική εξαγωγή και Pro · Δεν συνδέεται με την Anthropic, PBC. Το Claude είναι εμπορικό σήμα της Anthropic. Ανεξάρτητη επέκταση Chrome — όχι επίσημο προϊόν της Anthropic. Υποστήριξη: <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

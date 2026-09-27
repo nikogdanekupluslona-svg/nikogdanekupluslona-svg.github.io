@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jak uložit konverzaci Claude jako soubor – návod</title>
+  <meta name="description" content="Claude.ai ukládá chaty do historie. Konverzaci Claude jako soubor uložíte rozšířením pro Chrome, tiskem nebo přes Export data. Tlačítko Uložit tam není.">
+  <link rel="canonical" href="https://chat-downloader.com/cs/jak-ulozit-konverzaci-claude/">
+  <!-- i18n:head -->
+  <link rel="alternate" hreflang="en" href="https://chat-downloader.com/how-to-save-claude-conversation/">
+  <link rel="alternate" hreflang="de" href="https://chat-downloader.com/de/claude-chat-speichern/">
+  <link rel="alternate" hreflang="fr" href="https://chat-downloader.com/fr/sauvegarder-conversation-claude/">
+  <link rel="alternate" hreflang="es" href="https://chat-downloader.com/es/como-guardar-conversacion-claude/">
+  <link rel="alternate" hreflang="it" href="https://chat-downloader.com/it/come-salvare-chat-claude/">
+  <link rel="alternate" hreflang="pt" href="https://chat-downloader.com/pt/como-salvar-conversa-claude/">
+  <link rel="alternate" hreflang="nl" href="https://chat-downloader.com/nl/claude-gesprek-opslaan/">
+  <link rel="alternate" hreflang="sv" href="https://chat-downloader.com/sv/spara-claude-konversation/">
+  <link rel="alternate" hreflang="nb" href="https://chat-downloader.com/nb/lagre-claude-samtale/">
+  <link rel="alternate" hreflang="da" href="https://chat-downloader.com/da/gem-claude-samtale/">
+  <link rel="alternate" hreflang="fi" href="https://chat-downloader.com/fi/tallenna-claude-keskustelu/">
+  <link rel="alternate" hreflang="pl" href="https://chat-downloader.com/pl/jak-zapisac-rozmowe-claude/">
+  <link rel="alternate" hreflang="cs" href="https://chat-downloader.com/cs/jak-ulozit-konverzaci-claude/">
+  <link rel="alternate" hreflang="sk" href="https://chat-downloader.com/sk/ako-ulozit-konverzaciu-claude/">
+  <link rel="alternate" hreflang="hu" href="https://chat-downloader.com/hu/claude-beszelgetes-mentese/">
+  <link rel="alternate" hreflang="ro" href="https://chat-downloader.com/ro/cum-salvati-conversatie-claude/">
+  <link rel="alternate" hreflang="el" href="https://chat-downloader.com/el/how-to-save-claude-conversation/">
+  <link rel="alternate" hreflang="tr" href="https://chat-downloader.com/tr/claude-sohbet-kaydetme/">
+  <link rel="alternate" hreflang="ja" href="https://chat-downloader.com/ja/how-to-save-claude-conversation/">
+  <link rel="alternate" hreflang="ko" href="https://chat-downloader.com/ko/how-to-save-claude-conversation/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://chat-downloader.com/zh-hant/how-to-save-claude-conversation/">
+  <link rel="alternate" hreflang="he" href="https://chat-downloader.com/he/how-to-save-claude-conversation/">
+  <link rel="alternate" hreflang="ar" href="https://chat-downloader.com/ar/how-to-save-claude-conversation/">
+  <link rel="alternate" hreflang="x-default" href="https://chat-downloader.com/how-to-save-claude-conversation/">
+  <meta property="og:locale" content="cs_CZ">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="it_IT">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="sv_SE">
+  <meta property="og:locale:alternate" content="nb_NO">
+  <meta property="og:locale:alternate" content="da_DK">
+  <meta property="og:locale:alternate" content="fi_FI">
+  <meta property="og:locale:alternate" content="pl_PL">
+  <meta property="og:locale:alternate" content="sk_SK">
+  <meta property="og:locale:alternate" content="hu_HU">
+  <meta property="og:locale:alternate" content="ro_RO">
+  <meta property="og:locale:alternate" content="el_GR">
+  <meta property="og:locale:alternate" content="tr_TR">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <meta property="og:locale:alternate" content="zh_TW">
+  <meta property="og:locale:alternate" content="he_IL">
+  <meta property="og:locale:alternate" content="ar_AE">
+  <!-- /i18n:head -->
+  <meta property="og:title" content="Jak uložit konverzaci Claude jako soubor – návod">
+  <meta property="og:description" content="Claude.ai ukládá chaty do historie. Konverzaci Claude jako soubor uložíte rozšířením pro Chrome, tiskem nebo přes Export data. Tlačítko Uložit tam není.">
+  <meta property="og:url" content="https://chat-downloader.com/cs/jak-ulozit-konverzaci-claude/">
+  <meta property="og:image" content="https://chat-downloader.com/assets/widget-guide.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chat Downloader">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Jak uložit konverzaci Claude jako soubor – návod">
+  <meta name="twitter:description" content="Claude.ai ukládá chaty do historie. Konverzaci Claude jako soubor uložíte rozšířením pro Chrome, tiskem nebo přes Export data. Tlačítko Uložit tam není.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME1YXGZKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GME1YXGZKR');
+  </script>
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Jak uložím konverzaci Claude jako soubor?","acceptedAnswer":{"@type":"Answer","text":"Nainstalujte Download Claude conversations, otevřete vlákno na claude.ai, klikněte na oranžové tlačítko vpravo od pole pro zprávu, zvolte PDF, Markdown, JSON, text, XML, CSV nebo PNG a klikněte na Export. Soubor se stáhne lokálně, bez účtu, kromě PDF. Historie už chat v účtu Anthropic uložila; oranžové tlačítko zapíše kopii na disk."}},{"@type":"Question","name":"Jak uložit chat Claude na claude.ai?","acceptedAnswer":{"@type":"Answer","text":"Aby vlákno zůstalo v účtu, tlačítko Uložit nepotřebujete. Historie na claude.ai už chaty z přihlášené relace zobrazuje. Chcete-li chat Claude uložit jako soubor, použijte rozšíření pro Chrome, Tisk → Uložit jako PDF, nebo Settings → Privacy → Export data pro ZIP účtu v JSON, který přijde se zpožděním."}},{"@type":"Question","name":"Jak uložit konverzaci v Claude bez rozšíření?","acceptedAnswer":{"@type":"Answer","text":"Vytiskněte stránku claude.ai (Ctrl/Cmd+P → Uložit jako PDF) pro vizuální kopii, nebo použijte Settings → Privacy → Export data pro ZIP celého účtu v JSON, zaslaný e-mailem. Pro krátkou odpověď stačí kopírovat a vložit. Žádná z těchto metod nevytvoří strukturovaný soubor Markdown pro jednotlivý chat tak jako rozšíření pro Chrome."}},{"@type":"Question","name":"Ukládá Claude konverzace už sám do historie?","acceptedAnswer":{"@type":"Answer","text":"Ano. Chaty z přihlášené relace na claude.ai zůstávají v historii v účtu Anthropic. Zavření karty, obnovení stránky ani otevření jiného zařízení se stejným přihlášením vlákno nesmaže. Historie ale není PDF, Markdown, JSON ani jiný soubor na vašem disku."}},{"@type":"Question","name":"Zmizí konverzace Claude, když zavřu kartu?","acceptedAnswer":{"@type":"Answer","text":"Ne. Zavřením karty claude.ai se konverzace z historie nesmaže. Smazání chatu z historie ho z rozhraní účtu odstraní. Soubor, který jste už exportovali přes Download Claude conversations, zůstane na disku i po tomto smazání."}},{"@type":"Question","name":"Mohu konverzaci Claude uložit jako PDF?","acceptedAnswer":{"@type":"Answer","text":"Ano. Download Claude conversations 1.16.2 exportuje PDF přímo: v panelu oranžového tlačítka zvolte PDF a klikněte na Export. Soubor vzniká v prohlížeči bez dialogu tisku. PDF vyžaduje přihlášení přes Google a je zdarma až 3 denně; s Pro bez omezení. Návod: chat Claude jako PDF."}},{"@type":"Question","name":"Kolik souborů mohu uložit zdarma?","acceptedAnswer":{"@type":"Answer","text":"Markdown, prostý text, JSON, XML, CSV a PNG neomezeně, bez účtu. PDF a hromadný ZIP sdílejí v bezplatném plánu limit 3 denně s přihlášením přes Google; každý chat v hromadném ZIP se počítá jako jeden a den se obnovuje o půlnoci UTC. Pro stojí 3,99 USD měsíčně nebo 26,99 USD ročně a limit ruší. Platbu zpracovává Paddle."}},{"@type":"Question","name":"Funguje ukládání konverzací na mobilu?","acceptedAnswer":{"@type":"Answer","text":"Rozšíření pro Chrome ne. Běží v desktopovém Chrome (nebo jiném prohlížeči založeném na Chromiu, který umí instalovat položky z Chrome Web Store). Aplikace pro iOS ani Android neexistuje. Mobilní prohlížeče umí otevřít historii a chat Claude vytisknout, oranžové tlačítko ale nezobrazí."}},{"@type":"Question","name":"Mohu chaty Claude z historie uložit hromadně?","acceptedAnswer":{"@type":"Answer","text":"Ano. V okně rozšíření otevřete View and Download All Conversations, vyfiltrujte tabulku a klikněte na Export All. Hromadný export vyžaduje přihlášení přes Google a v bezplatném plánu se započítává do limitu 3 denně. Tato hromadná cesta není ZIP z Export data od Anthropicu. Oficiální Export data je jeden archiv celého účtu, poslaný později e-mailem. Viz hromadné stahování."}},{"@type":"Question","name":"Uloží to konverzaci Claude i z Claude Code?","acceptedAnswer":{"@type":"Answer","text":"Jen na webu. Relace Claude Code na claude.ai/code se ukládají jako jakýkoli chat na claude.ai. Lokální relace z terminálu ne: použijte /export nebo zkopírujte JSONL z ~/.claude/projects (Windows: %USERPROFILE%\\.claude\\projects). Toto rozšíření pro Chrome běží jen na claude.ai. Návod: export z Claude Code."}},{"@type":"Question","name":"Je k uložení chatu Claude nutné přihlášení přes Google?","acceptedAnswer":{"@type":"Answer","text":"Pro Markdown, prostý text, JSON, XML, CSV ani PNG ne. Přihlášení přes Google je nutné jen pro PDF, hromadný Export All a Pro, abychom mohli uplatnit limit 3 denně a obnovit Pro po přeinstalaci. Obsah konverzací se s tímto přihlášením neodesílá. Ověřený e-mail ukládáme jen kvůli limitu a stavu Pro."}},{"@type":"Question","name":"Kde najdu oficiální Export data pro uložení chatů Claude?","acceptedAnswer":{"@type":"Answer","text":"Na claude.ai: Settings → Privacy → Export data. Anthropic vám e-mailem pošle odkaz s omezenou platností. ZIP je archiv celého účtu v JSON, ne pojmenovaný soubor Markdown s chatem, který jste četli. Export data používejte jako zálohu; oranžové tlačítko pro jeden čitelný soubor hned."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Jak uložit konverzaci Claude jako soubor, který vám zůstane","description":"Claude.ai ukládá chaty do historie. Konverzaci Claude jako soubor uložíte rozšířením pro Chrome, tiskem nebo přes Export data. Tlačítko Uložit tam není.","url":"https://chat-downloader.com/cs/jak-ulozit-konverzaci-claude/","dateModified":"2026-09-25","datePublished":"2026-09-15","inLanguage":"cs","author":{"@type":"Organization","name":"Chat Downloader","url":"https://chat-downloader.com/cs/"},"publisher":{"@type":"Organization","name":"Chat Downloader","url":"https://chat-downloader.com/cs/"},"mainEntityOfPage":"https://chat-downloader.com/cs/jak-ulozit-konverzaci-claude/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Úvod","item":"https://chat-downloader.com/cs/"},{"@type":"ListItem","position":2,"name":"Jak uložit konverzaci","item":"https://chat-downloader.com/cs/jak-ulozit-konverzaci-claude/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Přejít na obsah</a>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a class="logo" href="/cs/">
+        <img src="/assets/icon.svg" alt="">
+        <span>Download Claude conversations</span>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="/cs/jak-stahnout-chat-claude/">Stažení</a><a href="/cs/jak-exportovat-chat-claude/">Export</a><a href="/cs/export-vsech-chatu-claude/">Všechny chaty</a><a href="/cs/formaty/">Formáty</a><a href="/cs/#faq">FAQ</a>
+        <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=cs-how-to-save-claude-conversation" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Přidat do Chrome</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=cs-how-to-save-claude-conversation" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Přidat do Chrome</a>
+      <!-- i18n:switch --><details class="lang-switch"><summary aria-label="Jazyk: Čeština"><svg class="lang-globe" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span class="lang-name">Čeština</span><span class="lang-code" aria-hidden="true">cs</span></summary><ul><li><a href="/how-to-save-claude-conversation/" hreflang="en" lang="en">English</a></li><li><a href="/de/claude-chat-speichern/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/sauvegarder-conversation-claude/" hreflang="fr" lang="fr">Français</a></li><li><a href="/es/como-guardar-conversacion-claude/" hreflang="es" lang="es">Español</a></li><li><a href="/it/come-salvare-chat-claude/" hreflang="it" lang="it">Italiano</a></li><li><a href="/pt/como-salvar-conversa-claude/" hreflang="pt" lang="pt">Português</a></li><li><a href="/nl/claude-gesprek-opslaan/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/sv/spara-claude-konversation/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="/nb/lagre-claude-samtale/" hreflang="nb" lang="nb">Norsk</a></li><li><a href="/da/gem-claude-samtale/" hreflang="da" lang="da">Dansk</a></li><li><a href="/fi/tallenna-claude-keskustelu/" hreflang="fi" lang="fi">Suomi</a></li><li><a href="/pl/jak-zapisac-rozmowe-claude/" hreflang="pl" lang="pl">Polski</a></li><li><a href="/cs/jak-ulozit-konverzaci-claude/" hreflang="cs" lang="cs" aria-current="true">Čeština</a></li><li><a href="/sk/ako-ulozit-konverzaciu-claude/" hreflang="sk" lang="sk">Slovenčina</a></li><li><a href="/hu/claude-beszelgetes-mentese/" hreflang="hu" lang="hu">Magyar</a></li><li><a href="/ro/cum-salvati-conversatie-claude/" hreflang="ro" lang="ro">Română</a></li><li><a href="/el/how-to-save-claude-conversation/" hreflang="el" lang="el">Ελληνικά</a></li><li><a href="/tr/claude-sohbet-kaydetme/" hreflang="tr" lang="tr">Türkçe</a></li><li><a href="/ja/how-to-save-claude-conversation/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/ko/how-to-save-claude-conversation/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/zh-hant/how-to-save-claude-conversation/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li><li><a href="/he/how-to-save-claude-conversation/" hreflang="he" lang="he">עברית</a></li><li><a href="/ar/how-to-save-claude-conversation/" hreflang="ar" lang="ar">العربية</a></li></ul></details><!-- /i18n:switch -->
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+<nav class="crumbs" aria-label="Drobečková navigace"><a href="/cs/">Úvod</a> / Jak uložit konverzaci</nav>
+<main id="main">
+<article class="band prose">
+<p class="article-meta">Aktualizováno v <time datetime="2026-09">září 2026</time> · Rozšíření 1.16.2</p>
+<h1 class="page-h1">Jak uložit konverzaci Claude jako soubor, který vám zůstane</h1>
+<p class="lead">Jak uložit konverzaci Claude, když claude.ai už každý chat z přihlášené relace drží v historii (History)? Tlačítko Uložit, které by zapsalo soubor, tam není. Chcete-li konverzaci Claude uložit jako PDF, Markdown, JSON, text, XML, CSV nebo PNG, použijte Download Claude conversations v Chrome, vytiskněte stránku, nebo si vyžádejte Settings → Privacy → Export data (popisky mohou být přeložené, pokud máte claude.ai nastavené v češtině). Zavřením karty se vlákno nesmaže.</p>
+<aside class="trust-badge" aria-label="O rozšíření">
+  <span class="trophy" aria-hidden="true">🧩</span>
+  <div>
+    <strong>Download Claude conversations – bezplatné rozšíření pro Chrome pro claude.ai</strong>
+    <span>Verze 1.16.2 (září 2026) – neomezené exporty do Markdownu, textu, JSON, XML, CSV a PNG bez účtu; PDF a hromadný ZIP zdarma až 3 denně</span>
+  </div>
+</aside>
+<nav class="toc" aria-label="Na této stránce">
+  <p>Na této stránce</p>
+  <ol>
+    <li><a href="#history-keeps-it">Ukládá Claude konverzace už sám do historie?</a></li>
+    <li><a href="#save-as-file">Jak uložit konverzaci Claude jako soubor?</a></li>
+    <li><a href="#save-with-chrome">Jak uložit chat Claude rozšířením pro Chrome?</a></li>
+    <li><a href="#without-extension">Jak uložit konverzaci v Claude bez rozšíření?</a></li>
+    <li><a href="#will-it-vanish">Zůstane konverzace v historii i po zavření?</a></li>
+    <li><a href="#markdown-json">Jak uložit konverzaci Claude v Markdownu nebo JSON?</a></li>
+    <li><a href="#save-bulk">Jak hromadně uložit historii chatů Claude?</a></li>
+    <li><a href="#desktop-code">Lze uložit konverzaci v Desktopu nebo v Claude Code?</a></li>
+    <li><a href="#faq">FAQ: jak uložit konverzaci Claude</a></li>
+  </ol>
+</nav>
+
+<h2 id="history-keeps-it">Ukládá Claude konverzace už sám do historie?</h2>
+<p>Ano. Claude.ai už ukládá vlákno z přihlášené relace do historie v účtu Anthropic. Zavřením karty konverzace nezmizí. Stále ale chybí ovládací prvek Uložit, který by zapsal soubor na disk. Uložení konverzace jako Markdown nebo JSON je jiný úkol než historie.</p>
+<p>Historie je seznam chatů vlevo na claude.ai. Každý řádek je konverzace, kterou Anthropic pro dané přihlášení uložil. Otevřete řádek později a vrátí se stejné tahy. Jde o úložiště v účtu, ne o složku se staženými soubory v notebooku.</p>
+<p>Lidé, kteří hledají, jak uložit konverzaci v Claude (nebo anglicky „save claude conversation“), často myslí: „zmizí to, až odejdu?“ U běžné přihlášené relace je odpověď ne. Claude.ai nepotřebuje kliknutí na Uložit, aby vlákno v účtu zůstalo. Chybějícím ovládáním je exportér souborů, ne přepínač, který by konverzaci udržel naživu.</p>
+<p>Historie není soubor Markdown, není to strom JSON, ve kterém můžete hledat grepem, a není to PNG, které vložíte do prezentace. Historie žije za přihlášením k Anthropicu. Když se nepřihlásíte, tyto chaty neotevřete. Lokální soubor se otevře, i když heslo už nemáte.</p>
+<div class="callout callout-info">
+  <p><strong>Dvě různá „uložení“.</strong> Historie = Anthropic uchovává chat v účtu. Soubor = vy zapíšete PDF, Markdown, JSON, text, XML, CSV nebo PNG na disk. Claude.ai má to první. Pro to druhé tlačítko nemá.</p>
+</div>
+<p>Projekty (Projects) a Recents na claude.ai jsou stále historie. Zařazení chatu do projektu nevytvoří soubor. Přejmenování konverzace nevytvoří soubor. Označení hvězdičkou nebo připnutí, pokud je rozhraní nabízí, také nezapíše Markdown. Download Claude conversations exportuje chaty uvnitř projektu jako jakékoli jiné a na stránce projektu uloží soubory projektu volba „Project files“ → „Download ZIP“ (soubory projektu → stáhnout ZIP).</p>
+<p>Pracovní prostory Team a Enterprise mají stejné rozdělení. Pokud konverzaci otevřete na claude.ai, Anthropic ji pro pracovní prostor už uložil. Firemní pravidla uchovávání ale mohou chaty mazat nebo skrývat podle plánu, který neovlivníte. Exportovaný soubor je pak kopie, která vám zůstane.</p>
+<p>Anonymní okno a druhý profil Chrome historii nesdílejí. Vlákno je vázané na účet Anthropic použitý v dané relaci. Po přihlášení k jinému účtu Anthropic uvidíte jiný seznam historie. „Uložení“ napříč účty je soubor, ne sloučení historie.</p>
+
+<h2 id="save-as-file">Jak uložit konverzaci Claude jako soubor?</h2>
+<p>Chcete-li uložit konverzaci Claude jako soubor, zvolte metodu, která zapisuje na disk: Download Claude conversations v Chrome, Tisk → Uložit jako PDF, nebo Settings → Privacy → Export data. Historie na claude.ai je úložiště v účtu, ne soubor PDF, Markdown, JSON, text, XML, CSV ani PNG.</p>
+<p>Rozšíření pro Chrome je cesta pro jednotlivé chaty. Otevřete URL konverzace, klikněte na oranžové tlačítko vedle pole pro zprávu, zvolte formát a klikněte na „Export“ (Exportovat). Rozhraní Chrome pro stahování zapíše soubor lokálně. Markdown, text, JSON, XML, CSV a PNG nepotřebují účet; přihlášení přes Google vyžaduje jen PDF. Obsah chatů zůstává v počítači.</p>
+<p>Tisk je vizuální cesta. Ctrl+P nebo Cmd+P, cíl Uložit jako PDF. Výsledek vypadá jako stránka claude.ai, včetně prvků rozhraní, které tiskové styly neskryly. Bloky kódu se často rozdělí mezi listy. Tisk použijte, když recenzent chce snímek, ne soubor s poznámkami. Pro PDF sestavené ze zpráv místo z obrazovky zvolte PDF v rozšíření.</p>
+<p>Oficiální Export data je cesta pro celý účet. Settings → Privacy → Export data na claude.ai. Anthropic vám e-mailem pošle odkaz s omezenou platností. ZIP je JSON celého účtu, ne jeden pojmenovaný soubor s chatem na obrazovce. Čekání je cena za úplnou zálohu.</p>
+<div class="table-wrap">
+  <table>
+    <caption>Co znamená „uložit“ na claude.ai a co soubor na disku</caption>
+    <thead>
+      <tr>
+        <th scope="col">Chcete</th>
+        <th scope="col">Metoda</th>
+        <th scope="col">Co získáte</th>
+        <th scope="col">Co vám stále chybí</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Aby chat nezmizel</th>
+        <td>Zůstaňte přihlášení; používejte historii</td>
+        <td>Vlákno v účtu Anthropic</td>
+        <td>Soubor, který pošlete e-mailem nebo dáte do gitu</td>
+      </tr>
+      <tr>
+        <th scope="row">Jeden chat, čitelný soubor, hned</th>
+        <td>Rozšíření pro Chrome (tento produkt)</td>
+        <td>PDF, Markdown, JSON, text, XML, CSV nebo PNG</td>
+        <td>Oficiální archiv účtu od Anthropicu</td>
+      </tr>
+      <tr>
+        <th scope="row">Vizuální PDF této obrazovky</th>
+        <td>Tisk → Uložit jako PDF</td>
+        <td>Stránkovaný snímek claude.ai</td>
+        <td>Čistý kód, tabulky, sbalené artefakty</td>
+      </tr>
+      <tr>
+        <th scope="row">Záloha celého účtu</th>
+        <td>Settings → Privacy → Export data</td>
+        <td>ZIP s JSON e-mailem</td>
+        <td>Formátování jednotlivých chatů; čekání na odkaz</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p>Vyberte řádek, který odpovídá úkolu. Většina lidí, kteří hledají, jak uložit chat Claude, chce druhý řádek: soubor, který otevřou v Obsidianu, VS Code nebo wiki. První řádek už vyřešila historie. Tisk a Export data jsou stále platné cesty; řeší jiné úkoly.</p>
+<p>Soubor je správná volba před odchodem z firmy, před vymazáním notebooku, pro výzkumný archiv nebo předtím, než vložíte revizi kódu do gitu. Historie stačí, když potřebujete stejné vlákno zítra znovu otevřít pod stejným přihlášením k Anthropicu.</p>
+<p>Kopírování a vložení je pátá metoda a slabý soubor. Označte text na claude.ai a vložte ho do Dokumentů. Ohraničený kód se rozpadne. Z tabulek se stanou souvislé řádky. Hranice zpráv zmizí. Pro jeden odstavec to stačí. Jako jediný záznam 40kolové revize návrhu je to málo. Tlačítko „Copy“ (Kopírovat) v rozšíření místo toho vloží do schránky čistý Markdown.</p>
+
+<h2 id="save-with-chrome">Jak uložit chat Claude rozšířením pro Chrome?</h2>
+<p>Uložení chatu přes Download Claude conversations: nainstalujte rozšíření pro Chrome, otevřete vlákno na claude.ai, klikněte na oranžové tlačítko vedle pole pro zprávu, zvolte PDF, Markdown, JSON, text, XML, CSV nebo PNG a klikněte na Export. Účet není potřeba, kromě PDF.</p>
+<ol>
+<li>Nainstalujte Download Claude conversations z Chrome Web Store (fungují i prohlížeče založené na Chromiu, které načítají rozšíření pro Chrome).</li>
+<li>Pokud byla stránka claude.ai během instalace otevřená, načtěte ji znovu. Chrome ne vždy vloží content script do starých karet.</li>
+<li>Otevřete z historie URL skutečné konverzace – oranžové tlačítko se objeví ve vlákně, ne na prázdné úvodní stránce s polem pro psaní.</li>
+<li>Klikněte na kulaté oranžové tlačítko pro stažení vpravo od pole pro zprávu. Otevře se panel s volbami „Messages“ (zprávy: All / Human / Assistant), „Format“ (formát), „Thinking“ (uvažování), „Select“ (Vybrat), „Copy“ a „Export“.</li>
+<li>Zvolte PDF, Markdown, prostý text (Plain Text), JSON, XML, CSV nebo PNG. Klikněte na Export. Chrome soubor okamžitě stáhne.</li>
+</ol>
+<p>Rozšíření funguje jako content script v Chrome, a to jen na claude.ai. Parser čte konverzaci, která je už načtená v přihlášené relaci. Download Claude conversations nevolá samostatné API Anthropicu s vlastními přihlašovacími údaji a nenahrává vlákno na naše servery, aby z něj vytvořilo soubor.</p>
+<p>Pro Markdown, prostý text, JSON, XML, CSV ani PNG nepotřebujete účet. Tyto exporty jednotlivých chatů jsou neomezené a zdarma: bez přihlášení, bez počítadla. Přihlášení přes Google se objeví, jen když zvolíte PDF nebo spustíte hromadný „Export All“ (Exportovat vše). Přihlášení přes Google neslouží ke čtení chatů. Obsah konverzací zůstává ve vašem počítači.</p>
+<p>PDF a hromadný ZIP sdílejí bezplatný limit 3 denně, který se obnovuje o půlnoci UTC. Každý chat v hromadném ZIP se počítá jako jeden. Pro stojí 3,99 USD měsíčně nebo 26,99 USD ročně a limit ruší. Platby za Pro zpracovává Paddle. Čísla karet nevidíme. Postup pro PDF: <a href="/cs/chat-claude-do-pdf/">stažení chatu Claude jako PDF</a>.</p>
+<div class="callout callout-tip">
+  <p><strong>Lokální soubory.</strong> Každý formát, včetně PDF, vzniká v prohlížeči a předává se rozhraní Chrome pro stahování. Text chatu se nikdy nenahrává. Jen exporty PDF a hromadné exporty odesílají kontrolu limitu s vaším e-mailem Google. Verze 1.16.2, září 2026.</p>
+</div>
+<p>Stejný panel filtruje podle odesílatele – All, Human nebo Assistant (vše, uživatel, asistent). Zaškrtávací políčko Thinking zahrne, nebo vynechá rozšířené uvažování. Select umožní zaškrtnout jednotlivé zprávy, takže soubor obsahuje jen tyto tahy. Copy vloží Markdown, text, JSON, XML nebo CSV do schránky místo stažení souboru. Kroky nástrojů / MCP a zdroje z webového vyhledávání se zapínají v nastavení (Settings). Metadata a rozložení artefaktů – „Original“, „Inline“, „Nested“ nebo „Flat“ (původní, vložené, vnořené, ploché) – nastavíte na přehledu (Dashboard).</p>
+<p>Pokud je vlákno velmi dlouhé, posouvejte stránku, dokud claude.ai nenačte starší zprávy. Rozšíření dokáže exportovat jen to, co stránka vykreslila. Napůl načtené vlákno dá napůl načtený soubor. Vypadá to jako chyba, ale obvykle jde o neposunutý DOM.</p>
+<p>Před exportem počkejte, až asistent dopíše odpověď. Soubor uložený uprostřed generování usekne poslední odpověď. Druhý pokus v Markdownu nebo JSON nic nestojí. Druhé PDF spotřebuje v bezplatném plánu další ze 3 denních slotů – i proto nejdřív ověřte, že je vlákno kompletní.</p>
+<p>Naposledy použitý formát si rozšíření pamatuje. Pokud jste chtěli Markdown a dostali JSON, v rozbalovacím seznamu zůstal JSON z předchozího exportu. Při každé změně úkolu seznam zkontrolujte. Postup se snímky obrazovky pro stejné oranžové tlačítko najdete v návodu <a href="/cs/jak-stahnout-chat-claude/">jak stáhnout chat Claude</a>.</p>
+<div class="expert-quote">
+  <blockquote>Každý týden slyšíme stejné nedorozumění: lidé hledají tlačítko Uložit, protože si myslí, že historie je koncept, který zmizí. Claude.ai vlákno už uložil. Naše oranžové tlačítko jen zapíše lokální soubor – PDF, Markdown, JSON, text, XML, CSV nebo PNG – ze stránky, kterou už máte otevřenou.</blockquote>
+  <cite><strong>Tým Download Claude conversations</strong> – autoři rozšíření Claude Chat Downloader pro Chrome</cite>
+</div>
+
+<h2 id="without-extension">Jak uložit konverzaci v Claude bez rozšíření?</h2>
+<p>Bez rozšíření máte dvě cesty: vytisknout stránku claude.ai, nebo si vyžádat ZIP z Export data od Anthropicu. Tisk je vizuální PDF webové stránky. Export data je archiv celého účtu v JSON, který přijde se zpožděním. Ani jedna cesta nevytvoří soubor Markdown pro jednotlivý chat.</p>
+<p>Tisk: otevřete konverzaci na claude.ai, skryjte postranní panel, pokud to rozhraní dovolí, stiskněte Ctrl+P (Windows/Linux) nebo Cmd+P (Mac), jako cíl nastavte Uložit jako PDF a uložte. Prvky pole pro psaní se mohou opakovat na každém listu. Podrobné poznámky k tisku najdete v návodu <a href="/cs/chat-claude-do-pdf/">chat Claude jako PDF</a>.</p>
+<p>Oficiální cesta: Settings → Privacy → Export data na claude.ai. Anthropic vám e-mailem pošle odkaz s omezenou platností. Pokud z tisíců konverzací potřebujete jednu, rozbalte si ZIP sami. Tento archiv je záloha pro právní účely, ne soubor s poznámkami na zítřejší poradu.</p>
+<p>Kopírování a vložení funguje bez jakékoli instalace. Označte tahy na claude.ai a vložte je do aplikace na poznámky. Odsazení kódu se obvykle ztratí. Vícekolové vlákno se změní v nestrukturovanou zeď textu. Kopírování použijte pro jeden úryvek, ne jako jediný plán, jak konverzaci v Claude uložit.</p>
+<div class="table-wrap">
+  <table>
+    <caption>Jak dostat chat Claude z obrazovky bez rozšíření</caption>
+    <thead>
+      <tr>
+        <th scope="col">Metoda</th>
+        <th scope="col">Rychlost</th>
+        <th scope="col">Rozsah</th>
+        <th scope="col">Nejlepší pro</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Tisk → Uložit jako PDF</th>
+        <td>Okamžitě</td>
+        <td>Otevřená stránka</td>
+        <td>Vizuální přílohu</td>
+      </tr>
+      <tr>
+        <th scope="row">Settings → Privacy → Export data</th>
+        <td>E-mail se zpožděním</td>
+        <td>Celý účet</td>
+        <td>Odchod z firmy nebo právní uchování dat</td>
+      </tr>
+      <tr>
+        <th scope="row">Kopírovat a vložit</th>
+        <td>Okamžitě</td>
+        <td>Cokoli jste označili</td>
+        <td>Jednu krátkou odpověď</td>
+      </tr>
+      <tr>
+        <th scope="row">Jen historie (bez souboru)</th>
+        <td>Už hotovo</td>
+        <td>Chaty z přihlášené relace</td>
+        <td>Opětovné otevření stejného vlákna</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p>Žádný z těchto řádků nenahradí Download Claude conversations, když z jedné položky historie potřebujete hned strukturovaný Markdown. Metody bez rozšíření mají smysl, když IT blokuje rozšíření pro Chrome, když potřebujete oficiální ZIP, nebo když je výstupem výtisk přesně té obrazovky.</p>
+<p>Mobilní Safari i Chrome v telefonu umí tisknout. Tyto prohlížeče ale položku z Chrome Web Store nenainstalují. Pro opakovaně použitelný soubor Markdown otevřete stejnou položku historie v desktopovém Chrome, až si rozšíření přidáte.</p>
+
+<h2 id="will-it-vanish">Zůstane konverzace v historii i po zavření?</h2>
+<p>Ano. Historie konverzaci Claude uchová i po zavření karty, obnovení claude.ai nebo vypnutí notebooku – pokud chat vznikl v přihlášené relaci. Zavření karty není smazání. Vlákno z rozhraní účtu odstraní až smazání z historie.</p>
+<p>Odhlaste se z claude.ai a stránka zůstane prázdná. Přihlaste se znovu ke stejnému účtu Anthropic a historie tyto chaty vrátí. Odhlášení seznam skryje; samo o sobě úložiště účtu nemaže. Jiné přihlášení k Anthropicu ukáže jinou historii.</p>
+<p>Smazání z historie je případ, kdy chat opravdu zmizí. Odstraňte konverzaci v rozhraní claude.ai a vlákno zmizí z postranního panelu. Soubor Markdown, který jste už oranžovým tlačítkem exportovali, zůstane na disku. Pokud se chystá úklid chatů, exportujte nejdřív.</p>
+<div class="callout callout-warn">
+  <p><strong>Smazání není zavření.</strong> Zavřením karty claude.ai zůstane historie beze změny. Smazáním konverzace z historie chat z rozhraní účtu zmizí. Oficiální Export data po smazání nepomůže, pokud Anthropic dané vlákno už nezahrnuje. Soubor zapište dřív, než začnete prořezávat.</p>
+</div>
+<p>Anonymní okno končí zavřením. Pokud jste claude.ai používali v anonymním okně bez trvalého přihlášení, nepředpokládejte, že historie práci uchovala. Přihlaste se v běžném profilu Chrome, nebo exportujte soubor dřív, než anonymní relace skončí.</p>
+<p>Správci pracovních prostorů Team a Enterprise mohou chaty uchovávat nebo omezovat. Zásada, kterou jste nenastavili, může vlákno později skrýt. Firemní historii berte jako vypůjčené úložiště. Exportovaný soubor Markdown nebo JSON berte jako kopii na vaší straně těchto zásad.</p>
+<p>Přechod z telefonu na notebook nevyžaduje žádné zvláštní kliknutí na uložení, pokud obě zařízení používají stejný účet Anthropic. Otevřete historii v notebooku. Pokud chat chybí, jste v jiném účtu, v jiném pracovním prostoru, nebo bylo vlákno smazáno – ne „neuloženo“.</p>
+<p>Claude Desktop může zobrazit chaty stejného účtu, pokud je aplikace přihlášená ke stejnému uživateli Anthropic. Synchronizace je věcí Anthropicu. Rozšíření pro Chrome se do Desktopu nikdy nevkládá. Pokud vlákno existuje na claude.ai, otevřete claude.ai v Chrome a zapište soubor.</p>
+
+<h2 id="markdown-json">Jak uložit konverzaci Claude v Markdownu nebo JSON?</h2>
+<p>Uložení v Markdownu nebo JSON: otevřete oranžové tlačítko na claude.ai, zvolte formát a klikněte na Export. Markdown je soubor na poznámky. JSON je strom zpráv pro skripty. Prostý text nemá žádné značkování. CSV má jeden řádek na zprávu. PDF je stránkovaný dokument. PNG je obrázek.</p>
+<p>Markdown zachovává nadpisy, ohraničené bloky kódu s označením jazyka i tabulky. Markdown je obvyklá volba pro Obsidian, GitHub nebo wiki. Poznámky k rozvržení tohoto formátu: <a href="/cs/formaty/markdown/">export do Markdownu</a>. JSON uchovává strom, který parser už sestavil, včetně artefaktů a uvažování, pokud jsou tyto volby zapnuté.</p>
+<p>JSON z Download Claude conversations nemá stejnou strukturu jako ZIP účtu od Anthropicu. JSON z rozšíření je jedna konverzace tak, jak ji stránka vykreslila. JSON z Export data je výpis celého účtu, který Anthropic pošle později e-mailem. Nemíchejte tato dvě schémata v jednom skriptu, aniž byste zkontrolovali klíče.</p>
+<p>Prostý text je správná volba, když cíl značkování odstraní – pole v tiketovacím systému, tělo e-mailu, vyhledávací index, který chce čisté řetězce. XML je specializovaná volba pro výměnu dat. CSV otevřete v Excelu, Google Sheets nebo Numbers. PNG se hodí do prezentace nebo jako obrázek vlákna k hlášení chyby, ne pro 40kolovou revizi, ve které budete hledat grepem.</p>
+<div class="table-wrap">
+  <table>
+    <caption>Formáty, do kterých Download Claude conversations ukládá z claude.ai</caption>
+    <thead>
+      <tr>
+        <th scope="col">Formát</th>
+        <th scope="col">Nejlepší pro</th>
+        <th scope="col">Není pro</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">PDF</th>
+        <td>Sdílení, tisk, přílohy pro klienty</td>
+        <td>Grep, diff nebo další úpravy</td>
+      </tr>
+      <tr>
+        <th scope="row">Markdown</th>
+        <td>Poznámky, git, pozdější převod</td>
+        <td>Rozvržení přesné na pixel</td>
+      </tr>
+      <tr>
+        <th scope="row">JSON</th>
+        <td>Skripty, strom zpráv</td>
+        <td>Čtení v textovém editoru</td>
+      </tr>
+      <tr>
+        <th scope="row">Prostý text</th>
+        <td>Archivy bez značkování</td>
+        <td>Zachování tabulek jako tabulek</td>
+      </tr>
+      <tr>
+        <th scope="row">XML</th>
+        <td>Pipeline pouze pro XML</td>
+        <td>Běžné čtení</td>
+      </tr>
+      <tr>
+        <th scope="row">CSV</th>
+        <td>Tabulky, jeden řádek na zprávu</td>
+        <td>Čtení jako dokument</td>
+      </tr>
+      <tr>
+        <th scope="row">PNG</th>
+        <td>Obrázek vlákna</td>
+        <td>Hledání, diff nebo vícestránkový dokument</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p>PDF je součástí verze 1.16.2. Zvolte PDF a v dialogu nastavíte název souboru, velikost stránky, okraje, světlý nebo tmavý režim, písmo a jeho velikost, čísla stránek, obsah, časová razítka a zalomení stránky před každým dotazem. PDF vyžaduje přihlášení přes Google a v bezplatném plánu je omezeno na 3 denně. S Pro bez omezení. Podrobnosti: <a href="/cs/chat-claude-do-pdf/">chat Claude jako PDF</a>.</p>
+<p>Uvažování, metadata, filtr odesílatele a rozložení artefaktů mění, co se do Markdownu a JSON dostane. Když potřebujete v archivu rozšířené uvažování, zaškrtněte v panelu Thinking. Nechte ho vypnuté, pokud je soubor pro čtenáře, který má vidět jen konečnou odpověď. Metadata přidají název, časová razítka a model, když chcete mít v souboru s poznámkami záhlaví.</p>
+<p>Volba „Human“ v Messages zapíše vaše dotazy. „Assistant“ zapíše odpovědi Claude. „All“ je celé vlákno. Select zúží soubor na zprávy, které zaškrtnete. Rozložení artefaktů na přehledu – Original, Inline, Nested nebo Flat – určuje, zda artefakty zůstanou uvnitř souboru, nebo ve vlastní složce v ZIP. Vyberte rozložení jednou a používejte ho dál, aby složka uložených chatů zůstala jednotná.</p>
+
+<h2 id="save-bulk">Jak hromadně uložit historii chatů Claude?</h2>
+<p>Chcete-li uložit historii chatů Claude jako mnoho souborů, neklikejte na oranžové tlačítko v každé kartě zvlášť. V okně rozšíření otevřete „View and Download All Conversations“ (Zobrazit a stáhnout všechny konverzace), vyfiltrujte tabulku a klikněte na Export All. Export All vyžaduje přihlášení přes Google. V bezplatném plánu spotřebuje každý chat v ZIP jeden ze 3 denních slotů sdílených s PDF. Pro limit ruší.</p>
+<p>Přehled (Dashboard) zobrazuje konverzace z účtu claude.ai, ke kterému jste přihlášeni – stejnou historii, kterou už máte, jen jako tabulku, kterou lze filtrovat. Hledejte podle názvu. Filtrujte podle All conversations, New, Updated nebo Previously exported (všechny, nové, aktualizované, dříve exportované). Přepínejte mezi kartami Chat a Cowork a hledejte podle projektu, pokud chaty na claude.ai takto seskupujete.</p>
+<p>Hromadný export vytvoří jeden ZIP s jedním souborem na chat ve formátu, který zvolíte ve výběru „Chat format“ – kterýkoli ze sedmi, včetně PDF. Používá stejný parser jako export jednoho chatu. Zaškrtávací políčka určují obsah – „Chats“, „Thinking“, „Metadata“, „Tools“, „Sources“ (chaty, uvažování, metadata, nástroje, zdroje) – a k tomu rozložení artefaktů. Export All není ořezaná verze. Export All je stejný parser použitý na mnoho ID konverzací najednou. Podrobnosti: <a href="/cs/export-vsech-chatu-claude/">hromadný Export All</a>.</p>
+<p>Export data od Anthropicu zůstává zálohou účtu. Jeden ZIP, jeden e-mail, JSON pro všechno, včetně chatů, na které jste zapomněli. Hromadný Export All řeší opačný úkol: vy vybíráte řádky historie, vy volíte formát a ZIP dorazí okamžitě. Použijte obojí, pokud chcete archiv pro právní účely i složku čitelných poznámek.</p>
+<div class="callout callout-warn">
+  <p><strong>Limit je sdílený a denní.</strong> V bezplatném plánu sdílejí exporty PDF a hromadně exportované chaty limit 3 denně, který se obnovuje o půlnoci UTC. Vyberete-li 40 konverzací, zablokuje se celá dávka – nezkrátí se. Vyberte méně, nebo přejděte na Pro za 3,99 USD měsíčně či 26,99 USD ročně přes Paddle.</p>
+</div>
+<p>Přehled si pamatuje, co jste už exportovali, takže při další návštěvě můžete filtrovat jen New nebo Updated. Díky tomu zůstane pravidelné týdenní ukládání chatů přírůstkové a neduplikuje Markdown z minulého měsíce. Počítadlo 3 denně se váže na účet Google, ne na instalaci, a obnovuje se o půlnoci UTC.</p>
+<p>Když je historie plná jednořádkových konceptů, vyberte jen část. Export All neznamená, že musíte vzít každý řádek. Přesný filtr a Markdown dají čistší výzkumnou složku než 200 prázdných vláken s „ahoj“.</p>
+<p>Export chatu Claude jako produktové sloveso znamená stejné oranžové tlačítko a stejnou tabulku Export All. Související stránka <a href="/cs/export-chatu-claude/">export chatu Claude</a> tyto ovládací prvky popisuje, pokud jste přišli z dotazu na „export“ místo „uložit“.</p>
+
+<h2 id="desktop-code">Lze uložit konverzaci v Desktopu nebo v Claude Code?</h2>
+<p>V Desktopu ne. V Claude Code jen na webu. Download Claude conversations neuloží konverzaci Claude z Claude Desktop ani z lokálního terminálu Claude Code. Relace na claude.ai/code se otevírají v desktopovém Chrome, takže se ukládají jako jakýkoli chat. Claude Desktop je samostatná aplikace. Lokální Claude Code je terminálový agent s příkazem <code>/export</code> a soubory JSONL na disku.</p>
+<p>Pokud chat z Desktopu existuje i na claude.ai, otevřete tuto URL v Chrome a použijte oranžové tlačítko. Pokud vlákno existuje jen v Desktopu, zkopírujte ho, nebo počkejte na Settings → Privacy → Export data. Rozšíření se do okna Desktopu nikdy nevkládá.</p>
+<p>V aktivní relaci Claude Code napište <code>/export</code>. CLI od Anthropicu otevře nabídku, kde přepis zkopírujete nebo uložíte jako soubor s prostým textem. Když zadáte název souboru, nabídka se přeskočí. Tento přepis je vykreslený text ke čtení pro člověka, ne Markdown, JSON ani PDF z tohoto rozšíření. Všechny cesty: <a href="/cs/export-konverzace-claude-code/">export z Claude Code</a>.</p>
+<p>JSONL na disku je interní log v <code>~/.claude/projects</code> (Windows: <code>%USERPROFILE%\.claude\projects</code>). Jeho schéma se může mezi verzemi Claude Code měnit. Vlastní dokumentace Anthropicu doporučuje místo parsování JSONL používat <code>/export</code>. Toto CLI neobalujeme. Složku <code>~/.claude</code> nečteme.</p>
+<div class="table-wrap">
+  <table>
+    <caption>Kde jednotlivá prostředí Claude uchovávají konverzaci, kterou si můžete nechat</caption>
+    <thead>
+      <tr>
+        <th scope="col">Prostředí</th>
+        <th scope="col">Už „uloženo“?</th>
+        <th scope="col">Jak zapsat soubor</th>
+        <th scope="col">Toto rozšíření pro Chrome</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">claude.ai v Chrome (chaty, projekty, Cowork)</th>
+        <td>Ano – historie v účtu</td>
+        <td>Oranžové tlačítko nebo Export All</td>
+        <td>Ano – to je tento produkt</td>
+      </tr>
+      <tr>
+        <th scope="row">Claude Code na webu (claude.ai/code)</th>
+        <td>Ano – relace v účtu</td>
+        <td>Otevřete relaci v Chrome a exportujte</td>
+        <td>Ano</td>
+      </tr>
+      <tr>
+        <th scope="row">Claude Code v lokálním terminálu</th>
+        <td>JSONL relace na disku</td>
+        <td><code>/export</code> nebo zkopírujte JSONL</td>
+        <td>Ne</td>
+      </tr>
+      <tr>
+        <th scope="row">Aplikace Claude Desktop</th>
+        <td>Pokud se stejný účet Anthropic synchronizuje</td>
+        <td>Otevřete chat na claude.ai, nebo zkopírujte a vložte</td>
+        <td>Ne – do Desktopu se nevkládá</td>
+      </tr>
+      <tr>
+        <th scope="row">Záloha celého účtu</th>
+        <td>Úložiště Anthropicu a ZIP e-mailem</td>
+        <td>Settings → Privacy → Export data</td>
+        <td>Jiný úkol – ZIP s JSON se zpožděním</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p>Pracovní prostory Team a Enterprise s rozšířením fungují, pokud konverzaci otevřete na claude.ai v Chrome. Parser čte vykreslenou stránku, ne API určené jen pro spotřebitelské účty. Pokud firemní zásady rozšíření blokují, je to rozhodnutí IT, ne přepínač úrovně plánu v našem nastavení.</p>
+<p>Nezávislé rozšíření pro Chrome, není spojeno s Anthropic, PBC. Claude je ochranná známka společnosti Anthropic. Dodržujte podmínky služby Anthropicu. Nemůžeme poskytovat právní rady o tom, zda je konkrétní export na vašem pracovišti povolen. Rozšíření používá vaši stávající relaci stejně jako web a neautomatizuje akce v účtu.</p>
+<p>Pro účtuje Paddle. Přihlášení přes Google, které slouží jen pro PDF, hromadný export a Pro, nám k vašim konverzacím přístup nedává. Cloudflare worker, který kontroluje limit a stav Pro, dostane váš e-mail Google, ne text zpráv. Ostatní exporty jednotlivých chatů neodesílají nic. Fakturace na serveru, chat na disku – tato hranice je celý příběh soukromí pro každý soubor s konverzací, který tento produkt zapíše.</p>
+
+<h2 id="faq">FAQ: jak uložit konverzaci Claude</h2>
+<h3>Jak uložím konverzaci Claude jako soubor?</h3>
+<p>Nainstalujte Download Claude conversations, otevřete vlákno na claude.ai, klikněte na oranžové tlačítko vpravo od pole pro zprávu, zvolte PDF, Markdown, JSON, text, XML, CSV nebo PNG a klikněte na Export. Soubor se stáhne lokálně, bez účtu, kromě PDF. Historie už chat v účtu Anthropic uložila; oranžové tlačítko zapíše kopii na disk.</p>
+<h3>Jak uložit chat Claude na claude.ai?</h3>
+<p>Aby vlákno zůstalo v účtu, tlačítko Uložit nepotřebujete. Historie na claude.ai už chaty z přihlášené relace zobrazuje. Chcete-li chat Claude uložit jako soubor, použijte rozšíření pro Chrome, Tisk → Uložit jako PDF, nebo Settings → Privacy → Export data pro ZIP účtu v JSON, který přijde se zpožděním.</p>
+<h3>Jak uložit konverzaci v Claude bez rozšíření?</h3>
+<p>Vytiskněte stránku claude.ai (Ctrl/Cmd+P → Uložit jako PDF) pro vizuální kopii, nebo použijte Settings → Privacy → Export data pro ZIP celého účtu v JSON, zaslaný e-mailem. Pro krátkou odpověď stačí kopírovat a vložit. Žádná z těchto metod nevytvoří strukturovaný soubor Markdown pro jednotlivý chat tak jako rozšíření pro Chrome.</p>
+<h3>Ukládá Claude konverzace už sám do historie?</h3>
+<p>Ano. Chaty z přihlášené relace na claude.ai zůstávají v historii v účtu Anthropic. Zavření karty, obnovení stránky ani otevření jiného zařízení se stejným přihlášením vlákno nesmaže. Historie ale není PDF, Markdown, JSON ani jiný soubor na vašem disku.</p>
+<h3>Zmizí konverzace Claude, když zavřu kartu?</h3>
+<p>Ne. Zavřením karty claude.ai se konverzace z historie nesmaže. Smazání chatu z historie ho z rozhraní účtu odstraní. Soubor, který jste už exportovali přes Download Claude conversations, zůstane na disku i po tomto smazání.</p>
+<h3>Mohu konverzaci Claude uložit jako PDF?</h3>
+<p>Ano. Download Claude conversations 1.16.2 exportuje PDF přímo: v panelu oranžového tlačítka zvolte PDF a klikněte na Export. Soubor vzniká v prohlížeči bez dialogu tisku. PDF vyžaduje přihlášení přes Google a je zdarma až 3 denně; s Pro bez omezení. Návod: <a href="/cs/chat-claude-do-pdf/">chat Claude jako PDF</a>.</p>
+<h3>Kolik souborů mohu uložit zdarma?</h3>
+<p>Markdown, prostý text, JSON, XML, CSV a PNG neomezeně, bez účtu. PDF a hromadný ZIP sdílejí v bezplatném plánu limit 3 denně s přihlášením přes Google; každý chat v hromadném ZIP se počítá jako jeden a den se obnovuje o půlnoci UTC. Pro stojí 3,99 USD měsíčně nebo 26,99 USD ročně a limit ruší. Platbu zpracovává Paddle.</p>
+<h3>Funguje ukládání konverzací na mobilu?</h3>
+<p>Rozšíření pro Chrome ne. Běží v desktopovém Chrome (nebo jiném prohlížeči založeném na Chromiu, který umí instalovat položky z Chrome Web Store). Aplikace pro iOS ani Android neexistuje. Mobilní prohlížeče umí otevřít historii a chat Claude vytisknout, oranžové tlačítko ale nezobrazí.</p>
+<h3>Mohu chaty Claude z historie uložit hromadně?</h3>
+<p>Ano. V okně rozšíření otevřete View and Download All Conversations, vyfiltrujte tabulku a klikněte na Export All. Hromadný export vyžaduje přihlášení přes Google a v bezplatném plánu se započítává do limitu 3 denně. Tato hromadná cesta není ZIP z Export data od Anthropicu. Oficiální Export data je jeden archiv celého účtu, poslaný později e-mailem. Viz <a href="/cs/export-vsech-chatu-claude/">hromadné stahování</a>.</p>
+<h3>Uloží to konverzaci Claude i z Claude Code?</h3>
+<p>Jen na webu. Relace Claude Code na claude.ai/code se ukládají jako jakýkoli chat na claude.ai. Lokální relace z terminálu ne: použijte <code>/export</code> nebo zkopírujte JSONL z <code>~/.claude/projects</code> (Windows: <code>%USERPROFILE%\.claude\projects</code>). Toto rozšíření pro Chrome běží jen na claude.ai. Návod: <a href="/cs/export-konverzace-claude-code/">export z Claude Code</a>.</p>
+<h3>Je k uložení chatu Claude nutné přihlášení přes Google?</h3>
+<p>Pro Markdown, prostý text, JSON, XML, CSV ani PNG ne. Přihlášení přes Google je nutné jen pro PDF, hromadný Export All a Pro, abychom mohli uplatnit limit 3 denně a obnovit Pro po přeinstalaci. Obsah konverzací se s tímto přihlášením neodesílá. Ověřený e-mail ukládáme jen kvůli limitu a stavu Pro.</p>
+<h3>Kde najdu oficiální Export data pro uložení chatů Claude?</h3>
+<p>Na claude.ai: Settings → Privacy → Export data. Anthropic vám e-mailem pošle odkaz s omezenou platností. ZIP je archiv celého účtu v JSON, ne pojmenovaný soubor Markdown s chatem, který jste četli. Export data používejte jako zálohu; oranžové tlačítko pro jeden čitelný soubor hned.</p>
+</article>
+</main>
+<section class="final-cta page-cta" aria-label="Instalace">
+  <div class="wrap">
+    <div class="final-cta-panel">
+      <p class="final-kicker">Download Claude conversations</p>
+      <h2>Nainstalujte rozšíření a uložte konverzaci Claude jako soubor</h2>
+      <p>Historie chat už uchovává. Proměňte otevřené vlákno z claude.ai v PDF, Markdown, JSON, text, XML, CSV nebo PNG – lokálně, přímo z Chrome.</p>
+      <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=cs-save-conversation" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Přidat do Chrome</a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="logo" href="/cs/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
+      <p class="legal-note">Rozšíření pro Chrome ke stažení chatů z Claude.ai jako PDF, Markdown, JSON, prostý text, CSV, XML nebo PNG.</p>
+    </div>
+    <div>
+      <h2>Instalace</h2>
+      <a class="install-link" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=cs-footer" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Rozšíření pro Chrome</a>
+    </div>
+    <div>
+      <h2>Produkt</h2>
+      <a href="/cs/funkce/">Funkce</a>
+      <a href="/cs/formaty/">Formáty</a>
+      <a href="/cs/export-vsech-chatu-claude/">Export všech chatů</a>
+      <a href="/cs/jak-to-funguje/">Jak to funguje</a>
+    </div>
+    <div>
+      <h2>Návody</h2>
+      <a href="/cs/jak-stahnout-chat-claude/">Jak stáhnout chat Claude</a>
+      <a href="/cs/jak-exportovat-chat-claude/">Jak exportovat chat Claude</a>
+      <a href="/cs/export-chatu-claude/">Export chatu Claude</a>
+      <a href="/cs/extraktor-konverzaci-claude/">Extraktor konverzací Claude</a>
+      <a href="/cs/export-konverzace-claude-code/">Export z Claude Code</a>
+      <a href="/cs/chat-claude-do-pdf/">Chat Claude do PDF</a>
+      <a href="/cs/export-chatu-claude-desktop/">Export chatu z Claude Desktop</a>
+      <a href="/cs/export-konverzace-claude/">Export konverzace Claude</a>
+      <a href="/cs/jak-ulozit-konverzaci-claude/">Jak uložit konverzaci Claude</a>
+      <a href="/cs/stahnout-konverzaci-claude/">Stáhnout konverzaci Claude</a>
+    </div>
+    <div>
+      <h2>Právní informace</h2>
+      <a href="/cs/o-nas/">O nás</a>
+      <a href="/cs/o-nas/#contact">Kontakt</a>
+      <a href="/privacy/" hreflang="en">Soukromí (anglicky)</a>
+      <a href="/terms/" hreflang="en">Podmínky (anglicky)</a>
+      <a href="/refund/" hreflang="en">Vrácení peněz (anglicky)</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Download Claude conversations. Všechna práva vyhrazena.</div>
+    <div>
+      <a href="/privacy/" hreflang="en">Zásady ochrany soukromí (anglicky)</a>
+      <a href="/terms/" hreflang="en">Podmínky služby (anglicky)</a>
+      <a href="/refund/" hreflang="en">Vrácení peněz (anglicky)</a>
+    </div>
+  </div>
+  <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/how-to-save-claude-conversation/" hreflang="en" lang="en">English</a> <a href="/de/claude-chat-speichern/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/sauvegarder-conversation-claude/" hreflang="fr" lang="fr">Français</a> <a href="/es/como-guardar-conversacion-claude/" hreflang="es" lang="es">Español</a> <a href="/it/come-salvare-chat-claude/" hreflang="it" lang="it">Italiano</a> <a href="/pt/como-salvar-conversa-claude/" hreflang="pt" lang="pt">Português</a> <a href="/nl/claude-gesprek-opslaan/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/spara-claude-konversation/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/lagre-claude-samtale/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/gem-claude-samtale/" hreflang="da" lang="da">Dansk</a> <a href="/fi/tallenna-claude-keskustelu/" hreflang="fi" lang="fi">Suomi</a> <a href="/pl/jak-zapisac-rozmowe-claude/" hreflang="pl" lang="pl">Polski</a> <a href="/cs/jak-ulozit-konverzaci-claude/" hreflang="cs" lang="cs">Čeština</a> <a href="/sk/ako-ulozit-konverzaciu-claude/" hreflang="sk" lang="sk">Slovenčina</a> <a href="/hu/claude-beszelgetes-mentese/" hreflang="hu" lang="hu">Magyar</a> <a href="/ro/cum-salvati-conversatie-claude/" hreflang="ro" lang="ro">Română</a> <a href="/el/how-to-save-claude-conversation/" hreflang="el" lang="el">Ελληνικά</a> <a href="/tr/claude-sohbet-kaydetme/" hreflang="tr" lang="tr">Türkçe</a> <a href="/ja/how-to-save-claude-conversation/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/how-to-save-claude-conversation/" hreflang="ko" lang="ko">한국어</a> <a href="/zh-hant/how-to-save-claude-conversation/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="/he/how-to-save-claude-conversation/" hreflang="he" lang="he">עברית</a> <a href="/ar/how-to-save-claude-conversation/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
+  <p class="disclaimer">Chaty se zpracovávají ve vašem prohlížeči · Přihlášení přes Google jen pro PDF, hromadný export a Pro · Není spojeno s Anthropic, PBC. Claude je ochranná známka společnosti Anthropic. Nezávislé rozšíření pro Chrome – není oficiálním produktem Anthropicu. Podpora: <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

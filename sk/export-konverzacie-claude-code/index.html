@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Export konverzácie Claude Code – /export verzus claude.ai</title>
+  <meta name="description" content="Export konverzácie Claude Code: /export alebo JSONL v ~/.claude/projects pre terminál. Relácie na claude.ai/code exportuje bezplatné rozšírenie pre Chrome.">
+  <link rel="canonical" href="https://chat-downloader.com/sk/export-konverzacie-claude-code/">
+  <!-- i18n:head -->
+  <link rel="alternate" hreflang="en" href="https://chat-downloader.com/claude-code-export/">
+  <link rel="alternate" hreflang="de" href="https://chat-downloader.com/de/claude-code-chat-exportieren/">
+  <link rel="alternate" hreflang="fr" href="https://chat-downloader.com/fr/exporter-conversation-claude-code/">
+  <link rel="alternate" hreflang="es" href="https://chat-downloader.com/es/exportar-conversacion-claude-code/">
+  <link rel="alternate" hreflang="it" href="https://chat-downloader.com/it/esportare-conversazione-claude-code/">
+  <link rel="alternate" hreflang="pt" href="https://chat-downloader.com/pt/exportar-conversa-claude-code/">
+  <link rel="alternate" hreflang="nl" href="https://chat-downloader.com/nl/claude-code-gesprek-exporteren/">
+  <link rel="alternate" hreflang="sv" href="https://chat-downloader.com/sv/exportera-claude-code-konversation/">
+  <link rel="alternate" hreflang="nb" href="https://chat-downloader.com/nb/eksportere-claude-code-samtale/">
+  <link rel="alternate" hreflang="da" href="https://chat-downloader.com/da/eksporter-claude-code-samtale/">
+  <link rel="alternate" hreflang="fi" href="https://chat-downloader.com/fi/claude-code-keskustelun-vienti/">
+  <link rel="alternate" hreflang="pl" href="https://chat-downloader.com/pl/eksport-rozmowy-claude-code/">
+  <link rel="alternate" hreflang="cs" href="https://chat-downloader.com/cs/export-konverzace-claude-code/">
+  <link rel="alternate" hreflang="sk" href="https://chat-downloader.com/sk/export-konverzacie-claude-code/">
+  <link rel="alternate" hreflang="hu" href="https://chat-downloader.com/hu/claude-code-beszelgetes-exportalasa/">
+  <link rel="alternate" hreflang="ro" href="https://chat-downloader.com/ro/export-conversatie-claude-code/">
+  <link rel="alternate" hreflang="el" href="https://chat-downloader.com/el/claude-code-export/">
+  <link rel="alternate" hreflang="tr" href="https://chat-downloader.com/tr/claude-code-konusma-disa-aktarma/">
+  <link rel="alternate" hreflang="ja" href="https://chat-downloader.com/ja/claude-code-export/">
+  <link rel="alternate" hreflang="ko" href="https://chat-downloader.com/ko/claude-code-export/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://chat-downloader.com/zh-hant/claude-code-export/">
+  <link rel="alternate" hreflang="he" href="https://chat-downloader.com/he/claude-code-export/">
+  <link rel="alternate" hreflang="ar" href="https://chat-downloader.com/ar/claude-code-export/">
+  <link rel="alternate" hreflang="x-default" href="https://chat-downloader.com/claude-code-export/">
+  <meta property="og:locale" content="sk_SK">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="it_IT">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="sv_SE">
+  <meta property="og:locale:alternate" content="nb_NO">
+  <meta property="og:locale:alternate" content="da_DK">
+  <meta property="og:locale:alternate" content="fi_FI">
+  <meta property="og:locale:alternate" content="pl_PL">
+  <meta property="og:locale:alternate" content="cs_CZ">
+  <meta property="og:locale:alternate" content="hu_HU">
+  <meta property="og:locale:alternate" content="ro_RO">
+  <meta property="og:locale:alternate" content="el_GR">
+  <meta property="og:locale:alternate" content="tr_TR">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <meta property="og:locale:alternate" content="zh_TW">
+  <meta property="og:locale:alternate" content="he_IL">
+  <meta property="og:locale:alternate" content="ar_AE">
+  <!-- /i18n:head -->
+  <meta property="og:title" content="Export konverzácie Claude Code – /export verzus claude.ai">
+  <meta property="og:description" content="Export konverzácie Claude Code: /export alebo JSONL v ~/.claude/projects pre terminál. Relácie na claude.ai/code exportuje bezplatné rozšírenie pre Chrome.">
+  <meta property="og:url" content="https://chat-downloader.com/sk/export-konverzacie-claude-code/">
+  <meta property="og:image" content="https://chat-downloader.com/assets/widget-guide.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chat Downloader">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Export konverzácie Claude Code – /export verzus claude.ai">
+  <meta name="twitter:description" content="Export konverzácie Claude Code: /export alebo JSONL v ~/.claude/projects pre terminál. Relácie na claude.ai/code exportuje bezplatné rozšírenie pre Chrome.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME1YXGZKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GME1YXGZKR');
+  </script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Ako exportovať konverzáciu Claude Code?","acceptedAnswer":{"@type":"Answer","text":"V termináli Claude Code zadajte /export (voliteľne s názvom súboru) a uložíte vykreslený prepis, alebo skopírujte súbor JSONL z ~/.claude/projects na macOS/Linuxe či z %USERPROFILE%\\.claude\\projects na Windows. Aktuálny dialóg opisuje dokumentácia relácií od Anthropic."}},{"@type":"Question","name":"Sťahuje toto rozšírenie pre Chrome chaty z Claude Code?","acceptedAnswer":{"@type":"Answer","text":"Z terminálu nie. Download Claude conversations funguje iba na claude.ai v Chrome. Nevie čítať lokálne relácie v termináli, prepisy JSONL ani príkaz /export. Relácie Claude Code on the web na claude.ai/code sa exportujú ako každý chat."}},{"@type":"Question","name":"Dá sa exportovať Claude Code on the web (claude.ai/code)?","acceptedAnswer":{"@type":"Answer","text":"Áno. Otvorte reláciu na claude.ai/code v Chrome a použite oranžové tlačidlo. Fungujú PDF, Markdown, čistý text, JSON, XML, CSV aj PNG. Šesť formátov okrem PDF je neobmedzených a bez účtu; PDF vyžaduje prihlásenie cez Google a počíta sa do 3 bezplatných denne."}},{"@type":"Question","name":"Kde Claude Code ukladá históriu konverzácií?","acceptedAnswer":{"@type":"Answer","text":"Prepisy relácií sú súbory JSONL v ~/.claude/projects/<encoded-working-directory>/, pomenované podľa ID relácie. Presné usporiadanie sa môže zmeniť. Keď chcete čitateľný súbor namiesto spracúvania JSONL, použite /export. CLAUDE_CONFIG_DIR môže strom presunúť."}},{"@type":"Question","name":"Ako stiahnuť konverzáciu Claude Code ako Markdown?","acceptedAnswer":{"@type":"Answer","text":"/export v Claude Code je prepis v čistom texte, nie Markdown z tohto rozšírenia. Ak potrebujete práve Markdown, exportujte reláciu z claude.ai/code alebo kópiu práce na claude.ai cez Download Claude conversations, prípadne si text z /export preveďte sami. JSONL do Markdown neprevádzame."}},{"@type":"Question","name":"Ako namiesto toho stiahnuť konverzáciu z claude.ai?","acceptedAnswer":{"@type":"Answer","text":"Nainštalujte bezplatné rozšírenie pre Chrome, otvorte chat na claude.ai a použite oranžové tlačidlo – alebo „Export All“ pre celú históriu. Pozrite ako stiahnuť chat Claude. Markdown, text, JSON, XML, CSV a PNG sú neobmedzené a bez účtu; PDF a hromadný ZIP sú zadarmo 3 denne s prihlásením cez Google; Pro stojí 3,99 USD mesačne alebo 26,99 USD ročne."}},{"@type":"Question","name":"Je /export to isté ako oficiálny Export data?","acceptedAnswer":{"@type":"Answer","text":"Nie. /export je aktuálna relácia Claude Code. Settings → Privacy → Export data pošle e-mailom ZIP s JSON účtu Anthropic. Iné prostredia produktu, iné súbory, iné čakanie."}},{"@type":"Question","name":"Môžem spracovať JSONL z Claude Code nástrojom jq?","acceptedAnswer":{"@type":"Answer","text":"Môžete, s výhradou, ktorú Anthropic zverejňuje: schéma riadkov je interná a môže sa zmeniť. Keď potrebujete pevný kontrakt, uprednostnite /export alebo claude -p --output-format json. Ak JSONL aj tak spracúvate, zafixujte verziu CLI."}},{"@type":"Question","name":"Funguje export z Claude Code na Windows?","acceptedAnswer":{"@type":"Answer","text":"Áno. /export je príkaz CLI. Prepisy na disku sú v %USERPROFILE%\\.claude\\projects, pokiaľ nenastavíte CLAUDE_CONFIG_DIR. Toto rozšírenie pre Chrome v tomto termináli ani tak nebeží."}},{"@type":"Question","name":"Je Claude Code to isté ako Claude Desktop?","acceptedAnswer":{"@type":"Answer","text":"Nie. Claude Code je programátorský agent v termináli. Claude Desktop je aplikácia na chat. claude.ai je webová stránka. Toto rozšírenie funguje iba na webe, vrátane claude.ai/code. Poznámky k exportu z aplikácie Desktop: Claude Desktop."}},{"@type":"Question","name":"Bude toto rozšírenie niekedy obaľovať /export?","acceptedAnswer":{"@type":"Answer","text":"Vo verzii 1.16.2 nie. Rozsah produktu je claude.ai vrátane Claude Code on the web: sedem formátov, lokálne súbory, prihlásenie cez Google iba pre PDF, hromadný export a Pro. Ak sa rozsah zmení, táto stránka to uvedie. Dovtedy na export z Claude Code v termináli používajte CLI od Anthropic."}},{"@type":"Question","name":"Obsahuje /export výstupy nástrojov?","acceptedAnswer":{"@type":"Answer","text":"Anthropic opisuje /export ako správy a výstupy nástrojov vykreslené ako čitateľný text. Je to ich prepis, nie náš parser. Presný aktuálny obsah zistíte, keď spustíte /export vo svojej verzii a prečítate súbor – dokumentácia môže za vydaním zaostávať."}},{"@type":"Question","name":"Dajú sa relácie Claude Code exportovať hromadne?","acceptedAnswer":{"@type":"Answer","text":"Lokálne relácie CLI nie. „Export All“ na Dashboarde je iba pre claude.ai. Pre veľa relácií CLI skopírujte priečinok projektov alebo spustite /export pre každú reláciu. Hromadný export oranžovým tlačidlom pre JSONL neexistuje."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Export konverzácie Claude Code verzus claude.ai: vyberte správnu cestu","description":"Export konverzácie Claude Code: /export alebo JSONL v ~/.claude/projects pre terminál. Relácie na claude.ai/code exportuje bezplatné rozšírenie pre Chrome.","url":"https://chat-downloader.com/sk/export-konverzacie-claude-code/","dateModified":"2026-09-25","datePublished":"2026-09-10","inLanguage":"sk","author":{"@type":"Organization","name":"Chat Downloader","url":"https://chat-downloader.com/sk/"},"publisher":{"@type":"Organization","name":"Chat Downloader","url":"https://chat-downloader.com/sk/"},"mainEntityOfPage":"https://chat-downloader.com/sk/export-konverzacie-claude-code/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Domov","item":"https://chat-downloader.com/sk/"},{"@type":"ListItem","position":2,"name":"Export konverzácie Claude Code","item":"https://chat-downloader.com/sk/export-konverzacie-claude-code/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Preskočiť na obsah</a>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a class="logo" href="/sk/">
+        <img src="/assets/icon.svg" alt="">
+        <span>Download Claude conversations</span>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="/sk/ako-stiahnut-chat-claude/">Stiahnutie</a><a href="/sk/ako-exportovat-chat-claude/">Export</a><a href="/sk/export-vsetkych-chatov-claude/">Všetky chaty</a><a href="/sk/formaty/">Formáty</a><a href="/sk/#faq">Otázky</a>
+        <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=sk-claude-code-export" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Pridať do Chromu</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=sk-claude-code-export" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Pridať do Chromu</a>
+      <!-- i18n:switch --><details class="lang-switch"><summary aria-label="Jazyk: Slovenčina"><svg class="lang-globe" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span class="lang-name">Slovenčina</span><span class="lang-code" aria-hidden="true">sk</span></summary><ul><li><a href="/claude-code-export/" hreflang="en" lang="en">English</a></li><li><a href="/de/claude-code-chat-exportieren/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/exporter-conversation-claude-code/" hreflang="fr" lang="fr">Français</a></li><li><a href="/es/exportar-conversacion-claude-code/" hreflang="es" lang="es">Español</a></li><li><a href="/it/esportare-conversazione-claude-code/" hreflang="it" lang="it">Italiano</a></li><li><a href="/pt/exportar-conversa-claude-code/" hreflang="pt" lang="pt">Português</a></li><li><a href="/nl/claude-code-gesprek-exporteren/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/sv/exportera-claude-code-konversation/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="/nb/eksportere-claude-code-samtale/" hreflang="nb" lang="nb">Norsk</a></li><li><a href="/da/eksporter-claude-code-samtale/" hreflang="da" lang="da">Dansk</a></li><li><a href="/fi/claude-code-keskustelun-vienti/" hreflang="fi" lang="fi">Suomi</a></li><li><a href="/pl/eksport-rozmowy-claude-code/" hreflang="pl" lang="pl">Polski</a></li><li><a href="/cs/export-konverzace-claude-code/" hreflang="cs" lang="cs">Čeština</a></li><li><a href="/sk/export-konverzacie-claude-code/" hreflang="sk" lang="sk" aria-current="true">Slovenčina</a></li><li><a href="/hu/claude-code-beszelgetes-exportalasa/" hreflang="hu" lang="hu">Magyar</a></li><li><a href="/ro/export-conversatie-claude-code/" hreflang="ro" lang="ro">Română</a></li><li><a href="/el/claude-code-export/" hreflang="el" lang="el">Ελληνικά</a></li><li><a href="/tr/claude-code-konusma-disa-aktarma/" hreflang="tr" lang="tr">Türkçe</a></li><li><a href="/ja/claude-code-export/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/ko/claude-code-export/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/zh-hant/claude-code-export/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li><li><a href="/he/claude-code-export/" hreflang="he" lang="he">עברית</a></li><li><a href="/ar/claude-code-export/" hreflang="ar" lang="ar">العربية</a></li></ul></details><!-- /i18n:switch -->
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+<nav class="crumbs" aria-label="Navigačná cesta"><a href="/sk/">Domov</a> / Export konverzácie Claude Code</nav>
+<main id="main">
+<article class="band prose">
+<p class="article-meta">Aktualizované <time datetime="2026-09-25">v septembri 2026</time> · Rozšírenie 1.16.2</p>
+<h1 class="page-h1">Export konverzácie Claude Code verzus claude.ai: vyberte správnu cestu</h1>
+<p class="lead">Export konverzácie Claude Code je úloha pre terminál (po anglicky „claude code export“). V relácii zadajte /export alebo skopírujte JSONL z ~/.claude/projects. Konverzáciu Claude Code z terminálu nestiahnete oranžovým tlačidlom z tohto webu. Download Claude conversations ukladá chaty, ktoré otvoríte na claude.ai v Chrome – vrátane relácií Claude Code on the web na claude.ai/code. Lokálne relácie v termináli a aplikácia Desktop sú samostatná vec.</p>
+<aside class="trust-badge" aria-label="O rozšírení">
+  <span class="trophy" aria-hidden="true">🧩</span>
+  <div>
+    <strong>Download Claude conversations – bezplatné rozšírenie pre Chrome na claude.ai</strong>
+    <span>Verzia 1.16.2 (september 2026) – neobmedzený export do Markdown, textu, JSON, XML, CSV a PNG bez účtu; PDF a hromadný ZIP zadarmo do 3 denne</span>
+  </div>
+</aside>
+<nav class="toc" aria-label="Na tejto stránke">
+  <p>Na tejto stránke</p>
+  <ol>
+    <li><a href="#what-is-export">Čo je export konverzácie Claude Code v termináli?</a></li>
+    <li><a href="#jsonl-disk">Ako stiahnuť konverzáciu Claude Code z disku?</a></li>
+    <li><a href="#extension-limit">Funguje export z Claude Code s týmto rozšírením?</a></li>
+    <li><a href="#claude-code-web">Dajú sa exportovať relácie Claude Code on the web?</a></li>
+    <li><a href="#where-stored">Kde Claude Code ukladá históriu konverzácií?</a></li>
+    <li><a href="#claude-ai-instead">Ako namiesto toho stiahnuť chat Claude na claude.ai?</a></li>
+    <li><a href="#vs-official-zip">Export z Claude Code, alebo oficiálny Export data od Anthropic?</a></li>
+    <li><a href="#three-surfaces">Export z Claude Code, Desktop a claude.ai?</a></li>
+    <li><a href="#faq">Časté otázky: export konverzácie Claude Code</a></li>
+  </ol>
+</nav>
+
+<h2 id="what-is-export">Čo je export konverzácie Claude Code v termináli?</h2>
+<p>Export konverzácie Claude Code je príkaz <code>/export</code> v interaktívnej relácii príkazového riadku. Dokumentácia Anthropic opisuje ponuku, ktorá aktuálnu konverzáciu skopíruje alebo uloží ako súbor s čistým textom, pričom správy a výstupy nástrojov sú vykreslené ako čitateľný text. Ak zadáte názov súboru, ponuka sa preskočí a zapíše sa priamo tento súbor.</p>
+<p>Nie je to Markdown z claude.ai, nie je to JSON z tohto rozšírenia pre Chrome a nie je to PDF. Je to vykreslený prepis na čítanie. Anthropic uvádza, že denník JSONL na disku je iný, interný formát určený pre produkt, nie vaše verejné API.</p>
+<pre><code>/export</code></pre>
+<p>Ak chcete preskočiť výzvu a zapísať pomenovaný súbor do aktuálneho pracovného priečinka:</p>
+<pre><code>/export my-session</code></pre>
+<p>Pre prepínače a názvy súborov je smerodajná dokumentácia relácií od Anthropic; medzi verziami Claude Code sa menia. Komunitné blogy berte ako druhotný zdroj. Ak sa text dialógu <code>/export</code> nezhoduje s tým, čo vidíte, máte inú verziu CLI – použite pomocníka v produkte, nie snímku obrazovky z roku 2025.</p>
+<p>Pre skripty Anthropic odkazuje na iné rozhrania: <code>claude -p</code> s <code>--output-format json</code> alebo <code>stream-json</code>, obnovenie podľa ID relácie, hooky, ktoré dostanú <code>transcript_path</code>, alebo Agent SDK. To sú vývojárske rozhrania Claude Code. Nie sú to funkcie rozšírenia pre Chrome z tohto webu.</p>
+<div class="callout callout-info">
+  <p><strong>Čitateľné verzus štruktúrované.</strong> <code>/export</code> je prepis pre človeka. JSONL v priečinku projektov je denník. JSON z rozšírenia pre Chrome je tretia štruktúra, vytvorená iba zo stránky claude.ai. Nepíšte jeden parser pre všetky tri.</p>
+</div>
+
+<h2 id="jsonl-disk">Ako stiahnuť konverzáciu Claude Code z disku?</h2>
+<p>Konverzáciu Claude Code z disku stiahnete tak, že skopírujete súbor JSONL relácie z priečinka projektov, alebo spustíte <code>/export</code> pre čitateľný prepis. Predvolená cesta na macOS a Linuxe je v <code>~/.claude/projects/</code>. Na Windows je to <code>%USERPROFILE%\.claude\projects</code>. Názvy súborov sú ID relácií.</p>
+<p>Názov priečinka projektu je pracovný priečinok, v ktorom sú znaky okrem písmen a číslic nahradené pomlčkami. Veľmi dlhé prevedené názvy Anthropic skráti a pridá hash, aby priečinok neprekročil limity súborového systému. Ak priečinok nenájdete, spustili ste Claude Code z iného pracovného priečinka, než si myslíte.</p>
+<p>Každý riadok JSONL je objekt JSON pre správu, použitie nástroja alebo metadáta. Anthropic uvádza, že formát týchto záznamov je interný a medzi verziami sa mení. Skripty, ktoré tieto súbory spracúvajú, sa môžu s novou verziou Claude Code pokaziť. Keď potrebujete niečo stabilné, uprednostnite <code>/export</code> alebo zdokumentované skriptové rozhrania.</p>
+<p>Úložisko sa dá presunúť. <code>CLAUDE_CONFIG_DIR</code> presunie konfiguračný strom mimo <code>~/.claude</code>. <code>CLAUDE_CODE_PROJECT_DIR_NAME</code> pomenuje priečinok projektu, ak sa použije spolu s týmto konfiguračným priečinkom (Claude Code v2.1.234 alebo novší, podľa Anthropic). <code>cleanupPeriodDays</code> v settings.json mení predvolenú dobu uchovávania. Žiadne z týchto nastavení nie je funkciou Download Claude conversations.</p>
+<p>Záloha konverzácií Claude Code teda znamená: skopírovať priečinok alebo pravidelne exportovať prepisy cez <code>/export</code>. Tento web nepridá tlačidlo „importovať JSONL“. Váš domovský priečinok nečítame.</p>
+
+<h2 id="extension-limit">Funguje export z Claude Code s týmto rozšírením?</h2>
+<p>Pre relácie v termináli nie. Download Claude conversations nečíta lokálne relácie Claude Code. Rozšírenie pre Chrome sa načítava do claude.ai. Nevidí terminál, nevie spustiť <code>/export</code> a nevie otvoriť JSONL. Výnimkou je Claude Code on the web na claude.ai/code: je to stránka claude.ai, takže sa exportuje ako každý chat. Ak ste hľadali, ako stiahnuť konverzáciu Claude Code z príkazového riadku, držte sa krokov pre CLI na tejto stránke.</p>
+<p>Ľudia sem prichádzajú, pretože Google spája slová „Claude“ a „export“. Záznam v Chrome Web Store je však stále iba pre claude.ai. Inštalácia rozšírenia nepridá oranžové tlačidlo do iTerm, Ghostty, terminálu vo VS Code ani do desktopového obalu Claude Code.</p>
+<p>Ak si k tej istej programátorskej úlohe vediete aj paralelnú konverzáciu na claude.ai, tento chat v prehliadači sa dá rozšírením uložiť. Tieto dva záznamy sa nespájajú. Volania nástrojov, ktoré prebehli iba v CLI, sa vo webovom exporte neobjavia, pokiaľ ste ich tam nevložili.</p>
+<div class="expert-quote">
+  <blockquote>Každý týždeň dostávame rovnakú otázku na podporu: niekto nainštaloval rozšírenie pre Chrome a čakal, že sa objaví /export. Spracúvame iba claude.ai. Claude Code už /export aj JSONL má. Obal pre CLI by bol iný produkt a ten sme nevydali.</blockquote>
+  <cite><strong>Tím Download Claude conversations</strong> – autori rozšírenia Claude Chat Downloader pre Chrome</cite>
+</div>
+<p>Rozšírenie je nástroj pre claude.ai, nie doplnok pre Claude Code. Jeho limity platia iba pri exporte z claude.ai: Markdown, text, JSON, XML, CSV a PNG sú neobmedzené a bez účtu; PDF a hromadný ZIP sú zadarmo 3 denne s prihlásením cez Google; Pro za 3,99 USD mesačne alebo 26,99 USD ročne limit ruší. Nič z toho sa netýka <code>/export</code>.</p>
+
+<h2 id="claude-code-web">Dajú sa exportovať relácie Claude Code on the web?</h2>
+<p>Áno. Claude Code on the web beží na claude.ai/code, takže Download Claude conversations exportuje tieto relácie ako každý chat na claude.ai. Otvorte reláciu v Chrome, kliknite na oranžové tlačidlo, vyberte formát a kliknite na „Export“ (Exportovať). Toto je jediné prostredie Claude Code, ktoré rozšírenie pokrýva.</p>
+<p>Formáty sú tých istých sedem ako pri každom chate: PDF, Markdown, čistý text, JSON, XML, CSV a PNG. Markdown, text, JSON, XML, CSV a PNG sú neobmedzené a bez účtu. PDF vyžaduje prihlásenie cez Google a na bezplatnom pláne zdieľa 3 denne s hromadným ZIP-om, pokiaľ nemáte Pro. Bloky kódu si zachovajú označenie jazyka. Rozšírené uvažovanie je políčko „Thinking“ (uvažovanie) v paneli; kroky nástrojov / MCP a zdroje z webového vyhľadávania sa zapínajú v nastaveniach.</p>
+<p>Webový export je to, čo claude.ai/code zobrazuje v prehliadači. Nie je to denník JSONL z lokálneho behu CLI a nedosiahne na relácie, ktoré bežali iba vo vašom termináli. Podľa Anthropic má Claude Code on the web vlastnú históriu relácií, oddelenú od stromu <code>~/.claude/projects</code> v CLI. Pre reláciu v termináli je cestou stále <code>/export</code>.</p>
+
+<h2 id="where-stored">Kde Claude Code ukladá históriu konverzácií?</h2>
+<p>Claude Code ukladá históriu konverzácií ako prepisy JSONL v priečinku projektov v konfiguračnom priečinku. Predvolene na macOS a Linuxe: <code>~/.claude/projects/&lt;encoded-cwd&gt;/&lt;session-id&gt;.jsonl</code>. Windows používa <code>%USERPROFILE%\.claude\projects</code>. Anthropic môže toto usporiadanie zmeniť; ak cesta na disku chýba, pozrite si aktuálnu dokumentáciu relácií.</p>
+<p>Obnovenie je iné sloveso než export. <code>claude --continue</code> a <code>claude --resume</code> reláciu znova načítajú, aby ste mohli pokračovať v práci. <code>/export</code> zapíše kópiu, ktorú môžete nechať v gite alebo poslať e-mailom. Jedno obnovuje kontext. Druhé vám dá záznam so sebou. Stránka Anthropic o reláciách opisuje režim oprávnení pri obnovení, zhrnutie (compact/summary) a správanie výberu – nič z toho nesúvisí s týmto rozšírením.</p>
+<p>Aplikácia Desktop, Claude Code on the web a rozšírenie pre VS Code majú podľa Anthropic každé vlastnú históriu relácií. Cesty v tomto návode platia pre CLI. Webové relácie zostávajú na claude.ai/code, kde ich rozšírenie vie exportovať. Nepredpokladajte, že prepis Cowork z aplikácie Desktop leží v tom istom strome JSONL, ktorý používate z terminálu.</p>
+<div class="callout callout-warn">
+  <p><strong>Neberte JSONL ako verejnú schému.</strong> Anthropic uvádza, že formát riadkov sa mení. Ak ho aj tak spracúvate, zafixujte verziu Claude Code a počítajte s tým, že sa niečo pokazí. <code>/export</code> je stabilný spôsob, ako získať čitateľnú konverzáciu Claude Code.</p>
+</div>
+<p>Premenné prostredia ako <code>CLAUDE_CODE_SKIP_PROMPT_HISTORY</code> môžu zápis prepisov potlačiť. Ak je priečinok projektov prázdny, overte, či ste nevypli ukladanie, nenasmerovali <code>CLAUDE_CONFIG_DIR</code> inam alebo či ste v danom priečinku vôbec spustili interaktívnu reláciu.</p>
+
+<h2 id="claude-ai-instead">Ako namiesto toho stiahnuť chat Claude na claude.ai?</h2>
+<p>Chat Claude na claude.ai stiahnete takto: nainštalujte Download Claude conversations, otvorte konverzáciu v Chrome, kliknite na oranžové tlačidlo a vyberte PDF, Markdown, čistý text, JSON, XML, CSV alebo PNG. To je produkt pre prehliadač a pokrýva aj relácie na claude.ai/code. Nie je to export z Claude Code v termináli. Postup krok za krokom: <a href="/sk/ako-stiahnut-chat-claude/">ako stiahnuť chat Claude</a>.</p>
+<p>Celú históriu claude.ai ako samostatné súbory získate cez „Export All“ (Exportovať všetko) na Dashboarde, nie cez <code>/export</code>. Na bezplatnom pláne sa každý chat v ZIP-e počíta do 3 denne (spoločne s PDF, vynulovanie o polnoci UTC); Pro limit ruší. Návod: <a href="/sk/export-vsetkych-chatov-claude/">hromadný Export All</a>. Formáty: <a href="/sk/formaty/">formáty</a>.</p>
+<p>Na export jedného chatu do Markdown, textu, JSON, XML, CSV alebo PNG nepotrebujete účet – tieto exporty sú neobmedzené. Prihlásenie cez Google sa objaví iba pri PDF, hromadnom ZIP-e a Pro, aby sme vedeli počítať denný limit a obnoviť Pro. Súbory vznikajú lokálne, vrátane PDF. Paddle účtuje Pro za 3,99 USD mesačne alebo 26,99 USD ročne. Nič z toho sa netýka <code>/export</code> v termináli.</p>
+<p>Ak práca začala v Claude Code a zhrnutie ste vložili do claude.ai, webovú konverzáciu si stiahnite na poznámky a <code>/export</code> si nechajte pre skutočný denník CLI. Dva súbory sú lepšie než jeden zmätený.</p>
+
+<h2 id="vs-official-zip">Export z Claude Code, alebo oficiálny Export data od Anthropic?</h2>
+<p>Export z Claude Code (<code>/export</code> alebo JSONL) je jedna relácia v termináli. Oficiálny Export data je Settings → Privacy → Export data na claude.ai (ak máte claude.ai v slovenčine, názvy môžu byť preložené): oneskorený ZIP s JSON účtu Anthropic. Nie je to ten istý archív. ZIP nenahradí <code>/export</code>.</p>
+<p>Či sa konkrétna relácia Claude Code objaví v ZIP-e účtu, závisí od toho, ako Anthropic tento produkt ukladá, nie od tohto rozšírenia. ZIP berte ako zálohu webového účtu, pokiaľ aktuálna dokumentácia Anthropic o súkromí neuvádza inak. Relácie z CLI do tohto ZIP-u nepridávame.</p>
+<p>Ako exportovať chat Claude z webu, vrátane porovnania tohto ZIP-u s rozšírením, popisuje návod <a href="/sk/ako-exportovat-chat-claude/">ako exportovať chat Claude</a>. Export do PDF z rozšírenia sa na rozhranie terminálu tiež nevzťahuje. Návod <a href="/sk/chat-claude-do-pdf/">chat Claude do PDF</a> použite iba vtedy, keď je konverzácia na claude.ai, vrátane claude.ai/code.</p>
+<div class="table-wrap">
+  <table>
+    <caption>Export z Claude Code v porovnaní s inými spôsobmi uloženia z Claude</caption>
+    <thead>
+      <tr>
+        <th scope="col">Používate</th>
+        <th scope="col">Ako exportovať</th>
+        <th scope="col">Toto rozšírenie pre Chrome</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Claude Code v termináli</th>
+        <td><code>/export</code> alebo JSONL na disku</td>
+        <td>Nefunguje</td>
+      </tr>
+      <tr>
+        <th scope="row">Claude Code on the web (claude.ai/code)</th>
+        <td>Oranžové tlačidlo v Chrome</td>
+        <td>Exportuje ako každý chat</td>
+      </tr>
+      <tr>
+        <th scope="row">claude.ai v Chrome</th>
+        <td>Oranžové tlačidlo alebo <a href="/sk/export-vsetkych-chatov-claude/">Export All</a></td>
+        <td>Presne na to slúži</td>
+      </tr>
+      <tr>
+        <th scope="row">Záloha účtu Anthropic</th>
+        <td>Settings → Privacy → Export data</td>
+        <td>Iná úloha – oneskorený ZIP s JSON</td>
+      </tr>
+      <tr>
+        <th scope="row">Skripty / CI</th>
+        <td><code>claude -p</code> JSON, SDK, transcript_path</td>
+        <td>Neobaľuje CLI</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h2 id="three-surfaces">Export z Claude Code, Desktop a claude.ai?</h2>
+<p>Claude Code, Claude Desktop a claude.ai sú tri rôzne prostredia. Export z Claude Code používa <code>/export</code> a JSONL. Desktop je aplikácia bez oranžového tlačidla tohto rozšírenia. claude.ai v Chrome je jediné miesto, kde Download Claude conversations beží – vrátane Claude Code on the web na claude.ai/code. Keď sa tieto názvy zamieňajú, exporty potichu zlyhávajú.</p>
+<p>Claude Desktop: ak sa chat synchronizoval do toho istého účtu Anthropic, otvorte ho na claude.ai a exportujte tam. Ak existuje iba v okne aplikácie Desktop, skopírujte ho alebo počkajte na oficiálny Export data. Návod: <a href="/sk/export-chatu-claude-desktop/">export chatu z Claude Desktop</a>.</p>
+<p>Panel Claude Code vo VS Code má bližšie k CLI než ku claude.ai. Nečakajte, že sa náš obsahový skript načíta do tohto webview. Použite <code>/export</code> z relácie, ktorá správy naozaj obsahuje.</p>
+<p>Nezávislé rozšírenie pre Chrome, nijako neprepojené so spoločnosťou Anthropic, PBC. Claude je ochranná známka spoločnosti Anthropic. Dodržiavajte ich podmienky služby. Nemôžeme poskytovať právne rady o kopírovaní výstupov nástrojov, ktoré obsahujú proprietárny kód; to je vec medzi vami, vaším zamestnávateľom a Anthropic.</p>
+
+<h2 id="faq">Časté otázky: export konverzácie Claude Code</h2>
+<h3>Ako exportovať konverzáciu Claude Code?</h3>
+<p>V termináli Claude Code zadajte <code>/export</code> (voliteľne s názvom súboru) a uložíte vykreslený prepis, alebo skopírujte súbor JSONL z <code>~/.claude/projects</code> na macOS/Linuxe či z <code>%USERPROFILE%\.claude\projects</code> na Windows. Aktuálny dialóg opisuje dokumentácia relácií od Anthropic.</p>
+<h3>Sťahuje toto rozšírenie pre Chrome chaty z Claude Code?</h3>
+<p>Z terminálu nie. Download Claude conversations funguje iba na claude.ai v Chrome. Nevie čítať lokálne relácie v termináli, prepisy JSONL ani príkaz <code>/export</code>. Relácie Claude Code on the web na claude.ai/code sa exportujú ako každý chat.</p>
+<h3>Dá sa exportovať Claude Code on the web (claude.ai/code)?</h3>
+<p>Áno. Otvorte reláciu na claude.ai/code v Chrome a použite oranžové tlačidlo. Fungujú PDF, Markdown, čistý text, JSON, XML, CSV aj PNG. Šesť formátov okrem PDF je neobmedzených a bez účtu; PDF vyžaduje prihlásenie cez Google a počíta sa do 3 bezplatných denne.</p>
+<h3>Kde Claude Code ukladá históriu konverzácií?</h3>
+<p>Prepisy relácií sú súbory JSONL v <code>~/.claude/projects/&lt;encoded-working-directory&gt;/</code>, pomenované podľa ID relácie. Presné usporiadanie sa môže zmeniť. Keď chcete čitateľný súbor namiesto spracúvania JSONL, použite <code>/export</code>. <code>CLAUDE_CONFIG_DIR</code> môže strom presunúť.</p>
+<h3>Ako stiahnuť konverzáciu Claude Code ako Markdown?</h3>
+<p><code>/export</code> v Claude Code je prepis v čistom texte, nie Markdown z tohto rozšírenia. Ak potrebujete práve Markdown, exportujte reláciu z claude.ai/code alebo kópiu práce na claude.ai cez Download Claude conversations, prípadne si text z <code>/export</code> preveďte sami. JSONL do Markdown neprevádzame.</p>
+<h3>Ako namiesto toho stiahnuť konverzáciu z claude.ai?</h3>
+<p>Nainštalujte bezplatné rozšírenie pre Chrome, otvorte chat na claude.ai a použite oranžové tlačidlo – alebo „Export All“ pre celú históriu. Pozrite <a href="/sk/ako-stiahnut-chat-claude/">ako stiahnuť chat Claude</a>. Markdown, text, JSON, XML, CSV a PNG sú neobmedzené a bez účtu; PDF a hromadný ZIP sú zadarmo 3 denne s prihlásením cez Google; Pro stojí 3,99 USD mesačne alebo 26,99 USD ročne.</p>
+<h3>Je /export to isté ako oficiálny Export data?</h3>
+<p>Nie. <code>/export</code> je aktuálna relácia Claude Code. Settings → Privacy → Export data pošle e-mailom ZIP s JSON účtu Anthropic. Iné prostredia produktu, iné súbory, iné čakanie.</p>
+<h3>Môžem spracovať JSONL z Claude Code nástrojom jq?</h3>
+<p>Môžete, s výhradou, ktorú Anthropic zverejňuje: schéma riadkov je interná a môže sa zmeniť. Keď potrebujete pevný kontrakt, uprednostnite <code>/export</code> alebo <code>claude -p --output-format json</code>. Ak JSONL aj tak spracúvate, zafixujte verziu CLI.</p>
+<h3>Funguje export z Claude Code na Windows?</h3>
+<p>Áno. <code>/export</code> je príkaz CLI. Prepisy na disku sú v <code>%USERPROFILE%\.claude\projects</code>, pokiaľ nenastavíte <code>CLAUDE_CONFIG_DIR</code>. Toto rozšírenie pre Chrome v tomto termináli ani tak nebeží.</p>
+<h3>Je Claude Code to isté ako Claude Desktop?</h3>
+<p>Nie. Claude Code je programátorský agent v termináli. Claude Desktop je aplikácia na chat. claude.ai je webová stránka. Toto rozšírenie funguje iba na webe, vrátane claude.ai/code. Poznámky k exportu z aplikácie Desktop: <a href="/sk/export-chatu-claude-desktop/">Claude Desktop</a>.</p>
+<h3>Bude toto rozšírenie niekedy obaľovať /export?</h3>
+<p>Vo verzii 1.16.2 nie. Rozsah produktu je claude.ai vrátane Claude Code on the web: sedem formátov, lokálne súbory, prihlásenie cez Google iba pre PDF, hromadný export a Pro. Ak sa rozsah zmení, táto stránka to uvedie. Dovtedy na export z Claude Code v termináli používajte CLI od Anthropic.</p>
+<h3>Obsahuje /export výstupy nástrojov?</h3>
+<p>Anthropic opisuje <code>/export</code> ako správy a výstupy nástrojov vykreslené ako čitateľný text. Je to ich prepis, nie náš parser. Presný aktuálny obsah zistíte, keď spustíte <code>/export</code> vo svojej verzii a prečítate súbor – dokumentácia môže za vydaním zaostávať.</p>
+<h3>Dajú sa relácie Claude Code exportovať hromadne?</h3>
+<p>Lokálne relácie CLI nie. „Export All“ na Dashboarde je iba pre claude.ai. Pre veľa relácií CLI skopírujte priečinok projektov alebo spustite <code>/export</code> pre každú reláciu. Hromadný export oranžovým tlačidlom pre JSONL neexistuje.</p>
+</article>
+</main>
+<section class="final-cta page-cta" aria-label="Inštalácia">
+  <div class="wrap">
+    <div class="final-cta-panel">
+      <p class="final-kicker">Download Claude conversations</p>
+      <h2>Potrebujete súbory z claude.ai, nie z Claude Code?</h2>
+      <p>Rozšírenie pre Chrome ukladá chaty z claude.ai a relácie z claude.ai/code ako PDF, Markdown, JSON, text, CSV, XML alebo PNG – lokálne, priamo z Chrome.</p>
+      <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=sk-claude-code" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Pridať do Chrome</a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="logo" href="/sk/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
+      <p class="legal-note">Rozšírenie pre Chrome na stiahnutie chatov z Claude.ai ako PDF, Markdown, JSON, obyčajný text, CSV, XML alebo PNG.</p>
+    </div>
+    <div>
+      <h2>Inštalácia</h2>
+      <a class="install-link" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=sk-footer" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Rozšírenie pre Chrome</a>
+    </div>
+    <div>
+      <h2>Produkt</h2>
+      <a href="/sk/funkcie/">Funkcie</a>
+      <a href="/sk/formaty/">Formáty</a>
+      <a href="/sk/export-vsetkych-chatov-claude/">Export všetkých chatov</a>
+      <a href="/sk/ako-to-funguje/">Ako to funguje</a>
+    </div>
+    <div>
+      <h2>Návody</h2>
+      <a href="/sk/ako-stiahnut-chat-claude/">Ako stiahnuť chat Claude</a>
+      <a href="/sk/ako-exportovat-chat-claude/">Ako exportovať chat Claude</a>
+      <a href="/sk/export-chatu-claude/">Export chatu Claude</a>
+      <a href="/sk/extraktor-konverzacii-claude/">Extraktor konverzácií Claude</a>
+      <a href="/sk/export-konverzacie-claude-code/">Export z Claude Code</a>
+      <a href="/sk/chat-claude-do-pdf/">Chat Claude do PDF</a>
+      <a href="/sk/export-chatu-claude-desktop/">Export chatu z Claude Desktop</a>
+      <a href="/sk/export-konverzacie-claude/">Export konverzácie Claude</a>
+      <a href="/sk/ako-ulozit-konverzaciu-claude/">Ako uložiť konverzáciu Claude</a>
+      <a href="/sk/stiahnut-konverzaciu-claude/">Stiahnuť konverzáciu Claude</a>
+    </div>
+    <div>
+      <h2>Právne informácie</h2>
+      <a href="/sk/o-nas/">O nás</a>
+      <a href="/sk/o-nas/#contact">Kontakt</a>
+      <a href="/privacy/" hreflang="en">Súkromie (po anglicky)</a>
+      <a href="/terms/" hreflang="en">Podmienky (po anglicky)</a>
+      <a href="/refund/" hreflang="en">Vrátenie peňazí (po anglicky)</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Download Claude conversations. Všetky práva vyhradené.</div>
+    <div>
+      <a href="/privacy/" hreflang="en">Zásady ochrany osobných údajov (po anglicky)</a>
+      <a href="/terms/" hreflang="en">Podmienky používania (po anglicky)</a>
+      <a href="/refund/" hreflang="en">Vrátenie peňazí (po anglicky)</a>
+    </div>
+  </div>
+  <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/claude-code-export/" hreflang="en" lang="en">English</a> <a href="/de/claude-code-chat-exportieren/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/exporter-conversation-claude-code/" hreflang="fr" lang="fr">Français</a> <a href="/es/exportar-conversacion-claude-code/" hreflang="es" lang="es">Español</a> <a href="/it/esportare-conversazione-claude-code/" hreflang="it" lang="it">Italiano</a> <a href="/pt/exportar-conversa-claude-code/" hreflang="pt" lang="pt">Português</a> <a href="/nl/claude-code-gesprek-exporteren/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/exportera-claude-code-konversation/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/eksportere-claude-code-samtale/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/eksporter-claude-code-samtale/" hreflang="da" lang="da">Dansk</a> <a href="/fi/claude-code-keskustelun-vienti/" hreflang="fi" lang="fi">Suomi</a> <a href="/pl/eksport-rozmowy-claude-code/" hreflang="pl" lang="pl">Polski</a> <a href="/cs/export-konverzace-claude-code/" hreflang="cs" lang="cs">Čeština</a> <a href="/sk/export-konverzacie-claude-code/" hreflang="sk" lang="sk">Slovenčina</a> <a href="/hu/claude-code-beszelgetes-exportalasa/" hreflang="hu" lang="hu">Magyar</a> <a href="/ro/export-conversatie-claude-code/" hreflang="ro" lang="ro">Română</a> <a href="/el/claude-code-export/" hreflang="el" lang="el">Ελληνικά</a> <a href="/tr/claude-code-konusma-disa-aktarma/" hreflang="tr" lang="tr">Türkçe</a> <a href="/ja/claude-code-export/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/claude-code-export/" hreflang="ko" lang="ko">한국어</a> <a href="/zh-hant/claude-code-export/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="/he/claude-code-export/" hreflang="he" lang="he">עברית</a> <a href="/ar/claude-code-export/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
+  <p class="disclaimer">Chaty sa spracúvajú vo vašom prehliadači · Prihlásenie cez Google len pre PDF, hromadný export a Pro · Nie sme prepojení so spoločnosťou Anthropic, PBC. Claude je ochranná známka spoločnosti Anthropic. Nezávislé rozšírenie pre Chrome – nie je to oficiálny produkt Anthropic. Podpora: <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

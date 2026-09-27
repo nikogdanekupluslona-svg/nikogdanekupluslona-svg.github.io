@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Export chatu Claude – rozšírenie pre Markdown, JSON a PNG</title>
+  <meta name="description" content="Export chatu Claude z claude.ai ako PDF, Markdown, JSON, text, XML, CSV alebo PNG. Bezplatné rozšírenie pre Chrome, jeden chat bez účtu.">
+  <link rel="canonical" href="https://chat-downloader.com/sk/export-chatu-claude/">
+  <!-- i18n:head -->
+  <link rel="alternate" hreflang="en" href="https://chat-downloader.com/export-claude-chat/">
+  <link rel="alternate" hreflang="de" href="https://chat-downloader.com/de/claude-chat-exportieren/">
+  <link rel="alternate" hreflang="fr" href="https://chat-downloader.com/fr/exporter-conversation-claude/">
+  <link rel="alternate" hreflang="es" href="https://chat-downloader.com/es/exportar-chat-claude/">
+  <link rel="alternate" hreflang="it" href="https://chat-downloader.com/it/esportare-chat-claude/">
+  <link rel="alternate" hreflang="pt" href="https://chat-downloader.com/pt/exportar-chat-claude/">
+  <link rel="alternate" hreflang="nl" href="https://chat-downloader.com/nl/claude-chat-exporteren/">
+  <link rel="alternate" hreflang="sv" href="https://chat-downloader.com/sv/exportera-claude-chatt/">
+  <link rel="alternate" hreflang="nb" href="https://chat-downloader.com/nb/eksportere-claude-chat/">
+  <link rel="alternate" hreflang="da" href="https://chat-downloader.com/da/eksporter-claude-chat/">
+  <link rel="alternate" hreflang="fi" href="https://chat-downloader.com/fi/vie-claude-chat/">
+  <link rel="alternate" hreflang="pl" href="https://chat-downloader.com/pl/eksport-czatu-claude/">
+  <link rel="alternate" hreflang="cs" href="https://chat-downloader.com/cs/export-chatu-claude/">
+  <link rel="alternate" hreflang="sk" href="https://chat-downloader.com/sk/export-chatu-claude/">
+  <link rel="alternate" hreflang="hu" href="https://chat-downloader.com/hu/claude-chat-exportalasa/">
+  <link rel="alternate" hreflang="ro" href="https://chat-downloader.com/ro/export-chat-claude/">
+  <link rel="alternate" hreflang="el" href="https://chat-downloader.com/el/export-claude-chat/">
+  <link rel="alternate" hreflang="tr" href="https://chat-downloader.com/tr/claude-sohbet-disa-aktarma/">
+  <link rel="alternate" hreflang="ja" href="https://chat-downloader.com/ja/export-claude-chat/">
+  <link rel="alternate" hreflang="ko" href="https://chat-downloader.com/ko/export-claude-chat/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://chat-downloader.com/zh-hant/export-claude-chat/">
+  <link rel="alternate" hreflang="he" href="https://chat-downloader.com/he/export-claude-chat/">
+  <link rel="alternate" hreflang="ar" href="https://chat-downloader.com/ar/export-claude-chat/">
+  <link rel="alternate" hreflang="x-default" href="https://chat-downloader.com/export-claude-chat/">
+  <meta property="og:locale" content="sk_SK">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="it_IT">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="sv_SE">
+  <meta property="og:locale:alternate" content="nb_NO">
+  <meta property="og:locale:alternate" content="da_DK">
+  <meta property="og:locale:alternate" content="fi_FI">
+  <meta property="og:locale:alternate" content="pl_PL">
+  <meta property="og:locale:alternate" content="cs_CZ">
+  <meta property="og:locale:alternate" content="hu_HU">
+  <meta property="og:locale:alternate" content="ro_RO">
+  <meta property="og:locale:alternate" content="el_GR">
+  <meta property="og:locale:alternate" content="tr_TR">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <meta property="og:locale:alternate" content="zh_TW">
+  <meta property="og:locale:alternate" content="he_IL">
+  <meta property="og:locale:alternate" content="ar_AE">
+  <!-- /i18n:head -->
+  <meta property="og:title" content="Export chatu Claude – rozšírenie pre Markdown, JSON a PNG">
+  <meta property="og:description" content="Export chatu Claude z claude.ai ako PDF, Markdown, JSON, text, XML, CSV alebo PNG. Bezplatné rozšírenie pre Chrome, jeden chat bez účtu.">
+  <meta property="og:url" content="https://chat-downloader.com/sk/export-chatu-claude/">
+  <meta property="og:image" content="https://chat-downloader.com/assets/widget-guide.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chat Downloader">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Export chatu Claude – rozšírenie pre Markdown, JSON a PNG">
+  <meta name="twitter:description" content="Export chatu Claude z claude.ai ako PDF, Markdown, JSON, text, XML, CSV alebo PNG. Bezplatné rozšírenie pre Chrome, jeden chat bez účtu.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME1YXGZKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GME1YXGZKR');
+  </script>
+  
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Čo znamená export chatu Claude na tejto stránke?","acceptedAnswer":{"@type":"Answer","text":"Uloženie konverzácie z claude.ai ako súboru cez Download Claude conversations: oranžové tlačidlo, výber formátu, „Export“. To isté, čo ľudia hľadajú po anglicky ako „claude export chat“. Nie je to ZIP, ktorý posiela e-mailom Anthropic, ani /export v Claude Code."}},{"@type":"Question","name":"Je rozšírenie na export Claude to isté ako Export data?","acceptedAnswer":{"@type":"Answer","text":"Nie. Settings → Privacy → Export data je ZIP s JSON celého účtu, ktorý príde e-mailom. Rozšírenie zapíše otvorený chat ako PDF, Markdown, JSON, text, XML, CSV alebo PNG, prípadne výber z „Export All“ ako ZIP, a to okamžite v Chrome."}},{"@type":"Question","name":"Môžem exportovať chat Claude do PDF?","acceptedAnswer":{"@type":"Answer","text":"Áno. V zozname formátov vyberte PDF a kliknite na „Export“. Rozšírenie vytvorí PDF v prehliadači, bez dialógu tlače. PDF vyžaduje prihlásenie cez Google a je zadarmo do 3 denne; s Pro je neobmedzené. Návod: chat Claude do PDF."}},{"@type":"Question","name":"Potrebujem Pro na jednorazový export chatu Claude?","acceptedAnswer":{"@type":"Answer","text":"Nie. Export do Markdown, textu, JSON, XML, CSV a PNG je zadarmo, neobmedzený a bez účtu. PDF a hromadný „Export All“ sú zadarmo do 3 denne s prihlásením cez Google. Pro za 3,99 USD mesačne alebo 26,99 USD ročne tento limit ruší."}},{"@type":"Question","name":"Funguje export chatu Claude s každým plánom claude.ai?","acceptedAnswer":{"@type":"Answer","text":"Áno. Plány Free, Pro, Team aj Enterprise fungujú, ak konverzáciu otvoríte v Chrome. Rozšírenie nevyžaduje platený plán od Anthropic."}},{"@type":"Question","name":"Je toto rozšírenie aj pre Claude Code?","acceptedAnswer":{"@type":"Answer","text":"Len pre Claude Code on the web. Relácie na claude.ai/code sa otvárajú na claude.ai a exportujú sa ako každý chat. Claude Code v termináli používa /export alebo JSONL na disku a Download Claude conversations ich nečíta. Pozrite návod na export z Claude Code."}},{"@type":"Question","name":"Môžem exportovať chat Claude z Claude Desktop?","acceptedAnswer":{"@type":"Answer","text":"S týmto rozšírením pre Chrome nie. Otvorte tú istú konverzáciu na claude.ai, ak sa synchronizuje, alebo ju skopírujte či použite oficiálny Export data. Desktop oranžové tlačidlo nikdy nezobrazí."}},{"@type":"Question","name":"Koľko bezplatných exportov rozšírenie ponúka?","acceptedAnswer":{"@type":"Answer","text":"Neobmedzene pre Markdown, text, JSON, XML, CSV a PNG, bez účtu. PDF a hromadný „Export All“ zdieľajú na bezplatnom pláne 3 denne, s prihlásením cez Google; každý chat v hromadnom ZIP-e sa počíta ako jeden. Počítadlo sa vynuluje o polnoci UTC. Pro limit ruší a obnovíte ho prihlásením cez Google."}},{"@type":"Question","name":"Kde je oranžové tlačidlo na export chatu Claude?","acceptedAnswer":{"@type":"Answer","text":"Vpravo od poľa na správu na adrese konverzácie na claude.ai, keď nainštalujete Download Claude conversations a stránku obnovíte. Na prázdnej úvodnej stránke ani v aplikácii Desktop sa nezobrazí."}},{"@type":"Question","name":"Nahráva export chatu Claude moje konverzácie?","acceptedAnswer":{"@type":"Answer","text":"Nie. Každý formát vrátane PDF sa vytvorí v prehliadači a odovzdá rozhraniu sťahovania v Chrome. Exporty do Markdown, textu, JSON, XML, CSV a PNG nám neposielajú nič. Po prihlásení kvôli PDF, hromadnému exportu alebo Pro vidí náš server stav limitu či predplatného a váš e-mail Google, nikdy obsah chatov. Podrobnosti v časti ako to funguje."}},{"@type":"Question","name":"Do akých formátov rozšírenie exportuje?","acceptedAnswer":{"@type":"Answer","text":"Do siedmich: PDF, Markdown, čistý text, JSON, XML, CSV a PNG – rovnakých siedmich pre jeden chat aj pre „Export All“. Vo verzii 1.16.2 nie je export do Wordu, Notion ani Google Docs."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Claude Chat Downloader","alternateName":["Download Claude conversations","Claude Conversation Downloader"],"applicationCategory":"BrowserApplication","operatingSystem":"Chrome","softwareVersion":"1.16.2","url":"https://chat-downloader.com","downloadUrl":"https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak","offers":[{"@type":"Offer","name":"Free","price":"0","priceCurrency":"USD","description":"Neobmedzený export do Markdown, textu, JSON, XML, CSV a PNG; 3 exporty PDF alebo hromadné exporty denne"},{"@type":"Offer","name":"Pro mesačne","price":"3.99","priceCurrency":"USD"},{"@type":"Offer","name":"Pro ročne","price":"26.99","priceCurrency":"USD"}],"description":"Rozšírenie na export chatu Claude z claude.ai: uloží chat ako PDF, Markdown, JSON, text, XML, CSV alebo PNG. Bezplatný doplnok pre Chrome, pre jeden chat bez účtu."}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Domov","item":"https://chat-downloader.com/sk/"},{"@type":"ListItem","position":2,"name":"Export chatu Claude","item":"https://chat-downloader.com/sk/export-chatu-claude/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Preskočiť na obsah</a>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a class="logo" href="/sk/">
+        <img src="/assets/icon.svg" alt="">
+        <span>Download Claude conversations</span>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="/sk/ako-stiahnut-chat-claude/">Stiahnutie</a><a href="/sk/ako-exportovat-chat-claude/">Export</a><a href="/sk/export-vsetkych-chatov-claude/">Všetky chaty</a><a href="/sk/formaty/">Formáty</a><a href="/sk/#faq">Otázky</a>
+        <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=sk-export-claude-chat" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Pridať do Chromu</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=sk-export-claude-chat" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Pridať do Chromu</a>
+      <!-- i18n:switch --><details class="lang-switch"><summary aria-label="Jazyk: Slovenčina"><svg class="lang-globe" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span class="lang-name">Slovenčina</span><span class="lang-code" aria-hidden="true">sk</span></summary><ul><li><a href="/export-claude-chat/" hreflang="en" lang="en">English</a></li><li><a href="/de/claude-chat-exportieren/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/exporter-conversation-claude/" hreflang="fr" lang="fr">Français</a></li><li><a href="/es/exportar-chat-claude/" hreflang="es" lang="es">Español</a></li><li><a href="/it/esportare-chat-claude/" hreflang="it" lang="it">Italiano</a></li><li><a href="/pt/exportar-chat-claude/" hreflang="pt" lang="pt">Português</a></li><li><a href="/nl/claude-chat-exporteren/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/sv/exportera-claude-chatt/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="/nb/eksportere-claude-chat/" hreflang="nb" lang="nb">Norsk</a></li><li><a href="/da/eksporter-claude-chat/" hreflang="da" lang="da">Dansk</a></li><li><a href="/fi/vie-claude-chat/" hreflang="fi" lang="fi">Suomi</a></li><li><a href="/pl/eksport-czatu-claude/" hreflang="pl" lang="pl">Polski</a></li><li><a href="/cs/export-chatu-claude/" hreflang="cs" lang="cs">Čeština</a></li><li><a href="/sk/export-chatu-claude/" hreflang="sk" lang="sk" aria-current="true">Slovenčina</a></li><li><a href="/hu/claude-chat-exportalasa/" hreflang="hu" lang="hu">Magyar</a></li><li><a href="/ro/export-chat-claude/" hreflang="ro" lang="ro">Română</a></li><li><a href="/el/export-claude-chat/" hreflang="el" lang="el">Ελληνικά</a></li><li><a href="/tr/claude-sohbet-disa-aktarma/" hreflang="tr" lang="tr">Türkçe</a></li><li><a href="/ja/export-claude-chat/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/ko/export-claude-chat/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/zh-hant/export-claude-chat/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li><li><a href="/he/export-claude-chat/" hreflang="he" lang="he">עברית</a></li><li><a href="/ar/export-claude-chat/" hreflang="ar" lang="ar">العربية</a></li></ul></details><!-- /i18n:switch -->
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+<nav class="crumbs" aria-label="Navigačná cesta"><a href="/sk/">Domov</a> / Export chatu Claude</nav>
+<main id="main">
+<article class="band prose">
+<p class="article-meta">Aktualizované <time datetime="2026-09">v septembri 2026</time> · Rozšírenie 1.16.2</p>
+<h1 class="page-h1">Export chatu Claude do čitateľného súboru</h1>
+<p class="lead">Export chatu Claude z claude.ai urobíte takto: nainštalujte Download Claude conversations, otvorte konverzáciu, kliknite na oranžové tlačidlo, vyberte PDF, Markdown, JSON, text, XML, CSV alebo PNG a kliknite na „Export“ (Exportovať). Po anglicky sa to hľadá ako „claude export chat“. Rozšírenie zapíše súbor priamo vo vašom počítači. Nefunguje v Claude Desktop ani v termináli Claude Code. Markdown, text, JSON, XML, CSV a PNG sú zadarmo, bez limitu a bez účtu. PDF a hromadný ZIP sú zadarmo do 3 denne; Pro stojí 3,99 USD mesačne alebo 26,99 USD ročne.</p>
+<aside class="trust-badge" aria-label="O rozšírení">
+  <span class="trophy" aria-hidden="true">🧩</span>
+  <div>
+    <strong>Download Claude conversations – bezplatné rozšírenie pre Chrome na claude.ai</strong>
+    <span>Verzia 1.16.2 (september 2026) – neobmedzený export do Markdown, textu, JSON, XML, CSV a PNG bez účtu; PDF a hromadný ZIP zadarmo do 3 denne</span>
+  </div>
+</aside>
+<nav class="toc" aria-label="Na tejto stránke">
+  <p>Na tejto stránke</p>
+  <ol>
+    <li><a href="#export-one">Ako exportovať chat Claude z claude.ai?</a></li>
+    <li><a href="#what-extension-does">Čo vlastne robí rozšírenie na export Claude?</a></li>
+    <li><a href="#which-format">Do akého formátu exportovať chat Claude?</a></li>
+    <li><a href="#export-bulk">Dá sa exportovať chat Claude hromadne cez „Export All“?</a></li>
+    <li><a href="#desktop-code">Funguje export chatu Claude v Desktop alebo Code?</a></li>
+    <li><a href="#vs-official">Export chatu Claude, alebo Export data od Anthropic?</a></li>
+    <li><a href="#cost">Koľko stojí rozšírenie na export Claude?</a></li>
+    <li><a href="#faq">Časté otázky: ako exportovať chat Claude</a></li>
+  </ol>
+</nav>
+
+<h2 id="export-one">Ako exportovať chat Claude z claude.ai?</h2>
+<p>Otvorte konverzáciu na claude.ai v Chrome, kliknite na oranžové tlačidlo vedľa poľa na správu, vyberte PDF, Markdown, JSON, čistý text, XML, CSV alebo PNG a kliknite na „Export“. Download Claude conversations zapíše súbor lokálne. Samotné claude.ai v septembri 2026 nemá vlastné tlačidlo na export jedného chatu.</p>
+<ol>
+<li>Nainštalujte Download Claude conversations z Chrome Web Store.</li>
+<li>Obnovte claude.ai a otvorte skutočnú adresu konverzácie, nie prázdnu úvodnú stránku s poľom na písanie.</li>
+<li>Kliknite na okrúhle oranžové tlačidlo sťahovania vpravo od poľa na správu.</li>
+<li>V paneli nastavte filter správ na „All“, „Human“ alebo „Assistant“ (všetky, len vaše, len odpovede asistenta) a vyberte formát. Zaškrtnite „Thinking“ (uvažovanie), ak chcete pridať rozšírené uvažovanie, alebo cez „Select“ (Vybrať) označte jednotlivé správy. Rozšírenie si pamätá posledný použitý formát.</li>
+<li>Kliknite na „Export“. Chrome súbor hneď uloží cez rozhranie sťahovania prehliadača. „Copy“ (Kopírovať) namiesto toho vloží Markdown, text, JSON, XML alebo CSV do schránky.</li>
+</ol>
+<p>Na export chatu Claude do Markdown, textu, JSON, XML, CSV alebo PNG nepotrebujete účet. Tieto exporty jedného chatu sú neobmedzené a rozšírenie pri nich na naše servery nič neposiela. Prihlásenie cez Google sa objaví až pri výbere PDF alebo pri hromadnom „Export All“ (Exportovať všetko): bezplatný plán ich povoľuje spolu 3 denne, počítadlo sa vynuluje o polnoci UTC. Text chatu pri prihlásení nikam neodchádza. Podrobnosti: <a href="/sk/ako-to-funguje/">ako to funguje</a>.</p>
+<p>Ak oranžové tlačidlo chýba, nie ste na adrese konverzácie, karta potrebuje po inštalácii obnoviť alebo je ikona rozšírenia stále skrytá v ponuke rozšírení Chrome (ikona puzzle). Pripnite Download Claude conversations a obnovte claude.ai. Rozšírenie sa načítava iba na claude.ai, nikdy na iných stránkach.</p>
+<div class="callout callout-tip">
+  <p><strong>Jedna konverzácia verzus celý účet.</strong> Oranžové tlačidlo exportuje otvorený chat. Pre veľa súborov otvorte okno rozšírenia → „View and Download All Conversations“ (Zobraziť a stiahnuť všetky konverzácie) a spustite „Export All“ – pozrite <a href="/sk/export-vsetkych-chatov-claude/">hromadný Export All</a>. Settings → Privacy → Export data od Anthropic (ak máte claude.ai v slovenčine, názvy môžu byť preložené) je oneskorený ZIP celého účtu, nie tento postup.</p>
+</div>
+
+<h2 id="what-extension-does">Čo vlastne robí rozšírenie na export Claude?</h2>
+<p>Rozšírenie na export Claude prečíta konverzáciu, ktorá je už vykreslená vo vašej prihlásenej karte claude.ai, a zapíše na disk štruktúrovaný súbor. Download Claude conversations je presne taký obsahový skript pre Chrome: odosielateľ, strom správ, bloky kódu, tabuľky, voliteľné uvažovanie a rozloženie artefaktov – nie snímka obrazovky s rozhraním okolo chatu. Funguje s bežnými chatmi, projektmi (Projects), reláciami Cowork aj s Claude Code on the web.</p>
+<p>Kopírovanie z claude.ai stráca odsadenie a rozbíja tabuľky. Tlač (Ctrl/Cmd+P) ponechá bočný panel a dlhý blok kódu často rozdelí na viac strán. Rozšírenie zachová pri blokoch kódu označenie jazyka a tabuľky nechá ako tabuľky v Markdown, JSON aj XML. PNG je možnosť vizuálnej snímky. PDF je stránkovaný dokument, vytvorený v prehliadači bez dialógu tlače.</p>
+<p>Rozloženie artefaktov je vo verzii 1.16.2 skutočný prepínač: „Original“, „Inline“, „Nested“ alebo „Flat“ (pôvodné, vložené, vnorené, ploché), nastavuje sa na Dashboarde. Rozšírené uvažovanie je zaškrtávacie políčko v paneli exportu; zdroje z webového vyhľadávania a kroky nástrojov / MCP sa zapínajú v nastaveniach. Pridať sa dajú aj metadáta (názov, časové údaje, model). Filter správ obmedzí súbor na všetky správy, len vaše alebo len odpovede asistenta a „Select“ označí jednotlivé správy. Úplný zoznam: <a href="/sk/funkcie/">funkcie</a>.</p>
+<div class="expert-quote">
+  <p>Oranžové tlačidlo sme postavili tak, aby z chatu, ktorý už máte na claude.ai, vytvorilo skutočný súbor – PDF, Markdown, JSON, text, XML, CSV alebo PNG – bez nahrávania konverzácie na naše servery. Verzia 1.16.2 vytvára v prehliadači aj PDF.</p>
+  <footer>Tím Download Claude conversations</footer>
+</div>
+<p>Ten istý záznam v Chrome Web Store ľudia hľadajú aj ako Claude Chat Downloader a Claude Conversation Downloader. Právne stránky môžu ešte uvádzať Claude Exporter. Všetky tieto názvy označujú Download Claude conversations, nie ďalší produkt. Kto hľadá „extrahovať“ namiesto „exportovať“, skončí pri tom istom tlačidle; tento uhol pohľadu rozoberá návod <a href="/sk/extraktor-konverzacii-claude/">extraktor konverzácií Claude</a>.</p>
+
+<h2 id="which-format">Do akého formátu exportovať chat Claude?</h2>
+<p>Exportujte chat Claude do PDF na zdieľanie alebo tlač, do Markdown na poznámky, do JSON pre skripty, do čistého textu na jednoduchý archív, do XML na výmenu dát, do CSV pre tabuľku alebo do PNG ako obrázok konverzácie. Download Claude conversations ponúka všetkých sedem v jednom rozbaľovacom zozname.</p>
+<table>
+  <caption>Formáty, do ktorých rozšírenie exportuje z claude.ai</caption>
+  <thead>
+    <tr>
+      <th scope="col">Formát</th>
+      <th scope="col">Najlepšie na</th>
+      <th scope="col">Čo dostanete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PDF</td>
+      <td>Zdieľanie, tlač, klienti</td>
+      <td>Stránkovaný súbor vytvorený v prehliadači – <a href="/sk/chat-claude-do-pdf/">návod k PDF</a></td>
+    </tr>
+    <tr>
+      <td>Markdown</td>
+      <td>Obsidian, GitHub, wiki</td>
+      <td>Nadpisy, bloky kódu, tabuľky – <a href="/sk/formaty/markdown/">návod k Markdown</a></td>
+    </tr>
+    <tr>
+      <td>JSON</td>
+      <td>Porovnávanie, spracovanie, nástroje</td>
+      <td>Strom správ, nie ZIP účtu od Anthropic – <a href="/sk/formaty/json/">návod k JSON</a></td>
+    </tr>
+    <tr>
+      <td>Čistý text</td>
+      <td>Archív, ktorý vložíte kamkoľvek</td>
+      <td>Poradie konverzácie bez formátovania – <a href="/sk/formaty/">prehľad formátov</a></td>
+    </tr>
+    <tr>
+      <td>XML</td>
+      <td>Systémy, ktoré vyžadujú XML</td>
+      <td>Štruktúrovaná výmena dát – <a href="/sk/formaty/xml/">návod k XML</a></td>
+    </tr>
+    <tr>
+      <td>CSV</td>
+      <td>Excel, Google Sheets, Numbers</td>
+      <td>Jeden riadok na správu – <a href="/sk/formaty/">prehľad formátov</a></td>
+    </tr>
+    <tr>
+      <td>PNG</td>
+      <td>Vizuálna snímka</td>
+      <td>Jeden obrázok konverzácie – <a href="/sk/formaty/png/">návod k PNG</a></td>
+    </tr>
+  </tbody>
+</table>
+<p>Autori textov zvyčajne exportujú chat Claude do Markdown. Vývojári väčšinou volia JSON. Ak potrebujete stránkovaný dokument, zvoľte PDF: jeho dialóg nastaví veľkosť strany, okraje, svetlý či tmavý režim, písmo, čísla strán a obsah – postup: <a href="/sk/chat-claude-do-pdf/">chat Claude do PDF</a>. PNG z rozšírenia je jeden obrázok, nie stránkovaný dokument.</p>
+<p>Od formátu závisí, či platí limit. Markdown, text, JSON, XML, CSV a PNG sú neobmedzené a bez účtu. PDF vyžaduje prihlásenie cez Google a na bezplatnom pláne sa započítava do 3 denne, spoločne s hromadným „Export All“. Pro za 3,99 USD mesačne alebo 26,99 USD ročne tento limit ruší. Download Claude conversations vo verzii 1.16.2 neexportuje do Notion, Wordu ani Google Docs.</p>
+
+<h2 id="export-bulk">Dá sa exportovať chat Claude hromadne cez „Export All“?</h2>
+<p>Áno. Otvorte okno rozšírenia → „View and Download All Conversations“, vyfiltrujte tabuľku a kliknite na „Export All“, čím dostanete ZIP. Hromadný export vyžaduje prihlásenie cez Google. Na bezplatnom pláne zdieľa limit 3 denne s PDF a každá konverzácia v ZIP-e spotrebuje jeden. Pro limit ruší pre celú históriu.</p>
+<p>Dashboard zobrazuje históriu claude.ai s vyhľadávaním podľa názvu, filtrami „All conversations“, „New“, „Updated“, „Previously exported“ (všetky, nové, aktualizované, už exportované), kartami „Chat“ a „Cowork“ a vyhľadávaním v projektoch. „New“ znamená, že konverzácia ešte nebola exportovaná cez Download Claude conversations. „Previously exported“ sleduje už uložené chaty, takže ďalší „Export All“ ich môže vynechať. Vyhľadávanie v projektoch zodpovedá tomu, ako máte chaty zoskupené na claude.ai.</p>
+<p>Hromadný export má výber formátu („Chat format“) so všetkými siedmimi formátmi vrátane PDF, zaškrtávacie políčka „Chats“, „Thinking“, „Metadata“, „Tools“ a „Sources“ (chaty, uvažovanie, metadáta, nástroje, zdroje) a rozloženie artefaktov („Original“, „Inline“, „Nested“, „Flat“). „Export All“ nie je okresaný archív. Je to jeden ZIP s jedným súborom na chat vo zvolenom formáte. Ak ste chceli jeden oneskorený archív celého účtu, to je Export data od Anthropic, porovnaný v ďalšej časti a na <a href="/sk/export-vsetkych-chatov-claude/">stránke o hromadnom exporte</a>.</p>
+<div class="callout callout-warn">
+  <p><strong>Hromadný export sa počíta po chatoch.</strong> Na bezplatnom pláne zdieľajú „Export All“ a PDF limit 3 denne a každá konverzácia v ZIP-e spotrebuje jeden. Ak vyberiete 40 konverzácií a zostávajú vám 3, celá dávka sa zablokuje, neskráti sa. Vyberte menej, počkajte na vynulovanie o polnoci UTC alebo prejdite na Pro za 3,99 USD mesačne či 26,99 USD ročne.</p>
+</div>
+
+<h2 id="desktop-code">Funguje export chatu Claude v Desktop alebo Code?</h2>
+<p>V aplikácii Desktop ani v termináli Claude Code nie. Toto rozšírenie beží iba na claude.ai v Chrome (alebo v inom prehliadači na báze Chromium, ktorý vie načítať záznam z obchodu). Claude Desktop je samostatná aplikácia pre Mac a Windows a oranžové tlačidlo sa v nej ani v termináli nikdy neobjaví. Výnimkou je Claude Code on the web (claude.ai/code): tieto relácie sa otvárajú na claude.ai a exportujú sa ako každý chat.</p>
+<p>Ak konverzácia existuje aj vo vašom účte na claude.ai, otvorte ju v Chrome a exportujte chat Claude tam cez Download Claude conversations. Ak je chat len v aplikácii Desktop, skopírujte ho z aplikácie alebo si na webe vyžiadajte Settings → Privacy → Export data. Porovnanie krok za krokom: <a href="/sk/export-chatu-claude-desktop/">export chatu z Claude Desktop</a>.</p>
+<p>Claude Code v termináli používa <code>/export</code> alebo prepisy JSONL na disku. Toto rozšírenie pre Chrome tieto lokálne relácie nečíta. Neinštalujte Download Claude conversations s očakávaním, že sa napojí na terminál. Návod: <a href="/sk/export-konverzacie-claude-code/">export z Claude Code</a>. Hľadať export chatu Claude pre reláciu v príkazovom riadku znamená úplne inú cestu.</p>
+<p>Mobilné claude.ai v prehliadači telefónu tiež nie je podporované. Rozšírenie potrebuje Chrome na počítači. Tento tím v roku 2026 nemá aplikáciu pre iOS ani Android. Otvorte konverzáciu na počítači a exportujte chat Claude cez oranžové tlačidlo alebo „Export All“.</p>
+
+<h2 id="vs-official">Export chatu Claude, alebo Export data od Anthropic?</h2>
+<p>Export data od Anthropic po čase pošle e-mailom ZIP s JSON celého účtu. Export chatu Claude cez Download Claude conversations uloží otvorenú konverzáciu okamžite ako PDF, Markdown, JSON, text, XML, CSV alebo PNG. ZIP použite na zálohu; rozšírenie na export použite, keď potrebujete čitateľný súbor hneď.</p>
+<table>
+  <caption>Spôsoby, ako dostať konverzáciu Claude z claude.ai</caption>
+  <thead>
+    <tr>
+      <th scope="col">Spôsob</th>
+      <th scope="col">Najlepšie na</th>
+      <th scope="col">Dostanete</th>
+      <th scope="col">Čakáte</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Rozšírenie na export Claude</td>
+      <td>Tento chat alebo hromadný výber</td>
+      <td>PDF / MD / JSON / TXT / XML / CSV / PNG</td>
+      <td>Nie – súbor sa stiahne v Chrome</td>
+    </tr>
+    <tr>
+      <td>Settings → Privacy → Export data</td>
+      <td>Záloha celého účtu</td>
+      <td>ZIP s JSON e-mailom</td>
+      <td>Áno – odkaz vyprší; žiadny Markdown po chatoch</td>
+    </tr>
+    <tr>
+      <td>Tlač → Uložiť ako PDF</td>
+      <td>Hrubá vizuálna kópia</td>
+      <td>PDF webovej stránky</td>
+      <td>Nie, ale rozloženie a kód sa často rozbijú</td>
+    </tr>
+    <tr>
+      <td>Kopírovať a vložiť</td>
+      <td>Jedna krátka odpoveď</td>
+      <td>To, čo označíte</td>
+      <td>Pri dlhej konverzácii žiadna štruktúra</td>
+    </tr>
+  </tbody>
+</table>
+<p>Oficiálny ZIP nie je krajšia verzia exportu chatu Claude. Je to JSON na úrovni účtu. V tejto žiadosti si nemôžete vybrať jednu konverzáciu ani zvoliť Markdown. Rozšírenie zase nenahradí tento ZIP, ak potrebujete každú zabudnutú konverzáciu v jednom archíve. Porovnanie spôsobov aj s postupom tlače: <a href="/sk/ako-exportovat-chat-claude/">ako exportovať chat Claude</a>.</p>
+<p>Download Claude conversations nie je nijako prepojené so spoločnosťou Anthropic, PBC. Používanie rozšírenia nemení podmienky služby Anthropic. Obsahový skript využíva reláciu, ktorú už máte otvorenú na claude.ai; neprihlasuje sa do Anthropic s vlastnými prihlasovacími údajmi. Pre svoj účet dodržiavajte pravidlá Anthropic.</p>
+
+<h2 id="cost">Koľko stojí rozšírenie na export Claude?</h2>
+<p>Export do Markdown, textu, JSON, XML, CSV a PNG je zadarmo, neobmedzený a bez účtu. PDF a hromadný „Export All“ sú zadarmo do 3 denne s prihlásením cez Google. Pro stojí 3,99 USD mesačne alebo 26,99 USD ročne cez Paddle a PDF aj hromadný export sprístupní bez limitu. Download Claude conversations neúčtuje poplatky za formát. Funguje každý plán claude.ai, ak Chrome dokáže chat otvoriť.</p>
+<p>Denné počítadlo PDF a hromadných exportov sa vynuluje o polnoci UTC. Pro obnovíte na novom počítači prihlásením tým istým účtom Google. Zrušiť ho môžete kedykoľvek na stránke možností rozšírenia alebo cez Paddle. Paddle je predajcom (merchant of record); tento tím čísla kariet nikdy nevidí. Na prvú platbu sa vzťahuje 14-dňová záruka vrátenia peňazí, ktorú vybavuje Paddle podľa stránky o refundáciách.</p>
+<p>Na používanie rozšírenia nepotrebujete platený plán claude.ai od Anthropic. Stačí prihlásenie na claude.ai, ktoré konverzáciu načíta, a Chrome. Team a Enterprise fungujú s oranžovým tlačidlom rovnako ako Free. Ak správca pracovného priestoru rozšírenia blokuje, Download Claude conversations sa nenačíta – to je politika prehliadača, nie limit formátu.</p>
+<div class="callout callout-info">
+  <p><strong>Rovnaká úloha, rôzne hľadania.</strong> „Export chatu Claude“, „stiahnuť chat Claude“ aj „extrahovať konverzáciu Claude“ – a po anglicky „claude export chat“ alebo „claude export chats“ – znamenajú to isté: uložiť túto konverzáciu ako súbor. Návod s alternatívami cez tlač a ZIP je <a href="/sk/ako-stiahnut-chat-claude/">ako stiahnuť chat Claude</a>. Táto stránka opisuje samotné rozšírenie na export.</p>
+</div>
+<p>Keď export chatu Claude zlyhá: počkajte, kým sa dlhá konverzácia na claude.ai úplne načíta, skontrolujte rozbaľovací zoznam formátov (zostáva posledný použitý) a pri PDF či hromadnom exporte si overte, koľko z dnešných 3 vám ešte zostáva. Ak Chrome sťahovanie zablokoval, povoľte sťahovanie z claude.ai. Neúplný súbor zvyčajne znamená, že stránka ešte nevykreslila celý strom správ.</p>
+<p>Táto stránka popisuje verziu 1.16.2 zo septembra 2026. Formáty sú PDF, Markdown, čistý text, JSON, XML, CSV a PNG. Ak sa zoznam zmení, tento návod sa zmení v ten istý deň. Dovtedy od rozšírenia nečakajte export do Wordu, Notion ani Google Docs.</p>
+
+<h2 id="faq">Časté otázky: ako exportovať chat Claude</h2>
+<p>Tieto otázky sa týkajú exportu chatu Claude a rozšírenia na export: formátov, limitov, aplikácie Desktop, Claude Code, ZIP-u od Anthropic a umiestnenia oranžového tlačidla. Každá odpoveď vychádza z verzie 1.16.2. Štruktúrované dáta FAQPage (JSON-LD) v hlavičke stránky zodpovedajú tomuto zoznamu.</p>
+
+<h3>Čo znamená export chatu Claude na tejto stránke?</h3>
+<p>Uloženie konverzácie z claude.ai ako súboru cez Download Claude conversations: oranžové tlačidlo, výber formátu, „Export“. To isté, čo ľudia hľadajú po anglicky ako „claude export chat“. Nie je to ZIP, ktorý posiela e-mailom Anthropic, ani <code>/export</code> v Claude Code.</p>
+
+<h3>Je rozšírenie na export Claude to isté ako Export data?</h3>
+<p>Nie. Settings → Privacy → Export data je ZIP s JSON celého účtu, ktorý príde e-mailom. Rozšírenie zapíše otvorený chat ako PDF, Markdown, JSON, text, XML, CSV alebo PNG, prípadne výber z „Export All“ ako ZIP, a to okamžite v Chrome.</p>
+
+<h3>Môžem exportovať chat Claude do PDF?</h3>
+<p>Áno. V zozname formátov vyberte PDF a kliknite na „Export“. Rozšírenie vytvorí PDF v prehliadači, bez dialógu tlače. PDF vyžaduje prihlásenie cez Google a je zadarmo do 3 denne; s Pro je neobmedzené. Návod: <a href="/sk/chat-claude-do-pdf/">chat Claude do PDF</a>.</p>
+
+<h3>Potrebujem Pro na jednorazový export chatu Claude?</h3>
+<p>Nie. Export do Markdown, textu, JSON, XML, CSV a PNG je zadarmo, neobmedzený a bez účtu. PDF a hromadný „Export All“ sú zadarmo do 3 denne s prihlásením cez Google. Pro za 3,99 USD mesačne alebo 26,99 USD ročne tento limit ruší.</p>
+
+<h3>Funguje export chatu Claude s každým plánom claude.ai?</h3>
+<p>Áno. Plány Free, Pro, Team aj Enterprise fungujú, ak konverzáciu otvoríte v Chrome. Rozšírenie nevyžaduje platený plán od Anthropic.</p>
+
+<h3>Je toto rozšírenie aj pre Claude Code?</h3>
+<p>Len pre Claude Code on the web. Relácie na claude.ai/code sa otvárajú na claude.ai a exportujú sa ako každý chat. Claude Code v termináli používa <code>/export</code> alebo JSONL na disku a Download Claude conversations ich nečíta. Pozrite návod na export z Claude Code.</p>
+
+<h3>Môžem exportovať chat Claude z Claude Desktop?</h3>
+<p>S týmto rozšírením pre Chrome nie. Otvorte tú istú konverzáciu na claude.ai, ak sa synchronizuje, alebo ju skopírujte či použite oficiálny Export data. Desktop oranžové tlačidlo nikdy nezobrazí.</p>
+
+<h3>Koľko bezplatných exportov rozšírenie ponúka?</h3>
+<p>Neobmedzene pre Markdown, text, JSON, XML, CSV a PNG, bez účtu. PDF a hromadný „Export All“ zdieľajú na bezplatnom pláne 3 denne, s prihlásením cez Google; každý chat v hromadnom ZIP-e sa počíta ako jeden. Počítadlo sa vynuluje o polnoci UTC. Pro limit ruší a obnovíte ho prihlásením cez Google.</p>
+
+<h3>Kde je oranžové tlačidlo na export chatu Claude?</h3>
+<p>Vpravo od poľa na správu na adrese konverzácie na claude.ai, keď nainštalujete Download Claude conversations a stránku obnovíte. Na prázdnej úvodnej stránke ani v aplikácii Desktop sa nezobrazí.</p>
+
+<h3>Nahráva export chatu Claude moje konverzácie?</h3>
+<p>Nie. Každý formát vrátane PDF sa vytvorí v prehliadači a odovzdá rozhraniu sťahovania v Chrome. Exporty do Markdown, textu, JSON, XML, CSV a PNG nám neposielajú nič. Po prihlásení kvôli PDF, hromadnému exportu alebo Pro vidí náš server stav limitu či predplatného a váš e-mail Google, nikdy obsah chatov. Podrobnosti v časti ako to funguje.</p>
+
+<h3>Do akých formátov rozšírenie exportuje?</h3>
+<p>Do siedmich: PDF, Markdown, čistý text, JSON, XML, CSV a PNG – rovnakých siedmich pre jeden chat aj pre „Export All“. Vo verzii 1.16.2 nie je export do Wordu, Notion ani Google Docs.</p>
+</article>
+</main>
+<section class="final-cta page-cta" aria-label="Inštalácia">
+  <div class="wrap">
+    <div class="final-cta-panel">
+      <p class="final-kicker">Download Claude conversations</p>
+      <h2>Nainštalujte rozšírenie a exportujte chat Claude za pár sekúnd</h2>
+      <p>Premeňte dôležité konverzácie s Claude na PDF, Markdown, JSON, text, XML, CSV alebo PNG – lokálne, priamo z Chrome.</p>
+      <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=sk-export" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Pridať do Chrome</a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="logo" href="/sk/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
+      <p class="legal-note">Rozšírenie pre Chrome na stiahnutie chatov z Claude.ai ako PDF, Markdown, JSON, obyčajný text, CSV, XML alebo PNG.</p>
+    </div>
+    <div>
+      <h2>Inštalácia</h2>
+      <a class="install-link" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=sk-footer" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Rozšírenie pre Chrome</a>
+    </div>
+    <div>
+      <h2>Produkt</h2>
+      <a href="/sk/funkcie/">Funkcie</a>
+      <a href="/sk/formaty/">Formáty</a>
+      <a href="/sk/export-vsetkych-chatov-claude/">Export všetkých chatov</a>
+      <a href="/sk/ako-to-funguje/">Ako to funguje</a>
+    </div>
+    <div>
+      <h2>Návody</h2>
+      <a href="/sk/ako-stiahnut-chat-claude/">Ako stiahnuť chat Claude</a>
+      <a href="/sk/ako-exportovat-chat-claude/">Ako exportovať chat Claude</a>
+      <a href="/sk/export-chatu-claude/">Export chatu Claude</a>
+      <a href="/sk/extraktor-konverzacii-claude/">Extraktor konverzácií Claude</a>
+      <a href="/sk/export-konverzacie-claude-code/">Export z Claude Code</a>
+      <a href="/sk/chat-claude-do-pdf/">Chat Claude do PDF</a>
+      <a href="/sk/export-chatu-claude-desktop/">Export chatu z Claude Desktop</a>
+      <a href="/sk/export-konverzacie-claude/">Export konverzácie Claude</a>
+      <a href="/sk/ako-ulozit-konverzaciu-claude/">Ako uložiť konverzáciu Claude</a>
+      <a href="/sk/stiahnut-konverzaciu-claude/">Stiahnuť konverzáciu Claude</a>
+    </div>
+    <div>
+      <h2>Právne informácie</h2>
+      <a href="/sk/o-nas/">O nás</a>
+      <a href="/sk/o-nas/#contact">Kontakt</a>
+      <a href="/privacy/" hreflang="en">Súkromie (po anglicky)</a>
+      <a href="/terms/" hreflang="en">Podmienky (po anglicky)</a>
+      <a href="/refund/" hreflang="en">Vrátenie peňazí (po anglicky)</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Download Claude conversations. Všetky práva vyhradené.</div>
+    <div>
+      <a href="/privacy/" hreflang="en">Zásady ochrany osobných údajov (po anglicky)</a>
+      <a href="/terms/" hreflang="en">Podmienky používania (po anglicky)</a>
+      <a href="/refund/" hreflang="en">Vrátenie peňazí (po anglicky)</a>
+    </div>
+  </div>
+  <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/export-claude-chat/" hreflang="en" lang="en">English</a> <a href="/de/claude-chat-exportieren/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/exporter-conversation-claude/" hreflang="fr" lang="fr">Français</a> <a href="/es/exportar-chat-claude/" hreflang="es" lang="es">Español</a> <a href="/it/esportare-chat-claude/" hreflang="it" lang="it">Italiano</a> <a href="/pt/exportar-chat-claude/" hreflang="pt" lang="pt">Português</a> <a href="/nl/claude-chat-exporteren/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/exportera-claude-chatt/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/eksportere-claude-chat/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/eksporter-claude-chat/" hreflang="da" lang="da">Dansk</a> <a href="/fi/vie-claude-chat/" hreflang="fi" lang="fi">Suomi</a> <a href="/pl/eksport-czatu-claude/" hreflang="pl" lang="pl">Polski</a> <a href="/cs/export-chatu-claude/" hreflang="cs" lang="cs">Čeština</a> <a href="/sk/export-chatu-claude/" hreflang="sk" lang="sk">Slovenčina</a> <a href="/hu/claude-chat-exportalasa/" hreflang="hu" lang="hu">Magyar</a> <a href="/ro/export-chat-claude/" hreflang="ro" lang="ro">Română</a> <a href="/el/export-claude-chat/" hreflang="el" lang="el">Ελληνικά</a> <a href="/tr/claude-sohbet-disa-aktarma/" hreflang="tr" lang="tr">Türkçe</a> <a href="/ja/export-claude-chat/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/export-claude-chat/" hreflang="ko" lang="ko">한국어</a> <a href="/zh-hant/export-claude-chat/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="/he/export-claude-chat/" hreflang="he" lang="he">עברית</a> <a href="/ar/export-claude-chat/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
+  <p class="disclaimer">Chaty sa spracúvajú vo vašom prehliadači · Prihlásenie cez Google len pre PDF, hromadný export a Pro · Nie sme prepojení so spoločnosťou Anthropic, PBC. Claude je ochranná známka spoločnosti Anthropic. Nezávislé rozšírenie pre Chrome – nie je to oficiálny produkt Anthropic. Podpora: <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chrome 擴充功能特色：批次匯出、格式、Artifact</title>
+  <meta name="description" content="Claude Chat Downloader 擴充功能：PDF 等七種格式、選取、複製、批次「Export All」、Artifact 與設定，免帳號即可使用。">
+  <link rel="canonical" href="https://chat-downloader.com/zh-hant/features/">
+  <!-- i18n:head -->
+  <link rel="alternate" hreflang="en" href="https://chat-downloader.com/features/">
+  <link rel="alternate" hreflang="de" href="https://chat-downloader.com/de/funktionen/">
+  <link rel="alternate" hreflang="fr" href="https://chat-downloader.com/fr/fonctionnalites/">
+  <link rel="alternate" hreflang="es" href="https://chat-downloader.com/es/funciones/">
+  <link rel="alternate" hreflang="it" href="https://chat-downloader.com/it/funzionalita/">
+  <link rel="alternate" hreflang="pt" href="https://chat-downloader.com/pt/recursos/">
+  <link rel="alternate" hreflang="nl" href="https://chat-downloader.com/nl/functies/">
+  <link rel="alternate" hreflang="sv" href="https://chat-downloader.com/sv/funktioner/">
+  <link rel="alternate" hreflang="nb" href="https://chat-downloader.com/nb/funksjoner/">
+  <link rel="alternate" hreflang="da" href="https://chat-downloader.com/da/funktioner/">
+  <link rel="alternate" hreflang="fi" href="https://chat-downloader.com/fi/ominaisuudet/">
+  <link rel="alternate" hreflang="pl" href="https://chat-downloader.com/pl/funkcje/">
+  <link rel="alternate" hreflang="cs" href="https://chat-downloader.com/cs/funkce/">
+  <link rel="alternate" hreflang="sk" href="https://chat-downloader.com/sk/funkcie/">
+  <link rel="alternate" hreflang="hu" href="https://chat-downloader.com/hu/funkciok/">
+  <link rel="alternate" hreflang="ro" href="https://chat-downloader.com/ro/functii/">
+  <link rel="alternate" hreflang="el" href="https://chat-downloader.com/el/features/">
+  <link rel="alternate" hreflang="tr" href="https://chat-downloader.com/tr/ozellikler/">
+  <link rel="alternate" hreflang="ja" href="https://chat-downloader.com/ja/features/">
+  <link rel="alternate" hreflang="ko" href="https://chat-downloader.com/ko/features/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://chat-downloader.com/zh-hant/features/">
+  <link rel="alternate" hreflang="he" href="https://chat-downloader.com/he/features/">
+  <link rel="alternate" hreflang="ar" href="https://chat-downloader.com/ar/features/">
+  <link rel="alternate" hreflang="x-default" href="https://chat-downloader.com/features/">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="it_IT">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="sv_SE">
+  <meta property="og:locale:alternate" content="nb_NO">
+  <meta property="og:locale:alternate" content="da_DK">
+  <meta property="og:locale:alternate" content="fi_FI">
+  <meta property="og:locale:alternate" content="pl_PL">
+  <meta property="og:locale:alternate" content="cs_CZ">
+  <meta property="og:locale:alternate" content="sk_SK">
+  <meta property="og:locale:alternate" content="hu_HU">
+  <meta property="og:locale:alternate" content="ro_RO">
+  <meta property="og:locale:alternate" content="el_GR">
+  <meta property="og:locale:alternate" content="tr_TR">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <meta property="og:locale:alternate" content="he_IL">
+  <meta property="og:locale:alternate" content="ar_AE">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&amp;display=swap" rel="stylesheet">
+  <!-- /i18n:head -->
+  <meta property="og:title" content="Chrome 擴充功能特色：批次匯出、格式、Artifact">
+  <meta property="og:description" content="Claude Chat Downloader 擴充功能：PDF 等七種格式、選取、複製、批次「Export All」、Artifact 與設定，免帳號即可使用。">
+  <meta property="og:url" content="https://chat-downloader.com/zh-hant/features/">
+  <meta property="og:image" content="https://chat-downloader.com/assets/widget-guide.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chat Downloader">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Chrome 擴充功能特色：批次匯出、格式、Artifact">
+  <meta name="twitter:description" content="Claude Chat Downloader 擴充功能：PDF 等七種格式、選取、複製、批次「Export All」、Artifact 與設定，免帳號即可使用。">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME1YXGZKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GME1YXGZKR');
+  </script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"哪些 Chrome 擴充功能特色可以匯出單一聊天？","acceptedAnswer":{"@type":"Answer","text":"claude.ai 對話網址上、訊息輸入框旁的橘色按鈕。選擇 PDF、Markdown、JSON、文字、XML、CSV 或 PNG，再按「Export」或「Copy」。這是匯出單一對話最快的方式，而且只有 PDF 需要登入。"}},{"@type":"Question","name":"Chrome 擴充功能特色包含批次「Export All」嗎？","acceptedAnswer":{"@type":"Answer","text":"包含。Dashboard（「View and Download All Conversations」）會列出 claude.ai 紀錄，提供 All conversations、New、Updated 和 Previously exported 篩選條件、Chat 與 Cowork 分頁，以及專案搜尋。「Export All」會存成一個 ZIP。免費方案用 Google 登入後每天可匯出 3 個聊天；Pro 不限次數。"}},{"@type":"Question","name":"Chrome 擴充功能特色支援哪些格式？","acceptedAnswer":{"@type":"Answer","text":"七種：PDF、Markdown、Plain Text、JSON、XML、CSV 和 PNG。PDF 在瀏覽器中產生，有專屬的對話框。CSV 每則訊息一列。PNG 是整段對話的一張圖片。"}},{"@type":"Question","name":"Chrome 擴充功能特色能匯出 Artifact 和思考過程嗎？","acceptedAnswer":{"@type":"Answer","text":"可以。Artifact 版面有 Original、Inline、Nested 或 Flat，Artifact 也可以放進 ZIP 內各自的資料夾。思考過程、工具／MCP 步驟和網頁搜尋來源都要自行開啟。Metadata、寄件者篩選和「Select」皆為選用。"}},{"@type":"Question","name":"Chrome 擴充功能特色可以免費試用嗎？","acceptedAnswer":{"@type":"Answer","text":"可以。Markdown、文字、JSON、XML、CSV 和 PNG 匯出不限次數、免帳號。PDF 和批次 ZIP 用 Google 登入後每天 3 次。透過 Paddle 付款的 Pro（每月 US$3.99 或每年 US$26.99）沒有這個上限。"}},{"@type":"Question","name":"Chrome 擴充功能特色能在 Desktop 或 Code 中使用嗎？","acceptedAnswer":{"@type":"Answer","text":"在 Claude Desktop 或 Claude Code 終端機中不行。內容腳本只會注入 Chrome 裡的 claude.ai。Claude Code 網頁版（claude.ai/code）和 Cowork 工作階段在那裡執行，所以可以匯出。如果 Desktop 對話也存在於 claude.ai，就在那裡開啟。"}},{"@type":"Question","name":"Chrome 擴充功能特色會上傳我的聊天嗎？","acceptedAnswer":{"@type":"Answer","text":"不會。所有檔案（包括 PDF）都在瀏覽器中產生。其他格式的單一聊天匯出不會傳送任何資料。使用 PDF、批次匯出或 Pro 時，只會傳送你的 Google 電子郵件地址，用於每日計數和訂閱。界線說明請見運作方式。"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://chat-downloader.com/zh-hant/"},{"@type":"ListItem","position":2,"name":"功能","item":"https://chat-downloader.com/zh-hant/features/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">跳到主要內容</a>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a class="logo" href="/zh-hant/">
+        <img src="/assets/icon.svg" alt="">
+        <span>Download Claude conversations</span>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="/zh-hant/how-to-download-claude-chat/">下載教學</a><a href="/zh-hant/how-to-export-claude-chat/">匯出</a><a href="/zh-hant/bulk/">批次</a><a href="/zh-hant/formats/">格式</a><a href="/zh-hant/#faq">常見問題</a>
+        <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=zh-hant-features" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> 加到 Chrome</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=zh-hant-features" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> 加到 Chrome</a>
+      <!-- i18n:switch --><details class="lang-switch"><summary aria-label="語言: 繁體中文"><svg class="lang-globe" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span class="lang-name">繁體中文</span><span class="lang-code" aria-hidden="true">zh</span></summary><ul><li><a href="/features/" hreflang="en" lang="en">English</a></li><li><a href="/de/funktionen/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/fonctionnalites/" hreflang="fr" lang="fr">Français</a></li><li><a href="/es/funciones/" hreflang="es" lang="es">Español</a></li><li><a href="/it/funzionalita/" hreflang="it" lang="it">Italiano</a></li><li><a href="/pt/recursos/" hreflang="pt" lang="pt">Português</a></li><li><a href="/nl/functies/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/sv/funktioner/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="/nb/funksjoner/" hreflang="nb" lang="nb">Norsk</a></li><li><a href="/da/funktioner/" hreflang="da" lang="da">Dansk</a></li><li><a href="/fi/ominaisuudet/" hreflang="fi" lang="fi">Suomi</a></li><li><a href="/pl/funkcje/" hreflang="pl" lang="pl">Polski</a></li><li><a href="/cs/funkce/" hreflang="cs" lang="cs">Čeština</a></li><li><a href="/sk/funkcie/" hreflang="sk" lang="sk">Slovenčina</a></li><li><a href="/hu/funkciok/" hreflang="hu" lang="hu">Magyar</a></li><li><a href="/ro/functii/" hreflang="ro" lang="ro">Română</a></li><li><a href="/el/features/" hreflang="el" lang="el">Ελληνικά</a></li><li><a href="/tr/ozellikler/" hreflang="tr" lang="tr">Türkçe</a></li><li><a href="/ja/features/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/ko/features/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/zh-hant/features/" hreflang="zh-Hant" lang="zh-Hant" aria-current="true">繁體中文</a></li><li><a href="/he/features/" hreflang="he" lang="he">עברית</a></li><li><a href="/ar/features/" hreflang="ar" lang="ar">العربية</a></li></ul></details><!-- /i18n:switch -->
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="選單">☰</button>
+    </div>
+  </div>
+</header>
+<nav class="crumbs" aria-label="導覽路徑"><a href="/zh-hant/">首頁</a> / 功能</nav>
+<main id="main">
+<article class="band prose">
+<p class="article-meta">更新於 <time datetime="2026-09">2026 年 9 月</time> · 擴充功能 1.16.2</p>
+<h1 class="page-h1">匯出 claude.ai 的 Chrome 擴充功能特色</h1>
+<p class="lead">Download Claude conversations 的 Chrome 擴充功能特色包括：claude.ai 對話上的橘色按鈕、批次「Export All」（全部匯出）、含 PDF 與 CSV 在內的七種格式、「Select」（選取）與「Copy」（複製）、Artifact 版面、思考過程，以及設定頁。檔案都在你的電腦上產生。Markdown、文字、JSON、XML、CSV 和 PNG 不限次數、免帳號；PDF 與批次 ZIP 每天免費 3 次，Pro（每月 US$3.99 或每年 US$26.99）不限次數。</p>
+<aside class="trust-badge" aria-label="關於擴充功能">
+  <span class="trophy" aria-hidden="true">🧩</span>
+  <div>
+    <strong>Download Claude conversations：適用於 claude.ai 的免費 Chrome 擴充功能</strong>
+    <span>版本 1.16.2（2026 年 9 月）：Markdown、文字、JSON、XML、CSV 與 PNG 匯出不限次數、免帳號；PDF 與批次 ZIP 每天免費 3 次</span>
+  </div>
+</aside>
+<nav class="toc" aria-label="本頁內容">
+  <p>本頁內容</p>
+  <ol>
+    <li><a href="#widget">哪些 Chrome 擴充功能特色可以匯出單一聊天？</a></li>
+    <li><a href="#bulk">哪些 Chrome 擴充功能特色涵蓋「Export All」？</a></li>
+    <li><a href="#formats">Chrome 擴充功能特色能寫出哪些格式？</a></li>
+    <li><a href="#artifacts">Chrome 擴充功能特色會保留 Artifact 嗎？</a></li>
+    <li><a href="#settings">設定頁裡有哪些 Chrome 擴充功能特色？</a></li>
+    <li><a href="#signin">Chrome 擴充功能特色如何處理登入？</a></li>
+    <li><a href="#not-in">1.16.2 版沒有哪些 Chrome 擴充功能特色？</a></li>
+    <li><a href="#faq">常見問題：Chrome 擴充功能特色</a></li>
+  </ol>
+</nav>
+
+<h2 id="widget">哪些 Chrome 擴充功能特色可以匯出單一聊天？</h2>
+<p>針對單一對話，最核心的 Chrome 擴充功能特色，就是 Download Claude conversations 在 claude.ai 訊息輸入框旁加上的橘色按鈕。開啟一個對話網址，選擇格式，再按「Export」（匯出）或「Copy」。檔案會立即下載。只有 PDF 需要登入，其他六種格式都不需要帳號。</p>
+<ol>
+<li>從 Chrome Web Store 安裝 Download Claude conversations。</li>
+<li>重新整理 claude.ai，開啟一個真正的對話網址：聊天、Project 裡的聊天、Cowork 工作階段，或 Claude Code 網頁版。</li>
+<li>點訊息輸入框右側的橘色下載按鈕。</li>
+<li>選擇 Messages（All、Human 或 Assistant，即全部、使用者或助理）、格式和「Thinking」核取方塊，或按「Select」逐一勾選訊息。擴充功能會記住你上次使用的格式。</li>
+<li>按「Export」下載檔案，或按「Copy」複製到剪貼簿。「Copy」適用於 Markdown、文字、JSON、XML 和 CSV。</li>
+</ol>
+<p>橘色按鈕只會出現在已載入的對話上；空白的輸入首頁沒有可解析的內容。如果找不到按鈕，請在 Chrome 的拼圖選單中釘選擴充功能，再重新整理 claude.ai。這些功能永遠不會注入 Claude Desktop 或 Claude Code 終端機。選擇 PDF 時會開啟一個對話框，可設定檔名、頁面大小、邊界、淺色或深色模式、字型與字級、頁碼、目錄、時間戳記，以及每則提示前分頁：<a href="/zh-hant/download-claude-chat-as-pdf/">Claude 聊天存成 PDF</a>。</p>
+<div class="callout callout-info">
+  <p><strong>本機檔案。</strong>PDF、Markdown、JSON、文字、XML、CSV 和 PNG 都在分頁中產生。非 PDF 格式的單一聊天匯出不會傳送任何資料到我們的伺服器。PDF 和批次匯出只會傳送你的 Google 電子郵件地址，用於每日計數。聊天內容絕不外傳。運作機制請見<a href="/zh-hant/how-it-works/">運作方式</a>。</p>
+</div>
+
+<h2 id="bulk">哪些 Chrome 擴充功能特色涵蓋「Export All」？</h2>
+<p>批次相關的 Chrome 擴充功能特色都在 Dashboard（控制台），也就是「View and Download All Conversations」（查看並下載所有對話）：搜尋、All conversations／New／Updated／Previously exported（所有對話／新的／已更新／先前已匯出）篩選條件、Chat 與 Cowork 分頁、專案搜尋，以及「Export All」。「Export All」會存成一個 ZIP。免費方案用 Google 登入後每天可匯出 3 個聊天；Pro（每月 US$3.99 或每年 US$26.99）沒有這個上限。</p>
+<p>New 表示尚未用 Download Claude conversations 匯出過。Previously exported 會記錄你已存過的聊天，讓第二次「Export All」可以略過它們。Cowork 分頁把 Cowork 工作階段列在一般聊天旁邊。專案搜尋可以找出單一 claude.ai Project 裡的聊天。搜尋依對話名稱進行。完整流程請見<a href="/zh-hant/bulk/">批次「Export All」</a>。</p>
+<div class="callout callout-warn">
+  <p><strong>每日限制以帳號計算。</strong>免費方案每天 3 個聊天，與 PDF 共用，而不是每次批次執行 3 個。如果只剩 3 次卻選了 40 個對話，整批會被擋下，而不是只匯出一部分。按「Export All」之前先規劃好選取範圍，或改用 Pro。</p>
+</div>
+<p>「Export All」使用 Dashboard 的「Chat format」（聊天格式）選單（七種格式皆可，包括 PDF）、「Chats」「Thinking」「Metadata」「Tools」「Sources」（聊天、思考過程、中繼資料、工具、來源）核取方塊，以及 Artifact 格式。產出的是一個 ZIP、每個聊天一個檔案，不是 Anthropic 稍後寄出的帳號 ZIP。每次執行只能選一種格式，無法一次點擊就同時產出 Markdown 和 JSON。Dashboard 也提供備份與還原。</p>
+
+<h2 id="formats">Chrome 擴充功能特色能寫出哪些格式？</h2>
+<p>這些 Chrome 擴充功能特色可以寫出七種格式：PDF、Markdown、Plain Text、JSON、XML、CSV 和 PNG。Markdown、文字、JSON、XML、CSV 和 PNG 不限次數、免帳號。PDF 在瀏覽器中產生，需要 Google 登入，在免費方案中計入每天 3 次。橘色按鈕和 Dashboard 的「Chat format」選單提供的清單相同。各格式介紹請見 <a href="/zh-hant/formats/">Claude 聊天匯出格式</a>。</p>
+<table>
+  <caption>Chrome 擴充功能可從 claude.ai 寫出的格式</caption>
+  <thead>
+    <tr>
+      <th scope="col">格式</th>
+      <th scope="col">最適合</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PDF</td>
+      <td>閱讀、列印、寄送：<a href="/zh-hant/download-claude-chat-as-pdf/">PDF 教學</a></td>
+    </tr>
+    <tr>
+      <td>Markdown</td>
+      <td>筆記、Obsidian、GitHub：<a href="/zh-hant/formats/markdown/">Markdown 教學</a></td>
+    </tr>
+    <tr>
+      <td>JSON</td>
+      <td>腳本與差異比對：<a href="/zh-hant/formats/json/">JSON 教學</a></td>
+    </tr>
+    <tr>
+      <td>純文字</td>
+      <td>貼到哪裡都能用的封存，不含標記</td>
+    </tr>
+    <tr>
+      <td>XML</td>
+      <td>需要 XML 的系統：<a href="/zh-hant/formats/xml/">XML 教學</a></td>
+    </tr>
+    <tr>
+      <td>CSV</td>
+      <td>試算表，每則訊息一列：<a href="/zh-hant/formats/">格式總覽</a></td>
+    </tr>
+    <tr>
+      <td>PNG</td>
+      <td>整段對話的一張圖片：<a href="/zh-hant/formats/png/">PNG 教學</a></td>
+    </tr>
+  </tbody>
+</table>
+<div class="expert-quote">
+  <p>我們刻意讓擴充功能保持專注：從頁面上已有的 claude.ai 對話寫出七種檔案類型，再加上批次「Export All」，以及決定檔案內容的各種選項。PDF 現在也是其中之一，在瀏覽器中排版，不經過列印對話框。我們仍然不提供 Notion 或 Word 匯出。如果這點有所改變，本頁會在同一天更新。</p>
+  <footer>Download Claude conversations 團隊</footer>
+</div>
+<p>寫作者通常選 Markdown，開發者通常選 JSON。CSV 每則訊息一列，可用 Excel、Google 試算表或 Numbers 開啟。PNG 是圖片，無法用 grep 搜尋。PDF 則是用來閱讀、列印或寄送的檔案，頁面大小、邊界和目錄都在它的對話框中設定。</p>
+
+<h2 id="artifacts">Chrome 擴充功能特色會保留 Artifact 嗎？</h2>
+<p>會。Chrome 擴充功能特色包括 Artifact 版面：「Original」「Inline」「Nested」或「Flat」（原始、內嵌、巢狀或平面）。思考區塊、工具／MCP 步驟和網頁搜尋來源都要自行開啟：「Thinking」是匯出面板裡的核取方塊，工具和來源在設定中開啟，Dashboard 則三者都有核取方塊。Metadata 可以加入標題、時間戳記和模型。寄件者篩選可把檔案限制為全部、只有使用者或只有助理，「Select」則可逐一勾選訊息。</p>
+<p>Artifact 是 claude.ai 對話的一部分。版面設定決定它們要放在 Markdown、JSON、XML 或文字檔裡，還是放進 ZIP 內各自的資料夾。Artifact ZIP 不限次數且免費，專案檔案 ZIP 也一樣：在 Project 頁面點「Project files」→「Download ZIP」（專案檔案 → 下載 ZIP）。在 PNG 中，Artifact 會被繪製成圖像，而不是以標記儲存。如果關閉思考過程，即使 claude.ai 畫面上有顯示延伸思考，匯出檔也不會包含。</p>
+<p>如果對話很長，請捲動到 claude.ai 載入較早的訊息為止。擴充功能只能匯出頁面已顯示的內容。只載入一半的 DOM 會產生被截斷的檔案，看起來像是 Artifact 遺失的錯誤，但通常只是對話沒有捲動到底。</p>
+<table>
+  <caption>1.16.2 版的 Chrome 擴充功能特色套用到每個檔案的選項</caption>
+  <thead>
+    <tr>
+      <th scope="col">選項</th>
+      <th scope="col">作用</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Thinking</td>
+      <td>包含或略過延伸思考區塊</td>
+    </tr>
+    <tr>
+      <td>Metadata</td>
+      <td>在檔案中加上標題、時間戳記、模型</td>
+    </tr>
+    <tr>
+      <td>Tools</td>
+      <td>包含工具與 MCP 步驟</td>
+    </tr>
+    <tr>
+      <td>Sources</td>
+      <td>包含網頁搜尋來源</td>
+    </tr>
+    <tr>
+      <td>寄件者</td>
+      <td>全部／只有使用者／只有助理</td>
+    </tr>
+    <tr>
+      <td>Select</td>
+      <td>逐一勾選要匯出的訊息</td>
+    </tr>
+    <tr>
+      <td>Artifact 版面</td>
+      <td>Original、Inline、Nested 或 Flat</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="settings">設定頁裡有哪些 Chrome 擴充功能特色？</h2>
+<p>設定就是擴充功能的選項頁面，包含檔名範本、「Copy instead of download」（以複製取代下載）、在 Markdown 中嵌入圖片、工具／MCP 步驟、網頁搜尋來源、日期與時間格式、備份與還原，以及你的訂閱。擴充功能介面只有英文版。</p>
+<table>
+  <caption>設定頁上的 Chrome 擴充功能特色</caption>
+  <thead>
+    <tr>
+      <th scope="col">設定</th>
+      <th scope="col">會改變什麼</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>檔名範本</td>
+      <td>下載檔案的命名方式</td>
+    </tr>
+    <tr>
+      <td>「Copy instead of download」</td>
+      <td>匯出時把結果放到剪貼簿</td>
+    </tr>
+    <tr>
+      <td>在 Markdown 中嵌入圖片</td>
+      <td>圖片會包含在 .md 檔案裡</td>
+    </tr>
+    <tr>
+      <td>工具／MCP 步驟</td>
+      <td>在匯出中包含工具呼叫</td>
+    </tr>
+    <tr>
+      <td>網頁搜尋來源</td>
+      <td>包含網頁搜尋回答所依據的來源</td>
+    </tr>
+    <tr>
+      <td>日期與時間格式</td>
+      <td>時間戳記的顯示方式</td>
+    </tr>
+    <tr>
+      <td>備份與還原</td>
+      <td>Dashboard 上也有</td>
+    </tr>
+    <tr>
+      <td>訂閱</td>
+      <td>Pro 狀態與「Cancel subscription」（取消訂閱）</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="signin">Chrome 擴充功能特色如何處理登入？</h2>
+<p>大多數 Chrome 擴充功能特色都不需要登入。單一聊天的 Markdown、Plain Text、JSON、XML、CSV 和 PNG 匯出不限次數且匿名，「Copy」、「Select」、Artifact ZIP 和專案檔案 ZIP 也一樣。只有 PDF、批次「Export All」和 Pro 才會要求 Google 登入。對話內容從不參與這個流程。</p>
+<p>在免費方案中，PDF 和批次 ZIP 共用每天 3 次，由我們的伺服器依你的 Google 電子郵件計算。每天在 UTC 午夜重置，重新安裝也不會重置。Pro 透過 Paddle 付款，每月 US$3.99 或每年 US$26.99。Paddle 是登記銷售商（merchant of record），本團隊永遠看不到卡號。在新電腦上用同一個 Google 帳號登入，就能恢復 Pro。</p>
+<p>你不需要 Anthropic 的 claude.ai 付費方案。只要 Chrome 能開啟聊天，claude.ai 的 Free、Pro、Team 和 Enterprise 方案都能使用。如果工作區管理員封鎖了擴充功能，Download Claude conversations 就無法注入；這是瀏覽器政策，而不是本頁少了什麼功能。</p>
+
+<h2 id="not-in">1.16.2 版沒有哪些 Chrome 擴充功能特色？</h2>
+<p>1.16.2 版沒有的 Chrome 擴充功能特色：Notion 匯出、Word 匯出、推送到 Google 文件、Claude Desktop 掛鉤，以及本機 Claude Code 終端機工作階段（<code>/export</code>、<code>~/.claude/projects</code>）。Download Claude conversations 是 claude.ai 的 Chrome 內容腳本，不是換個名字的另一個應用程式。PDF 已不在這份清單上，現在已內建。</p>
+<p>Claude Desktop 是 Mac／Windows 應用程式，終端機裡的 Claude Code 是本機代理，兩者都沒有橘色按鈕。Claude Code 網頁版（claude.ai/code）和 Cowork 工作階段都在 claude.ai 上開啟，所以能像一般聊天一樣匯出。如果某段 Desktop 對話也存在於 claude.ai，就在 Chrome 開啟它並使用擴充功能。與 Desktop 的比較請見<a href="/zh-hant/export-claude-desktop-chat/">匯出 Claude Desktop 聊天</a>；與 Code 的比較請見 <a href="/zh-hant/claude-code-export/">Claude Code 匯出</a>。</p>
+<p>手機瀏覽器中的 claude.ai 不在支援範圍內，2026 年本團隊也沒有 iOS 或 Android App。PDF 和 PNG 無法使用「Copy」。本頁內容以 2026 年 9 月的版本為準；如果我們新增格式，本頁會在同一天更新。</p>
+
+<h2 id="faq">常見問題：Chrome 擴充功能特色</h2>
+<p>以下常見問題涵蓋 Download Claude conversations 1.16.2 的 Chrome 擴充功能特色：橘色按鈕、「Export All」、格式、Artifact、免費方案、Desktop 和 Pro。每個答案都是產品事實，頁首的 FAQPage JSON-LD 與本頁清單一致。</p>
+
+<h3>哪些 Chrome 擴充功能特色可以匯出單一聊天？</h3>
+<p>claude.ai 對話網址上、訊息輸入框旁的橘色按鈕。選擇 PDF、Markdown、JSON、文字、XML、CSV 或 PNG，再按「Export」或「Copy」。這是匯出單一對話最快的方式，而且只有 PDF 需要登入。</p>
+
+<h3>Chrome 擴充功能特色包含批次「Export All」嗎？</h3>
+<p>包含。Dashboard（「View and Download All Conversations」）會列出 claude.ai 紀錄，提供 All conversations、New、Updated 和 Previously exported 篩選條件、Chat 與 Cowork 分頁，以及專案搜尋。「Export All」會存成一個 ZIP。免費方案用 Google 登入後每天可匯出 3 個聊天；Pro 不限次數。</p>
+
+<h3>Chrome 擴充功能特色支援哪些格式？</h3>
+<p>七種：PDF、Markdown、Plain Text、JSON、XML、CSV 和 PNG。PDF 在瀏覽器中產生，有專屬的對話框。CSV 每則訊息一列。PNG 是整段對話的一張圖片。</p>
+
+<h3>Chrome 擴充功能特色能匯出 Artifact 和思考過程嗎？</h3>
+<p>可以。Artifact 版面有 Original、Inline、Nested 或 Flat，Artifact 也可以放進 ZIP 內各自的資料夾。思考過程、工具／MCP 步驟和網頁搜尋來源都要自行開啟。Metadata、寄件者篩選和「Select」皆為選用。</p>
+
+<h3>Chrome 擴充功能特色可以免費試用嗎？</h3>
+<p>可以。Markdown、文字、JSON、XML、CSV 和 PNG 匯出不限次數、免帳號。PDF 和批次 ZIP 用 Google 登入後每天 3 次。透過 Paddle 付款的 Pro（每月 US$3.99 或每年 US$26.99）沒有這個上限。</p>
+
+<h3>Chrome 擴充功能特色能在 Desktop 或 Code 中使用嗎？</h3>
+<p>在 Claude Desktop 或 Claude Code 終端機中不行。內容腳本只會注入 Chrome 裡的 claude.ai。Claude Code 網頁版（claude.ai/code）和 Cowork 工作階段在那裡執行，所以可以匯出。如果 Desktop 對話也存在於 claude.ai，就在那裡開啟。</p>
+
+<h3>Chrome 擴充功能特色會上傳我的聊天嗎？</h3>
+<p>不會。所有檔案（包括 PDF）都在瀏覽器中產生。其他格式的單一聊天匯出不會傳送任何資料。使用 PDF、批次匯出或 Pro 時，只會傳送你的 Google 電子郵件地址，用於每日計數和訂閱。界線說明請見運作方式。</p>
+</article>
+</main>
+<section class="final-cta page-cta" aria-label="安裝">
+  <div class="wrap">
+    <div class="final-cta-panel">
+      <p class="final-kicker">Download Claude conversations</p>
+      <h2>安裝擴充功能，幾秒內下載 Claude 聊天</h2>
+      <p>把重要的 Claude 對話存成 PDF、Markdown、JSON、文字、CSV、XML 或 PNG，在 Chrome 中於本機完成。</p>
+      <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=zh-hant-features" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> 加到 Chrome</a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="logo" href="/zh-hant/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
+      <p class="legal-note">把 Claude.ai 聊天下載成 PDF、Markdown、JSON、純文字、CSV、XML 或 PNG 的 Chrome 擴充功能。</p>
+    </div>
+    <div>
+      <h2>安裝</h2>
+      <a class="install-link" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=zh-hant-footer" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Chrome 擴充功能</a>
+    </div>
+    <div>
+      <h2>產品</h2>
+      <a href="/zh-hant/features/">功能</a>
+      <a href="/zh-hant/formats/">格式</a>
+      <a href="/zh-hant/bulk/">批次下載</a>
+      <a href="/zh-hant/how-it-works/">運作方式</a>
+    </div>
+    <div>
+      <h2>教學</h2>
+      <a href="/zh-hant/how-to-download-claude-chat/">如何下載 Claude 聊天</a>
+      <a href="/zh-hant/how-to-export-claude-chat/">如何匯出 Claude 聊天</a>
+      <a href="/zh-hant/export-claude-chat/">匯出 Claude 聊天</a>
+      <a href="/zh-hant/claude-conversation-extractor/">Claude 對話擷取工具</a>
+      <a href="/zh-hant/claude-code-export/">Claude Code 匯出</a>
+      <a href="/zh-hant/download-claude-chat-as-pdf/">Claude 聊天存成 PDF</a>
+      <a href="/zh-hant/export-claude-desktop-chat/">Claude Desktop 匯出</a>
+      <a href="/zh-hant/claude-export-conversation/">Claude 對話匯出</a>
+      <a href="/zh-hant/how-to-save-claude-conversation/">如何儲存 Claude 對話</a>
+      <a href="/zh-hant/download-claude-conversation/">下載 Claude 對話</a>
+    </div>
+    <div>
+      <h2>法律資訊</h2>
+      <a href="/zh-hant/about/">關於我們</a>
+      <a href="/zh-hant/about/#contact">聯絡我們</a>
+      <a href="/privacy/" hreflang="en">隱私權 （英文）</a>
+      <a href="/terms/" hreflang="en">條款 （英文）</a>
+      <a href="/refund/" hreflang="en">退款 （英文）</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Download Claude conversations. 保留所有權利。</div>
+    <div>
+      <a href="/privacy/" hreflang="en">隱私權政策 （英文）</a>
+      <a href="/terms/" hreflang="en">服務條款 （英文）</a>
+      <a href="/refund/" hreflang="en">退款 （英文）</a>
+    </div>
+  </div>
+  <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/features/" hreflang="en" lang="en">English</a> <a href="/de/funktionen/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/fonctionnalites/" hreflang="fr" lang="fr">Français</a> <a href="/es/funciones/" hreflang="es" lang="es">Español</a> <a href="/it/funzionalita/" hreflang="it" lang="it">Italiano</a> <a href="/pt/recursos/" hreflang="pt" lang="pt">Português</a> <a href="/nl/functies/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/funktioner/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/funksjoner/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/funktioner/" hreflang="da" lang="da">Dansk</a> <a href="/fi/ominaisuudet/" hreflang="fi" lang="fi">Suomi</a> <a href="/pl/funkcje/" hreflang="pl" lang="pl">Polski</a> <a href="/cs/funkce/" hreflang="cs" lang="cs">Čeština</a> <a href="/sk/funkcie/" hreflang="sk" lang="sk">Slovenčina</a> <a href="/hu/funkciok/" hreflang="hu" lang="hu">Magyar</a> <a href="/ro/functii/" hreflang="ro" lang="ro">Română</a> <a href="/el/features/" hreflang="el" lang="el">Ελληνικά</a> <a href="/tr/ozellikler/" hreflang="tr" lang="tr">Türkçe</a> <a href="/ja/features/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/features/" hreflang="ko" lang="ko">한국어</a> <a href="/zh-hant/features/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="/he/features/" hreflang="he" lang="he">עברית</a> <a href="/ar/features/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
+  <p class="disclaimer">聊天在你的瀏覽器中處理 · 只有 PDF、批次匯出和 Pro 需要 Google 登入 · 與 Anthropic, PBC 無關。Claude 是 Anthropic 的商標。本擴充功能為獨立開發的 Chrome 擴充功能，不是 Anthropic 的官方產品。客服： <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>
+

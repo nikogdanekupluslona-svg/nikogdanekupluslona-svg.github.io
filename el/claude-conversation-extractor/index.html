@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Εργαλείο εξαγωγής συνομιλιών Claude — δωρεάν για Chrome</title>
+  <meta name="description" content="Εξάγετε ένα chat του Claude σε PDF, Markdown, JSON, κείμενο, XML, CSV ή PNG. Δωρεάν εργαλείο για Chrome — ένα chat χωρίς λογαριασμό ή μαζικά με Export All.">
+  <link rel="canonical" href="https://chat-downloader.com/el/claude-conversation-extractor/">
+  <!-- i18n:head -->
+  <link rel="alternate" hreflang="en" href="https://chat-downloader.com/claude-conversation-extractor/">
+  <link rel="alternate" hreflang="de" href="https://chat-downloader.com/de/claude-chat-extractor/">
+  <link rel="alternate" hreflang="fr" href="https://chat-downloader.com/fr/extracteur-conversation-claude/">
+  <link rel="alternate" hreflang="es" href="https://chat-downloader.com/es/extractor-conversaciones-claude/">
+  <link rel="alternate" hreflang="it" href="https://chat-downloader.com/it/estrattore-conversazioni-claude/">
+  <link rel="alternate" hreflang="pt" href="https://chat-downloader.com/pt/extrator-conversas-claude/">
+  <link rel="alternate" hreflang="nl" href="https://chat-downloader.com/nl/claude-gesprek-extractor/">
+  <link rel="alternate" hreflang="sv" href="https://chat-downloader.com/sv/claude-konversation-extractor/">
+  <link rel="alternate" hreflang="nb" href="https://chat-downloader.com/nb/claude-samtale-extractor/">
+  <link rel="alternate" hreflang="da" href="https://chat-downloader.com/da/claude-samtale-extractor/">
+  <link rel="alternate" hreflang="fi" href="https://chat-downloader.com/fi/claude-keskustelu-extractor/">
+  <link rel="alternate" hreflang="pl" href="https://chat-downloader.com/pl/ekstraktor-rozmow-claude/">
+  <link rel="alternate" hreflang="cs" href="https://chat-downloader.com/cs/extraktor-konverzaci-claude/">
+  <link rel="alternate" hreflang="sk" href="https://chat-downloader.com/sk/extraktor-konverzacii-claude/">
+  <link rel="alternate" hreflang="hu" href="https://chat-downloader.com/hu/claude-beszelgetes-kinyero/">
+  <link rel="alternate" hreflang="ro" href="https://chat-downloader.com/ro/extractor-conversatii-claude/">
+  <link rel="alternate" hreflang="el" href="https://chat-downloader.com/el/claude-conversation-extractor/">
+  <link rel="alternate" hreflang="tr" href="https://chat-downloader.com/tr/claude-konusma-cikarici/">
+  <link rel="alternate" hreflang="ja" href="https://chat-downloader.com/ja/claude-conversation-extractor/">
+  <link rel="alternate" hreflang="ko" href="https://chat-downloader.com/ko/claude-conversation-extractor/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://chat-downloader.com/zh-hant/claude-conversation-extractor/">
+  <link rel="alternate" hreflang="he" href="https://chat-downloader.com/he/claude-conversation-extractor/">
+  <link rel="alternate" hreflang="ar" href="https://chat-downloader.com/ar/claude-conversation-extractor/">
+  <link rel="alternate" hreflang="x-default" href="https://chat-downloader.com/claude-conversation-extractor/">
+  <meta property="og:locale" content="el_GR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="it_IT">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="sv_SE">
+  <meta property="og:locale:alternate" content="nb_NO">
+  <meta property="og:locale:alternate" content="da_DK">
+  <meta property="og:locale:alternate" content="fi_FI">
+  <meta property="og:locale:alternate" content="pl_PL">
+  <meta property="og:locale:alternate" content="cs_CZ">
+  <meta property="og:locale:alternate" content="sk_SK">
+  <meta property="og:locale:alternate" content="hu_HU">
+  <meta property="og:locale:alternate" content="ro_RO">
+  <meta property="og:locale:alternate" content="tr_TR">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <meta property="og:locale:alternate" content="zh_TW">
+  <meta property="og:locale:alternate" content="he_IL">
+  <meta property="og:locale:alternate" content="ar_AE">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet">
+  <!-- /i18n:head -->
+  <meta property="og:title" content="Εργαλείο εξαγωγής συνομιλιών Claude — δωρεάν για Chrome">
+  <meta property="og:description" content="Εξάγετε ένα chat του Claude σε PDF, Markdown, JSON, κείμενο, XML, CSV ή PNG. Δωρεάν εργαλείο για Chrome — ένα chat χωρίς λογαριασμό ή μαζικά με Export All.">
+  <meta property="og:url" content="https://chat-downloader.com/el/claude-conversation-extractor/">
+  <meta property="og:image" content="https://chat-downloader.com/assets/widget-guide.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chat Downloader">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Εργαλείο εξαγωγής συνομιλιών Claude — δωρεάν για Chrome">
+  <meta name="twitter:description" content="Εξάγετε ένα chat του Claude σε PDF, Markdown, JSON, κείμενο, XML, CSV ή PNG. Δωρεάν εργαλείο για Chrome — ένα chat χωρίς λογαριασμό ή μαζικά με Export All.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME1YXGZKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GME1YXGZKR');
+  </script>
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Τι είναι ένα εργαλείο εξαγωγής συνομιλιών Claude;","acceptedAnswer":{"@type":"Answer","text":"Ένα εργαλείο που διαβάζει μια συνομιλία του claude.ai που έχετε ανοιχτή και γράφει PDF, Markdown, JSON, απλό κείμενο, XML, CSV ή PNG. Το Download Claude conversations προσθέτει το πορτοκαλί κουμπί που κάνει αυτή την ανάλυση τοπικά στο Chrome."}},{"@type":"Question","name":"Διαφέρει το «extract» από το «export» ενός chat του Claude;","acceptedAnswer":{"@type":"Answer","text":"Όχι — ίδια δουλειά, άλλο ρήμα. Στα ελληνικά και τα δύο λέγονται «εξαγωγή»· είτε γράψετε extract, export ή download, καταλήγετε στο ίδιο πορτοκαλί κουμπί και στις ίδιες επτά μορφές στο claude.ai. Αυτή η σελίδα εστιάζει στο τι κρατά η ανάλυση."}},{"@type":"Question","name":"Μπορώ να εξαγάγω ένα chat του Claude χωρίς να εγκαταστήσω τίποτα;","acceptedAnswer":{"@type":"Answer","text":"Μόνο με αντιγραφή-επικόλληση, που χάνει τα μπλοκ κώδικα και τους πίνακες, ή με το Export data της Anthropic, που είναι ZIP λογαριασμού. Ένα εργαλείο δομημένης εξαγωγής πρέπει να διαβάσει τη σελίδα· αυτό κάνει η επέκταση Chrome."}},{"@type":"Question","name":"Υποστηρίζει το εργαλείο μαζική εξαγωγή συνομιλιών;","acceptedAnswer":{"@type":"Answer","text":"Ναι. Ανοίξτε το «View and Download All Conversations» από το αναδυόμενο παράθυρο της επέκτασης και πατήστε Export All για ένα ZIP. Η μαζική εξαγωγή ζητά σύνδεση με Google· στο δωρεάν πρόγραμμα κάθε chat μετρά στις 3 την ημέρα, κοινές με το PDF. Το Pro με 3,99 $ τον μήνα ή 26,99 $ τον χρόνο καταργεί το όριο. Φίλτρα: «All conversations», «New», «Updated», «Previously exported»."}},{"@type":"Question","name":"Είναι ασφαλές ένα εργαλείο εξαγωγής chat του Claude;","acceptedAnswer":{"@type":"Answer","text":"Αυτό εδώ διαβάζει τη συνεδρία σας στο claude.ai και δημιουργεί τα αρχεία τοπικά. Το κείμενο των συνομιλιών δεν αποστέλλεται στους διακομιστές μας. Δεν είμαστε η Anthropic· εξακολουθούν να ισχύουν οι Όροι Χρήσης της."}},{"@type":"Question","name":"Χρειάζομαι Claude Pro για να εξαγάγω ένα chat;","acceptedAnswer":{"@type":"Answer","text":"Όχι. Κάθε πρόγραμμα του claude.ai που ανοίγει τη συνομιλία στο Chrome λειτουργεί. Από τη δική μας πλευρά, οι εξαγωγές σε Markdown, κείμενο, JSON, XML, CSV και PNG είναι δωρεάν και απεριόριστες χωρίς λογαριασμό· PDF και μαζική εξαγωγή είναι δωρεάν έως 3 την ημέρα. Η συνδρομή επί πληρωμή της Anthropic δεν σχετίζεται με τα δικά μας όρια."}},{"@type":"Question","name":"Λειτουργεί το εργαλείο εξαγωγής στο Desktop;","acceptedAnswer":{"@type":"Answer","text":"Όχι. Το Claude Desktop δεν αποκτά ποτέ το πορτοκαλί κουμπί. Ανοίξτε το ίδιο chat στο claude.ai αν συγχρονίζεται, ή κάντε αντιγραφή-επικόλληση / ζητήστε το επίσημο ZIP. Το εργαλείο λειτουργεί μόνο στο Chrome για το claude.ai."}},{"@type":"Question","name":"Μπορεί το εργαλείο εξαγωγής να γράψει PDF;","acceptedAnswer":{"@type":"Answer","text":"Ναι. Διαλέξτε PDF στο πάνελ εξαγωγής και πατήστε «Export». Το PDF δημιουργείται στο πρόγραμμα περιήγησης, χωρίς παράθυρο εκτύπωσης. Ζητά σύνδεση με Google και είναι δωρεάν έως 3 την ημέρα· το Pro το κάνει απεριόριστο."}},{"@type":"Question","name":"Λειτουργεί η εξαγωγή chat στο Claude Code;","acceptedAnswer":{"@type":"Answer","text":"Μόνο στον ιστό. Οι συνεδρίες του Claude Code στο claude.ai/code ανοίγουν στο claude.ai και εξάγονται όπως κάθε chat. Το Claude Code στο τερματικό χρησιμοποιεί το /export ή αρχεία JSONL στον δίσκο· αυτό το εργαλείο είναι content script του Chrome για το claude.ai, όχι σύνδεση με το τερματικό."}},{"@type":"Question","name":"Πόσες δωρεάν εξαγωγές επιτρέπει το εργαλείο;","acceptedAnswer":{"@type":"Answer","text":"Απεριόριστες σε Markdown, κείμενο, JSON, XML, CSV και PNG, χωρίς λογαριασμό. Το PDF και το μαζικό Export All μοιράζονται 3 την ημέρα ανά λογαριασμό Google στο δωρεάν πρόγραμμα, με μηδενισμό στα μεσάνυχτα UTC. Το Pro καταργεί το όριο και επανέρχεται από τον ίδιο λογαριασμό Google μέσω της χρέωσης της Paddle."}},{"@type":"Question","name":"Τι παραλείπει το εργαλείο εξαγωγής συνομιλιών Claude;","acceptedAnswer":{"@type":"Answer","text":"Τα στοιχεία της διεπαφής, το πλαίσιο σύνταξης μηνύματος και ό,τι δεν εμφανίζεται μέσα στη συνομιλία. Παραλείπει επίσης chat που δεν φορτώθηκαν ποτέ στο Chrome. Συνομιλίες που υπάρχουν μόνο στο Claude Desktop και τοπικά αρχεία JSONL του Claude Code είναι εκτός πεδίου."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Claude Chat Downloader","alternateName":["Download Claude conversations","Claude Conversation Downloader"],"applicationCategory":"BrowserApplication","operatingSystem":"Chrome","softwareVersion":"1.16.2","url":"https://chat-downloader.com","downloadUrl":"https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak","offers":[{"@type":"Offer","name":"Δωρεάν","price":"0","priceCurrency":"USD","description":"Απεριόριστες εξαγωγές σε Markdown, κείμενο, JSON, XML, CSV και PNG· 3 εξαγωγές PDF ή μαζικές εξαγωγές την ημέρα"},{"@type":"Offer","name":"Pro μηνιαίο","price":"3.99","priceCurrency":"USD"},{"@type":"Offer","name":"Pro ετήσιο","price":"26.99","priceCurrency":"USD"}],"description":"Εξάγετε ένα chat του Claude σε PDF, Markdown, JSON, κείμενο, XML, CSV ή PNG. Δωρεάν εργαλείο για Chrome — ένα chat χωρίς λογαριασμό ή μαζικά με Export All."}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Αρχική","item":"https://chat-downloader.com/el/"},{"@type":"ListItem","position":2,"name":"Εργαλείο εξαγωγής συνομιλιών Claude","item":"https://chat-downloader.com/el/claude-conversation-extractor/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Μετάβαση στο περιεχόμενο</a>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a class="logo" href="/el/">
+        <img src="/assets/icon.svg" alt="">
+        <span>Download Claude conversations</span>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="/el/how-to-download-claude-chat/">Λήψη</a><a href="/el/how-to-export-claude-chat/">Εξαγωγή</a><a href="/el/bulk/">Ιστορικό</a><a href="/el/formats/">Μορφές</a><a href="/el/#faq">Ερωτήσεις</a>
+        <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=el-claude-conversation-extractor" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Προσθήκη στο Chrome</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=el-claude-conversation-extractor" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Προσθήκη στο Chrome</a>
+      <!-- i18n:switch --><details class="lang-switch"><summary aria-label="Γλώσσα: Ελληνικά"><svg class="lang-globe" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span class="lang-name">Ελληνικά</span><span class="lang-code" aria-hidden="true">el</span></summary><ul><li><a href="/claude-conversation-extractor/" hreflang="en" lang="en">English</a></li><li><a href="/de/claude-chat-extractor/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/extracteur-conversation-claude/" hreflang="fr" lang="fr">Français</a></li><li><a href="/es/extractor-conversaciones-claude/" hreflang="es" lang="es">Español</a></li><li><a href="/it/estrattore-conversazioni-claude/" hreflang="it" lang="it">Italiano</a></li><li><a href="/pt/extrator-conversas-claude/" hreflang="pt" lang="pt">Português</a></li><li><a href="/nl/claude-gesprek-extractor/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/sv/claude-konversation-extractor/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="/nb/claude-samtale-extractor/" hreflang="nb" lang="nb">Norsk</a></li><li><a href="/da/claude-samtale-extractor/" hreflang="da" lang="da">Dansk</a></li><li><a href="/fi/claude-keskustelu-extractor/" hreflang="fi" lang="fi">Suomi</a></li><li><a href="/pl/ekstraktor-rozmow-claude/" hreflang="pl" lang="pl">Polski</a></li><li><a href="/cs/extraktor-konverzaci-claude/" hreflang="cs" lang="cs">Čeština</a></li><li><a href="/sk/extraktor-konverzacii-claude/" hreflang="sk" lang="sk">Slovenčina</a></li><li><a href="/hu/claude-beszelgetes-kinyero/" hreflang="hu" lang="hu">Magyar</a></li><li><a href="/ro/extractor-conversatii-claude/" hreflang="ro" lang="ro">Română</a></li><li><a href="/el/claude-conversation-extractor/" hreflang="el" lang="el" aria-current="true">Ελληνικά</a></li><li><a href="/tr/claude-konusma-cikarici/" hreflang="tr" lang="tr">Türkçe</a></li><li><a href="/ja/claude-conversation-extractor/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/ko/claude-conversation-extractor/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/zh-hant/claude-conversation-extractor/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li><li><a href="/he/claude-conversation-extractor/" hreflang="he" lang="he">עברית</a></li><li><a href="/ar/claude-conversation-extractor/" hreflang="ar" lang="ar">العربية</a></li></ul></details><!-- /i18n:switch -->
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Μενού">☰</button>
+    </div>
+  </div>
+</header>
+<nav class="crumbs" aria-label="Διαδρομή πλοήγησης"><a href="/el/">Αρχική</a> / Εργαλείο εξαγωγής συνομιλιών Claude</nav>
+<main id="main">
+<article class="band prose">
+<p class="article-meta">Ενημέρωση: <time datetime="2026-09">Σεπτέμβριος 2026</time> · Επέκταση 1.16.2</p>
+<h1 class="page-h1">Εργαλείο εξαγωγής συνομιλιών Claude για καθαρά αρχεία</h1>
+<p class="lead">Ένα εργαλείο εξαγωγής συνομιλιών Claude — στα αγγλικά «Claude conversation extractor» — διαβάζει το chat που είναι ανοιχτό στο claude.ai και γράφει PDF, Markdown, JSON, κείμενο, XML, CSV ή PNG αντί για έναν τοίχο αντιγραμμένου κειμένου. Το Download Claude conversations είναι αυτό το εργαλείο για Chrome: πορτοκαλί κουμπί και μετά «Export» (Εξαγωγή). Δεν λειτουργεί στο Claude Desktop ούτε στο τερματικό του Claude Code. Οι εξαγωγές σε Markdown, κείμενο, JSON, XML, CSV και PNG είναι δωρεάν και απεριόριστες, χωρίς λογαριασμό. PDF και μαζικό ZIP είναι δωρεάν έως 3 την ημέρα· το Pro κοστίζει 3,99 $ τον μήνα ή 26,99 $ τον χρόνο.</p>
+<aside class="trust-badge" aria-label="Σχετικά με την επέκταση">
+  <span class="trophy" aria-hidden="true">🧩</span>
+  <div>
+    <strong>Download Claude conversations — δωρεάν επέκταση Chrome για το claude.ai</strong>
+    <span>Έκδοση 1.16.2 (Σεπτέμβριος 2026) — απεριόριστες εξαγωγές σε Markdown, κείμενο, JSON, XML, CSV και PNG χωρίς λογαριασμό· PDF και μαζικό ZIP δωρεάν έως 3 την ημέρα</span>
+  </div>
+</aside>
+<nav class="toc" aria-label="Σε αυτή τη σελίδα">
+  <p>Σε αυτή τη σελίδα</p>
+  <ol>
+    <li><a href="#what-extractor">Τι είναι ένα εργαλείο εξαγωγής συνομιλιών Claude;</a></li>
+    <li><a href="#extract-one">Πώς εξάγω ένα chat του Claude στο claude.ai;</a></li>
+    <li><a href="#what-it-pulls">Τι ακριβώς εξάγει το εργαλείο;</a></li>
+    <li><a href="#extract-formats">Σε ποιες μορφές γράφει το εργαλείο εξαγωγής;</a></li>
+    <li><a href="#extract-bulk">Μπορώ να εξαγάγω συνομιλίες του Claude μαζικά;</a></li>
+    <li><a href="#vs-copy">Εργαλείο εξαγωγής ή αντιγραφή-επικόλληση;</a></li>
+    <li><a href="#extractor-safe">Είναι ασφαλές ένα εργαλείο εξαγωγής συνομιλιών;</a></li>
+    <li><a href="#faq">Συχνές ερωτήσεις: εργαλείο εξαγωγής συνομιλιών Claude</a></li>
+  </ol>
+</nav>
+
+<h2 id="what-extractor">Τι είναι ένα εργαλείο εξαγωγής συνομιλιών Claude;</h2>
+<p>Ένα εργαλείο εξαγωγής συνομιλιών Claude αναλύει τη συνομιλία όπως εμφανίζεται στο claude.ai και γράφει ένα πραγματικό αρχείο. Το Download Claude conversations είναι αυτό το εργαλείο για Chrome: δεν είναι βοηθητικό πρόγραμμα στιγμιοτύπων ούτε το ZIP λογαριασμού της Anthropic. Είτε γράψετε «εξαγωγή», «λήψη» ή «αποθήκευση», καταλήγετε στο ίδιο πορτοκαλί κουμπί στο claude.ai.</p>
+<p>Προγραμματιστές και ερευνητές συχνά αναζητούν «Claude conversation extractor», επειδή το «extract» υπονοεί δομή: αποστολέας, μπλοκ περιεχομένου, μπλοκ κώδικα, πίνακες, artifacts. Το Download Claude conversations κάνει αυτή την ανάλυση στην καρτέλα που έχετε ήδη ανοίξει. Κάποιοι το λένε Claude Conversation Downloader ή Claude Exporter· αυτά τα ονόματα αφορούν την ίδια καταχώριση, το Download Claude conversations 1.16.2 στο Chrome Web Store.</p>
+<p>Το εργαλείο δεν είναι πρόσθετο του Claude Desktop ούτε CLI του Claude Code. Αν ψάχνατε ιστορικό τερματικού, χρησιμοποιήστε το <code>/export</code> — οδηγός: <a href="/el/claude-code-export/">εξαγωγή από το Claude Code</a>. Αν ψάχνατε την εφαρμογή για Mac/Windows, δείτε την <a href="/el/export-claude-desktop-chat/">εξαγωγή chat από το Claude Desktop</a>. Το Claude Code on the web (claude.ai/code) και οι συνεδρίες Cowork εξάγονται κανονικά, επειδή ανοίγουν στο claude.ai. Αυτή η σελίδα αφορά μόνο το claude.ai στο Chrome.</p>
+<div class="callout callout-info">
+  <p><strong>Ίδιο κουμπί, διαφορετικά ρήματα.</strong> «Εξαγωγή chat Claude», «λήψη chat Claude» ή στα αγγλικά «extract», «export» και «download» — όλα οδηγούν στο Download Claude conversations. Η περιγραφή της επέκτασης ως προϊόντος είναι στη σελίδα <a href="/el/export-claude-chat/">εξαγωγή chat Claude</a>. Αυτός ο οδηγός εστιάζει στο τι διαβάζει το εργαλείο και τι αφήνει έξω.</p>
+</div>
+
+<h2 id="extract-one">Πώς εξάγω ένα chat του Claude στο claude.ai;</h2>
+<p>Εγκαταστήστε το Download Claude conversations, ανοίξτε τη διεύθυνση της συνομιλίας στο claude.ai, κάντε κλικ στο πορτοκαλί κουμπί δίπλα στο πλαίσιο μηνύματος, διαλέξτε μορφή και πατήστε «Export». Το εργαλείο γράφει το αρχείο τοπικά μέσω του API λήψεων του Chrome. Για Markdown, κείμενο, JSON, XML, CSV ή PNG δεν χρειάζεται λογαριασμός· η σύνδεση με Google εμφανίζεται μόνο για PDF και μαζική εξαγωγή.</p>
+<ol>
+<li>Προσθέστε την καταχώριση από το Chrome Web Store (Download Claude conversations, έκδοση 1.16.2 τον Σεπτέμβριο του 2026).</li>
+<li>Ανανεώστε το claude.ai και ανοίξτε τη συνομιλία — το εργαλείο χρειάζεται διεύθυνση συνομιλίας, όχι την κενή αρχική σελίδα.</li>
+<li>Κάντε κλικ στο στρογγυλό πορτοκαλί κουμπί δεξιά από το πλαίσιο μηνύματος.</li>
+<li>Ορίστε το «Messages» (Μηνύματα) σε All, Human ή Assistant (όλα, μόνο δικά σας, μόνο του Claude), τσεκάρετε το «Thinking» (Σκέψη) αν το θέλετε ή χρησιμοποιήστε το «Select» (Επιλογή) για μεμονωμένα μηνύματα. Διαλέξτε PDF, Markdown, JSON, απλό κείμενο, XML, CSV ή PNG.</li>
+<li>Πατήστε «Export» ή «Copy» (Αντιγραφή) για να βάλετε Markdown, κείμενο, JSON, XML ή CSV στο πρόχειρο. Το εργαλείο δεν ανεβάζει το περιεχόμενο της συνομιλίας στους διακομιστές μας.</li>
+</ol>
+<p>Αν λείπει το πορτοκαλί κουμπί, καρφιτσώστε την επέκταση, ανανεώστε την καρτέλα και βεβαιωθείτε ότι η διεύθυνση είναι πραγματικό chat. Το εργαλείο ενεργοποιείται μόνο στο claude.ai. Δεν θα εμφανιστεί στο Claude Desktop, στο τερματικό του Claude Code ή σε άλλους ιστότοπους. Ελλιπή αρχεία συνήθως σημαίνουν ότι η μεγάλη συνομιλία δεν είχε φορτωθεί πλήρως· κάντε κύλιση ή περιμένετε και εξαγάγετε ξανά.</p>
+<p>Το εργαλείο θυμάται την τελευταία μορφή που χρησιμοποιήσατε. Αν θέλατε Markdown και πήρατε JSON, ανοίξτε το μενού πριν από το «Export». Η επιλογή PDF ζητά σύνδεση με Google. Μετά από 3 εξαγωγές PDF ή μαζικές εξαγωγές σε μία μέρα, το δωρεάν πρόγραμμα εμφανίζει πρόταση για Pro με 3,99 $ τον μήνα ή 26,99 $ τον χρόνο — αυτό είναι αναμενόμενο, όχι αποτυχία ανάλυσης. Ο μετρητής μηδενίζεται στα μεσάνυχτα UTC.</p>
+<p>Χρειάζεστε τη λίστα βημάτων με εκτύπωση και ZIP ως εναλλακτικές; Δείτε το <a href="/el/how-to-download-claude-chat/">πώς να κατεβάσετε ένα chat του Claude</a>. Χρειάζεστε σύγκριση μεθόδων, μαζί με Εκτύπωση → Αποθήκευση ως PDF; Δείτε το <a href="/el/how-to-export-claude-chat/">πώς να κάνετε εξαγωγή ενός chat του Claude</a>. Αυτή η σελίδα προϋποθέτει ότι θέλετε ένα δομημένο αρχείο της ανοιχτής συνομιλίας.</p>
+
+<h2 id="what-it-pulls">Τι ακριβώς εξάγει το εργαλείο;</h2>
+<p>Το εργαλείο εξαγωγής διαβάζει το δέντρο μηνυμάτων που έχει ήδη σχεδιάσει το claude.ai: μηνύματα δικά σας και του Claude, μπλοκ κώδικα με ένδειξη γλώσσας, πίνακες, συνδέσμους και προαιρετικά τη σκέψη. Η διάταξη των artifacts είναι «Original», «Inline», «Nested» ή «Flat» (αρχική, ενσωματωμένη, ένθετη, επίπεδη). Η αντιγραφή-επικόλληση από την ίδια σελίδα χάνει αυτή τη δομή· το εργαλείο την κρατά σε Markdown, JSON και XML.</p>
+<p>Η σκέψη είναι πλαίσιο ελέγχου. Ενεργοποιήστε τη όταν χρειάζεστε στο αρχείο τον ορατό συλλογισμό του Claude· αφήστε τη ανενεργή όταν θέλετε μόνο την τελική απάντηση. Τα μεταδεδομένα μπορούν να περιλαμβάνουν τίτλους, χρονοσημάνσεις και μοντέλο. Το φίλτρο «Messages» (All, Human, Assistant), το «Thinking» και το «Select» βρίσκονται στο πάνελ εξαγωγής δίπλα στη μορφή· τα βήματα εργαλείων / MCP και οι πηγές αναζήτησης ιστού ενεργοποιούνται προαιρετικά στις ρυθμίσεις. Λίστα λειτουργιών: <a href="/el/features/">λειτουργίες</a>.</p>
+<div class="expert-quote">
+  <p>Το εργαλείο διαβάζει τη συνομιλία που έχει ήδη εμφανίσει η σελίδα στην καρτέλα σας στο claude.ai. Τα μπλοκ κώδικα, οι πίνακες και οι διατάξεις artifacts («Original», «Inline», «Nested», «Flat») αναλύονται εκεί και έπειτα το αρχείο δημιουργείται τοπικά — μαζί με το PDF.</p>
+  <footer>Η ομάδα του Download Claude conversations</footer>
+</div>
+<p>Το PNG είναι η εξαίρεση: είναι εικόνα της συνομιλίας, όχι κείμενο στο οποίο μπορείτε να κάνετε αναζήτηση. Χρησιμοποιήστε PNG όταν χρειάζεστε οπτικό αποτέλεσμα για ένα αίτημα υποστήριξης ή μια διαφάνεια. Χρησιμοποιήστε Markdown ή JSON όταν χρειάζεστε κείμενο με δυνατότητα αναζήτησης. Ούτε το PNG ούτε το Markdown είναι PDF· όταν χρειάζεστε σελίδες, διαλέξτε PDF — δείτε το <a href="/el/download-claude-chat-as-pdf/">chat του Claude ως PDF</a>.</p>
+<p>Το εργαλείο δεν μπορεί να εξαγάγει ένα chat που το Chrome δεν έχει φορτώσει ποτέ. Ιδιωτική περιήγηση, καρτέλα χωρίς σύνδεση ή συνομιλία που υπάρχει μόνο στο Claude Desktop δεν θα δώσουν αρχείο. Ανοίξτε τη συνομιλία στο claude.ai ενώ είστε συνδεδεμένοι και μετά εκτελέστε την εξαγωγή. Η εξαγωγή χωρίς σύνδεση στο διαδίκτυο λειτουργεί μόνο αφού έχει φορτωθεί η σελίδα· ούτως ή άλλως, το αρχείο δεν δημιουργείται σε διακομιστή.</p>
+
+<h2 id="extract-formats">Σε ποιες μορφές γράφει το εργαλείο εξαγωγής;</h2>
+<p>Επτά: PDF, Markdown, JSON, απλό κείμενο, XML, CSV και PNG — οι ίδιες επτά είτε εξάγετε ένα chat του Claude είτε εκτελείτε το Export All. Το Download Claude conversations δεν προσθέτει Word, Notion ή Google Docs στην 1.16.2. Η μορφή καθορίζει το όριο: έξι μορφές είναι απεριόριστες χωρίς λογαριασμό, ενώ κάθε PDF χρησιμοποιεί μία από τις 3 ημερήσιες εξαγωγές του δωρεάν προγράμματος.</p>
+<table>
+  <caption>Αποτέλεσμα του εργαλείου εξαγωγής και συνήθης χρήση</caption>
+  <thead>
+    <tr>
+      <th scope="col">Μορφή</th>
+      <th scope="col">Αποτέλεσμα</th>
+      <th scope="col">Συνήθες επόμενο βήμα</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PDF</td>
+      <td>Έγγραφο με σελίδες, προαιρετικά με πίνακα περιεχομένων</td>
+      <td>Κοινοποίηση ή εκτύπωση — <a href="/el/download-claude-chat-as-pdf/">PDF</a></td>
+    </tr>
+    <tr>
+      <td>Markdown</td>
+      <td>Ευανάγνωστο .md με μπλοκ κώδικα και πίνακες</td>
+      <td>Αρχείο σημειώσεων — <a href="/el/formats/markdown/">Markdown</a></td>
+    </tr>
+    <tr>
+      <td>JSON</td>
+      <td>Δέντρο μηνυμάτων για scripts</td>
+      <td>Ανάλυση ή σύγκριση — <a href="/el/formats/json/">JSON</a></td>
+    </tr>
+    <tr>
+      <td>Απλό κείμενο</td>
+      <td>Γραμμική συνομιλία, χωρίς μορφοποίηση</td>
+      <td>Επικόλληση οπουδήποτε — <a href="/el/formats/">μορφές</a></td>
+    </tr>
+    <tr>
+      <td>XML</td>
+      <td>Δομημένη σήμανση</td>
+      <td>Ανταλλαγή δεδομένων — <a href="/el/formats/xml/">XML</a></td>
+    </tr>
+    <tr>
+      <td>CSV</td>
+      <td>Μία γραμμή ανά μήνυμα</td>
+      <td>Υπολογιστικό φύλλο — <a href="/el/formats/">μορφές</a></td>
+    </tr>
+    <tr>
+      <td>PNG</td>
+      <td>Εικόνα της συνομιλίας</td>
+      <td>Οπτικό αντίγραφο — <a href="/el/formats/png/">PNG</a></td>
+    </tr>
+  </tbody>
+</table>
+<p>Το JSON του εργαλείου δεν έχει την ίδια δομή με το ZIP του Export data της Anthropic σε επίπεδο λογαριασμού. Το αρχείο του εργαλείου είναι ανά chat (ή ανά μαζική επιλογή) και προέρχεται από τη σελίδα. Το ZIP είναι αρχείο όλου του λογαριασμού που φτάνει με καθυστέρηση. Μη δίνετε το ένα σε script που περιμένει το άλλο. Όλες οι μορφές: <a href="/el/formats/">μορφές αρχείων</a>.</p>
+
+<h2 id="extract-bulk">Μπορώ να εξαγάγω συνομιλίες του Claude μαζικά;</h2>
+<p>Ναι. Ανοίξτε το αναδυόμενο παράθυρο της επέκτασης → «View and Download All Conversations» (Προβολή και λήψη όλων των συνομιλιών), φιλτράρετε και πατήστε Export All. Το εργαλείο γράφει ένα ZIP με ένα αρχείο για κάθε επιλεγμένο chat, στη μορφή που διαλέξατε. Η μαζική εξαγωγή ζητά σύνδεση με Google. Στο δωρεάν πρόγραμμα κάθε chat στο ZIP χρησιμοποιεί μία από τις 3 ημερήσιες εξαγωγές, κοινές με το PDF, εκτός αν ο λογαριασμός έχει Pro με 3,99 $ τον μήνα ή 26,99 $ τον χρόνο.</p>
+<p>Φίλτρα στο Dashboard: «All conversations», «New», «Updated» και «Previously exported» (όλες, νέες, ενημερωμένες, ήδη εξαγμένες), καθώς και καρτέλες Chat και Cowork και αναζήτηση έργων. Το «New» σημαίνει ότι το εργαλείο δεν έχει αποθηκεύσει ακόμη αυτό το chat. Το «Previously exported» σημειώνει ιστορικό που έχετε ήδη εξαγάγει, ώστε μια επόμενη μαζική εξαγωγή να το παραλείψει. Η αναζήτηση έργων ακολουθεί την ομαδοποίηση σε έργα του claude.ai. Η αναζήτηση βρίσκει συνομιλίες με βάση το όνομα πριν πατήσετε Export All.</p>
+<p>Η μαζική εξαγωγή δεν είναι φτωχότερη ανάλυση. Τα πλαίσια ελέγχου του Dashboard — «Chats», «Thinking», «Metadata», «Tools», «Sources» (chat, σκέψη, μεταδεδομένα, εργαλεία, πηγές) — μαζί με τη διάταξη artifacts καθορίζουν τι μπαίνει σε κάθε αρχείο, και ο επιλογέας «Chat format» προσφέρει και τις επτά μορφές, μαζί με το PDF. Αναλυτικός οδηγός με προειδοποιήσεις για τα όρια: <a href="/el/bulk/">μαζική εξαγωγή με Export All</a>. Αν θέλατε ένα ZIP όλου του λογαριασμού μέσω email, αυτό είναι το Settings → Privacy → Export data (οι ετικέτες μπορεί να εμφανίζονται στα ελληνικά αν το claude.ai είναι ρυθμισμένο στα ελληνικά), όχι αυτό το εργαλείο.</p>
+<div class="callout callout-warn">
+  <p><strong>Η μαζική εξαγωγή μετρά ανά chat.</strong> Στο δωρεάν πρόγραμμα, το Export All μοιράζεται 3 την ημέρα με το PDF και κάθε chat στο ZIP μετρά ως ένα. Αν επιλέξετε 25 chat ενώ σας απομένουν 3, μπλοκάρεται όλη η παρτίδα, δεν κόβεται. Χρησιμοποιήστε το φίλτρο «New» για να επιλέξετε λιγότερα, περιμένετε τον μηδενισμό στα μεσάνυχτα UTC ή περάστε στο Pro (3,99 $ τον μήνα ή 26,99 $ τον χρόνο) πριν από μια μεγάλη μαζική εξαγωγή.</p>
+</div>
+
+<h2 id="vs-copy">Εργαλείο εξαγωγής ή αντιγραφή-επικόλληση;</h2>
+<p>Η αντιγραφή-επικόλληση αρκεί για μία σύντομη απάντηση του Claude και αποτυγχάνει σε κώδικα και πίνακες. Το Export data της Anthropic είναι το ZIP αντιγράφου ασφαλείας του λογαριασμού. Το εργαλείο εξαγωγής βρίσκεται στη μέση: αυτή η συνομιλία ή μια μαζική επιλογή, δομημένο αρχείο, αμέσως, στο claude.ai στο Chrome.</p>
+<table>
+  <caption>Πώς συγκρίνεται ένα εργαλείο εξαγωγής συνομιλιών Claude με άλλες μεθόδους</caption>
+  <thead>
+    <tr>
+      <th scope="col">Μέθοδος</th>
+      <th scope="col">Ιδανική για</th>
+      <th scope="col">Αποτέλεσμα</th>
+      <th scope="col">Όριο</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Εργαλείο εξαγωγής συνομιλιών Claude</td>
+      <td>Αυτό το chat ή μαζικά, τώρα</td>
+      <td>PDF / MD / JSON / TXT / XML / CSV / PNG</td>
+      <td>Έξι μορφές απεριόριστες, χωρίς λογαριασμό· PDF και μαζική εξαγωγή 3 την ημέρα δωρεάν· Chrome στο claude.ai</td>
+    </tr>
+    <tr>
+      <td>Export data της Anthropic</td>
+      <td>Αντίγραφο όλου του λογαριασμού</td>
+      <td>ZIP με JSON μέσω email</td>
+      <td>Αργό, χωρίς Markdown ανά chat</td>
+    </tr>
+    <tr>
+      <td>Αντιγραφή-επικόλληση</td>
+      <td>Μία σύντομη απάντηση</td>
+      <td>Επιλεγμένο κείμενο</td>
+      <td>Κώδικας και πίνακες χαλάνε</td>
+    </tr>
+    <tr>
+      <td>Εκτύπωση σε PDF</td>
+      <td>Οπτικό αντίγραφο σελίδας</td>
+      <td>PDF της ιστοσελίδας</td>
+      <td>Πλαϊνή στήλη· ο κώδικας συχνά κόβεται</td>
+    </tr>
+  </tbody>
+</table>
+<p>Η εκτύπωση δεν είναι εξαγωγή. Αποτυπώνει την ιστοσελίδα, μαζί με στοιχεία της διεπαφής που δεν θέλετε σε ένα αρχείο σημειώσεων. Το εργαλείο αφαιρεί αυτά τα στοιχεία και κρατά τη δομή των μηνυμάτων. Αν χρειάζεστε PDF, διαλέξτε PDF στο ίδιο πάνελ· η επέκταση το δημιουργεί στο πρόγραμμα περιήγησης, χωρίς παράθυρο εκτύπωσης. Αν χρειάζεστε κείμενο στο πρόχειρο, το κουμπί «Copy» του πάνελ αντιγράφει Markdown, κείμενο, JSON, XML ή CSV αντί για το ακατέργαστο κείμενο της σελίδας.</p>
+
+<h2 id="extractor-safe">Είναι ασφαλές ένα εργαλείο εξαγωγής συνομιλιών;</h2>
+<p>Αυτό το εργαλείο εξαγωγής χρησιμοποιεί την υπάρχουσα συνεδρία σας στο claude.ai με τον ίδιο τρόπο που τη χρησιμοποιεί ο ιστότοπος. Δεν αυτοματοποιεί τον λογαριασμό και δεν στέλνει το περιεχόμενο των chat στο API μας. Σύνδεση με Google ζητείται μόνο για PDF, μαζική εξαγωγή και Pro, για να μετρηθεί το ημερήσιο όριο και να επανέλθει το Pro. Την πληρωμή τη διαχειρίζεται η Paddle. Δεν είμαστε η Anthropic· οι Όροι της ισχύουν κανονικά.</p>
+<p>Αφού συνδεθείτε για PDF, μαζική εξαγωγή ή Pro, ένας Cloudflare Worker βλέπει το email σας στο Google, πόσα PDF και μαζικές εξαγωγές κάνατε σήμερα και αν έχετε Pro. Οι εξαγωγές μεμονωμένων chat σε Markdown, JSON, κείμενο, XML, CSV και PNG δεν του στέλνουν τίποτα, και δεν λαμβάνει ποτέ κανένα εξαγόμενο αρχείο, ούτε PDF. Τα αρχεία δεν βγαίνουν ποτέ από το πρόγραμμα περιήγησης, παρά μόνο προς τον φάκελο λήψεων του Chrome. Πλήρη όρια: <a href="/el/how-it-works/">πώς λειτουργεί</a>. Όποιος ρωτά αν ένα εργαλείο εξαγωγής chat είναι ασφαλές, ας κοιτάξει αυτόν τον διαχωρισμό — η χρέωση στον worker, η συνομιλία στην καρτέλα.</p>
+<p>Δεν μπορούμε να υποσχεθούμε «μηδενική κίνηση δικτύου». Το claude.ai, η Google και ο worker υπάρχουν. Μπορούμε να πούμε ότι το περιεχόμενο των chat δεν ανεβαίνει σε εμάς. Τηρείτε τους Όρους Χρήσης της Anthropic. Το Download Claude conversations είναι ανεξάρτητη επέκταση Chrome, όχι επίσημο προϊόν της Anthropic. Το email υποστήριξης βρίσκεται στο κάτω μέρος του ιστότοπου.</p>
+<p>Τα προγράμματα περιήγησης κινητών και το Claude Desktop δεν υποστηρίζονται. Ένα εργαλείο εξαγωγής που είναι content script του Chrome δεν μπορεί να τρέξει εκεί. Μην περιμένετε καταχώριση για Safari ή Firefox από αυτή τη σελίδα τον Σεπτέμβριο του 2026. Χρησιμοποιήστε Chrome σε υπολογιστή στο claude.ai. Πολιτικές ομάδων που μπλοκάρουν επεκτάσεις θα μπλοκάρουν και αυτό το εργαλείο.</p>
+
+<h2 id="faq">Συχνές ερωτήσεις: εργαλείο εξαγωγής συνομιλιών Claude</h2>
+<p>Αυτές οι ερωτήσεις απαντούν σε απορίες για το εργαλείο εξαγωγής συνομιλιών και την εξαγωγή chat του Claude: μαζικό Export All, Desktop, Claude Code, PDF, σύνδεση με Google και το ημερήσιο όριο για PDF και μαζική εξαγωγή. Οι απαντήσεις αφορούν την επέκταση 1.16.2 στο claude.ai. Το σχήμα FAQPage στην κεφαλίδα του εγγράφου ταιριάζει με αυτή τη λίστα.</p>
+
+<h3>Τι είναι ένα εργαλείο εξαγωγής συνομιλιών Claude;</h3>
+<p>Ένα εργαλείο που διαβάζει μια συνομιλία του claude.ai που έχετε ανοιχτή και γράφει PDF, Markdown, JSON, απλό κείμενο, XML, CSV ή PNG. Το Download Claude conversations προσθέτει το πορτοκαλί κουμπί που κάνει αυτή την ανάλυση τοπικά στο Chrome.</p>
+
+<h3>Διαφέρει το «extract» από το «export» ενός chat του Claude;</h3>
+<p>Όχι — ίδια δουλειά, άλλο ρήμα. Στα ελληνικά και τα δύο λέγονται «εξαγωγή»· είτε γράψετε extract, export ή download, καταλήγετε στο ίδιο πορτοκαλί κουμπί και στις ίδιες επτά μορφές στο claude.ai. Αυτή η σελίδα εστιάζει στο τι κρατά η ανάλυση.</p>
+
+<h3>Μπορώ να εξαγάγω ένα chat του Claude χωρίς να εγκαταστήσω τίποτα;</h3>
+<p>Μόνο με αντιγραφή-επικόλληση, που χάνει τα μπλοκ κώδικα και τους πίνακες, ή με το Export data της Anthropic, που είναι ZIP λογαριασμού. Ένα εργαλείο δομημένης εξαγωγής πρέπει να διαβάσει τη σελίδα· αυτό κάνει η επέκταση Chrome.</p>
+
+<h3>Υποστηρίζει το εργαλείο μαζική εξαγωγή συνομιλιών;</h3>
+<p>Ναι. Ανοίξτε το «View and Download All Conversations» από το αναδυόμενο παράθυρο της επέκτασης και πατήστε Export All για ένα ZIP. Η μαζική εξαγωγή ζητά σύνδεση με Google· στο δωρεάν πρόγραμμα κάθε chat μετρά στις 3 την ημέρα, κοινές με το PDF. Το Pro με 3,99 $ τον μήνα ή 26,99 $ τον χρόνο καταργεί το όριο. Φίλτρα: «All conversations», «New», «Updated», «Previously exported».</p>
+
+<h3>Είναι ασφαλές ένα εργαλείο εξαγωγής chat του Claude;</h3>
+<p>Αυτό εδώ διαβάζει τη συνεδρία σας στο claude.ai και δημιουργεί τα αρχεία τοπικά. Το κείμενο των συνομιλιών δεν αποστέλλεται στους διακομιστές μας. Δεν είμαστε η Anthropic· εξακολουθούν να ισχύουν οι Όροι Χρήσης της.</p>
+
+<h3>Χρειάζομαι Claude Pro για να εξαγάγω ένα chat;</h3>
+<p>Όχι. Κάθε πρόγραμμα του claude.ai που ανοίγει τη συνομιλία στο Chrome λειτουργεί. Από τη δική μας πλευρά, οι εξαγωγές σε Markdown, κείμενο, JSON, XML, CSV και PNG είναι δωρεάν και απεριόριστες χωρίς λογαριασμό· PDF και μαζική εξαγωγή είναι δωρεάν έως 3 την ημέρα. Η συνδρομή επί πληρωμή της Anthropic δεν σχετίζεται με τα δικά μας όρια.</p>
+
+<h3>Λειτουργεί το εργαλείο εξαγωγής στο Desktop;</h3>
+<p>Όχι. Το Claude Desktop δεν αποκτά ποτέ το πορτοκαλί κουμπί. Ανοίξτε το ίδιο chat στο claude.ai αν συγχρονίζεται, ή κάντε αντιγραφή-επικόλληση / ζητήστε το επίσημο ZIP. Το εργαλείο λειτουργεί μόνο στο Chrome για το claude.ai.</p>
+
+<h3>Μπορεί το εργαλείο εξαγωγής να γράψει PDF;</h3>
+<p>Ναι. Διαλέξτε PDF στο πάνελ εξαγωγής και πατήστε «Export». Το PDF δημιουργείται στο πρόγραμμα περιήγησης, χωρίς παράθυρο εκτύπωσης. Ζητά σύνδεση με Google και είναι δωρεάν έως 3 την ημέρα· το Pro το κάνει απεριόριστο.</p>
+
+<h3>Λειτουργεί η εξαγωγή chat στο Claude Code;</h3>
+<p>Μόνο στον ιστό. Οι συνεδρίες του Claude Code στο claude.ai/code ανοίγουν στο claude.ai και εξάγονται όπως κάθε chat. Το Claude Code στο τερματικό χρησιμοποιεί το <code>/export</code> ή αρχεία JSONL στον δίσκο· αυτό το εργαλείο είναι content script του Chrome για το claude.ai, όχι σύνδεση με το τερματικό.</p>
+
+<h3>Πόσες δωρεάν εξαγωγές επιτρέπει το εργαλείο;</h3>
+<p>Απεριόριστες σε Markdown, κείμενο, JSON, XML, CSV και PNG, χωρίς λογαριασμό. Το PDF και το μαζικό Export All μοιράζονται 3 την ημέρα ανά λογαριασμό Google στο δωρεάν πρόγραμμα, με μηδενισμό στα μεσάνυχτα UTC. Το Pro καταργεί το όριο και επανέρχεται από τον ίδιο λογαριασμό Google μέσω της χρέωσης της Paddle.</p>
+
+<h3>Τι παραλείπει το εργαλείο εξαγωγής συνομιλιών Claude;</h3>
+<p>Τα στοιχεία της διεπαφής, το πλαίσιο σύνταξης μηνύματος και ό,τι δεν εμφανίζεται μέσα στη συνομιλία. Παραλείπει επίσης chat που δεν φορτώθηκαν ποτέ στο Chrome. Συνομιλίες που υπάρχουν μόνο στο Claude Desktop και τοπικά αρχεία JSONL του Claude Code είναι εκτός πεδίου.</p>
+</article>
+</main>
+<section class="final-cta page-cta" aria-label="Εγκατάσταση">
+  <div class="wrap">
+    <div class="final-cta-panel">
+      <p class="final-kicker">Download Claude conversations</p>
+      <h2>Εγκαταστήστε την επέκταση και εξαγάγετε chat του Claude σε δευτερόλεπτα</h2>
+      <p>Μετατρέψτε σημαντικές συνομιλίες του Claude σε PDF, Markdown, JSON, κείμενο, XML, CSV ή PNG — τοπικά, από το Chrome.</p>
+      <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=el-extractor" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Προσθήκη στο Chrome</a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="logo" href="/el/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
+      <p class="legal-note">Επέκταση Chrome για λήψη συνομιλιών του Claude.ai σε PDF, Markdown, JSON, απλό κείμενο, CSV, XML ή PNG.</p>
+    </div>
+    <div>
+      <h2>Εγκατάσταση</h2>
+      <a class="install-link" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=el-footer" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Επέκταση Chrome</a>
+    </div>
+    <div>
+      <h2>Προϊόν</h2>
+      <a href="/el/features/">Λειτουργίες</a>
+      <a href="/el/formats/">Μορφές</a>
+      <a href="/el/bulk/">Μαζική λήψη</a>
+      <a href="/el/how-it-works/">Πώς λειτουργεί</a>
+    </div>
+    <div>
+      <h2>Οδηγοί</h2>
+      <a href="/el/how-to-download-claude-chat/">Πώς να κατεβάσετε chat του Claude</a>
+      <a href="/el/how-to-export-claude-chat/">Πώς να κάνετε εξαγωγή chat του Claude</a>
+      <a href="/el/export-claude-chat/">Εξαγωγή chat του Claude</a>
+      <a href="/el/claude-conversation-extractor/">Εξαγωγέας συνομιλιών Claude</a>
+      <a href="/el/claude-code-export/">Εξαγωγή Claude Code</a>
+      <a href="/el/download-claude-chat-as-pdf/">Συνομιλία Claude σε PDF</a>
+      <a href="/el/export-claude-desktop-chat/">Εξαγωγή από το Claude Desktop</a>
+      <a href="/el/claude-export-conversation/">Εξαγωγή συνομιλίας Claude</a>
+      <a href="/el/how-to-save-claude-conversation/">Πώς να αποθηκεύσετε συνομιλία Claude</a>
+      <a href="/el/download-claude-conversation/">Λήψη συνομιλίας Claude</a>
+    </div>
+    <div>
+      <h2>Νομικά</h2>
+      <a href="/el/about/">Σχετικά</a>
+      <a href="/el/about/#contact">Επικοινωνία</a>
+      <a href="/privacy/" hreflang="en">Απόρρητο (στα αγγλικά)</a>
+      <a href="/terms/" hreflang="en">Όροι (στα αγγλικά)</a>
+      <a href="/refund/" hreflang="en">Επιστροφές χρημάτων (στα αγγλικά)</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Download Claude conversations. Με την επιφύλαξη παντός δικαιώματος.</div>
+    <div>
+      <a href="/privacy/" hreflang="en">Πολιτική απορρήτου (στα αγγλικά)</a>
+      <a href="/terms/" hreflang="en">Όροι χρήσης (στα αγγλικά)</a>
+      <a href="/refund/" hreflang="en">Επιστροφές χρημάτων (στα αγγλικά)</a>
+    </div>
+  </div>
+  <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/claude-conversation-extractor/" hreflang="en" lang="en">English</a> <a href="/de/claude-chat-extractor/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/extracteur-conversation-claude/" hreflang="fr" lang="fr">Français</a> <a href="/es/extractor-conversaciones-claude/" hreflang="es" lang="es">Español</a> <a href="/it/estrattore-conversazioni-claude/" hreflang="it" lang="it">Italiano</a> <a href="/pt/extrator-conversas-claude/" hreflang="pt" lang="pt">Português</a> <a href="/nl/claude-gesprek-extractor/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/claude-konversation-extractor/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/claude-samtale-extractor/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/claude-samtale-extractor/" hreflang="da" lang="da">Dansk</a> <a href="/fi/claude-keskustelu-extractor/" hreflang="fi" lang="fi">Suomi</a> <a href="/pl/ekstraktor-rozmow-claude/" hreflang="pl" lang="pl">Polski</a> <a href="/cs/extraktor-konverzaci-claude/" hreflang="cs" lang="cs">Čeština</a> <a href="/sk/extraktor-konverzacii-claude/" hreflang="sk" lang="sk">Slovenčina</a> <a href="/hu/claude-beszelgetes-kinyero/" hreflang="hu" lang="hu">Magyar</a> <a href="/ro/extractor-conversatii-claude/" hreflang="ro" lang="ro">Română</a> <a href="/el/claude-conversation-extractor/" hreflang="el" lang="el">Ελληνικά</a> <a href="/tr/claude-konusma-cikarici/" hreflang="tr" lang="tr">Türkçe</a> <a href="/ja/claude-conversation-extractor/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/claude-conversation-extractor/" hreflang="ko" lang="ko">한국어</a> <a href="/zh-hant/claude-conversation-extractor/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="/he/claude-conversation-extractor/" hreflang="he" lang="he">עברית</a> <a href="/ar/claude-conversation-extractor/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
+  <p class="disclaimer">Οι συνομιλίες επεξεργάζονται στο πρόγραμμα περιήγησής σας · Σύνδεση με Google μόνο για PDF, μαζική εξαγωγή και Pro · Δεν συνδέεται με την Anthropic, PBC. Το Claude είναι εμπορικό σήμα της Anthropic. Ανεξάρτητη επέκταση Chrome — όχι επίσημο προϊόν της Anthropic. Υποστήριξη: <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

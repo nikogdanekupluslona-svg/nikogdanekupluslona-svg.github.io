@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Esportare chat Claude in XML per lo scambio di dati</title>
+  <meta name="description" content="Esporta una chat di Claude AI in XML per lo scambio di dati strutturati con Download Claude conversations. Singola chat o in blocco.">
+  <link rel="canonical" href="https://chat-downloader.com/it/formati/xml/">
+  <!-- i18n:head -->
+  <link rel="alternate" hreflang="en" href="https://chat-downloader.com/formats/xml/">
+  <link rel="alternate" hreflang="de" href="https://chat-downloader.com/de/formate/xml/">
+  <link rel="alternate" hreflang="fr" href="https://chat-downloader.com/fr/formats/xml/">
+  <link rel="alternate" hreflang="es" href="https://chat-downloader.com/es/formatos/xml/">
+  <link rel="alternate" hreflang="it" href="https://chat-downloader.com/it/formati/xml/">
+  <link rel="alternate" hreflang="pt" href="https://chat-downloader.com/pt/formatos/xml/">
+  <link rel="alternate" hreflang="nl" href="https://chat-downloader.com/nl/formaten/xml/">
+  <link rel="alternate" hreflang="sv" href="https://chat-downloader.com/sv/format/xml/">
+  <link rel="alternate" hreflang="nb" href="https://chat-downloader.com/nb/formater/xml/">
+  <link rel="alternate" hreflang="da" href="https://chat-downloader.com/da/formater/xml/">
+  <link rel="alternate" hreflang="fi" href="https://chat-downloader.com/fi/formaatit/xml/">
+  <link rel="alternate" hreflang="pl" href="https://chat-downloader.com/pl/formaty/xml/">
+  <link rel="alternate" hreflang="cs" href="https://chat-downloader.com/cs/formaty/xml/">
+  <link rel="alternate" hreflang="sk" href="https://chat-downloader.com/sk/formaty/xml/">
+  <link rel="alternate" hreflang="hu" href="https://chat-downloader.com/hu/formatumok/xml/">
+  <link rel="alternate" hreflang="ro" href="https://chat-downloader.com/ro/formate/xml/">
+  <link rel="alternate" hreflang="el" href="https://chat-downloader.com/el/formats/xml/">
+  <link rel="alternate" hreflang="tr" href="https://chat-downloader.com/tr/formatlar/xml/">
+  <link rel="alternate" hreflang="ja" href="https://chat-downloader.com/ja/formats/xml/">
+  <link rel="alternate" hreflang="ko" href="https://chat-downloader.com/ko/formats/xml/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://chat-downloader.com/zh-hant/formats/xml/">
+  <link rel="alternate" hreflang="he" href="https://chat-downloader.com/he/formats/xml/">
+  <link rel="alternate" hreflang="ar" href="https://chat-downloader.com/ar/formats/xml/">
+  <link rel="alternate" hreflang="x-default" href="https://chat-downloader.com/formats/xml/">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="sv_SE">
+  <meta property="og:locale:alternate" content="nb_NO">
+  <meta property="og:locale:alternate" content="da_DK">
+  <meta property="og:locale:alternate" content="fi_FI">
+  <meta property="og:locale:alternate" content="pl_PL">
+  <meta property="og:locale:alternate" content="cs_CZ">
+  <meta property="og:locale:alternate" content="sk_SK">
+  <meta property="og:locale:alternate" content="hu_HU">
+  <meta property="og:locale:alternate" content="ro_RO">
+  <meta property="og:locale:alternate" content="el_GR">
+  <meta property="og:locale:alternate" content="tr_TR">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <meta property="og:locale:alternate" content="zh_TW">
+  <meta property="og:locale:alternate" content="he_IL">
+  <meta property="og:locale:alternate" content="ar_AE">
+  <!-- /i18n:head -->
+  <meta property="og:title" content="Esportare chat Claude in XML per lo scambio di dati">
+  <meta property="og:description" content="Esporta una chat di Claude AI in XML per lo scambio di dati strutturati con Download Claude conversations. Singola chat o in blocco.">
+  <meta property="og:url" content="https://chat-downloader.com/it/formati/xml/">
+  <meta property="og:image" content="https://chat-downloader.com/assets/widget-guide.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chat Downloader">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Esportare chat Claude in XML per lo scambio di dati">
+  <meta name="twitter:description" content="Esporta una chat di Claude AI in XML per lo scambio di dati strutturati con Download Claude conversations. Singola chat o in blocco.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME1YXGZKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GME1YXGZKR');
+  </script>
+  
+  
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"L’XML è meglio del JSON per esportare le chat Claude?","acceptedAnswer":{"@type":"Answer","text":"In generale no. JSON è la scelta più comune tra gli sviluppatori. Esporta la chat in XML quando il sistema a valle richiede XML per lo scambio di dati strutturati. L’analisi di claude.ai è la stessa; cambia la forma del file."}},{"@type":"Question","name":"Posso esportare le chat Claude in XML in blocco?","acceptedAnswer":{"@type":"Answer","text":"Sì. Lo stesso flusso “Export All” della Dashboard supporta l’XML e salva un unico ZIP con un file XML per chat. Con il piano gratuito copre 3 chat al giorno con accesso Google; Pro, a 3,99 $ al mese o 26,99 $ all’anno, è illimitato."}},{"@type":"Question","name":"L’XML è un formato solo a pagamento?","acceptedAnswer":{"@type":"Answer","text":"No. Le esportazioni in XML della singola chat sono illimitate e non richiedono account, come Markdown, testo, JSON, CSV e PNG. Solo PDF e “Export All” in blocco hanno un limite gratuito di 3 al giorno. Pro costa 3,99 $ al mese o 26,99 $ all’anno."}},{"@type":"Question","name":"L’XML corrisponde allo ZIP di Anthropic?","acceptedAnswer":{"@type":"Answer","text":"No. Export data di Anthropic è uno ZIP JSON differito dell’intero account. Download Claude conversations scrive subito in Chrome un file XML per singola chat (o per singola selezione). Non hanno lo stesso schema."}},{"@type":"Question","name":"Esportare in XML crea anche un PDF?","acceptedAnswer":{"@type":"Answer","text":"No. L’XML è markup. Per le pagine scegli il PDF nello stesso pannello; i sette formati sono PDF, Markdown, JSON, testo semplice, XML, CSV e PNG. Il PDF richiede l’accesso con Google e rientra nelle 3 esportazioni al giorno del piano gratuito."}},{"@type":"Question","name":"Posso esportare una chat Claude in XML da Desktop?","acceptedAnswer":{"@type":"Answer","text":"No. L’estensione Chrome si attiva solo su claude.ai. Claude Desktop non mostra mai il menu a tendina con XML. Apri la stessa conversazione su claude.ai in Chrome, se esiste anche lì."}},{"@type":"Question","name":"Mi serve Pro per esportare una chat Claude in XML una volta?","acceptedAnswer":{"@type":"Answer","text":"No. Non ti serve nemmeno un account. Le esportazioni in XML della singola chat sono illimitate con il piano gratuito. Pro, a 3,99 $ al mese o 26,99 $ all’anno, elimina solo il limite di 3 al giorno per “Export All” in blocco e per il PDF."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://chat-downloader.com/it/"},{"@type":"ListItem","position":2,"name":"Formati","item":"https://chat-downloader.com/it/formati/"},{"@type":"ListItem","position":3,"name":"XML","item":"https://chat-downloader.com/it/formati/xml/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Vai al contenuto</a>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a class="logo" href="/it/">
+        <img src="/assets/icon.svg" alt="">
+        <span>Download Claude conversations</span>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="/it/come-scaricare-chat-claude/">Scaricare</a><a href="/it/come-esportare-chat-claude/">Esportare</a><a href="/it/esportare-tutte-le-chat-claude/">Tutte le chat</a><a href="/it/formati/">Formati</a><a href="/it/#faq">FAQ</a>
+        <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=it-formats-xml" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Aggiungi a Chrome</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=it-formats-xml" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Aggiungi a Chrome</a>
+      <!-- i18n:switch --><details class="lang-switch"><summary aria-label="Lingua: Italiano"><svg class="lang-globe" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span class="lang-name">Italiano</span><span class="lang-code" aria-hidden="true">it</span></summary><ul><li><a href="/formats/xml/" hreflang="en" lang="en">English</a></li><li><a href="/de/formate/xml/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/formats/xml/" hreflang="fr" lang="fr">Français</a></li><li><a href="/es/formatos/xml/" hreflang="es" lang="es">Español</a></li><li><a href="/it/formati/xml/" hreflang="it" lang="it" aria-current="true">Italiano</a></li><li><a href="/pt/formatos/xml/" hreflang="pt" lang="pt">Português</a></li><li><a href="/nl/formaten/xml/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/sv/format/xml/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="/nb/formater/xml/" hreflang="nb" lang="nb">Norsk</a></li><li><a href="/da/formater/xml/" hreflang="da" lang="da">Dansk</a></li><li><a href="/fi/formaatit/xml/" hreflang="fi" lang="fi">Suomi</a></li><li><a href="/pl/formaty/xml/" hreflang="pl" lang="pl">Polski</a></li><li><a href="/cs/formaty/xml/" hreflang="cs" lang="cs">Čeština</a></li><li><a href="/sk/formaty/xml/" hreflang="sk" lang="sk">Slovenčina</a></li><li><a href="/hu/formatumok/xml/" hreflang="hu" lang="hu">Magyar</a></li><li><a href="/ro/formate/xml/" hreflang="ro" lang="ro">Română</a></li><li><a href="/el/formats/xml/" hreflang="el" lang="el">Ελληνικά</a></li><li><a href="/tr/formatlar/xml/" hreflang="tr" lang="tr">Türkçe</a></li><li><a href="/ja/formats/xml/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/ko/formats/xml/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/zh-hant/formats/xml/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li><li><a href="/he/formats/xml/" hreflang="he" lang="he">עברית</a></li><li><a href="/ar/formats/xml/" hreflang="ar" lang="ar">العربية</a></li></ul></details><!-- /i18n:switch -->
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+<nav class="crumbs" aria-label="Percorso"><a href="/it/">Home</a> / <a href="/it/formati/">Formati</a> / XML</nav>
+<main id="main">
+<article class="band prose">
+<p class="article-meta">Aggiornato a <time datetime="2026-09">settembre 2026</time> · Estensione 1.16.2</p>
+<h1 class="page-h1">Esportare chat Claude in XML per lo scambio di dati</h1>
+<p class="lead">Per esportare chat Claude in XML, installa Download Claude conversations, apri la conversazione su claude.ai, clicca il pulsante arancione, scegli XML e poi clicca “Export” (Esporta). Chrome salva un markup strutturato per i sistemi che richiedono XML invece di JSON. L’esportazione in XML è gratuita e illimitata, senza account. Per le pagine, nello stesso menu a tendina trovi il <a href="/it/chat-claude-in-pdf/">PDF</a>.</p>
+<aside class="trust-badge" aria-label="Informazioni sull’estensione">
+  <span class="trophy" aria-hidden="true">🧩</span>
+  <div>
+    <strong>Download Claude conversations — estensione Chrome gratuita per claude.ai</strong>
+    <span>Versione 1.16.2 (settembre 2026) — esportazioni illimitate in Markdown, testo, JSON, XML, CSV e PNG senza account; PDF e ZIP in blocco gratuiti fino a 3 al giorno</span>
+  </div>
+</aside>
+<nav class="toc" aria-label="In questa pagina">
+  <p>In questa pagina</p>
+  <ol>
+    <li><a href="#how-to">Come si esporta una chat Claude in XML?</a></li>
+    <li><a href="#when">Quando conviene il formato XML?</a></li>
+    <li><a href="#preserved">Cosa conserva il file XML?</a></li>
+    <li><a href="#vs-json">XML o JSON quando esporto una chat Claude?</a></li>
+    <li><a href="#bulk">Posso esportare le chat Claude in XML in blocco?</a></li>
+    <li><a href="#cost">Per l’XML serve Pro?</a></li>
+    <li><a href="#faq">FAQ: esportare chat Claude in XML</a></li>
+  </ol>
+</nav>
+
+<h2 id="how-to">Come si esporta una chat Claude in XML?</h2>
+<p>Apri la conversazione su claude.ai in Chrome, clicca il pulsante arancione accanto alla casella dei messaggi, scegli XML e poi clicca “Export”. Download Claude conversations scrive il file in locale. Nella versione 1.16.2 funziona così. A settembre 2026 claude.ai non ha un comando nativo per salvare in XML.</p>
+<ol>
+<li>Installa Download Claude conversations dal Chrome Web Store.</li>
+<li>Ricarica claude.ai e apri l’URL di una conversazione vera, non la home con la casella vuota.</li>
+<li>Clicca il pulsante arancione di download a destra della casella dei messaggi.</li>
+<li>Seleziona XML. L’ultimo formato usato viene ricordato. Con “Select” (Seleziona) puoi spuntare solo i messaggi che ti interessano.</li>
+<li>Clicca “Export”. Chrome scarica l’XML tramite l’API di download del browser. In alternativa clicca “Copy” (Copia) per mettere l’XML negli appunti.</li>
+</ol>
+<p>Per l’XML non serve alcun accesso. Le esportazioni in XML della singola chat sono illimitate, anonime e non inviano nulla ai nostri server. L’accesso con Google viene chiesto solo per il PDF e per l’esportazione in blocco con “Export All” (esporta tutto). Il meccanismo: <a href="/it/come-funziona/">come funziona</a>.</p>
+<p>Se il pulsante arancione non c’è, non sei sull’URL di una conversazione, la scheda va ricaricata, oppure l’estensione è nascosta nel menu a forma di puzzle di Chrome. Fissa Download Claude conversations e aggiorna claude.ai. L’esportazione in XML non compare mai in Claude Desktop né nel terminale di Claude Code.</p>
+<div class="callout callout-tip">
+  <p><strong>Un file o tanti.</strong> Il pulsante arancione esporta in XML la conversazione aperta. Per molti file XML apri “View and Download All Conversations” (visualizza e scarica tutte le conversazioni) ed esegui “Export All” con XML selezionato: un unico ZIP, 3 chat al giorno con il piano gratuito — vedi <a href="/it/esportare-tutte-le-chat-claude/">esportazione in blocco con Export All</a>.</p>
+</div>
+
+<h2 id="when">Quando conviene il formato XML?</h2>
+<p>Esporta la chat in XML quando il sistema di destinazione, la pipeline o uno strumento datato richiede XML per lo scambio di dati strutturati. La maggior parte degli sviluppatori dovrebbe scegliere invece JSON. Markdown serve per gli appunti leggibili. CSV per i fogli di calcolo. PNG è un’immagine. L’XML è nel menu a tendina perché alcuni strumenti accettano ancora XML e non JSON.</p>
+<p>Non esportare in XML pensando di ottenere un JSON “più ufficiale”. Download Claude conversations analizza la conversazione nello stesso modo in entrambi i casi. Cambia la forma del file, non compaiono per magia campi in più. Se nessuno dei tuoi strumenti richiede XML, salta questo formato e usa <a href="/it/formati/json/">JSON</a>.</p>
+<div class="expert-quote">
+  <p>Offriamo XML perché alcune pipeline lo richiedono ancora, non perché pensiamo che batta JSON per ogni esportazione da claude.ai. L’analisi è la stessa: messaggi, mittente, ragionamento e artifact facoltativi. La versione 1.16.2 mantiene XML come uno dei sette formati, gratuito senza account, non un componente aggiuntivo a pagamento.</p>
+  <footer>Il team di Download Claude conversations</footer>
+</div>
+<p>C’è anche chi cerca Claude Chat Downloader o Claude Conversation Downloader per la stessa scheda dello Store. L’esportazione in XML passa da quel pulsante arancione. Le pagine legali possono ancora riportare Claude Exporter. Tutti questi nomi indicano questo prodotto.</p>
+
+<h2 id="preserved">Cosa conserva il file XML?</h2>
+<p>Quando esporti la chat in XML, Download Claude conversations scrive la struttura della conversazione — messaggi, mittente e metadati disponibili — come markup XML. Blocchi di ragionamento, fonti della ricerca web, passaggi tool / MCP e artifact seguono le stesse opzioni di Markdown e JSON: “Thinking” (ragionamento) è una casella nel pannello di esportazione, mentre strumenti e fonti si attivano nelle impostazioni. L’XML non è una versione ridotta di quei formati.</p>
+<p>Nella versione 1.16.2 la disposizione degli artifact può essere “Original”, “Inline”, “Nested” o “Flat” (originale, in linea, annidata, piatta). Il filtro dei mittenti limita l’XML a tutti i messaggi, solo ai tuoi o solo a quelli dell’assistente. I metadati (titolo, orari, modello) possono essere inclusi. Elenco completo delle opzioni: <a href="/it/funzionalita/">funzionalità dell’estensione Chrome</a>.</p>
+<table>
+  <caption>Cosa include l’esportazione di una chat Claude in XML</caption>
+  <thead>
+    <tr>
+      <th scope="col">Elemento</th>
+      <th scope="col">Nell’XML?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Messaggi e mittente</td>
+      <td>Sì, come markup</td>
+    </tr>
+    <tr>
+      <td>Metadati</td>
+      <td>Sì, se l’opzione “Metadata” (metadati) è attiva</td>
+    </tr>
+    <tr>
+      <td>Blocchi di ragionamento</td>
+      <td>Se l’opzione “Thinking” è attiva</td>
+    </tr>
+    <tr>
+      <td>Artifact</td>
+      <td>Sì, in “Original” / “Inline” / “Nested” / “Flat”</td>
+    </tr>
+    <tr>
+      <td>Fonti della ricerca web, passaggi tool / MCP</td>
+      <td>Se li attivi</td>
+    </tr>
+    <tr>
+      <td>Pagine PDF / interfaccia grafica</td>
+      <td>No — l’XML è markup; per le pagine scegli il PDF</td>
+    </tr>
+  </tbody>
+</table>
+<p>Se la conversazione è lunga, scorri finché claude.ai non ha caricato i messaggi precedenti, poi esporta. L’estensione può serializzare solo ciò che la pagina ha visualizzato. Una pagina caricata a metà produce un XML troncato.</p>
+
+<h2 id="vs-json">XML o JSON quando esporto una chat Claude?</h2>
+<p>JSON è la scelta più comune tra gli sviluppatori. Esporta la chat in XML solo quando un sistema a valle lo richiede. Download Claude conversations non rende l’XML “più completo” del JSON. Entrambi possono includere ragionamento e artifact. Nessuno dei due è lo ZIP dell’account di Anthropic. Panoramica: <a href="/it/formati/">formati di esportazione delle chat Claude</a>.</p>
+<table>
+  <caption>XML rispetto agli altri file di esportazione di claude.ai</caption>
+  <thead>
+    <tr>
+      <th scope="col">Formato</th>
+      <th scope="col">Sceglilo quando</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>XML</td>
+      <td>Uno strumento o uno schema che richiede XML</td>
+    </tr>
+    <tr>
+      <td>JSON</td>
+      <td>Script, confronti, la maggior parte delle pipeline moderne</td>
+    </tr>
+    <tr>
+      <td>Markdown</td>
+      <td>Appunti leggibili</td>
+    </tr>
+    <tr>
+      <td>Testo semplice</td>
+      <td>Nessun markup</td>
+    </tr>
+    <tr>
+      <td>CSV</td>
+      <td>Fogli di calcolo, una riga per messaggio</td>
+    </tr>
+    <tr>
+      <td>PDF</td>
+      <td>Lettura, stampa, invio — <a href="/it/chat-claude-in-pdf/">guida al PDF</a></td>
+    </tr>
+    <tr>
+      <td>PNG</td>
+      <td>Un’immagine della conversazione</td>
+    </tr>
+  </tbody>
+</table>
+<p>Settings → Privacy → Export data di Anthropic (le etichette possono essere tradotte se claude.ai è impostato in italiano) produce JSON (uno ZIP), non XML. Il PDF dello stesso pannello sono pagine per le persone, non markup. Nessuno dei due sostituisce l’esportazione in XML dal pulsante arancione. Non aspettarti che questo XML corrisponda a uno schema di Anthropic non pubblicato.</p>
+<p>L’estensione funziona solo su claude.ai in Chrome. Claude Desktop e il terminale di Claude Code non hanno un pulsante XML. Claude Code on the web (claude.ai/code) gira su claude.ai, quindi si esporta come qualsiasi chat. Se una conversazione esiste anche su claude.ai, aprila lì ed esportala in XML. Il comando <code>/export</code> di Claude Code nel terminale è tutt’altra cosa.</p>
+
+<h2 id="bulk">Posso esportare le chat Claude in XML in blocco?</h2>
+<p>Sì. Apri “View and Download All Conversations”, imposta “Chat format” (formato della chat) su XML, filtra la tabella e poi clicca “Export All”. Chrome salva un unico ZIP con un file XML per ogni chat. Con il piano gratuito sono 3 chat al giorno con accesso Google, in condivisione con il PDF. Pro, a 3,99 $ al mese o 26,99 $ all’anno, elimina questo limite per l’XML in blocco.</p>
+<p>La Dashboard elenca la cronologia di claude.ai con ricerca per nome, i filtri “All conversations”, “New”, “Updated” e “Previously exported” (tutte, nuove, aggiornate, già esportate), le schede Chat e Cowork e la ricerca per progetto. “New” indica le chat non ancora esportate con Download Claude conversations. “Previously exported” tiene traccia delle chat già salvate. “Export All” produce un unico ZIP di file XML, uno per chat, non un archivio con formati misti.</p>
+<div class="callout callout-warn">
+  <p><strong>Il limite giornaliero vale per account.</strong> Tre chat al giorno con il piano gratuito, in condivisione con il PDF. Se selezioni 40 conversazioni e te ne restano 3, l’intero lotto viene bloccato, non troncato. Selezionane meno oppure passa a Pro. Le singole esportazioni XML dal pulsante arancione restano illimitate.</p>
+</div>
+<p>Non puoi combinare XML e JSON in un solo clic su “Export All”. Per quell’esecuzione scegli XML. Esegui di nuovo “Export All” con JSON se ti servono entrambe le forme della stessa conversazione di claude.ai; la seconda esecuzione conta di nuovo ogni chat.</p>
+
+<h2 id="cost">Per l’XML serve Pro?</h2>
+<p>No. L’esportazione in XML della singola chat è gratuita e illimitata, senza account e senza contatore — come Markdown, JSON, testo, CSV e PNG. Solo il PDF e “Export All” in blocco hanno un limite gratuito: 3 al giorno con accesso Google. Pro costa 3,99 $ al mese o 26,99 $ all’anno tramite Paddle. Download Claude conversations non considera l’XML un formato a pagamento.</p>
+<p>Il limite si fa sentire con l’XML in blocco. Ogni chat in uno ZIP di “Export All” consuma una delle 3 esportazioni giornaliere, e il conteggio si azzera a mezzanotte UTC. Pro lo elimina e si ripristina su un nuovo computer con lo stesso account Google. Paddle è il merchant of record: questo team non vede mai i numeri delle carte.</p>
+<p>Non ti serve il piano a pagamento di claude.ai di Anthropic. Ti basta un accesso che carichi la conversazione in Chrome. La versione 1.16.2, settembre 2026, non scrive ancora file Word o Notion. Se questo elenco cambia, questa pagina viene aggiornata lo stesso giorno.</p>
+
+<h2 id="faq">FAQ: esportare chat Claude in XML</h2>
+<p>Queste domande riguardano l’esportazione in XML con Download Claude conversations 1.16.2: confronto con JSON, “Export All” in blocco, costi, Desktop, PDF e Pro. Ogni risposta è un dato di prodotto. Il JSON-LD FAQPage nell’intestazione della pagina corrisponde a questo elenco.</p>
+
+<h3>L’XML è meglio del JSON per esportare le chat Claude?</h3>
+<p>In generale no. JSON è la scelta più comune tra gli sviluppatori. Esporta la chat in XML quando il sistema a valle richiede XML per lo scambio di dati strutturati. L’analisi di claude.ai è la stessa; cambia la forma del file.</p>
+
+<h3>Posso esportare le chat Claude in XML in blocco?</h3>
+<p>Sì. Lo stesso flusso “Export All” della Dashboard supporta l’XML e salva un unico ZIP con un file XML per chat. Con il piano gratuito copre 3 chat al giorno con accesso Google; Pro, a 3,99 $ al mese o 26,99 $ all’anno, è illimitato.</p>
+
+<h3>L’XML è un formato solo a pagamento?</h3>
+<p>No. Le esportazioni in XML della singola chat sono illimitate e non richiedono account, come Markdown, testo, JSON, CSV e PNG. Solo PDF e “Export All” in blocco hanno un limite gratuito di 3 al giorno. Pro costa 3,99 $ al mese o 26,99 $ all’anno.</p>
+
+<h3>L’XML corrisponde allo ZIP di Anthropic?</h3>
+<p>No. Export data di Anthropic è uno ZIP JSON differito dell’intero account. Download Claude conversations scrive subito in Chrome un file XML per singola chat (o per singola selezione). Non hanno lo stesso schema.</p>
+
+<h3>Esportare in XML crea anche un PDF?</h3>
+<p>No. L’XML è markup. Per le pagine scegli il PDF nello stesso pannello; i sette formati sono PDF, Markdown, JSON, testo semplice, XML, CSV e PNG. Il PDF richiede l’accesso con Google e rientra nelle 3 esportazioni al giorno del piano gratuito.</p>
+
+<h3>Posso esportare una chat Claude in XML da Desktop?</h3>
+<p>No. L’estensione Chrome si attiva solo su claude.ai. Claude Desktop non mostra mai il menu a tendina con XML. Apri la stessa conversazione su claude.ai in Chrome, se esiste anche lì.</p>
+
+<h3>Mi serve Pro per esportare una chat Claude in XML una volta?</h3>
+<p>No. Non ti serve nemmeno un account. Le esportazioni in XML della singola chat sono illimitate con il piano gratuito. Pro, a 3,99 $ al mese o 26,99 $ all’anno, elimina solo il limite di 3 al giorno per “Export All” in blocco e per il PDF.</p>
+</article>
+</main>
+<section class="final-cta page-cta" aria-label="Installa">
+  <div class="wrap">
+    <div class="final-cta-panel">
+      <p class="final-kicker">Download Claude conversations</p>
+      <h2>Installa l’estensione e scarica le chat Claude in pochi secondi</h2>
+      <p>Trasforma le conversazioni Claude importanti in PDF, Markdown, JSON, testo, CSV, XML o PNG — in locale, da Chrome.</p>
+      <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=it-formats-xml" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Aggiungi a Chrome</a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="logo" href="/it/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
+      <p class="legal-note">Estensione di Chrome per scaricare le chat di Claude.ai in PDF, Markdown, JSON, testo semplice, CSV, XML o PNG.</p>
+    </div>
+    <div>
+      <h2>Installa</h2>
+      <a class="install-link" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=it-footer" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Estensione di Chrome</a>
+    </div>
+    <div>
+      <h2>Prodotto</h2>
+      <a href="/it/funzionalita/">Funzionalità</a>
+      <a href="/it/formati/">Formati</a>
+      <a href="/it/esportare-tutte-le-chat-claude/">Esportare tutte le chat</a>
+      <a href="/it/come-funziona/">Come funziona</a>
+    </div>
+    <div>
+      <h2>Guide</h2>
+      <a href="/it/come-scaricare-chat-claude/">Come scaricare una chat Claude</a>
+      <a href="/it/come-esportare-chat-claude/">Come esportare una chat Claude</a>
+      <a href="/it/esportare-chat-claude/">Esportare una chat Claude</a>
+      <a href="/it/estrattore-conversazioni-claude/">Estrattore di conversazioni Claude</a>
+      <a href="/it/esportare-conversazione-claude-code/">Esportare da Claude Code</a>
+      <a href="/it/chat-claude-in-pdf/">Chat Claude in PDF</a>
+      <a href="/it/esportare-chat-claude-desktop/">Esportare da Claude Desktop</a>
+      <a href="/it/esportare-conversazione-claude/">Esportare una conversazione Claude</a>
+      <a href="/it/come-salvare-chat-claude/">Come salvare una chat Claude</a>
+      <a href="/it/scaricare-conversazione-claude/">Scaricare una conversazione Claude</a>
+    </div>
+    <div>
+      <h2>Note legali</h2>
+      <a href="/it/chi-siamo/">Chi siamo</a>
+      <a href="/it/chi-siamo/#contact">Contatti</a>
+      <a href="/privacy/" hreflang="en">Privacy (in inglese)</a>
+      <a href="/terms/" hreflang="en">Termini (in inglese)</a>
+      <a href="/refund/" hreflang="en">Rimborsi (in inglese)</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Download Claude conversations. Tutti i diritti riservati.</div>
+    <div>
+      <a href="/privacy/" hreflang="en">Informativa sulla privacy (in inglese)</a>
+      <a href="/terms/" hreflang="en">Termini di servizio (in inglese)</a>
+      <a href="/refund/" hreflang="en">Rimborsi (in inglese)</a>
+    </div>
+  </div>
+  <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/formats/xml/" hreflang="en" lang="en">English</a> <a href="/de/formate/xml/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/formats/xml/" hreflang="fr" lang="fr">Français</a> <a href="/es/formatos/xml/" hreflang="es" lang="es">Español</a> <a href="/it/formati/xml/" hreflang="it" lang="it">Italiano</a> <a href="/pt/formatos/xml/" hreflang="pt" lang="pt">Português</a> <a href="/nl/formaten/xml/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/format/xml/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/formater/xml/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/formater/xml/" hreflang="da" lang="da">Dansk</a> <a href="/fi/formaatit/xml/" hreflang="fi" lang="fi">Suomi</a> <a href="/pl/formaty/xml/" hreflang="pl" lang="pl">Polski</a> <a href="/cs/formaty/xml/" hreflang="cs" lang="cs">Čeština</a> <a href="/sk/formaty/xml/" hreflang="sk" lang="sk">Slovenčina</a> <a href="/hu/formatumok/xml/" hreflang="hu" lang="hu">Magyar</a> <a href="/ro/formate/xml/" hreflang="ro" lang="ro">Română</a> <a href="/el/formats/xml/" hreflang="el" lang="el">Ελληνικά</a> <a href="/tr/formatlar/xml/" hreflang="tr" lang="tr">Türkçe</a> <a href="/ja/formats/xml/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/formats/xml/" hreflang="ko" lang="ko">한국어</a> <a href="/zh-hant/formats/xml/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="/he/formats/xml/" hreflang="he" lang="he">עברית</a> <a href="/ar/formats/xml/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
+  <p class="disclaimer">Chat elaborate nel tuo browser · Accesso con Google solo per PDF, esportazione in blocco e Pro · Non affiliato ad Anthropic, PBC. Claude è un marchio di Anthropic. Estensione di Chrome indipendente, non un prodotto ufficiale di Anthropic. Assistenza: <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

@@ -44,6 +44,7 @@ SLUGS = load("i18n/slugs.json")
 PAGES = SLUGS["pages"]
 PATH_TO_ID = {v: k for k, v in PAGES.items()}
 LANGS = [l for l in LOCALES if l != "en"]
+CJK = ("ja", "ko", "zh-hant")  # shorter title/description limits
 
 
 def labels(lang):
@@ -130,7 +131,7 @@ def switcher(lang, pid, lb):
     name = esc(LOCALES[lang]["name"])
     return ('<!-- i18n:switch --><details class="lang-switch"><summary aria-label="%s: %s">%s'
             '<span class="lang-name">%s</span><span class="lang-code" aria-hidden="true">%s</span></summary><ul>%s</ul></details><!-- /i18n:switch -->'
-            % (esc(lb["language"]), name, GLOBE, name, lang, "".join(items)))
+            % (esc(lb["language"]), name, GLOBE, name, LOCALES[lang].get("code", lang), "".join(items)))
 
 
 def footer_langs(lang, pid):
@@ -439,11 +440,11 @@ def check():
             d = re.search(r'<meta name="description" content="([^"]*)"', s)
             if not t or not t.group(1).strip():
                 errors.append("%s: empty title" % tag)
-            elif len(html.unescape(t.group(1))) > (38 if lang in ("ja", "ko") else 70):
+            elif len(html.unescape(t.group(1))) > (38 if lang in CJK else 70):
                 warns.append("%s: long title (%d)" % (tag, len(html.unescape(t.group(1)))))
             if not d:
                 errors.append("%s: no meta description" % tag)
-            elif len(html.unescape(d.group(1))) > (90 if lang in ("ja", "ko") else 160):
+            elif len(html.unescape(d.group(1))) > (90 if lang in CJK else 160):
                 warns.append("%s: long description (%d)" % (tag, len(html.unescape(d.group(1)))))
             if pid == "home" and 'id="faq"' not in s:
                 errors.append("%s: id=\"faq\" missing (nav links to it)" % tag)

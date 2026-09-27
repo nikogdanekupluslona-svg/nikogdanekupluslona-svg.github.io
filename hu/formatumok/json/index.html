@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Claude-beszélgetés exportálása JSON-ba</title>
+  <meta name="description" content="Claude-beszélgetés exportálása JSON-ba a teljes üzenetfával — nem az Anthropic fiókszintű export-ZIP-je. Egyetlen chat vagy tömeges exportálás.">
+  <link rel="canonical" href="https://chat-downloader.com/hu/formatumok/json/">
+  <!-- i18n:head -->
+  <link rel="alternate" hreflang="en" href="https://chat-downloader.com/formats/json/">
+  <link rel="alternate" hreflang="de" href="https://chat-downloader.com/de/formate/json/">
+  <link rel="alternate" hreflang="fr" href="https://chat-downloader.com/fr/formats/json/">
+  <link rel="alternate" hreflang="es" href="https://chat-downloader.com/es/formatos/json/">
+  <link rel="alternate" hreflang="it" href="https://chat-downloader.com/it/formati/json/">
+  <link rel="alternate" hreflang="pt" href="https://chat-downloader.com/pt/formatos/json/">
+  <link rel="alternate" hreflang="nl" href="https://chat-downloader.com/nl/formaten/json/">
+  <link rel="alternate" hreflang="sv" href="https://chat-downloader.com/sv/format/json/">
+  <link rel="alternate" hreflang="nb" href="https://chat-downloader.com/nb/formater/json/">
+  <link rel="alternate" hreflang="da" href="https://chat-downloader.com/da/formater/json/">
+  <link rel="alternate" hreflang="fi" href="https://chat-downloader.com/fi/formaatit/json/">
+  <link rel="alternate" hreflang="pl" href="https://chat-downloader.com/pl/formaty/json/">
+  <link rel="alternate" hreflang="cs" href="https://chat-downloader.com/cs/formaty/json/">
+  <link rel="alternate" hreflang="sk" href="https://chat-downloader.com/sk/formaty/json/">
+  <link rel="alternate" hreflang="hu" href="https://chat-downloader.com/hu/formatumok/json/">
+  <link rel="alternate" hreflang="ro" href="https://chat-downloader.com/ro/formate/json/">
+  <link rel="alternate" hreflang="el" href="https://chat-downloader.com/el/formats/json/">
+  <link rel="alternate" hreflang="tr" href="https://chat-downloader.com/tr/formatlar/json/">
+  <link rel="alternate" hreflang="ja" href="https://chat-downloader.com/ja/formats/json/">
+  <link rel="alternate" hreflang="ko" href="https://chat-downloader.com/ko/formats/json/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://chat-downloader.com/zh-hant/formats/json/">
+  <link rel="alternate" hreflang="he" href="https://chat-downloader.com/he/formats/json/">
+  <link rel="alternate" hreflang="ar" href="https://chat-downloader.com/ar/formats/json/">
+  <link rel="alternate" hreflang="x-default" href="https://chat-downloader.com/formats/json/">
+  <meta property="og:locale" content="hu_HU">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="it_IT">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="sv_SE">
+  <meta property="og:locale:alternate" content="nb_NO">
+  <meta property="og:locale:alternate" content="da_DK">
+  <meta property="og:locale:alternate" content="fi_FI">
+  <meta property="og:locale:alternate" content="pl_PL">
+  <meta property="og:locale:alternate" content="cs_CZ">
+  <meta property="og:locale:alternate" content="sk_SK">
+  <meta property="og:locale:alternate" content="ro_RO">
+  <meta property="og:locale:alternate" content="el_GR">
+  <meta property="og:locale:alternate" content="tr_TR">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <meta property="og:locale:alternate" content="zh_TW">
+  <meta property="og:locale:alternate" content="he_IL">
+  <meta property="og:locale:alternate" content="ar_AE">
+  <!-- /i18n:head -->
+  <meta property="og:title" content="Claude-beszélgetés exportálása JSON-ba">
+  <meta property="og:description" content="Claude-beszélgetés exportálása JSON-ba a teljes üzenetfával — nem az Anthropic fiókszintű export-ZIP-je. Egyetlen chat vagy tömeges exportálás.">
+  <meta property="og:url" content="https://chat-downloader.com/hu/formatumok/json/">
+  <meta property="og:image" content="https://chat-downloader.com/assets/widget-guide.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chat Downloader">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Claude-beszélgetés exportálása JSON-ba">
+  <meta name="twitter:description" content="Claude-beszélgetés exportálása JSON-ba a teljes üzenetfával — nem az Anthropic fiókszintű export-ZIP-je. Egyetlen chat vagy tömeges exportálás.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME1YXGZKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GME1YXGZKR');
+  </script>
+  
+  
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Exportálhatok tömegesen Claude-beszélgetéseket JSON-ba?","acceptedAnswer":{"@type":"Answer","text":"Igen. Az irányítópult „Export All” funkciója támogatja a JSON-t, és egyetlen ZIP-be menti, chatenként egy JSON-fájllal. Az ingyenes csomagban ez napi 3 chat Google-bejelentkezéssel; a havi 3,99 USD vagy évi 26,99 USD árú Pro korlátlan."}},{"@type":"Question","name":"Dokumentált a JSON szerkezete?","acceptedAnswer":{"@type":"Answer","text":"A claude.ai saját üzenetfáját követi: feladó, tartalomblokkok, időbélyegek és modell-metaadatok, valamint artifactok, gondolkodási blokkok, webes keresési források és eszköz- / MCP-lépések, ha ezeket bekapcsolod. Nem az Anthropic fiók-ZIP-jének sémája."}},{"@type":"Question","name":"Kell Pro a Claude-beszélgetés JSON-ba exportálásához?","acceptedAnswer":{"@type":"Answer","text":"Nem. Az egyes chatek JSON-exportja korlátlan és fiók nélküli, ugyanúgy, mint minden formátum a PDF kivételével. A havi 3,99 USD vagy évi 26,99 USD árú Pro csak a PDF és a tömeges „Export All” napi 3-as korlátját oldja fel."}},{"@type":"Question","name":"Összehasonlíthatom egy chat két JSON-exportját?","acceptedAnswer":{"@type":"Answer","text":"Igen. Minden JSON-exportnál önálló, ugyanúgy felépített fájlt kapsz. Ugyanannak a beszélgetésnek két, különböző időpontban készült exportját úgy hasonlíthatod össze, mint bármely más JSON-fájlt."}},{"@type":"Question","name":"Ez a JSON ugyanaz, mint az Anthropic Export data?","acceptedAnswer":{"@type":"Answer","text":"Nem. Az Anthropic Export data a teljes fiók késleltetett ZIP-je. A Download Claude conversations chatenkénti (vagy kijelölésenkénti) JSON-fájlt ír, azonnal, a Chrome-ban. Mindkettő lehet JSON, de nem cserélhetők fel egymással."}},{"@type":"Question","name":"PDF-et is készít a JSON-export?","acceptedAnswer":{"@type":"Answer","text":"Nem. A JSON strukturált adat. Oldalakhoz válaszd a PDF-et ugyanabban a panelben; a hét formátum: PDF, Markdown, JSON, sima szöveg, XML, CSV és PNG. A PDF-hez Google-bejelentkezés kell, és az ingyenes csomagban beleszámít a napi 3 alkalomba."}},{"@type":"Question","name":"Működik a JSON-export a Claude Desktop alkalmazásban?","acceptedAnswer":{"@type":"Answer","text":"Nem. A Chrome-bővítmény csak a claude.ai oldalon fut. A Claude Desktop sosem mutatja a JSON lehetőséget. Nyisd meg ugyanazt a beszélgetést a claude.ai-on a Chrome-ban, ha ott is megvan."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Kezdőlap","item":"https://chat-downloader.com/hu/"},{"@type":"ListItem","position":2,"name":"Formátumok","item":"https://chat-downloader.com/hu/formatumok/"},{"@type":"ListItem","position":3,"name":"JSON","item":"https://chat-downloader.com/hu/formatumok/json/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Ugrás a tartalomra</a>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a class="logo" href="/hu/">
+        <img src="/assets/icon.svg" alt="">
+        <span>Download Claude conversations</span>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="/hu/claude-chat-letoltese/">Letöltés</a><a href="/hu/hogyan-exportaljam-a-claude-chatet/">Exportálás</a><a href="/hu/osszes-claude-chat-exportalasa/">Összes chat</a><a href="/hu/formatumok/">Formátumok</a><a href="/hu/#faq">GYIK</a>
+        <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=hu-formats-json" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Hozzáadás a Chrome-hoz</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=hu-formats-json" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Hozzáadás a Chrome-hoz</a>
+      <!-- i18n:switch --><details class="lang-switch"><summary aria-label="Nyelv: Magyar"><svg class="lang-globe" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span class="lang-name">Magyar</span><span class="lang-code" aria-hidden="true">hu</span></summary><ul><li><a href="/formats/json/" hreflang="en" lang="en">English</a></li><li><a href="/de/formate/json/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/formats/json/" hreflang="fr" lang="fr">Français</a></li><li><a href="/es/formatos/json/" hreflang="es" lang="es">Español</a></li><li><a href="/it/formati/json/" hreflang="it" lang="it">Italiano</a></li><li><a href="/pt/formatos/json/" hreflang="pt" lang="pt">Português</a></li><li><a href="/nl/formaten/json/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/sv/format/json/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="/nb/formater/json/" hreflang="nb" lang="nb">Norsk</a></li><li><a href="/da/formater/json/" hreflang="da" lang="da">Dansk</a></li><li><a href="/fi/formaatit/json/" hreflang="fi" lang="fi">Suomi</a></li><li><a href="/pl/formaty/json/" hreflang="pl" lang="pl">Polski</a></li><li><a href="/cs/formaty/json/" hreflang="cs" lang="cs">Čeština</a></li><li><a href="/sk/formaty/json/" hreflang="sk" lang="sk">Slovenčina</a></li><li><a href="/hu/formatumok/json/" hreflang="hu" lang="hu" aria-current="true">Magyar</a></li><li><a href="/ro/formate/json/" hreflang="ro" lang="ro">Română</a></li><li><a href="/el/formats/json/" hreflang="el" lang="el">Ελληνικά</a></li><li><a href="/tr/formatlar/json/" hreflang="tr" lang="tr">Türkçe</a></li><li><a href="/ja/formats/json/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/ko/formats/json/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/zh-hant/formats/json/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li><li><a href="/he/formats/json/" hreflang="he" lang="he">עברית</a></li><li><a href="/ar/formats/json/" hreflang="ar" lang="ar">العربية</a></li></ul></details><!-- /i18n:switch -->
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menü">☰</button>
+    </div>
+  </div>
+</header>
+<nav class="crumbs" aria-label="Morzsamenü"><a href="/hu/">Kezdőlap</a> / <a href="/hu/formatumok/">Formátumok</a> / JSON</nav>
+<main id="main">
+<article class="band prose">
+<p class="article-meta">Frissítve: <time datetime="2026-09">2026. szeptember</time> · Bővítmény 1.16.2</p>
+<h1 class="page-h1">Claude-beszélgetés exportálása JSON-ba szkriptekhez</h1>
+<p class="lead">A Claude-beszélgetés exportálása JSON-ba így megy: telepítsd a Download Claude conversations bővítményt, nyisd meg a beszélgetést a claude.ai oldalon, kattints a narancssárga gombra, válaszd a JSON formátumot, majd kattints az „Export” (exportálás) gombra. A Chrome chatenként egy fájlt ment az üzenetfával. Ez a fájl nem az Anthropic fiók-ZIP-je. A JSON-exportálás korlátlan és ingyenes, fiók nélkül; a Pro (havi 3,99 USD vagy évi 26,99 USD) csak a tömeges exportnál és a PDF-nél számít.</p>
+<aside class="trust-badge" aria-label="A bővítményről">
+  <span class="trophy" aria-hidden="true">🧩</span>
+  <div>
+    <strong>Download Claude conversations — ingyenes Chrome-bővítmény a claude.ai-hoz</strong>
+    <span>1.16.2-es verzió (2026. szeptember) — korlátlan Markdown-, szöveg-, JSON-, XML-, CSV- és PNG-exportálás fiók nélkül; a PDF és a tömeges ZIP napi 3 alkalomig ingyenes</span>
+  </div>
+</aside>
+<nav class="toc" aria-label="Ezen az oldalon">
+  <p>Ezen az oldalon</p>
+  <ol>
+    <li><a href="#how-to">Hogyan exportálhatok Claude-beszélgetést JSON-ba?</a></li>
+    <li><a href="#when">Mikor érdemes JSON-ba exportálni a beszélgetést?</a></li>
+    <li><a href="#inside">Mi van egy Claude-beszélgetés JSON-exportjában?</a></li>
+    <li><a href="#vs-zip">Beszélgetés JSON-ban vagy az Anthropic Export data?</a></li>
+    <li><a href="#bulk">Exportálhatok tömegesen JSON-ba?</a></li>
+    <li><a href="#cost">Kell Pro a JSON-exportáláshoz?</a></li>
+    <li><a href="#faq">GYIK: Claude-beszélgetés exportálása JSON-ba</a></li>
+  </ol>
+</nav>
+
+<h2 id="how-to">Hogyan exportálhatok Claude-beszélgetést JSON-ba?</h2>
+<p>Nyisd meg a beszélgetést a claude.ai oldalon a Chrome-ban, kattints az üzenetmező melletti narancssárga gombra, válaszd a JSON formátumot, majd kattints az „Export” gombra. A Download Claude conversations helyben, a gépeden írja meg a fájlt. Az 1.16.2-es verzióban így működik a JSON-export. A claude.ai-on 2026 szeptemberében nincs chatenkénti „mentés JSON-ként” lehetőség. Angolul sokan így keresik: „claude export chat to json”.</p>
+<ol>
+<li>Telepítsd a Download Claude conversations bővítményt a Chrome Web Store-ból.</li>
+<li>Töltsd újra a claude.ai oldalt, és nyiss meg egy valódi beszélgetés-URL-t, ne az üres kezdő szerkesztőt.</li>
+<li>Kattints az üzenetmezőtől jobbra lévő narancssárga letöltés gombra.</li>
+<li>Válaszd a JSON formátumot. A bővítmény megjegyzi a legutóbb használt formátumot. A „Select” (kijelölés) gombbal csak a kívánt üzeneteket jelölheted be.</li>
+<li>Kattints az „Export” gombra. A Chrome a böngésző letöltési API-ján keresztül menti a JSON-t. Vagy kattints a „Copy” (másolás) gombra, és a JSON a vágólapra kerül.</li>
+</ol>
+<p>A JSON-exportáláshoz nem kell bejelentkezni. Az egyes chatek JSON-exportja korlátlan, névtelen, és semmit sem küld a szervereinkre. Google-bejelentkezést csak a PDF és a tömeges „Export All” (összes exportálása) kér. A részletek: <a href="/hu/hogyan-mukodik/">hogyan működik</a>.</p>
+<p>Ha nem látod a narancssárga gombot, akkor nem beszélgetés-URL-en vagy, a lapot újra kell tölteni, vagy a bővítmény a Chrome puzzle-menüjében rejtőzik. Rögzítsd a Download Claude conversations bővítményt, majd frissítsd a claude.ai oldalt. A tartalomszkript sosem fut a Claude Desktop alkalmazásban vagy a Claude Code terminálban.</p>
+<div class="callout callout-tip">
+  <p><strong>Egy beszélgetés vagy sok fájl.</strong> A narancssárga gomb a megnyitott chatet exportálja JSON-ba. Sok JSON-fájlhoz nyisd meg a „View and Download All Conversations” (összes beszélgetés megtekintése és letöltése) nézetet, és indítsd el az „Export All” funkciót JSON formátummal: egy ZIP, az ingyenes csomagban napi 3 chat — lásd: <a href="/hu/osszes-claude-chat-exportalasa/">tömeges „Export All”</a>.</p>
+</div>
+
+<h2 id="when">Mikor érdemes JSON-ba exportálni a beszélgetést?</h2>
+<p>Akkor exportáld JSON-ba a Claude-beszélgetést, ha a fájlt egy szkript, egy indexelő vagy egy összehasonlító eszköz olvassa majd. A JSON az üzenetfát írja le, nem Obsidianben való olvasásra készül. Ha emberi olvasáshoz címsorokat és kódblokkokat szeretnél, válaszd inkább a Markdownt. Táblázatkezelőhöz válaszd a <a href="/hu/formatumok/">CSV</a> formátumot: üzenetenként egy sor.</p>
+<p>A claude.ai oldalról másolt-beillesztett szövegből eltűnik, ki mit írt. A nyomtatás a weboldal keretét is megtartja. JSON-exportnál a Download Claude conversations adatként őrzi meg a köröket, a feladókat és a választható gondolkodási blokkokat, nem egyetlen összemosott bekezdésként. Ezért választják a fejlesztők a JSON-t a sima szöveg helyett.</p>
+<div class="expert-quote">
+  <p>A JSON-t az oldalon már meglévő claude.ai üzenetfából írjuk — feladó, tartalomblokkok, időbélyegek, modell-metaadatok —, a beszélgetés feltöltése nélkül. Ez a JSON nem az Anthropic fiók-ZIP-je. Az 1.16.2-es verzióban a hét formátum egyike, a PDF és a CSV mellett, és ingyenes, fiók nélkül.</p>
+  <footer>A Download Claude conversations csapata</footer>
+</div>
+<p>Ugyanezt a bővítményt sokan Claude Chat Downloader és Claude Conversation Downloader néven keresik. A JSON-export ez a narancssárga gomb, nem egy második termék. A jogi oldalakon még szerepelhet a Claude Exporter név is.</p>
+
+<h2 id="inside">Mi van egy Claude-beszélgetés JSON-exportjában?</h2>
+<p>Egy Claude-beszélgetés JSON-exportja a claude.ai üzenetfáját követi: feladó, tartalomblokkok, időbélyegek és modell-metaadatok. A gondolkodási blokkok, a webes keresési források, az eszköz- / MCP-lépések és az artifactok akkor kerülnek bele, ha ezek a beállítások be vannak kapcsolva: a „Thinking” (gondolkodás) jelölőnégyzet az exportpanelen van, az eszközöket és a forrásokat pedig a beállításokban kapcsolod be. A feladószűrővel a fájl tartalmazhat minden üzenetet, csak az emberi vagy csak az asszisztensi üzeneteket. Semmi sem lesz előbb Markdownná lapítva.</p>
+<p>Az artifactok elrendezése az 1.16.2-es verzióban „Original”, „Inline”, „Nested” vagy „Flat” (eredeti, szövegbe ágyazott, egymásba ágyazott vagy lapos). Ezek határozzák meg, hogyan ágyazódik az artifactok tartalma a JSON-ba — ugyanaz a négy lehetőség, mint a Markdownnál és az XML-nél. A teljes lista: <a href="/hu/funkciok/">a Chrome-bővítmény funkciói</a>. Ha adatok helyett oldalakra van szükséged, exportálj <a href="/hu/claude-chat-pdf-ben/">PDF</a>-et.</p>
+<table>
+  <caption>Mezők, amelyeket általában kapsz, ha JSON-ba exportálod a Claude-beszélgetést</caption>
+  <thead>
+    <tr>
+      <th scope="col">Elem</th>
+      <th scope="col">Benne van a JSON-ban?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Üzenetfa (körök, feladó)</td>
+      <td>Igen</td>
+    </tr>
+    <tr>
+      <td>Tartalomblokkok</td>
+      <td>Igen</td>
+    </tr>
+    <tr>
+      <td>Időbélyegek és modell-metaadatok</td>
+      <td>Igen, ha a „Metadata” (metaadatok) be van kapcsolva</td>
+    </tr>
+    <tr>
+      <td>Gondolkodási blokkok</td>
+      <td>Ha a „Thinking” kapcsoló be van kapcsolva</td>
+    </tr>
+    <tr>
+      <td>Artifactok</td>
+      <td>Igen, a választott elrendezésben</td>
+    </tr>
+    <tr>
+      <td>Webes keresési források, eszköz- / MCP-lépések</td>
+      <td>Ha bekapcsolod őket</td>
+    </tr>
+    <tr>
+      <td>Fiókszintű ZIP-csomagolás</td>
+      <td>Nem — az az Anthropic Export data</td>
+    </tr>
+  </tbody>
+</table>
+<p>Hosszú beszélgetésnél görgess addig, amíg a claude.ai be nem tölti a korábbi üzeneteket is, és csak utána exportálj JSON-ba. A bővítmény csak azt tudja szerializálni, amit az oldal már megjelenített. A félig betöltött DOM-ból csonka JSON-fájl lesz.</p>
+
+<h2 id="vs-zip">Beszélgetés JSON-ban vagy az Anthropic Export data?</h2>
+<p>Mindkettő JSON, de nem ugyanolyan a szerkezetük és a terjedelmük. Az Anthropic Settings → Privacy → Export data (a feliratok magyarul is megjelenhetnek, ha a claude.ai nyelve magyar) várakozás után e-mailben küld egy ZIP-et a teljes fiókról. A JSON-exporttal viszont egyetlen beszélgetést kapsz, azonnal, a Chrome-ban. A ZIP-et biztonsági mentésre használd.</p>
+<table>
+  <caption>Két különböző JSON-útvonal a claude.ai-ból</caption>
+  <thead>
+    <tr>
+      <th scope="col">Módszer</th>
+      <th scope="col">Terjedelem</th>
+      <th scope="col">Mikor érkezik a fájl</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Download Claude conversations JSON</td>
+      <td>Ez a chat vagy egy tömeges kijelölés</td>
+      <td>Azonnal, Chrome-letöltésként</td>
+    </tr>
+    <tr>
+      <td>Settings → Privacy → Export data</td>
+      <td>A teljes fiók</td>
+      <td>E-mailben küldött, lejáró hivatkozással</td>
+    </tr>
+    <tr>
+      <td>Download Claude conversations PDF</td>
+      <td>Ez a chat oldalakként</td>
+      <td>Azonnal, de PDF, nem JSON</td>
+    </tr>
+  </tbody>
+</table>
+<p>Az Anthropic ZIP-kérésében nem választhatsz Markdownt. A bővítmény JSON-ját sem használhatod annak a ZIP-sémának a közvetlen helyettesítőjeként. Formátum-áttekintő: <a href="/hu/formatumok/">Claude chat exportformátumok</a>. A <a href="/hu/claude-chat-pdf-ben/">PDF</a> olvasásra való, nem JSON-export.</p>
+<p>A Download Claude conversations nem áll kapcsolatban az Anthropic, PBC céggel. A tartalomszkript azt a munkamenetet használja, amelyet már megnyitottál a claude.ai-on. Nem jelentkezik be külön hitelesítő adatokkal az Anthropichoz. Tartsd be az Anthropic szabályait a fiókodra vonatkozóan.</p>
+
+<h2 id="bulk">Exportálhatok tömegesen JSON-ba?</h2>
+<p>Igen. Nyisd meg a „View and Download All Conversations” nézetet, állítsd a „Chat format” (chatformátum) értékét JSON-ra, szűrd a táblázatot, majd kattints az „Export All” gombra. A Chrome egy ZIP-et ment, benne chatenként egy JSON-fájllal. Az ingyenes csomagban ez napi 3 chat Google-bejelentkezéssel, a PDF-fel közösen. A Pro havi 3,99 USD vagy évi 26,99 USD áron megszünteti ezt a korlátot a tömeges JSON-exportnál.</p>
+<p>Az irányítópult (Dashboard) a claude.ai előzményeit listázza: név szerinti keresés, „All conversations”, „New”, „Updated” és „Previously exported” szűrők (összes beszélgetés, új, frissített, korábban exportált), „Chat” és „Cowork” fülek, valamint projektkeresés. A „New” azt jelenti, hogy a chatet még nem exportáltad a Download Claude conversations bővítménnyel. A „Previously exported” a már mentett chateket követi. Az „Export All” egy ZIP chatenkénti JSON-fájlokkal, nem vegyes formátumú archívum.</p>
+<div class="callout callout-warn">
+  <p><strong>A napi korlát fiókonként érvényes.</strong> Az ingyenes csomagban napi három chat, a PDF-fel közösen. Ha 40 beszélgetést jelölsz ki, és már csak 3 maradt, a teljes köteg blokkolva lesz, nem csak megrövidül. Jelölj ki kevesebbet, vagy használd a Pro csomagot. A narancssárga gombbal indított egyedi JSON-exportok korlátlanok maradnak.</p>
+</div>
+<p>Ugyanannak a claude.ai beszélgetésnek két, különböző időpontban készült JSON-exportját úgy hasonlíthatod össze, mint bármely más JSON-fájlt. Minden export önálló. Ha ugyanazokra a chatekre másodszor is futtatod az „Export All” funkciót, minden chat újra beszámít.</p>
+
+<h2 id="cost">Kell Pro a JSON-exportáláshoz?</h2>
+<p>Nem. Egy chat JSON-exportja ingyenes és korlátlan, fiók és számláló nélkül — ugyanúgy, mint a Markdown, a szöveg, az XML, a CSV és a PNG. Csak a PDF-nek és a tömeges „Export All” funkciónak van ingyenes korlátja: napi 3 Google-bejelentkezéssel. A Pro havi 3,99 USD vagy évi 26,99 USD a Paddle-en keresztül. A Download Claude conversations nem számol fel külön díjat a JSON-exportért.</p>
+<p>A korlát a tömeges JSON-exportnál jelenik meg. Az „Export All” ZIP minden chatje egyet használ el a napi 3-ból, a számláló pedig éjfélkor (UTC) nullázódik. A Pro megszünteti a korlátot, és ugyanazzal a Google-fiókkal új gépen is visszaállítható. A Paddle a hivatalos eladó (merchant of record); ez a csapat sosem látja a kártyaszámokat.</p>
+<p>A bővítmény csak a claude.ai oldalon fut, a Chrome-ban. A Claude Desktop és a Claude Code terminál nem kap JSON-gombot; a Claude Code on the web (claude.ai/code) a claude.ai-on fut, így ugyanúgy exportálható, mint bármely chat. A terminálos Claude Code <code>/export</code> parancsa vagy a lemezen lévő JSONL egy másik útvonal. Az 1.16.2-es verzió (2026. szeptember) továbbra sem készít Word- vagy Notion-fájlt.</p>
+
+<h2 id="faq">GYIK: Claude-beszélgetés exportálása JSON-ba</h2>
+<p>Ezek a kérdések a Download Claude conversations 1.16.2 JSON-exportjáról szólnak: tömeges „Export All”, séma, költség, összehasonlítás, az Anthropic ZIP-je, PDF és Desktop. Minden válasz termékinformáció. Az oldal fejlécében lévő FAQPage JSON-LD ugyanezt a listát tartalmazza.</p>
+
+<h3>Exportálhatok tömegesen Claude-beszélgetéseket JSON-ba?</h3>
+<p>Igen. Az irányítópult „Export All” funkciója támogatja a JSON-t, és egyetlen ZIP-be menti, chatenként egy JSON-fájllal. Az ingyenes csomagban ez napi 3 chat Google-bejelentkezéssel; a havi 3,99 USD vagy évi 26,99 USD árú Pro korlátlan.</p>
+
+<h3>Dokumentált a JSON szerkezete?</h3>
+<p>A claude.ai saját üzenetfáját követi: feladó, tartalomblokkok, időbélyegek és modell-metaadatok, valamint artifactok, gondolkodási blokkok, webes keresési források és eszköz- / MCP-lépések, ha ezeket bekapcsolod. Nem az Anthropic fiók-ZIP-jének sémája.</p>
+
+<h3>Kell Pro a Claude-beszélgetés JSON-ba exportálásához?</h3>
+<p>Nem. Az egyes chatek JSON-exportja korlátlan és fiók nélküli, ugyanúgy, mint minden formátum a PDF kivételével. A havi 3,99 USD vagy évi 26,99 USD árú Pro csak a PDF és a tömeges „Export All” napi 3-as korlátját oldja fel.</p>
+
+<h3>Összehasonlíthatom egy chat két JSON-exportját?</h3>
+<p>Igen. Minden JSON-exportnál önálló, ugyanúgy felépített fájlt kapsz. Ugyanannak a beszélgetésnek két, különböző időpontban készült exportját úgy hasonlíthatod össze, mint bármely más JSON-fájlt.</p>
+
+<h3>Ez a JSON ugyanaz, mint az Anthropic Export data?</h3>
+<p>Nem. Az Anthropic Export data a teljes fiók késleltetett ZIP-je. A Download Claude conversations chatenkénti (vagy kijelölésenkénti) JSON-fájlt ír, azonnal, a Chrome-ban. Mindkettő lehet JSON, de nem cserélhetők fel egymással.</p>
+
+<h3>PDF-et is készít a JSON-export?</h3>
+<p>Nem. A JSON strukturált adat. Oldalakhoz válaszd a PDF-et ugyanabban a panelben; a hét formátum: PDF, Markdown, JSON, sima szöveg, XML, CSV és PNG. A PDF-hez Google-bejelentkezés kell, és az ingyenes csomagban beleszámít a napi 3 alkalomba.</p>
+
+<h3>Működik a JSON-export a Claude Desktop alkalmazásban?</h3>
+<p>Nem. A Chrome-bővítmény csak a claude.ai oldalon fut. A Claude Desktop sosem mutatja a JSON lehetőséget. Nyisd meg ugyanazt a beszélgetést a claude.ai-on a Chrome-ban, ha ott is megvan.</p>
+</article>
+</main>
+<section class="final-cta page-cta" aria-label="Telepítés">
+  <div class="wrap">
+    <div class="final-cta-panel">
+      <p class="final-kicker">Download Claude conversations</p>
+      <h2>Telepítsd a bővítményt, és töltsd le a Claude chatet másodpercek alatt</h2>
+      <p>Mentsd a fontos Claude-beszélgetéseket PDF, Markdown, JSON, szöveg, CSV, XML vagy PNG formátumba — helyben, a Chrome-ból.</p>
+      <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=hu-formats-json" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Hozzáadás a Chrome-hoz</a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="logo" href="/hu/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
+      <p class="legal-note">Chrome-bővítmény Claude.ai-chatek letöltéséhez PDF, Markdown, JSON, egyszerű szöveg, CSV, XML vagy PNG formátumban.</p>
+    </div>
+    <div>
+      <h2>Telepítés</h2>
+      <a class="install-link" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=hu-footer" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Chrome-bővítmény</a>
+    </div>
+    <div>
+      <h2>Termék</h2>
+      <a href="/hu/funkciok/">Funkciók</a>
+      <a href="/hu/formatumok/">Formátumok</a>
+      <a href="/hu/osszes-claude-chat-exportalasa/">Összes chat exportálása</a>
+      <a href="/hu/hogyan-mukodik/">Hogyan működik</a>
+    </div>
+    <div>
+      <h2>Útmutatók</h2>
+      <a href="/hu/claude-chat-letoltese/">Claude-chat letöltése</a>
+      <a href="/hu/hogyan-exportaljam-a-claude-chatet/">Hogyan exportáljam a Claude-chatet?</a>
+      <a href="/hu/claude-chat-exportalasa/">Claude-chat exportálása</a>
+      <a href="/hu/claude-beszelgetes-kinyero/">Claude-beszélgetés kinyerő</a>
+      <a href="/hu/claude-code-beszelgetes-exportalasa/">Claude Code-beszélgetés exportálása</a>
+      <a href="/hu/claude-chat-pdf-ben/">Claude-chat PDF-ben</a>
+      <a href="/hu/claude-desktop-chat-exportalasa/">Claude Desktop-chat exportálása</a>
+      <a href="/hu/claude-beszelgetes-exportalasa/">Claude-beszélgetés exportálása</a>
+      <a href="/hu/claude-beszelgetes-mentese/">Claude-beszélgetés mentése</a>
+      <a href="/hu/claude-beszelgetes-letoltese/">Claude-beszélgetés letöltése</a>
+    </div>
+    <div>
+      <h2>Jogi információk</h2>
+      <a href="/hu/rolunk/">Rólunk</a>
+      <a href="/hu/rolunk/#contact">Kapcsolat</a>
+      <a href="/privacy/" hreflang="en">Adatvédelem (angolul)</a>
+      <a href="/terms/" hreflang="en">Felhasználási feltételek (angolul)</a>
+      <a href="/refund/" hreflang="en">Visszatérítés (angolul)</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Download Claude conversations. Minden jog fenntartva.</div>
+    <div>
+      <a href="/privacy/" hreflang="en">Adatvédelmi irányelvek (angolul)</a>
+      <a href="/terms/" hreflang="en">Felhasználási feltételek (angolul)</a>
+      <a href="/refund/" hreflang="en">Visszatérítés (angolul)</a>
+    </div>
+  </div>
+  <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/formats/json/" hreflang="en" lang="en">English</a> <a href="/de/formate/json/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/formats/json/" hreflang="fr" lang="fr">Français</a> <a href="/es/formatos/json/" hreflang="es" lang="es">Español</a> <a href="/it/formati/json/" hreflang="it" lang="it">Italiano</a> <a href="/pt/formatos/json/" hreflang="pt" lang="pt">Português</a> <a href="/nl/formaten/json/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/format/json/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/formater/json/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/formater/json/" hreflang="da" lang="da">Dansk</a> <a href="/fi/formaatit/json/" hreflang="fi" lang="fi">Suomi</a> <a href="/pl/formaty/json/" hreflang="pl" lang="pl">Polski</a> <a href="/cs/formaty/json/" hreflang="cs" lang="cs">Čeština</a> <a href="/sk/formaty/json/" hreflang="sk" lang="sk">Slovenčina</a> <a href="/hu/formatumok/json/" hreflang="hu" lang="hu">Magyar</a> <a href="/ro/formate/json/" hreflang="ro" lang="ro">Română</a> <a href="/el/formats/json/" hreflang="el" lang="el">Ελληνικά</a> <a href="/tr/formatlar/json/" hreflang="tr" lang="tr">Türkçe</a> <a href="/ja/formats/json/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/formats/json/" hreflang="ko" lang="ko">한국어</a> <a href="/zh-hant/formats/json/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="/he/formats/json/" hreflang="he" lang="he">עברית</a> <a href="/ar/formats/json/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
+  <p class="disclaimer">A chateket a böngésződ dolgozza fel · Google-bejelentkezés csak PDF-hez, tömeges exportáláshoz és Pro csomaghoz · Nem áll kapcsolatban az Anthropic, PBC-vel. A Claude az Anthropic védjegye. Független Chrome-bővítmény – nem hivatalos Anthropic-termék. Támogatás: <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

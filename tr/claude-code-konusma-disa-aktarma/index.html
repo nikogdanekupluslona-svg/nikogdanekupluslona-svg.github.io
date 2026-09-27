@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Claude Code Konuşmasını Dışa Aktarma — /export ve claude.ai</title>
+  <meta name="description" content="Claude Code konuşmasını dışa aktarma: terminalde /export veya ~/.claude/projects içindeki JSONL. claude.ai/code oturumları için ücretsiz Chrome uzantısı.">
+  <link rel="canonical" href="https://chat-downloader.com/tr/claude-code-konusma-disa-aktarma/">
+  <!-- i18n:head -->
+  <link rel="alternate" hreflang="en" href="https://chat-downloader.com/claude-code-export/">
+  <link rel="alternate" hreflang="de" href="https://chat-downloader.com/de/claude-code-chat-exportieren/">
+  <link rel="alternate" hreflang="fr" href="https://chat-downloader.com/fr/exporter-conversation-claude-code/">
+  <link rel="alternate" hreflang="es" href="https://chat-downloader.com/es/exportar-conversacion-claude-code/">
+  <link rel="alternate" hreflang="it" href="https://chat-downloader.com/it/esportare-conversazione-claude-code/">
+  <link rel="alternate" hreflang="pt" href="https://chat-downloader.com/pt/exportar-conversa-claude-code/">
+  <link rel="alternate" hreflang="nl" href="https://chat-downloader.com/nl/claude-code-gesprek-exporteren/">
+  <link rel="alternate" hreflang="sv" href="https://chat-downloader.com/sv/exportera-claude-code-konversation/">
+  <link rel="alternate" hreflang="nb" href="https://chat-downloader.com/nb/eksportere-claude-code-samtale/">
+  <link rel="alternate" hreflang="da" href="https://chat-downloader.com/da/eksporter-claude-code-samtale/">
+  <link rel="alternate" hreflang="fi" href="https://chat-downloader.com/fi/claude-code-keskustelun-vienti/">
+  <link rel="alternate" hreflang="pl" href="https://chat-downloader.com/pl/eksport-rozmowy-claude-code/">
+  <link rel="alternate" hreflang="cs" href="https://chat-downloader.com/cs/export-konverzace-claude-code/">
+  <link rel="alternate" hreflang="sk" href="https://chat-downloader.com/sk/export-konverzacie-claude-code/">
+  <link rel="alternate" hreflang="hu" href="https://chat-downloader.com/hu/claude-code-beszelgetes-exportalasa/">
+  <link rel="alternate" hreflang="ro" href="https://chat-downloader.com/ro/export-conversatie-claude-code/">
+  <link rel="alternate" hreflang="el" href="https://chat-downloader.com/el/claude-code-export/">
+  <link rel="alternate" hreflang="tr" href="https://chat-downloader.com/tr/claude-code-konusma-disa-aktarma/">
+  <link rel="alternate" hreflang="ja" href="https://chat-downloader.com/ja/claude-code-export/">
+  <link rel="alternate" hreflang="ko" href="https://chat-downloader.com/ko/claude-code-export/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://chat-downloader.com/zh-hant/claude-code-export/">
+  <link rel="alternate" hreflang="he" href="https://chat-downloader.com/he/claude-code-export/">
+  <link rel="alternate" hreflang="ar" href="https://chat-downloader.com/ar/claude-code-export/">
+  <link rel="alternate" hreflang="x-default" href="https://chat-downloader.com/claude-code-export/">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="it_IT">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="sv_SE">
+  <meta property="og:locale:alternate" content="nb_NO">
+  <meta property="og:locale:alternate" content="da_DK">
+  <meta property="og:locale:alternate" content="fi_FI">
+  <meta property="og:locale:alternate" content="pl_PL">
+  <meta property="og:locale:alternate" content="cs_CZ">
+  <meta property="og:locale:alternate" content="sk_SK">
+  <meta property="og:locale:alternate" content="hu_HU">
+  <meta property="og:locale:alternate" content="ro_RO">
+  <meta property="og:locale:alternate" content="el_GR">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <meta property="og:locale:alternate" content="zh_TW">
+  <meta property="og:locale:alternate" content="he_IL">
+  <meta property="og:locale:alternate" content="ar_AE">
+  <!-- /i18n:head -->
+  <meta property="og:title" content="Claude Code Konuşmasını Dışa Aktarma — /export ve claude.ai">
+  <meta property="og:description" content="Claude Code konuşmasını dışa aktarma: terminalde /export veya ~/.claude/projects içindeki JSONL. claude.ai/code oturumları için ücretsiz Chrome uzantısı.">
+  <meta property="og:url" content="https://chat-downloader.com/tr/claude-code-konusma-disa-aktarma/">
+  <meta property="og:image" content="https://chat-downloader.com/assets/widget-guide.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chat Downloader">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Claude Code Konuşmasını Dışa Aktarma — /export ve claude.ai">
+  <meta name="twitter:description" content="Claude Code konuşmasını dışa aktarma: terminalde /export veya ~/.claude/projects içindeki JSONL. claude.ai/code oturumları için ücretsiz Chrome uzantısı.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME1YXGZKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GME1YXGZKR');
+  </script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Bir Claude Code konuşmasını nasıl dışa aktarırım?","acceptedAnswer":{"@type":"Answer","text":"Claude Code terminalinde, işlenmiş bir dökümü kaydetmek için /export yazın (isteğe bağlı olarak bir dosya adıyla) ya da JSONL dosyasını macOS/Linux’ta ~/.claude/projects, Windows’ta %USERPROFILE%\\.claude\\projects klasöründen kopyalayın. Güncel pencereyi Anthropic’in oturum belgeleri anlatır."}},{"@type":"Question","name":"Bu Chrome uzantısı Claude Code sohbetlerini indirir mi?","acceptedAnswer":{"@type":"Answer","text":"Terminalden hayır. Download Claude conversations yalnızca Chrome’daki claude.ai’de çalışır. Yerel terminal oturumlarını, JSONL dökümlerini veya /export komutunu okuyamaz. claude.ai/code adresindeki web’deki Claude Code oturumları ise her sohbet gibi dışa aktarılır."}},{"@type":"Question","name":"Web’deki Claude Code’u (claude.ai/code) dışa aktarabilir miyim?","acceptedAnswer":{"@type":"Answer","text":"Evet. Oturumu Chrome’da claude.ai/code adresinde açın ve turuncu düğmeyi kullanın. PDF, Markdown, Plain Text, JSON, XML, CSV ve PNG’nin hepsi çalışır. PDF dışındaki altı format hesapsız ve sınırsızdır; PDF, Google ile giriş gerektirir ve günlük 3 ücretsiz hakka sayılır."}},{"@type":"Question","name":"Claude Code konuşma geçmişini nerede saklar?","acceptedAnswer":{"@type":"Answer","text":"Oturum dökümleri, ~/.claude/projects/<encoded-working-directory>/ altında oturum kimliğiyle adlandırılmış JSONL dosyalarıdır. Tam düzen değişebilir. JSONL ayrıştırmak yerine okunabilir bir dosya istediğinizde /export kullanın. CLAUDE_CONFIG_DIR bu ağacı taşıyabilir."}},{"@type":"Question","name":"Bir Claude Code konuşması Markdown olarak nasıl indirilir?","acceptedAnswer":{"@type":"Answer","text":"Claude Code’un /export komutu düz metin bir dökümdür, bu uzantının Markdown’u değildir. Özellikle Markdown gerekiyorsa bir claude.ai/code oturumunu veya işin claude.ai’deki bir kopyasını Download Claude conversations ile dışa aktarın ya da /export metnini kendiniz dönüştürün. JSONL’yi Markdown’a dönüştürmüyoruz."}},{"@type":"Question","name":"Bunun yerine bir claude.ai konuşmasını nasıl indiririm?","acceptedAnswer":{"@type":"Answer","text":"Ücretsiz Chrome uzantısını yükleyin, sohbeti claude.ai’de açın ve turuncu düğmeyi kullanın — geçmiş için de “Export All”u. Bkz. Claude sohbeti nasıl indirilir. Markdown, metin, JSON, XML, CSV ve PNG hesapsız ve sınırsızdır; PDF ve toplu ZIP, Google ile girişle günde 3 adede kadar ücretsizdir; Pro ayda 3,99 $ veya yılda 26,99 $’dır."}},{"@type":"Question","name":"/export resmî Export data ile aynı şey mi?","acceptedAnswer":{"@type":"Answer","text":"Hayır. /export mevcut Claude Code oturumudur. Settings → Privacy → Export data ise Anthropic hesabının JSON ZIP’ini e-postayla gönderir. Farklı ürün ortamları, farklı dosyalar, farklı bekleme süreleri."}},{"@type":"Question","name":"Claude Code JSONL’sini jq ile ayrıştırabilir miyim?","acceptedAnswer":{"@type":"Answer","text":"Ayrıştırabilirsiniz, ancak Anthropic’in yayımladığı uyarıyla: satır şeması dahilidir ve değişebilir. Bir sözleşmeye ihtiyacınız olduğunda /export veya claude -p --output-format json tercih edin. Yine de JSONL ayrıştıracaksanız CLI sürümünüzü sabitleyin."}},{"@type":"Question","name":"Claude Code dışa aktarma Windows’ta çalışır mı?","acceptedAnswer":{"@type":"Answer","text":"Evet. /export bir CLI komutudur. CLAUDE_CONFIG_DIR ayarlamadıysanız diskteki dökümler %USERPROFILE%\\.claude\\projects altında durur. Bu Chrome uzantısı yine de o terminalin içinde çalışmaz."}},{"@type":"Question","name":"Claude Code, Claude Desktop ile aynı şey mi?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Claude Code terminaldeki kodlama ajanıdır. Claude Desktop sohbet uygulamasıdır. claude.ai web sitesidir. Bu uzantı yalnızca web sitesinde, claude.ai/code dahil, çalışır. Desktop dışa aktarma notları: Claude Desktop."}},{"@type":"Question","name":"Bu uzantı bir gün /export’u sarmalayacak mı?","acceptedAnswer":{"@type":"Answer","text":"1.16.2 sürümünde hayır. Ürünün kapsamı, web’deki Claude Code dahil claude.ai’dir: yedi format, yerel dosyalar, yalnızca PDF, toplu dışa aktarma ve Pro için Google ile giriş. Bu kapsam değişirse bu sayfa bunu belirtecek. O zamana kadar terminaldeki Claude Code dışa aktarması için Anthropic’in CLI’sini kullanın."}},{"@type":"Question","name":"/export araç çıktılarını içerir mi?","acceptedAnswer":{"@type":"Answer","text":"Anthropic, /export çıktısını okunabilir metin olarak işlenmiş mesajlar ve araç çıktıları olarak tanımlar. Bu onların dökümüdür, bizim ayrıştırıcımız değil. Güncel içeriği tam olarak görmek için kendi derlemenizde /export çalıştırın ve dosyayı okuyun — belgeler bir sürümün gerisinde kalabilir."}},{"@type":"Question","name":"Claude Code oturumlarını toplu dışa aktarabilir miyim?","acceptedAnswer":{"@type":"Answer","text":"Yerel CLI oturumlarını hayır. Dashboard’daki “Export All” yalnızca claude.ai içindir. Çok sayıda CLI oturumu için projects klasörünü kopyalayın veya her oturum için /export çalıştırın. JSONL için turuncu düğmeyle toplu dışa aktarma yoktur."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Claude Code konuşmasını dışa aktarma ve claude.ai: doğru yolu seçin","description":"Claude Code konuşmasını dışa aktarma: terminalde /export veya ~/.claude/projects içindeki JSONL. claude.ai/code oturumları için ücretsiz Chrome uzantısı.","url":"https://chat-downloader.com/tr/claude-code-konusma-disa-aktarma/","dateModified":"2026-09-25","datePublished":"2026-09-10","inLanguage":"tr","author":{"@type":"Organization","name":"Chat Downloader","url":"https://chat-downloader.com/tr/"},"publisher":{"@type":"Organization","name":"Chat Downloader","url":"https://chat-downloader.com/tr/"},"mainEntityOfPage":"https://chat-downloader.com/tr/claude-code-konusma-disa-aktarma/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Ana sayfa","item":"https://chat-downloader.com/tr/"},{"@type":"ListItem","position":2,"name":"Claude Code dışa aktarma","item":"https://chat-downloader.com/tr/claude-code-konusma-disa-aktarma/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">İçeriğe geç</a>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a class="logo" href="/tr/">
+        <img src="/assets/icon.svg" alt="">
+        <span>Download Claude conversations</span>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="/tr/claude-sohbet-nasil-indirilir/">Nasıl indirilir</a><a href="/tr/claude-sohbet-nasil-disa-aktarilir/">Dışa aktar</a><a href="/tr/tum-claude-sohbetlerini-disa-aktarma/">Toplu</a><a href="/tr/formatlar/">Formatlar</a><a href="/tr/#faq">SSS</a>
+        <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=tr-claude-code-export" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Chrome’a ekle</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=tr-claude-code-export" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Chrome’a ekle</a>
+      <!-- i18n:switch --><details class="lang-switch"><summary aria-label="Dil: Türkçe"><svg class="lang-globe" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span class="lang-name">Türkçe</span><span class="lang-code" aria-hidden="true">tr</span></summary><ul><li><a href="/claude-code-export/" hreflang="en" lang="en">English</a></li><li><a href="/de/claude-code-chat-exportieren/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/exporter-conversation-claude-code/" hreflang="fr" lang="fr">Français</a></li><li><a href="/es/exportar-conversacion-claude-code/" hreflang="es" lang="es">Español</a></li><li><a href="/it/esportare-conversazione-claude-code/" hreflang="it" lang="it">Italiano</a></li><li><a href="/pt/exportar-conversa-claude-code/" hreflang="pt" lang="pt">Português</a></li><li><a href="/nl/claude-code-gesprek-exporteren/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/sv/exportera-claude-code-konversation/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="/nb/eksportere-claude-code-samtale/" hreflang="nb" lang="nb">Norsk</a></li><li><a href="/da/eksporter-claude-code-samtale/" hreflang="da" lang="da">Dansk</a></li><li><a href="/fi/claude-code-keskustelun-vienti/" hreflang="fi" lang="fi">Suomi</a></li><li><a href="/pl/eksport-rozmowy-claude-code/" hreflang="pl" lang="pl">Polski</a></li><li><a href="/cs/export-konverzace-claude-code/" hreflang="cs" lang="cs">Čeština</a></li><li><a href="/sk/export-konverzacie-claude-code/" hreflang="sk" lang="sk">Slovenčina</a></li><li><a href="/hu/claude-code-beszelgetes-exportalasa/" hreflang="hu" lang="hu">Magyar</a></li><li><a href="/ro/export-conversatie-claude-code/" hreflang="ro" lang="ro">Română</a></li><li><a href="/el/claude-code-export/" hreflang="el" lang="el">Ελληνικά</a></li><li><a href="/tr/claude-code-konusma-disa-aktarma/" hreflang="tr" lang="tr" aria-current="true">Türkçe</a></li><li><a href="/ja/claude-code-export/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/ko/claude-code-export/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/zh-hant/claude-code-export/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li><li><a href="/he/claude-code-export/" hreflang="he" lang="he">עברית</a></li><li><a href="/ar/claude-code-export/" hreflang="ar" lang="ar">العربية</a></li></ul></details><!-- /i18n:switch -->
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menü">☰</button>
+    </div>
+  </div>
+</header>
+<nav class="crumbs" aria-label="İçerik yolu"><a href="/tr/">Ana sayfa</a> / Claude Code dışa aktarma</nav>
+<main id="main">
+<article class="band prose">
+<p class="article-meta">Güncellendi: <time datetime="2026-09-25">Eylül 2026</time> · Uzantı 1.16.2</p>
+<h1 class="page-h1">Claude Code konuşmasını dışa aktarma ve claude.ai: doğru yolu seçin</h1>
+<p class="lead">Claude Code konuşmasını dışa aktarma bir terminal işidir. Oturumda /export yazın ya da JSONL’yi ~/.claude/projects klasöründen kopyalayın. Terminaldeki bir Claude Code konuşmasını indirmenin yolu bu sitedeki turuncu düğme değildir. Download Claude conversations, Chrome’da claude.ai üzerinde açtığınız sohbetleri kaydeder — claude.ai/code adresindeki web’deki Claude Code oturumları dahil. Yerel terminal oturumları ve Desktop ayrı konulardır.</p>
+<aside class="trust-badge" aria-label="Uzantı hakkında">
+  <span class="trophy" aria-hidden="true">🧩</span>
+  <div>
+    <strong>Download Claude conversations — claude.ai için ücretsiz Chrome uzantısı</strong>
+    <span>Sürüm 1.16.2 (Eylül 2026) — hesapsız, sınırsız Markdown, metin, JSON, XML, CSV ve PNG dışa aktarma; PDF ve toplu ZIP günde 3 adede kadar ücretsiz</span>
+  </div>
+</aside>
+<nav class="toc" aria-label="Bu sayfada">
+  <p>Bu sayfada</p>
+  <ol>
+    <li><a href="#what-is-export">Terminalde Claude Code konuşmasını dışa aktarma nedir?</a></li>
+    <li><a href="#jsonl-disk">Bir Claude Code konuşması diskten nasıl indirilir?</a></li>
+    <li><a href="#extension-limit">Claude Code dışa aktarma bu uzantıyla çalışır mı?</a></li>
+    <li><a href="#claude-code-web">Web’deki Claude Code oturumlarını dışa aktarabilir miyim?</a></li>
+    <li><a href="#where-stored">Claude Code konuşma geçmişini nerede saklar?</a></li>
+    <li><a href="#claude-ai-instead">Bunun yerine claude.ai’de bir Claude sohbeti nasıl indirilir?</a></li>
+    <li><a href="#vs-official-zip">Claude Code dışa aktarma mı, Anthropic’in resmî Export data özelliği mi?</a></li>
+    <li><a href="#three-surfaces">Claude Code, Desktop ve claude.ai dışa aktarma farkı nedir?</a></li>
+    <li><a href="#faq">SSS: Claude Code dışa aktarma</a></li>
+  </ol>
+</nav>
+
+<h2 id="what-is-export">Terminalde Claude Code konuşmasını dışa aktarma nedir?</h2>
+<p>Claude Code konuşmasını dışa aktarma, etkileşimli bir CLI oturumundaki <code>/export</code> komutudur. Anthropic’in belgeleri, mevcut konuşmayı kopyalamak veya düz metin dosyası olarak kaydetmek için bir menü anlatır; mesajlar ve araç çıktıları okunabilir metin olarak işlenir. Menüyü atlayıp doğrudan o dosyayı yazmak için bir dosya adı verin.</p>
+<p>Bu, claude.ai’den alınan Markdown değildir, bu Chrome uzantısının JSON’u değildir ve bir PDF de değildir. Bir insanın okuması için işlenmiş bir dökümdür. Anthropic, diskteki JSONL günlüğünün farklı, dahili bir format olduğunu; sizin genel API’niz olarak değil, ürün için tasarlandığını söyler.</p>
+<pre><code>/export</code></pre>
+<p>Soruyu atlamak ve geçerli çalışma dizinine adlandırılmış bir dosya yazmak için:</p>
+<pre><code>/export my-session</code></pre>
+<p>Bayraklar ve dosya adları için esas kaynak Anthropic’in oturum belgeleridir; bunlar Claude Code sürümleri arasında değişir. Topluluk bloglarını ikincil kaynak sayın. <code>/export</code> penceresindeki metin gördüğünüzle eşleşmiyorsa CLI’niz farklı bir derlemedir — 2025’ten kalma bir ekran görüntüsünü değil, ürün içi yardımı kullanın.</p>
+<p>Betikler için Anthropic başka arayüzleri gösterir: <code>--output-format json</code> veya <code>stream-json</code> ile <code>claude -p</code>, oturum kimliğiyle devam etme, <code>transcript_path</code> alan hook’lar veya Agent SDK. Bunlar Claude Code geliştirici arayüzleridir. Bu web sitesinin Chrome uzantısı değildirler.</p>
+<div class="callout callout-info">
+  <p><strong>Okunabilir ve yapılandırılmış.</strong> <code>/export</code> insan için dökümdür. projects klasörü altındaki JSONL ise günlüktür. Chrome uzantısının JSON’u yalnızca bir claude.ai sayfasından oluşturulan üçüncü bir yapıdır. Üçü için tek bir ayrıştırıcı yazmayın.</p>
+</div>
+
+<h2 id="jsonl-disk">Bir Claude Code konuşması diskten nasıl indirilir?</h2>
+<p>Bir Claude Code konuşmasını diskten indirmek için oturumun JSONL dosyasını projects dizininden kopyalayın ya da okunabilir bir döküm için <code>/export</code> çalıştırın. macOS ve Linux’ta varsayılan yol <code>~/.claude/projects/</code> altındadır. Windows’ta <code>%USERPROFILE%\.claude\projects</code> olur. Dosya adları oturum kimlikleridir.</p>
+<p>Proje klasörünün adı, alfanümerik olmayan karakterleri kısa çizgiyle değiştirilmiş çalışma dizinidir. Anthropic, dizinin dosya sistemi sınırları içinde kalması için çok uzun dönüştürülmüş adları kısaltır ve sonuna bir hash ekler. Klasörü bulamıyorsanız Claude Code’u sandığınızdan farklı bir çalışma dizininden (cwd) başlatmışsınızdır.</p>
+<p>Her JSONL satırı bir mesaj, araç kullanımı veya meta veri için bir JSON nesnesidir. Anthropic bu kayıt formatının dahili olduğunu ve sürümler arasında değiştiğini belirtir. Bu dosyaları ayrıştıran betikler bir Claude Code sürümüyle bozulabilir. Kararlı bir şeye ihtiyacınız olduğunda <code>/export</code> komutunu veya belgelenmiş betik arayüzlerini tercih edin.</p>
+<p>Depolama yeri değişebilir. <code>CLAUDE_CONFIG_DIR</code>, yapılandırma ağacını <code>~/.claude</code> dışına taşır. <code>CLAUDE_CODE_PROJECT_DIR_NAME</code>, o yapılandırma diziniyle birlikte kullanıldığında proje dizinini adlandırır (Anthropic’e göre Claude Code v2.1.234 veya sonrası). settings.json içindeki <code>cleanupPeriodDays</code> varsayılan saklama süresini değiştirir. Bu ayarların hiçbiri Download Claude conversations’ın özelliği değildir.</p>
+<p>Dolayısıyla Claude Code konuşma dosyalarını yedek için indirmenin yolu şudur: klasörü kopyalayın ya da dökümleri düzenli aralıklarla <code>/export</code> ile dışa aktarın. Bu site bir “JSONL içe aktar” düğmesi eklemeyecek. Ana dizininizi okumayız.</p>
+
+<h2 id="extension-limit">Claude Code dışa aktarma bu uzantıyla çalışır mı?</h2>
+<p>Hayır, terminal oturumları için çalışmaz. Download Claude conversations yerel Claude Code oturumlarını okumaz. Chrome uzantısı claude.ai’ye eklenir. Terminali göremez, <code>/export</code> çalıştıramaz ve JSONL açamaz. İstisna, claude.ai/code adresindeki web’deki Claude Code’dur: bu bir claude.ai sayfasıdır, dolayısıyla her sohbet gibi dışa aktarılır. CLI’den bir Claude Code konuşmasının nasıl indirileceğini aradıysanız bu sayfadaki CLI adımlarında kalın.</p>
+<p>İnsanlar buraya, Google “Claude” ve “dışa aktarma” sözcüklerini birlikte grupladığı için gelir. Web Store kaydı yine yalnızca claude.ai içindir. Uzantıyı yüklemek iTerm, Ghostty, VS Code terminali veya Claude Code’un masaüstü sarmalayıcısında turuncu bir düğme göstermez.</p>
+<p>Aynı kodlama işi için claude.ai’de paralel bir sohbet de tutuyorsanız o tarayıcı sohbeti uzantıyla kaydedilebilir. İki kayıt birleştirilmez. Yalnızca CLI’de gerçekleşen araç çağrıları, oraya yapıştırmadıysanız web dışa aktarmasında görünmez.</p>
+<div class="expert-quote">
+  <blockquote>Her hafta aynı destek e-postasını alıyoruz: biri Chrome uzantısını yüklemiş ve /export’un görünmesini beklemiş. Biz yalnızca claude.ai’yi ayrıştırıyoruz. Claude Code zaten /export ve JSONL ile geliyor. CLI’yi sarmalamak farklı bir ürün olurdu ve böyle bir ürün yayımlamadık.</blockquote>
+  <cite><strong>Download Claude conversations ekibi</strong> — Claude Chat Downloader Chrome uzantısının geliştiricileri</cite>
+</div>
+<p>Uzantı bir Claude Code eklentisi değil, bir claude.ai aracıdır. Sınırları yalnızca claude.ai’den dışa aktardığınızda geçerlidir: Markdown, metin, JSON, XML, CSV ve PNG hesapsız ve sınırsızdır; PDF ve toplu ZIP, Google ile girişle günde 3 adede kadar ücretsizdir; ayda 3,99 $ veya yılda 26,99 $ olan Pro sınırı kaldırır. Bunların hiçbiri <code>/export</code> kullanımını saymaz.</p>
+
+<h2 id="claude-code-web">Web’deki Claude Code oturumlarını dışa aktarabilir miyim?</h2>
+<p>Evet. Web’deki Claude Code claude.ai/code adresinde çalışır; bu yüzden Download Claude conversations bu oturumları her claude.ai sohbeti gibi dışa aktarır. Oturumu Chrome’da açın, turuncu düğmeye tıklayın, bir format seçin ve “Export” (Dışa aktar) düğmesine tıklayın. Uzantının kapsadığı tek Claude Code ortamı budur.</p>
+<p>Formatlar her sohbetteki yedi formatla aynıdır: PDF, Markdown, Plain Text (düz metin), JSON, XML, CSV ve PNG. Markdown, metin, JSON, XML, CSV ve PNG sınırsızdır ve hesap gerektirmez. PDF, Google ile giriş ister ve Pro’da değilseniz ücretsiz planın günlük 3 hakkını toplu ZIP ile paylaşır. Kod blokları dil etiketlerini korur. Genişletilmiş düşünme paneldeki “Thinking” (Düşünme) onay kutusudur; araç / MCP adımları ve web arama kaynakları Ayarlar’daki isteğe bağlı anahtarlardır.</p>
+<p>Web dışa aktarması, claude.ai/code’un tarayıcıda gösterdiği şeydir. Yerel bir CLI çalıştırmasının JSONL günlüğü değildir ve yalnızca terminalinizde çalışmış oturumlara ulaşmaz. Anthropic’e göre web’deki Claude Code kendi oturum geçmişini, CLI’nin <code>~/.claude/projects</code> ağacından ayrı tutar. Bir terminal oturumu için yol hâlâ <code>/export</code> komutudur.</p>
+
+<h2 id="where-stored">Claude Code konuşma geçmişini nerede saklar?</h2>
+<p>Claude Code konuşma geçmişini, yapılandırma dizinindeki projects klasörü altında JSONL dökümleri olarak saklar. macOS ve Linux’ta varsayılan: <code>~/.claude/projects/&lt;encoded-cwd&gt;/&lt;session-id&gt;.jsonl</code>. Windows <code>%USERPROFILE%\.claude\projects</code> kullanır. Anthropic bu düzeni değiştirebilir; diskte bir yol eksikse güncel oturum belgelerine bakın.</p>
+<p>Devam etmek, dışa aktarmaktan farklı bir eylemdir. <code>claude --continue</code> ve <code>claude --resume</code> bir oturumu yeniden yükler, böylece çalışmaya devam edebilirsiniz. <code>/export</code> ise git’te bırakabileceğiniz veya e-postayla gönderebileceğiniz bir kopya yazar. Biri bağlamı geri getirir. Diğeri yanınızda bir kayıt götürmenizi sağlar. Anthropic’in oturum sayfası devam ederken izin modunu, sıkıştırma/özeti ve seçici davranışını anlatır — bunların hiçbiri bu uzantıyla ilgili değildir.</p>
+<p>Anthropic’e göre masaüstü uygulaması, web’deki Claude Code ve VS Code uzantısının her biri kendi oturum geçmişini tutar. Bu rehberdeki yollar CLI’ye aittir. Web oturumları claude.ai/code’da kalır ve uzantı onları orada dışa aktarabilir. Bir Desktop Cowork dökümünün terminalden kullandığınız aynı JSONL ağacında durduğunu varsaymayın.</p>
+<div class="callout callout-warn">
+  <p><strong>JSONL’yi genel bir şema gibi görmeyin.</strong> Anthropic satır formatının değiştiğini söyler. Yine de ayrıştıracaksanız bir Claude Code sürümüne sabitleyin ve bozulmaları bekleyin. İnsanın okuyabileceği bir Claude Code konuşması almanın kararlı yolu <code>/export</code> komutudur.</p>
+</div>
+<p><code>CLAUDE_CODE_SKIP_PROMPT_HISTORY</code> gibi ortam bayrakları döküm yazımını engelleyebilir. projects klasörü boşsa kalıcılığı devre dışı bırakıp bırakmadığınızı, <code>CLAUDE_CONFIG_DIR</code> ayarını başka bir yere yönlendirip yönlendirmediğinizi veya o dizinde hiç etkileşimli oturum çalıştırıp çalıştırmadığınızı kontrol edin.</p>
+
+<h2 id="claude-ai-instead">Bunun yerine claude.ai’de bir Claude sohbeti nasıl indirilir?</h2>
+<p>claude.ai’de bir Claude sohbeti şöyle indirilir: Download Claude conversations’ı yükleyin, sohbeti Chrome’da açın, turuncu düğmeye tıklayın, PDF, Markdown, Plain Text, JSON, XML, CSV veya PNG’yi seçin. Bu tarayıcı ürünüdür ve claude.ai/code oturumlarını da kapsar. Terminaldeki Claude Code dışa aktarması değildir. Adım adım: <a href="/tr/claude-sohbet-nasil-indirilir/">Claude sohbeti nasıl indirilir</a>.</p>
+<p>claude.ai geçmişinin tamamını ayrı dosyalar olarak almak <code>/export</code> ile değil, Dashboard’daki “Export All” (Tümünü dışa aktar) ile yapılır. Ücretsiz planda ZIP içindeki her sohbet günlük 3 hakka sayılır (PDF ile paylaşılır, gece yarısı UTC’de sıfırlanır); Pro sınırı kaldırır. Rehber: <a href="/tr/tum-claude-sohbetlerini-disa-aktarma/">toplu “Export All”</a>. Formatlar: <a href="/tr/formatlar/">formatlar</a>.</p>
+<p>Tek sohbetlik Markdown, metin, JSON, XML, CSV veya PNG için hesap gerekmez — bu dışa aktarmalar sınırsızdır. Google ile giriş yalnızca PDF, toplu ZIP ve Pro için çıkar; böylece günlük kotayı sayabilir ve Pro’yu geri yükleyebiliriz. Dosyalar, PDF dahil, yerel olarak oluşturulur. Paddle, Pro’yu ayda 3,99 $ veya yılda 26,99 $ olarak faturalandırır. Bunların hiçbiri terminaldeki <code>/export</code> için geçerli değildir.</p>
+<p>İşiniz Claude Code’da başladıysa ve claude.ai’ye bir özet yapıştırdıysanız, notlar için web sohbetini indirin, gerçek CLI günlüğü için ise <code>/export</code> komutunu kullanın. İki dosya, karışık tek bir dosyadan iyidir.</p>
+
+<h2 id="vs-official-zip">Claude Code dışa aktarma mı, Anthropic’in resmî Export data özelliği mi?</h2>
+<p>Claude Code dışa aktarması (<code>/export</code> veya JSONL) tek bir terminal oturumudur. Resmî Export data ise claude.ai’deki Settings → Privacy → Export data yoludur (claude.ai Türkçe ayarlıysa etiketler çevrilmiş görünebilir): Anthropic hesabının gecikmeli bir JSON ZIP’i. Aynı arşiv değildirler. ZIP, <code>/export</code> komutunun yerini tutmaz.</p>
+<p>Belirli bir Claude Code oturumunun hesap ZIP’inde görünüp görünmemesi bu uzantıya değil, Anthropic’in o ürünü nasıl sakladığına bağlıdır. Anthropic’in güncel gizlilik belgeleri aksini söylemedikçe ZIP’i bir web hesabı yedeği olarak görün. CLI oturumlarını o ZIP’e biz eklemeyiz.</p>
+<p>Web sitesinden bir Claude sohbetinin nasıl dışa aktarılacağı, o ZIP ile uzantının karşılaştırması dahil, burada anlatılıyor: <a href="/tr/claude-sohbet-nasil-disa-aktarilir/">Claude sohbeti nasıl dışa aktarılır</a>. Uzantının PDF dışa aktarması da bir terminal arayüzü için geçerli değildir. <a href="/tr/claude-sohbet-pdf/">Claude sohbetini PDF olarak indirme</a> rehberine yalnızca konuşma claude.ai’de (claude.ai/code dahil) olduğunda bakın.</p>
+<div class="table-wrap">
+  <table>
+    <caption>Claude Code dışa aktarmanın diğer Claude kaydetme yollarıyla karşılaştırması</caption>
+    <thead>
+      <tr>
+        <th scope="col">Kullandığınız</th>
+        <th scope="col">Nasıl dışa aktarılır</th>
+        <th scope="col">Bu Chrome uzantısı</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Terminalde Claude Code</th>
+        <td><code>/export</code> veya diskteki JSONL</td>
+        <td>Çalışmaz</td>
+      </tr>
+      <tr>
+        <th scope="row">Web’deki Claude Code (claude.ai/code)</th>
+        <td>Chrome’da turuncu düğme</td>
+        <td>Her sohbet gibi dışa aktarır</td>
+      </tr>
+      <tr>
+        <th scope="row">Chrome’da claude.ai</th>
+        <td>Turuncu düğme veya <a href="/tr/tum-claude-sohbetlerini-disa-aktarma/">“Export All”</a></td>
+        <td>Tam da bunun için var</td>
+      </tr>
+      <tr>
+        <th scope="row">Anthropic hesap yedeği</th>
+        <td>Settings → Privacy → Export data</td>
+        <td>Farklı iş — gecikmeli JSON ZIP</td>
+      </tr>
+      <tr>
+        <th scope="row">Betikler / CI</th>
+        <td><code>claude -p</code> JSON, SDK, transcript_path</td>
+        <td>CLI’yi sarmalamaz</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h2 id="three-surfaces">Claude Code, Desktop ve claude.ai dışa aktarma farkı nedir?</h2>
+<p>Claude Code, Claude Desktop ve claude.ai üç ayrı ortamdır. Claude Code dışa aktarması <code>/export</code> ve JSONL kullanır. Desktop, bu uzantının turuncu düğmesi olmayan bir uygulamadır. Download Claude conversations’ın çalıştığı tek yer Chrome’daki claude.ai’dir — claude.ai/code adresindeki web’deki Claude Code dahil. Adları karıştırmak, dışa aktarmaların sessizce başarısız olmasının nedenidir.</p>
+<p>Claude Desktop: sohbet aynı Anthropic hesabına senkronize olduysa onu claude.ai’de açın ve orada dışa aktarın. Yalnızca Desktop penceresinde duruyorsa kopyala-yapıştır yapın veya resmî Export data’yı bekleyin. Rehber: <a href="/tr/claude-desktop-sohbet-disa-aktarma/">bir Claude Desktop sohbetini dışa aktarma</a>.</p>
+<p>VS Code’daki Claude Code paneli claude.ai’den çok CLI’ye yakındır. İçerik betiğimizin o webview’e eklenmesini beklemeyin. Mesajları gerçekten tutan oturumdan <code>/export</code> kullanın.</p>
+<p>Bağımsız bir Chrome uzantısıdır, Anthropic, PBC ile bağlantılı değildir. Claude, Anthropic’in ticari markasıdır. Onların Hizmet Şartları’na uyun. Tescilli kod içeren araç çıktılarını kopyalama konusunda hukuki tavsiye veremeyiz; bu sizinle, işvereninizle ve Anthropic arasındadır.</p>
+
+<h2 id="faq">SSS: Claude Code dışa aktarma</h2>
+<h3>Bir Claude Code konuşmasını nasıl dışa aktarırım?</h3>
+<p>Claude Code terminalinde, işlenmiş bir dökümü kaydetmek için <code>/export</code> yazın (isteğe bağlı olarak bir dosya adıyla) ya da JSONL dosyasını macOS/Linux’ta <code>~/.claude/projects</code>, Windows’ta <code>%USERPROFILE%\.claude\projects</code> klasöründen kopyalayın. Güncel pencereyi Anthropic’in oturum belgeleri anlatır.</p>
+<h3>Bu Chrome uzantısı Claude Code sohbetlerini indirir mi?</h3>
+<p>Terminalden hayır. Download Claude conversations yalnızca Chrome’daki claude.ai’de çalışır. Yerel terminal oturumlarını, JSONL dökümlerini veya <code>/export</code> komutunu okuyamaz. claude.ai/code adresindeki web’deki Claude Code oturumları ise her sohbet gibi dışa aktarılır.</p>
+<h3>Web’deki Claude Code’u (claude.ai/code) dışa aktarabilir miyim?</h3>
+<p>Evet. Oturumu Chrome’da claude.ai/code adresinde açın ve turuncu düğmeyi kullanın. PDF, Markdown, Plain Text, JSON, XML, CSV ve PNG’nin hepsi çalışır. PDF dışındaki altı format hesapsız ve sınırsızdır; PDF, Google ile giriş gerektirir ve günlük 3 ücretsiz hakka sayılır.</p>
+<h3>Claude Code konuşma geçmişini nerede saklar?</h3>
+<p>Oturum dökümleri, <code>~/.claude/projects/&lt;encoded-working-directory&gt;/</code> altında oturum kimliğiyle adlandırılmış JSONL dosyalarıdır. Tam düzen değişebilir. JSONL ayrıştırmak yerine okunabilir bir dosya istediğinizde <code>/export</code> kullanın. <code>CLAUDE_CONFIG_DIR</code> bu ağacı taşıyabilir.</p>
+<h3>Bir Claude Code konuşması Markdown olarak nasıl indirilir?</h3>
+<p>Claude Code’un <code>/export</code> komutu düz metin bir dökümdür, bu uzantının Markdown’u değildir. Özellikle Markdown gerekiyorsa bir claude.ai/code oturumunu veya işin claude.ai’deki bir kopyasını Download Claude conversations ile dışa aktarın ya da <code>/export</code> metnini kendiniz dönüştürün. JSONL’yi Markdown’a dönüştürmüyoruz.</p>
+<h3>Bunun yerine bir claude.ai konuşmasını nasıl indiririm?</h3>
+<p>Ücretsiz Chrome uzantısını yükleyin, sohbeti claude.ai’de açın ve turuncu düğmeyi kullanın — geçmiş için de “Export All”u. Bkz. <a href="/tr/claude-sohbet-nasil-indirilir/">Claude sohbeti nasıl indirilir</a>. Markdown, metin, JSON, XML, CSV ve PNG hesapsız ve sınırsızdır; PDF ve toplu ZIP, Google ile girişle günde 3 adede kadar ücretsizdir; Pro ayda 3,99 $ veya yılda 26,99 $’dır.</p>
+<h3>/export resmî Export data ile aynı şey mi?</h3>
+<p>Hayır. <code>/export</code> mevcut Claude Code oturumudur. Settings → Privacy → Export data ise Anthropic hesabının JSON ZIP’ini e-postayla gönderir. Farklı ürün ortamları, farklı dosyalar, farklı bekleme süreleri.</p>
+<h3>Claude Code JSONL’sini jq ile ayrıştırabilir miyim?</h3>
+<p>Ayrıştırabilirsiniz, ancak Anthropic’in yayımladığı uyarıyla: satır şeması dahilidir ve değişebilir. Bir sözleşmeye ihtiyacınız olduğunda <code>/export</code> veya <code>claude -p --output-format json</code> tercih edin. Yine de JSONL ayrıştıracaksanız CLI sürümünüzü sabitleyin.</p>
+<h3>Claude Code dışa aktarma Windows’ta çalışır mı?</h3>
+<p>Evet. <code>/export</code> bir CLI komutudur. <code>CLAUDE_CONFIG_DIR</code> ayarlamadıysanız diskteki dökümler <code>%USERPROFILE%\.claude\projects</code> altında durur. Bu Chrome uzantısı yine de o terminalin içinde çalışmaz.</p>
+<h3>Claude Code, Claude Desktop ile aynı şey mi?</h3>
+<p>Hayır. Claude Code terminaldeki kodlama ajanıdır. Claude Desktop sohbet uygulamasıdır. claude.ai web sitesidir. Bu uzantı yalnızca web sitesinde, claude.ai/code dahil, çalışır. Desktop dışa aktarma notları: <a href="/tr/claude-desktop-sohbet-disa-aktarma/">Claude Desktop</a>.</p>
+<h3>Bu uzantı bir gün /export’u sarmalayacak mı?</h3>
+<p>1.16.2 sürümünde hayır. Ürünün kapsamı, web’deki Claude Code dahil claude.ai’dir: yedi format, yerel dosyalar, yalnızca PDF, toplu dışa aktarma ve Pro için Google ile giriş. Bu kapsam değişirse bu sayfa bunu belirtecek. O zamana kadar terminaldeki Claude Code dışa aktarması için Anthropic’in CLI’sini kullanın.</p>
+<h3>/export araç çıktılarını içerir mi?</h3>
+<p>Anthropic, <code>/export</code> çıktısını okunabilir metin olarak işlenmiş mesajlar ve araç çıktıları olarak tanımlar. Bu onların dökümüdür, bizim ayrıştırıcımız değil. Güncel içeriği tam olarak görmek için kendi derlemenizde <code>/export</code> çalıştırın ve dosyayı okuyun — belgeler bir sürümün gerisinde kalabilir.</p>
+<h3>Claude Code oturumlarını toplu dışa aktarabilir miyim?</h3>
+<p>Yerel CLI oturumlarını hayır. Dashboard’daki “Export All” yalnızca claude.ai içindir. Çok sayıda CLI oturumu için projects klasörünü kopyalayın veya her oturum için <code>/export</code> çalıştırın. JSONL için turuncu düğmeyle toplu dışa aktarma yoktur.</p>
+</article>
+</main>
+<section class="final-cta page-cta" aria-label="Yükle">
+  <div class="wrap">
+    <div class="final-cta-panel">
+      <p class="final-kicker">Download Claude conversations</p>
+      <h2>Claude Code değil, claude.ai dosyaları mı gerekiyor?</h2>
+      <p>Chrome uzantısı claude.ai sohbetlerini ve claude.ai/code oturumlarını PDF, Markdown, JSON, metin, CSV, XML veya PNG olarak kaydeder — yerel olarak, Chrome’dan.</p>
+      <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=tr-claude-code" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Chrome’a ekle</a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="logo" href="/tr/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
+      <p class="legal-note">Claude.ai sohbetlerini PDF, Markdown, JSON, düz metin, CSV, XML veya PNG olarak indiren Chrome uzantısı.</p>
+    </div>
+    <div>
+      <h2>Yükle</h2>
+      <a class="install-link" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=tr-footer" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Chrome uzantısı</a>
+    </div>
+    <div>
+      <h2>Ürün</h2>
+      <a href="/tr/ozellikler/">Özellikler</a>
+      <a href="/tr/formatlar/">Formatlar</a>
+      <a href="/tr/tum-claude-sohbetlerini-disa-aktarma/">Toplu indirme</a>
+      <a href="/tr/nasil-calisir/">Nasıl çalışır</a>
+    </div>
+    <div>
+      <h2>Rehberler</h2>
+      <a href="/tr/claude-sohbet-nasil-indirilir/">Claude sohbeti nasıl indirilir</a>
+      <a href="/tr/claude-sohbet-nasil-disa-aktarilir/">Claude sohbeti nasıl dışa aktarılır</a>
+      <a href="/tr/claude-sohbet-disa-aktarma/">Claude sohbetini dışa aktarma</a>
+      <a href="/tr/claude-konusma-cikarici/">Claude konuşma çıkarıcı</a>
+      <a href="/tr/claude-code-konusma-disa-aktarma/">Claude Code dışa aktarma</a>
+      <a href="/tr/claude-sohbet-pdf/">Claude sohbeti PDF olarak</a>
+      <a href="/tr/claude-desktop-sohbet-disa-aktarma/">Claude Desktop dışa aktarma</a>
+      <a href="/tr/claude-konusma-disa-aktarma/">Claude konuşmasını dışa aktarma</a>
+      <a href="/tr/claude-sohbet-kaydetme/">Claude sohbeti nasıl kaydedilir</a>
+      <a href="/tr/claude-konusma-indir/">Claude konuşması indirme</a>
+    </div>
+    <div>
+      <h2>Yasal</h2>
+      <a href="/tr/hakkimizda/">Hakkımızda</a>
+      <a href="/tr/hakkimizda/#contact">İletişim</a>
+      <a href="/privacy/" hreflang="en">Gizlilik (İngilizce)</a>
+      <a href="/terms/" hreflang="en">Koşullar (İngilizce)</a>
+      <a href="/refund/" hreflang="en">İadeler (İngilizce)</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Download Claude conversations. Tüm hakları saklıdır.</div>
+    <div>
+      <a href="/privacy/" hreflang="en">Gizlilik Politikası (İngilizce)</a>
+      <a href="/terms/" hreflang="en">Hizmet Koşulları (İngilizce)</a>
+      <a href="/refund/" hreflang="en">İadeler (İngilizce)</a>
+    </div>
+  </div>
+  <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/claude-code-export/" hreflang="en" lang="en">English</a> <a href="/de/claude-code-chat-exportieren/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/exporter-conversation-claude-code/" hreflang="fr" lang="fr">Français</a> <a href="/es/exportar-conversacion-claude-code/" hreflang="es" lang="es">Español</a> <a href="/it/esportare-conversazione-claude-code/" hreflang="it" lang="it">Italiano</a> <a href="/pt/exportar-conversa-claude-code/" hreflang="pt" lang="pt">Português</a> <a href="/nl/claude-code-gesprek-exporteren/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/exportera-claude-code-konversation/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/eksportere-claude-code-samtale/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/eksporter-claude-code-samtale/" hreflang="da" lang="da">Dansk</a> <a href="/fi/claude-code-keskustelun-vienti/" hreflang="fi" lang="fi">Suomi</a> <a href="/pl/eksport-rozmowy-claude-code/" hreflang="pl" lang="pl">Polski</a> <a href="/cs/export-konverzace-claude-code/" hreflang="cs" lang="cs">Čeština</a> <a href="/sk/export-konverzacie-claude-code/" hreflang="sk" lang="sk">Slovenčina</a> <a href="/hu/claude-code-beszelgetes-exportalasa/" hreflang="hu" lang="hu">Magyar</a> <a href="/ro/export-conversatie-claude-code/" hreflang="ro" lang="ro">Română</a> <a href="/el/claude-code-export/" hreflang="el" lang="el">Ελληνικά</a> <a href="/tr/claude-code-konusma-disa-aktarma/" hreflang="tr" lang="tr">Türkçe</a> <a href="/ja/claude-code-export/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/claude-code-export/" hreflang="ko" lang="ko">한국어</a> <a href="/zh-hant/claude-code-export/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="/he/claude-code-export/" hreflang="he" lang="he">עברית</a> <a href="/ar/claude-code-export/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
+  <p class="disclaimer">Sohbetler tarayıcınızda işlenir · Google ile giriş yalnızca PDF, toplu dışa aktarma ve Pro için · Anthropic, PBC ile bağlantılı değildir. Claude, Anthropic’in ticari markasıdır. Bağımsız Chrome uzantısı — resmi bir Anthropic ürünü değildir. Destek: <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

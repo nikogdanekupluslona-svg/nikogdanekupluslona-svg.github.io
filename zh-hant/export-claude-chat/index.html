@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>匯出 Claude 聊天：Markdown、JSON、PNG</title>
+  <meta name="description" content="匯出 Claude 聊天的擴充功能：存成 PDF、Markdown、JSON、文字、XML、CSV 或 PNG。免費，單一聊天免帳號。">
+  <link rel="canonical" href="https://chat-downloader.com/zh-hant/export-claude-chat/">
+  <!-- i18n:head -->
+  <link rel="alternate" hreflang="en" href="https://chat-downloader.com/export-claude-chat/">
+  <link rel="alternate" hreflang="de" href="https://chat-downloader.com/de/claude-chat-exportieren/">
+  <link rel="alternate" hreflang="fr" href="https://chat-downloader.com/fr/exporter-conversation-claude/">
+  <link rel="alternate" hreflang="es" href="https://chat-downloader.com/es/exportar-chat-claude/">
+  <link rel="alternate" hreflang="it" href="https://chat-downloader.com/it/esportare-chat-claude/">
+  <link rel="alternate" hreflang="pt" href="https://chat-downloader.com/pt/exportar-chat-claude/">
+  <link rel="alternate" hreflang="nl" href="https://chat-downloader.com/nl/claude-chat-exporteren/">
+  <link rel="alternate" hreflang="sv" href="https://chat-downloader.com/sv/exportera-claude-chatt/">
+  <link rel="alternate" hreflang="nb" href="https://chat-downloader.com/nb/eksportere-claude-chat/">
+  <link rel="alternate" hreflang="da" href="https://chat-downloader.com/da/eksporter-claude-chat/">
+  <link rel="alternate" hreflang="fi" href="https://chat-downloader.com/fi/vie-claude-chat/">
+  <link rel="alternate" hreflang="pl" href="https://chat-downloader.com/pl/eksport-czatu-claude/">
+  <link rel="alternate" hreflang="cs" href="https://chat-downloader.com/cs/export-chatu-claude/">
+  <link rel="alternate" hreflang="sk" href="https://chat-downloader.com/sk/export-chatu-claude/">
+  <link rel="alternate" hreflang="hu" href="https://chat-downloader.com/hu/claude-chat-exportalasa/">
+  <link rel="alternate" hreflang="ro" href="https://chat-downloader.com/ro/export-chat-claude/">
+  <link rel="alternate" hreflang="el" href="https://chat-downloader.com/el/export-claude-chat/">
+  <link rel="alternate" hreflang="tr" href="https://chat-downloader.com/tr/claude-sohbet-disa-aktarma/">
+  <link rel="alternate" hreflang="ja" href="https://chat-downloader.com/ja/export-claude-chat/">
+  <link rel="alternate" hreflang="ko" href="https://chat-downloader.com/ko/export-claude-chat/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://chat-downloader.com/zh-hant/export-claude-chat/">
+  <link rel="alternate" hreflang="he" href="https://chat-downloader.com/he/export-claude-chat/">
+  <link rel="alternate" hreflang="ar" href="https://chat-downloader.com/ar/export-claude-chat/">
+  <link rel="alternate" hreflang="x-default" href="https://chat-downloader.com/export-claude-chat/">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="it_IT">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <meta property="og:locale:alternate" content="nl_NL">
+  <meta property="og:locale:alternate" content="sv_SE">
+  <meta property="og:locale:alternate" content="nb_NO">
+  <meta property="og:locale:alternate" content="da_DK">
+  <meta property="og:locale:alternate" content="fi_FI">
+  <meta property="og:locale:alternate" content="pl_PL">
+  <meta property="og:locale:alternate" content="cs_CZ">
+  <meta property="og:locale:alternate" content="sk_SK">
+  <meta property="og:locale:alternate" content="hu_HU">
+  <meta property="og:locale:alternate" content="ro_RO">
+  <meta property="og:locale:alternate" content="el_GR">
+  <meta property="og:locale:alternate" content="tr_TR">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <meta property="og:locale:alternate" content="he_IL">
+  <meta property="og:locale:alternate" content="ar_AE">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&amp;display=swap" rel="stylesheet">
+  <!-- /i18n:head -->
+  <meta property="og:title" content="匯出 Claude 聊天：Markdown、JSON、PNG">
+  <meta property="og:description" content="匯出 Claude 聊天的擴充功能：存成 PDF、Markdown、JSON、文字、XML、CSV 或 PNG。免費，單一聊天免帳號。">
+  <meta property="og:url" content="https://chat-downloader.com/zh-hant/export-claude-chat/">
+  <meta property="og:image" content="https://chat-downloader.com/assets/widget-guide.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chat Downloader">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="匯出 Claude 聊天：Markdown、JSON、PNG">
+  <meta name="twitter:description" content="匯出 Claude 聊天的擴充功能：存成 PDF、Markdown、JSON、文字、XML、CSV 或 PNG。免費，單一聊天免帳號。">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME1YXGZKR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GME1YXGZKR');
+  </script>
+  
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"在本站，「匯出 Claude 聊天」是什麼意思？","acceptedAnswer":{"@type":"Answer","text":"用 Download Claude conversations 把 claude.ai 對話存成檔案：橘色按鈕、選格式、按「Export」。中文常搜尋「claude 匯出對話」，香港使用者也會打「claude 導出 對話」，英文則是「claude export chat」，指的都是同一件事。它不是 Anthropic 用電子郵件寄來的 ZIP，也不是 Claude Code 的 /export。"}},{"@type":"Question","name":"Claude 匯出擴充功能和 Export data 一樣嗎？","acceptedAnswer":{"@type":"Answer","text":"不一樣。Settings → Privacy → Export data 是透過電子郵件寄來的整個帳號 JSON ZIP。Claude 匯出擴充功能則會在 Chrome 中立即把目前開啟的聊天寫成 PDF、Markdown、JSON、文字、XML、CSV 或 PNG，或把「Export All」選取的對話打包成 ZIP。"}},{"@type":"Question","name":"可以把 Claude 聊天匯出成 PDF 嗎？","acceptedAnswer":{"@type":"Answer","text":"可以。在格式清單中選 PDF，按「Export」。擴充功能直接在瀏覽器中產生 PDF，不經過列印對話框。PDF 需要 Google 登入，每天最多免費 3 次；Pro 則不限次數。指南：把 Claude 聊天下載成 PDF。"}},{"@type":"Question","name":"只匯出一次 Claude 聊天也需要 Pro 嗎？","acceptedAnswer":{"@type":"Answer","text":"不需要。Markdown、文字、JSON、XML、CSV 和 PNG 匯出免費、不限次數，也不需要帳號。PDF 和批次「Export All」用 Google 登入後每天最多免費 3 次。Pro 每月 US$3.99 或每年 US$26.99，可取消這個上限。"}},{"@type":"Question","name":"任何 claude.ai 方案都能匯出 Claude 聊天嗎？","acceptedAnswer":{"@type":"Answer","text":"可以。只要能在 Chrome 中開啟對話，claude.ai 的 Free、Pro、Team 或 Enterprise 方案都可以。這個擴充功能不需要 Anthropic 的付費方案。"}},{"@type":"Question","name":"這個 Claude 匯出擴充功能能用在 Claude Code 嗎？","acceptedAnswer":{"@type":"Answer","text":"只能用在 Claude Code on the web。claude.ai/code 上的工作階段在 claude.ai 中開啟，可以像一般聊天一樣匯出。終端機中的 Claude Code 使用 /export 或磁碟上的 JSONL，Download Claude conversations 不會讀取它們。請看 Claude Code 匯出指南。"}},{"@type":"Question","name":"可以從 Claude Desktop 匯出 Claude 聊天嗎？","acceptedAnswer":{"@type":"Answer","text":"這個 Chrome 擴充功能做不到。如果對話有同步，請在 claude.ai 上開啟同一段對話；否則請複製貼上，或使用官方的 Export data。Desktop 裡永遠不會出現橘色按鈕。"}},{"@type":"Question","name":"Claude 匯出擴充功能提供多少次免費匯出？","acceptedAnswer":{"@type":"Answer","text":"Markdown、文字、JSON、XML、CSV 和 PNG 不限次數，也不需要帳號。免費方案中，PDF 和批次「Export All」用 Google 登入後合計每天 3 次；批次 ZIP 裡的每段聊天各算一次。次數於 UTC 午夜重置。Pro 取消上限，並可透過 Google 登入恢復。"}},{"@type":"Question","name":"匯出 Claude 聊天的橘色按鈕在哪裡？","acceptedAnswer":{"@type":"Answer","text":"安裝 Download Claude conversations 並重新載入後，它會出現在 claude.ai 對話網址中訊息輸入框的右側。空白的首頁輸入畫面和 Desktop 中都不會出現。"}},{"@type":"Question","name":"匯出 Claude 聊天會上傳我的對話嗎？","acceptedAnswer":{"@type":"Answer","text":"不會。每種格式（包括 PDF）都在瀏覽器中產生，再交給 Chrome 的下載 API。Markdown、文字、JSON、XML、CSV 和 PNG 匯出不會傳送任何資料給我們。為了 PDF、批次匯出或 Pro 登入後，我們的伺服器只會看到額度或訂閱狀態和你的 Google 電子郵件，絕不會看到聊天內容。詳情請看運作方式。"}},{"@type":"Question","name":"Claude 匯出擴充功能能寫出哪些格式？","acceptedAnswer":{"@type":"Answer","text":"七種：PDF、Markdown、純文字、JSON、XML、CSV 和 PNG。單一聊天和「Export All」都是這七種。1.16.2 版不提供 Word、Notion 或 Google 文件匯出。"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Claude Chat Downloader","alternateName":["Download Claude conversations","Claude Conversation Downloader"],"applicationCategory":"BrowserApplication","operatingSystem":"Chrome","softwareVersion":"1.16.2","url":"https://chat-downloader.com","downloadUrl":"https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak","offers":[{"@type":"Offer","name":"免費","price":"0","priceCurrency":"USD","description":"Markdown、文字、JSON、XML、CSV 和 PNG 不限次數匯出；PDF 或批次匯出每天 3 次"},{"@type":"Offer","name":"Pro 月付","price":"3.99","priceCurrency":"USD"},{"@type":"Offer","name":"Pro 年付","price":"26.99","priceCurrency":"USD"}],"description":"匯出 Claude 聊天的擴充功能：存成 PDF、Markdown、JSON、文字、XML、CSV 或 PNG。免費，單一聊天免帳號。"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://chat-downloader.com/zh-hant/"},{"@type":"ListItem","position":2,"name":"匯出 Claude 聊天","item":"https://chat-downloader.com/zh-hant/export-claude-chat/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">跳到主要內容</a>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a class="logo" href="/zh-hant/">
+        <img src="/assets/icon.svg" alt="">
+        <span>Download Claude conversations</span>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="/zh-hant/how-to-download-claude-chat/">下載教學</a><a href="/zh-hant/how-to-export-claude-chat/">匯出</a><a href="/zh-hant/bulk/">批次</a><a href="/zh-hant/formats/">格式</a><a href="/zh-hant/#faq">常見問題</a>
+        <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=zh-hant-export-claude-chat" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> 加到 Chrome</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <a class="btn-install" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=zh-hant-export-claude-chat" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> 加到 Chrome</a>
+      <!-- i18n:switch --><details class="lang-switch"><summary aria-label="語言: 繁體中文"><svg class="lang-globe" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span class="lang-name">繁體中文</span><span class="lang-code" aria-hidden="true">zh</span></summary><ul><li><a href="/export-claude-chat/" hreflang="en" lang="en">English</a></li><li><a href="/de/claude-chat-exportieren/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/exporter-conversation-claude/" hreflang="fr" lang="fr">Français</a></li><li><a href="/es/exportar-chat-claude/" hreflang="es" lang="es">Español</a></li><li><a href="/it/esportare-chat-claude/" hreflang="it" lang="it">Italiano</a></li><li><a href="/pt/exportar-chat-claude/" hreflang="pt" lang="pt">Português</a></li><li><a href="/nl/claude-chat-exporteren/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/sv/exportera-claude-chatt/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="/nb/eksportere-claude-chat/" hreflang="nb" lang="nb">Norsk</a></li><li><a href="/da/eksporter-claude-chat/" hreflang="da" lang="da">Dansk</a></li><li><a href="/fi/vie-claude-chat/" hreflang="fi" lang="fi">Suomi</a></li><li><a href="/pl/eksport-czatu-claude/" hreflang="pl" lang="pl">Polski</a></li><li><a href="/cs/export-chatu-claude/" hreflang="cs" lang="cs">Čeština</a></li><li><a href="/sk/export-chatu-claude/" hreflang="sk" lang="sk">Slovenčina</a></li><li><a href="/hu/claude-chat-exportalasa/" hreflang="hu" lang="hu">Magyar</a></li><li><a href="/ro/export-chat-claude/" hreflang="ro" lang="ro">Română</a></li><li><a href="/el/export-claude-chat/" hreflang="el" lang="el">Ελληνικά</a></li><li><a href="/tr/claude-sohbet-disa-aktarma/" hreflang="tr" lang="tr">Türkçe</a></li><li><a href="/ja/export-claude-chat/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/ko/export-claude-chat/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/zh-hant/export-claude-chat/" hreflang="zh-Hant" lang="zh-Hant" aria-current="true">繁體中文</a></li><li><a href="/he/export-claude-chat/" hreflang="he" lang="he">עברית</a></li><li><a href="/ar/export-claude-chat/" hreflang="ar" lang="ar">العربية</a></li></ul></details><!-- /i18n:switch -->
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="選單">☰</button>
+    </div>
+  </div>
+</header>
+<nav class="crumbs" aria-label="麵包屑導覽"><a href="/zh-hant/">首頁</a> / 匯出 Claude 聊天</nav>
+<main id="main">
+<article class="band prose">
+<p class="article-meta">更新於 <time datetime="2026-09">2026 年 9 月</time> · 擴充功能 1.16.2</p>
+<h1 class="page-h1">匯出 Claude 聊天，存成好讀的檔案</h1>
+<p class="lead">要從 claude.ai 匯出 Claude 聊天：安裝 Download Claude conversations，開啟對話，點橘色按鈕，選 PDF、Markdown、JSON、文字、XML、CSV 或 PNG，再按「Export」（匯出）。這個 Claude 匯出擴充功能會把檔案寫到你的電腦上。它不能在 Claude Desktop 或 Claude Code 終端機中執行。Markdown、文字、JSON、XML、CSV 和 PNG 免費、不限次數，也不需要帳號。PDF 和批次 ZIP 每天最多免費 3 次；Pro 每月 US$3.99 或每年 US$26.99。</p>
+<aside class="trust-badge" aria-label="關於這個擴充功能">
+  <span class="trophy" aria-hidden="true">🧩</span>
+  <div>
+    <strong>Download Claude conversations：claude.ai 專用的免費 Chrome 擴充功能</strong>
+    <span>版本 1.16.2（2026 年 9 月）：Markdown、文字、JSON、XML、CSV 和 PNG 免帳號無限次匯出；PDF 和批次 ZIP 每天最多免費 3 次</span>
+  </div>
+</aside>
+<nav class="toc" aria-label="本頁內容">
+  <p>本頁內容</p>
+  <ol>
+    <li><a href="#export-one">如何從 claude.ai 匯出 Claude 聊天？</a></li>
+    <li><a href="#what-extension-does">Claude 匯出擴充功能到底做什麼？</a></li>
+    <li><a href="#which-format">匯出 Claude 聊天該選哪種格式？</a></li>
+    <li><a href="#export-bulk">可以用「Export All」批次匯出 Claude 聊天嗎？</a></li>
+    <li><a href="#desktop-code">在 Desktop 或 Code 上能匯出 Claude 聊天嗎？</a></li>
+    <li><a href="#vs-official">匯出 Claude 聊天和 Anthropic 的 Export data 有什麼不同？</a></li>
+    <li><a href="#cost">Claude 匯出擴充功能要多少錢？</a></li>
+    <li><a href="#faq">常見問題：如何匯出 Claude 聊天</a></li>
+  </ol>
+</nav>
+
+<h2 id="export-one">如何從 claude.ai 匯出 Claude 聊天？</h2>
+<p>在 Chrome 中開啟 claude.ai 上的對話，點訊息輸入框旁的橘色按鈕，選 PDF、Markdown、JSON、純文字、XML、CSV 或 PNG，再按「Export」。Download Claude conversations 會把檔案存在本機。截至 2026 年 9 月，claude.ai 本身沒有「匯出這段聊天」的原生功能。</p>
+<ol>
+<li>從 Chrome Web Store 安裝 Download Claude conversations。</li>
+<li>重新載入 claude.ai，開啟一個真正的對話網址，而不是空白的輸入首頁。</li>
+<li>點訊息輸入框右側的圓形橘色下載按鈕。</li>
+<li>在面板中把 Messages（訊息）設為「All」、「Human」或「Assistant」（全部／使用者／助理），再選格式。勾選「Thinking」（思考過程）可包含延伸思考，或用「Select」（選取）勾選個別訊息。擴充功能會記住你上次用的格式。</li>
+<li>按「Export」。Chrome 會透過瀏覽器的下載 API 立即儲存檔案。「Copy」（複製）則會把 Markdown、文字、JSON、XML 或 CSV 放進剪貼簿。</li>
+</ol>
+<p>把 Claude 聊天匯出成 Markdown、文字、JSON、XML、CSV 或 PNG 都不需要帳號。這些單一聊天匯出不限次數，擴充功能也不會為此傳送任何資料到我們的伺服器。只有選 PDF 或執行批次「Export All」（一次匯出全部）時，才會出現 Google 登入：免費方案每天合計 3 次，於 UTC 午夜重置。登入時絕不會用到聊天內容。運作原理請看：<a href="/zh-hant/how-it-works/">運作方式</a>。</p>
+<p>如果看不到橘色按鈕，原因通常是：你不在對話網址上、安裝後分頁還沒重新載入，或擴充功能圖示還藏在 Chrome 的拼圖選單裡。把 Download Claude conversations 釘選起來，再重新整理 claude.ai。這個擴充功能只會在 claude.ai 上注入，絕不會在其他網站上執行。</p>
+<div class="callout callout-tip">
+  <p><strong>單一對話，還是整個帳號？</strong>橘色按鈕匯出的是目前開啟的聊天。要一次取得很多檔案，請打開擴充功能的彈出視窗 →「View and Download All Conversations」（檢視並下載所有對話），執行「Export All」，詳見<a href="/zh-hant/bulk/">批次 Export All</a>。Anthropic 的 Settings → Privacy → Export data（若 claude.ai 設為中文，選單名稱可能顯示為中文）是稍後才寄來的帳號 ZIP，不是這個流程。</p>
+</div>
+
+<h2 id="what-extension-does">Claude 匯出擴充功能到底做什麼？</h2>
+<p>Claude 匯出擴充功能會讀取你已登入的 claude.ai 分頁中已經顯示的對話，然後在磁碟上寫出一個有結構的檔案。Download Claude conversations 就是這樣的 Chrome 內容腳本：發話者、訊息樹、程式碼區塊、表格、選用的思考過程和 artifact 版面，而不是連同周圍介面一起截圖。它適用於一般聊天、Projects、Cowork 工作階段，以及 Claude Code on the web。</p>
+<p>從 claude.ai 複製貼上會失去縮排，表格也會擠成一團。列印（Ctrl/Cmd+P）會連側邊欄一起印出，長的程式碼區塊也常被切到不同頁。這個擴充功能會保留程式碼區塊的語言標籤，在 Markdown、JSON 和 XML 中表格仍是表格。PNG 是視覺快照；PDF 則是分頁文件，直接在瀏覽器中產生，不經過列印對話框。</p>
+<p>在 1.16.2 版中，artifact 版面是真正可切換的選項：「Original」、「Inline」、「Nested」或「Flat」（原始／內嵌／巢狀／平面），在控制台（Dashboard）中設定。延伸思考是匯出面板中的核取方塊；網路搜尋來源和工具／MCP 步驟則要在設定中開啟。中繼資料（標題、時間戳記、模型）也可以一併放入。Messages 篩選器可限定檔案只含全部訊息、只含使用者或只含助理，「Select」則可勾選個別訊息。完整清單：<a href="/zh-hant/features/">功能</a>。</p>
+<div class="expert-quote">
+  <p>我們做這個橘色按鈕，是為了從 claude.ai 上已經顯示的聊天寫出真正的檔案：PDF、Markdown、JSON、文字、XML、CSV 或 PNG，而且不把對話上傳到我們的伺服器。1.16.2 版連 PDF 也在瀏覽器中產生。</p>
+  <footer>Download Claude conversations 團隊</footer>
+</div>
+<p>也有人搜尋 Claude Chat Downloader 或 Claude Conversation Downloader，找到的是同一個 Chrome 商店頁面。法律頁面上可能仍寫著 Claude Exporter。這些名稱指的都是 Download Claude conversations，不是另一個產品。搜尋「擷取」而不是「匯出」，最後也會用到同一個按鈕；那個角度請看 <a href="/zh-hant/claude-conversation-extractor/">Claude 對話擷取工具</a>指南。</p>
+
+<h2 id="which-format">匯出 Claude 聊天該選哪種格式？</h2>
+<p>要分享或列印，把 Claude 聊天匯出成 PDF；寫筆記用 Markdown；給程式處理用 JSON；純粹封存用純文字；資料交換用 XML；試算表用 CSV；要一張對話圖片就用 PNG。Download Claude conversations 在同一個下拉選單中提供這七種格式。</p>
+<table>
+  <caption>Claude 匯出擴充功能能從 claude.ai 寫出的格式</caption>
+  <thead>
+    <tr>
+      <th scope="col">格式</th>
+      <th scope="col">最適合</th>
+      <th scope="col">你會得到</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PDF</td>
+      <td>分享、列印、交給客戶</td>
+      <td>在瀏覽器中產生的分頁檔案：<a href="/zh-hant/download-claude-chat-as-pdf/">PDF 指南</a></td>
+    </tr>
+    <tr>
+      <td>Markdown</td>
+      <td>Obsidian、GitHub、Wiki</td>
+      <td>標題、程式碼區塊、表格：<a href="/zh-hant/formats/markdown/">Markdown 指南</a></td>
+    </tr>
+    <tr>
+      <td>JSON</td>
+      <td>比對差異、資料管線、工具</td>
+      <td>訊息樹，不是 Anthropic 的帳號 ZIP：<a href="/zh-hant/formats/json/">JSON 指南</a></td>
+    </tr>
+    <tr>
+      <td>純文字</td>
+      <td>貼到哪裡都行的封存</td>
+      <td>依對話順序，沒有標記：<a href="/zh-hant/formats/">格式總覽</a></td>
+    </tr>
+    <tr>
+      <td>XML</td>
+      <td>必須使用 XML 的系統</td>
+      <td>結構化的資料交換：<a href="/zh-hant/formats/xml/">XML 指南</a></td>
+    </tr>
+    <tr>
+      <td>CSV</td>
+      <td>Excel、Google 試算表、Numbers</td>
+      <td>每則訊息一列：<a href="/zh-hant/formats/">格式總覽</a></td>
+    </tr>
+    <tr>
+      <td>PNG</td>
+      <td>視覺快照</td>
+      <td>整段對話一張圖片：<a href="/zh-hant/formats/png/">PNG 指南</a></td>
+    </tr>
+  </tbody>
+</table>
+<p>寫作者通常把 Claude 聊天匯出成 Markdown，開發者通常選 JSON。需要分頁文件就選 PDF：它的對話框可設定頁面大小、邊界、淺色或深色模式、字型、頁碼和目錄。操作步驟：<a href="/zh-hant/download-claude-chat-as-pdf/">把 Claude 聊天下載成 PDF</a>。這個擴充功能匯出的 PNG 是一個圖片檔，不是分頁文件。</p>
+<p>格式決定是否有次數限制。Markdown、文字、JSON、XML、CSV 和 PNG 免帳號、不限次數。PDF 需要 Google 登入，在免費方案中計入每天 3 次的額度，與批次「Export All」共用。Pro 每月 US$3.99 或每年 US$26.99，可取消這個上限。Download Claude conversations 1.16.2 版不提供 Notion、Word 或 Google 文件格式。</p>
+
+<h2 id="export-bulk">可以用「Export All」批次匯出 Claude 聊天嗎？</h2>
+<p>可以。打開擴充功能的彈出視窗 →「View and Download All Conversations」，篩選表格，再按「Export All」取得一個 ZIP。批次匯出需要 Google 登入。免費方案中它與 PDF 共用每天 3 次的額度，ZIP 裡的每段對話都算一次。Pro 可取消整個紀錄的上限。</p>
+<p>控制台會列出 claude.ai 的對話紀錄，可依名稱搜尋，有篩選器（All conversations、New、Updated、Previously exported，即全部／新的／已更新／曾匯出）、Chat 和 Cowork 分頁，以及專案搜尋。New 表示還沒用 Download Claude conversations 匯出過。Previously exported 會記錄你已儲存的聊天，第二次執行「Export All」時可以略過它們。專案搜尋則對應你在 claude.ai 上分組聊天的方式。</p>
+<p>批次匯出有「Chat format」（聊天格式）選單，七種格式都有，PDF 也包括在內；還有「Chats」、「Thinking」、「Metadata」、「Tools」、「Sources」（聊天、思考過程、中繼資料、工具、來源）核取方塊，以及 artifact 版面（Original、Inline、Nested、Flat）。「Export All」不是縮水的封存檔，而是一個 ZIP，每段聊天一個檔案，採用你選的格式。如果你要的是整個帳號、稍後寄來的單一封存檔，那是 Anthropic 的 Export data，下一節和<a href="/zh-hant/bulk/">批次匯出頁面</a>有比較。</p>
+<div class="callout callout-warn">
+  <p><strong>批次匯出按聊天計算。</strong>免費方案中，「Export All」和 PDF 共用每天 3 次，ZIP 裡的每段對話都算一次。剩 3 次卻選了 40 段對話，整批都會被擋下，而不是只匯出一部分。請少選幾段、等 UTC 午夜重置，或改用 Pro（每月 US$3.99 或每年 US$26.99）。</p>
+</div>
+
+<h2 id="desktop-code">在 Desktop 或 Code 上能匯出 Claude 聊天嗎？</h2>
+<p>在 Desktop 應用程式或 Claude Code 終端機中都不行。這個擴充功能只在 Chrome（或其他能從商店安裝擴充功能的 Chromium 瀏覽器）中的 claude.ai 上執行。Claude Desktop 是另一個 Mac／Windows 應用程式，那裡和終端機裡都不會出現橘色按鈕。Claude Code on the web（claude.ai/code）是例外：這些工作階段在 claude.ai 上開啟，可以像一般聊天一樣匯出。</p>
+<p>如果這段對話也存在你的 claude.ai 帳號中，就在 Chrome 開啟它，用 Download Claude conversations 在那裡匯出 Claude 聊天。如果聊天只存在 Desktop 中，請從應用程式複製貼上，或在網頁版申請 Settings → Privacy → Export data。逐步比較請看：<a href="/zh-hant/export-claude-desktop-chat/">匯出 Claude Desktop 聊天</a>。</p>
+<p>終端機中的 Claude Code 使用 <code>/export</code> 或存在磁碟上的 JSONL 對話紀錄。這個 Chrome 擴充功能不會讀取這些本機工作階段。不要以為安裝 Download Claude conversations 就能掛進終端機。指南：<a href="/zh-hant/claude-code-export/">Claude Code 匯出</a>。如果你要匯出的是 CLI 工作階段，那是另一條路。</p>
+<p>在手機瀏覽器中使用的 claude.ai 也不在支援範圍內。這個擴充功能需要桌面版 Chrome。2026 年我們團隊沒有 iOS 或 Android 應用程式。請在電腦上開啟對話，再用橘色按鈕或「Export All」匯出 Claude 聊天。</p>
+
+<h2 id="vs-official">匯出 Claude 聊天和 Anthropic 的 Export data 有什麼不同？</h2>
+<p>Anthropic 的 Export data 會在一段時間後，用電子郵件寄來整個帳號的 JSON ZIP。用 Download Claude conversations 匯出 Claude 聊天，則會立即把目前開啟的對話存成 PDF、Markdown、JSON、文字、XML、CSV 或 PNG。備份用 ZIP；現在就要一個好讀的檔案，就用擴充功能。</p>
+<table>
+  <caption>把 Claude 對話帶離 claude.ai 的方法</caption>
+  <thead>
+    <tr>
+      <th scope="col">方法</th>
+      <th scope="col">最適合</th>
+      <th scope="col">你會得到</th>
+      <th scope="col">需要等待嗎</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Claude 匯出擴充功能</td>
+      <td>這段聊天或批次選取的對話</td>
+      <td>PDF / MD / JSON / TXT / XML / CSV / PNG</td>
+      <td>不用，檔案直接在 Chrome 中下載</td>
+    </tr>
+    <tr>
+      <td>Settings → Privacy → Export data</td>
+      <td>整個帳號的備份</td>
+      <td>電子郵件寄來的 JSON ZIP</td>
+      <td>要，連結會過期；沒有單一聊天的 Markdown</td>
+    </tr>
+    <tr>
+      <td>列印 → 另存為 PDF</td>
+      <td>粗略的視覺副本</td>
+      <td>網頁的 PDF</td>
+      <td>不用，但版面和程式碼常會跑掉</td>
+    </tr>
+    <tr>
+      <td>複製貼上</td>
+      <td>一則簡短回答</td>
+      <td>你選取的內容</td>
+      <td>長對話沒有結構</td>
+    </tr>
+  </tbody>
+</table>
+<p>官方 ZIP 並不是比較漂亮的匯出 Claude 聊天，而是帳號層級的 JSON。你無法在那個申請中只挑一段對話，也不能選 Markdown。反過來，如果你需要把每一段遺忘的對話都放進同一個封存檔，擴充功能也無法取代那個 ZIP。含列印步驟的方法比較請看：<a href="/zh-hant/how-to-export-claude-chat/">如何匯出 Claude 聊天</a>。</p>
+<p>Download Claude conversations 與 Anthropic, PBC 沒有關係。使用這個擴充功能不會改變 Anthropic 的服務條款。內容腳本使用你在 claude.ai 上已經開啟的工作階段，不會用另外的憑證登入 Anthropic。請遵守 Anthropic 對你帳號的規定。</p>
+
+<h2 id="cost">Claude 匯出擴充功能要多少錢？</h2>
+<p>Markdown、文字、JSON、XML、CSV 和 PNG 匯出免費、不限次數，也不需要帳號。PDF 和批次「Export All」用 Google 登入後每天最多免費 3 次。Pro 透過 Paddle 付款，每月 US$3.99 或每年 US$26.99，PDF 和批次匯出都不限次數。Download Claude conversations 不按格式收費。只要 Chrome 能開啟聊天，任何 claude.ai 方案都可以用。</p>
+<p>PDF 和批次匯出的每日次數於 UTC 午夜重置。在新電腦上用同一個 Google 帳號登入，就能恢復 Pro。你可以隨時從擴充功能的選項頁面或透過 Paddle 取消。Paddle 是交易的銷售方（merchant of record），我們團隊不會看到卡號。首次付款享有 14 天退款保證，依退款頁面的說明透過 Paddle 處理。</p>
+<p>使用這個擴充功能不需要 Anthropic 的 claude.ai 付費方案。你只需要一個能載入對話的 claude.ai 帳號，加上 Chrome。Team 和 Enterprise 使用橘色按鈕的方式與 Free 相同。如果工作區管理員封鎖了擴充功能，Download Claude conversations 就無法注入；那是瀏覽器政策，不是格式限制。</p>
+<div class="callout callout-info">
+  <p><strong>同一件事，不同的搜尋詞。</strong>匯出 Claude 聊天、下載 Claude 聊天、擷取 Claude 對話，意思都是把這段對話存成檔案。包含列印和 ZIP 替代方案的教學是<a href="/zh-hant/how-to-download-claude-chat/">如何下載 Claude 聊天</a>。本頁介紹的是 Claude 匯出擴充功能這條產品路線。</p>
+</div>
+<p>匯出 Claude 聊天失敗時的排解方式：等長對話在 claude.ai 中完全載入，確認格式下拉選單（會沿用上次的格式），如果是 PDF 或批次匯出，再看看今天的 3 次還剩多少。如果 Chrome 擋下了下載，請允許 claude.ai 下載檔案。檔案不完整，通常是因為頁面還沒顯示完整的訊息樹。</p>
+<p>本頁對應的版本是 1.16.2，日期為 2026 年 9 月。格式有 PDF、Markdown、純文字、JSON、XML、CSV 和 PNG。如果這份清單有變，本指南會在同一天更新。在那之前，這個擴充功能不提供 Word、Notion 或 Google 文件匯出。</p>
+
+<h2 id="faq">常見問題：如何匯出 Claude 聊天</h2>
+<p>以下問答涵蓋匯出 Claude 聊天和 Claude 匯出擴充功能：格式、次數限制、Desktop、Claude Code、Anthropic 的 ZIP，以及橘色按鈕的位置。每個答案都是 1.16.2 版的事實。頁首的 FAQPage JSON-LD 與這份清單一致。</p>
+
+<h3>在本站，「匯出 Claude 聊天」是什麼意思？</h3>
+<p>用 Download Claude conversations 把 claude.ai 對話存成檔案：橘色按鈕、選格式、按「Export」。中文常搜尋「claude 匯出對話」，香港使用者也會打「claude 導出 對話」，英文則是「claude export chat」，指的都是同一件事。它不是 Anthropic 用電子郵件寄來的 ZIP，也不是 Claude Code 的 <code>/export</code>。</p>
+
+<h3>Claude 匯出擴充功能和 Export data 一樣嗎？</h3>
+<p>不一樣。Settings → Privacy → Export data 是透過電子郵件寄來的整個帳號 JSON ZIP。Claude 匯出擴充功能則會在 Chrome 中立即把目前開啟的聊天寫成 PDF、Markdown、JSON、文字、XML、CSV 或 PNG，或把「Export All」選取的對話打包成 ZIP。</p>
+
+<h3>可以把 Claude 聊天匯出成 PDF 嗎？</h3>
+<p>可以。在格式清單中選 PDF，按「Export」。擴充功能直接在瀏覽器中產生 PDF，不經過列印對話框。PDF 需要 Google 登入，每天最多免費 3 次；Pro 則不限次數。指南：<a href="/zh-hant/download-claude-chat-as-pdf/">把 Claude 聊天下載成 PDF</a>。</p>
+
+<h3>只匯出一次 Claude 聊天也需要 Pro 嗎？</h3>
+<p>不需要。Markdown、文字、JSON、XML、CSV 和 PNG 匯出免費、不限次數，也不需要帳號。PDF 和批次「Export All」用 Google 登入後每天最多免費 3 次。Pro 每月 US$3.99 或每年 US$26.99，可取消這個上限。</p>
+
+<h3>任何 claude.ai 方案都能匯出 Claude 聊天嗎？</h3>
+<p>可以。只要能在 Chrome 中開啟對話，claude.ai 的 Free、Pro、Team 或 Enterprise 方案都可以。這個擴充功能不需要 Anthropic 的付費方案。</p>
+
+<h3>這個 Claude 匯出擴充功能能用在 Claude Code 嗎？</h3>
+<p>只能用在 Claude Code on the web。claude.ai/code 上的工作階段在 claude.ai 中開啟，可以像一般聊天一樣匯出。終端機中的 Claude Code 使用 <code>/export</code> 或磁碟上的 JSONL，Download Claude conversations 不會讀取它們。請看 Claude Code 匯出指南。</p>
+
+<h3>可以從 Claude Desktop 匯出 Claude 聊天嗎？</h3>
+<p>這個 Chrome 擴充功能做不到。如果對話有同步，請在 claude.ai 上開啟同一段對話；否則請複製貼上，或使用官方的 Export data。Desktop 裡永遠不會出現橘色按鈕。</p>
+
+<h3>Claude 匯出擴充功能提供多少次免費匯出？</h3>
+<p>Markdown、文字、JSON、XML、CSV 和 PNG 不限次數，也不需要帳號。免費方案中，PDF 和批次「Export All」用 Google 登入後合計每天 3 次；批次 ZIP 裡的每段聊天各算一次。次數於 UTC 午夜重置。Pro 取消上限，並可透過 Google 登入恢復。</p>
+
+<h3>匯出 Claude 聊天的橘色按鈕在哪裡？</h3>
+<p>安裝 Download Claude conversations 並重新載入後，它會出現在 claude.ai 對話網址中訊息輸入框的右側。空白的首頁輸入畫面和 Desktop 中都不會出現。</p>
+
+<h3>匯出 Claude 聊天會上傳我的對話嗎？</h3>
+<p>不會。每種格式（包括 PDF）都在瀏覽器中產生，再交給 Chrome 的下載 API。Markdown、文字、JSON、XML、CSV 和 PNG 匯出不會傳送任何資料給我們。為了 PDF、批次匯出或 Pro 登入後，我們的伺服器只會看到額度或訂閱狀態和你的 Google 電子郵件，絕不會看到聊天內容。詳情請看運作方式。</p>
+
+<h3>Claude 匯出擴充功能能寫出哪些格式？</h3>
+<p>七種：PDF、Markdown、純文字、JSON、XML、CSV 和 PNG。單一聊天和「Export All」都是這七種。1.16.2 版不提供 Word、Notion 或 Google 文件匯出。</p>
+</article>
+</main>
+<section class="final-cta page-cta" aria-label="安裝">
+  <div class="wrap">
+    <div class="final-cta-panel">
+      <p class="final-kicker">Download Claude conversations</p>
+      <h2>安裝擴充功能，幾秒內下載 Claude 聊天</h2>
+      <p>把重要的 Claude 對話轉成 PDF、Markdown、JSON、文字、XML、CSV 或 PNG，全部在 Chrome 本機完成。</p>
+      <a class="btn-install btn-install-lg" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&utm_medium=cta&utm_campaign=zh-hant-export" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> 加到 Chrome</a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="logo" href="/zh-hant/"><img src="/assets/icon.svg" alt=""><span>Download Claude conversations</span></a>
+      <p class="legal-note">把 Claude.ai 聊天下載成 PDF、Markdown、JSON、純文字、CSV、XML 或 PNG 的 Chrome 擴充功能。</p>
+    </div>
+    <div>
+      <h2>安裝</h2>
+      <a class="install-link" href="https://chromewebstore.google.com/detail/download-claude-conversat/ljcgfcnobiealkonbknnfckhkdbodhak?utm_source=site&amp;utm_medium=cta&amp;utm_campaign=zh-hant-footer" target="_blank" rel="noopener noreferrer"><img src="/assets/images/chrome.svg" alt="" width="20" height="20"> Chrome 擴充功能</a>
+    </div>
+    <div>
+      <h2>產品</h2>
+      <a href="/zh-hant/features/">功能</a>
+      <a href="/zh-hant/formats/">格式</a>
+      <a href="/zh-hant/bulk/">批次下載</a>
+      <a href="/zh-hant/how-it-works/">運作方式</a>
+    </div>
+    <div>
+      <h2>教學</h2>
+      <a href="/zh-hant/how-to-download-claude-chat/">如何下載 Claude 聊天</a>
+      <a href="/zh-hant/how-to-export-claude-chat/">如何匯出 Claude 聊天</a>
+      <a href="/zh-hant/export-claude-chat/">匯出 Claude 聊天</a>
+      <a href="/zh-hant/claude-conversation-extractor/">Claude 對話擷取工具</a>
+      <a href="/zh-hant/claude-code-export/">Claude Code 匯出</a>
+      <a href="/zh-hant/download-claude-chat-as-pdf/">Claude 聊天存成 PDF</a>
+      <a href="/zh-hant/export-claude-desktop-chat/">Claude Desktop 匯出</a>
+      <a href="/zh-hant/claude-export-conversation/">Claude 對話匯出</a>
+      <a href="/zh-hant/how-to-save-claude-conversation/">如何儲存 Claude 對話</a>
+      <a href="/zh-hant/download-claude-conversation/">下載 Claude 對話</a>
+    </div>
+    <div>
+      <h2>法律資訊</h2>
+      <a href="/zh-hant/about/">關於我們</a>
+      <a href="/zh-hant/about/#contact">聯絡我們</a>
+      <a href="/privacy/" hreflang="en">隱私權 （英文）</a>
+      <a href="/terms/" hreflang="en">條款 （英文）</a>
+      <a href="/refund/" hreflang="en">退款 （英文）</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Download Claude conversations. 保留所有權利。</div>
+    <div>
+      <a href="/privacy/" hreflang="en">隱私權政策 （英文）</a>
+      <a href="/terms/" hreflang="en">服務條款 （英文）</a>
+      <a href="/refund/" hreflang="en">退款 （英文）</a>
+    </div>
+  </div>
+  <!-- i18n:langs --><nav class="footer-langs" aria-label="Language"><a href="/export-claude-chat/" hreflang="en" lang="en">English</a> <a href="/de/claude-chat-exportieren/" hreflang="de" lang="de">Deutsch</a> <a href="/fr/exporter-conversation-claude/" hreflang="fr" lang="fr">Français</a> <a href="/es/exportar-chat-claude/" hreflang="es" lang="es">Español</a> <a href="/it/esportare-chat-claude/" hreflang="it" lang="it">Italiano</a> <a href="/pt/exportar-chat-claude/" hreflang="pt" lang="pt">Português</a> <a href="/nl/claude-chat-exporteren/" hreflang="nl" lang="nl">Nederlands</a> <a href="/sv/exportera-claude-chatt/" hreflang="sv" lang="sv">Svenska</a> <a href="/nb/eksportere-claude-chat/" hreflang="nb" lang="nb">Norsk</a> <a href="/da/eksporter-claude-chat/" hreflang="da" lang="da">Dansk</a> <a href="/fi/vie-claude-chat/" hreflang="fi" lang="fi">Suomi</a> <a href="/pl/eksport-czatu-claude/" hreflang="pl" lang="pl">Polski</a> <a href="/cs/export-chatu-claude/" hreflang="cs" lang="cs">Čeština</a> <a href="/sk/export-chatu-claude/" hreflang="sk" lang="sk">Slovenčina</a> <a href="/hu/claude-chat-exportalasa/" hreflang="hu" lang="hu">Magyar</a> <a href="/ro/export-chat-claude/" hreflang="ro" lang="ro">Română</a> <a href="/el/export-claude-chat/" hreflang="el" lang="el">Ελληνικά</a> <a href="/tr/claude-sohbet-disa-aktarma/" hreflang="tr" lang="tr">Türkçe</a> <a href="/ja/export-claude-chat/" hreflang="ja" lang="ja">日本語</a> <a href="/ko/export-claude-chat/" hreflang="ko" lang="ko">한국어</a> <a href="/zh-hant/export-claude-chat/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="/he/export-claude-chat/" hreflang="he" lang="he">עברית</a> <a href="/ar/export-claude-chat/" hreflang="ar" lang="ar">العربية</a></nav><!-- /i18n:langs -->
+  <p class="disclaimer">聊天在你的瀏覽器中處理 · 只有 PDF、批次匯出和 Pro 需要 Google 登入 · 與 Anthropic, PBC 無關。Claude 是 Anthropic 的商標。本擴充功能為獨立開發的 Chrome 擴充功能，不是 Anthropic 的官方產品。客服： <a href="mailto:smmfedorova@gmail.com">smmfedorova@gmail.com</a>.</p>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>
