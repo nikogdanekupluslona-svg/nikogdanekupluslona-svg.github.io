@@ -7,7 +7,7 @@ Rules for every localized page under `/<lang>/`. `tools/i18n_build.py` wires the
 For each assigned page id (see `i18n/slugs.json`):
 
 1. Read the English source at the path listed in `pages`.
-2. Write the translated page to `/<lang>/<slug>/index.html`. Slugs are in `slugs.<lang>`. For `ja`, `ko`, `he`, `ar` the slug is the English path (for example `/ja/how-to-download-claude-chat/index.html`, `/ja/formats/json/index.html`, home is `/ja/index.html`).
+2. Write the translated page to `/<lang>/<slug>/index.html`. Slugs are in `slugs.<lang>`. For `ja`, `ko`, `he`, `ar`, `el`, `zh-hant` the slug is the English path (for example `/ja/how-to-download-claude-chat/index.html`, `/ja/formats/json/index.html`, home is `/ja/index.html`).
 3. The group that owns `home` also writes `i18n/labels/<lang>.json`: the same keys as `i18n/labels/en.json`, translated. Keep `{home}` and `{guide}` placeholders and the `<a>` tags in `not_found_lead`.
 
 ## HTML rules
@@ -26,14 +26,14 @@ For each assigned page id (see `i18n/slugs.json`):
 
 | | Title | Meta description |
 |---|---|---|
-| Latin-script languages, he, ar | ≤ 60 characters | ≤ 155 characters |
-| ja, ko | ≤ 32 characters | ≤ 80 characters |
+| Latin-script languages, el, he, ar | ≤ 60 characters | ≤ 155 characters |
+| ja, ko, zh-hant | ≤ 32 characters | ≤ 80 characters |
 
 ## Content rules
 
 - Translate meaning, not words. The result must read as if written natively for that market. Short sentences, answer-first, same structure and headings as English (H2s stay questions if they are questions in English).
 - **Facts must not change.** The full list is in `seo-workspace/product-facts.md` (extension version 1.16.2). In short: Markdown, plain text, JSON, XML, CSV and PNG exports are unlimited and need no account; PDF and bulk ZIP ("Export All") need Google sign-in and are free up to 3 a day, unlimited on Pro; Pro $3.99/month or $26.99/year (Paddle), 14-day money-back guarantee; seven formats: PDF, Markdown, plain text, JSON, XML, CSV, PNG; everything, PDF included, is built in the browser; desktop Chrome/Chromium only, no mobile app; not affiliated with Anthropic. **Never quote a star rating.**
-- **Prices stay in USD.** Use the local number format: de/fr/nl/sv/nb/da/fi `3,99 $` / `26,99 $` (fr/sv/nb/fi use a non-breaking space: `3,99 $`); ja/ko/he/ar `$3.99`.
+- **Prices stay in USD.** Use the local number format: de/fr/nl/sv/nb/da/fi `3,99 $` / `26,99 $` (fr/sv/nb/fi use a non-breaking space: `3,99 $`); ja/ko/he/ar `$3.99`; es `3,99 US$` / `26,99 US$` (the bare `$` reads as pesos in Latin America); pt `US$ 3,99` / `US$ 26,99`; it/el/tr `3,99 $` / `26,99 $`; pl/cs/sk/hu/ro `3,99 USD` / `26,99 USD` (non-breaking space before the currency); zh-hant `US$3.99` / `US$26.99`.
 - **Do not add** new facts, statistics, testimonials, case studies or claims. **Never name competing extensions or exporter apps.** Anthropic products (claude.ai, Claude Desktop, Claude Code, Settings → Privacy → Export data) may be named as the reader's existing tools.
 - **English keyword-variant passages.** Some English pages discuss English search spellings (e.g. "download Claude chat vs claude download chat", "Claude export conversation vs export Claude conversation"). Do not translate those literally. Rewrite them around the equivalent local phrasings listed below (e.g. in German: "Claude Chat exportieren" vs "Claude Unterhaltung exportieren"), or around "local phrasing vs the English phrasing people also type". Keep the same answer.
 - **Target keyword per page.** Each page gets its own local main keyword (table below, "page focus"). Put it in the title, H1, the first sentence of the lead, and one H2. Use it naturally — max about once per 150 words. Add the English phrasing once where the language table says searchers also type English.
@@ -95,6 +95,52 @@ Keywords come from Google autocomplete in each market (`seo-workspace/i18n/sugge
 ### ar — Arabic (Modern Standard Arabic, formal)
 - تصدير، تنزيل، حفظ، محادثة، سجل المحادثات، إضافة Chrome.
 - Searches are almost all English: claude export chat, claude export chat to pdf, claude save chat as pdf. Keep "Claude" in Latin script. Use Western digits (3, 7, 1.16.2).
+
+### es — Spanish (tú, neutral international Spanish)
+- One text for Spain and Latin America: avoid regionalisms (no vosotros, no "ordenador"/"computadora" — say "equipo" or rephrase; "descargar" not "bajar").
+- exportar, descargar, guardar, chat, conversación, historial, extensión de Chrome, todos los chats a la vez.
+- Autocomplete: claude exportar, claude exportar chat, exportar chat claude, exportar conversación claude, cómo exportar chat claude, descargar conversación claude, descargar claude chat, guardar conversación claude, claude historial, ver historial claude. English also typed: claude export chat, claude export chat to pdf, claude exporter.
+
+### it — Italian (tu)
+- esportare, scaricare, salvare, chat (la chat), conversazione, cronologia, estensione di Chrome.
+- Autocomplete: esportare chat claude, claude esportare chat, claude esporta chat, come esportare chat claude, come esportare una chat claude, esportare conversazione claude, salvare chat claude, claude cronologia (chat). English also typed: claude export chat, claude export chat to pdf, claude exporter.
+
+### pt — Portuguese, Brazilian (você)
+- Write Brazilian Portuguese (hreflang `pt` so Portugal also gets it; keep phrasing understandable there, avoid slang).
+- exportar, baixar, salvar, conversa, chat, histórico, extensão do Chrome.
+- Autocomplete: claude exportar conversa, exportar conversa claude, como exportar conversa claude, tem como exportar conversa do claude, claude exportar chat, baixar conversa claude, baixar claude chat, exportar conversa claude code. English also typed: claude export chat, claude chat downloader, claude exporter.
+
+### pl — Polish (ty, friendly)
+- eksportować / eksport, pobrać / pobieranie, zapisać, czat, rozmowa, historia, rozszerzenie Chrome.
+- Almost no Polish autocomplete for this topic; searches are English: claude export chat, claude export chat to pdf, claude export chat history, claude chat exporter. Pair Polish + English phrasing in titles where natural.
+
+### cs — Czech (vy, formal)
+- exportovat / export, stáhnout, uložit, chat, konverzace, historie, rozšíření pro Chrome.
+- Almost no Czech autocomplete for this topic; searches are English: claude export chat, claude export conversation as pdf, claude chat exporter. Pair Czech + English phrasing where natural.
+
+### sk — Slovak (vy, formal)
+- exportovať / export, stiahnuť, uložiť, chat, konverzácia, história, rozšírenie pre Chrome.
+- Almost no Slovak autocomplete for this topic; searches are English: claude export chat, claude export chats, claude export chat to pdf. Pair Slovak + English phrasing where natural. Do not slip into Czech forms.
+
+### hu — Hungarian (te)
+- exportálás / exportálni, letöltés / letölteni, mentés / menteni, chat / csevegés, beszélgetés, előzmények, Chrome-bővítmény.
+- Autocomplete: claude letöltés (usually means the app — say beszélgetés / chat explicitly). Otherwise English: claude export chat, claude export full chat, claude export chat to pdf.
+
+### ro — Romanian (dumneavoastră, formal; use ș and ț with comma below)
+- export / a exporta, descărcare / a descărca, salvare / a salva, chat, conversație, istoric, extensie Chrome.
+- Autocomplete: salvare chat claude, claude descarcare (usually the app). Otherwise English: claude export chat, claude export all chats, claude chat download, claude export chat to pdf.
+
+### el — Greek (εσείς, formal)
+- εξαγωγή, λήψη (κατέβασμα informal), αποθήκευση, συνομιλία, chat, ιστορικό, επέκταση Chrome.
+- No Greek autocomplete for this topic; searches are English: claude export chat, claude chat export, claude export chat to pdf, claude chat history. Keep "Claude" in Latin script and add the English phrasing once near the top.
+
+### tr — Turkish (siz, formal)
+- dışa aktarma / dışa aktarmak, indirme / indirmek, kaydetme / kaydetmek, sohbet, konuşma, sohbet geçmişi, Chrome uzantısı.
+- Autocomplete: claude sohbeti dışa aktarma, claude sohbet indirme, claude sohbet aktarma, claude sohbet geçmişi, claude conversation export. "claude indir" alone means downloading the app — say sohbet / konuşma explicitly. English also typed: claude export chat, claude chat to pdf, claude chat exporter.
+
+### zh-hant — Traditional Chinese (Taiwan usage, 你)
+- Taiwan vocabulary for Taiwan and Hong Kong: 匯出, 下載, 儲存, 對話, 聊天, 對話紀錄 / 聊天紀錄, Chrome 擴充功能, 一次匯出全部, 檔案, 設定. Hong Kong users also type 導出 — use it once on the export pages. Full-width punctuation (，。：「」), half-width Latin and digits, a space between Chinese and Latin words is optional — be consistent.
+- Autocomplete: claude 匯出對話, claude 對話 匯出, claude 對話紀錄匯出, claude 下載對話, claude 對話 下載, claude 儲存對話, claude 對話紀錄, claude 聊天紀錄, claude 導出 對話, claude code 匯出對話, claude code 對話紀錄. "claude 下載" alone usually means the app — say 對話 explicitly.
 
 ## Page focus (main local keyword per page)
 
