@@ -158,6 +158,7 @@ Use the language's terms above. English page intent → what to target:
 | how-to-export-claude-chat | how to export a Claude chat (question form, step-by-step) |
 | claude-code-export | export Claude Code conversation / session |
 | download-claude-chat-as-pdf | Claude chat as PDF / save Claude chat as PDF |
+| export-claude-chat-to-pdf | how to export / save a Claude chat to PDF — step-by-step with PDF settings (export verb + PDF). Keep it distinct from download-claude-chat-as-pdf, which covers print vs a real PDF file |
 | export-claude-desktop-chat | export Claude Desktop chat |
 | bulk | export all Claude chats / entire history |
 | features, formats, formats-*, how-it-works, about, contact | as named |
